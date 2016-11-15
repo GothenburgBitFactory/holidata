@@ -1,0 +1,146 @@
+.TH clog 1 2016-06-28 "${PACKAGE_STRING}" "User Manuals"
+
+.SH NAME
+clog \- colorized log filter
+
+.SH SYNOPSIS
+.B clog [<options>] [<section> ...]
+
+  -h|--help       Show this usage
+  -v|--version    Show this version
+  -d|--date       Prepend all lines with the current date
+  -t|--time       Prepend all lines with the current time
+  -f|--file       Override default ~/.clogrc
+
+.SH DESCRIPTION
+Clog is a filter command, and therefore copies its input to its output.  But if
+lines in the input match certain patterns, actions are taken, which are defined
+as 'rules'.
+
+The rules are defined in ~/.clogrc as text patterns or regular expressions, and
+the actions are specified, to colorize either the line or matching pattern, or
+perhaps to suppress the line.
+
+If --date is specified the current date, YYYY-MM-DD, is prepended to all lines.
+
+If --time is specified the current time, HH:MM:SS, is prepended to all lines.
+
+If --file is specified, an alternate configuration rc file may be specified.
+Default is to ~/.clogrc
+
+One or more section arguments may be specified.  If none are provided, 'default'
+is assumed.  A section corresponds to a named rule set defined in ~/.clogrc. and
+allows the use of one .clogrc file to serve multiple different uses of clog.
+If more than one section is specified, the rules sets are combined, in the
+sequence found.
+
+.SH CONFIGURATION FILE AND OVERRIDE OPTIONS
+Clog reads its configuration from a file in the user's home directory:
+~/.clogrc.
+
+The configuration file can include other configuration files, using this syntax:
+
+.RS
+include /path/to/other/file
+.br
+include ~/rules.txt
+.RE
+
+The format of the rules is:
+
+.RS
+<section> rule /<pattern>/ --> <color> <action>
+.br
+<section> rule "<pattern>" --> <color> <action>
+.RE
+
+If the pattern is surrounded by / characters, it is interpreted as a regular
+expression.  If the pattern is surrounded by " characters, it is interpreted as
+a string fragment.
+
+The section is simply a way to allow multiple rules sets, so that one .clogrc
+file can serve multiple uses.  The pattern may be any supported Standard C
+Library regular expression.  Action must be one of 'line', 'match', 'suppress'
+or 'blank'.
+
+Note that there is a default section, called 'default'.  Putting rules in the
+default section means that no section need be specified on the command line.
+
+Any color can be used, in both the 16- and 256-color space.  Some examples are:
+
+.RS
+bold
+.br
+underline
+.br
+bold blue
+.br
+underline on green
+.br
+black on white
+.br
+bold red on bright white
+.br
+rgb200 on grey4
+.RE
+
+Instead of coloring the whole line, specifying 'match' instead will only color
+the parts of the line that match.
+
+.SH EXAMPLE Rulesets
+Here is an example ~/.clogrc file.
+
+.RS
+# Standard syslog entries.
+.br
+default rule /warn|debug/   --> yellow line
+.br
+default rule /error|severe/ --> red line
+.br
+default rule /critical/     --> bold red line
+.br
+default rule /critical/     --> blank
+.br
+default rule /ignore/       --> suppress
+.br
+
+.br
+# Apache access.log status codes
+.br
+apache rule / 2[0-9][0-9] / --> green match
+.br
+apache rule / 3[0-9][0-9] / --> yellow match
+.br
+apache rule / 4[0-9][0-9] / --> red match
+.br
+apache rule / 5[0-9][0-9] / --> bold red match
+.RE
+
+.SH "CREDITS & COPYRIGHTS"
+Copyright (C) 2006 \- 2016 P. Beckingham, F. Hernandez.
+.br
+Copyright (C) 2006 \- 2016 Goteborg Bit Factory.
+
+Clog is distributed under the MIT license. See
+http://www.opensource.org/licenses/mit-license.php for more information.
+
+.SH SEE ALSO
+For more information, see:
+
+.TP
+The official site at
+<http://tasktools.org/clog.html>
+
+.TP
+The official code repository at
+<https://git.tasktools.org/scm/ut/clog.git>
+
+.TP
+You can contact the project by emailing
+<support@taskwarrior.org>
+
+.SH REPORTING BUGS
+.TP
+Bugs in Taskwarrior may be reported to the issue-tracker at
+<https://bug.tasktools.org/>
+
