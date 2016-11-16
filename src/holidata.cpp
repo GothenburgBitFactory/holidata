@@ -25,93 +25,76 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 #include <cmake.h>
+#include <Args.h>
 #include <iostream>
-#include <unistd.h>
-#include <sys/types.h>
-#include <pwd.h>
 
 ////////////////////////////////////////////////////////////////////////////////
-int main (int argc, char** argv)
+int main (int argc, const char** argv)
 {
   int status = 0;
 
   try
   {
-    // Locate $HOME.
-    struct passwd* pw = getpwuid (getuid ());
-    if (!pw)
-      throw std::string ("Could not determine the home directory.");
-
-    std::string rcFile = pw->pw_dir;
-    rcFile += "/.holidatarc";
-
     // Process arguments.
-    for (int i = 1; i < argc; ++i)
+    Args args;
+    args.addOption ("h",       false);
+    args.addOption ("help",    false);
+    args.addOption ("v",       false);
+    args.addOption ("version", false);
+    args.scan (argc, argv);
+
+    if (args.getOption ("h") ||
+        args.getOption ("help"))
     {
-      if (! strcmp (argv[i], "-h") ||
-          ! strcmp (argv[i], "--help"))
-      {
-        std::cout << '\n'
-                  << "Usage: holidata [<options>]\n"
-                  << '\n'
-                  << "  -h|--help       Show this usage\n"
-                  << "  -v|--version    Show this version\n"
-                  << "  -f|--file       Override default ~/.holidatarc\n"
-                  << '\n';
-        return status;
-      }
-
-      else if (! strcmp (argv[i], "-v") ||
-               ! strcmp (argv[i], "--version"))
-      {
-        std::cout << "\n"
-                  << PACKAGE_STRING
-                  << " built for "
-#if defined (DARWIN)
-                  << "Darwin"
-#elif defined (SOLARIS)
-                  << "Solaris"
-#elif defined (CYGWIN)
-                  << "Cygwin"
-#elif defined (OPENBSD)
-                  << "OpenBSD"
-#elif defined (FREEBSD)
-                  << "FreeBSD"
-#elif defined (NETBSD)
-                  << "NetBSD"
-#elif defined (LINUX)
-                  << "Linux"
-#elif defined (KFREEBSD)
-                  << "GNU/kFreeBSD"
-#elif defined (GNUHURD)
-                  << "GNU/Hurd"
-#else
-                  << "Unknown"
-#endif
-                  << "\n"
-                  << "Copyright (C) 2010 - 2016 Göteborg Bit Factory\n"
-                  << "\n"
-                  << "Clog may be copied only under the terms of the MIT "
-                     "license, which may be found in the source kit.\n"
-                  << "\n"
-                  << "Documentation for clog can be found using 'man clog' "
-                     "or at http://tasktools.org/projects/clog.html\n"
-                  << "\n";
-        return status;
-      }
-
-      else if (argc > i + 1 &&
-               (! strcmp (argv[i], "-f") ||
-                ! strcmp (argv[i], "--file")))
-      {
-        rcFile = argv[++i];
-      }
-
-      else
-      {
-        // TODO Positionals.
-      }
+      std::cout << '\n'
+                << "Usage: holidata [<options>]\n"
+                << '\n'
+                << "  -h|--help       Show this usage\n"
+                << "  -v|--version    Show this version\n"
+                << '\n';
+      return status;
     }
+
+    else if (args.getOption ("v") ||
+             args.getOption ("version"))
+    {
+      std::cout << "\n"
+                << PACKAGE_STRING
+                << " built for "
+#if defined (DARWIN)
+                << "Darwin"
+#elif defined (SOLARIS)
+                << "Solaris"
+#elif defined (CYGWIN)
+                << "Cygwin"
+#elif defined (OPENBSD)
+                << "OpenBSD"
+#elif defined (FREEBSD)
+                << "FreeBSD"
+#elif defined (NETBSD)
+                << "NetBSD"
+#elif defined (LINUX)
+                << "Linux"
+#elif defined (KFREEBSD)
+                << "GNU/kFreeBSD"
+#elif defined (GNUHURD)
+                << "GNU/Hurd"
+#else
+                << "Unknown"
+#endif
+                << "\n"
+                << "Copyright (C) 2010 - 2016 Göteborg Bit Factory\n"
+                << "\n"
+                << "Clog may be copied only under the terms of the MIT "
+                   "license, which may be found in the source kit.\n"
+                << "\n"
+                << "Documentation for clog can be found using 'man clog' "
+                   "or at http://tasktools.org/projects/clog.html\n"
+                << "\n";
+      return status;
+    }
+
+    // TODO Do something with positionals.
   }
 
   catch (std::string& error)
