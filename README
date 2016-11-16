@@ -1,5 +1,27 @@
 What is holidata?
 =================
 
+Holidata is a utility for algorithmically producing holidays for a given locale
+and year. This requires date calculations and a syntax for defining the formula
+for a holiday.
+
+Formula
+-------
+
+What is needed to calculate holidays?  Here are the necessary elements:
+
+  - Determination of Easter Sunday
+  - Add/subtract a fixed number of days to a date
+  - Project forwards to the next Monday
+  - Project backwards to the previous Friday
+  - Determine 'first/last/Nth X in Y' dates
+
+Given the above, a formula can be written to define each holiday.
+
+
+Formula Syntax
+--------------
+
+
 
 ---
