@@ -15,6 +15,7 @@ What is needed to calculate holidays?  Here are the necessary elements:
   - Project forwards to the next Monday
   - Project backwards to the previous Friday
   - Determine 'first/last/Nth X in Y' dates
+  - Some metadata regarding the type of holiday
 
 Given the above, a formula can be written to define each holiday.
 
