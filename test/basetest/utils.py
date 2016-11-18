@@ -41,19 +41,19 @@ DEFAULT_EXTENSION_PATH = os.path.abspath(
 )
 
 
-# Environment flags to control skipping of clog tests
-CLOG_SKIP = os.environ.get("CLOG_SKIP", False)
+# Environment flags to control skipping of holidata tests
+HOLIDATA_SKIP = os.environ.get("HOLIDATA_SKIP", False)
 # Environment flags to control use of PATH or in-tree binaries
-CLOG_USE_PATH = os.environ.get("CLOG_USE_PATH", False)
+HOLIDATA_USE_PATH = os.environ.get("HOLIDATA_USE_PATH", False)
 
 UUID_REGEXP = ("[0-9A-Fa-f]{8}-" + ("[0-9A-Fa-f]{4}-" * 3) + "[0-9A-Fa-f]{12}")
 
 
-def clog_binary_location(cmd="clog"):
+def holidata_binary_location(cmd="holidata"):
     """ ../src/ is used by default.
     """
     return os.path.join(BIN_PREFIX, cmd)
-    return binary_location(cmd, CLOG_USE_PATH)
+    return binary_location(cmd, HOLIDATA_USE_PATH)
 
 
 def binary_location(cmd, USE_PATH=False):
