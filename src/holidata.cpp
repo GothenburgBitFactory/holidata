@@ -85,11 +85,11 @@ int main (int argc, const char** argv)
                 << "\n"
                 << "Copyright (C) 2010 - 2016 Göteborg Bit Factory\n"
                 << "\n"
-                << "Clog may be copied only under the terms of the MIT "
+                << "Holidata may be copied only under the terms of the MIT "
                    "license, which may be found in the source kit.\n"
                 << "\n"
-                << "Documentation for clog can be found using 'man clog' "
-                   "or at http://tasktools.org/projects/clog.html\n"
+                << "Documentation for holidata can be found using 'man holidata' "
+                   "or at http://tasktools.org/projects/holidata.html\n"
                 << "\n";
       return status;
     }
