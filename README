@@ -56,3 +56,63 @@ There is a funfair in my hometown which starts on the day before the 1st Saturda
 
 (August + 1 Saturday) - 1 day: Cranger Kirmes Start
 
+---
+
+From holidata.net.git/data/US.csv:
+
+  "en-CA", "",     "2016-02-08", "Family Day",                                                          "NV",  "3rd monday in Feb."
+
+  "el-GR", "",     "2012-01-01", "Πρωτοχρονιά",                                                         "NF",  "New year's eve"
+  "el-GR", "",     "2012-01-06", "Θεοφάνεια",                                                           "NRF", "Epiphany"
+  "el-GR", "",     "2012-02-28", "Καθαρά Δευτέρα",                                                      "NRV", "Beginning of 7th week before Orthodoc Easter Sunday"
+  "el-GR", "",     "2012-03-25", "Ευαγγελισμός της Θεοτόκου και Εθνική Ημέρα Ανεξαρτησίας της Ελλάδας", "NF",  "Annunciation to the blessed Virgin Mary & Liberation Day"
+  "el-GR", "",     "2012-04-13", "Μεγάλη Παρασκευή",                                                    "NRV", "Eastern Easter - 2d"
+  "el-GR", "",     "2012-04-14", "Μεγάλο Σάββατο",                                                      "NRV", "Eastern Easter - 1d"
+  "el-GR", "",     "2012-04-15", "Πάσχα",                                                               "NRV", "Eastern Easter (same as ru-RU)"
+  "el-GR", "",     "2012-04-16", "Δευτέρα του Πάσχα",                                                   "NRV", "Eastern Easter + 1d"
+  "el-GR", "",     "2012-05-01", "Πρωτομαγιά",                                                          "NF",  "International worker's day"
+  "el-GR", "",     "2012-05-28", "Δευτέρα του Αγίου Πνεύματος",                                         "NRV", "7 weeks after Eastern Easter + 1d - Monday"
+  "el-GR", "",     "2012-08-15", "Κοίμηση της Θεοτόκου",                                                "NRF", "Assumption of Mary"
+  "el-GR", "",     "2012-10-28", "Ημέρα του ΌΧΙ",                                                       "NF",  "Ohi Day"
+  "el-GR", "",     "2012-12-25", "Χριστούγεννα",                                                        "NRF", "Christmas"
+  "el-GR", "",     "2012-12-26", "Επόμενη ημέρα Χριστουγέννων",                                         "NRF", "Second day of Christmas"
+
+---
+
+The holidata utility will return an ISO-8601 formatted date, ie YYYY-MM-DD.
+Any other details are application-specific, so the utility only needs to convert
+a holiday description to a date.
+
+The "NRF" (etc) holiday flags can also be partially emitted. The "R", "F" and
+"V" flags are sometimes known.  If emitted, they should be merged with
+expectations.
+
+---
+
+Syntax:
+
+The major forms to be supported are:
+
+1) Fixed, specified date:
+
+   <date>
+
+2) Specified date, with pre- and postponement to a monday:
+
+   <date> --> monday
+   monday <-- <date>
+
+3) Ѕpecified date, adjusted to the nearest week day (Saturday --> Friday,
+   Sunday --> Monday):
+
+   <date> --> nearest week day
+
+3) Date plus calculated offset:
+
+   <date> + <duration> + <duration>
+
+4) Counted days:
+
+   <Nth> <day> in <month>
+
+---
