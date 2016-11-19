@@ -26,3 +26,33 @@ Formula Syntax
 
 
 ---
+
+Notes from Dirk:
+
+Nearly all holiday dates in Germany fall into one of two categories, fixed or depending on easter. That makes them easy to describe. It will be much more difficult in other countries like Great Britain where holidays are shifted (postponed?) to the next weekday if they occur on weekends.
+
+So, I can think of a this:
+
+postpone = yes # Great Britain
+
+Depending on easter:
+easter -52 days: Old Maids' Day
+easter -48 days: Carnival Monday
+easter -46 days: Ash Wednesday
+easter  -2 days: Good Friday
+easter     days: Easter Sunday
+easter  +1 days: Easter Monday
+easter +39 days: Ascension Day (Father's Day)
+easter +49 days: Whit Sunday
+easter +50 days: Whit Monday
+easter +60 days: Feast of Corpus Christi
+
+June - 1 Friday: Last Friday in June
+July + 2 Monday: Second Monday in July
+
+If you put that in brackets, you could do maths.
+
+There is a funfair in my hometown which starts on the day before the 1st Saturday of August.
+
+(August + 1 Saturday) - 1 day: Cranger Kirmes Start
+
