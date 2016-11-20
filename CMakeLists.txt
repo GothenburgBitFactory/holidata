@@ -6,7 +6,7 @@ set (HAVE_CMAKE true)
 project (holidata)
 include (CXXSniffer)
 
-set (PROJECT_VERSION "1.4.0")
+set (PROJECT_VERSION "1.0.0")
 
 set (PACKAGE "${PROJECT_NAME}")
 set (VERSION "${PROJECT_VERSION}")
