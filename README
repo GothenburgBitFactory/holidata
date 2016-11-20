@@ -114,6 +114,7 @@ The major forms to be supported are:
 5) Counted days:
 
    a) <Nth> <day>     in <month>
+      last  <day>     in <month>
    b) <Nth> <weekday> in <month>
 
 To consider for 2)and 3):  <date-period>.
@@ -125,12 +126,12 @@ Could be modelled with 3.
 ---
 
 Non-religous variable holidays for 2016 based on the data in hd.net with
-  
+
   fgrep 2016 *csv|egrep -v 'F"|RV"|es-US'
 
 Excluded are all (non-religous and religous) fixed (F) and religous+variable (RV)
 holidays. Assuming all RV holidays are based on Easter. This can be wrong. But it
-is a beginning to relate these 110 holidays to the above mentioed 4 rules.
+is a beginning to relate these 110 holidays to the above mentioned 4 rules.
 
 All RV holidays based on Easter or Christmas are 4) date plus offset.
 
