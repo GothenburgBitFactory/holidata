@@ -167,9 +167,9 @@ CO.csv: "es-CO", "",    "2016-10-17", "Día de la Raza",                      "N
 CO.csv: "es-CO", "",    "2016-11-14", "Independencia de Cartagena",          "NV",  ""
 EC.csv: "es-EC", "",    "2016-02-08", "Carnaval",                            "NV",  ""
 EC.csv: "es-EC", "",    "2016-02-09", "Carnaval",                            "NV",  ""
-FI.csv: "fi-FI", "",    "2016-06-24", "Juhannusaatto",                       "NV",  "" # Midsummer Eve
-FI.csv: "fi-FI", "",    "2016-06-25", "Juhannuspäivä",                       "NV",  "" # Midsummer Day
-FI.csv: "fi-FI", "",    "2016-11-05", "Pyhäinpäivä",                         "NV",  "" # All Saints' Day
+FI.csv: "fi-FI", "",    "2016-06-24", "Juhannusaatto",                       "NV",  "Friday before Midsommardagen" # Midsummer Eve
+FI.csv: "fi-FI", "",    "2016-06-25", "Juhannuspäivä",                       "NV",  "Saturday 20-26 of june"       # Midsummer Day
+FI.csv: "fi-FI", "",    "2016-11-05", "Pyhäinpäivä",                         "NV",  "1st Saturday in November"     # All Saints' Day
 GB.csv: "en-GB", "",    "2016-05-02", "Early May Bank Holiday",              "NV",  ""
 GB.csv: "en-GB", "",    "2016-05-30", "Spring Bank Holiday",                 "NV",  ""
 GB.csv: "en-GB", "",    "2016-08-29", "August Bank Holiday",                 "NV",  ""
@@ -180,7 +180,7 @@ HK.csv: "en-HK", "",    "2016-02-10", "The third day of Lunar New Year",     "NV
 HK.csv: "en-HK", "",    "2016-03-26", "The day following Good Friday",       "NV",  ""
 HK.csv: "en-HK", "",    "2016-05-14", "The Birthday of the Buddha",          "NV",  ""
 HK.csv: "en-HK", "",    "2016-06-09", "Tuen Ng Festival",                    "NV",  ""
-HK.csv: "en-HK", "",    "2016-09-16", "The day following the Chinese Mid-Autumn Festival",                           "NV",  ""
+HK.csv: "en-HK", "",    "2016-09-16", "The day following the Chinese Mid-Autumn Festival", "NV",  ""
 HK.csv: "en-HK", "",    "2016-10-10", "Chung Yeung Festival",                "NV",  ""
 IE.csv: "ga-IE", "",    "2016-05-02", "Lá an Lucht Oibre",                   "NV",  ""
 IE.csv: "ga-IE", "",    "2016-06-06", "Lá Saoire i mí Mheitheamh",           "NV",  ""
@@ -235,9 +235,9 @@ MX.csv: "es-MX", "",    "2016-11-21", "Día de la Revolución",                "
 NZ.csv: "en-NZ", "",    "2016-01-04", "Day after New Years Day",             "NV",  ""
 NZ.csv: "en-NZ", "",    "2016-06-06", "Queen's Birthday",                    "NV",  ""
 NZ.csv: "en-NZ", "",    "2016-10-24", "Labour Day",                          "NV",  ""
-SE.csv: "sv-SE", "",    "2016-06-24", "Midsommarafton",                      "NV",  ""
-SE.csv: "sv-SE", "",    "2016-06-25", "Midsommardagen",                      "NV",  ""
-SE.csv: "sv-SE", "",    "2016-11-05", "Alla Helgons Dag",                    "NV",  ""
+SE.csv: "sv-SE", "",    "2016-06-24", "Midsommarafton",                      "NV",  "Friday before Midsommardagen"
+SE.csv: "sv-SE", "",    "2016-06-25", "Midsommardagen",                      "NV",  "Saturday 20-26 of june"
+SE.csv: "sv-SE", "",    "2016-11-05", "Alla Helgons Dag",                    "NV",  "1st Saturday in November"
 US.csv: "en-US", "",    "2016-01-18", "Birthday of Martin Luther King, Jr.",  "V",  ""
 US.csv: "en-US", "",    "2016-02-15", "Washington's Birthday",               "NV",  ""
 US.csv: "en-US", "MA",  "2016-04-18", "Patriots' Day",                       "NV",  ""
