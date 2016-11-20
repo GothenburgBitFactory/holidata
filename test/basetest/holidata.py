@@ -35,9 +35,6 @@ class Holidata(object):
         # Configuration of the isolated environment
         self._original_pwd = os.getcwd()
         self.datadir = tempfile.mkdtemp(prefix="holidata_")
-        self.holidatarc = os.path.join (self.datadir, 'holidatarc')
-
-        self._command.extend(['-f', self.holidatarc])
 
         # Ensure any instance is properly destroyed at session end
         atexit.register(lambda: self.destroy())
@@ -69,20 +66,6 @@ class Holidata(object):
         """
         # Copy all env variables to avoid clashing subprocess environments
         self.env = os.environ.copy()
-
-    def config(self, line):
-        """Add 'line' to self.holidatarc.
-        """
-        with open(self.holidatarc, "a") as f:
-            f.write(line + "\n")
-
-    @property
-    def holidatarc_content(self):
-        """
-        Returns the contents of the holidatarc file.
-        """
-        with open(self.holidatarc, "r") as f:
-            return f.readlines()
 
     @staticmethod
     def _split_string_args_if_string(args):
