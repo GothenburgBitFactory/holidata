@@ -44,8 +44,9 @@ int main (int argc, const char** argv)
     args.addOption ("version", false);
     args.scan (argc, argv);
 
-    if (args.getOption ("h") ||
-        args.getOption ("help"))
+    if (args.getOption ("h")    ||
+        args.getOption ("help") ||
+        args.getPositionalCount () == 0)
     {
       std::cout << '\n'
                 << "Usage: holidata [<options>] <phrase>\n"
