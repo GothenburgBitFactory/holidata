@@ -44,21 +44,8 @@ int main (int argc, const char** argv)
     args.addOption ("version", false);
     args.scan (argc, argv);
 
-    if (args.getOption ("h")    ||
-        args.getOption ("help") ||
-        args.getPositionalCount () == 0)
-    {
-      std::cout << '\n'
-                << "Usage: holidata [<options>] <phrase>\n"
-                << '\n'
-                << "  -h|--help       Show this usage\n"
-                << "  -v|--version    Show this version\n"
-                << '\n';
-      return status;
-    }
-
-    else if (args.getOption ("v") ||
-             args.getOption ("version"))
+    if (args.getOption ("v") ||
+       args.getOption ("version"))
     {
       std::cout << "\n"
                 << PACKAGE_STRING
@@ -93,6 +80,19 @@ int main (int argc, const char** argv)
                 << "Documentation for holidata can be found using 'man holidata' "
                    "or at http://tasktools.org/projects/holidata.html\n"
                 << "\n";
+      return status;
+    }
+
+    else if (args.getOption ("h")    ||
+             args.getOption ("help") ||
+             args.getPositionalCount () == 0)
+    {
+      std::cout << '\n'
+                << "Usage: holidata [<options>] <phrase>\n"
+                << '\n'
+                << "  -h|--help       Show this usage\n"
+                << "  -v|--version    Show this version\n"
+                << '\n';
       return status;
     }
 
