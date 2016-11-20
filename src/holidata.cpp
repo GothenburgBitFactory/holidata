@@ -26,6 +26,7 @@
 
 #include <cmake.h>
 #include <Args.h>
+#include <Datetime.h>
 #include <iostream>
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -47,7 +48,7 @@ int main (int argc, const char** argv)
         args.getOption ("help"))
     {
       std::cout << '\n'
-                << "Usage: holidata [<options>]\n"
+                << "Usage: holidata [<options>] <phrase>\n"
                 << '\n'
                 << "  -h|--help       Show this usage\n"
                 << "  -v|--version    Show this version\n"
@@ -94,7 +95,18 @@ int main (int argc, const char** argv)
       return status;
     }
 
-    // TODO Do something with positionals.
+    // Combine the positionals and parse.
+    std::string phrase;
+    for (auto i = 0; i < args.getPositionalCount (); i++)
+    {
+      if (phrase != "")
+        phrase += ' ';
+
+      phrase += args.getPositional (i);
+    }
+
+    Datetime d (phrase);
+    std::cout << d.toISOLocalExtended () << '\n';
   }
 
   catch (std::string& error)
