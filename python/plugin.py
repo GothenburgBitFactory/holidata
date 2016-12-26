@@ -2,6 +2,8 @@
 Provides base class for Country plugins.
 """
 
+import csv
+import io
 import json
 import re
 from utils import SmartDayArrow, easter, month_reference
@@ -161,3 +163,14 @@ class Country(object, metaclass=PluginMount):
     def to_json(self):
         export_data = [h.as_dict() for h in self.holidays]
         return json.dumps(export_data, ensure_ascii=False, sort_keys=True, indent=2)
+
+    def to_csv(self):
+        export_data = [h.as_dict() for h in self.holidays]
+        result = io.StringIO()
+
+        writer = csv.DictWriter(result, ["date","description","type","notes"],
+                                quoting=csv.QUOTE_ALL)
+        writer.writeheader()
+        writer.writerows(export_data)
+
+        return result.getvalue()

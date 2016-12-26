@@ -26,6 +26,6 @@ if __name__ == '__main__':
 
     if class_candidates:
         country = class_candidates[0](int(args['--year']))
-        print(country.to_json())
+        print(country.to_csv())
     else:
         sys.exit("No plugin fonud for locale: {}".format(args['--locale']))
