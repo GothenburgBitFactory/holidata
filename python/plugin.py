@@ -130,7 +130,8 @@ class Country(object, metaclass=PluginMount):
                                     first=m.group('last').strip() is '')
                         .shift_to_weekday(m.group('weekday'),
                                           order=int(m.group('order')),
-                                          reverse=m.group('last').strip() is 'last'
+                                          reverse=m.group('last').strip() == 'last',
+                                          including=True
                     ),
                     m.group('description'),
                     m.group('flags'),
