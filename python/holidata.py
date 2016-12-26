@@ -227,17 +227,11 @@ class Slovakia(Country):
     12-24: [NRF] Štedrý deň
     12.25: [NRF] Prvý sviatok vianočný
     12-26: [NRF] Druhý sviatok vianočný
+    1 days after Easter:  [NRV] Veľký piatok
+    2 days before Easter: [NRV] Veľkonočný pondelok
     """
 
     locale = "sk-SK"
-
-    def holiday_easter_friday(self, year):
-        friday = easter(year).shift_to_weekday('friday', reverse=True)
-        return Holiday(friday, u"Veľký piatok", "NRV")
-
-    def holiday_easter_monday(self, year):
-        monday = easter(year).shift_to_weekday('monday')
-        return Holiday(monday, u"Veľkonočný pondelok", "NRV")
 
 
 class USA(Country):
@@ -247,37 +241,16 @@ class USA(Country):
     11-11: [NF] Veterans Day
     11-24: [NV] Thanksgiving Day
     12-25: [NRF] Christmas Day
+    3. monday in January:    [V] Birthday of Martin Luther King, Jr.
+    3. monday in February:   [NV] Washington's Birthday
+    3. monday in April:      [NV] Patriot's day
+    1. last monday in May:   [NV] Memorial day
+    1. monday in September:  [NV] Labor Day
+    2. monday in October:    [NV] Columbus Day
+    4. thursday in November: [NV] Thanksgiving Day
     """
 
     locale = "en-US"
-
-    def holiday_martin_luther(self, year):
-        day = SmartDayArrow(year, 1, 1).shift_to_weekday('monday', order=3, including=True)
-        return Holiday(day, 'Birthday of Martin Luther King, Jr.', 'V')
-
-    def holiday_washington(self, year):
-        day = SmartDayArrow(year, 2, 1).shift_to_weekday('monday', order=3, including=True)
-        return Holiday(day, 'Washington\'s Birthday', 'NV')
-
-    def holiday_patriots(self, year):
-        day = SmartDayArrow(year, 4, 1).shift_to_weekday('monday', order=3, including=True)
-        return Holiday(day, 'Patriots\'s Day', 'NV')
-
-    def holiday_memorial(self, year):
-        day = SmartDayArrow(year, 5, 31).shift_to_weekday('monday', order=1, including=True, reverse=True)
-        return Holiday(day, 'Memorial Day', 'NV')
-
-    def holiday_labour(self, year):
-        day = SmartDayArrow(year, 9, 1).shift_to_weekday('monday', order=1, including=True)
-        return Holiday(day, 'Labor Day', 'NV')
-
-    def holiday_columbus(self, year):
-        day = SmartDayArrow(year, 10, 1).shift_to_weekday('monday', order=2, including=True)
-        return Holiday(day, 'Columbus Day', 'NV')
-
-    def holiday_thanksgiving(self, year):
-        day = SmartDayArrow(year, 11, 1).shift_to_weekday('thursday', order=4, including=True)
-        return Holiday(day, 'Thanksgiving Day', 'NV')
 
 
 if __name__ == '__main__':
