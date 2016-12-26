@@ -174,10 +174,12 @@ class Country(object, metaclass=PluginMount):
 
     def to_json(self):
         export_data = [h.as_dict() for h in self.holidays]
+        export_data.sort(key=lambda x: x['date'])
         return json.dumps(export_data, ensure_ascii=False, sort_keys=True, indent=2)
 
     def to_csv(self):
         export_data = [h.as_dict() for h in self.holidays]
+        export_data.sort(key=lambda x: x['date'])
         result = io.StringIO()
 
         writer = csv.DictWriter(result,
