@@ -82,6 +82,19 @@ def easter(year):
     pfmd = paschal_full_moon_date(year)
     return pfmd.shift_to_weekday('sunday')
 
+def month_reference(year, month, first=True):
+    months = ['january', 'february', 'march', 'april', 'may', 'june',
+              'july', 'august', 'september', 'october', 'november', 'december']
+    month = months.index(month.lower()) + 1
+
+    if first:
+        return SmartDayArrow(year, month, 1)
+    else:
+        return SmartDayArrow(
+            year if month != 12 else year+1,
+            month+1 if month != 12 else 1,
+            1).shift(days=-1)
+
 
 class PluginMount(type):
 
@@ -109,8 +122,20 @@ class Country(object, metaclass=PluginMount):
 
     @property
     def holidays(self):
-        regex = re.compile(
+        fixed_regex = re.compile(
             r'^\s*(?P<month>\d\d)-(?P<day>\d\d): '
+             '\[(?P<flags>[A-Z]*)\] (?P<description>.*)$',
+            re.MULTILINE | re.UNICODE
+        )
+
+        nth_weekday_regex = re.compile(
+            r'^\s*(?P<order>\d+)\.(?P<last> last | )(?P<weekday>[a-z]+) in (?P<month>[a-zA-Z]+):\s+'
+             '\[(?P<flags>[A-Z]*)\] (?P<description>.*)$',
+            re.MULTILINE | re.UNICODE
+        )
+
+        easter_shift_regex = re.compile(
+            r'^\s*(?P<days>\d+) day(s)? (?P<direction>before|after) Easter: \s+'
              '\[(?P<flags>[A-Z]*)\] (?P<description>.*)$',
             re.MULTILINE | re.UNICODE
         )
@@ -118,14 +143,40 @@ class Country(object, metaclass=PluginMount):
         # fixed
         yield from [
             Holiday(
-                Arrow(self.year, int(m.group('month')), int(m.group('day'))),
+                SmartDayArrow(self.year, int(m.group('month')), int(m.group('day'))),
                 m.group('description'),
                 m.group('flags')
             )
-            for m in regex.finditer(self.__doc__)
+            for m in fixed_regex.finditer(self.__doc__)
         ]
 
-        # dynamic
+        # reference points to nth day in a month
+        yield from [
+            Holiday(
+                month_reference(self.year, m.group('month'), first=m.group('last').strip() is '')
+                    .shift_to_weekday(m.group('weekday'),
+                                      order=int(m.group('order')),
+                                      reverse=m.group('last').strip() is 'last'
+                ),
+                m.group('description'),
+                m.group('flags')
+            )
+            for m in nth_weekday_regex.finditer(self.__doc__)
+        ]
+
+        # easter reference points
+        yield from [
+            Holiday(
+                easter(self.year).shift(
+                    days=int(m.group('days')) * (1 if m.group('direction') == 'after' else -1),
+                ),
+                m.group('description'),
+                m.group('flags')
+            )
+            for m in easter_shift_regex.finditer(self.__doc__)
+        ]
+
+        # method dynamic
         yield from [
             getattr(self, method)(self.year)
             for method in dir(self)
