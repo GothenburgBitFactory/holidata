@@ -26,6 +26,10 @@ from docopt import docopt
 class SmartDayArrow(Arrow):
 
     def weekday(self):
+        """
+        Provide a more readable weekday representation.
+        """
+
         weekdays = [
             'monday',
             'tuesday',
