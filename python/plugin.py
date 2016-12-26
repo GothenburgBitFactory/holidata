@@ -26,11 +26,19 @@ class Holiday(object):
     A sheer container for one holiday.
     """
 
-    def __init__(self, date, description, flags="", notes=""):
+    def __init__(self, date, description, flags="", notes="", postpone=False):
         self.date = date
         self.description = description
         self.flags = flags
         self.notes = notes
+
+        if postpone:
+            self.postpone()
+
+    def postpone(self):
+        if self.date.weekday() in ['saturday', 'sunday']:
+            self.date = self.date.shift_to_weekday('monday',
+                                                   including=True)
 
     def as_dict(self):
         return {
@@ -48,6 +56,8 @@ class Country(object, metaclass=PluginMount):
 
     locale = None
     region = None
+
+    postpone = False
 
     def __init__(self, year):
         if self.locale is None:
@@ -95,7 +105,8 @@ class Country(object, metaclass=PluginMount):
                 yield Holiday(
                     SmartDayArrow(self.year, int(m.group('month')), int(m.group('day'))),
                     m.group('description'),
-                    m.group('flags')
+                    m.group('flags'),
+                    postpone=self.postpone
                 )
                 continue
 
@@ -110,7 +121,8 @@ class Country(object, metaclass=PluginMount):
                                           reverse=m.group('last').strip() is 'last'
                     ),
                     m.group('description'),
-                    m.group('flags')
+                    m.group('flags'),
+                    postpone=self.postpone
                 )
                 continue
 
@@ -123,18 +135,28 @@ class Country(object, metaclass=PluginMount):
                              (1 if m.group('direction') == 'after' else -1),
                     ),
                     m.group('description'),
-                    m.group('flags')
+                    m.group('flags'),
+                    postpone=self.postpone
                 )
                 continue
 
             print("Following line could not be processed: '{}'".format(line))
 
         # method dynamic
-        yield from [
-            getattr(self, method)(self.year)
+        dynamic_methods = [
+            getattr(self, method)
             for method in dir(self)
             if method.startswith('holiday_')
         ]
+
+        for method in dynamic_methods:
+            holiday = method(self.year)
+
+            # Handle postponing if the class attribute for postponing is set
+            if self.postpone:
+                holiday.postpone()
+
+            yield holiday
 
     def to_json(self):
         export_data = [h.as_dict() for h in self.holidays]

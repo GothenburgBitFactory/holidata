@@ -16,7 +16,6 @@ Dependencies:
 """
 
 import sys
-
 from docopt import docopt
 
 from countries import *
