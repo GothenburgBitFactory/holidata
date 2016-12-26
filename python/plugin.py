@@ -184,7 +184,8 @@ class Country(object, metaclass=PluginMount):
 
         writer = csv.DictWriter(result,
             ["locale", "region", "date", "description", "type", "notes"],
-            quoting=csv.QUOTE_ALL
+            quoting=csv.QUOTE_ALL,
+            lineterminator='\n'
         )
         writer.writeheader()
         writer.writerows(export_data)
