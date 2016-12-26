@@ -28,7 +28,10 @@ class Holiday(object):
     A sheer container for one holiday.
     """
 
-    def __init__(self, date, description, flags="", notes="", postpone=False):
+    def __init__(self, locale, region, date, description,
+                 flags="", notes="", postpone=False):
+        self.locale = locale
+        self.region = region
         self.date = date
         self.description = description
         self.flags = flags
@@ -44,6 +47,8 @@ class Holiday(object):
 
     def as_dict(self):
         return {
+            'locale': self.locale,
+            'region': self.region,
             'date': self.date.strftime('%Y-%m-%d'),
             'description': self.description,
             'type': self.flags,
@@ -66,6 +71,7 @@ class Country(object, metaclass=PluginMount):
             raise ValueError("Country {0} does not provide its locale"
                              .format(self.__class__.__name__))
 
+        self.region = self.region or ""
         self.year = year
 
 
@@ -105,6 +111,8 @@ class Country(object, metaclass=PluginMount):
             m = fixed_regex.search(line)
             if m is not None:
                 yield Holiday(
+                    self.locale,
+                    self.region,
                     SmartDayArrow(self.year, int(m.group('month')), int(m.group('day'))),
                     m.group('description'),
                     m.group('flags'),
@@ -116,6 +124,8 @@ class Country(object, metaclass=PluginMount):
             m = nth_weekday_regex.search(line)
             if m is not None:
                 yield Holiday(
+                    self.locale,
+                    self.region,
                     month_reference(self.year, m.group('month'),
                                     first=m.group('last').strip() is '')
                         .shift_to_weekday(m.group('weekday'),
@@ -132,6 +142,8 @@ class Country(object, metaclass=PluginMount):
             m = easter_shift_regex.search(line)
             if m is not None:
                 yield Holiday(
+                    self.locale,
+                    self.region,
                     easter(self.year).shift(
                         days=int(m.group('days')) *
                              (1 if m.group('direction') == 'after' else -1),
@@ -168,8 +180,10 @@ class Country(object, metaclass=PluginMount):
         export_data = [h.as_dict() for h in self.holidays]
         result = io.StringIO()
 
-        writer = csv.DictWriter(result, ["date","description","type","notes"],
-                                quoting=csv.QUOTE_ALL)
+        writer = csv.DictWriter(result,
+            ["locale", "region", "date", "description", "type", "notes"],
+            quoting=csv.QUOTE_ALL
+        )
         writer.writeheader()
         writer.writerows(export_data)
 
