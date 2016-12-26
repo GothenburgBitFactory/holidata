@@ -27,7 +27,6 @@ class USA(Country):
     01-01: [NF] New Year's Day
     07-04: [NF] Independence Day
     11-11: [NF] Veterans Day
-    11-24: [NV] Thanksgiving Day
     12-25: [NRF] Christmas Day
     3. monday in January:    [V] Birthday of Martin Luther King, Jr.
     3. monday in February:   [NV] Washington's Birthday
