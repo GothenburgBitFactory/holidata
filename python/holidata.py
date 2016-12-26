@@ -55,7 +55,7 @@ class SmartDayArrow(Arrow):
                 order = order - 1
 
         while order > 0:
-            result = result.replace(days=1 if not reverse else -1)
+            result = result.shift(days=1 if not reverse else -1)
             if day == result.weekday():
                 order = order - 1
 
@@ -76,7 +76,7 @@ def paschal_full_moon_date(year):
     if year % 19 == 8:
         PFMd_shift += 30
 
-    return pfmd.replace(days=PFMd_shift)
+    return pfmd.shift(days=PFMd_shift)
 
 def easter(year):
     pfmd = paschal_full_moon_date(year)
