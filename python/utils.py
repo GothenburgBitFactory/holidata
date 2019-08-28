@@ -68,13 +68,28 @@ def paschal_full_moon_date(year):
 
     return pfmd.shift(days=PFMd_shift)
 
+
 def easter(year):
     pfmd = paschal_full_moon_date(year)
     return pfmd.shift_to_weekday('sunday')
 
+
 def month_reference(year, month, first=True):
-    months = ['january', 'february', 'march', 'april', 'may', 'june',
-              'july', 'august', 'september', 'october', 'november', 'december']
+    months = [
+        'january',
+        'february',
+        'march',
+        'april',
+        'may',
+        'june',
+        'july',
+        'august',
+        'september',
+        'october',
+        'november',
+        'december',
+    ]
+
     month = months.index(month.lower()) + 1
 
     if first:

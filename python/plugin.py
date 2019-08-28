@@ -8,6 +8,7 @@ import json
 import re
 from utils import SmartDayArrow, easter, month_reference
 
+
 class PluginMount(type):
     """
     Metaclass that makes a given class plugin mount (all classes inheriting
@@ -28,8 +29,7 @@ class Holiday(object):
     A sheer container for one holiday.
     """
 
-    def __init__(self, locale, region, date, description,
-                 flags="", notes="", postpone=False):
+    def __init__(self, locale, region, date, description, flags="", notes="", postpone=False):
         self.locale = locale
         self.region = region
         self.date = date
@@ -42,8 +42,7 @@ class Holiday(object):
 
     def postpone(self):
         if self.date.weekday() in ['saturday', 'sunday']:
-            self.date = self.date.shift_to_weekday('monday',
-                                                   including=True)
+            self.date = self.date.shift_to_weekday('monday', including=True)
 
     def as_dict(self):
         return {
@@ -68,12 +67,10 @@ class Country(object, metaclass=PluginMount):
 
     def __init__(self, year):
         if self.locale is None:
-            raise ValueError("Country {0} does not provide its locale"
-                             .format(self.__class__.__name__))
+            raise ValueError("Country {0} does not provide its locale".format(self.__class__.__name__))
 
         self.region = self.region or ""
         self.year = year
-
 
     @property
     def holidays(self):
@@ -90,20 +87,20 @@ class Country(object, metaclass=PluginMount):
 
             fixed_regex = re.compile(
                 r'^\s*(?P<month>\d\d)-(?P<day>\d\d): '
-                 '\[(?P<flags>[A-Z]*)\] (?P<description>.*)$',
+                r'\[(?P<flags>[A-Z]*)\] (?P<description>.*)$',
                 re.UNICODE
             )
 
             nth_weekday_regex = re.compile(
                 r'^\s*(?P<order>\d+)\.(?P<last> last | )'
-                 '(?P<weekday>[a-z]+) in (?P<month>[a-zA-Z]+):\s+'
-                 '\[(?P<flags>[A-Z]*)\] (?P<description>.*)$',
+                r'(?P<weekday>[a-z]+) in (?P<month>[a-zA-Z]+):\s+'
+                r'\[(?P<flags>[A-Z]*)\] (?P<description>.*)$',
                 re.UNICODE
             )
 
             easter_shift_regex = re.compile(
                 r'^\s*(?P<days>\d+) day(s)? (?P<direction>(before|after)) Easter:\s+'
-                 '\[(?P<flags>[A-Z]*)\] (?P<description>.*)$',
+                r'\[(?P<flags>[A-Z]*)\] (?P<description>.*)$',
                 re.UNICODE
             )
 
@@ -126,13 +123,11 @@ class Country(object, metaclass=PluginMount):
                 yield Holiday(
                     self.locale,
                     self.region,
-                    month_reference(self.year, m.group('month'),
-                                    first=m.group('last').strip() is '')
+                    month_reference(self.year, m.group('month'), first=m.group('last').strip() is '')
                         .shift_to_weekday(m.group('weekday'),
                                           order=int(m.group('order')),
                                           reverse=m.group('last').strip() == 'last',
-                                          including=True
-                    ),
+                                          including=True),
                     m.group('description'),
                     m.group('flags'),
                     postpone=self.postpone
@@ -184,10 +179,9 @@ class Country(object, metaclass=PluginMount):
         result = io.StringIO()
 
         writer = csv.DictWriter(result,
-            ["locale", "region", "date", "description", "type", "notes"],
-            quoting=csv.QUOTE_ALL,
-            lineterminator='\n'
-        )
+                                ["locale", "region", "date", "description", "type", "notes"],
+                                quoting=csv.QUOTE_ALL,
+                                lineterminator='\n')
         writer.writeheader()
         writer.writerows(export_data)
 
