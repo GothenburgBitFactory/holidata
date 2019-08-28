@@ -28,4 +28,4 @@ if __name__ == '__main__':
         country = class_candidates[0](int(args['--year']))
         print(country.to_csv())
     else:
-        sys.exit("No plugin fonud for locale: {}".format(args['--locale']))
+        sys.exit("No plugin found for locale: {}".format(args['--locale']))

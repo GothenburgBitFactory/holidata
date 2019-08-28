@@ -1,5 +1,6 @@
 from plugin import Country
 
+
 class Croatia(Country):
     u"""
     01-01: [NF] Nova Godina
@@ -18,6 +19,7 @@ class Croatia(Country):
     """
 
     locale = "hr-HR"
+
 
 class Slovakia(Country):
     u"""
