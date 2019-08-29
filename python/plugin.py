@@ -61,7 +61,6 @@ class Country(object, metaclass=PluginMount):
     """
 
     locale = None
-    region = None
 
     postpone = False
 
@@ -69,7 +68,6 @@ class Country(object, metaclass=PluginMount):
         if self.locale is None:
             raise ValueError("Country {0} does not provide its locale".format(self.__class__.__name__))
 
-        self.region = self.region or ""
         self.year = year
 
     @property
@@ -87,6 +85,7 @@ class Country(object, metaclass=PluginMount):
 
             fixed_regex = re.compile(
                 r'^\s*(?P<month>\d\d)-(?P<day>\d\d): '
+                r'(\[(?P<regions>[A-Z,]+)\]\s+)?'
                 r'\[(?P<flags>[A-Z]*)\] (?P<description>.*)$',
                 re.UNICODE
             )
@@ -94,12 +93,14 @@ class Country(object, metaclass=PluginMount):
             nth_weekday_regex = re.compile(
                 r'^\s*(?P<order>\d+)\.(?P<last> last | )'
                 r'(?P<weekday>[a-z]+) in (?P<month>[a-zA-Z]+):\s+'
+                r'(\[(?P<regions>[A-Z,]+)\]\s+)?'
                 r'\[(?P<flags>[A-Z]*)\] (?P<description>.*)$',
                 re.UNICODE
             )
 
             easter_shift_regex = re.compile(
                 r'^\s*(?P<days>\d+) day(s)? (?P<direction>(before|after)) Easter:\s+'
+                r'(\[(?P<regions>[A-Z,]+)\]\s+)?'
                 r'\[(?P<flags>[A-Z]*)\] (?P<description>.*)$',
                 re.UNICODE
             )
@@ -107,47 +108,56 @@ class Country(object, metaclass=PluginMount):
             # fixed
             m = fixed_regex.search(line)
             if m is not None:
-                yield Holiday(
-                    self.locale,
-                    self.region,
-                    SmartDayArrow(self.year, int(m.group('month')), int(m.group('day'))),
-                    m.group('description'),
-                    m.group('flags'),
-                    postpone=self.postpone
-                )
+                regions = m.group('regions').split(',') if m.group('regions') is not None else [""]
+
+                for region in regions:
+                    yield Holiday(
+                        self.locale,
+                        region,
+                        SmartDayArrow(self.year, int(m.group('month')), int(m.group('day'))),
+                        m.group('description'),
+                        m.group('flags'),
+                        postpone=self.postpone
+                    )
                 continue
 
             # reference points to nth day in a month
             m = nth_weekday_regex.search(line)
             if m is not None:
-                yield Holiday(
-                    self.locale,
-                    self.region,
-                    month_reference(self.year, m.group('month'), first=m.group('last').strip() is '')
-                        .shift_to_weekday(m.group('weekday'),
-                                          order=int(m.group('order')),
-                                          reverse=m.group('last').strip() == 'last',
-                                          including=True),
-                    m.group('description'),
-                    m.group('flags'),
-                    postpone=self.postpone
-                )
+                regions = m.group('regions').split(',') if m.group('regions') is not None else [""]
+
+                for region in regions:
+                    yield Holiday(
+                        self.locale,
+                        region,
+                        month_reference(self.year, m.group('month'), first=m.group('last').strip() is '')
+                            .shift_to_weekday(m.group('weekday'),
+                                              order=int(m.group('order')),
+                                              reverse=m.group('last').strip() == 'last',
+                                              including=True),
+                        m.group('description'),
+                        m.group('flags'),
+                        postpone=self.postpone
+                    )
                 continue
 
             # easter reference points
             m = easter_shift_regex.search(line)
             if m is not None:
-                yield Holiday(
-                    self.locale,
-                    self.region,
-                    easter(self.year).shift(
-                        days=int(m.group('days')) *
-                             (1 if m.group('direction') == 'after' else -1),
-                    ),
-                    m.group('description'),
-                    m.group('flags'),
-                    postpone=self.postpone
-                )
+                regions = m.group('regions').split(',') if m.group('regions') is not None else [""]
+
+                for region in regions:
+                    yield Holiday(
+                        self.locale,
+                        region,
+                        easter(self.year).shift(
+                            days=int(m.group('days')) *
+                                 (1 if m.group('direction') == 'after' else -1),
+                        ),
+                        m.group('description'),
+                        m.group('flags'),
+                        postpone=self.postpone
+                    )
                 continue
 
             print("Following line could not be processed: '{}'".format(line))
