@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 """
@@ -17,20 +17,20 @@ Dependencies:
 """
 
 import sys
-from docopt import docopt
 
-from countries import *
+from docopt import docopt
+from holidays import *
 
 if __name__ == '__main__':
     args = docopt(__doc__)
-    class_candidates = [cls for cls in Country.plugins if cls.locale == args['--locale']]
+    class_candidates = [cls for cls in Locale.plugins if cls.locale == args['--locale']]
 
     if class_candidates:
-        country = class_candidates[0](int(args['--year']))
+        locale = class_candidates[0](int(args['--year']))
         if args['--output'] == 'csv' or args['--output'] is None:
-            print(country.to_csv())
+            print(locale.to_csv())
         elif args['--output'] == 'json':
-            print(country.to_json())
+            print(locale.to_json())
         else:
             sys.exit("Unsupported output format: {}".format(args['--output']))
     else:
