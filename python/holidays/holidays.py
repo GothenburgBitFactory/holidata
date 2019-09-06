@@ -30,33 +30,33 @@ class Locale(object, metaclass=PluginMount):
         self.__doc__ and also as given by the dynamic self.holiday_* methods.
         """
 
+        fixed_regex = re.compile(
+            r'^\s*(?P<month>\d\d)-(?P<day>\d\d): '
+            r'(\[(?P<regions>[^]]+)\]\s+)?'
+            r'\[(?P<flags>[A-Z]*)\] (?P<description>.*)$',
+            re.UNICODE
+        )
+
+        nth_weekday_regex = re.compile(
+            r'^\s*(?P<order>\d+)\.(?P<last> last | )'
+            r'(?P<weekday>[a-z]+) in (?P<month>[a-zA-Z]+):\s+'
+            r'(\[(?P<regions>[^]]+)\]\s+)?'
+            r'\[(?P<flags>[A-Z]*)\] (?P<description>.*)$',
+            re.UNICODE
+        )
+
+        easter_shift_regex = re.compile(
+            r'^\s*(?P<days>\d+) day(s)? (?P<direction>(before|after)) Easter:\s+'
+            r'(\[(?P<regions>[^]]+)\]\s+)?'
+            r'\[(?P<flags>[A-Z]*)\] (?P<description>.*)$',
+            re.UNICODE
+        )
+
         # First process lines in the __doc__
         for line in self.__doc__.splitlines():
             # Skip empty lines
             if not line.strip():
                 continue
-
-            fixed_regex = re.compile(
-                r'^\s*(?P<month>\d\d)-(?P<day>\d\d): '
-                r'(\[(?P<regions>[^]]+)\]\s+)?'
-                r'\[(?P<flags>[A-Z]*)\] (?P<description>.*)$',
-                re.UNICODE
-            )
-
-            nth_weekday_regex = re.compile(
-                r'^\s*(?P<order>\d+)\.(?P<last> last | )'
-                r'(?P<weekday>[a-z]+) in (?P<month>[a-zA-Z]+):\s+'
-                r'(\[(?P<regions>[^]]+)\]\s+)?'
-                r'\[(?P<flags>[A-Z]*)\] (?P<description>.*)$',
-                re.UNICODE
-            )
-
-            easter_shift_regex = re.compile(
-                r'^\s*(?P<days>\d+) day(s)? (?P<direction>(before|after)) Easter:\s+'
-                r'(\[(?P<regions>[^]]+)\]\s+)?'
-                r'\[(?P<flags>[A-Z]*)\] (?P<description>.*)$',
-                re.UNICODE
-            )
 
             # fixed
             m = fixed_regex.search(line)
