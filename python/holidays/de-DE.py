@@ -12,7 +12,7 @@ class de_DE(Locale):
     08-15: [SL] [NRF] Mariä Himmelfahrt
     10-03: [NRF] Tag der Deutschen Einheit
     10-31: [BB,MV,SN,ST,TH] [NRF] Reformationstag
-    11-01: [BW,BY,NRW,RP,SL] [NRF] Allerheiligen
+    11-01: [BW,BY,NW,RP,SL] [NRF] Allerheiligen
     12-24: [NRF] Heilig Abend
     12-25: [NRF] Weihnachtstag
     12-26: [NRF] Zweiter Weihnachtstag
@@ -23,7 +23,7 @@ class de_DE(Locale):
     39 days after Easter: [NRV] Christi Himmelfahrt
     49 days after Easter: [NRV] Pfingstsonntag
     50 days after Easter: [NRV] Pfingstmontag
-    60 days after Easter: [BW,BY,HE,NRW,RP,SL] [NRV] Fronleichnam
+    60 days after Easter: [BW,BY,HE,NW,RP,SL] [NRV] Fronleichnam
     """
 
     locale = "de-DE"
