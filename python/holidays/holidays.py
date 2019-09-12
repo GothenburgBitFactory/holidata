@@ -90,7 +90,8 @@ class Locale(object, metaclass=PluginMount):
                 return dict(regions=(m.group('regions').split(',') if m.group('regions') is not None else [""]),
                             date=create_date_from(m),
                             description=m.group('description'),
-                            flags=m.group('flags'), notes="")
+                            flags=m.group('flags'),
+                            notes="")
 
         return None
 
