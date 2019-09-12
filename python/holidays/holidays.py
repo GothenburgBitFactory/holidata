@@ -68,13 +68,14 @@ class Locale(object, metaclass=PluginMount):
         ]
 
         for method in dynamic_methods:
-            holiday = method(self.year)
+            holidays = method(self.year)
 
-            # Handle postponing if the class attribute for postponing is set
-            if self.postpone:
-                holiday.postpone()
+            for holiday in holidays:
+                # Handle postponing if the class attribute for postponing is set
+                if self.postpone:
+                    holiday.postpone()
 
-            yield holiday
+                yield holiday
 
     def _parse_holidata(self, line):
         function_map = [
@@ -112,7 +113,7 @@ class Locale(object, metaclass=PluginMount):
     def to_json(self):
         export_data = [h.as_dict() for h in self.holidays]
         export_data.sort(key=lambda x: x['date'])
-        return json.dumps(export_data, ensure_ascii=False, sort_keys=True, indent=2)
+        return json.dumps(export_data, ensure_ascii=False, sort_keys=False, indent=None, separators=(',', ':'))
 
     def to_csv(self):
         export_data = [h.as_dict() for h in self.holidays]
