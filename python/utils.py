@@ -31,7 +31,7 @@ class SmartDayArrow(Arrow):
     def shift_to_weekday(self, day, order=1, reverse=False, including=False):
         """
         Shifts to {order}. weekday in the given direction, i.e.
-        2. monday before this date woud be:
+        2. monday before this date would be:
 
         >>> arrow.shift_to_weekday('monday', order=2, reverse=True)
         """
