@@ -10,7 +10,7 @@ Usage:
 Options:
     --year=<value>       Specify which year to generate data for.
     --locale=<value>     Specify the locale for which data should be generated.
-    --output=(csv|json)  Specify the output format (default: csv).
+    --output=(csv|json)  Specify the output format [default: csv].
 
 Dependencies:
     pip3 install arrow docopt
