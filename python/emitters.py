@@ -1,3 +1,7 @@
+import csv
+import io
+import json
+
 from plugin import PluginMount
 
 
@@ -10,3 +14,30 @@ class Emitter(object, metaclass=PluginMount):
 
     def output(self, locale):
         pass
+
+
+class JsonEmitter(Emitter):
+    type = "json"
+
+    def output(self, locale):
+        export_data = [h.as_dict() for h in locale.holidays]
+        export_data.sort(key=lambda x: x['date'])
+        return json.dumps(export_data, ensure_ascii=False, sort_keys=False, indent=None, separators=(',', ':'))
+
+
+class CsvEmitter(Emitter):
+    type = "csv"
+
+    def output(self, locale):
+        export_data = [h.as_dict() for h in locale.holidays]
+        export_data.sort(key=lambda x: x['date'])
+        result = io.StringIO()
+
+        writer = csv.DictWriter(result,
+                                ["locale", "region", "date", "description", "type", "notes"],
+                                quoting=csv.QUOTE_ALL,
+                                lineterminator='\n')
+        writer.writeheader()
+        writer.writerows(export_data)
+
+        return result.getvalue()

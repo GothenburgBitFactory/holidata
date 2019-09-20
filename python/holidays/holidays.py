@@ -1,6 +1,3 @@
-import csv
-import io
-import json
 import re
 
 from plugin import PluginMount, Holiday
@@ -110,22 +107,3 @@ class Locale(object, metaclass=PluginMount):
     def _date_from_easter_reference(self, m):
         return easter(self.year) \
             .shift(days=int(m.group('days')) * (1 if m.group('direction') == 'after' else -1))
-
-    def to_json(self):
-        export_data = [h.as_dict() for h in self.holidays]
-        export_data.sort(key=lambda x: x['date'])
-        return json.dumps(export_data, ensure_ascii=False, sort_keys=False, indent=None, separators=(',', ':'))
-
-    def to_csv(self):
-        export_data = [h.as_dict() for h in self.holidays]
-        export_data.sort(key=lambda x: x['date'])
-        result = io.StringIO()
-
-        writer = csv.DictWriter(result,
-                                ["locale", "region", "date", "description", "type", "notes"],
-                                quoting=csv.QUOTE_ALL,
-                                lineterminator='\n')
-        writer.writeheader()
-        writer.writerows(export_data)
-
-        return result.getvalue()
