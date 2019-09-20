@@ -27,19 +27,17 @@ from holidays import *
 def create_locale_for(id, year):
     locales = [cls for cls in Locale.plugins if cls.locale == id]
     if not locales:
-        locale = None
+        return None
     else:
-        locale = locales[0](year)
-    return locale
+        return locales[0](year)
 
 
 def create_emitter_for(output_format):
     emitters = [cls for cls in Emitter.plugins if cls.type == output_format]
     if not emitters:
-        emitter = None
+        return None
     else:
-        emitter = emitters[0]()
-    return emitter
+        return emitters[0]()
 
 
 if __name__ == '__main__':
