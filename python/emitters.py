@@ -22,7 +22,7 @@ class JsonEmitter(Emitter):
     def output(self, locale):
         export_data = [h.as_dict() for h in locale.holidays]
         export_data.sort(key=lambda x: x['date'])
-        return json.dumps(export_data, ensure_ascii=False, sort_keys=False, indent=None, separators=(',', ':'))
+        return "\n".join([json.dumps(h, ensure_ascii=False, sort_keys=False, indent=None, separators=(',', ':')) for h in export_data])
 
 
 class CsvEmitter(Emitter):
