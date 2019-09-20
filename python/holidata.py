@@ -26,13 +26,13 @@ if __name__ == '__main__':
 
     locales = [cls for cls in Locale.plugins if cls.locale == args['--locale']]
 
-    if locales:
-        locale = locales[0](int(args['--year']))
-        if args['--output'] == 'csv' or args['--output'] is None:
-            print(locale.to_csv())
-        elif args['--output'] == 'json':
-            print(locale.to_json())
-        else:
-            sys.exit("Unsupported output format: {}".format(args['--output']))
-    else:
+    if not locales:
         sys.exit("No plugin found for locale: {}".format(args['--locale']))
+
+    locale = locales[0](int(args['--year']))
+    if args['--output'] == 'csv' or args['--output'] is None:
+        print(locale.to_csv())
+    elif args['--output'] == 'json':
+        print(locale.to_json())
+    else:
+        sys.exit("Unsupported output format: {}".format(args['--output']))
