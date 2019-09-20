@@ -33,11 +33,11 @@ def create_locale_for(locale_id, year):
 
 
 def create_emitter_for(output_format):
-    emitters = [cls for cls in Emitter.plugins if cls.type == output_format]
-    if not emitters:
+    emitter_class = next(iter([cls for cls in Emitter.plugins if cls.type == output_format]), None)
+    if not emitter_class:
         return None
     else:
-        return emitters[0]()
+        return emitter_class()
 
 
 if __name__ == '__main__':
