@@ -24,12 +24,12 @@ from emitters import *
 from holidays import *
 
 
-def create_locale_for(id, year):
-    locales = [cls for cls in Locale.plugins if cls.locale == id]
-    if not locales:
+def create_locale_for(locale_id, year):
+    locale_class = next(iter([cls for cls in Locale.plugins if cls.locale == locale_id]), None)
+    if not locale_class:
         return None
     else:
-        return locales[0](year)
+        return locale_class(year)
 
 
 def create_emitter_for(output_format):
