@@ -23,25 +23,34 @@ from docopt import docopt
 from emitters import *
 from holidays import *
 
-if __name__ == '__main__':
-    args = docopt(__doc__)
 
-    locales = [cls for cls in Locale.plugins if cls.locale == args['--locale']]
-
+def create_locale_for(id, year):
+    locales = [cls for cls in Locale.plugins if cls.locale == id]
     if not locales:
         locale = None
     else:
-        locale = locales[0](int(args['--year']))
+        locale = locales[0](year)
+    return locale
 
-    if locale is None:
-        sys.exit("No plugin found for locale: {}".format(args['--locale']))
 
-    emitters = [cls for cls in Emitter.plugins if cls.type == args['--output']]
-
+def create_emitter_for(output_format):
+    emitters = [cls for cls in Emitter.plugins if cls.type == output_format]
     if not emitters:
         emitter = None
     else:
         emitter = emitters[0]()
+    return emitter
+
+
+if __name__ == '__main__':
+    args = docopt(__doc__)
+
+    locale = create_locale_for(args['--locale'], int(args['--year']))
+
+    if locale is None:
+        sys.exit("No plugin found for locale: {}".format(args['--locale']))
+
+    emitter = create_emitter_for(args['--output'])
 
     if emitter is None:
         sys.exit("Unsupported output format: {}".format(args['--output']))
