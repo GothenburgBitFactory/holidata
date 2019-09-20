@@ -27,15 +27,17 @@ if __name__ == '__main__':
     args = docopt(__doc__)
 
     locales = [cls for cls in Locale.plugins if cls.locale == args['--locale']]
-    emitters = [cls for cls in Emitter.plugins if cls.type == args['--output']]
 
     if not locales:
         sys.exit("No plugin found for locale: {}".format(args['--locale']))
 
+    locale = locales[0](int(args['--year']))
+
+    emitters = [cls for cls in Emitter.plugins if cls.type == args['--output']]
+
     if not emitters:
         sys.exit("Unsupported output format: {}".format(args['--output']))
 
-    locale = locales[0](int(args['--year']))
     emitter = emitters[0]()
 
     print(emitter.output(locale))
