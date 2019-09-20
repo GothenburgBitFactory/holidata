@@ -29,15 +29,21 @@ if __name__ == '__main__':
     locales = [cls for cls in Locale.plugins if cls.locale == args['--locale']]
 
     if not locales:
-        sys.exit("No plugin found for locale: {}".format(args['--locale']))
+        locale = None
+    else:
+        locale = locales[0](int(args['--year']))
 
-    locale = locales[0](int(args['--year']))
+    if locale is None:
+        sys.exit("No plugin found for locale: {}".format(args['--locale']))
 
     emitters = [cls for cls in Emitter.plugins if cls.type == args['--output']]
 
     if not emitters:
-        sys.exit("Unsupported output format: {}".format(args['--output']))
+        emitter = None
+    else:
+        emitter = emitters[0]()
 
-    emitter = emitters[0]()
+    if emitter is None:
+        sys.exit("Unsupported output format: {}".format(args['--output']))
 
     print(emitter.output(locale))
