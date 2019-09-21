@@ -10,5 +10,6 @@ __all__ = [
     "es-US",
     "fr-BE",
     "hr-HR",
+    "nl-BE",
     "sk-SK",
 ]
