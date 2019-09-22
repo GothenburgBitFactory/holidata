@@ -53,4 +53,4 @@ if __name__ == '__main__':
     if emitter is None:
         sys.exit("Unsupported output format: {}".format(args['--output']))
 
-    print(emitter.output(locale))
+    print(emitter.output(locale), end="")
