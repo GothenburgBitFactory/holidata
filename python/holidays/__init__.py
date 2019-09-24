@@ -7,6 +7,7 @@ __all__ = [
     "de-BE",
     "de-CH",
     "de-DE",
+    "en-GB",
     "en-US",
     "es-US",
     "fr-BE",
