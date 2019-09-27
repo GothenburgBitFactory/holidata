@@ -55,15 +55,9 @@ class Locale(object, metaclass=PluginMount):
                     notes=holidata['notes'],
                 )
 
-        # method dynamic
-        dynamic_methods = [
-            getattr(self, method)
-            for method in dir(self)
-            if method.startswith('holiday_')
-        ]
-
-        for method in dynamic_methods:
-            holidays = method(self.year)
+        # Second, call holiday functions
+        for method in [getattr(self, func) for func in dir(self) if func.startswith('holiday_')]:
+            holidays = method()
 
             for holiday in holidays:
                 yield holiday

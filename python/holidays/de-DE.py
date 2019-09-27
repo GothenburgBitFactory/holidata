@@ -27,7 +27,7 @@ class de_DE(Locale):
 
     locale = "de-DE"
 
-    def holiday_buss_und_bettag(self, year):
+    def holiday_buss_und_bettag(self):
         u"""11 days before 4. sunday before 12-25: [NRV] Buß- und Bettag"""
 
         return [Holiday(
@@ -38,7 +38,7 @@ class de_DE(Locale):
             "NRV"
         )]
 
-    def holiday_reformationstag(self, year):
+    def holiday_reformationstag(self):
         u"""
         10 - 31: [NRF] Reformationstag
 
@@ -46,9 +46,9 @@ class de_DE(Locale):
         since 2018: [BB, BH, HH, MV, NI, SH, SN, ST, TH]
         2017: national holiday because of 500th anniversary
         """
-        if year == 2017:
+        if self.year == 2017:
             regions = [""]
-        elif year < 2018:
+        elif self.year < 2018:
             regions = ["BB", "MV", "SN", "ST", "TH"]
         else:
             regions = ["BB", "BH", "HH", "MV", "NI", "SH", "SN", "ST", "TH"]
