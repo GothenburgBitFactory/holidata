@@ -10,7 +10,7 @@ class fr_BE(Locale):
     11-01: [NRF] Toussaint
     11-11: [NF] Jour de l'armistice
     12-25: [NRF] Noël
-    0 days after Easter: [NRV] Pâques
+    Easter: [NRV] Pâques
     1 day after Easter: [NRV] Lundi de Pâques
     39 days after Easter: [NRV] Ascension
     49 days after Easter: [NRV] Pentecôte

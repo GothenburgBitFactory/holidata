@@ -17,7 +17,7 @@ class de_DE(Locale):
     12-26: [NRF] Zweiter Weihnachtstag
     12-31: [NF] Silvester
     2 days before Easter: [NRV] Karfreitag
-    0 days after Easter: [NRV] Ostern
+    Easter: [NRV] Ostern
     1 day after Easter: [NRV] Ostermontag
     39 days after Easter: [NRV] Christi Himmelfahrt
     49 days after Easter: [NRV] Pfingstsonntag

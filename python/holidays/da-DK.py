@@ -9,7 +9,7 @@ class da_DK(Locale):
     12-26: [NRF] Anden juledag
     3 days before Easter: [NRV] Skærtorsdag
     2 days before Easter: [NRV] Langfredag
-    0 days after Easter: [NRV] Påskedag
+    Easter: [NRV] Påskedag
     1 day after Easter: [NRV] Anden påskedag
     26 days after Easter: [NRV] Store bededag
     39 days after Easter: [NRV] Kristi himmelfartsdag

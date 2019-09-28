@@ -10,7 +10,7 @@ class nl_BE(Locale):
     11-01: [NRF] Allerheiligen
     11-11: [NF] Wapenstilstand
     12-25: [NRF] Kerstmis
-    0 days after Easter: [NRV] Pasen
+    Easter: [NRV] Pasen
     1 day after Easter: [NRV] Paasmaandag
     39 days after Easter: [NRV] Onze Lieve Heer hemelvaart
     49 days after Easter: [NRV] Pinksteren

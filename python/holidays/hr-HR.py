@@ -14,7 +14,7 @@ class hr_HR(Locale):
     11-01: [NRF] Dan svih svetih
     12-25: [NRF] Božić
     12-26: [NRF] Sveti Stjepan
-    0 days after Easter: [NRV] Uskrs
+    Easter: [NRV] Uskrs
     1 day after Easter: [NRV] Uskršnji ponedjeljak
     60 days after Easter: [NRV] Tijelovo
     """

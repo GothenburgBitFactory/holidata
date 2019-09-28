@@ -17,7 +17,7 @@ class de_CH(Locale):
     12-25: [RF] Weihnachtstag
     12-26: [AI,AR,BE,BL,BS,GL,GR,LU,SG,SH,SZ,TG,TI,UR,ZH] [RF] Stephanstag
     2 days before Easter: [AG,AI,AR,BE,BL,BS,FR,GE,GL,GR,JU,LU,NE,NW,OW,SG,SH,SO,SZ,TG,UR,VD,ZG,ZH] [NRV] Karfreitag
-    0 days after Easter: [NRV] Ostersonntag
+    Easter: [NRV] Ostersonntag
     1 day after Easter: [AI,AR,BE,BL,BS,GE,GL,GR,JU,SG,SH,SZ,TG,TI,UR,VD,ZH] [NRV] Ostermontag
     39 days after Easter: [RV] Auffahrt
     49 days after Easter: [RV] Pfingstsonntag

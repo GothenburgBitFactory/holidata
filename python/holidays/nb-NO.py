@@ -15,7 +15,7 @@ class nb_NO(Locale):
     7 days before Easter: [NRV] Palmesøndag
     3 days before Easter: [NRV] Skjærtorsdag
     2 days before Easter: [NRV] Langfredag
-    0 days after Easter: [NRV] Påskedag
+    Easter: [NRV] Påskedag
     1 day after Easter: [NRV] Påskedag
     39 days after Easter: [NRV] Kristi Himmelfartsdag
     49 days after Easter: [NRV] Pinsedag

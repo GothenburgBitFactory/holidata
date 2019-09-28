@@ -17,7 +17,7 @@ class Locale(object, metaclass=PluginMount):
                                    r'(?P<weekday>[a-z]+) in (?P<month>[a-zA-Z]+):\s+'
                                    r'(\[(?P<regions>[^]]+)\]\s+)?'
                                    r'\[(?P<flags>[A-Z]*)\] (?P<description>.*)$', re.UNICODE)
-    easter_shift_regex = re.compile(r'^\s*(?P<days>\d+) day(s)? (?P<direction>(before|after)) Easter:\s+'
+    easter_shift_regex = re.compile(r'^\s*((?P<days>\d+) day(s)? (?P<direction>(before|after)) )?Easter:\s+'
                                     r'(\[(?P<regions>[^]]+)\]\s+)?'
                                     r'\[(?P<flags>[A-Z]*)\] (?P<description>.*)$', re.UNICODE)
 
@@ -94,4 +94,4 @@ class Locale(object, metaclass=PluginMount):
 
     def _date_from_easter_reference(self, m):
         return easter(self.year) \
-            .shift(days=int(m.group('days')) * (1 if m.group('direction') == 'after' else -1))
+            .shift(days=int((m.group('days')) if m.group('days') is not None else 0) * (1 if m.group('direction') == 'after' else -1))
