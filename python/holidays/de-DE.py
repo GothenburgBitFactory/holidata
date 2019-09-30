@@ -35,8 +35,7 @@ class de_DE(Locale):
             "SN",
             SmartDayArrow(self.year, 12, 25).shift_to_weekday('sunday', order=4, reverse=True).shift(days=-11),
             "Buß- und Bettag",
-            "NRV",
-            postpone=self.postpone
+            "NRV"
         )]
 
     def holiday_reformationstag(self, year):
@@ -59,6 +58,5 @@ class de_DE(Locale):
             region,
             SmartDayArrow(self.year, 10, 31),
             "Reformationstag",
-            "NRF",
-            postpone=self.postpone
+            "NRF"
         ) for region in regions]

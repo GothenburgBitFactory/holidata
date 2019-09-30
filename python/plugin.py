@@ -28,21 +28,13 @@ class Holiday(object):
     """
     A sheer container for one holiday.
     """
-
-    def __init__(self, locale, region, date, description, flags="", notes="", postpone=False):
+    def __init__(self, locale, region, date, description, flags="", notes=""):
         self.locale = locale
         self.region = region
         self.date = date
         self.description = description
         self.flags = flags
         self.notes = notes
-
-        if postpone:
-            self.postpone()
-
-    def postpone(self):
-        if self.date.weekday() in ['saturday', 'sunday']:
-            self.date = self.date.shift_to_weekday('monday', including=True)
 
     def as_dict(self):
         return {

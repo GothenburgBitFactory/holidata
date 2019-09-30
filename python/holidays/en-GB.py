@@ -26,8 +26,7 @@ class en_GB(Locale):
                     date=date.shift_to_weekday('monday', including=True),
                     description="New Year's Day (observed)",
                     flags="NV",
-                    notes="",
-                    postpone=self.postpone)]
+                    notes="")]
 
         return []
 
@@ -54,7 +53,6 @@ class en_GB(Locale):
             description="Spring Bank Holiday",
             flags="NV",
             notes="",
-            postpone=self.postpone,
         )]
 
     def holiday_christmas_day_observed(self, year):
@@ -67,8 +65,7 @@ class en_GB(Locale):
                     date=date.shift_to_weekday('monday', including=True),
                     description="Christmas Day (observed)",
                     flags="NV",
-                    notes="",
-                    postpone=self.postpone)]
+                    notes="")]
 
         elif date.weekday() == 'sunday':
             return [Holiday(
@@ -77,8 +74,7 @@ class en_GB(Locale):
                     date=date.shift_to_weekday('tuesday', including=True),
                     description="Christmas Day (observed)",
                     flags="NV",
-                    notes="",
-                    postpone=self.postpone)]
+                    notes="")]
 
         return []
 
@@ -92,8 +88,7 @@ class en_GB(Locale):
                     date=date.shift_to_weekday('tuesday', including=True),
                     description="Boxing Day (observed)",
                     flags="NV",
-                    notes="",
-                    postpone=self.postpone)]
+                    notes="")]
 
         elif date.weekday() == 'saturday':
             return [Holiday(
@@ -102,8 +97,7 @@ class en_GB(Locale):
                     date=date.shift_to_weekday('monday', including=True),
                     description="Boxing Day (observed)",
                     flags="NV",
-                    notes="",
-                    postpone=self.postpone)]
+                    notes="")]
 
         return []
 
@@ -115,7 +109,6 @@ class en_GB(Locale):
                 date=SmartDayArrow(2012, 6, 5),
                 description="Queen's Diamond Jubilee",
                 flags="NV",
-                notes="",
-                postpone=self.postpone)]
+                notes="")]
 
         return []

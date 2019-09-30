@@ -9,7 +9,6 @@ class Locale(object, metaclass=PluginMount):
     Represents holidays in a given locale.
     """
     locale = None
-    postpone = False
 
     fixed_regex = re.compile(r'^\s*(?P<month>\d\d)-(?P<day>\d\d): '
                              r'(\[(?P<regions>[^]]+)\]\s+)?'
@@ -54,7 +53,6 @@ class Locale(object, metaclass=PluginMount):
                     description=holidata['description'],
                     flags=holidata['flags'],
                     notes=holidata['notes'],
-                    postpone=self.postpone,
                 )
 
         # method dynamic
@@ -68,10 +66,6 @@ class Locale(object, metaclass=PluginMount):
             holidays = method(self.year)
 
             for holiday in holidays:
-                # Handle postponing if the class attribute for postponing is set
-                if self.postpone:
-                    holiday.postpone()
-
                 yield holiday
 
     def _parse_holidata(self, line):
