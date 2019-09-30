@@ -1,6 +1,5 @@
-from plugin import Holiday
 from utils import SmartDayArrow, month_reference
-from .holidays import Locale
+from .holidays import Holiday, Locale
 
 
 class en_GB(Locale):

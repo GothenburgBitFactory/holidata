@@ -1,7 +1,30 @@
 import re
 
-from plugin import PluginMount, Holiday
+from plugin import PluginMount
 from utils import SmartDayArrow, month_reference, easter
+
+
+class Holiday(object):
+    """
+    A sheer container for one holiday.
+    """
+    def __init__(self, locale, region, date, description, flags="", notes=""):
+        self.locale = locale
+        self.region = region
+        self.date = date
+        self.description = description
+        self.flags = flags
+        self.notes = notes
+
+    def as_dict(self):
+        return {
+            'locale': self.locale,
+            'region': self.region,
+            'date': self.date.strftime('%Y-%m-%d'),
+            'description': self.description,
+            'type': self.flags,
+            'notes': self.notes
+        }
 
 
 class Locale(object, metaclass=PluginMount):

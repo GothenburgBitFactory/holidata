@@ -1,6 +1,5 @@
-from .holidays import Locale
+from .holidays import Locale, Holiday
 
-from plugin import Holiday
 from utils import SmartDayArrow
 
 

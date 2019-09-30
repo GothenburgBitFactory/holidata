@@ -1,12 +1,6 @@
 """
-Provides base class for Locale plugins.
+Provides base class for plugins.
 """
-
-import csv
-import io
-import json
-import re
-from utils import SmartDayArrow, easter, month_reference
 
 
 class PluginMount(type):
@@ -22,26 +16,3 @@ class PluginMount(type):
             cls.plugins = []
         else:
             cls.plugins.append(cls)
-
-
-class Holiday(object):
-    """
-    A sheer container for one holiday.
-    """
-    def __init__(self, locale, region, date, description, flags="", notes=""):
-        self.locale = locale
-        self.region = region
-        self.date = date
-        self.description = description
-        self.flags = flags
-        self.notes = notes
-
-    def as_dict(self):
-        return {
-            'locale': self.locale,
-            'region': self.region,
-            'date': self.date.strftime('%Y-%m-%d'),
-            'description': self.description,
-            'type': self.flags,
-            'notes': self.notes
-        }
