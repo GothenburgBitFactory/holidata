@@ -19,7 +19,7 @@ Call `holidata.py` with the ` --usage` or `--help` option to get usage info or h
 
 For each holiday the following data is provided:
 * `locale` - language and country the holiday is defined for
-* `region` - region of the given country the holiday is defined for
+* `region` - region code of the given subdivision the holiday is defined for
 * `date` - actual date the holiday takes place
 * `description` - name of the holiday in the given language
 * `type` - holiday type flags
