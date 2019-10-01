@@ -38,6 +38,12 @@ Holidata supports different output formats, currently `csv` and `json`.
 
 If you think an output format is missing, [open a feature request on github](https://github.com/GothenburgBitFactory/holidata/issues).
 
+## Limitations
+
+Holidata only provides data for countries and their principal subregions (both as they are defined in ISO 3166).
+Holidays for other sub-regions are either merged or ignored.
+There is also no explicit representation of partial holidays.
+
 ## License
 
 `holidata.py` is released under the MIT license. For details check the [LICENSE](LICENSE) file.
