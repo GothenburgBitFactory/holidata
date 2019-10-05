@@ -41,3 +41,31 @@ class CsvEmitter(Emitter):
         writer.writerows(export_data)
 
         return result.getvalue()
+
+
+class YamlEmitter(Emitter):
+    type = "yaml"
+
+    def output(self, locale):
+        export_data = [h.as_dict() for h in locale.holidays]
+        export_data.sort(key=lambda x: x["date"])
+
+        output = "%YAML 1.1\n"
+        output += "---\n"
+        for holiday in export_data:
+            output += """  holiday:
+    locale: {}
+    region: {}
+    date: {}
+    description: {}
+    type: {}
+    notes: {}
+""".format(holiday["locale"],
+           holiday["region"],
+           holiday["date"],
+           holiday["description"],
+           holiday["type"],
+           holiday["notes"] if "notes" in holiday else "")
+
+        output += "...\n"
+        return output
