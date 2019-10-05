@@ -1,3 +1,5 @@
+from dateutil.easter import EASTER_WESTERN
+
 from .holidays import Locale
 
 
@@ -18,3 +20,4 @@ class da_DK(Locale):
     """
 
     locale = "da-DK"
+    easter_type = EASTER_WESTERN

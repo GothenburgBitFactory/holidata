@@ -32,6 +32,7 @@ class Locale(object, metaclass=PluginMount):
     Represents holidays in a given locale.
     """
     locale = None
+    easter_type = None
 
     fixed_regex = re.compile(r'^\s*(?P<month>\d\d)-(?P<day>\d\d): '
                              r'(\[(?P<regions>[^]]+)\]\s+)?'
@@ -116,5 +117,8 @@ class Locale(object, metaclass=PluginMount):
                               including=True)
 
     def _date_from_easter_reference(self, m):
-        return easter(self.year) \
+        if self.easter_type is None:
+            raise ValueError("Locale {0} does not provide its easter type (WESTERN|ORTHODOX)".format(self.__class__.__name__))
+
+        return easter(self.year, self.easter_type) \
             .shift(days=int((m.group('days')) if m.group('days') is not None else 0) * (1 if m.group('direction') == 'after' else -1))

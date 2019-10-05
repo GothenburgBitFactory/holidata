@@ -1,7 +1,7 @@
 """
 Provides date-handling related utils.
 """
-
+import dateutil
 from arrow import Arrow
 
 
@@ -52,26 +52,9 @@ class SmartDayArrow(Arrow):
         return result
 
 
-def paschal_full_moon_date(year):
-    """
-    Returns Paschal Full Moon date, used to compute easter things.
-    """
-
-    pfmd = SmartDayArrow(year, 3, 1)
-
-    PFMd_shift = 44 - (((year % 19) * 11) % 30)
-
-    if year % 19 in (5, 16):
-        PFMd_shift += 29
-    if year % 19 == 8:
-        PFMd_shift += 30
-
-    return pfmd.shift(days=PFMd_shift)
-
-
-def easter(year):
-    pfmd = paschal_full_moon_date(year)
-    return pfmd.shift_to_weekday('sunday')
+def easter(year, easter_type):
+    date = dateutil.easter.easter(year, easter_type)
+    return SmartDayArrow(date.year, date.month, date.day)
 
 
 def month_reference(year, month, first=True):

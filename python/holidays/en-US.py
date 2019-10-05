@@ -1,3 +1,5 @@
+from dateutil.easter import EASTER_WESTERN
+
 from .holidays import Locale
 
 
@@ -17,3 +19,4 @@ class en_US(Locale):
     """
 
     locale = "en-US"
+    easter_type = EASTER_WESTERN

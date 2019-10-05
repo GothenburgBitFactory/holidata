@@ -1,3 +1,5 @@
+from dateutil.easter import EASTER_WESTERN
+
 from .holidays import Locale, Holiday
 
 from utils import SmartDayArrow
@@ -25,6 +27,7 @@ class de_DE(Locale):
     """
 
     locale = "de-DE"
+    easter_type = EASTER_WESTERN
 
     def holiday_buss_und_bettag(self):
         u"""11 days before 4. sunday before 12-25: [NRV] Buß- und Bettag"""

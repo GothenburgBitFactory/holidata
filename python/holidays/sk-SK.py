@@ -1,3 +1,5 @@
+from dateutil.easter import EASTER_WESTERN
+
 from .holidays import Locale
 
 
@@ -21,3 +23,4 @@ class sk_SK(Locale):
     """
 
     locale = "sk-SK"
+    easter_type = EASTER_WESTERN

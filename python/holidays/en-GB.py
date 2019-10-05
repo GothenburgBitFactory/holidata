@@ -1,3 +1,5 @@
+from dateutil.easter import EASTER_WESTERN
+
 from utils import SmartDayArrow, month_reference
 from .holidays import Holiday, Locale
 
@@ -14,6 +16,7 @@ class en_GB(Locale):
     """
 
     locale = "en-GB"
+    easter_type = EASTER_WESTERN
 
     def holiday_new_years_day_observed(self):
         date = SmartDayArrow(self.year, 1, 1)
