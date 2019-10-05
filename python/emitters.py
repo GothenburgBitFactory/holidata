@@ -69,3 +69,33 @@ class YamlEmitter(Emitter):
 
         output += "...\n"
         return output
+
+
+class XmlEmitter(Emitter):
+    type = "xml"
+
+    def output(self, locale):
+        export_data = [h.as_dict() for h in locale.holidays]
+        export_data.sort(key=lambda x: x["date"])
+
+        output = "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n"
+        output += "<holidays>\n"
+
+        for holiday in export_data:
+            output += """  <holiday>
+    <locale>{}</locale>
+    <region>{}</region>
+    <date>{}</date>
+    <description>{}</description>
+    <type>{}</type>
+    <notes>{}</notes>
+  </holiday>
+""".format(holiday["locale"],
+           holiday["region"],
+           holiday["date"],
+           holiday["description"],
+           holiday["type"],
+           holiday["notes"] if "notes" in holiday else "")
+
+        output += "</holidays>\n"
+        return output
