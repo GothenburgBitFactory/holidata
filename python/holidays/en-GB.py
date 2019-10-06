@@ -53,8 +53,7 @@ class en_GB(Locale):
             date=date,
             description="Spring Bank Holiday",
             flags="NV",
-            notes="",
-        )]
+            notes="")]
 
     def holiday_christmas_day_observed(self):
         date = SmartDayArrow(self.year, 12, 25)
