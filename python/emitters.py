@@ -78,20 +78,13 @@ class XmlEmitter(Emitter):
         output += "<holidays>\n"
 
         for holiday in export_data:
-            output += """  <holiday>
-    <locale>{}</locale>
-    <region>{}</region>
-    <date>{}</date>
-    <description>{}</description>
-    <type>{}</type>
-    <notes>{}</notes>
-  </holiday>
-""".format(holiday["locale"],
-           holiday["region"],
-           holiday["date"],
-           holiday["description"],
-           holiday["type"],
-           holiday["notes"] if "notes" in holiday else "")
+            output += "  <holiday>\n"
+
+            for key in ["locale", "region", "date", "description", "type", "notes"]:
+                value = holiday[key] if key in holiday else ""
+                output += "    <{0}>{1}</{0}>\n".format(key, value if value is not None else "")
+
+            output += "  </holiday>\n"
 
         output += "</holidays>\n"
         return output
