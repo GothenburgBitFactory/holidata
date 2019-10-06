@@ -53,19 +53,15 @@ class YamlEmitter(Emitter):
         output = "%YAML 1.1\n"
         output += "---\n"
         for holiday in export_data:
-            output += """  holiday:
-    locale: {}
-    region: {}
-    date: {}
-    description: {}
-    type: {}
-    notes: {}
-""".format(holiday["locale"],
-           holiday["region"],
-           holiday["date"],
-           holiday["description"],
-           holiday["type"],
-           holiday["notes"] if "notes" in holiday else "")
+            output += "  holiday:\n"
+
+            for key in ["locale", "region", "date", "description", "type", "notes"]:
+                value = holiday[key]
+
+                if value is not None and value != "":
+                  output += "    {}: {}\n".format(key, value)
+                else:
+                  output += "    {}:\n".format(key)
 
         output += "...\n"
         return output
