@@ -9,6 +9,7 @@ __all__ = [
     "de-DE",
     "en-GB",
     "en-US",
+    "es-ES",
     "es-US",
     "fr-BE",
     "hr-HR",
