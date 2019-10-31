@@ -34,7 +34,7 @@ If you think a locale is missing, [open a feature request on github](https://git
 
 ## Output Formats
 
-Holidata supports different output formats, currently `csv` and `json`.
+Holidata supports different output formats, currently `csv`, `json`, `yaml`, and `xml`.
 
 If you think an output format is missing, [open a feature request on github](https://github.com/GothenburgBitFactory/holidata/issues).
 
