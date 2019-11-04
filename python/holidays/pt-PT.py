@@ -2,6 +2,7 @@ from dateutil.easter import EASTER_WESTERN
 
 from .holidays import Locale
 
+
 class pt_PT(Locale):
     u"""
     01-01: [NF] Ano Novo
@@ -16,8 +17,8 @@ class pt_PT(Locale):
     12-25: [NF] Natal
     47 days before Easter: [NRV] Carnaval
     2 days before Easter: [NRV] Sexta-feira Santa
-    60 days after Easter: [NRV] Corpo de Deus
     Easter: [NRV] Páscoa
+    60 days after Easter: [NRV] Corpo de Deus
     """
 
     locale = "pt-PT"
