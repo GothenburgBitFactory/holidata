@@ -1,0 +1,62 @@
+from dateutil.easter import EASTER_WESTERN
+
+from utils import SmartDayArrow
+from .holidays import Holiday, Locale
+
+
+class en_GB(Locale):
+    """
+    01-01: [NRF] Nýársdagur
+    3 days before Easter: [NRV] Skírdagur
+    2 days before Easter: [NRV] Föstudagurinn langi
+    Easter: [NRV] Páskadagur
+    1 day after Easter: [NRV] Annar dagur páska
+    39 days after Easter: [NRV] Uppstigningardagur
+    49 days after Easter: [NRV] Hvítasunnudagur
+    50 days after Easter: [NRV] Annar dagur hvítasunnu
+    05-01: [NF] Verkalýðsdagurinn
+    06-17: [NF] þjóðhátíðardagurinn
+    1. monday in August: [NV] Frídagur verslunarmanna
+    12-25: [NRF] Christmas Day
+    12-26: [NRF] Annar dagur jóla
+    """
+
+    locale = "is-IS"
+    easter_type = EASTER_WESTERN
+
+    def holiday_first_day_of_summer(self):
+        """
+        Calculate sumardagurinn fyrsti (first day of summer).
+
+        The holiday falls on the first Thursday after the 18th of April.
+        """
+        return [
+            Holiday(
+                locale=self.locale,
+                region="",
+                date=SmartDayArrow(self.year, 4, 18).shift_to_weekday("thursday"),
+                description="Sumardagurinn fyrsti",
+                flags="NV",
+                notes="",
+            )
+        ]
+
+    def holiday_half_days(self):
+        return [
+            Holiday(
+                locale=self.locale,
+                region="",
+                date=SmartDayArrow(self.year, 12, 24),
+                description="Aðfangadagur",
+                flags="NRF",
+                notes="Holiday from 13:00",
+            ),
+            Holiday(
+                locale=self.locale,
+                region="",
+                date=SmartDayArrow(self.year, 12, 31),
+                description="Gamlársdagur",
+                flags="NRF",
+                notes="Holiday from 13:00",
+            ),
+        ]
