@@ -42,6 +42,17 @@ class is_IS(Locale):
         ]
 
     def holiday_half_days(self):
+        """
+        Define half-day holidays.
+
+        Both Christmas Eve (_aðfangadagur_) and New Year's Eve
+        (_gamlársdagur_) are public holidays in Iceland from 13:00 only.
+        They're included as full-day holidays, but with an explanatory
+        note.
+
+        12-24: [NRF] Aðfangadagur
+        12-31: [NRF] Gamlársdagur
+        """
         return [
             Holiday(
                 locale=self.locale,
