@@ -17,7 +17,7 @@ class is_IS(Locale):
     05-01: [NF] Verkalýðsdagurinn
     06-17: [NF] þjóðhátíðardagurinn
     1. monday in August: [NV] Frídagur verslunarmanna
-    12-25: [NRF] Christmas Day
+    12-25: [NRF] Jóladagur
     12-26: [NRF] Annar dagur jóla
     """
 
