@@ -1,3 +1,4 @@
+# coding=utf-8
 from dateutil.easter import EASTER_WESTERN
 
 from utils import SmartDayArrow
