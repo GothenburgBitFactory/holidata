@@ -4,7 +4,7 @@ from utils import SmartDayArrow
 from .holidays import Holiday, Locale
 
 
-class en_GB(Locale):
+class is_IS(Locale):
     """
     01-01: [NRF] Nýársdagur
     3 days before Easter: [NRV] Skírdagur
