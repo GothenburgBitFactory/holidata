@@ -4,7 +4,7 @@ from .holidays import Locale
 
 
 class ru_RU(Locale):
-    u"""
+    """
     01-01: [NF] Новый Год
     01-07: [NRF] Рождество Христово
     02-23: [NF] День защитника Отечества

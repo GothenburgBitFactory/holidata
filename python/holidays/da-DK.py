@@ -4,7 +4,7 @@ from .holidays import Locale
 
 
 class da_DK(Locale):
-    u"""
+    """
     01-01: [NF] Nytårsdag
     06-05: [NF] Grundlovsdag
     12-25: [NRF] Juledag

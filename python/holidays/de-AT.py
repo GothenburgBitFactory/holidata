@@ -4,7 +4,7 @@ from .holidays import Locale
 
 
 class de_AT(Locale):
-    u"""
+    """
     01-01: [NF] Neujahr
     01-06: [NRF] Heilige drei Könige
     03-19: [2,6,7,8] [NRF] Josef

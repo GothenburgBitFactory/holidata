@@ -6,7 +6,7 @@ from utils import SmartDayArrow
 
 
 class de_DE(Locale):
-    u"""
+    """
     01-01: [NF] Neujahr
     01-06: [BW,BY,ST] [NRF] Heilige drei Könige
     05-01: [NF] Erster Maifeiertag
@@ -30,7 +30,7 @@ class de_DE(Locale):
     easter_type = EASTER_WESTERN
 
     def holiday_buss_und_bettag(self):
-        u"""11 days before 4. sunday before 12-25: [NRV] Buß- und Bettag"""
+        """11 days before 4. sunday before 12-25: [NRV] Buß- und Bettag"""
 
         return [Holiday(
             self.locale,
@@ -41,7 +41,7 @@ class de_DE(Locale):
         )]
 
     def holiday_reformationstag(self):
-        u"""
+        """
         10 - 31: [NRF] Reformationstag
 
         before 2018: [BB, MV, SN, ST, TH]

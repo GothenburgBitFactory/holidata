@@ -5,7 +5,7 @@ from .holidays import Holiday, Locale
 
 
 class en_GB(Locale):
-    u"""
+    """
     01-01: [NF] New Year's Day
     12-25: [NRF] Christmas Day
     12-26: [NF] Boxing Day
@@ -33,7 +33,7 @@ class en_GB(Locale):
         return []
 
     def holiday_spring_bank_holiday(self):
-        u"""1. last monday in may: [NV] Spring Bank Holiday
+        """1. last monday in may: [NV] Spring Bank Holiday
         2012: Moved to June 4, because of Queen’s Diamond Jubilee
         """
         if self.year == 2012:
@@ -102,7 +102,7 @@ class en_GB(Locale):
         return []
 
     def holiday_royal_jubilees(self):
-        u"""2012-06-05: Queen's Diamond Jubilee"""
+        """2012-06-05: Queen's Diamond Jubilee"""
         if self.year == 2012:
             return [Holiday(
                 locale=self.locale,

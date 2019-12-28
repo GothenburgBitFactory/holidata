@@ -4,7 +4,7 @@ from .holidays import Locale
 
 
 class sk_SK(Locale):
-    u"""
+    """
     01-01: [NF] Deň vzniku Slovenskej republiky
     01-06: [NRF] Zjavenie Pána / Traja králi
     05-01: [NF] Sviatok práce

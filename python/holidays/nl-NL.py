@@ -5,7 +5,7 @@ from .holidays import Holiday, Locale
 
 
 class nl_NL(Locale):
-    u"""
+    """
     01-01: [NF] Nieuwjaarsdag
     05-04: [F] Dodenherdenking
     05-05: [NF] Bevrijdingsdag

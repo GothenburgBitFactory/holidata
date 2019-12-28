@@ -4,7 +4,7 @@ from .holidays import Locale
 
 
 class hr_HR(Locale):
-    u"""
+    """
     01-01: [NF] Nova Godina
     01-06: [NRF] Bogojavljanje / Sveta tri kralja
     05-01: [NF] Praznik rada

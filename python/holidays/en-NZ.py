@@ -5,7 +5,7 @@ from .holidays import Holiday, Locale
 
 
 class en_NZ(Locale):
-    u"""
+    """
     01-01: [NF] New Year's Day
     02-06: [NF] Waitangi Day
     04-25: [NF] ANZAC Day

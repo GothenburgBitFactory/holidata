@@ -4,7 +4,7 @@ from .holidays import Locale
 
 
 class de_CH(Locale):
-    u"""
+    """
     01-01: [NF] Neujahrstag
     01-02: [BE,JU,TG,VD] [F] Berchtoldstag
     01-06: [SZ,TI,UR] [RF] Heilige Drei Könige

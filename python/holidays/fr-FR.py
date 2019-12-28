@@ -4,7 +4,7 @@ from .holidays import Locale
 
 
 class fr_FR(Locale):
-    u"""
+    """
     01-01: [NF] Jour de l'an
     05-01: [NF] Fête du premier mai
     05-08: [NF] Armistice 1945

@@ -4,7 +4,7 @@ from .holidays import Locale
 
 
 class fr_BE(Locale):
-    u"""
+    """
     01-01: [NF] Nouvel An
     05-01: [NF] Fête du Travail
     07-21: [NF] Fête nationale
