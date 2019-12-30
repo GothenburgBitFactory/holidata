@@ -51,7 +51,7 @@ class is_IS(Locale):
         note.
 
         12-24: [NRF] Aðfangadagur jóla
-        12-31: [NRF] Gamlársdagur
+        12-31: [NF] Gamlársdagur
         """
         return [
             Holiday(
@@ -67,7 +67,7 @@ class is_IS(Locale):
                 region="",
                 date=SmartDayArrow(self.year, 12, 31),
                 description="Gamlársdagur",
-                flags="NRF",
+                flags="NF",
                 notes="Holiday from 13:00",
             ),
         ]
