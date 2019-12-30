@@ -7,6 +7,10 @@ from .holidays import Holiday, Locale
 class is_IS(Locale):
     """
     01-01: [NRF] Nýársdagur
+    05-01: [NF] Verkalýðsdagurinn
+    06-17: [NF] Þjóðhátíðardagurinn
+    12-25: [NRF] Jóladagur
+    12-26: [NRF] Annar dagur jóla
     3 days before Easter: [NRV] Skírdagur
     2 days before Easter: [NRV] Föstudagurinn langi
     Easter: [NRV] Páskadagur
@@ -14,11 +18,7 @@ class is_IS(Locale):
     39 days after Easter: [NRV] Uppstigningardagur
     49 days after Easter: [NRV] Hvítasunnudagur
     50 days after Easter: [NRV] Annar dagur hvítasunnu
-    05-01: [NF] Verkalýðsdagurinn
-    06-17: [NF] Þjóðhátíðardagurinn
     1. monday in August: [NV] Frídagur verslunarmanna
-    12-25: [NRF] Jóladagur
-    12-26: [NRF] Annar dagur jóla
     """
 
     locale = "is-IS"
