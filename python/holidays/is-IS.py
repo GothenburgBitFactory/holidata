@@ -45,12 +45,12 @@ class is_IS(Locale):
         """
         Define half-day holidays.
 
-        Both Christmas Eve (_aðfangadagur_) and New Year's Eve
+        Both Christmas Eve (_aðfangadagur jóla_) and New Year's Eve
         (_gamlársdagur_) are public holidays in Iceland from 13:00 only.
         They're included as full-day holidays, but with an explanatory
         note.
 
-        12-24: [NRF] Aðfangadagur
+        12-24: [NRF] Aðfangadagur jóla
         12-31: [NRF] Gamlársdagur
         """
         return [
@@ -58,7 +58,7 @@ class is_IS(Locale):
                 locale=self.locale,
                 region="",
                 date=SmartDayArrow(self.year, 12, 24),
-                description="Aðfangadagur",
+                description="Aðfangadagur jóla",
                 flags="NRF",
                 notes="Holiday from 13:00",
             ),
