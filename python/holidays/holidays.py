@@ -110,7 +110,7 @@ class Locale(object, metaclass=PluginMount):
     def _date_from_weekday_reference(self, m):
         return month_reference(self.year,
                                m.group('month'),
-                               first=m.group('last').strip() is '') \
+                               first=m.group('last').strip() == '') \
             .shift_to_weekday(m.group('weekday'),
                               order=int(m.group('order')),
                               reverse=m.group('last').strip() == 'last',
