@@ -1,3 +1,0 @@
-[submodule "src/libshared"]
-	path = src/libshared
-	url = https://github.com/GothenburgBitFactory/libshared.git

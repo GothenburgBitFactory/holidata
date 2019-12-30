@@ -3,7 +3,7 @@ from dateutil.easter import EASTER_WESTERN
 
 from .holidays import Locale, Holiday
 
-from utils import SmartDayArrow
+from holidata.utils import SmartDayArrow
 
 
 class de_DE(Locale):

@@ -1,7 +1,7 @@
 # coding=utf-8
 from dateutil.easter import EASTER_ORTHODOX
 
-import utils
+from holidata.utils import SmartDayArrow, easter
 from .holidays import Holiday, Locale
 
 
@@ -30,12 +30,12 @@ class el_GR(Locale):
         05-01: [NF] Πρωτομαγιά
         Postponed if it collides with Easter
         """
-        date = utils.SmartDayArrow(self.year, 5, 1)
-        easter = utils.easter(self.year, self.easter_type)
+        date = SmartDayArrow(self.year, 5, 1)
+        easter_date = easter(self.year, self.easter_type)
 
-        if date == easter:
+        if date == easter_date:
             date = date.shift(days=2)
-        elif date == easter.shift(days=1):
+        elif date == easter_date.shift(days=1):
             date = date.shift(days=1)
 
         return [Holiday(

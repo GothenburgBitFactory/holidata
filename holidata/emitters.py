@@ -2,7 +2,7 @@ import csv
 import io
 import json
 
-from plugin import PluginMount
+from holidata.plugin import PluginMount
 
 
 class Emitter(object, metaclass=PluginMount):

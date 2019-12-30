@@ -1,7 +1,7 @@
 import re
 
-from plugin import PluginMount
-from utils import SmartDayArrow, month_reference, easter
+from holidata.plugin import PluginMount
+from holidata.utils import SmartDayArrow, month_reference, easter
 
 
 class Holiday(object):

@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+# encoding: utf-8
 
 """
 Holidata - generate holidata files.
 
 Usage:
-  holidata.py (--year=<value>) (--locale=<value>) [--output=<value>]
+  holidata (--year=<value>) (--locale=<value>) [--output=<value>]
 
 Options:
     --year=<value>       Specify which year to generate data for.
@@ -19,9 +19,8 @@ Dependencies:
 import sys
 
 from docopt import docopt
-
-from emitters import *
-from holidays import *
+from holidata import Emitter
+from holidata.holidays import Locale
 
 
 def create_locale_for(locale_id, year):

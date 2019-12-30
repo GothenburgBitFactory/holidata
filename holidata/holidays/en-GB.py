@@ -1,7 +1,7 @@
 # coding=utf-8
 from dateutil.easter import EASTER_WESTERN
 
-from utils import SmartDayArrow, month_reference
+from holidata.utils import SmartDayArrow, month_reference
 from .holidays import Holiday, Locale
 
 
