@@ -1,12 +1,39 @@
 
-- <id> <description>
-       Thanks to <contributor>
-
------- current release ---------------------------
-
-0.0.0 (YYYY-MM-DD) <sha1>
-
------- old releases ------------------------------
+- #32 Make project python only
+- #25 Add locale for is-IS
+      (Thanks to Matt Riggott)
+- #33 Add locale for pt-PT
+      (Thanks to lldh)
+-     Add locale it-IT
+-     Add locale fr-FR
+-     Add locale el-GR
+-     Add locale nl-NL
+-     Add locale en-NZ
+-     Add locale es-ES
+-     Add locale ru-RU
+-     Add XML emitter
+-     Add YAML emitter
+-     Add locale en-GB
+-     Add locale nb-NO
+-     Add locale da-DK
+-     Add locale nl-BE
+-     Add locale fr-BE
+-     Add locale de-BE
+-     Add locale es-US
+-     Add regions to locale de-AT
+-     Add locale de-AT
+-     Add locale de-CH
+-     Add emitters
+-     Add locale de-DE
+-     Replace module 'countries' by subpackage 'holidays'
+-     Add support for regions
+-     Add option for output format
+- #2  Fix some Croatian holidays
+      (Thanks to Saša Janiška)
+- #1  Add locale hr-HR
+      (Thanks to Saša Janiška)
+-     Add locale sk-SK and en-US
+-     Add Proof-Of-Concept python implementation
 
 Project started November 8, 2016.
 
