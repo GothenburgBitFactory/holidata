@@ -1,13 +1,14 @@
 # coding=utf-8
 from dateutil.easter import EASTER_WESTERN
 
-from .holidays import Locale
+from holidata.utils import SmartDayArrow
+from .holidays import Locale, Holiday
 
 
 class hr_HR(Locale):
     """
     01-01: [NF] Nova Godina
-    01-06: [NRF] Bogojavljanje ili Sveta tri kralja
+    01-06: [NRF] Bogojavljenje
     05-01: [NF] Praznik rada
     06-22: [NF] Dan antifašističke borbe
     06-25: [NF] Dan državnosti
