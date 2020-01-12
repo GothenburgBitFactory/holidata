@@ -43,7 +43,7 @@ class de_DE(Locale):
 
     def holiday_reformationstag(self):
         """
-        10 - 31: [NRF] Reformationstag
+        10-31: [NRF] Reformationstag
 
         before 2018: [BB, MV, SN, ST, TH]
         since 2018: [BB, BH, HH, MV, NI, SH, SN, ST, TH]
