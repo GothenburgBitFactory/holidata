@@ -63,3 +63,39 @@ class de_DE(Locale):
             "Reformationstag",
             "NRF"
         ) for region in regions]
+
+    def holiday_frauentag(self):
+        """
+        03-08: [BE] [NF] Frauentag
+
+        Introduced 2019 for Berlin
+        http://gesetze.berlin.de/jportal/?quelle=jlink&query=FeiertG+BE+%C2%A7+1&psml=bsbeprod.psml&max=true
+        """
+        if self.year >= 2019:
+            return [Holiday(
+                self.locale,
+                "BE",
+                SmartDayArrow(self.year, 3, 8),
+                "Internationaler Frauentag",
+                "NF"
+            )]
+        else:
+            return []
+
+    def holiday_tag_der_befreiung(self):
+        """
+        2020-05-08: [BE] [NF] 75. Jahrestag der Befreiung vom Nationalsozialismus und der Beendigung des Zweiten Weltkrieges in Europa
+
+        Introduced 2019 for Berlin
+        http://gesetze.berlin.de/jportal/?quelle=jlink&query=FeiertG+BE+%C2%A7+1&psml=bsbeprod.psml&max=true
+        """
+        if self.year == 2020:
+            return [Holiday(
+                self.locale,
+                "BE",
+                SmartDayArrow(self.year, 5, 8),
+                "75. Jahrestag der Befreiung vom Nationalsozialismus und der Beendigung des Zweiten Weltkrieges in Europa",
+                "NF"
+            )]
+        else:
+            return []

@@ -1,3 +1,4 @@
+- #40 Add missing holidays in locale de-DE for region BE
 - #38 Update croatian holidays according to the law valid for the year 2020 and onwards
       (Thanks to Saša Janiška)
 - #32 Make project python only
