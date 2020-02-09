@@ -9,7 +9,7 @@ config = {
     'url': 'https://github.com/GothenburgBitFactory/holidata',
     'author': 'Gothenburg Bit Factory',
     'author_email': 'support@gothenburgbitfactory.org',
-    'requires': ['docopt', 'arrow'],
+    'requires': ['dateutil', 'docopt', 'arrow'],
     'scripts': ['bin/holidata'],
 }
 
