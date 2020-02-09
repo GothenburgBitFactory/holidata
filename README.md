@@ -40,10 +40,10 @@ If you think an output format is missing, [open a feature request on github](htt
 
 ## Limitations
 
-Holidata focusses on holidays which are _defined by law on which business or work are suspended or reduced_ (there may be some exceptions to that rule).
+Holidata focuses on holidays which are _defined by law on which business or work are suspended or reduced_ (there may be some exceptions to that rule).
 
-Holidata only provides data for countries and their principal subregions (both as they are defined in ISO 3166).
-Holidays for other sub-regions are either merged or ignored.
+Holidata only provides data for countries and their principal subdivisions (both as they are defined in ISO 3166).
+Holidays for other subdivisions are either merged or ignored.
 There is also no explicit representation of partial holidays.
 
 ## License
