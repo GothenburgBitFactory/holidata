@@ -1,12 +1,12 @@
 from datetime import datetime
 
+import pytest
 from snapshottest.file import FileSnapshot
 
 from holidata import Locale
-import pytest
 
 
-@pytest.fixture(params=range(2011, datetime.now().year + 1))
+@pytest.fixture(params=range(2011, datetime.now().year + 2))
 def year(request):
     return request.param
 
