@@ -59,9 +59,9 @@ class YamlEmitter(Emitter):
                 value = holiday[key]
 
                 if value is not None and value != "":
-                  output += "    {}: {}\n".format(key, value)
+                    output += "    {}: {}\n".format(key, value)
                 else:
-                  output += "    {}:\n".format(key)
+                    output += "    {}:\n".format(key)
 
         output += "...\n"
         return output
