@@ -1,1 +1,98 @@
-[{'locale': 'es-US', 'region': '', 'date': '2011-01-01', 'description': 'Año Neuvo', 'type': 'NF', 'notes': ''}, {'locale': 'es-US', 'region': '', 'date': '2011-01-17', 'description': 'Cumpleaños de Martin Luther King, Jr.', 'type': 'V', 'notes': ''}, {'locale': 'es-US', 'region': '', 'date': '2011-02-21', 'description': 'Día del Presidente', 'type': 'NV', 'notes': ''}, {'locale': 'es-US', 'region': 'MA', 'date': '2011-04-18', 'description': 'Día del Patriota', 'type': 'NV', 'notes': ''}, {'locale': 'es-US', 'region': 'ME', 'date': '2011-04-18', 'description': 'Día del Patriota', 'type': 'NV', 'notes': ''}, {'locale': 'es-US', 'region': '', 'date': '2011-05-30', 'description': 'Día de los Caídos', 'type': 'NV', 'notes': ''}, {'locale': 'es-US', 'region': '', 'date': '2011-07-04', 'description': 'Día de la Independiencia', 'type': 'NF', 'notes': ''}, {'locale': 'es-US', 'region': '', 'date': '2011-09-05', 'description': 'Día del Trabajo', 'type': 'NV', 'notes': ''}, {'locale': 'es-US', 'region': '', 'date': '2011-10-10', 'description': 'Día de Columbus', 'type': 'NV', 'notes': ''}, {'locale': 'es-US', 'region': '', 'date': '2011-11-11', 'description': 'Día de los Veteranos', 'type': 'NF', 'notes': ''}, {'locale': 'es-US', 'region': '', 'date': '2011-11-24', 'description': 'Día de Acción de Gracias', 'type': 'NV', 'notes': ''}, {'locale': 'es-US', 'region': '', 'date': '2011-12-25', 'description': 'Navidad', 'type': 'NRF', 'notes': ''}]
+[
+    {
+        'date': '2011-01-01',
+        'description': 'Año Neuvo',
+        'locale': 'es-US',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2011-01-17',
+        'description': 'Cumpleaños de Martin Luther King, Jr.',
+        'locale': 'es-US',
+        'notes': '',
+        'region': '',
+        'type': 'V'
+    },
+    {
+        'date': '2011-02-21',
+        'description': 'Día del Presidente',
+        'locale': 'es-US',
+        'notes': '',
+        'region': '',
+        'type': 'NV'
+    },
+    {
+        'date': '2011-04-18',
+        'description': 'Día del Patriota',
+        'locale': 'es-US',
+        'notes': '',
+        'region': 'MA',
+        'type': 'NV'
+    },
+    {
+        'date': '2011-04-18',
+        'description': 'Día del Patriota',
+        'locale': 'es-US',
+        'notes': '',
+        'region': 'ME',
+        'type': 'NV'
+    },
+    {
+        'date': '2011-05-30',
+        'description': 'Día de los Caídos',
+        'locale': 'es-US',
+        'notes': '',
+        'region': '',
+        'type': 'NV'
+    },
+    {
+        'date': '2011-07-04',
+        'description': 'Día de la Independiencia',
+        'locale': 'es-US',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2011-09-05',
+        'description': 'Día del Trabajo',
+        'locale': 'es-US',
+        'notes': '',
+        'region': '',
+        'type': 'NV'
+    },
+    {
+        'date': '2011-10-10',
+        'description': 'Día de Columbus',
+        'locale': 'es-US',
+        'notes': '',
+        'region': '',
+        'type': 'NV'
+    },
+    {
+        'date': '2011-11-11',
+        'description': 'Día de los Veteranos',
+        'locale': 'es-US',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2011-11-24',
+        'description': 'Día de Acción de Gracias',
+        'locale': 'es-US',
+        'notes': '',
+        'region': '',
+        'type': 'NV'
+    },
+    {
+        'date': '2011-12-25',
+        'description': 'Navidad',
+        'locale': 'es-US',
+        'notes': '',
+        'region': '',
+        'type': 'NRF'
+    }
+]

@@ -1,1 +1,98 @@
-[{'locale': 'de-BE', 'region': '', 'date': '2018-01-01', 'description': 'Neujahr', 'type': 'NF', 'notes': ''}, {'locale': 'de-BE', 'region': '', 'date': '2018-04-01', 'description': 'Ostern', 'type': 'NRV', 'notes': ''}, {'locale': 'de-BE', 'region': '', 'date': '2018-04-02', 'description': 'Ostermontag', 'type': 'NRV', 'notes': ''}, {'locale': 'de-BE', 'region': '', 'date': '2018-05-01', 'description': 'Tag der Arbeit', 'type': 'NF', 'notes': ''}, {'locale': 'de-BE', 'region': '', 'date': '2018-05-10', 'description': 'Christi Himmelfahrt', 'type': 'NRV', 'notes': ''}, {'locale': 'de-BE', 'region': '', 'date': '2018-05-20', 'description': 'Pfingsten', 'type': 'NRV', 'notes': ''}, {'locale': 'de-BE', 'region': '', 'date': '2018-05-21', 'description': 'Pfingstmontag', 'type': 'NRV', 'notes': ''}, {'locale': 'de-BE', 'region': '', 'date': '2018-07-21', 'description': 'Nationalfeiertag', 'type': 'NF', 'notes': ''}, {'locale': 'de-BE', 'region': '', 'date': '2018-08-15', 'description': 'Mariä Himmelfahrt', 'type': 'NRF', 'notes': ''}, {'locale': 'de-BE', 'region': '', 'date': '2018-11-01', 'description': 'Allerheiligen', 'type': 'NRF', 'notes': ''}, {'locale': 'de-BE', 'region': '', 'date': '2018-11-11', 'description': 'Waffenstillstand', 'type': 'NF', 'notes': ''}, {'locale': 'de-BE', 'region': '', 'date': '2018-12-25', 'description': 'Weihnacht', 'type': 'NRF', 'notes': ''}]
+[
+    {
+        'date': '2018-01-01',
+        'description': 'Neujahr',
+        'locale': 'de-BE',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2018-04-01',
+        'description': 'Ostern',
+        'locale': 'de-BE',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2018-04-02',
+        'description': 'Ostermontag',
+        'locale': 'de-BE',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2018-05-01',
+        'description': 'Tag der Arbeit',
+        'locale': 'de-BE',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2018-05-10',
+        'description': 'Christi Himmelfahrt',
+        'locale': 'de-BE',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2018-05-20',
+        'description': 'Pfingsten',
+        'locale': 'de-BE',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2018-05-21',
+        'description': 'Pfingstmontag',
+        'locale': 'de-BE',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2018-07-21',
+        'description': 'Nationalfeiertag',
+        'locale': 'de-BE',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2018-08-15',
+        'description': 'Mariä Himmelfahrt',
+        'locale': 'de-BE',
+        'notes': '',
+        'region': '',
+        'type': 'NRF'
+    },
+    {
+        'date': '2018-11-01',
+        'description': 'Allerheiligen',
+        'locale': 'de-BE',
+        'notes': '',
+        'region': '',
+        'type': 'NRF'
+    },
+    {
+        'date': '2018-11-11',
+        'description': 'Waffenstillstand',
+        'locale': 'de-BE',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2018-12-25',
+        'description': 'Weihnacht',
+        'locale': 'de-BE',
+        'notes': '',
+        'region': '',
+        'type': 'NRF'
+    }
+]

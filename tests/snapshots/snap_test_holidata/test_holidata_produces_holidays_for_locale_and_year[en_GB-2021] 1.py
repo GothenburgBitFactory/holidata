@@ -1,1 +1,82 @@
-[{'locale': 'en-GB', 'region': '', 'date': '2021-01-01', 'description': "New Year's Day", 'type': 'NF', 'notes': ''}, {'locale': 'en-GB', 'region': '', 'date': '2021-04-02', 'description': 'Good Friday', 'type': 'NRV', 'notes': ''}, {'locale': 'en-GB', 'region': '', 'date': '2021-04-05', 'description': 'Easter Monday', 'type': 'NRV', 'notes': ''}, {'locale': 'en-GB', 'region': '', 'date': '2021-05-03', 'description': 'Early May Bank Holiday', 'type': 'NV', 'notes': ''}, {'locale': 'en-GB', 'region': '', 'date': '2021-05-31', 'description': 'Spring Bank Holiday', 'type': 'NV', 'notes': ''}, {'locale': 'en-GB', 'region': '', 'date': '2021-08-30', 'description': 'August Bank Holiday', 'type': 'NV', 'notes': ''}, {'locale': 'en-GB', 'region': '', 'date': '2021-12-25', 'description': 'Christmas Day', 'type': 'NRF', 'notes': ''}, {'locale': 'en-GB', 'region': '', 'date': '2021-12-26', 'description': 'Boxing Day', 'type': 'NF', 'notes': ''}, {'locale': 'en-GB', 'region': '', 'date': '2021-12-27', 'description': 'Christmas Day (observed)', 'type': 'NV', 'notes': ''}, {'locale': 'en-GB', 'region': '', 'date': '2021-12-28', 'description': 'Boxing Day (observed)', 'type': 'NV', 'notes': ''}]
+[
+    {
+        'date': '2021-01-01',
+        'description': "New Year's Day",
+        'locale': 'en-GB',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2021-04-02',
+        'description': 'Good Friday',
+        'locale': 'en-GB',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2021-04-05',
+        'description': 'Easter Monday',
+        'locale': 'en-GB',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2021-05-03',
+        'description': 'Early May Bank Holiday',
+        'locale': 'en-GB',
+        'notes': '',
+        'region': '',
+        'type': 'NV'
+    },
+    {
+        'date': '2021-05-31',
+        'description': 'Spring Bank Holiday',
+        'locale': 'en-GB',
+        'notes': '',
+        'region': '',
+        'type': 'NV'
+    },
+    {
+        'date': '2021-08-30',
+        'description': 'August Bank Holiday',
+        'locale': 'en-GB',
+        'notes': '',
+        'region': '',
+        'type': 'NV'
+    },
+    {
+        'date': '2021-12-25',
+        'description': 'Christmas Day',
+        'locale': 'en-GB',
+        'notes': '',
+        'region': '',
+        'type': 'NRF'
+    },
+    {
+        'date': '2021-12-26',
+        'description': 'Boxing Day',
+        'locale': 'en-GB',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2021-12-27',
+        'description': 'Christmas Day (observed)',
+        'locale': 'en-GB',
+        'notes': '',
+        'region': '',
+        'type': 'NV'
+    },
+    {
+        'date': '2021-12-28',
+        'description': 'Boxing Day (observed)',
+        'locale': 'en-GB',
+        'notes': '',
+        'region': '',
+        'type': 'NV'
+    }
+]

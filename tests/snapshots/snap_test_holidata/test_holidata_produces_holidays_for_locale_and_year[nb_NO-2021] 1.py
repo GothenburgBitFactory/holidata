@@ -1,1 +1,138 @@
-[{'locale': 'nb-NO', 'region': '', 'date': '2021-01-01', 'description': 'Nyttårsdag', 'type': 'NF', 'notes': ''}, {'locale': 'nb-NO', 'region': '', 'date': '2021-02-14', 'description': 'Fastelavn', 'type': 'NRV', 'notes': ''}, {'locale': 'nb-NO', 'region': '', 'date': '2021-03-28', 'description': 'Palmesøndag', 'type': 'NRV', 'notes': ''}, {'locale': 'nb-NO', 'region': '', 'date': '2021-04-01', 'description': 'Skjærtorsdag', 'type': 'NRV', 'notes': ''}, {'locale': 'nb-NO', 'region': '', 'date': '2021-04-02', 'description': 'Langfredag', 'type': 'NRV', 'notes': ''}, {'locale': 'nb-NO', 'region': '', 'date': '2021-04-04', 'description': 'Påskedag', 'type': 'NRV', 'notes': ''}, {'locale': 'nb-NO', 'region': '', 'date': '2021-04-05', 'description': 'Påskedag', 'type': 'NRV', 'notes': ''}, {'locale': 'nb-NO', 'region': '', 'date': '2021-05-01', 'description': 'Offentlig Høytidsdag', 'type': 'NF', 'notes': ''}, {'locale': 'nb-NO', 'region': '', 'date': '2021-05-08', 'description': 'Frigjøringsdag 1945', 'type': 'NF', 'notes': ''}, {'locale': 'nb-NO', 'region': '', 'date': '2021-05-13', 'description': 'Kristi Himmelfartsdag', 'type': 'NRV', 'notes': ''}, {'locale': 'nb-NO', 'region': '', 'date': '2021-05-17', 'description': 'Grunnlovsdag', 'type': 'NF', 'notes': ''}, {'locale': 'nb-NO', 'region': '', 'date': '2021-05-23', 'description': 'Pinsedag', 'type': 'NRV', 'notes': ''}, {'locale': 'nb-NO', 'region': '', 'date': '2021-05-24', 'description': 'Pinsedag', 'type': 'NRV', 'notes': ''}, {'locale': 'nb-NO', 'region': '', 'date': '2021-12-24', 'description': 'Julaften', 'type': 'NRF', 'notes': ''}, {'locale': 'nb-NO', 'region': '', 'date': '2021-12-25', 'description': 'Juledag', 'type': 'NRF', 'notes': ''}, {'locale': 'nb-NO', 'region': '', 'date': '2021-12-26', 'description': 'Juledag', 'type': 'NRF', 'notes': ''}, {'locale': 'nb-NO', 'region': '', 'date': '2021-12-31', 'description': 'Nyttårsaften', 'type': 'NF', 'notes': ''}]
+[
+    {
+        'date': '2021-01-01',
+        'description': 'Nyttårsdag',
+        'locale': 'nb-NO',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2021-02-14',
+        'description': 'Fastelavn',
+        'locale': 'nb-NO',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2021-03-28',
+        'description': 'Palmesøndag',
+        'locale': 'nb-NO',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2021-04-01',
+        'description': 'Skjærtorsdag',
+        'locale': 'nb-NO',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2021-04-02',
+        'description': 'Langfredag',
+        'locale': 'nb-NO',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2021-04-04',
+        'description': 'Påskedag',
+        'locale': 'nb-NO',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2021-04-05',
+        'description': 'Påskedag',
+        'locale': 'nb-NO',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2021-05-01',
+        'description': 'Offentlig Høytidsdag',
+        'locale': 'nb-NO',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2021-05-08',
+        'description': 'Frigjøringsdag 1945',
+        'locale': 'nb-NO',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2021-05-13',
+        'description': 'Kristi Himmelfartsdag',
+        'locale': 'nb-NO',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2021-05-17',
+        'description': 'Grunnlovsdag',
+        'locale': 'nb-NO',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2021-05-23',
+        'description': 'Pinsedag',
+        'locale': 'nb-NO',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2021-05-24',
+        'description': 'Pinsedag',
+        'locale': 'nb-NO',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2021-12-24',
+        'description': 'Julaften',
+        'locale': 'nb-NO',
+        'notes': '',
+        'region': '',
+        'type': 'NRF'
+    },
+    {
+        'date': '2021-12-25',
+        'description': 'Juledag',
+        'locale': 'nb-NO',
+        'notes': '',
+        'region': '',
+        'type': 'NRF'
+    },
+    {
+        'date': '2021-12-26',
+        'description': 'Juledag',
+        'locale': 'nb-NO',
+        'notes': '',
+        'region': '',
+        'type': 'NRF'
+    },
+    {
+        'date': '2021-12-31',
+        'description': 'Nyttårsaften',
+        'locale': 'nb-NO',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    }
+]

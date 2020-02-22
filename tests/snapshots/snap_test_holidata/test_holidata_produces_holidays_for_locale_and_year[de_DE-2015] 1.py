@@ -1,1 +1,274 @@
-[{'locale': 'de-DE', 'region': '', 'date': '2015-01-01', 'description': 'Neujahr', 'type': 'NF', 'notes': ''}, {'locale': 'de-DE', 'region': 'BW', 'date': '2015-01-06', 'description': 'Heilige drei Könige', 'type': 'NRF', 'notes': ''}, {'locale': 'de-DE', 'region': 'BY', 'date': '2015-01-06', 'description': 'Heilige drei Könige', 'type': 'NRF', 'notes': ''}, {'locale': 'de-DE', 'region': 'ST', 'date': '2015-01-06', 'description': 'Heilige drei Könige', 'type': 'NRF', 'notes': ''}, {'locale': 'de-DE', 'region': '', 'date': '2015-04-03', 'description': 'Karfreitag', 'type': 'NRV', 'notes': ''}, {'locale': 'de-DE', 'region': '', 'date': '2015-04-05', 'description': 'Ostern', 'type': 'NRV', 'notes': ''}, {'locale': 'de-DE', 'region': '', 'date': '2015-04-06', 'description': 'Ostermontag', 'type': 'NRV', 'notes': ''}, {'locale': 'de-DE', 'region': '', 'date': '2015-05-01', 'description': 'Erster Maifeiertag', 'type': 'NF', 'notes': ''}, {'locale': 'de-DE', 'region': '', 'date': '2015-05-14', 'description': 'Christi Himmelfahrt', 'type': 'NRV', 'notes': ''}, {'locale': 'de-DE', 'region': '', 'date': '2015-05-24', 'description': 'Pfingstsonntag', 'type': 'NRV', 'notes': ''}, {'locale': 'de-DE', 'region': '', 'date': '2015-05-25', 'description': 'Pfingstmontag', 'type': 'NRV', 'notes': ''}, {'locale': 'de-DE', 'region': 'BW', 'date': '2015-06-04', 'description': 'Fronleichnam', 'type': 'NRV', 'notes': ''}, {'locale': 'de-DE', 'region': 'BY', 'date': '2015-06-04', 'description': 'Fronleichnam', 'type': 'NRV', 'notes': ''}, {'locale': 'de-DE', 'region': 'HE', 'date': '2015-06-04', 'description': 'Fronleichnam', 'type': 'NRV', 'notes': ''}, {'locale': 'de-DE', 'region': 'NW', 'date': '2015-06-04', 'description': 'Fronleichnam', 'type': 'NRV', 'notes': ''}, {'locale': 'de-DE', 'region': 'RP', 'date': '2015-06-04', 'description': 'Fronleichnam', 'type': 'NRV', 'notes': ''}, {'locale': 'de-DE', 'region': 'SL', 'date': '2015-06-04', 'description': 'Fronleichnam', 'type': 'NRV', 'notes': ''}, {'locale': 'de-DE', 'region': 'SL', 'date': '2015-08-15', 'description': 'Mariä Himmelfahrt', 'type': 'NRF', 'notes': ''}, {'locale': 'de-DE', 'region': '', 'date': '2015-10-03', 'description': 'Tag der Deutschen Einheit', 'type': 'NRF', 'notes': ''}, {'locale': 'de-DE', 'region': 'BB', 'date': '2015-10-31', 'description': 'Reformationstag', 'type': 'NRF', 'notes': ''}, {'locale': 'de-DE', 'region': 'MV', 'date': '2015-10-31', 'description': 'Reformationstag', 'type': 'NRF', 'notes': ''}, {'locale': 'de-DE', 'region': 'SN', 'date': '2015-10-31', 'description': 'Reformationstag', 'type': 'NRF', 'notes': ''}, {'locale': 'de-DE', 'region': 'ST', 'date': '2015-10-31', 'description': 'Reformationstag', 'type': 'NRF', 'notes': ''}, {'locale': 'de-DE', 'region': 'TH', 'date': '2015-10-31', 'description': 'Reformationstag', 'type': 'NRF', 'notes': ''}, {'locale': 'de-DE', 'region': 'BW', 'date': '2015-11-01', 'description': 'Allerheiligen', 'type': 'NRF', 'notes': ''}, {'locale': 'de-DE', 'region': 'BY', 'date': '2015-11-01', 'description': 'Allerheiligen', 'type': 'NRF', 'notes': ''}, {'locale': 'de-DE', 'region': 'NW', 'date': '2015-11-01', 'description': 'Allerheiligen', 'type': 'NRF', 'notes': ''}, {'locale': 'de-DE', 'region': 'RP', 'date': '2015-11-01', 'description': 'Allerheiligen', 'type': 'NRF', 'notes': ''}, {'locale': 'de-DE', 'region': 'SL', 'date': '2015-11-01', 'description': 'Allerheiligen', 'type': 'NRF', 'notes': ''}, {'locale': 'de-DE', 'region': 'SN', 'date': '2015-11-18', 'description': 'Buß- und Bettag', 'type': 'NRV', 'notes': ''}, {'locale': 'de-DE', 'region': '', 'date': '2015-12-24', 'description': 'Heilig Abend', 'type': 'NRF', 'notes': ''}, {'locale': 'de-DE', 'region': '', 'date': '2015-12-25', 'description': 'Weihnachtstag', 'type': 'NRF', 'notes': ''}, {'locale': 'de-DE', 'region': '', 'date': '2015-12-26', 'description': 'Zweiter Weihnachtstag', 'type': 'NRF', 'notes': ''}, {'locale': 'de-DE', 'region': '', 'date': '2015-12-31', 'description': 'Silvester', 'type': 'NF', 'notes': ''}]
+[
+    {
+        'date': '2015-01-01',
+        'description': 'Neujahr',
+        'locale': 'de-DE',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2015-01-06',
+        'description': 'Heilige drei Könige',
+        'locale': 'de-DE',
+        'notes': '',
+        'region': 'BW',
+        'type': 'NRF'
+    },
+    {
+        'date': '2015-01-06',
+        'description': 'Heilige drei Könige',
+        'locale': 'de-DE',
+        'notes': '',
+        'region': 'BY',
+        'type': 'NRF'
+    },
+    {
+        'date': '2015-01-06',
+        'description': 'Heilige drei Könige',
+        'locale': 'de-DE',
+        'notes': '',
+        'region': 'ST',
+        'type': 'NRF'
+    },
+    {
+        'date': '2015-04-03',
+        'description': 'Karfreitag',
+        'locale': 'de-DE',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2015-04-05',
+        'description': 'Ostern',
+        'locale': 'de-DE',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2015-04-06',
+        'description': 'Ostermontag',
+        'locale': 'de-DE',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2015-05-01',
+        'description': 'Erster Maifeiertag',
+        'locale': 'de-DE',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2015-05-14',
+        'description': 'Christi Himmelfahrt',
+        'locale': 'de-DE',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2015-05-24',
+        'description': 'Pfingstsonntag',
+        'locale': 'de-DE',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2015-05-25',
+        'description': 'Pfingstmontag',
+        'locale': 'de-DE',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2015-06-04',
+        'description': 'Fronleichnam',
+        'locale': 'de-DE',
+        'notes': '',
+        'region': 'BW',
+        'type': 'NRV'
+    },
+    {
+        'date': '2015-06-04',
+        'description': 'Fronleichnam',
+        'locale': 'de-DE',
+        'notes': '',
+        'region': 'BY',
+        'type': 'NRV'
+    },
+    {
+        'date': '2015-06-04',
+        'description': 'Fronleichnam',
+        'locale': 'de-DE',
+        'notes': '',
+        'region': 'HE',
+        'type': 'NRV'
+    },
+    {
+        'date': '2015-06-04',
+        'description': 'Fronleichnam',
+        'locale': 'de-DE',
+        'notes': '',
+        'region': 'NW',
+        'type': 'NRV'
+    },
+    {
+        'date': '2015-06-04',
+        'description': 'Fronleichnam',
+        'locale': 'de-DE',
+        'notes': '',
+        'region': 'RP',
+        'type': 'NRV'
+    },
+    {
+        'date': '2015-06-04',
+        'description': 'Fronleichnam',
+        'locale': 'de-DE',
+        'notes': '',
+        'region': 'SL',
+        'type': 'NRV'
+    },
+    {
+        'date': '2015-08-15',
+        'description': 'Mariä Himmelfahrt',
+        'locale': 'de-DE',
+        'notes': '',
+        'region': 'SL',
+        'type': 'NRF'
+    },
+    {
+        'date': '2015-10-03',
+        'description': 'Tag der Deutschen Einheit',
+        'locale': 'de-DE',
+        'notes': '',
+        'region': '',
+        'type': 'NRF'
+    },
+    {
+        'date': '2015-10-31',
+        'description': 'Reformationstag',
+        'locale': 'de-DE',
+        'notes': '',
+        'region': 'BB',
+        'type': 'NRF'
+    },
+    {
+        'date': '2015-10-31',
+        'description': 'Reformationstag',
+        'locale': 'de-DE',
+        'notes': '',
+        'region': 'MV',
+        'type': 'NRF'
+    },
+    {
+        'date': '2015-10-31',
+        'description': 'Reformationstag',
+        'locale': 'de-DE',
+        'notes': '',
+        'region': 'SN',
+        'type': 'NRF'
+    },
+    {
+        'date': '2015-10-31',
+        'description': 'Reformationstag',
+        'locale': 'de-DE',
+        'notes': '',
+        'region': 'ST',
+        'type': 'NRF'
+    },
+    {
+        'date': '2015-10-31',
+        'description': 'Reformationstag',
+        'locale': 'de-DE',
+        'notes': '',
+        'region': 'TH',
+        'type': 'NRF'
+    },
+    {
+        'date': '2015-11-01',
+        'description': 'Allerheiligen',
+        'locale': 'de-DE',
+        'notes': '',
+        'region': 'BW',
+        'type': 'NRF'
+    },
+    {
+        'date': '2015-11-01',
+        'description': 'Allerheiligen',
+        'locale': 'de-DE',
+        'notes': '',
+        'region': 'BY',
+        'type': 'NRF'
+    },
+    {
+        'date': '2015-11-01',
+        'description': 'Allerheiligen',
+        'locale': 'de-DE',
+        'notes': '',
+        'region': 'NW',
+        'type': 'NRF'
+    },
+    {
+        'date': '2015-11-01',
+        'description': 'Allerheiligen',
+        'locale': 'de-DE',
+        'notes': '',
+        'region': 'RP',
+        'type': 'NRF'
+    },
+    {
+        'date': '2015-11-01',
+        'description': 'Allerheiligen',
+        'locale': 'de-DE',
+        'notes': '',
+        'region': 'SL',
+        'type': 'NRF'
+    },
+    {
+        'date': '2015-11-18',
+        'description': 'Buß- und Bettag',
+        'locale': 'de-DE',
+        'notes': '',
+        'region': 'SN',
+        'type': 'NRV'
+    },
+    {
+        'date': '2015-12-24',
+        'description': 'Heilig Abend',
+        'locale': 'de-DE',
+        'notes': '',
+        'region': '',
+        'type': 'NRF'
+    },
+    {
+        'date': '2015-12-25',
+        'description': 'Weihnachtstag',
+        'locale': 'de-DE',
+        'notes': '',
+        'region': '',
+        'type': 'NRF'
+    },
+    {
+        'date': '2015-12-26',
+        'description': 'Zweiter Weihnachtstag',
+        'locale': 'de-DE',
+        'notes': '',
+        'region': '',
+        'type': 'NRF'
+    },
+    {
+        'date': '2015-12-31',
+        'description': 'Silvester',
+        'locale': 'de-DE',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    }
+]

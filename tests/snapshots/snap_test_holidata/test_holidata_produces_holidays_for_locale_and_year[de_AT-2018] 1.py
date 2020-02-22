@@ -1,1 +1,226 @@
-[{'locale': 'de-AT', 'region': '', 'date': '2018-01-01', 'description': 'Neujahr', 'type': 'NF', 'notes': ''}, {'locale': 'de-AT', 'region': '', 'date': '2018-01-06', 'description': 'Heilige drei Könige', 'type': 'NRF', 'notes': ''}, {'locale': 'de-AT', 'region': '2', 'date': '2018-03-19', 'description': 'Josef', 'type': 'NRF', 'notes': ''}, {'locale': 'de-AT', 'region': '6', 'date': '2018-03-19', 'description': 'Josef', 'type': 'NRF', 'notes': ''}, {'locale': 'de-AT', 'region': '7', 'date': '2018-03-19', 'description': 'Josef', 'type': 'NRF', 'notes': ''}, {'locale': 'de-AT', 'region': '8', 'date': '2018-03-19', 'description': 'Josef', 'type': 'NRF', 'notes': ''}, {'locale': 'de-AT', 'region': '', 'date': '2018-03-30', 'description': 'Karfreitag', 'type': 'NRV', 'notes': ''}, {'locale': 'de-AT', 'region': '', 'date': '2018-04-01', 'description': 'Ostersonntag', 'type': 'NRV', 'notes': ''}, {'locale': 'de-AT', 'region': '', 'date': '2018-04-02', 'description': 'Ostermontag', 'type': 'NRV', 'notes': ''}, {'locale': 'de-AT', 'region': '', 'date': '2018-05-01', 'description': 'Staatsfeiertag', 'type': 'NF', 'notes': ''}, {'locale': 'de-AT', 'region': '4', 'date': '2018-05-04', 'description': 'Florian', 'type': 'NF', 'notes': ''}, {'locale': 'de-AT', 'region': '', 'date': '2018-05-10', 'description': 'Christi Himmelfahrt', 'type': 'NRV', 'notes': ''}, {'locale': 'de-AT', 'region': '', 'date': '2018-05-20', 'description': 'Pfingstsonntag', 'type': 'NRV', 'notes': ''}, {'locale': 'de-AT', 'region': '', 'date': '2018-05-21', 'description': 'Pfingstmontag', 'type': 'NRV', 'notes': ''}, {'locale': 'de-AT', 'region': '', 'date': '2018-05-31', 'description': 'Fronleichnam', 'type': 'NRV', 'notes': ''}, {'locale': 'de-AT', 'region': '', 'date': '2018-08-15', 'description': 'Mariä Himmelfahrt', 'type': 'NRF', 'notes': ''}, {'locale': 'de-AT', 'region': '5', 'date': '2018-09-24', 'description': 'Rupert', 'type': 'NF', 'notes': ''}, {'locale': 'de-AT', 'region': '2', 'date': '2018-10-10', 'description': 'Tag der Volksabstimmung', 'type': 'NF', 'notes': ''}, {'locale': 'de-AT', 'region': '', 'date': '2018-10-26', 'description': 'Nationalfeiertag', 'type': 'NF', 'notes': ''}, {'locale': 'de-AT', 'region': '', 'date': '2018-11-01', 'description': 'Allerheiligen', 'type': 'NRF', 'notes': ''}, {'locale': 'de-AT', 'region': '1', 'date': '2018-11-11', 'description': 'Martin', 'type': 'NF', 'notes': ''}, {'locale': 'de-AT', 'region': '9', 'date': '2018-11-15', 'description': 'Leopold', 'type': 'NF', 'notes': ''}, {'locale': 'de-AT', 'region': '3', 'date': '2018-11-15', 'description': 'Leopold', 'type': 'NF', 'notes': ''}, {'locale': 'de-AT', 'region': '', 'date': '2018-12-08', 'description': 'Mariä Empfängnis', 'type': 'NRF', 'notes': ''}, {'locale': 'de-AT', 'region': '', 'date': '2018-12-24', 'description': 'Heiliger Abend', 'type': 'NRF', 'notes': ''}, {'locale': 'de-AT', 'region': '', 'date': '2018-12-25', 'description': 'Christtag', 'type': 'NRF', 'notes': ''}, {'locale': 'de-AT', 'region': '', 'date': '2018-12-26', 'description': 'Stefanitag', 'type': 'NF', 'notes': ''}, {'locale': 'de-AT', 'region': '', 'date': '2018-12-31', 'description': 'Silvester', 'type': 'NF', 'notes': ''}]
+[
+    {
+        'date': '2018-01-01',
+        'description': 'Neujahr',
+        'locale': 'de-AT',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2018-01-06',
+        'description': 'Heilige drei Könige',
+        'locale': 'de-AT',
+        'notes': '',
+        'region': '',
+        'type': 'NRF'
+    },
+    {
+        'date': '2018-03-19',
+        'description': 'Josef',
+        'locale': 'de-AT',
+        'notes': '',
+        'region': '2',
+        'type': 'NRF'
+    },
+    {
+        'date': '2018-03-19',
+        'description': 'Josef',
+        'locale': 'de-AT',
+        'notes': '',
+        'region': '6',
+        'type': 'NRF'
+    },
+    {
+        'date': '2018-03-19',
+        'description': 'Josef',
+        'locale': 'de-AT',
+        'notes': '',
+        'region': '7',
+        'type': 'NRF'
+    },
+    {
+        'date': '2018-03-19',
+        'description': 'Josef',
+        'locale': 'de-AT',
+        'notes': '',
+        'region': '8',
+        'type': 'NRF'
+    },
+    {
+        'date': '2018-03-30',
+        'description': 'Karfreitag',
+        'locale': 'de-AT',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2018-04-01',
+        'description': 'Ostersonntag',
+        'locale': 'de-AT',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2018-04-02',
+        'description': 'Ostermontag',
+        'locale': 'de-AT',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2018-05-01',
+        'description': 'Staatsfeiertag',
+        'locale': 'de-AT',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2018-05-04',
+        'description': 'Florian',
+        'locale': 'de-AT',
+        'notes': '',
+        'region': '4',
+        'type': 'NF'
+    },
+    {
+        'date': '2018-05-10',
+        'description': 'Christi Himmelfahrt',
+        'locale': 'de-AT',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2018-05-20',
+        'description': 'Pfingstsonntag',
+        'locale': 'de-AT',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2018-05-21',
+        'description': 'Pfingstmontag',
+        'locale': 'de-AT',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2018-05-31',
+        'description': 'Fronleichnam',
+        'locale': 'de-AT',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2018-08-15',
+        'description': 'Mariä Himmelfahrt',
+        'locale': 'de-AT',
+        'notes': '',
+        'region': '',
+        'type': 'NRF'
+    },
+    {
+        'date': '2018-09-24',
+        'description': 'Rupert',
+        'locale': 'de-AT',
+        'notes': '',
+        'region': '5',
+        'type': 'NF'
+    },
+    {
+        'date': '2018-10-10',
+        'description': 'Tag der Volksabstimmung',
+        'locale': 'de-AT',
+        'notes': '',
+        'region': '2',
+        'type': 'NF'
+    },
+    {
+        'date': '2018-10-26',
+        'description': 'Nationalfeiertag',
+        'locale': 'de-AT',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2018-11-01',
+        'description': 'Allerheiligen',
+        'locale': 'de-AT',
+        'notes': '',
+        'region': '',
+        'type': 'NRF'
+    },
+    {
+        'date': '2018-11-11',
+        'description': 'Martin',
+        'locale': 'de-AT',
+        'notes': '',
+        'region': '1',
+        'type': 'NF'
+    },
+    {
+        'date': '2018-11-15',
+        'description': 'Leopold',
+        'locale': 'de-AT',
+        'notes': '',
+        'region': '9',
+        'type': 'NF'
+    },
+    {
+        'date': '2018-11-15',
+        'description': 'Leopold',
+        'locale': 'de-AT',
+        'notes': '',
+        'region': '3',
+        'type': 'NF'
+    },
+    {
+        'date': '2018-12-08',
+        'description': 'Mariä Empfängnis',
+        'locale': 'de-AT',
+        'notes': '',
+        'region': '',
+        'type': 'NRF'
+    },
+    {
+        'date': '2018-12-24',
+        'description': 'Heiliger Abend',
+        'locale': 'de-AT',
+        'notes': '',
+        'region': '',
+        'type': 'NRF'
+    },
+    {
+        'date': '2018-12-25',
+        'description': 'Christtag',
+        'locale': 'de-AT',
+        'notes': '',
+        'region': '',
+        'type': 'NRF'
+    },
+    {
+        'date': '2018-12-26',
+        'description': 'Stefanitag',
+        'locale': 'de-AT',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2018-12-31',
+        'description': 'Silvester',
+        'locale': 'de-AT',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    }
+]

@@ -1,1 +1,98 @@
-[{'locale': 'it-IT', 'region': '', 'date': '2018-01-01', 'description': 'Capodanno', 'type': 'NF', 'notes': ''}, {'locale': 'it-IT', 'region': '', 'date': '2018-01-06', 'description': 'Epifania', 'type': 'NRF', 'notes': ''}, {'locale': 'it-IT', 'region': '', 'date': '2018-04-01', 'description': 'Pasqua', 'type': 'NRV', 'notes': ''}, {'locale': 'it-IT', 'region': '', 'date': '2018-04-02', 'description': 'Pasquetta', 'type': 'NRV', 'notes': ''}, {'locale': 'it-IT', 'region': '', 'date': '2018-04-25', 'description': 'Festa della liberazione', 'type': 'NF', 'notes': ''}, {'locale': 'it-IT', 'region': '', 'date': '2018-05-01', 'description': 'Festa del lavoro', 'type': 'NF', 'notes': ''}, {'locale': 'it-IT', 'region': '', 'date': '2018-06-02', 'description': 'Festa della repubblica', 'type': 'NF', 'notes': ''}, {'locale': 'it-IT', 'region': '', 'date': '2018-08-15', 'description': 'Assunzione (ferragosto)', 'type': 'NRF', 'notes': ''}, {'locale': 'it-IT', 'region': '', 'date': '2018-11-01', 'description': 'Ognissanti', 'type': 'NRF', 'notes': ''}, {'locale': 'it-IT', 'region': '', 'date': '2018-12-08', 'description': 'Immacolata concezione', 'type': 'NRF', 'notes': ''}, {'locale': 'it-IT', 'region': '', 'date': '2018-12-25', 'description': 'Natale', 'type': 'NRF', 'notes': ''}, {'locale': 'it-IT', 'region': '', 'date': '2018-12-26', 'description': 'S.to Stefano', 'type': 'NRF', 'notes': ''}]
+[
+    {
+        'date': '2018-01-01',
+        'description': 'Capodanno',
+        'locale': 'it-IT',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2018-01-06',
+        'description': 'Epifania',
+        'locale': 'it-IT',
+        'notes': '',
+        'region': '',
+        'type': 'NRF'
+    },
+    {
+        'date': '2018-04-01',
+        'description': 'Pasqua',
+        'locale': 'it-IT',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2018-04-02',
+        'description': 'Pasquetta',
+        'locale': 'it-IT',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2018-04-25',
+        'description': 'Festa della liberazione',
+        'locale': 'it-IT',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2018-05-01',
+        'description': 'Festa del lavoro',
+        'locale': 'it-IT',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2018-06-02',
+        'description': 'Festa della repubblica',
+        'locale': 'it-IT',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2018-08-15',
+        'description': 'Assunzione (ferragosto)',
+        'locale': 'it-IT',
+        'notes': '',
+        'region': '',
+        'type': 'NRF'
+    },
+    {
+        'date': '2018-11-01',
+        'description': 'Ognissanti',
+        'locale': 'it-IT',
+        'notes': '',
+        'region': '',
+        'type': 'NRF'
+    },
+    {
+        'date': '2018-12-08',
+        'description': 'Immacolata concezione',
+        'locale': 'it-IT',
+        'notes': '',
+        'region': '',
+        'type': 'NRF'
+    },
+    {
+        'date': '2018-12-25',
+        'description': 'Natale',
+        'locale': 'it-IT',
+        'notes': '',
+        'region': '',
+        'type': 'NRF'
+    },
+    {
+        'date': '2018-12-26',
+        'description': 'S.to Stefano',
+        'locale': 'it-IT',
+        'notes': '',
+        'region': '',
+        'type': 'NRF'
+    }
+]

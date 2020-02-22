@@ -1,1 +1,106 @@
-[{'locale': 'pl-PL', 'region': '', 'date': '2019-01-01', 'description': 'Nowy Rok', 'type': 'NF', 'notes': ''}, {'locale': 'pl-PL', 'region': '', 'date': '2019-01-06', 'description': 'Trzech Króli', 'type': 'NRF', 'notes': ''}, {'locale': 'pl-PL', 'region': '', 'date': '2019-04-21', 'description': 'Wielkanoc', 'type': 'NRV', 'notes': ''}, {'locale': 'pl-PL', 'region': '', 'date': '2019-04-22', 'description': 'Poniedziałek Wielkanocny', 'type': 'NRV', 'notes': ''}, {'locale': 'pl-PL', 'region': '', 'date': '2019-05-01', 'description': 'Święto Pracy', 'type': 'NF', 'notes': ''}, {'locale': 'pl-PL', 'region': '', 'date': '2019-05-03', 'description': 'Święto Konstytucji Trzeciego Maja', 'type': 'NF', 'notes': ''}, {'locale': 'pl-PL', 'region': '', 'date': '2019-06-09', 'description': 'Zielone Świątki', 'type': 'NRV', 'notes': ''}, {'locale': 'pl-PL', 'region': '', 'date': '2019-06-20', 'description': 'Boże Ciało', 'type': 'NRV', 'notes': ''}, {'locale': 'pl-PL', 'region': '', 'date': '2019-08-15', 'description': 'Wniebowzięcie Najświętszej Maryi Panny', 'type': 'NRF', 'notes': ''}, {'locale': 'pl-PL', 'region': '', 'date': '2019-11-01', 'description': 'Wszystkich Świętych', 'type': 'NRF', 'notes': ''}, {'locale': 'pl-PL', 'region': '', 'date': '2019-11-11', 'description': 'Narodowe Święto Niepodległości', 'type': 'NF', 'notes': ''}, {'locale': 'pl-PL', 'region': '', 'date': '2019-12-25', 'description': 'Boże Narodzenie (pierwszy dzień)', 'type': 'NRF', 'notes': ''}, {'locale': 'pl-PL', 'region': '', 'date': '2019-12-26', 'description': 'Boże Narodzenie (drugi dzień)', 'type': 'NRF', 'notes': ''}]
+[
+    {
+        'date': '2019-01-01',
+        'description': 'Nowy Rok',
+        'locale': 'pl-PL',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2019-01-06',
+        'description': 'Trzech Króli',
+        'locale': 'pl-PL',
+        'notes': '',
+        'region': '',
+        'type': 'NRF'
+    },
+    {
+        'date': '2019-04-21',
+        'description': 'Wielkanoc',
+        'locale': 'pl-PL',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2019-04-22',
+        'description': 'Poniedziałek Wielkanocny',
+        'locale': 'pl-PL',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2019-05-01',
+        'description': 'Święto Pracy',
+        'locale': 'pl-PL',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2019-05-03',
+        'description': 'Święto Konstytucji Trzeciego Maja',
+        'locale': 'pl-PL',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2019-06-09',
+        'description': 'Zielone Świątki',
+        'locale': 'pl-PL',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2019-06-20',
+        'description': 'Boże Ciało',
+        'locale': 'pl-PL',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2019-08-15',
+        'description': 'Wniebowzięcie Najświętszej Maryi Panny',
+        'locale': 'pl-PL',
+        'notes': '',
+        'region': '',
+        'type': 'NRF'
+    },
+    {
+        'date': '2019-11-01',
+        'description': 'Wszystkich Świętych',
+        'locale': 'pl-PL',
+        'notes': '',
+        'region': '',
+        'type': 'NRF'
+    },
+    {
+        'date': '2019-11-11',
+        'description': 'Narodowe Święto Niepodległości',
+        'locale': 'pl-PL',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2019-12-25',
+        'description': 'Boże Narodzenie (pierwszy dzień)',
+        'locale': 'pl-PL',
+        'notes': '',
+        'region': '',
+        'type': 'NRF'
+    },
+    {
+        'date': '2019-12-26',
+        'description': 'Boże Narodzenie (drugi dzień)',
+        'locale': 'pl-PL',
+        'notes': '',
+        'region': '',
+        'type': 'NRF'
+    }
+]

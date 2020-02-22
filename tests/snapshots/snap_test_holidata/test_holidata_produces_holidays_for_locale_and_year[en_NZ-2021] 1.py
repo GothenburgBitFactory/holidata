@@ -1,1 +1,114 @@
-[{'locale': 'en-NZ', 'region': '', 'date': '2021-01-01', 'description': "New Year's Day", 'type': 'NF', 'notes': ''}, {'locale': 'en-NZ', 'region': '', 'date': '2021-01-04', 'description': "Day after New Year's Day", 'type': 'NV', 'notes': ''}, {'locale': 'en-NZ', 'region': '', 'date': '2021-02-06', 'description': 'Waitangi Day', 'type': 'NF', 'notes': ''}, {'locale': 'en-NZ', 'region': '', 'date': '2021-02-08', 'description': 'Waitangi Day (observed)', 'type': 'NV', 'notes': ''}, {'locale': 'en-NZ', 'region': '', 'date': '2021-04-02', 'description': 'Good Friday', 'type': 'NRV', 'notes': ''}, {'locale': 'en-NZ', 'region': '', 'date': '2021-04-05', 'description': 'Easter Monday', 'type': 'NRV', 'notes': ''}, {'locale': 'en-NZ', 'region': '', 'date': '2021-04-25', 'description': 'ANZAC Day', 'type': 'NF', 'notes': ''}, {'locale': 'en-NZ', 'region': '', 'date': '2021-04-26', 'description': 'ANZAC Day (observed)', 'type': 'NV', 'notes': ''}, {'locale': 'en-NZ', 'region': '', 'date': '2021-06-07', 'description': "Queen's Birthday", 'type': 'NV', 'notes': ''}, {'locale': 'en-NZ', 'region': '', 'date': '2021-10-25', 'description': 'Labour Day', 'type': 'NV', 'notes': ''}, {'locale': 'en-NZ', 'region': '', 'date': '2021-12-25', 'description': 'Christmas Day', 'type': 'NRF', 'notes': ''}, {'locale': 'en-NZ', 'region': '', 'date': '2021-12-26', 'description': 'Boxing Day', 'type': 'NF', 'notes': ''}, {'locale': 'en-NZ', 'region': '', 'date': '2021-12-27', 'description': 'Christmas Day (observed)', 'type': 'NV', 'notes': ''}, {'locale': 'en-NZ', 'region': '', 'date': '2021-12-28', 'description': 'Boxing Day (observed)', 'type': 'NV', 'notes': ''}]
+[
+    {
+        'date': '2021-01-01',
+        'description': "New Year's Day",
+        'locale': 'en-NZ',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2021-01-04',
+        'description': "Day after New Year's Day",
+        'locale': 'en-NZ',
+        'notes': '',
+        'region': '',
+        'type': 'NV'
+    },
+    {
+        'date': '2021-02-06',
+        'description': 'Waitangi Day',
+        'locale': 'en-NZ',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2021-02-08',
+        'description': 'Waitangi Day (observed)',
+        'locale': 'en-NZ',
+        'notes': '',
+        'region': '',
+        'type': 'NV'
+    },
+    {
+        'date': '2021-04-02',
+        'description': 'Good Friday',
+        'locale': 'en-NZ',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2021-04-05',
+        'description': 'Easter Monday',
+        'locale': 'en-NZ',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2021-04-25',
+        'description': 'ANZAC Day',
+        'locale': 'en-NZ',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2021-04-26',
+        'description': 'ANZAC Day (observed)',
+        'locale': 'en-NZ',
+        'notes': '',
+        'region': '',
+        'type': 'NV'
+    },
+    {
+        'date': '2021-06-07',
+        'description': "Queen's Birthday",
+        'locale': 'en-NZ',
+        'notes': '',
+        'region': '',
+        'type': 'NV'
+    },
+    {
+        'date': '2021-10-25',
+        'description': 'Labour Day',
+        'locale': 'en-NZ',
+        'notes': '',
+        'region': '',
+        'type': 'NV'
+    },
+    {
+        'date': '2021-12-25',
+        'description': 'Christmas Day',
+        'locale': 'en-NZ',
+        'notes': '',
+        'region': '',
+        'type': 'NRF'
+    },
+    {
+        'date': '2021-12-26',
+        'description': 'Boxing Day',
+        'locale': 'en-NZ',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2021-12-27',
+        'description': 'Christmas Day (observed)',
+        'locale': 'en-NZ',
+        'notes': '',
+        'region': '',
+        'type': 'NV'
+    },
+    {
+        'date': '2021-12-28',
+        'description': 'Boxing Day (observed)',
+        'locale': 'en-NZ',
+        'notes': '',
+        'region': '',
+        'type': 'NV'
+    }
+]

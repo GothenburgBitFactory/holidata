@@ -2,6 +2,7 @@ from datetime import datetime
 
 import pytest
 from snapshottest.file import FileSnapshot
+from snapshottest.formatter import Formatter
 
 from holidata import Locale
 
@@ -21,6 +22,6 @@ def test_holidata_produces_holidays_for_locale_and_year(snapshot, tmpdir, locale
 
     export_data = [h.as_dict() for h in locale.holidays]
     export_data.sort(key=lambda x: x['date'])
-    temp_file.write(export_data)
+    temp_file.write(Formatter().format(export_data, 0))
 
     snapshot.assert_match(FileSnapshot(str(temp_file)))

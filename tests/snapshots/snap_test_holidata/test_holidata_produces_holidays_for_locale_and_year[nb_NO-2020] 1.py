@@ -1,1 +1,138 @@
-[{'locale': 'nb-NO', 'region': '', 'date': '2020-01-01', 'description': 'Nyttårsdag', 'type': 'NF', 'notes': ''}, {'locale': 'nb-NO', 'region': '', 'date': '2020-02-23', 'description': 'Fastelavn', 'type': 'NRV', 'notes': ''}, {'locale': 'nb-NO', 'region': '', 'date': '2020-04-05', 'description': 'Palmesøndag', 'type': 'NRV', 'notes': ''}, {'locale': 'nb-NO', 'region': '', 'date': '2020-04-09', 'description': 'Skjærtorsdag', 'type': 'NRV', 'notes': ''}, {'locale': 'nb-NO', 'region': '', 'date': '2020-04-10', 'description': 'Langfredag', 'type': 'NRV', 'notes': ''}, {'locale': 'nb-NO', 'region': '', 'date': '2020-04-12', 'description': 'Påskedag', 'type': 'NRV', 'notes': ''}, {'locale': 'nb-NO', 'region': '', 'date': '2020-04-13', 'description': 'Påskedag', 'type': 'NRV', 'notes': ''}, {'locale': 'nb-NO', 'region': '', 'date': '2020-05-01', 'description': 'Offentlig Høytidsdag', 'type': 'NF', 'notes': ''}, {'locale': 'nb-NO', 'region': '', 'date': '2020-05-08', 'description': 'Frigjøringsdag 1945', 'type': 'NF', 'notes': ''}, {'locale': 'nb-NO', 'region': '', 'date': '2020-05-17', 'description': 'Grunnlovsdag', 'type': 'NF', 'notes': ''}, {'locale': 'nb-NO', 'region': '', 'date': '2020-05-21', 'description': 'Kristi Himmelfartsdag', 'type': 'NRV', 'notes': ''}, {'locale': 'nb-NO', 'region': '', 'date': '2020-05-31', 'description': 'Pinsedag', 'type': 'NRV', 'notes': ''}, {'locale': 'nb-NO', 'region': '', 'date': '2020-06-01', 'description': 'Pinsedag', 'type': 'NRV', 'notes': ''}, {'locale': 'nb-NO', 'region': '', 'date': '2020-12-24', 'description': 'Julaften', 'type': 'NRF', 'notes': ''}, {'locale': 'nb-NO', 'region': '', 'date': '2020-12-25', 'description': 'Juledag', 'type': 'NRF', 'notes': ''}, {'locale': 'nb-NO', 'region': '', 'date': '2020-12-26', 'description': 'Juledag', 'type': 'NRF', 'notes': ''}, {'locale': 'nb-NO', 'region': '', 'date': '2020-12-31', 'description': 'Nyttårsaften', 'type': 'NF', 'notes': ''}]
+[
+    {
+        'date': '2020-01-01',
+        'description': 'Nyttårsdag',
+        'locale': 'nb-NO',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2020-02-23',
+        'description': 'Fastelavn',
+        'locale': 'nb-NO',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2020-04-05',
+        'description': 'Palmesøndag',
+        'locale': 'nb-NO',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2020-04-09',
+        'description': 'Skjærtorsdag',
+        'locale': 'nb-NO',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2020-04-10',
+        'description': 'Langfredag',
+        'locale': 'nb-NO',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2020-04-12',
+        'description': 'Påskedag',
+        'locale': 'nb-NO',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2020-04-13',
+        'description': 'Påskedag',
+        'locale': 'nb-NO',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2020-05-01',
+        'description': 'Offentlig Høytidsdag',
+        'locale': 'nb-NO',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2020-05-08',
+        'description': 'Frigjøringsdag 1945',
+        'locale': 'nb-NO',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2020-05-17',
+        'description': 'Grunnlovsdag',
+        'locale': 'nb-NO',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2020-05-21',
+        'description': 'Kristi Himmelfartsdag',
+        'locale': 'nb-NO',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2020-05-31',
+        'description': 'Pinsedag',
+        'locale': 'nb-NO',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2020-06-01',
+        'description': 'Pinsedag',
+        'locale': 'nb-NO',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2020-12-24',
+        'description': 'Julaften',
+        'locale': 'nb-NO',
+        'notes': '',
+        'region': '',
+        'type': 'NRF'
+    },
+    {
+        'date': '2020-12-25',
+        'description': 'Juledag',
+        'locale': 'nb-NO',
+        'notes': '',
+        'region': '',
+        'type': 'NRF'
+    },
+    {
+        'date': '2020-12-26',
+        'description': 'Juledag',
+        'locale': 'nb-NO',
+        'notes': '',
+        'region': '',
+        'type': 'NRF'
+    },
+    {
+        'date': '2020-12-31',
+        'description': 'Nyttårsaften',
+        'locale': 'nb-NO',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    }
+]
