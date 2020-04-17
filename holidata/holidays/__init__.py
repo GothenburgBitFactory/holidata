@@ -27,4 +27,5 @@ __all__ = [
     "pt-PT",
     "ru-RU",
     "sk-SK",
+    "sv-FI",
 ]
