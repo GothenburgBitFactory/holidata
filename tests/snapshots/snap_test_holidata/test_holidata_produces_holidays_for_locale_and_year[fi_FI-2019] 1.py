@@ -1,0 +1,106 @@
+[
+    {
+        'date': '2019-01-01',
+        'description': 'Uudenvuodenpäivä',
+        'locale': 'fi-FI',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2019-01-06',
+        'description': 'Loppiainen',
+        'locale': 'fi-FI',
+        'notes': '',
+        'region': '',
+        'type': 'NRF'
+    },
+    {
+        'date': '2019-04-19',
+        'description': 'Pitkäperjantai',
+        'locale': 'fi-FI',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2019-04-21',
+        'description': 'Pääsiäispäivä',
+        'locale': 'fi-FI',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2019-04-22',
+        'description': '2. pääsiäispäivä',
+        'locale': 'fi-FI',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2019-05-01',
+        'description': 'Vappu',
+        'locale': 'fi-FI',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2019-05-30',
+        'description': 'Helatorstai',
+        'locale': 'fi-FI',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2019-06-09',
+        'description': 'Helluntaipäivä',
+        'locale': 'fi-FI',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2019-06-22',
+        'description': 'Juhannuspäivä',
+        'locale': 'fi-FI',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2019-11-02',
+        'description': 'Pyhäinpäivä',
+        'locale': 'fi-FI',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2019-12-06',
+        'description': 'Itsenäisyyspäivä',
+        'locale': 'fi-FI',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2019-12-25',
+        'description': 'Joulupäivä',
+        'locale': 'fi-FI',
+        'notes': '',
+        'region': '',
+        'type': 'NRF'
+    },
+    {
+        'date': '2019-12-26',
+        'description': 'Tapaninpäivä',
+        'locale': 'fi-FI',
+        'notes': '',
+        'region': '',
+        'type': 'NRF'
+    }
+]
