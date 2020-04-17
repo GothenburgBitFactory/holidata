@@ -49,7 +49,7 @@ class cs_CZ(Locale):
 
     def holiday_den_boje_za_svobodu_a_demokracii_a_mezinarodni_den_studentstva(self):
         """
-        11-17: [NF] 
+        11-17: [NF]
         before 2019-04-01: Den boje za svobodu a demokracii
         before 2019-04-01: Den boje za svobodu a demokracii a Mezinárodní den studentstva
         """
