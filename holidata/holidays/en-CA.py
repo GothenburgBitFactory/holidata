@@ -36,16 +36,17 @@ class en_CA(Locale):
     """
     01-01: [NF] New Year's Day
     06-24: [QC] [F] National Holiday
-    07-01: [NF] Canada day
+    07-01: [NF] Canada Day
     11-11: [AB,BC,NB,NL,NT] [F] Remembrance Day
     12-25: [NRF] Christmas Day
     12-26: [NRF] Boxing Day
     2 days before Easter: [NRV] Good Friday
     1 day after Easter: [AB,PE,QC] [RV] Easter Monday
-    3. monday in February: [AB,ON,SK,NB] [V] Family day
+    3. monday in February: [AB,ON,SK,NB] [V] Family Day
     3. monday in February: [MB] [V] Louis Riel Day
     3. monday in February: [PE] [V] Islander Day
-    1. monday in August: [MB,NT,NU] [V] August Civic Holiday
+    1. monday in August: [NT,NU] [V] August Civic Holiday
+    1. monday in August: [SK] [V] Saskatchewan Day
     1. monday in August: [AB,NS] [V] Heritage Day
     1. monday in August: [NB] [V] New Brunswick Day
     1. monday in September: [NV] Labour Day
@@ -67,17 +68,14 @@ class en_CA(Locale):
 
 
     def holiday_victoria_day(self):
-        days = []
-        for region in ['AB', 'BC', 'MB', 'NS', 'ON', 'SK', 'NT', 'NU', 'YT']:
-            days.append(Holiday(
+        return [Holiday(
                 locale=self.locale,
                 region=region,
                 date=SmartDayArrow(self.year, 5, 25).shift_to_weekday(
-                            'monday', order=1, reverse=True, including=False),
+                           'monday', order=1, reverse=True, including=False),
                 description="Victoria Day",
                 flags="V",
                 notes=""
-            ))
-
-        return days
-
+                ) for region in
+                ['AB', 'BC', 'MB', 'NS', 'ON', 'SK', 'NT', 'NU', 'YT']
+            ]
