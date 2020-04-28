@@ -13,6 +13,7 @@ __all__ = [
     "en-GB",
     "en-NZ",
     "en-US",
+    "es-CO",
     "es-ES",
     "es-US",
     "fi-FI",
