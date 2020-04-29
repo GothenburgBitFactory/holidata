@@ -24,7 +24,7 @@
         'type': 'NRV'
     },
     {
-        'date': '2018-04-29',
+        'date': '2018-03-29',
         'description': 'Jueves Santo',
         'locale': 'es-CO',
         'notes': '',
@@ -32,7 +32,7 @@
         'type': 'NRV'
     },
     {
-        'date': '2018-04-30',
+        'date': '2018-03-30',
         'description': 'Viernes Santo',
         'locale': 'es-CO',
         'notes': '',

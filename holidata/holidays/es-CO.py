@@ -1,7 +1,7 @@
 # coding=utf-8
 from dateutil.easter import EASTER_WESTERN
 
-from holidata.utils import easter, SmartDayArrow
+from holidata.utils import SmartDayArrow
 from .holidays import Holiday, Locale
 
 """
@@ -20,30 +20,20 @@ class es_CO(Locale):
     3 days before Easter: [NRV] Jueves Santo
     2 days before Easter: [NRV] Viernes Santo
     Easter: [NRV] Domingo de Pascua
+    43 days after Easter: [NRV] La Ascensión del Señor
+    64 days after Easter: [NRV] Corpus Christi
+    71 days after Easter: [NRV] El Sagrado Corazón de Jesús
     """
 
     locale = "es-CO"
     easter_type = EASTER_WESTERN
-
-    def holiday_ascencion(self):
-        """First Monday after 39 days after Easter."""
-        easter_date = easter(self.year, self.easter_type)
-        holiday_date = easter_date.shift(days=39)
-        return [Holiday(
-            self.locale,
-            "",
-            holiday_date.shift_to_weekday('monday', including=True),
-            "La Ascensión del Señor",
-            "NRV"
-        )]
 
     def holiday_reyes(self):
         """First Monday after January 6."""
         return [Holiday(
             self.locale,
             "",
-            SmartDayArrow(self.year, 1, 6).shift_to_weekday(
-                    'monday', including=True),
+            SmartDayArrow(self.year, 1, 6).shift_to_weekday('monday', including=True),
             "Día de los Reyes Magos",
             "NRV"
         )]
@@ -53,33 +43,8 @@ class es_CO(Locale):
         return [Holiday(
             self.locale,
             "",
-            SmartDayArrow(self.year, 3, 19).shift_to_weekday(
-                    'monday', including=True),
+            SmartDayArrow(self.year, 3, 19).shift_to_weekday('monday', including=True),
             "Día de San José",
-            "NRV"
-        )]
-
-    def holiday_corpus_christi(self):
-        """First Monday after 60 days after Easter."""
-        easter_date = easter(self.year, self.easter_type)
-        holiday_date = easter_date.shift(days=60)
-        return [Holiday(
-            self.locale,
-            "",
-            holiday_date.shift_to_weekday('monday', including=True),
-            "Corpus Christi",
-            "NRV"
-        )]
-
-    def holiday_sagrado_corazon(self):
-        """First Monday after 65 days after Easter."""
-        easter_date = easter(self.year, self.easter_type)
-        holiday_date = easter_date.shift(days=65)
-        return [Holiday(
-            self.locale,
-            "",
-            holiday_date.shift_to_weekday('monday', including=True),
-            "El Sagrado Corazón de Jesús",
             "NRV"
         )]
 
@@ -88,8 +53,7 @@ class es_CO(Locale):
         return [Holiday(
             self.locale,
             "",
-            SmartDayArrow(self.year, 6, 29).shift_to_weekday(
-                    'monday', including=True),
+            SmartDayArrow(self.year, 6, 29).shift_to_weekday('monday', including=True),
             "San Pedro y San Pablo",
             "NRV"
         )]
@@ -99,8 +63,7 @@ class es_CO(Locale):
         return [Holiday(
             self.locale,
             "",
-            SmartDayArrow(self.year, 8, 15).shift_to_weekday(
-                    'monday', including=True),
+            SmartDayArrow(self.year, 8, 15).shift_to_weekday('monday', including=True),
             "Asunción de la Virgen",
             "NRV"
         )]
@@ -110,8 +73,7 @@ class es_CO(Locale):
         return [Holiday(
             self.locale,
             "",
-            SmartDayArrow(self.year, 10, 12).shift_to_weekday(
-                    'monday', including=True),
+            SmartDayArrow(self.year, 10, 12).shift_to_weekday('monday', including=True),
             "Día de la Raza",
             "NV"
         )]
@@ -121,8 +83,7 @@ class es_CO(Locale):
         return [Holiday(
             self.locale,
             "",
-            SmartDayArrow(self.year, 11, 1).shift_to_weekday(
-                    'monday', including=True),
+            SmartDayArrow(self.year, 11, 1).shift_to_weekday('monday', including=True),
             "Todos los Santos",
             "NRV"
         )]
@@ -132,8 +93,7 @@ class es_CO(Locale):
         return [Holiday(
             self.locale,
             "",
-            SmartDayArrow(self.year, 11, 11).shift_to_weekday(
-                    'monday', including=True),
+            SmartDayArrow(self.year, 11, 11).shift_to_weekday('monday', including=True),
             "Independencia de Cartagena",
             "NV"
         )]
