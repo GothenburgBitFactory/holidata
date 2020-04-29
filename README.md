@@ -3,8 +3,6 @@
 `holidata` is a utility for algorithmically producing holiday data.
 Its purpose is mainly for [holidata.net](https://holidata.net).
 
-`holidata` only provides holidays which are defined by law on which business or work are suspended or reduced.
-
 Holiday data can be produced for a given year in a supported locale and output format.
 
 ## Usage
