@@ -5,6 +5,7 @@ from __future__ import unicode_literals
 from snapshottest import Snapshot
 from snapshottest.file import FileSnapshot
 
+
 snapshots = Snapshot()
 
 snapshots['test_holidata_produces_holidays_for_locale_and_year[cs_CZ-2011] 1'] = FileSnapshot('snap_test_holidata/test_holidata_produces_holidays_for_locale_and_year[cs_CZ-2011] 1.py')
@@ -630,3 +631,17 @@ snapshots['test_holidata_produces_holidays_for_locale_and_year[fr_CA-2019] 1'] =
 snapshots['test_holidata_produces_holidays_for_locale_and_year[fr_CA-2020] 1'] = FileSnapshot('snap_test_holidata/test_holidata_produces_holidays_for_locale_and_year[fr_CA-2020] 1.py')
 
 snapshots['test_holidata_produces_holidays_for_locale_and_year[fr_CA-2021] 1'] = FileSnapshot('snap_test_holidata/test_holidata_produces_holidays_for_locale_and_year[fr_CA-2021] 1.py')
+
+snapshots['test_holidata_produces_holidays_for_locale_and_year[es_CO-2011] 1'] = FileSnapshot('snap_test_holidata/test_holidata_produces_holidays_for_locale_and_year[es_CO-2011] 1.py')
+
+snapshots['test_holidata_produces_holidays_for_locale_and_year[es_CO-2012] 1'] = FileSnapshot('snap_test_holidata/test_holidata_produces_holidays_for_locale_and_year[es_CO-2012] 1.py')
+
+snapshots['test_holidata_produces_holidays_for_locale_and_year[es_CO-2013] 1'] = FileSnapshot('snap_test_holidata/test_holidata_produces_holidays_for_locale_and_year[es_CO-2013] 1.py')
+
+snapshots['test_holidata_produces_holidays_for_locale_and_year[es_CO-2014] 1'] = FileSnapshot('snap_test_holidata/test_holidata_produces_holidays_for_locale_and_year[es_CO-2014] 1.py')
+
+snapshots['test_holidata_produces_holidays_for_locale_and_year[es_CO-2015] 1'] = FileSnapshot('snap_test_holidata/test_holidata_produces_holidays_for_locale_and_year[es_CO-2015] 1.py')
+
+snapshots['test_holidata_produces_holidays_for_locale_and_year[es_CO-2016] 1'] = FileSnapshot('snap_test_holidata/test_holidata_produces_holidays_for_locale_and_year[es_CO-2016] 1.py')
+
+snapshots['test_holidata_produces_holidays_for_locale_and_year[es_CO-2021] 1'] = FileSnapshot('snap_test_holidata/test_holidata_produces_holidays_for_locale_and_year[es_CO-2021] 1.py')
