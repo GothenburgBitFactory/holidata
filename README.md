@@ -62,7 +62,7 @@ There is also no explicit representation of partial holidays.
 
 ## Contributing
 
-If you'd like to contribute to holidata by adding support for a new country or updating existing implementations, see [the how-to guides](docs/how-tos/getting-started.md) for further instructions.
+Take a look at [CONTRIBUTING.md](CONTRIBUTING.md) on how you can contribute. ❤️
 
 ## License
 
