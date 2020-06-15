@@ -1,0 +1,130 @@
+[
+    {
+        'date': '2020-01-01',
+        'description': 'Nyårsdagen',
+        'locale': 'sv-SE',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2020-01-06',
+        'description': 'Trettondedag jul',
+        'locale': 'sv-SE',
+        'notes': '',
+        'region': '',
+        'type': 'NRF'
+    },
+    {
+        'date': '2020-04-10',
+        'description': 'Långfredagen',
+        'locale': 'sv-SE',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2020-04-12',
+        'description': 'Påskdagen',
+        'locale': 'sv-SE',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2020-04-13',
+        'description': 'Annandag påsk',
+        'locale': 'sv-SE',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2020-05-01',
+        'description': 'Första maj',
+        'locale': 'sv-SE',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2020-05-21',
+        'description': 'Kristi himmelsfärdsdag',
+        'locale': 'sv-SE',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2020-05-31',
+        'description': 'Pingstdagen',
+        'locale': 'sv-SE',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2020-06-06',
+        'description': 'Nationaldagen',
+        'locale': 'sv-SE',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2020-06-19',
+        'description': 'Midsommarafton',
+        'locale': 'sv-SE',
+        'notes': '',
+        'region': '',
+        'type': 'NV'
+    },
+    {
+        'date': '2020-06-20',
+        'description': 'Midsommardagen',
+        'locale': 'sv-SE',
+        'notes': '',
+        'region': '',
+        'type': 'NV'
+    },
+    {
+        'date': '2020-10-31',
+        'description': 'Alla helgons dag',
+        'locale': 'sv-SE',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2020-12-24',
+        'description': 'Julafton',
+        'locale': 'sv-SE',
+        'notes': '',
+        'region': '',
+        'type': 'NRF'
+    },
+    {
+        'date': '2020-12-25',
+        'description': 'Juldagen',
+        'locale': 'sv-SE',
+        'notes': '',
+        'region': '',
+        'type': 'NRF'
+    },
+    {
+        'date': '2020-12-26',
+        'description': 'Annandag jul',
+        'locale': 'sv-SE',
+        'notes': '',
+        'region': '',
+        'type': 'NRF'
+    },
+    {
+        'date': '2020-12-31',
+        'description': 'Nyårsafton',
+        'locale': 'sv-SE',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    }
+]
