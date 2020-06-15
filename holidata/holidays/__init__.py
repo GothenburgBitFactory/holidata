@@ -31,4 +31,5 @@ __all__ = [
     "ru-RU",
     "sk-SK",
     "sv-FI",
+    "sv-SE",
 ]
