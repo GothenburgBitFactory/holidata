@@ -88,6 +88,22 @@
         'type': 'NV'
     },
     {
+        'date': '2014-11-28',
+        'description': 'Día después de Acción de Gracias',
+        'locale': 'es-US',
+        'notes': '',
+        'region': '',
+        'type': 'V'
+    },
+    {
+        'date': '2014-12-24',
+        'description': 'Nochebuena',
+        'locale': 'es-US',
+        'notes': '',
+        'region': '',
+        'type': 'RF'
+    },
+    {
         'date': '2014-12-25',
         'description': 'Navidad',
         'locale': 'es-US',

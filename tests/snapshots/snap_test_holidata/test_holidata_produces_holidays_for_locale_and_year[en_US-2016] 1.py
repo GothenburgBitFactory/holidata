@@ -88,6 +88,22 @@
         'type': 'NV'
     },
     {
+        'date': '2016-11-25',
+        'description': 'Day after Thanksgiving',
+        'locale': 'en-US',
+        'notes': '',
+        'region': '',
+        'type': 'V'
+    },
+    {
+        'date': '2016-12-24',
+        'description': 'Christmas Eve',
+        'locale': 'en-US',
+        'notes': '',
+        'region': '',
+        'type': 'RF'
+    },
+    {
         'date': '2016-12-25',
         'description': 'Christmas Day',
         'locale': 'en-US',

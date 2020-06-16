@@ -80,12 +80,28 @@
         'type': 'NF'
     },
     {
+        'date': '2013-11-22',
+        'description': 'Día después de Acción de Gracias',
+        'locale': 'es-US',
+        'notes': '',
+        'region': '',
+        'type': 'V'
+    },
+    {
         'date': '2013-11-28',
         'description': 'Día de Acción de Gracias',
         'locale': 'es-US',
         'notes': '',
         'region': '',
         'type': 'NV'
+    },
+    {
+        'date': '2013-12-24',
+        'description': 'Nochebuena',
+        'locale': 'es-US',
+        'notes': '',
+        'region': '',
+        'type': 'RF'
     },
     {
         'date': '2013-12-25',
