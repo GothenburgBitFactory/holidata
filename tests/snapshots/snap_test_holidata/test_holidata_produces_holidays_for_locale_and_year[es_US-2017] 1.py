@@ -88,6 +88,22 @@
         'type': 'NV'
     },
     {
+        'date': '2017-11-24',
+        'description': 'Día después de Acción de Gracias',
+        'locale': 'es-US',
+        'notes': '',
+        'region': '',
+        'type': 'V'
+    },
+    {
+        'date': '2017-12-24',
+        'description': 'Nochebuena',
+        'locale': 'es-US',
+        'notes': '',
+        'region': '',
+        'type': 'RF'
+    },
+    {
         'date': '2017-12-25',
         'description': 'Navidad',
         'locale': 'es-US',
