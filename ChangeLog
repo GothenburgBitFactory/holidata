@@ -1,3 +1,4 @@
+- #53 Fixed: Regional holidays marked as national in locale de-DE
 - #52 Fixed: Non-regional holidays not marked as national in locale nl-NL
 - #51 Fixed: Regional holidays marked as national in locale de-AT
 - #19 Add locale for sv-SE

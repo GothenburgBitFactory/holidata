@@ -13,7 +13,7 @@
         'locale': 'de-DE',
         'notes': '',
         'region': 'BW',
-        'type': 'NRF'
+        'type': 'RF'
     },
     {
         'date': '2019-01-06',
@@ -21,7 +21,7 @@
         'locale': 'de-DE',
         'notes': '',
         'region': 'BY',
-        'type': 'NRF'
+        'type': 'RF'
     },
     {
         'date': '2019-01-06',
@@ -29,7 +29,7 @@
         'locale': 'de-DE',
         'notes': '',
         'region': 'ST',
-        'type': 'NRF'
+        'type': 'RF'
     },
     {
         'date': '2019-03-08',
@@ -37,7 +37,7 @@
         'locale': 'de-DE',
         'notes': '',
         'region': 'BE',
-        'type': 'NF'
+        'type': 'F'
     },
     {
         'date': '2019-04-19',
@@ -101,7 +101,7 @@
         'locale': 'de-DE',
         'notes': '',
         'region': 'BW',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2019-06-20',
@@ -109,7 +109,7 @@
         'locale': 'de-DE',
         'notes': '',
         'region': 'BY',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2019-06-20',
@@ -117,7 +117,7 @@
         'locale': 'de-DE',
         'notes': '',
         'region': 'HE',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2019-06-20',
@@ -125,7 +125,7 @@
         'locale': 'de-DE',
         'notes': '',
         'region': 'NW',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2019-06-20',
@@ -133,7 +133,7 @@
         'locale': 'de-DE',
         'notes': '',
         'region': 'RP',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2019-06-20',
@@ -141,7 +141,7 @@
         'locale': 'de-DE',
         'notes': '',
         'region': 'SL',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2019-08-15',
@@ -149,7 +149,7 @@
         'locale': 'de-DE',
         'notes': '',
         'region': 'SL',
-        'type': 'NRF'
+        'type': 'RF'
     },
     {
         'date': '2019-10-03',
@@ -165,7 +165,7 @@
         'locale': 'de-DE',
         'notes': '',
         'region': 'BB',
-        'type': 'NRF'
+        'type': 'RF'
     },
     {
         'date': '2019-10-31',
@@ -173,7 +173,7 @@
         'locale': 'de-DE',
         'notes': '',
         'region': 'BH',
-        'type': 'NRF'
+        'type': 'RF'
     },
     {
         'date': '2019-10-31',
@@ -181,7 +181,7 @@
         'locale': 'de-DE',
         'notes': '',
         'region': 'HH',
-        'type': 'NRF'
+        'type': 'RF'
     },
     {
         'date': '2019-10-31',
@@ -189,7 +189,7 @@
         'locale': 'de-DE',
         'notes': '',
         'region': 'MV',
-        'type': 'NRF'
+        'type': 'RF'
     },
     {
         'date': '2019-10-31',
@@ -197,7 +197,7 @@
         'locale': 'de-DE',
         'notes': '',
         'region': 'NI',
-        'type': 'NRF'
+        'type': 'RF'
     },
     {
         'date': '2019-10-31',
@@ -205,7 +205,7 @@
         'locale': 'de-DE',
         'notes': '',
         'region': 'SH',
-        'type': 'NRF'
+        'type': 'RF'
     },
     {
         'date': '2019-10-31',
@@ -213,7 +213,7 @@
         'locale': 'de-DE',
         'notes': '',
         'region': 'SN',
-        'type': 'NRF'
+        'type': 'RF'
     },
     {
         'date': '2019-10-31',
@@ -221,7 +221,7 @@
         'locale': 'de-DE',
         'notes': '',
         'region': 'ST',
-        'type': 'NRF'
+        'type': 'RF'
     },
     {
         'date': '2019-10-31',
@@ -229,7 +229,7 @@
         'locale': 'de-DE',
         'notes': '',
         'region': 'TH',
-        'type': 'NRF'
+        'type': 'RF'
     },
     {
         'date': '2019-11-01',
@@ -237,7 +237,7 @@
         'locale': 'de-DE',
         'notes': '',
         'region': 'BW',
-        'type': 'NRF'
+        'type': 'RF'
     },
     {
         'date': '2019-11-01',
@@ -245,7 +245,7 @@
         'locale': 'de-DE',
         'notes': '',
         'region': 'BY',
-        'type': 'NRF'
+        'type': 'RF'
     },
     {
         'date': '2019-11-01',
@@ -253,7 +253,7 @@
         'locale': 'de-DE',
         'notes': '',
         'region': 'NW',
-        'type': 'NRF'
+        'type': 'RF'
     },
     {
         'date': '2019-11-01',
@@ -261,7 +261,7 @@
         'locale': 'de-DE',
         'notes': '',
         'region': 'RP',
-        'type': 'NRF'
+        'type': 'RF'
     },
     {
         'date': '2019-11-01',
@@ -269,7 +269,7 @@
         'locale': 'de-DE',
         'notes': '',
         'region': 'SL',
-        'type': 'NRF'
+        'type': 'RF'
     },
     {
         'date': '2019-11-20',
@@ -277,7 +277,7 @@
         'locale': 'de-DE',
         'notes': '',
         'region': 'SN',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2019-12-24',
