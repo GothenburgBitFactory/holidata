@@ -109,7 +109,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'AG',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2014-04-18',
@@ -117,7 +117,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'AI',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2014-04-18',
@@ -125,7 +125,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'AR',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2014-04-18',
@@ -133,7 +133,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'BE',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2014-04-18',
@@ -141,7 +141,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'BL',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2014-04-18',
@@ -149,7 +149,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'BS',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2014-04-18',
@@ -157,7 +157,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'FR',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2014-04-18',
@@ -165,7 +165,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'GE',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2014-04-18',
@@ -173,7 +173,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'GL',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2014-04-18',
@@ -181,7 +181,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'GR',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2014-04-18',
@@ -189,7 +189,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'JU',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2014-04-18',
@@ -197,7 +197,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'LU',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2014-04-18',
@@ -205,7 +205,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'NE',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2014-04-18',
@@ -213,7 +213,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'NW',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2014-04-18',
@@ -221,7 +221,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'OW',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2014-04-18',
@@ -229,7 +229,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'SG',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2014-04-18',
@@ -237,7 +237,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'SH',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2014-04-18',
@@ -245,7 +245,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'SO',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2014-04-18',
@@ -253,7 +253,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'SZ',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2014-04-18',
@@ -261,7 +261,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'TG',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2014-04-18',
@@ -269,7 +269,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'UR',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2014-04-18',
@@ -277,7 +277,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'VD',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2014-04-18',
@@ -285,7 +285,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'ZG',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2014-04-18',
@@ -293,7 +293,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'ZH',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2014-04-20',
@@ -309,7 +309,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'AI',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2014-04-21',
@@ -317,7 +317,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'AR',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2014-04-21',
@@ -325,7 +325,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'BE',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2014-04-21',
@@ -333,7 +333,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'BL',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2014-04-21',
@@ -341,7 +341,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'BS',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2014-04-21',
@@ -349,7 +349,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'GE',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2014-04-21',
@@ -357,7 +357,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'GL',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2014-04-21',
@@ -365,7 +365,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'GR',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2014-04-21',
@@ -373,7 +373,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'JU',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2014-04-21',
@@ -381,7 +381,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'SG',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2014-04-21',
@@ -389,7 +389,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'SH',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2014-04-21',
@@ -397,7 +397,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'SZ',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2014-04-21',
@@ -405,7 +405,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'TG',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2014-04-21',
@@ -413,7 +413,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'TI',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2014-04-21',
@@ -421,7 +421,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'UR',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2014-04-21',
@@ -429,7 +429,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'VD',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2014-04-21',
@@ -437,7 +437,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'ZH',
-        'type': 'NRV'
+        'type': 'RV'
     },
     {
         'date': '2014-05-01',
@@ -445,7 +445,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'BL',
-        'type': 'NF'
+        'type': 'F'
     },
     {
         'date': '2014-05-01',
@@ -453,7 +453,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'BS',
-        'type': 'NF'
+        'type': 'F'
     },
     {
         'date': '2014-05-01',
@@ -461,7 +461,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'GR',
-        'type': 'NF'
+        'type': 'F'
     },
     {
         'date': '2014-05-01',
@@ -469,7 +469,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'NE',
-        'type': 'NF'
+        'type': 'F'
     },
     {
         'date': '2014-05-01',
@@ -477,7 +477,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'SH',
-        'type': 'NF'
+        'type': 'F'
     },
     {
         'date': '2014-05-01',
@@ -485,7 +485,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'TG',
-        'type': 'NF'
+        'type': 'F'
     },
     {
         'date': '2014-05-01',
@@ -493,7 +493,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'TI',
-        'type': 'NF'
+        'type': 'F'
     },
     {
         'date': '2014-05-01',
@@ -501,7 +501,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': 'ZH',
-        'type': 'NF'
+        'type': 'F'
     },
     {
         'date': '2014-05-29',
@@ -509,7 +509,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': '',
-        'type': 'RV'
+        'type': 'NRV'
     },
     {
         'date': '2014-06-08',
@@ -517,7 +517,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': '',
-        'type': 'RV'
+        'type': 'NRV'
     },
     {
         'date': '2014-06-09',
@@ -997,7 +997,7 @@
         'locale': 'de-CH',
         'notes': '',
         'region': '',
-        'type': 'RF'
+        'type': 'NRF'
     },
     {
         'date': '2014-12-26',
