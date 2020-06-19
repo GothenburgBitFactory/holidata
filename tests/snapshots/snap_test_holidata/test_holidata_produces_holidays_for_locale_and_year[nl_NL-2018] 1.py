@@ -45,7 +45,7 @@
         'locale': 'nl-NL',
         'notes': '',
         'region': '',
-        'type': 'F'
+        'type': 'NF'
     },
     {
         'date': '2018-05-05',
@@ -85,7 +85,7 @@
         'locale': 'nl-NL',
         'notes': '',
         'region': '',
-        'type': 'RF'
+        'type': 'NRF'
     },
     {
         'date': '2018-12-15',

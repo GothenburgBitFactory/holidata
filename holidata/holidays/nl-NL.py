@@ -8,9 +8,9 @@ from .holidays import Holiday, Locale
 class nl_NL(Locale):
     """
     01-01: [NF] Nieuwjaarsdag
-    05-04: [F] Dodenherdenking
+    05-04: [NF] Dodenherdenking
     05-05: [NF] Bevrijdingsdag
-    12-05: [RF] Sinterklaas
+    12-05: [NRF] Sinterklaas
     12-25: [NRF] Eerste Kerstdag
     12-26: [NRF] Tweede Kerstdag
     2 days before Easter: [NRV] Goede Vrijdag
