@@ -13,7 +13,7 @@
         'locale': 'en-US',
         'notes': '',
         'region': '',
-        'type': 'V'
+        'type': 'NV'
     },
     {
         'date': '2015-02-16',
@@ -29,7 +29,7 @@
         'locale': 'en-US',
         'notes': '',
         'region': 'MA',
-        'type': 'NV'
+        'type': 'V'
     },
     {
         'date': '2015-04-20',
@@ -37,7 +37,7 @@
         'locale': 'en-US',
         'notes': '',
         'region': 'ME',
-        'type': 'NV'
+        'type': 'V'
     },
     {
         'date': '2015-05-25',
@@ -93,7 +93,7 @@
         'locale': 'en-US',
         'notes': '',
         'region': '',
-        'type': 'V'
+        'type': 'NV'
     },
     {
         'date': '2015-12-24',
@@ -101,7 +101,7 @@
         'locale': 'en-US',
         'notes': '',
         'region': '',
-        'type': 'RF'
+        'type': 'NRF'
     },
     {
         'date': '2015-12-25',

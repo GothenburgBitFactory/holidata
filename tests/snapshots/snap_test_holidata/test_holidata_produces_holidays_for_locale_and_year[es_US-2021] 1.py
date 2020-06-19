@@ -13,7 +13,7 @@
         'locale': 'es-US',
         'notes': '',
         'region': '',
-        'type': 'V'
+        'type': 'NV'
     },
     {
         'date': '2021-02-15',
@@ -29,7 +29,7 @@
         'locale': 'es-US',
         'notes': '',
         'region': 'MA',
-        'type': 'NV'
+        'type': 'V'
     },
     {
         'date': '2021-04-19',
@@ -37,7 +37,7 @@
         'locale': 'es-US',
         'notes': '',
         'region': 'ME',
-        'type': 'NV'
+        'type': 'V'
     },
     {
         'date': '2021-05-31',
@@ -93,7 +93,7 @@
         'locale': 'es-US',
         'notes': '',
         'region': '',
-        'type': 'V'
+        'type': 'NV'
     },
     {
         'date': '2021-12-24',
@@ -101,7 +101,7 @@
         'locale': 'es-US',
         'notes': '',
         'region': '',
-        'type': 'RF'
+        'type': 'NRF'
     },
     {
         'date': '2021-12-25',
