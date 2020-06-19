@@ -21,7 +21,7 @@
         'locale': 'de-AT',
         'notes': '',
         'region': '2',
-        'type': 'NRF'
+        'type': 'RF'
     },
     {
         'date': '2017-03-19',
@@ -29,7 +29,7 @@
         'locale': 'de-AT',
         'notes': '',
         'region': '6',
-        'type': 'NRF'
+        'type': 'RF'
     },
     {
         'date': '2017-03-19',
@@ -37,7 +37,7 @@
         'locale': 'de-AT',
         'notes': '',
         'region': '7',
-        'type': 'NRF'
+        'type': 'RF'
     },
     {
         'date': '2017-03-19',
@@ -45,7 +45,7 @@
         'locale': 'de-AT',
         'notes': '',
         'region': '8',
-        'type': 'NRF'
+        'type': 'RF'
     },
     {
         'date': '2017-04-14',
@@ -85,7 +85,7 @@
         'locale': 'de-AT',
         'notes': '',
         'region': '4',
-        'type': 'NF'
+        'type': 'F'
     },
     {
         'date': '2017-05-25',
@@ -133,7 +133,7 @@
         'locale': 'de-AT',
         'notes': '',
         'region': '5',
-        'type': 'NF'
+        'type': 'F'
     },
     {
         'date': '2017-10-10',
@@ -141,7 +141,7 @@
         'locale': 'de-AT',
         'notes': '',
         'region': '2',
-        'type': 'NF'
+        'type': 'F'
     },
     {
         'date': '2017-10-26',
@@ -165,7 +165,7 @@
         'locale': 'de-AT',
         'notes': '',
         'region': '1',
-        'type': 'NF'
+        'type': 'F'
     },
     {
         'date': '2017-11-15',
@@ -173,7 +173,7 @@
         'locale': 'de-AT',
         'notes': '',
         'region': '9',
-        'type': 'NF'
+        'type': 'F'
     },
     {
         'date': '2017-11-15',
@@ -181,7 +181,7 @@
         'locale': 'de-AT',
         'notes': '',
         'region': '3',
-        'type': 'NF'
+        'type': 'F'
     },
     {
         'date': '2017-12-08',
