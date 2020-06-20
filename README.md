@@ -26,7 +26,7 @@ For each holiday the following data is provided:
 ## Locales
 
 Holidata provides holiday data in different locales, i.e. for a given country and a in given language.
-See [holidata.net](https://holidata.net/locale_index.html) for a complete overview of the currently provided locales.
+See [holidata.net](https://holidata.net/locales/) for a complete overview of the currently provided locales.
 
 If you think a locale is missing, [open a feature request on github](https://github.com/GothenburgBitFactory/holidata/issues).
 
