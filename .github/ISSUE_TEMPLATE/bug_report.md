@@ -1,8 +1,8 @@
 ---
 name: Bug report
 about: Create a report to help us improve
-title: Error in locale LOCALE[, year YEAR]
-labels: ''
+title: 'Error in locale LOCALE[, year YEAR]'
+labels: 'bug'
 assignees: ''
 
 ---

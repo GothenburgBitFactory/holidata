@@ -1,8 +1,8 @@
 ---
 name: Locale request
 about: Request a new locale
-title: Add locale for LANG-COUNTRY
-labels: ''
+title: 'Add locale for LANG-COUNTRY'
+labels: 'locale'
 assignees: ''
 
 ---
