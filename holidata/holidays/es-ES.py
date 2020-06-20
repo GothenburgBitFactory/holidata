@@ -12,8 +12,8 @@ class es_ES(Locale):
     05-01: [NF] Fiesta del Trabajo
     08-15: [NRF] Asunción de la Virgen
     10-12: [NF] Fiesta Nacional de España
-    11-01: [NRF] Dia de todos los Santos
-    12-06: [NF] Dia de la Constitución
+    11-01: [NRF] Día de todos los Santos
+    12-06: [NF] Día de la Constitución
     12-08: [NRF] Inmaculada Concepción
     12-24: [NRF] Noche Buena
     12-25: [NRF] Navidad
