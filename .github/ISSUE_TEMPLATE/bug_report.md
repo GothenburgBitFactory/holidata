@@ -9,6 +9,7 @@ assignees: ''
 
 **Describe the bug**  
 A clear and concise description of what the bug is.
+* Which locale is affected?
 * Which holidays are affected?
 * Which years does the bug affect?
 
