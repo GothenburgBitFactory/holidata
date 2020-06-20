@@ -61,3 +61,15 @@ class es_ES(Locale):
                     flags="V",
                     notes="")]
         return []
+
+    def inmaculada_concepcion_en_domingo(self):
+        date = SmartDayArrow(self.year, 12, 8)
+        if date.weekday() == 'sunday':
+            return [Holiday(
+                    locale=self.locale,
+                    region="AN",
+                    date=date.shift(1),
+                    desctription="Lunes siguiente a Inmaculada Concepción",
+                    flags="RV",
+                    notes="")]
+        return []
