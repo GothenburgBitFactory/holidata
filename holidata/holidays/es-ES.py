@@ -26,6 +26,18 @@ class es_ES(Locale):
     locale = "es-ES"
     easter_type = EASTER_WESTERN
 
+    def epifania_del_senor_en_domingo(self):
+        date = SmartDayArrow(self.year, 1, 6)
+        if date.weekday() == 'sunday':
+            return [Holiday(
+                    locale=self.locale,
+                    region="AN",
+                    date=date.shift(1),
+                    desctription="Lunes siguiente a la Epifanía del Señor",
+                    flags="RV",
+                    notes="")]
+        return []
+
     def todos_los_santos_en_domingo(self):
         date = SmartDayArrow(self.year, 11, 1)
         if date.weekday() == 'sunday':
