@@ -58,7 +58,7 @@ class es_ES(Locale):
                     region="AN",
                     date=date.shift(1),
                     desctription="Lunes siguiente a la Fiesta del Trabajo",
-                    flags="RV",
+                    flags="V",
                     notes="")]
         return []
 
