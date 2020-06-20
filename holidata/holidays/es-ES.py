@@ -50,6 +50,18 @@ class es_ES(Locale):
                     notes="")]
         return []
 
+    def fiesta_del_trabajo_en_domingo(self):
+        date = SmartDayArrow(self.year, 5, 1)
+        if date.weekday() == 'sunday':
+            return [Holiday(
+                    locale=self.locale,
+                    region="AN",
+                    date=date.shift(1),
+                    desctription="Lunes siguiente a la Fiesta del Trabajo",
+                    flags="RV",
+                    notes="")]
+        return []
+
     def todos_los_santos_en_domingo(self):
         date = SmartDayArrow(self.year, 11, 1)
         if date.weekday() == 'sunday':
