@@ -25,3 +25,27 @@ class es_ES(Locale):
 
     locale = "es-ES"
     easter_type = EASTER_WESTERN
+
+    def todos_los_santos_en_domingo(self):
+        date = SmartDayArrow(self.year, 11, 1)
+        if date.weekday() == 'sunday':
+            return [Holiday(
+                    locale=self.locale,
+                    region="AN",
+                    date=date.shift(1),
+                    desctription="Lunes siguiente a todos los Santos",
+                    flags="RV",
+                    notes="")]
+        return []
+
+    def constitucion_espanola_en_domingo(self):
+        date = SmartDayArrow(self.year, 12, 6)
+        if date.weekday() == 'sunday':
+            return [Holiday(
+                    locale=self.locale,
+                    region="AN",
+                    date=date.shift(1),
+                    desctription="Lunes siguiente a la Constitución Española",
+                    flags="V",
+                    notes="")]
+        return []
