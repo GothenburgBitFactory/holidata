@@ -50,6 +50,18 @@ class es_ES(Locale):
                     notes="")]
         return []
 
+    def dia_de_andalucia_en_domingo(self):
+        date = SmartDayArrow(self.year, 2, 28)
+        if date.weekday() == 'sunday':
+            return [Holiday(
+                    locale=self.locale,
+                    region="AN",
+                    date=date.shift(1),
+                    desctription="Lunes siguiente al Día de Andalucía",
+                    flags="V",
+                    notes="")]
+        return []
+
     def fiesta_del_trabajo_en_domingo(self):
         date = SmartDayArrow(self.year, 5, 1)
         if date.weekday() == 'sunday':
