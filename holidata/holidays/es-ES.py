@@ -15,9 +15,7 @@ class es_ES(Locale):
     11-01: [NRF] Todos los Santos
     12-06: [NF] Día de la Constitución Española
     12-08: [NRF] Inmaculada Concepción
-    12-24: [NRF] Noche Buena
     12-25: [NRF] Natividad del Señor
-    12-31: [NF] Noche Vieja
     3 days before Easter: [AN] [RV] Jueves Santo
     2 days before Easter: [NRV] Viernes Santo
     Easter: [NRV] Pascua
