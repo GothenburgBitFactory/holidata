@@ -16,6 +16,14 @@
         'type': 'NRF'
     },
     {
+        'date': '2021-02-28',
+        'description': 'Día de Andalucía',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AN',
+        'type': 'F'
+    },
+    {
         'date': '2021-04-01',
         'description': 'Jueves Santo',
         'locale': 'es-ES',

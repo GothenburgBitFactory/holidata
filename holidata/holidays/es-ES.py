@@ -8,6 +8,7 @@ class es_ES(Locale):
     """
     01-01: [NF] Año Nuevo
     01-06: [NRF] Epifanía del Señor
+    02-28: [AN] [F] Día de Andalucía
     05-01: [NF] Fiesta del Trabajo
     08-15: [NRF] Asunción de la Virgen
     10-12: [NF] Fiesta Nacional de España

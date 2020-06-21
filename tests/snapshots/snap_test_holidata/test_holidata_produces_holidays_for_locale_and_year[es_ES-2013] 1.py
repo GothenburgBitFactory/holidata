@@ -16,6 +16,14 @@
         'type': 'NRF'
     },
     {
+        'date': '2013-02-28',
+        'description': 'Día de Andalucía',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AN',
+        'type': 'F'
+    },
+    {
         'date': '2013-03-28',
         'description': 'Jueves Santo',
         'locale': 'es-ES',

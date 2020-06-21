@@ -16,6 +16,14 @@
         'type': 'NRF'
     },
     {
+        'date': '2011-02-28',
+        'description': 'Día de Andalucía',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AN',
+        'type': 'F'
+    },
+    {
         'date': '2011-04-21',
         'description': 'Jueves Santo',
         'locale': 'es-ES',

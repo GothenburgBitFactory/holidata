@@ -16,6 +16,14 @@
         'type': 'NRF'
     },
     {
+        'date': '2020-02-28',
+        'description': 'Día de Andalucía',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AN',
+        'type': 'F'
+    },
+    {
         'date': '2020-04-09',
         'description': 'Jueves Santo',
         'locale': 'es-ES',
