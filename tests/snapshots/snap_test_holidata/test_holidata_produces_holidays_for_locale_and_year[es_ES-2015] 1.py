@@ -9,7 +9,7 @@
     },
     {
         'date': '2015-01-06',
-        'description': 'Día de los Reyes',
+        'description': 'Epifanía del Señor',
         'locale': 'es-ES',
         'notes': '',
         'region': '',
@@ -57,7 +57,7 @@
     },
     {
         'date': '2015-11-01',
-        'description': 'Dia de todos los Santos',
+        'description': 'Todos los Santos',
         'locale': 'es-ES',
         'notes': '',
         'region': '',
@@ -65,7 +65,7 @@
     },
     {
         'date': '2015-12-06',
-        'description': 'Dia de la Constitución',
+        'description': 'Día de la Constitución Española',
         'locale': 'es-ES',
         'notes': '',
         'region': '',
@@ -81,7 +81,7 @@
     },
     {
         'date': '2015-12-25',
-        'description': 'Navidad',
+        'description': 'Natividad del Señor',
         'locale': 'es-ES',
         'notes': '',
         'region': '',
