@@ -80,27 +80,11 @@
         'type': 'NRF'
     },
     {
-        'date': '2020-12-24',
-        'description': 'Noche Buena',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': '',
-        'type': 'NRF'
-    },
-    {
         'date': '2020-12-25',
         'description': 'Navidad',
         'locale': 'es-ES',
         'notes': '',
         'region': '',
         'type': 'NRF'
-    },
-    {
-        'date': '2020-12-31',
-        'description': 'Noche Vieja',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': '',
-        'type': 'NF'
     }
 ]
