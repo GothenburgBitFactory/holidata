@@ -16,6 +16,134 @@
         'type': 'NRF'
     },
     {
+        'date': '2020-04-09',
+        'description': 'Jueves Santo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AN',
+        'type': 'RV'
+    },
+    {
+        'date': '2020-04-09',
+        'description': 'Jueves Santo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AR',
+        'type': 'RV'
+    },
+    {
+        'date': '2020-04-09',
+        'description': 'Jueves Santo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AS',
+        'type': 'RV'
+    },
+    {
+        'date': '2020-04-09',
+        'description': 'Jueves Santo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CN',
+        'type': 'RV'
+    },
+    {
+        'date': '2020-04-09',
+        'description': 'Jueves Santo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CB',
+        'type': 'RV'
+    },
+    {
+        'date': '2020-04-09',
+        'description': 'Jueves Santo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CL',
+        'type': 'RV'
+    },
+    {
+        'date': '2020-04-09',
+        'description': 'Jueves Santo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CM',
+        'type': 'RV'
+    },
+    {
+        'date': '2020-04-09',
+        'description': 'Jueves Santo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CE',
+        'type': 'RV'
+    },
+    {
+        'date': '2020-04-09',
+        'description': 'Jueves Santo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'EX',
+        'type': 'RV'
+    },
+    {
+        'date': '2020-04-09',
+        'description': 'Jueves Santo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'GA',
+        'type': 'RV'
+    },
+    {
+        'date': '2020-04-09',
+        'description': 'Jueves Santo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'IB',
+        'type': 'RV'
+    },
+    {
+        'date': '2020-04-09',
+        'description': 'Jueves Santo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'MD',
+        'type': 'RV'
+    },
+    {
+        'date': '2020-04-09',
+        'description': 'Jueves Santo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'ML',
+        'type': 'RV'
+    },
+    {
+        'date': '2020-04-09',
+        'description': 'Jueves Santo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'NC',
+        'type': 'RV'
+    },
+    {
+        'date': '2020-04-09',
+        'description': 'Jueves Santo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'PV',
+        'type': 'RV'
+    },
+    {
+        'date': '2020-04-09',
+        'description': 'Jueves Santo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'RI',
+        'type': 'RV'
+    },
+    {
         'date': '2020-04-10',
         'description': 'Viernes Santo',
         'locale': 'es-ES',

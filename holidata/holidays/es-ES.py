@@ -15,6 +15,7 @@ class es_ES(Locale):
     12-06: [NF] Día de la Constitución Española
     12-08: [NRF] Inmaculada Concepción
     12-25: [NRF] Natividad del Señor
+    3 days before Easter: [AN,AR,AS,CN,CB,CL,CM,CE,EX,GA,IB,MD,ML,NC,PV,RI] [RV] Jueves Santo
     2 days before Easter: [NRV] Viernes Santo
     Easter: [NRV] Pascua
     """
