@@ -216,6 +216,70 @@
         'type': 'NRV'
     },
     {
+        'date': '2020-04-13',
+        'description': 'Lunes de Pascua',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CB',
+        'type': 'RV'
+    },
+    {
+        'date': '2020-04-13',
+        'description': 'Lunes de Pascua',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CM',
+        'type': 'RV'
+    },
+    {
+        'date': '2020-04-13',
+        'description': 'Lunes de Pascua',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CT',
+        'type': 'RV'
+    },
+    {
+        'date': '2020-04-13',
+        'description': 'Lunes de Pascua',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'IB',
+        'type': 'RV'
+    },
+    {
+        'date': '2020-04-13',
+        'description': 'Lunes de Pascua',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'NC',
+        'type': 'RV'
+    },
+    {
+        'date': '2020-04-13',
+        'description': 'Lunes de Pascua',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'PV',
+        'type': 'RV'
+    },
+    {
+        'date': '2020-04-13',
+        'description': 'Lunes de Pascua',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'RI',
+        'type': 'RV'
+    },
+    {
+        'date': '2020-04-13',
+        'description': 'Lunes de Pascua',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'VC',
+        'type': 'RV'
+    },
+    {
         'date': '2020-05-01',
         'description': 'Fiesta del Trabajo',
         'locale': 'es-ES',

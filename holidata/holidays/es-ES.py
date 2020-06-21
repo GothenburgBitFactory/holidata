@@ -20,6 +20,7 @@ class es_ES(Locale):
     3 days before Easter: [AN,AR,AS,CN,CB,CL,CM,CE,EX,GA,IB,MD,ML,NC,PV,RI] [RV] Jueves Santo
     2 days before Easter: [NRV] Viernes Santo
     Easter: [NRV] Pascua
+    1 day after Easter: [CB,CM,CT,IB,NC,PV,RI,VC] [RV] Lunes de Pascua
     """
 
     locale = "es-ES"
