@@ -24,6 +24,54 @@
         'type': 'F'
     },
     {
+        'date': '2017-03-19',
+        'description': 'San José',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CM',
+        'type': 'RF'
+    },
+    {
+        'date': '2017-03-19',
+        'description': 'San José',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'GA',
+        'type': 'RF'
+    },
+    {
+        'date': '2017-03-19',
+        'description': 'San José',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'MC',
+        'type': 'RF'
+    },
+    {
+        'date': '2017-03-19',
+        'description': 'San José',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'NC',
+        'type': 'RF'
+    },
+    {
+        'date': '2017-03-19',
+        'description': 'San José',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'PV',
+        'type': 'RF'
+    },
+    {
+        'date': '2017-03-19',
+        'description': 'San José',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'VC',
+        'type': 'RF'
+    },
+    {
         'date': '2017-04-13',
         'description': 'Jueves Santo',
         'locale': 'es-ES',
