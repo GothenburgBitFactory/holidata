@@ -374,5 +374,21 @@
         'notes': '',
         'region': '',
         'type': 'NRF'
+    },
+    {
+        'date': '2021-12-26',
+        'description': 'San Esteban',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CT',
+        'type': 'RF'
+    },
+    {
+        'date': '2021-12-26',
+        'description': 'San Esteban',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'IB',
+        'type': 'RF'
     }
 ]
