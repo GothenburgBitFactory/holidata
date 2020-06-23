@@ -5,7 +5,15 @@ from .holidays import Locale
 
 """
 Information taken from government websites around 2020-06
-    https://www.boe.es/diario_boe/txt.php?id=BOE-A-2019-14552
+    https://administracion.gob.es/pag_Home/atencionCiudadana/calendarios/laboral.html
+    http://www.seg-social.es/wps/portal/wss/internet/CalendarioLaboral
+    2020: https://www.boe.es/diario_boe/txt.php?id=BOE-A-2019-14552
+
+Regional governments
+    [AN] https://www.juntadeandalucia.es/temas/trabajar/relaciones/calendario.html
+
+Also those sites for some information
+    https://es.wikipedia.org/wiki/Calendario_laboral
 """
 
 class es_ES(Locale):
