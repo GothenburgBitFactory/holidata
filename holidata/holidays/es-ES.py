@@ -3,6 +3,10 @@ from dateutil.easter import EASTER_WESTERN
 
 from .holidays import Locale
 
+"""
+Information taken from government websites around 2020-06
+    https://www.boe.es/diario_boe/txt.php?id=BOE-A-2019-14552
+"""
 
 class es_ES(Locale):
     """
