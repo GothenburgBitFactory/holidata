@@ -12,6 +12,7 @@ class es_ES(Locale):
     03-19: [CM,GA,MC,NC,PV,VC] [RF] San José
     05-01: [NF] Fiesta del Trabajo
     06-24: [CT,GA,VC] [RF] San Juan
+    07-25: [GA,PV] [RF] Santiago Apóstol / Día Nacional de Galicia
     08-15: [NRF] Asunción de la Virgen
     10-12: [NF] Fiesta Nacional de España
     11-01: [NRF] Todos los Santos

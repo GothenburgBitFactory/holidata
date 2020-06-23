@@ -312,6 +312,22 @@
         'type': 'RF'
     },
     {
+        'date': '2015-07-25',
+        'description': 'Santiago Apóstol / Día Nacional de Galicia',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'GA',
+        'type': 'RF'
+    },
+    {
+        'date': '2015-07-25',
+        'description': 'Santiago Apóstol / Día Nacional de Galicia',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'PV',
+        'type': 'RF'
+    },
+    {
         'date': '2015-08-15',
         'description': 'Asunción de la Virgen',
         'locale': 'es-ES',
