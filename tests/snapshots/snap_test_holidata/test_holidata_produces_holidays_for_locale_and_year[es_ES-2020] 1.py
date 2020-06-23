@@ -24,6 +24,14 @@
         'type': 'F'
     },
     {
+        'date': '2020-03-13',
+        'description': 'Estatuto de Autonomía de la Ciudad de Melilla',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'ML',
+        'type': 'F'
+    },
+    {
         'date': '2020-03-19',
         'description': 'San José',
         'locale': 'es-ES',
@@ -280,12 +288,68 @@
         'type': 'RV'
     },
     {
+        'date': '2020-04-23',
+        'description': 'San Jorge / Día de Aragón',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AR',
+        'type': 'RF'
+    },
+    {
+        'date': '2020-04-23',
+        'description': 'Fiesta de Castilla y León',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CL',
+        'type': 'F'
+    },
+    {
         'date': '2020-05-01',
         'description': 'Fiesta del Trabajo',
         'locale': 'es-ES',
         'notes': '',
         'region': '',
         'type': 'NF'
+    },
+    {
+        'date': '2020-05-02',
+        'description': 'Fiesta de la Comunidad de Madrid',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'MD',
+        'type': 'F'
+    },
+    {
+        'date': '2020-05-30',
+        'description': 'Día de Canarias',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CN',
+        'type': 'F'
+    },
+    {
+        'date': '2020-06-09',
+        'description': 'Día de la Región de Murcia',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'MC',
+        'type': 'F'
+    },
+    {
+        'date': '2020-06-09',
+        'description': 'Día de La Rioja',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'RI',
+        'type': 'F'
+    },
+    {
+        'date': '2020-06-11',
+        'description': 'Corpus Christi',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CM',
+        'type': 'RV'
     },
     {
         'date': '2020-06-24',
@@ -328,12 +392,84 @@
         'type': 'RF'
     },
     {
+        'date': '2020-07-28',
+        'description': 'Día de las Instituciones de Cantabria',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CB',
+        'type': 'F'
+    },
+    {
+        'date': '2020-07-31',
+        'description': 'Fiesta del Sacrificio - Eidul Adha',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CE',
+        'type': 'RF'
+    },
+    {
+        'date': '2020-07-31',
+        'description': 'Fiesta del Sacrificio - Aid El Kebir',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'ML',
+        'type': 'RF'
+    },
+    {
         'date': '2020-08-15',
         'description': 'Asunción de la Virgen',
         'locale': 'es-ES',
         'notes': '',
         'region': '',
         'type': 'NRF'
+    },
+    {
+        'date': '2020-09-02',
+        'description': 'Día de Ceuta',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CE',
+        'type': 'F'
+    },
+    {
+        'date': '2020-09-08',
+        'description': 'Día de Asturias',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AS',
+        'type': 'F'
+    },
+    {
+        'date': '2020-09-08',
+        'description': 'Día de Estremadura',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'EX',
+        'type': 'F'
+    },
+    {
+        'date': '2020-09-11',
+        'description': 'Fiesta Nacional de Cataluña',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CT',
+        'type': 'F'
+    },
+    {
+        'date': '2020-09-15',
+        'description': 'La Bien Aparecida',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CB',
+        'type': 'RF'
+    },
+    {
+        'date': '2020-10-09',
+        'description': 'Día de la Comunitat Valenciana',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'VC',
+        'type': 'F'
     },
     {
         'date': '2020-10-12',
