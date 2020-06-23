@@ -288,6 +288,30 @@
         'type': 'NF'
     },
     {
+        'date': '2018-06-24',
+        'description': 'San Juan',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CT',
+        'type': 'RF'
+    },
+    {
+        'date': '2018-06-24',
+        'description': 'San Juan',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'GA',
+        'type': 'RF'
+    },
+    {
+        'date': '2018-06-24',
+        'description': 'San Juan',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'VC',
+        'type': 'RF'
+    },
+    {
         'date': '2018-08-15',
         'description': 'Asunción de la Virgen',
         'locale': 'es-ES',
