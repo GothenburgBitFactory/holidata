@@ -24,7 +24,7 @@ class es_ES(Locale):
     02-28: [AN] [F] Día de Andalucía
     03-01: [IB] [F] Día de las Illes Balears
     03-13: [ML] [F] Estatuto de Autonomía de la Ciudad de Melilla
-    03-19: [CM,GA,MC,NC,PV,VC] [RF] San José
+    03-19: [GA,MC,NC,PV,VC] [RF] San José
     04-23: [AR] [RF] San Jorge / Día de Aragón
     04-23: [CL] [F] Fiesta de Castilla y León
     05-01: [NF] Fiesta del Trabajo
@@ -34,7 +34,7 @@ class es_ES(Locale):
     05-31: [CM] [F] Día de Castilla-La Mancha
     06-09: [MC] [F] Día de la Región de Murcia
     06-09: [RI] [F] Día de La Rioja
-    06-24: [CT,GA,VC] [RF] San Juan
+    06-24: [CT,VC] [RF] San Juan
     07-25: [GA,PV] [RF] Santiago Apóstol / Día Nacional de Galicia
     07-28: [CB] [F] Día de las Instituciones de Cantabria
     08-15: [NRF] Asunción de la Virgen

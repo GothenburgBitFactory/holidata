@@ -44,14 +44,6 @@
         'description': 'San José',
         'locale': 'es-ES',
         'notes': '',
-        'region': 'CM',
-        'type': 'RF'
-    },
-    {
-        'date': '2018-03-19',
-        'description': 'San José',
-        'locale': 'es-ES',
-        'notes': '',
         'region': 'GA',
         'type': 'RF'
     },
@@ -389,14 +381,6 @@
         'locale': 'es-ES',
         'notes': '',
         'region': 'CT',
-        'type': 'RF'
-    },
-    {
-        'date': '2018-06-24',
-        'description': 'San Juan',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'GA',
         'type': 'RF'
     },
     {
