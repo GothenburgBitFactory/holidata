@@ -29,6 +29,7 @@ class es_ES(Locale):
     04-23: [CL] [F] Fiesta de Castilla y León
     05-01: [NF] Fiesta del Trabajo
     05-02: [MD] [F] Fiesta de la Comunidad de Madrid
+    05-17: [GA] [F] Día de las Letras Gallegas
     05-30: [CN] [F] Día de Canarias
     06-09: [MC] [F] Día de la Región de Murcia
     06-09: [RI] [F] Día de La Rioja

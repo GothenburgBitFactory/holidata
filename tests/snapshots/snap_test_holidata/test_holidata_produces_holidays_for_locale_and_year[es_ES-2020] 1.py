@@ -328,6 +328,14 @@
         'type': 'F'
     },
     {
+        'date': '2020-05-17',
+        'description': 'Día de las Letras Gallegas',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'GA',
+        'type': 'F'
+    },
+    {
         'date': '2020-05-30',
         'description': 'Día de Canarias',
         'locale': 'es-ES',

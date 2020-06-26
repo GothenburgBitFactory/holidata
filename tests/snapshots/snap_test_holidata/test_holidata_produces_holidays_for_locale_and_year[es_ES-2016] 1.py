@@ -328,6 +328,14 @@
         'type': 'F'
     },
     {
+        'date': '2016-05-17',
+        'description': 'Día de las Letras Gallegas',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'GA',
+        'type': 'F'
+    },
+    {
         'date': '2016-05-26',
         'description': 'Corpus Christi',
         'locale': 'es-ES',
