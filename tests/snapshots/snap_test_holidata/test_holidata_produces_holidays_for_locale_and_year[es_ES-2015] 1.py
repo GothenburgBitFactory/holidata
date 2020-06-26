@@ -352,6 +352,14 @@
         'type': 'F'
     },
     {
+        'date': '2015-05-31',
+        'description': 'Día de Castilla-La Mancha',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CM',
+        'type': 'F'
+    },
+    {
         'date': '2015-06-04',
         'description': 'Corpus Christi',
         'locale': 'es-ES',

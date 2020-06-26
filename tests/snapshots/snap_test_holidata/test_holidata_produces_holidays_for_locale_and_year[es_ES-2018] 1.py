@@ -353,6 +353,14 @@
     },
     {
         'date': '2018-05-31',
+        'description': 'Día de Castilla-La Mancha',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CM',
+        'type': 'F'
+    },
+    {
+        'date': '2018-05-31',
         'description': 'Corpus Christi',
         'locale': 'es-ES',
         'notes': '',

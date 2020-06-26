@@ -31,6 +31,7 @@ class es_ES(Locale):
     05-02: [MD] [F] Fiesta de la Comunidad de Madrid
     05-17: [GA] [F] Día de las Letras Gallegas
     05-30: [CN] [F] Día de Canarias
+    05-31: [CM] [F] Día de Castilla-La Mancha
     06-09: [MC] [F] Día de la Región de Murcia
     06-09: [RI] [F] Día de La Rioja
     06-24: [CT,GA,VC] [RF] San Juan

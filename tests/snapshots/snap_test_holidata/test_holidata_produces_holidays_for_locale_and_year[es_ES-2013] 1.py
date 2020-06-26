@@ -360,6 +360,14 @@
         'type': 'RV'
     },
     {
+        'date': '2013-05-31',
+        'description': 'Día de Castilla-La Mancha',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CM',
+        'type': 'F'
+    },
+    {
         'date': '2013-06-09',
         'description': 'Día de la Región de Murcia',
         'locale': 'es-ES',
