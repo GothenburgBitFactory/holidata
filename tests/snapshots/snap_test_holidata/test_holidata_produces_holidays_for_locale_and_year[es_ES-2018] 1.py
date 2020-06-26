@@ -400,22 +400,6 @@
         'type': 'F'
     },
     {
-        'date': '2018-07-31',
-        'description': 'Fiesta del Sacrificio - Eidul Adha',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'CE',
-        'type': 'RF'
-    },
-    {
-        'date': '2018-07-31',
-        'description': 'Fiesta del Sacrificio - Aid El Kebir',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'ML',
-        'type': 'RF'
-    },
-    {
         'date': '2018-08-15',
         'description': 'Asunción de la Virgen',
         'locale': 'es-ES',

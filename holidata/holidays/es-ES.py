@@ -34,8 +34,6 @@ class es_ES(Locale):
     06-24: [CT,GA,VC] [RF] San Juan
     07-25: [GA,PV] [RF] Santiago Apóstol / Día Nacional de Galicia
     07-28: [CB] [F] Día de las Instituciones de Cantabria
-    07-31: [CE] [RF] Fiesta del Sacrificio - Eidul Adha
-    07-31: [ML] [RF] Fiesta del Sacrificio - Aid El Kebir
     08-15: [NRF] Asunción de la Virgen
     09-02: [CE] [F] Día de Ceuta
     09-08: [AS] [F] Día de Asturias
