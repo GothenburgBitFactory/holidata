@@ -49,7 +49,7 @@ class es_ES(Locale):
     12-08: [NRF] Inmaculada Concepción
     12-25: [NRF] Natividad del Señor
     12-26: [CT,IB] [RF] San Esteban
-    3 days before Easter: [AN,AR,AS,CN,CB,CL,CM,CE,EX,GA,IB,MD,ML,NC,PV,RI] [RV] Jueves Santo
+    3 days before Easter: [AN,AR,AS,CB,CE,CL,CM,CN,EX,GA,IB,MC,MD,ML,NC,PV,RI] [RV] Jueves Santo
     2 days before Easter: [NRV] Viernes Santo
     Easter: [NRV] Pascua
     1 day after Easter: [CB,CM,CT,IB,NC,PV,RI,VC] [RV] Lunes de Pascua

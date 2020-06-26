@@ -116,7 +116,7 @@
         'description': 'Jueves Santo',
         'locale': 'es-ES',
         'notes': '',
-        'region': 'CN',
+        'region': 'CB',
         'type': 'RV'
     },
     {
@@ -124,7 +124,7 @@
         'description': 'Jueves Santo',
         'locale': 'es-ES',
         'notes': '',
-        'region': 'CB',
+        'region': 'CE',
         'type': 'RV'
     },
     {
@@ -148,7 +148,7 @@
         'description': 'Jueves Santo',
         'locale': 'es-ES',
         'notes': '',
-        'region': 'CE',
+        'region': 'CN',
         'type': 'RV'
     },
     {
@@ -173,6 +173,14 @@
         'locale': 'es-ES',
         'notes': '',
         'region': 'IB',
+        'type': 'RV'
+    },
+    {
+        'date': '2013-03-28',
+        'description': 'Jueves Santo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'MC',
         'type': 'RV'
     },
     {
