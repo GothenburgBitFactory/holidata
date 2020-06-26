@@ -24,6 +24,14 @@
         'type': 'F'
     },
     {
+        'date': '2016-03-01',
+        'description': 'Día de las Illes Balears',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'IB',
+        'type': 'F'
+    },
+    {
         'date': '2016-03-13',
         'description': 'Estatuto de Autonomía de la Ciudad de Melilla',
         'locale': 'es-ES',

@@ -22,6 +22,7 @@ class es_ES(Locale):
     01-01: [NF] Año Nuevo
     01-06: [NRF] Epifanía del Señor
     02-28: [AN] [F] Día de Andalucía
+    03-01: [IB] [F] Día de las Illes Balears
     03-13: [ML] [F] Estatuto de Autonomía de la Ciudad de Melilla
     03-19: [CM,GA,MC,NC,PV,VC] [RF] San José
     04-23: [AR] [RF] San Jorge / Día de Aragón
