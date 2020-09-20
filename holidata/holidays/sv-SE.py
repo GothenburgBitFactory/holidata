@@ -36,7 +36,6 @@ class sv_SE(Locale):
         """
         return SmartDayArrow(self.year, 6, 19).shift_to_weekday('saturday', order=1, reverse=False)
 
-
     def holiday_midsommarafton(self):
         """
         The day before midsommardagen: [NV] Midsommarafton
