@@ -1,0 +1,106 @@
+[
+    {
+        'date': '2013-01-01',
+        'description': 'Yılbaşı',
+        'locale': 'tr-TR',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2013-04-23',
+        'description': 'Ulusal Egemenlik ve Çocuk Bayramı',
+        'locale': 'tr-TR',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2013-05-01',
+        'description': 'Emek ve Dayanışma Günü',
+        'locale': 'tr-TR',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2013-05-19',
+        'description': "Atatürk'ü Anma, Gençlik ve Spor Bayramı",
+        'locale': 'tr-TR',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2013-08-08',
+        'description': 'Ramazan Bayramı (1. Gün)',
+        'locale': 'tr-TR',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2013-08-09',
+        'description': 'Ramazan Bayramı (2. Gün)',
+        'locale': 'tr-TR',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2013-08-10',
+        'description': 'Ramazan Bayramı (3. Gün)',
+        'locale': 'tr-TR',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2013-08-30',
+        'description': 'Zafer Bayramı',
+        'locale': 'tr-TR',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2013-10-15',
+        'description': 'Kurban Bayramı (1. Gün)',
+        'locale': 'tr-TR',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2013-10-16',
+        'description': 'Kurban Bayramı (2. Gün)',
+        'locale': 'tr-TR',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2013-10-17',
+        'description': 'Kurban Bayramı (3. Gün)',
+        'locale': 'tr-TR',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2013-10-18',
+        'description': 'Kurban Bayramı (4. Gün)',
+        'locale': 'tr-TR',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2013-10-29',
+        'description': 'Cumhuriyet Bayramı',
+        'locale': 'tr-TR',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    }
+]
