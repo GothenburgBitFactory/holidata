@@ -1,3 +1,5 @@
+- #60 Add locale for tr-TR
+      (Thanks to farukara)
 - #55 Fixed: Wrong assignment of flag `N` in locales en-US and es-US
 - #54 Fixed: Wrong assignment of flag `N` in locale de-CH
 - #53 Fixed: Regional holidays marked as national in locale de-DE
