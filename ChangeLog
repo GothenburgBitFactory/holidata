@@ -1,3 +1,5 @@
+- #59 Add locale for hu-HU
+      (Thanks to David Hanak)
 - #60 Add locale for tr-TR
       (Thanks to farukara)
 - #55 Fixed: Wrong assignment of flag `N` in locales en-US and es-US
