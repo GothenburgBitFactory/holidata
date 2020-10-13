@@ -40,7 +40,7 @@ class es_ES(Locale):
     08-15: [NRF] Asunción de la Virgen
     09-02: [CE] [F] Día de Ceuta
     09-08: [AS] [F] Día de Asturias
-    09-08: [EX] [F] Día de Estremadura
+    09-08: [EX] [F] Día de Extremadura
     09-11: [CT] [F] Fiesta Nacional de Cataluña
     09-15: [CB] [RF] La Bien Aparecida
     10-09: [VC] [F] Día de la Comunitat Valenciana

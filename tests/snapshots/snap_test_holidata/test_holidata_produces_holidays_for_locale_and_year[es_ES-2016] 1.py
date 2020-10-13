@@ -441,7 +441,7 @@
     },
     {
         'date': '2016-09-08',
-        'description': 'Día de Estremadura',
+        'description': 'Día de Extremadura',
         'locale': 'es-ES',
         'notes': '',
         'region': 'EX',
