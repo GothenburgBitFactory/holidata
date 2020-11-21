@@ -32,12 +32,12 @@
         'type': 'F'
     },
     {
-        'date': '2011-03-13',
-        'description': 'Estatuto de Autonomía de la Ciudad de Melilla',
+        'date': '2011-03-19',
+        'description': 'San José',
         'locale': 'es-ES',
         'notes': '',
-        'region': 'ML',
-        'type': 'F'
+        'region': 'CM',
+        'type': 'RF'
     },
     {
         'date': '2011-03-19',
@@ -60,15 +60,7 @@
         'description': 'San José',
         'locale': 'es-ES',
         'notes': '',
-        'region': 'NC',
-        'type': 'RF'
-    },
-    {
-        'date': '2011-03-19',
-        'description': 'San José',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'PV',
+        'region': 'ML',
         'type': 'RF'
     },
     {
@@ -216,20 +208,20 @@
         'type': 'RV'
     },
     {
+        'date': '2011-04-21',
+        'description': 'Jueves Santo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'VC',
+        'type': 'RV'
+    },
+    {
         'date': '2011-04-22',
         'description': 'Viernes Santo',
         'locale': 'es-ES',
         'notes': '',
         'region': '',
         'type': 'NRV'
-    },
-    {
-        'date': '2011-04-23',
-        'description': 'San Jorge / Día de Aragón',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'AR',
-        'type': 'RF'
     },
     {
         'date': '2011-04-23',
@@ -240,28 +232,20 @@
         'type': 'F'
     },
     {
+        'date': '2011-04-23',
+        'description': 'San Jorge / Día de Aragón',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AR',
+        'type': 'RF'
+    },
+    {
         'date': '2011-04-24',
         'description': 'Pascua',
         'locale': 'es-ES',
         'notes': '',
         'region': '',
         'type': 'NRV'
-    },
-    {
-        'date': '2011-04-25',
-        'description': 'Lunes de Pascua',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'CB',
-        'type': 'RV'
-    },
-    {
-        'date': '2011-04-25',
-        'description': 'Lunes de Pascua',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'CM',
-        'type': 'RV'
     },
     {
         'date': '2011-04-25',
@@ -328,6 +312,70 @@
         'type': 'F'
     },
     {
+        'date': '2011-05-02',
+        'description': 'Lunes siguiente a la Fiesta del Trabajo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AN',
+        'type': 'F'
+    },
+    {
+        'date': '2011-05-02',
+        'description': 'Lunes siguiente a la Fiesta del Trabajo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AR',
+        'type': 'F'
+    },
+    {
+        'date': '2011-05-02',
+        'description': 'Lunes siguiente a la Fiesta del Trabajo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AS',
+        'type': 'F'
+    },
+    {
+        'date': '2011-05-02',
+        'description': 'Lunes siguiente a la Fiesta del Trabajo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CB',
+        'type': 'F'
+    },
+    {
+        'date': '2011-05-02',
+        'description': 'Lunes siguiente a la Fiesta del Trabajo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CE',
+        'type': 'F'
+    },
+    {
+        'date': '2011-05-02',
+        'description': 'Lunes siguiente a la Fiesta del Trabajo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'EX',
+        'type': 'F'
+    },
+    {
+        'date': '2011-05-02',
+        'description': 'Lunes siguiente a la Fiesta del Trabajo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'MC',
+        'type': 'F'
+    },
+    {
+        'date': '2011-05-02',
+        'description': 'Lunes siguiente a la Fiesta del Trabajo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'VC',
+        'type': 'F'
+    },
+    {
         'date': '2011-05-17',
         'description': 'Día de las Letras Gallegas',
         'locale': 'es-ES',
@@ -368,11 +416,27 @@
         'type': 'F'
     },
     {
+        'date': '2011-06-13',
+        'description': 'Lunes de Pascua Granada',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CT',
+        'type': 'F'
+    },
+    {
         'date': '2011-06-23',
         'description': 'Corpus Christi',
         'locale': 'es-ES',
         'notes': '',
         'region': 'CM',
+        'type': 'RV'
+    },
+    {
+        'date': '2011-06-23',
+        'description': 'Corpus Christi',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'MD',
         'type': 'RV'
     },
     {
@@ -384,11 +448,43 @@
         'type': 'RF'
     },
     {
-        'date': '2011-06-24',
-        'description': 'San Juan',
+        'date': '2011-07-25',
+        'description': 'Santiago Apóstol',
         'locale': 'es-ES',
         'notes': '',
-        'region': 'VC',
+        'region': 'CL',
+        'type': 'RF'
+    },
+    {
+        'date': '2011-07-25',
+        'description': 'Santiago Apóstol',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'MD',
+        'type': 'RF'
+    },
+    {
+        'date': '2011-07-25',
+        'description': 'Santiago Apóstol',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'NC',
+        'type': 'RF'
+    },
+    {
+        'date': '2011-07-25',
+        'description': 'Santiago Apóstol',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'PV',
+        'type': 'RF'
+    },
+    {
+        'date': '2011-07-25',
+        'description': 'Santiago Apóstol',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'RI',
         'type': 'RF'
     },
     {
@@ -397,14 +493,6 @@
         'locale': 'es-ES',
         'notes': '',
         'region': 'GA',
-        'type': 'RF'
-    },
-    {
-        'date': '2011-07-25',
-        'description': 'Santiago Apóstol / Día Nacional de Galicia',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'PV',
         'type': 'RF'
     },
     {
@@ -424,14 +512,6 @@
         'type': 'NRF'
     },
     {
-        'date': '2011-09-02',
-        'description': 'Día de Ceuta',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'CE',
-        'type': 'F'
-    },
-    {
         'date': '2011-09-08',
         'description': 'Día de Asturias',
         'locale': 'es-ES',
@@ -448,28 +528,12 @@
         'type': 'F'
     },
     {
-        'date': '2011-09-11',
-        'description': 'Fiesta Nacional de Cataluña',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'CT',
-        'type': 'F'
-    },
-    {
         'date': '2011-09-15',
         'description': 'La Bien Aparecida',
         'locale': 'es-ES',
         'notes': '',
         'region': 'CB',
         'type': 'RF'
-    },
-    {
-        'date': '2011-10-09',
-        'description': 'Día de la Comunitat Valenciana',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'VC',
-        'type': 'F'
     },
     {
         'date': '2011-10-12',
@@ -480,12 +544,36 @@
         'type': 'NF'
     },
     {
+        'date': '2011-10-25',
+        'description': 'Día del País Vasco-Euskadiko Eguna',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'PV',
+        'type': 'F'
+    },
+    {
         'date': '2011-11-01',
         'description': 'Todos los Santos',
         'locale': 'es-ES',
         'notes': '',
         'region': '',
         'type': 'NRF'
+    },
+    {
+        'date': '2011-11-07',
+        'description': 'Fiesta del Sacrificio (Aid El Kebir)',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'ML',
+        'type': 'RV'
+    },
+    {
+        'date': '2011-11-07',
+        'description': 'Lunes siguiente a la Fiesta del Sacrificio (Eidul Adha)',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CE',
+        'type': 'RV'
     },
     {
         'date': '2011-12-06',
@@ -516,6 +604,54 @@
         'description': 'San Esteban',
         'locale': 'es-ES',
         'notes': '',
+        'region': 'AN',
+        'type': 'RF'
+    },
+    {
+        'date': '2011-12-26',
+        'description': 'San Esteban',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AR',
+        'type': 'RF'
+    },
+    {
+        'date': '2011-12-26',
+        'description': 'San Esteban',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AS',
+        'type': 'RF'
+    },
+    {
+        'date': '2011-12-26',
+        'description': 'San Esteban',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CE',
+        'type': 'RF'
+    },
+    {
+        'date': '2011-12-26',
+        'description': 'San Esteban',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CL',
+        'type': 'RF'
+    },
+    {
+        'date': '2011-12-26',
+        'description': 'San Esteban',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CN',
+        'type': 'RF'
+    },
+    {
+        'date': '2011-12-26',
+        'description': 'San Esteban',
+        'locale': 'es-ES',
+        'notes': '',
         'region': 'CT',
         'type': 'RF'
     },
@@ -524,7 +660,31 @@
         'description': 'San Esteban',
         'locale': 'es-ES',
         'notes': '',
+        'region': 'EX',
+        'type': 'RF'
+    },
+    {
+        'date': '2011-12-26',
+        'description': 'San Esteban',
+        'locale': 'es-ES',
+        'notes': '',
         'region': 'IB',
+        'type': 'RF'
+    },
+    {
+        'date': '2011-12-26',
+        'description': 'San Esteban',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'ML',
+        'type': 'RF'
+    },
+    {
+        'date': '2011-12-26',
+        'description': 'San Esteban',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'NC',
         'type': 'RF'
     }
 ]

@@ -16,7 +16,7 @@
         'type': 'NRF'
     },
     {
-        'date': '2021-02-28',
+        'date': '2021-03-01',
         'description': 'Día de Andalucía',
         'locale': 'es-ES',
         'notes': '',
@@ -44,6 +44,14 @@
         'description': 'San José',
         'locale': 'es-ES',
         'notes': '',
+        'region': 'EX',
+        'type': 'RF'
+    },
+    {
+        'date': '2021-03-19',
+        'description': 'San José',
+        'locale': 'es-ES',
+        'notes': '',
         'region': 'GA',
         'type': 'RF'
     },
@@ -53,6 +61,14 @@
         'locale': 'es-ES',
         'notes': '',
         'region': 'MC',
+        'type': 'RF'
+    },
+    {
+        'date': '2021-03-19',
+        'description': 'San José',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'MD',
         'type': 'RF'
     },
     {
@@ -236,22 +252,6 @@
         'description': 'Lunes de Pascua',
         'locale': 'es-ES',
         'notes': '',
-        'region': 'CB',
-        'type': 'RV'
-    },
-    {
-        'date': '2021-04-05',
-        'description': 'Lunes de Pascua',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'CM',
-        'type': 'RV'
-    },
-    {
-        'date': '2021-04-05',
-        'description': 'Lunes de Pascua',
-        'locale': 'es-ES',
-        'notes': '',
         'region': 'CT',
         'type': 'RV'
     },
@@ -297,19 +297,19 @@
     },
     {
         'date': '2021-04-23',
-        'description': 'San Jorge / Día de Aragón',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'AR',
-        'type': 'RF'
-    },
-    {
-        'date': '2021-04-23',
         'description': 'Fiesta de Castilla y León',
         'locale': 'es-ES',
         'notes': '',
         'region': 'CL',
         'type': 'F'
+    },
+    {
+        'date': '2021-04-23',
+        'description': 'San Jorge / Día de Aragón',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AR',
+        'type': 'RF'
     },
     {
         'date': '2021-05-01',
@@ -320,8 +320,8 @@
         'type': 'NF'
     },
     {
-        'date': '2021-05-02',
-        'description': 'Fiesta de la Comunidad de Madrid',
+        'date': '2021-05-03',
+        'description': 'Lunes siguiente al Día de la Comunidad de Madrid',
         'locale': 'es-ES',
         'notes': '',
         'region': 'MD',
@@ -333,14 +333,6 @@
         'locale': 'es-ES',
         'notes': '',
         'region': 'GA',
-        'type': 'F'
-    },
-    {
-        'date': '2021-05-30',
-        'description': 'Día de Canarias',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'CN',
         'type': 'F'
     },
     {
@@ -392,20 +384,20 @@
         'type': 'RF'
     },
     {
-        'date': '2021-07-25',
-        'description': 'Santiago Apóstol / Día Nacional de Galicia',
+        'date': '2021-07-20',
+        'description': 'Fiesta del Sacrificio (Eidul Adha)',
         'locale': 'es-ES',
         'notes': '',
-        'region': 'GA',
-        'type': 'RF'
+        'region': 'CE',
+        'type': 'RV'
     },
     {
-        'date': '2021-07-25',
-        'description': 'Santiago Apóstol / Día Nacional de Galicia',
+        'date': '2021-07-21',
+        'description': 'Fiesta del Sacrificio (Aid El Kebir)',
         'locale': 'es-ES',
         'notes': '',
-        'region': 'PV',
-        'type': 'RF'
+        'region': 'ML',
+        'type': 'RV'
     },
     {
         'date': '2021-07-28',
@@ -422,6 +414,46 @@
         'notes': '',
         'region': '',
         'type': 'NRF'
+    },
+    {
+        'date': '2021-08-16',
+        'description': 'Lunes siguiente a la Asunción de la Virgen',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AN',
+        'type': 'RF'
+    },
+    {
+        'date': '2021-08-16',
+        'description': 'Lunes siguiente a la Asunción de la Virgen',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AR',
+        'type': 'RF'
+    },
+    {
+        'date': '2021-08-16',
+        'description': 'Lunes siguiente a la Asunción de la Virgen',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AS',
+        'type': 'RF'
+    },
+    {
+        'date': '2021-08-16',
+        'description': 'Lunes siguiente a la Asunción de la Virgen',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CL',
+        'type': 'RF'
+    },
+    {
+        'date': '2021-08-16',
+        'description': 'Lunes siguiente a la Asunción de la Virgen',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CN',
+        'type': 'RF'
     },
     {
         'date': '2021-09-02',
@@ -510,21 +542,5 @@
         'notes': '',
         'region': '',
         'type': 'NRF'
-    },
-    {
-        'date': '2021-12-26',
-        'description': 'San Esteban',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'CT',
-        'type': 'RF'
-    },
-    {
-        'date': '2021-12-26',
-        'description': 'San Esteban',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'IB',
-        'type': 'RF'
     }
 ]

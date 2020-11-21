@@ -8,6 +8,54 @@
         'type': 'NF'
     },
     {
+        'date': '2017-01-02',
+        'description': 'Lunes siguiente al Año Nuevo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AN',
+        'type': 'F'
+    },
+    {
+        'date': '2017-01-02',
+        'description': 'Lunes siguiente al Año Nuevo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AR',
+        'type': 'F'
+    },
+    {
+        'date': '2017-01-02',
+        'description': 'Lunes siguiente al Año Nuevo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AS',
+        'type': 'F'
+    },
+    {
+        'date': '2017-01-02',
+        'description': 'Lunes siguiente al Año Nuevo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CL',
+        'type': 'F'
+    },
+    {
+        'date': '2017-01-02',
+        'description': 'Lunes siguiente al Año Nuevo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'MC',
+        'type': 'F'
+    },
+    {
+        'date': '2017-01-02',
+        'description': 'Lunes siguiente al Año Nuevo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'ML',
+        'type': 'F'
+    },
+    {
         'date': '2017-01-06',
         'description': 'Epifanía del Señor',
         'locale': 'es-ES',
@@ -32,51 +80,19 @@
         'type': 'F'
     },
     {
-        'date': '2017-03-13',
-        'description': 'Estatuto de Autonomía de la Ciudad de Melilla',
+        'date': '2017-03-20',
+        'description': 'Lunes siguiente a San José',
         'locale': 'es-ES',
         'notes': '',
-        'region': 'ML',
-        'type': 'F'
-    },
-    {
-        'date': '2017-03-19',
-        'description': 'San José',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'GA',
+        'region': 'EX',
         'type': 'RF'
     },
     {
-        'date': '2017-03-19',
-        'description': 'San José',
+        'date': '2017-03-20',
+        'description': 'Lunes siguiente a San José',
         'locale': 'es-ES',
         'notes': '',
-        'region': 'MC',
-        'type': 'RF'
-    },
-    {
-        'date': '2017-03-19',
-        'description': 'San José',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'NC',
-        'type': 'RF'
-    },
-    {
-        'date': '2017-03-19',
-        'description': 'San José',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'PV',
-        'type': 'RF'
-    },
-    {
-        'date': '2017-03-19',
-        'description': 'San José',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'VC',
+        'region': 'MD',
         'type': 'RF'
     },
     {
@@ -216,6 +232,14 @@
         'type': 'RV'
     },
     {
+        'date': '2017-04-13',
+        'description': 'Jueves Santo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'VC',
+        'type': 'RV'
+    },
+    {
         'date': '2017-04-14',
         'description': 'Viernes Santo',
         'locale': 'es-ES',
@@ -230,22 +254,6 @@
         'notes': '',
         'region': '',
         'type': 'NRV'
-    },
-    {
-        'date': '2017-04-17',
-        'description': 'Lunes de Pascua',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'CB',
-        'type': 'RV'
-    },
-    {
-        'date': '2017-04-17',
-        'description': 'Lunes de Pascua',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'CM',
-        'type': 'RV'
     },
     {
         'date': '2017-04-17',
@@ -296,20 +304,20 @@
         'type': 'RV'
     },
     {
-        'date': '2017-04-23',
-        'description': 'San Jorge / Día de Aragón',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'AR',
-        'type': 'RF'
-    },
-    {
-        'date': '2017-04-23',
+        'date': '2017-04-24',
         'description': 'Fiesta de Castilla y León',
         'locale': 'es-ES',
         'notes': '',
         'region': 'CL',
         'type': 'F'
+    },
+    {
+        'date': '2017-04-24',
+        'description': 'San Jorge / Día de Aragón',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AR',
+        'type': 'RF'
     },
     {
         'date': '2017-05-01',
@@ -384,11 +392,19 @@
         'type': 'RF'
     },
     {
-        'date': '2017-06-24',
-        'description': 'San Juan',
+        'date': '2017-07-25',
+        'description': 'Santiago Apóstol',
         'locale': 'es-ES',
         'notes': '',
-        'region': 'VC',
+        'region': 'NC',
+        'type': 'RF'
+    },
+    {
+        'date': '2017-07-25',
+        'description': 'Santiago Apóstol',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'PV',
         'type': 'RF'
     },
     {
@@ -397,14 +413,6 @@
         'locale': 'es-ES',
         'notes': '',
         'region': 'GA',
-        'type': 'RF'
-    },
-    {
-        'date': '2017-07-25',
-        'description': 'Santiago Apóstol / Día Nacional de Galicia',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'PV',
         'type': 'RF'
     },
     {
@@ -422,6 +430,22 @@
         'notes': '',
         'region': '',
         'type': 'NRF'
+    },
+    {
+        'date': '2017-09-01',
+        'description': 'Fiesta del Sacrificio (Aid El Kebir)',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'ML',
+        'type': 'RV'
+    },
+    {
+        'date': '2017-09-01',
+        'description': 'Fiesta del Sacrificio (Eidul Adha)',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CE',
+        'type': 'RV'
     },
     {
         'date': '2017-09-02',
@@ -517,14 +541,6 @@
         'locale': 'es-ES',
         'notes': '',
         'region': 'CT',
-        'type': 'RF'
-    },
-    {
-        'date': '2017-12-26',
-        'description': 'San Esteban',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'IB',
         'type': 'RF'
     }
 ]

@@ -8,6 +8,14 @@
         'type': 'NF'
     },
     {
+        'date': '2012-01-02',
+        'description': 'Lunes siguiente al Año Nuevo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
         'date': '2012-01-06',
         'description': 'Epifanía del Señor',
         'locale': 'es-ES',
@@ -32,19 +40,11 @@
         'type': 'F'
     },
     {
-        'date': '2012-03-13',
-        'description': 'Estatuto de Autonomía de la Ciudad de Melilla',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'ML',
-        'type': 'F'
-    },
-    {
         'date': '2012-03-19',
         'description': 'San José',
         'locale': 'es-ES',
         'notes': '',
-        'region': 'GA',
+        'region': 'CL',
         'type': 'RF'
     },
     {
@@ -60,6 +60,22 @@
         'description': 'San José',
         'locale': 'es-ES',
         'notes': '',
+        'region': 'MD',
+        'type': 'RF'
+    },
+    {
+        'date': '2012-03-19',
+        'description': 'San José',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'ML',
+        'type': 'RF'
+    },
+    {
+        'date': '2012-03-19',
+        'description': 'San José',
+        'locale': 'es-ES',
+        'notes': '',
         'region': 'NC',
         'type': 'RF'
     },
@@ -68,7 +84,7 @@
         'description': 'San José',
         'locale': 'es-ES',
         'notes': '',
-        'region': 'PV',
+        'region': 'RI',
         'type': 'RF'
     },
     {
@@ -236,22 +252,6 @@
         'description': 'Lunes de Pascua',
         'locale': 'es-ES',
         'notes': '',
-        'region': 'CB',
-        'type': 'RV'
-    },
-    {
-        'date': '2012-04-09',
-        'description': 'Lunes de Pascua',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'CM',
-        'type': 'RV'
-    },
-    {
-        'date': '2012-04-09',
-        'description': 'Lunes de Pascua',
-        'locale': 'es-ES',
-        'notes': '',
         'region': 'CT',
         'type': 'RV'
     },
@@ -276,32 +276,8 @@
         'description': 'Lunes de Pascua',
         'locale': 'es-ES',
         'notes': '',
-        'region': 'PV',
-        'type': 'RV'
-    },
-    {
-        'date': '2012-04-09',
-        'description': 'Lunes de Pascua',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'RI',
-        'type': 'RV'
-    },
-    {
-        'date': '2012-04-09',
-        'description': 'Lunes de Pascua',
-        'locale': 'es-ES',
-        'notes': '',
         'region': 'VC',
         'type': 'RV'
-    },
-    {
-        'date': '2012-04-23',
-        'description': 'San Jorge / Día de Aragón',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'AR',
-        'type': 'RF'
     },
     {
         'date': '2012-04-23',
@@ -310,6 +286,14 @@
         'notes': '',
         'region': 'CL',
         'type': 'F'
+    },
+    {
+        'date': '2012-04-23',
+        'description': 'San Jorge / Día de Aragón',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AR',
+        'type': 'RF'
     },
     {
         'date': '2012-05-01',
@@ -376,19 +360,11 @@
         'type': 'F'
     },
     {
-        'date': '2012-06-24',
-        'description': 'San Juan',
+        'date': '2012-07-25',
+        'description': 'Santiago Apóstol',
         'locale': 'es-ES',
         'notes': '',
-        'region': 'CT',
-        'type': 'RF'
-    },
-    {
-        'date': '2012-06-24',
-        'description': 'San Juan',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'VC',
+        'region': 'CB',
         'type': 'RF'
     },
     {
@@ -400,36 +376,12 @@
         'type': 'RF'
     },
     {
-        'date': '2012-07-25',
-        'description': 'Santiago Apóstol / Día Nacional de Galicia',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'PV',
-        'type': 'RF'
-    },
-    {
-        'date': '2012-07-28',
-        'description': 'Día de las Instituciones de Cantabria',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'CB',
-        'type': 'F'
-    },
-    {
         'date': '2012-08-15',
         'description': 'Asunción de la Virgen',
         'locale': 'es-ES',
         'notes': '',
         'region': '',
         'type': 'NRF'
-    },
-    {
-        'date': '2012-09-02',
-        'description': 'Día de Ceuta',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'CE',
-        'type': 'F'
     },
     {
         'date': '2012-09-08',
@@ -480,6 +432,30 @@
         'type': 'NF'
     },
     {
+        'date': '2012-10-25',
+        'description': 'Día del País Vasco-Euskadiko Eguna',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'PV',
+        'type': 'F'
+    },
+    {
+        'date': '2012-10-26',
+        'description': 'Fiesta del Sacrificio (Aid El Kebir)',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'ML',
+        'type': 'RV'
+    },
+    {
+        'date': '2012-10-27',
+        'description': 'Fiesta del Sacrificio (Eidul Adha)',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CE',
+        'type': 'RV'
+    },
+    {
         'date': '2012-11-01',
         'description': 'Todos los Santos',
         'locale': 'es-ES',
@@ -517,14 +493,6 @@
         'locale': 'es-ES',
         'notes': '',
         'region': 'CT',
-        'type': 'RF'
-    },
-    {
-        'date': '2012-12-26',
-        'description': 'San Esteban',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'IB',
         'type': 'RF'
     }
 ]

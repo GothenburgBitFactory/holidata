@@ -16,6 +16,94 @@
         'type': 'NRF'
     },
     {
+        'date': '2019-01-07',
+        'description': 'Lunes siguiente a la Epifanía del Señor',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AN',
+        'type': 'RF'
+    },
+    {
+        'date': '2019-01-07',
+        'description': 'Lunes siguiente a la Epifanía del Señor',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AR',
+        'type': 'RF'
+    },
+    {
+        'date': '2019-01-07',
+        'description': 'Lunes siguiente a la Epifanía del Señor',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AS',
+        'type': 'RF'
+    },
+    {
+        'date': '2019-01-07',
+        'description': 'Lunes siguiente a la Epifanía del Señor',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CE',
+        'type': 'RF'
+    },
+    {
+        'date': '2019-01-07',
+        'description': 'Lunes siguiente a la Epifanía del Señor',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CL',
+        'type': 'RF'
+    },
+    {
+        'date': '2019-01-07',
+        'description': 'Lunes siguiente a la Epifanía del Señor',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CN',
+        'type': 'RF'
+    },
+    {
+        'date': '2019-01-07',
+        'description': 'Lunes siguiente a la Epifanía del Señor',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'EX',
+        'type': 'RF'
+    },
+    {
+        'date': '2019-01-07',
+        'description': 'Lunes siguiente a la Epifanía del Señor',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'MC',
+        'type': 'RF'
+    },
+    {
+        'date': '2019-01-07',
+        'description': 'Lunes siguiente a la Epifanía del Señor',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'MD',
+        'type': 'RF'
+    },
+    {
+        'date': '2019-01-07',
+        'description': 'Lunes siguiente a la Epifanía del Señor',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'ML',
+        'type': 'RF'
+    },
+    {
+        'date': '2019-01-07',
+        'description': 'Lunes siguiente a la Epifanía del Señor',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'NC',
+        'type': 'RF'
+    },
+    {
         'date': '2019-02-28',
         'description': 'Día de Andalucía',
         'locale': 'es-ES',
@@ -29,14 +117,6 @@
         'locale': 'es-ES',
         'notes': '',
         'region': 'IB',
-        'type': 'F'
-    },
-    {
-        'date': '2019-03-13',
-        'description': 'Estatuto de Autonomía de la Ciudad de Melilla',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'ML',
         'type': 'F'
     },
     {
@@ -297,19 +377,19 @@
     },
     {
         'date': '2019-04-23',
-        'description': 'San Jorge / Día de Aragón',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'AR',
-        'type': 'RF'
-    },
-    {
-        'date': '2019-04-23',
         'description': 'Fiesta de Castilla y León',
         'locale': 'es-ES',
         'notes': '',
         'region': 'CL',
         'type': 'F'
+    },
+    {
+        'date': '2019-04-23',
+        'description': 'San Jorge / Día de Aragón',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AR',
+        'type': 'RF'
     },
     {
         'date': '2019-05-01',
@@ -352,7 +432,7 @@
         'type': 'F'
     },
     {
-        'date': '2019-06-09',
+        'date': '2019-06-10',
         'description': 'Día de la Región de Murcia',
         'locale': 'es-ES',
         'notes': '',
@@ -360,7 +440,7 @@
         'type': 'F'
     },
     {
-        'date': '2019-06-09',
+        'date': '2019-06-10',
         'description': 'Día de La Rioja',
         'locale': 'es-ES',
         'notes': '',
@@ -393,10 +473,18 @@
     },
     {
         'date': '2019-07-25',
-        'description': 'Santiago Apóstol / Día Nacional de Galicia',
+        'description': 'Santiago Apóstol',
         'locale': 'es-ES',
         'notes': '',
-        'region': 'GA',
+        'region': 'CB',
+        'type': 'RF'
+    },
+    {
+        'date': '2019-07-25',
+        'description': 'Santiago Apóstol',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'PV',
         'type': 'RF'
     },
     {
@@ -404,16 +492,24 @@
         'description': 'Santiago Apóstol / Día Nacional de Galicia',
         'locale': 'es-ES',
         'notes': '',
-        'region': 'PV',
+        'region': 'GA',
         'type': 'RF'
     },
     {
-        'date': '2019-07-28',
-        'description': 'Día de las Instituciones de Cantabria',
+        'date': '2019-08-12',
+        'description': 'Fiesta del Sacrificio (Aid El Kebir)',
         'locale': 'es-ES',
         'notes': '',
-        'region': 'CB',
-        'type': 'F'
+        'region': 'ML',
+        'type': 'RV'
+    },
+    {
+        'date': '2019-08-12',
+        'description': 'Fiesta del Sacrificio (Eidul Adha)',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CE',
+        'type': 'RV'
     },
     {
         'date': '2019-08-15',
@@ -432,16 +528,16 @@
         'type': 'F'
     },
     {
-        'date': '2019-09-08',
-        'description': 'Día de Asturias',
+        'date': '2019-09-09',
+        'description': 'Lunes siguiente al Día de Asturias',
         'locale': 'es-ES',
         'notes': '',
         'region': 'AS',
         'type': 'F'
     },
     {
-        'date': '2019-09-08',
-        'description': 'Día de Extremadura',
+        'date': '2019-09-09',
+        'description': 'Lunes siguiente al Día de Extremadura',
         'locale': 'es-ES',
         'notes': '',
         'region': 'EX',
@@ -454,14 +550,6 @@
         'notes': '',
         'region': 'CT',
         'type': 'F'
-    },
-    {
-        'date': '2019-09-15',
-        'description': 'La Bien Aparecida',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'CB',
-        'type': 'RF'
     },
     {
         'date': '2019-10-09',
@@ -502,6 +590,78 @@
         'notes': '',
         'region': '',
         'type': 'NRF'
+    },
+    {
+        'date': '2019-12-09',
+        'description': 'Lunes siguiente a La Inmaculada Concepción',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AN',
+        'type': 'RF'
+    },
+    {
+        'date': '2019-12-09',
+        'description': 'Lunes siguiente a La Inmaculada Concepción',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AR',
+        'type': 'RF'
+    },
+    {
+        'date': '2019-12-09',
+        'description': 'Lunes siguiente a La Inmaculada Concepción',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AS',
+        'type': 'RF'
+    },
+    {
+        'date': '2019-12-09',
+        'description': 'Lunes siguiente a La Inmaculada Concepción',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CB',
+        'type': 'RF'
+    },
+    {
+        'date': '2019-12-09',
+        'description': 'Lunes siguiente a La Inmaculada Concepción',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CL',
+        'type': 'RF'
+    },
+    {
+        'date': '2019-12-09',
+        'description': 'Lunes siguiente a La Inmaculada Concepción',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'EX',
+        'type': 'RF'
+    },
+    {
+        'date': '2019-12-09',
+        'description': 'Lunes siguiente a La Inmaculada Concepción',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'MD',
+        'type': 'RF'
+    },
+    {
+        'date': '2019-12-09',
+        'description': 'Lunes siguiente a La Inmaculada Concepción',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'ML',
+        'type': 'RF'
+    },
+    {
+        'date': '2019-12-09',
+        'description': 'Lunes siguiente a La Inmaculada Concepción',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'RI',
+        'type': 'RF'
     },
     {
         'date': '2019-12-25',

@@ -24,20 +24,20 @@
         'type': 'F'
     },
     {
-        'date': '2020-03-01',
-        'description': 'Día de las Illes Balears',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'IB',
-        'type': 'F'
-    },
-    {
         'date': '2020-03-13',
         'description': 'Estatuto de Autonomía de la Ciudad de Melilla',
         'locale': 'es-ES',
         'notes': '',
         'region': 'ML',
         'type': 'F'
+    },
+    {
+        'date': '2020-03-19',
+        'description': 'San José',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CM',
+        'type': 'RF'
     },
     {
         'date': '2020-03-19',
@@ -297,19 +297,19 @@
     },
     {
         'date': '2020-04-23',
-        'description': 'San Jorge / Día de Aragón',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'AR',
-        'type': 'RF'
-    },
-    {
-        'date': '2020-04-23',
         'description': 'Fiesta de Castilla y León',
         'locale': 'es-ES',
         'notes': '',
         'region': 'CL',
         'type': 'F'
+    },
+    {
+        'date': '2020-04-23',
+        'description': 'San Jorge / Día de Aragón',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AR',
+        'type': 'RF'
     },
     {
         'date': '2020-05-01',
@@ -328,27 +328,11 @@
         'type': 'F'
     },
     {
-        'date': '2020-05-17',
-        'description': 'Día de las Letras Gallegas',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'GA',
-        'type': 'F'
-    },
-    {
         'date': '2020-05-30',
         'description': 'Día de Canarias',
         'locale': 'es-ES',
         'notes': '',
         'region': 'CN',
-        'type': 'F'
-    },
-    {
-        'date': '2020-05-31',
-        'description': 'Día de Castilla-La Mancha',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'CM',
         'type': 'F'
     },
     {
@@ -388,7 +372,23 @@
         'description': 'San Juan',
         'locale': 'es-ES',
         'notes': '',
+        'region': 'GA',
+        'type': 'RF'
+    },
+    {
+        'date': '2020-06-24',
+        'description': 'San Juan',
+        'locale': 'es-ES',
+        'notes': '',
         'region': 'VC',
+        'type': 'RF'
+    },
+    {
+        'date': '2020-07-25',
+        'description': 'Santiago Apóstol',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'PV',
         'type': 'RF'
     },
     {
@@ -400,20 +400,28 @@
         'type': 'RF'
     },
     {
-        'date': '2020-07-25',
-        'description': 'Santiago Apóstol / Día Nacional de Galicia',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'PV',
-        'type': 'RF'
-    },
-    {
         'date': '2020-07-28',
         'description': 'Día de las Instituciones de Cantabria',
         'locale': 'es-ES',
         'notes': '',
         'region': 'CB',
         'type': 'F'
+    },
+    {
+        'date': '2020-07-31',
+        'description': 'Fiesta del Sacrificio (Aid El Kebir)',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'ML',
+        'type': 'RV'
+    },
+    {
+        'date': '2020-07-31',
+        'description': 'Fiesta del Sacrificio (Eidul Adha)',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CE',
+        'type': 'RV'
     },
     {
         'date': '2020-08-15',
@@ -488,12 +496,164 @@
         'type': 'NRF'
     },
     {
+        'date': '2020-11-02',
+        'description': 'Lunes siguiente a Todos los Santos',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AN',
+        'type': 'F'
+    },
+    {
+        'date': '2020-11-02',
+        'description': 'Lunes siguiente a Todos los Santos',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AR',
+        'type': 'F'
+    },
+    {
+        'date': '2020-11-02',
+        'description': 'Lunes siguiente a Todos los Santos',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AS',
+        'type': 'F'
+    },
+    {
+        'date': '2020-11-02',
+        'description': 'Lunes siguiente a Todos los Santos',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CL',
+        'type': 'F'
+    },
+    {
+        'date': '2020-11-02',
+        'description': 'Lunes siguiente a Todos los Santos',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'EX',
+        'type': 'F'
+    },
+    {
+        'date': '2020-11-02',
+        'description': 'Lunes siguiente a Todos los Santos',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'MD',
+        'type': 'F'
+    },
+    {
         'date': '2020-12-06',
         'description': 'Día de la Constitución Española',
         'locale': 'es-ES',
         'notes': '',
         'region': '',
         'type': 'NF'
+    },
+    {
+        'date': '2020-12-07',
+        'description': 'Lunes siguiente al Día de la Constitución Española',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AN',
+        'type': 'F'
+    },
+    {
+        'date': '2020-12-07',
+        'description': 'Lunes siguiente al Día de la Constitución Española',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AR',
+        'type': 'F'
+    },
+    {
+        'date': '2020-12-07',
+        'description': 'Lunes siguiente al Día de la Constitución Española',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AS',
+        'type': 'F'
+    },
+    {
+        'date': '2020-12-07',
+        'description': 'Lunes siguiente al Día de la Constitución Española',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CE',
+        'type': 'F'
+    },
+    {
+        'date': '2020-12-07',
+        'description': 'Lunes siguiente al Día de la Constitución Española',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CL',
+        'type': 'F'
+    },
+    {
+        'date': '2020-12-07',
+        'description': 'Lunes siguiente al Día de la Constitución Española',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CN',
+        'type': 'F'
+    },
+    {
+        'date': '2020-12-07',
+        'description': 'Lunes siguiente al Día de la Constitución Española',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'EX',
+        'type': 'F'
+    },
+    {
+        'date': '2020-12-07',
+        'description': 'Lunes siguiente al Día de la Constitución Española',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'IB',
+        'type': 'F'
+    },
+    {
+        'date': '2020-12-07',
+        'description': 'Lunes siguiente al Día de la Constitución Española',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'MC',
+        'type': 'F'
+    },
+    {
+        'date': '2020-12-07',
+        'description': 'Lunes siguiente al Día de la Constitución Española',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'MD',
+        'type': 'F'
+    },
+    {
+        'date': '2020-12-07',
+        'description': 'Lunes siguiente al Día de la Constitución Española',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'ML',
+        'type': 'F'
+    },
+    {
+        'date': '2020-12-07',
+        'description': 'Lunes siguiente al Día de la Constitución Española',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'NC',
+        'type': 'F'
+    },
+    {
+        'date': '2020-12-07',
+        'description': 'Lunes siguiente al Día de la Constitución Española',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'RI',
+        'type': 'F'
     },
     {
         'date': '2020-12-08',

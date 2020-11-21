@@ -32,43 +32,11 @@
         'type': 'F'
     },
     {
-        'date': '2018-03-13',
-        'description': 'Estatuto de Autonomía de la Ciudad de Melilla',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'ML',
-        'type': 'F'
-    },
-    {
-        'date': '2018-03-19',
-        'description': 'San José',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'GA',
-        'type': 'RF'
-    },
-    {
         'date': '2018-03-19',
         'description': 'San José',
         'locale': 'es-ES',
         'notes': '',
         'region': 'MC',
-        'type': 'RF'
-    },
-    {
-        'date': '2018-03-19',
-        'description': 'San José',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'NC',
-        'type': 'RF'
-    },
-    {
-        'date': '2018-03-19',
-        'description': 'San José',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'PV',
         'type': 'RF'
     },
     {
@@ -101,14 +69,6 @@
         'locale': 'es-ES',
         'notes': '',
         'region': 'AS',
-        'type': 'RV'
-    },
-    {
-        'date': '2018-03-29',
-        'description': 'Jueves Santo',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'CB',
         'type': 'RV'
     },
     {
@@ -236,23 +196,7 @@
         'description': 'Lunes de Pascua',
         'locale': 'es-ES',
         'notes': '',
-        'region': 'CB',
-        'type': 'RV'
-    },
-    {
-        'date': '2018-04-02',
-        'description': 'Lunes de Pascua',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'CM',
-        'type': 'RV'
-    },
-    {
-        'date': '2018-04-02',
-        'description': 'Lunes de Pascua',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'CT',
+        'region': 'CL',
         'type': 'RV'
     },
     {
@@ -284,24 +228,8 @@
         'description': 'Lunes de Pascua',
         'locale': 'es-ES',
         'notes': '',
-        'region': 'RI',
-        'type': 'RV'
-    },
-    {
-        'date': '2018-04-02',
-        'description': 'Lunes de Pascua',
-        'locale': 'es-ES',
-        'notes': '',
         'region': 'VC',
         'type': 'RV'
-    },
-    {
-        'date': '2018-04-23',
-        'description': 'San Jorge / Día de Aragón',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'AR',
-        'type': 'RF'
     },
     {
         'date': '2018-04-23',
@@ -310,6 +238,14 @@
         'notes': '',
         'region': 'CL',
         'type': 'F'
+    },
+    {
+        'date': '2018-04-23',
+        'description': 'San Jorge / Día de Aragón',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AR',
+        'type': 'RF'
     },
     {
         'date': '2018-05-01',
@@ -352,14 +288,6 @@
         'type': 'F'
     },
     {
-        'date': '2018-05-31',
-        'description': 'Corpus Christi',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'CM',
-        'type': 'RV'
-    },
-    {
         'date': '2018-06-09',
         'description': 'Día de la Región de Murcia',
         'locale': 'es-ES',
@@ -376,35 +304,11 @@
         'type': 'F'
     },
     {
-        'date': '2018-06-24',
-        'description': 'San Juan',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'CT',
-        'type': 'RF'
-    },
-    {
-        'date': '2018-06-24',
-        'description': 'San Juan',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'VC',
-        'type': 'RF'
-    },
-    {
         'date': '2018-07-25',
         'description': 'Santiago Apóstol / Día Nacional de Galicia',
         'locale': 'es-ES',
         'notes': '',
         'region': 'GA',
-        'type': 'RF'
-    },
-    {
-        'date': '2018-07-25',
-        'description': 'Santiago Apóstol / Día Nacional de Galicia',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'PV',
         'type': 'RF'
     },
     {
@@ -424,12 +328,20 @@
         'type': 'NRF'
     },
     {
-        'date': '2018-09-02',
-        'description': 'Día de Ceuta',
+        'date': '2018-08-22',
+        'description': 'Fiesta del Sacrificio (Aid El Kebir)',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'ML',
+        'type': 'RV'
+    },
+    {
+        'date': '2018-08-22',
+        'description': 'Fiesta del Sacrificio (Eidul Adha)',
         'locale': 'es-ES',
         'notes': '',
         'region': 'CE',
-        'type': 'F'
+        'type': 'RV'
     },
     {
         'date': '2018-09-08',
@@ -516,15 +428,7 @@
         'description': 'San Esteban',
         'locale': 'es-ES',
         'notes': '',
-        'region': 'CT',
-        'type': 'RF'
-    },
-    {
-        'date': '2018-12-26',
-        'description': 'San Esteban',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'IB',
+        'region': 'CL',
         'type': 'RF'
     }
 ]

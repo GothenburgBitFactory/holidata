@@ -24,27 +24,11 @@
         'type': 'F'
     },
     {
-        'date': '2015-03-01',
-        'description': 'Día de las Illes Balears',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'IB',
-        'type': 'F'
-    },
-    {
-        'date': '2015-03-13',
-        'description': 'Estatuto de Autonomía de la Ciudad de Melilla',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'ML',
-        'type': 'F'
-    },
-    {
         'date': '2015-03-19',
         'description': 'San José',
         'locale': 'es-ES',
         'notes': '',
-        'region': 'GA',
+        'region': 'MC',
         'type': 'RF'
     },
     {
@@ -52,7 +36,15 @@
         'description': 'San José',
         'locale': 'es-ES',
         'notes': '',
-        'region': 'MC',
+        'region': 'MD',
+        'type': 'RF'
+    },
+    {
+        'date': '2015-03-19',
+        'description': 'San José',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'ML',
         'type': 'RF'
     },
     {
@@ -77,6 +69,14 @@
         'locale': 'es-ES',
         'notes': '',
         'region': 'VC',
+        'type': 'RF'
+    },
+    {
+        'date': '2015-03-20',
+        'description': 'Día siguiente a San José',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'GA',
         'type': 'RF'
     },
     {
@@ -297,19 +297,19 @@
     },
     {
         'date': '2015-04-23',
-        'description': 'San Jorge / Día de Aragón',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'AR',
-        'type': 'RF'
-    },
-    {
-        'date': '2015-04-23',
         'description': 'Fiesta de Castilla y León',
         'locale': 'es-ES',
         'notes': '',
         'region': 'CL',
         'type': 'F'
+    },
+    {
+        'date': '2015-04-23',
+        'description': 'San Jorge / Día de Aragón',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AR',
+        'type': 'RF'
     },
     {
         'date': '2015-05-01',
@@ -328,14 +328,6 @@
         'type': 'F'
     },
     {
-        'date': '2015-05-17',
-        'description': 'Día de las Letras Gallegas',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'GA',
-        'type': 'F'
-    },
-    {
         'date': '2015-05-30',
         'description': 'Día de Canarias',
         'locale': 'es-ES',
@@ -344,19 +336,19 @@
         'type': 'F'
     },
     {
-        'date': '2015-05-31',
-        'description': 'Día de Castilla-La Mancha',
+        'date': '2015-06-04',
+        'description': 'Corpus Christi',
         'locale': 'es-ES',
         'notes': '',
         'region': 'CM',
-        'type': 'F'
+        'type': 'RV'
     },
     {
         'date': '2015-06-04',
         'description': 'Corpus Christi',
         'locale': 'es-ES',
         'notes': '',
-        'region': 'CM',
+        'region': 'MD',
         'type': 'RV'
     },
     {
@@ -384,11 +376,19 @@
         'type': 'RF'
     },
     {
-        'date': '2015-06-24',
-        'description': 'San Juan',
+        'date': '2015-07-25',
+        'description': 'Santiago Apóstol',
         'locale': 'es-ES',
         'notes': '',
-        'region': 'VC',
+        'region': 'NC',
+        'type': 'RF'
+    },
+    {
+        'date': '2015-07-25',
+        'description': 'Santiago Apóstol',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'PV',
         'type': 'RF'
     },
     {
@@ -400,36 +400,12 @@
         'type': 'RF'
     },
     {
-        'date': '2015-07-25',
-        'description': 'Santiago Apóstol / Día Nacional de Galicia',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'PV',
-        'type': 'RF'
-    },
-    {
-        'date': '2015-07-28',
-        'description': 'Día de las Instituciones de Cantabria',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'CB',
-        'type': 'F'
-    },
-    {
         'date': '2015-08-15',
         'description': 'Asunción de la Virgen',
         'locale': 'es-ES',
         'notes': '',
         'region': '',
         'type': 'NRF'
-    },
-    {
-        'date': '2015-09-02',
-        'description': 'Día de Ceuta',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'CE',
-        'type': 'F'
     },
     {
         'date': '2015-09-08',
@@ -464,6 +440,22 @@
         'type': 'RF'
     },
     {
+        'date': '2015-09-25',
+        'description': 'Fiesta del Sacrificio (Aid El Kebir)',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'ML',
+        'type': 'RV'
+    },
+    {
+        'date': '2015-09-25',
+        'description': 'Fiesta del Sacrificio (Eidul Adha)',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CE',
+        'type': 'RV'
+    },
+    {
         'date': '2015-10-09',
         'description': 'Día de la Comunitat Valenciana',
         'locale': 'es-ES',
@@ -488,12 +480,188 @@
         'type': 'NRF'
     },
     {
+        'date': '2015-11-02',
+        'description': 'Lunes siguiente a Todos los Santos',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AN',
+        'type': 'F'
+    },
+    {
+        'date': '2015-11-02',
+        'description': 'Lunes siguiente a Todos los Santos',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AR',
+        'type': 'F'
+    },
+    {
+        'date': '2015-11-02',
+        'description': 'Lunes siguiente a Todos los Santos',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AS',
+        'type': 'F'
+    },
+    {
+        'date': '2015-11-02',
+        'description': 'Lunes siguiente a Todos los Santos',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CB',
+        'type': 'F'
+    },
+    {
+        'date': '2015-11-02',
+        'description': 'Lunes siguiente a Todos los Santos',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CE',
+        'type': 'F'
+    },
+    {
+        'date': '2015-11-02',
+        'description': 'Lunes siguiente a Todos los Santos',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CL',
+        'type': 'F'
+    },
+    {
+        'date': '2015-11-02',
+        'description': 'Lunes siguiente a Todos los Santos',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CN',
+        'type': 'F'
+    },
+    {
+        'date': '2015-11-02',
+        'description': 'Lunes siguiente a Todos los Santos',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'EX',
+        'type': 'F'
+    },
+    {
+        'date': '2015-11-02',
+        'description': 'Lunes siguiente a Todos los Santos',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'GA',
+        'type': 'F'
+    },
+    {
+        'date': '2015-11-02',
+        'description': 'Lunes siguiente a Todos los Santos',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'IB',
+        'type': 'F'
+    },
+    {
         'date': '2015-12-06',
         'description': 'Día de la Constitución Española',
         'locale': 'es-ES',
         'notes': '',
         'region': '',
         'type': 'NF'
+    },
+    {
+        'date': '2015-12-07',
+        'description': 'Lunes siguiente al Día de la Constitución Española',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AN',
+        'type': 'F'
+    },
+    {
+        'date': '2015-12-07',
+        'description': 'Lunes siguiente al Día de la Constitución Española',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AR',
+        'type': 'F'
+    },
+    {
+        'date': '2015-12-07',
+        'description': 'Lunes siguiente al Día de la Constitución Española',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AS',
+        'type': 'F'
+    },
+    {
+        'date': '2015-12-07',
+        'description': 'Lunes siguiente al Día de la Constitución Española',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CE',
+        'type': 'F'
+    },
+    {
+        'date': '2015-12-07',
+        'description': 'Lunes siguiente al Día de la Constitución Española',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CL',
+        'type': 'F'
+    },
+    {
+        'date': '2015-12-07',
+        'description': 'Lunes siguiente al Día de la Constitución Española',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CM',
+        'type': 'F'
+    },
+    {
+        'date': '2015-12-07',
+        'description': 'Lunes siguiente al Día de la Constitución Española',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'EX',
+        'type': 'F'
+    },
+    {
+        'date': '2015-12-07',
+        'description': 'Lunes siguiente al Día de la Constitución Española',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'IB',
+        'type': 'F'
+    },
+    {
+        'date': '2015-12-07',
+        'description': 'Lunes siguiente al Día de la Constitución Española',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'MC',
+        'type': 'F'
+    },
+    {
+        'date': '2015-12-07',
+        'description': 'Lunes siguiente al Día de la Constitución Española',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'ML',
+        'type': 'F'
+    },
+    {
+        'date': '2015-12-07',
+        'description': 'Lunes siguiente al Día de la Constitución Española',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'RI',
+        'type': 'F'
+    },
+    {
+        'date': '2015-12-07',
+        'description': 'Lunes siguiente al Día de la Constitución Española',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'VC',
+        'type': 'F'
     },
     {
         'date': '2015-12-08',
@@ -517,14 +685,6 @@
         'locale': 'es-ES',
         'notes': '',
         'region': 'CT',
-        'type': 'RF'
-    },
-    {
-        'date': '2015-12-26',
-        'description': 'San Esteban',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'IB',
         'type': 'RF'
     }
 ]

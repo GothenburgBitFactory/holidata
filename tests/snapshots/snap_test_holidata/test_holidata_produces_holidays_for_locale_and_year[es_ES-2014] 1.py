@@ -32,22 +32,6 @@
         'type': 'F'
     },
     {
-        'date': '2014-03-13',
-        'description': 'Estatuto de Autonomía de la Ciudad de Melilla',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'ML',
-        'type': 'F'
-    },
-    {
-        'date': '2014-03-19',
-        'description': 'San José',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'GA',
-        'type': 'RF'
-    },
-    {
         'date': '2014-03-19',
         'description': 'San José',
         'locale': 'es-ES',
@@ -60,7 +44,7 @@
         'description': 'San José',
         'locale': 'es-ES',
         'notes': '',
-        'region': 'NC',
+        'region': 'ML',
         'type': 'RF'
     },
     {
@@ -68,7 +52,7 @@
         'description': 'San José',
         'locale': 'es-ES',
         'notes': '',
-        'region': 'PV',
+        'region': 'NC',
         'type': 'RF'
     },
     {
@@ -236,14 +220,6 @@
         'description': 'Lunes de Pascua',
         'locale': 'es-ES',
         'notes': '',
-        'region': 'CB',
-        'type': 'RV'
-    },
-    {
-        'date': '2014-04-21',
-        'description': 'Lunes de Pascua',
-        'locale': 'es-ES',
-        'notes': '',
         'region': 'CM',
         'type': 'RV'
     },
@@ -253,14 +229,6 @@
         'locale': 'es-ES',
         'notes': '',
         'region': 'CT',
-        'type': 'RV'
-    },
-    {
-        'date': '2014-04-21',
-        'description': 'Lunes de Pascua',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'IB',
         'type': 'RV'
     },
     {
@@ -297,19 +265,19 @@
     },
     {
         'date': '2014-04-23',
-        'description': 'San Jorge / Día de Aragón',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'AR',
-        'type': 'RF'
-    },
-    {
-        'date': '2014-04-23',
         'description': 'Fiesta de Castilla y León',
         'locale': 'es-ES',
         'notes': '',
         'region': 'CL',
         'type': 'F'
+    },
+    {
+        'date': '2014-04-23',
+        'description': 'San Jorge / Día de Aragón',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AR',
+        'type': 'RF'
     },
     {
         'date': '2014-05-01',
@@ -344,14 +312,6 @@
         'type': 'F'
     },
     {
-        'date': '2014-05-31',
-        'description': 'Día de Castilla-La Mancha',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'CM',
-        'type': 'F'
-    },
-    {
         'date': '2014-06-09',
         'description': 'Día de la Región de Murcia',
         'locale': 'es-ES',
@@ -376,6 +336,14 @@
         'type': 'RV'
     },
     {
+        'date': '2014-06-19',
+        'description': 'Corpus Christi',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'MD',
+        'type': 'RV'
+    },
+    {
         'date': '2014-06-24',
         'description': 'San Juan',
         'locale': 'es-ES',
@@ -384,11 +352,11 @@
         'type': 'RF'
     },
     {
-        'date': '2014-06-24',
-        'description': 'San Juan',
+        'date': '2014-07-25',
+        'description': 'Santiago Apóstol',
         'locale': 'es-ES',
         'notes': '',
-        'region': 'VC',
+        'region': 'CB',
         'type': 'RF'
     },
     {
@@ -400,36 +368,12 @@
         'type': 'RF'
     },
     {
-        'date': '2014-07-25',
-        'description': 'Santiago Apóstol / Día Nacional de Galicia',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'PV',
-        'type': 'RF'
-    },
-    {
-        'date': '2014-07-28',
-        'description': 'Día de las Instituciones de Cantabria',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'CB',
-        'type': 'F'
-    },
-    {
         'date': '2014-08-15',
         'description': 'Asunción de la Virgen',
         'locale': 'es-ES',
         'notes': '',
         'region': '',
         'type': 'NRF'
-    },
-    {
-        'date': '2014-09-02',
-        'description': 'Día de Ceuta',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'CE',
-        'type': 'F'
     },
     {
         'date': '2014-09-08',
@@ -464,6 +408,22 @@
         'type': 'RF'
     },
     {
+        'date': '2014-10-04',
+        'description': 'Fiesta del Sacrificio (Aid El Kebir)',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'ML',
+        'type': 'RV'
+    },
+    {
+        'date': '2014-10-06',
+        'description': 'Fiesta del Sacrificio (Eidul Adha)',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CE',
+        'type': 'RV'
+    },
+    {
         'date': '2014-10-09',
         'description': 'Día de la Comunitat Valenciana',
         'locale': 'es-ES',
@@ -478,6 +438,62 @@
         'notes': '',
         'region': '',
         'type': 'NF'
+    },
+    {
+        'date': '2014-10-13',
+        'description': 'Lunes siguiente a la Fiesta Nacional de España',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AN',
+        'type': 'F'
+    },
+    {
+        'date': '2014-10-13',
+        'description': 'Lunes siguiente a la Fiesta Nacional de España',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AR',
+        'type': 'F'
+    },
+    {
+        'date': '2014-10-13',
+        'description': 'Lunes siguiente a la Fiesta Nacional de España',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AS',
+        'type': 'F'
+    },
+    {
+        'date': '2014-10-13',
+        'description': 'Lunes siguiente a la Fiesta Nacional de España',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CE',
+        'type': 'F'
+    },
+    {
+        'date': '2014-10-13',
+        'description': 'Lunes siguiente a la Fiesta Nacional de España',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CL',
+        'type': 'F'
+    },
+    {
+        'date': '2014-10-13',
+        'description': 'Lunes siguiente a la Fiesta Nacional de España',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'EX',
+        'type': 'F'
+    },
+    {
+        'date': '2014-10-25',
+        'description': 'Día del País Vasco-Euskadiko Eguna',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'PV',
+        'type': 'F'
     },
     {
         'date': '2014-11-01',

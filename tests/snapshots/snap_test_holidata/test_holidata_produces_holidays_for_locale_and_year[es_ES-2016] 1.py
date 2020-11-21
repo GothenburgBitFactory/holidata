@@ -16,7 +16,7 @@
         'type': 'NRF'
     },
     {
-        'date': '2016-02-28',
+        'date': '2016-02-29',
         'description': 'Día de Andalucía',
         'locale': 'es-ES',
         'notes': '',
@@ -32,22 +32,6 @@
         'type': 'F'
     },
     {
-        'date': '2016-03-13',
-        'description': 'Estatuto de Autonomía de la Ciudad de Melilla',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'ML',
-        'type': 'F'
-    },
-    {
-        'date': '2016-03-19',
-        'description': 'San José',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'GA',
-        'type': 'RF'
-    },
-    {
         'date': '2016-03-19',
         'description': 'San José',
         'locale': 'es-ES',
@@ -60,15 +44,7 @@
         'description': 'San José',
         'locale': 'es-ES',
         'notes': '',
-        'region': 'NC',
-        'type': 'RF'
-    },
-    {
-        'date': '2016-03-19',
-        'description': 'San José',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'PV',
+        'region': 'ML',
         'type': 'RF'
     },
     {
@@ -216,6 +192,14 @@
         'type': 'RV'
     },
     {
+        'date': '2016-03-24',
+        'description': 'Jueves Santo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'VC',
+        'type': 'RV'
+    },
+    {
         'date': '2016-03-25',
         'description': 'Viernes Santo',
         'locale': 'es-ES',
@@ -230,22 +214,6 @@
         'notes': '',
         'region': '',
         'type': 'NRV'
-    },
-    {
-        'date': '2016-03-28',
-        'description': 'Lunes de Pascua',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'CB',
-        'type': 'RV'
-    },
-    {
-        'date': '2016-03-28',
-        'description': 'Lunes de Pascua',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'CM',
-        'type': 'RV'
     },
     {
         'date': '2016-03-28',
@@ -297,19 +265,19 @@
     },
     {
         'date': '2016-04-23',
-        'description': 'San Jorge / Día de Aragón',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'AR',
-        'type': 'RF'
-    },
-    {
-        'date': '2016-04-23',
         'description': 'Fiesta de Castilla y León',
         'locale': 'es-ES',
         'notes': '',
         'region': 'CL',
         'type': 'F'
+    },
+    {
+        'date': '2016-04-23',
+        'description': 'San Jorge / Día de Aragón',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AR',
+        'type': 'RF'
     },
     {
         'date': '2016-05-01',
@@ -321,10 +289,66 @@
     },
     {
         'date': '2016-05-02',
-        'description': 'Fiesta de la Comunidad de Madrid',
+        'description': 'Lunes siguiente a la Fiesta del Trabajo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AN',
+        'type': 'F'
+    },
+    {
+        'date': '2016-05-02',
+        'description': 'Lunes siguiente a la Fiesta del Trabajo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AR',
+        'type': 'F'
+    },
+    {
+        'date': '2016-05-02',
+        'description': 'Lunes siguiente a la Fiesta del Trabajo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AS',
+        'type': 'F'
+    },
+    {
+        'date': '2016-05-02',
+        'description': 'Lunes siguiente a la Fiesta del Trabajo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CL',
+        'type': 'F'
+    },
+    {
+        'date': '2016-05-02',
+        'description': 'Lunes siguiente a la Fiesta del Trabajo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CN',
+        'type': 'F'
+    },
+    {
+        'date': '2016-05-02',
+        'description': 'Lunes siguiente a la Fiesta del Trabajo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'EX',
+        'type': 'F'
+    },
+    {
+        'date': '2016-05-02',
+        'description': 'Lunes siguiente a la Fiesta del Trabajo',
         'locale': 'es-ES',
         'notes': '',
         'region': 'MD',
+        'type': 'F'
+    },
+    {
+        'date': '2016-05-16',
+        'description': 'Lunes de Pascua Granada',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CT',
         'type': 'F'
     },
     {
@@ -388,7 +412,39 @@
         'description': 'San Juan',
         'locale': 'es-ES',
         'notes': '',
-        'region': 'VC',
+        'region': 'GA',
+        'type': 'RF'
+    },
+    {
+        'date': '2016-07-25',
+        'description': 'Santiago Apóstol',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'MD',
+        'type': 'RF'
+    },
+    {
+        'date': '2016-07-25',
+        'description': 'Santiago Apóstol',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'NC',
+        'type': 'RF'
+    },
+    {
+        'date': '2016-07-25',
+        'description': 'Santiago Apóstol',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'PV',
+        'type': 'RF'
+    },
+    {
+        'date': '2016-07-25',
+        'description': 'Santiago Apóstol',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'RI',
         'type': 'RF'
     },
     {
@@ -397,14 +453,6 @@
         'locale': 'es-ES',
         'notes': '',
         'region': 'GA',
-        'type': 'RF'
-    },
-    {
-        'date': '2016-07-25',
-        'description': 'Santiago Apóstol / Día Nacional de Galicia',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'PV',
         'type': 'RF'
     },
     {
@@ -448,12 +496,20 @@
         'type': 'F'
     },
     {
-        'date': '2016-09-11',
-        'description': 'Fiesta Nacional de Cataluña',
+        'date': '2016-09-12',
+        'description': 'Fiesta del Sacrificio (Aid El Kebir)',
         'locale': 'es-ES',
         'notes': '',
-        'region': 'CT',
-        'type': 'F'
+        'region': 'ML',
+        'type': 'RV'
+    },
+    {
+        'date': '2016-09-12',
+        'description': 'Fiesta del Sacrificio (Eidul Adha)',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CE',
+        'type': 'RV'
     },
     {
         'date': '2016-09-15',
@@ -464,11 +520,11 @@
         'type': 'RF'
     },
     {
-        'date': '2016-10-09',
-        'description': 'Día de la Comunitat Valenciana',
+        'date': '2016-10-07',
+        'description': '80º aniversario del primer Gobierno Vasco',
         'locale': 'es-ES',
         'notes': '',
-        'region': 'VC',
+        'region': 'PV',
         'type': 'F'
     },
     {
@@ -516,6 +572,62 @@
         'description': 'San Esteban',
         'locale': 'es-ES',
         'notes': '',
+        'region': 'AN',
+        'type': 'RF'
+    },
+    {
+        'date': '2016-12-26',
+        'description': 'San Esteban',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AR',
+        'type': 'RF'
+    },
+    {
+        'date': '2016-12-26',
+        'description': 'San Esteban',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AS',
+        'type': 'RF'
+    },
+    {
+        'date': '2016-12-26',
+        'description': 'San Esteban',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CB',
+        'type': 'RF'
+    },
+    {
+        'date': '2016-12-26',
+        'description': 'San Esteban',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CE',
+        'type': 'RF'
+    },
+    {
+        'date': '2016-12-26',
+        'description': 'San Esteban',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CL',
+        'type': 'RF'
+    },
+    {
+        'date': '2016-12-26',
+        'description': 'San Esteban',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CM',
+        'type': 'RF'
+    },
+    {
+        'date': '2016-12-26',
+        'description': 'San Esteban',
+        'locale': 'es-ES',
+        'notes': '',
         'region': 'CT',
         'type': 'RF'
     },
@@ -524,7 +636,55 @@
         'description': 'San Esteban',
         'locale': 'es-ES',
         'notes': '',
+        'region': 'EX',
+        'type': 'RF'
+    },
+    {
+        'date': '2016-12-26',
+        'description': 'San Esteban',
+        'locale': 'es-ES',
+        'notes': '',
         'region': 'IB',
+        'type': 'RF'
+    },
+    {
+        'date': '2016-12-26',
+        'description': 'San Esteban',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'MC',
+        'type': 'RF'
+    },
+    {
+        'date': '2016-12-26',
+        'description': 'San Esteban',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'MD',
+        'type': 'RF'
+    },
+    {
+        'date': '2016-12-26',
+        'description': 'San Esteban',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'ML',
+        'type': 'RF'
+    },
+    {
+        'date': '2016-12-26',
+        'description': 'San Esteban',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'NC',
+        'type': 'RF'
+    },
+    {
+        'date': '2016-12-26',
+        'description': 'San Esteban',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'VC',
         'type': 'RF'
     }
 ]
