@@ -15,7 +15,7 @@ class fr_FR(Locale):
     11-11: [NF] Armistice 1918
     12-25: [NF] Noël
     1 day after Easter: [NRV] Lundi de Pâques
-    39 days after Easter: [NRV] Ascencion
+    39 days after Easter: [NRV] Ascension
     49 days after Easter: [NRV] Pentecôte
     50 days after Easter: [NRV] Lundi de Pentecôte
     """
