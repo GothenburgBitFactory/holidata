@@ -33,7 +33,7 @@
     },
     {
         'date': '2020-05-21',
-        'description': 'Ascencion',
+        'description': 'Ascension',
         'locale': 'fr-FR',
         'notes': '',
         'region': '',

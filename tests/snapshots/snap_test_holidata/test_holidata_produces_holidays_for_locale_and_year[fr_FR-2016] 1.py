@@ -25,7 +25,7 @@
     },
     {
         'date': '2016-05-05',
-        'description': 'Ascencion',
+        'description': 'Ascension',
         'locale': 'fr-FR',
         'notes': '',
         'region': '',

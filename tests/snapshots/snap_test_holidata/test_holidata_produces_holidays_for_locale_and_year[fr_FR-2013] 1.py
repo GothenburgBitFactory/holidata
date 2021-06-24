@@ -33,7 +33,7 @@
     },
     {
         'date': '2013-05-09',
-        'description': 'Ascencion',
+        'description': 'Ascension',
         'locale': 'fr-FR',
         'notes': '',
         'region': '',

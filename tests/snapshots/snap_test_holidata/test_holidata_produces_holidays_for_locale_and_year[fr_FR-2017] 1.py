@@ -33,7 +33,7 @@
     },
     {
         'date': '2017-05-25',
-        'description': 'Ascencion',
+        'description': 'Ascension',
         'locale': 'fr-FR',
         'notes': '',
         'region': '',
