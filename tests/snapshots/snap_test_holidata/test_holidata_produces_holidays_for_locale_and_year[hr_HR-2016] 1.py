@@ -9,7 +9,7 @@
     },
     {
         'date': '2016-01-06',
-        'description': 'Bogojavljenje',
+        'description': 'Sveta tri kralja',
         'locale': 'hr-HR',
         'notes': '',
         'region': '',
@@ -25,7 +25,7 @@
     },
     {
         'date': '2016-03-28',
-        'description': 'Uskrsni ponedjeljak',
+        'description': 'Uskršnji ponedjeljak',
         'locale': 'hr-HR',
         'notes': '',
         'region': '',
@@ -48,16 +48,16 @@
         'type': 'NRV'
     },
     {
-        'date': '2016-06-22',
-        'description': 'Dan antifašističke borbe',
+        'date': '2016-05-30',
+        'description': 'Dan državnosti',
         'locale': 'hr-HR',
         'notes': '',
         'region': '',
         'type': 'NF'
     },
     {
-        'date': '2016-06-25',
-        'description': 'Dan državnosti',
+        'date': '2016-06-22',
+        'description': 'Dan antifašističke borbe',
         'locale': 'hr-HR',
         'notes': '',
         'region': '',
@@ -80,16 +80,8 @@
         'type': 'NRF'
     },
     {
-        'date': '2016-10-08',
-        'description': 'Dan neovisnosti',
-        'locale': 'hr-HR',
-        'notes': '',
-        'region': '',
-        'type': 'NF'
-    },
-    {
         'date': '2016-11-01',
-        'description': 'Svi sveti',
+        'description': 'Dan svih svetih',
         'locale': 'hr-HR',
         'notes': '',
         'region': '',

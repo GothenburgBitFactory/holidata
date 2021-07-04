@@ -9,7 +9,7 @@
     },
     {
         'date': '2013-01-06',
-        'description': 'Bogojavljenje',
+        'description': 'Sveta tri kralja',
         'locale': 'hr-HR',
         'notes': '',
         'region': '',
@@ -25,7 +25,7 @@
     },
     {
         'date': '2013-04-01',
-        'description': 'Uskrsni ponedjeljak',
+        'description': 'Uskršnji ponedjeljak',
         'locale': 'hr-HR',
         'notes': '',
         'region': '',
@@ -34,6 +34,14 @@
     {
         'date': '2013-05-01',
         'description': 'Praznik rada',
+        'locale': 'hr-HR',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2013-05-30',
+        'description': 'Dan državnosti',
         'locale': 'hr-HR',
         'notes': '',
         'region': '',
@@ -56,14 +64,6 @@
         'type': 'NF'
     },
     {
-        'date': '2013-06-25',
-        'description': 'Dan državnosti',
-        'locale': 'hr-HR',
-        'notes': '',
-        'region': '',
-        'type': 'NF'
-    },
-    {
         'date': '2013-08-05',
         'description': 'Dan pobjede i domovinske zahvalnosti i Dan hrvatskih branitelja',
         'locale': 'hr-HR',
@@ -80,16 +80,8 @@
         'type': 'NRF'
     },
     {
-        'date': '2013-10-08',
-        'description': 'Dan neovisnosti',
-        'locale': 'hr-HR',
-        'notes': '',
-        'region': '',
-        'type': 'NF'
-    },
-    {
         'date': '2013-11-01',
-        'description': 'Svi sveti',
+        'description': 'Dan svih svetih',
         'locale': 'hr-HR',
         'notes': '',
         'region': '',
