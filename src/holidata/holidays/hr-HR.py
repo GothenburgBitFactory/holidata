@@ -7,6 +7,7 @@ from .holidays import Locale, Holiday
 """
 sources
 THE LAW ON HOLIDAYS, MEMORIALS AND NON-WORKING DAYS IN THE REPUBLIC OF CROATIA
+2001: https://narodne-novine.nn.hr/eli/sluzbeni/2001/96/1614
 1996: https://narodne-novine.nn.hr/eli/sluzbeni/1996/33/674
 """
 
@@ -14,17 +15,18 @@ THE LAW ON HOLIDAYS, MEMORIALS AND NON-WORKING DAYS IN THE REPUBLIC OF CROATIA
 class hr_HR(Locale):
     """
     01-01: [NF] Nova godina
-    01-06: [NRF] Sveta tri kralja
-    05-01: [NF] Blagdan rada
-    05-30: [NF] Dan državnosti
+    05-01: [NF] Praznik rada
     06-22: [NF] Dan antifašističke borbe
-    08-05: [NF] Dan domovinske zahvalnosti
+    06-25: [NF] Dan državnosti
+    08-05: [NF] Dan pobjede i domovinske zahvalnosti
     08-15: [NRF] Velika Gospa
+    10-08: [NF] Dan neovisnosti
     11-01: [NRF] Svi sveti
     12-25: [NRF] Božić
     12-26: [NRF] Sveti Stjepan
     Easter: [NRV] Uskrs
     1 day after Easter: [NRV] Uskrsni ponedjeljak
+    60 days after Easter: [NRV] Tijelovo
     """
 
     locale = "hr-HR"
