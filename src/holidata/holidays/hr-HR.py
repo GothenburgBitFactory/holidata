@@ -7,6 +7,8 @@ from .holidays import Locale, Holiday
 """
 sources
 THE LAW ON HOLIDAYS, MEMORIALS AND NON-WORKING DAYS IN THE REPUBLIC OF CROATIA
+2002: https://narodne-novine.nn.hr/eli/sluzbeni/2002/136/2194
+2002: https://narodne-novine.nn.hr/eli/sluzbeni/2002/13/318
 2001: https://narodne-novine.nn.hr/eli/sluzbeni/2001/96/1614
 1996: https://narodne-novine.nn.hr/eli/sluzbeni/1996/33/674
 """
@@ -15,6 +17,7 @@ THE LAW ON HOLIDAYS, MEMORIALS AND NON-WORKING DAYS IN THE REPUBLIC OF CROATIA
 class hr_HR(Locale):
     """
     01-01: [NF] Nova godina
+    01-06: [NRF] Bogojavljanje
     05-01: [NF] Praznik rada
     06-22: [NF] Dan antifašističke borbe
     06-25: [NF] Dan državnosti
