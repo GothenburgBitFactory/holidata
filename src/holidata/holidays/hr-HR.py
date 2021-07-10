@@ -7,6 +7,7 @@ from .holidays import Locale, Holiday
 """
 sources
 THE LAW ON HOLIDAYS, MEMORIALS AND NON-WORKING DAYS IN THE REPUBLIC OF CROATIA
+2019: https://narodne-novine.nn.hr/eli/sluzbeni/2019/110/2212
 2011: https://narodne-novine.nn.hr/eli/sluzbeni/2011/130/2613 (no changes)
 2011: https://narodne-novine.nn.hr/eli/sluzbeni/2011/74/1576 (no changes)
 2008: https://narodne-novine.nn.hr/eli/sluzbeni/2008/55/1911
@@ -21,14 +22,11 @@ THE LAW ON HOLIDAYS, MEMORIALS AND NON-WORKING DAYS IN THE REPUBLIC OF CROATIA
 
 class hr_HR(Locale):
     """
-    01-01: [NF] Nova godina
-    01-06: [NRF] Bogojavljanje
+    01-01: [NF] Nova Godina
+    01-06: [NRF] Bogojavljenje
     05-01: [NF] Praznik rada
     06-22: [NF] Dan antifašističke borbe
-    06-25: [NF] Dan državnosti
-    08-05: [NF] Dan pobjede i domovinske zahvalnosti
     08-15: [NRF] Velika Gospa
-    10-08: [NF] Dan neovisnosti
     11-01: [NRF] Svi sveti
     12-25: [NRF] Božić
     12-26: [NRF] Sveti Stjepan
@@ -39,6 +37,46 @@ class hr_HR(Locale):
 
     locale = "hr-HR"
     easter_type = EASTER_WESTERN
+
+    def holiday_dan_neovisnosti(self):
+        if self.year < 2020:
+            return [Holiday(
+                self.locale,
+                "",
+                SmartDayArrow(self.year, 10, 8),
+                "Dan neovisnosti",
+                "NF"
+            )]
+        else:
+            return []
+
+    def holiday_dan_pobjede_i_domovinske_zahvalnosti_i_dan_hrvatskih_branitelja(self):
+        if self.year >= 2008:
+            name = "Dan pobjede i domovinske zahvalnosti i Dan hrvatskih branitelja"
+        else:
+            name = "Dan pobjede i domovinske zahvalnosti"
+
+        return [Holiday(
+            self.locale,
+            "",
+            SmartDayArrow(self.year, 8, 5),
+            name,
+            "NF"
+        )]
+
+    def holiday_dan_drzavnosti(self):
+        if self.year >= 2020:
+            date = SmartDayArrow(self.year, 5, 30)
+        else:
+            date = SmartDayArrow(self.year, 6, 25)
+
+        return [Holiday(
+            self.locale,
+            "",
+            date,
+            "Dan državnosti",
+            "NF"
+        )]
 
     def holiday_dan_sjecanja_na_zrtve_domovinskog_rata_i_dan_sjecanja_na_zrtvu_vukovara_i_skabrnje(self):
         if self.year >= 2020:
