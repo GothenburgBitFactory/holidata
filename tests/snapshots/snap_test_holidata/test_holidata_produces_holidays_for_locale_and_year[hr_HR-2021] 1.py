@@ -40,6 +40,14 @@
         'type': 'NF'
     },
     {
+        'date': '2021-05-30',
+        'description': 'Dan državnosti',
+        'locale': 'hr-HR',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
         'date': '2021-06-03',
         'description': 'Tijelovo',
         'locale': 'hr-HR',
@@ -50,14 +58,6 @@
     {
         'date': '2021-06-22',
         'description': 'Dan antifašističke borbe',
-        'locale': 'hr-HR',
-        'notes': '',
-        'region': '',
-        'type': 'NF'
-    },
-    {
-        'date': '2021-06-25',
-        'description': 'Dan državnosti',
         'locale': 'hr-HR',
         'notes': '',
         'region': '',
@@ -78,14 +78,6 @@
         'notes': '',
         'region': '',
         'type': 'NRF'
-    },
-    {
-        'date': '2021-10-08',
-        'description': 'Dan neovisnosti',
-        'locale': 'hr-HR',
-        'notes': '',
-        'region': '',
-        'type': 'NF'
     },
     {
         'date': '2021-11-01',

@@ -40,6 +40,14 @@
         'type': 'NF'
     },
     {
+        'date': '2020-05-30',
+        'description': 'Dan državnosti',
+        'locale': 'hr-HR',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
         'date': '2020-06-11',
         'description': 'Tijelovo',
         'locale': 'hr-HR',
@@ -50,14 +58,6 @@
     {
         'date': '2020-06-22',
         'description': 'Dan antifašističke borbe',
-        'locale': 'hr-HR',
-        'notes': '',
-        'region': '',
-        'type': 'NF'
-    },
-    {
-        'date': '2020-06-25',
-        'description': 'Dan državnosti',
         'locale': 'hr-HR',
         'notes': '',
         'region': '',
@@ -78,14 +78,6 @@
         'notes': '',
         'region': '',
         'type': 'NRF'
-    },
-    {
-        'date': '2020-10-08',
-        'description': 'Dan neovisnosti',
-        'locale': 'hr-HR',
-        'notes': '',
-        'region': '',
-        'type': 'NF'
     },
     {
         'date': '2020-11-01',
