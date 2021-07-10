@@ -4,22 +4,27 @@ from dateutil.easter import EASTER_WESTERN
 from holidata.utils import SmartDayArrow
 from .holidays import Locale, Holiday
 
+"""
+sources
+THE LAW ON HOLIDAYS, MEMORIALS AND NON-WORKING DAYS IN THE REPUBLIC OF CROATIA
+1996: https://narodne-novine.nn.hr/eli/sluzbeni/1996/33/674
+"""
+
 
 class hr_HR(Locale):
     """
-    01-01: [NF] Nova Godina
+    01-01: [NF] Nova godina
     01-06: [NRF] Sveta tri kralja
-    05-01: [NF] Praznik rada
+    05-01: [NF] Blagdan rada
     05-30: [NF] Dan državnosti
     06-22: [NF] Dan antifašističke borbe
-    08-05: [NF] Dan pobjede i domovinske zahvalnosti i Dan hrvatskih branitelja
+    08-05: [NF] Dan domovinske zahvalnosti
     08-15: [NRF] Velika Gospa
-    11-01: [NRF] Dan svih svetih
+    11-01: [NRF] Svi sveti
     12-25: [NRF] Božić
     12-26: [NRF] Sveti Stjepan
     Easter: [NRV] Uskrs
-    1 day after Easter: [NRV] Uskršnji ponedjeljak
-    60 days after Easter: [NRV] Tijelovo
+    1 day after Easter: [NRV] Uskrsni ponedjeljak
     """
 
     locale = "hr-HR"
