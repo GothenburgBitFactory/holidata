@@ -7,6 +7,7 @@ from .holidays import Locale, Holiday
 """
 sources
 THE LAW ON HOLIDAYS, MEMORIALS AND NON-WORKING DAYS IN THE REPUBLIC OF CROATIA
+2006: https://narodne-novine.nn.hr/eli/sluzbeni/2006/59/1428
 2005: https://narodne-novine.nn.hr/eli/sluzbeni/2005/112/2062
 2002: https://narodne-novine.nn.hr/eli/sluzbeni/2002/136/2194
 2002: https://narodne-novine.nn.hr/eli/sluzbeni/2002/13/318
