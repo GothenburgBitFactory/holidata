@@ -9,7 +9,7 @@
     },
     {
         'date': '2018-01-06',
-        'description': 'Sveta tri kralja',
+        'description': 'Bogojavljenje',
         'locale': 'hr-HR',
         'notes': '',
         'region': '',
@@ -25,7 +25,7 @@
     },
     {
         'date': '2018-04-02',
-        'description': 'Uskršnji ponedjeljak',
+        'description': 'Uskrsni ponedjeljak',
         'locale': 'hr-HR',
         'notes': '',
         'region': '',
@@ -34,14 +34,6 @@
     {
         'date': '2018-05-01',
         'description': 'Praznik rada',
-        'locale': 'hr-HR',
-        'notes': '',
-        'region': '',
-        'type': 'NF'
-    },
-    {
-        'date': '2018-05-30',
-        'description': 'Dan državnosti',
         'locale': 'hr-HR',
         'notes': '',
         'region': '',
@@ -64,6 +56,14 @@
         'type': 'NF'
     },
     {
+        'date': '2018-06-25',
+        'description': 'Dan državnosti',
+        'locale': 'hr-HR',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
         'date': '2018-08-05',
         'description': 'Dan pobjede i domovinske zahvalnosti i Dan hrvatskih branitelja',
         'locale': 'hr-HR',
@@ -80,8 +80,16 @@
         'type': 'NRF'
     },
     {
+        'date': '2018-10-08',
+        'description': 'Dan neovisnosti',
+        'locale': 'hr-HR',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
         'date': '2018-11-01',
-        'description': 'Dan svih svetih',
+        'description': 'Svi sveti',
         'locale': 'hr-HR',
         'notes': '',
         'region': '',
