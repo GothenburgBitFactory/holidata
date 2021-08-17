@@ -28,6 +28,7 @@ __all__ = [
     "nl-BE",
     "nl-NL",
     "pl-PL",
+    "pt-BR",
     "pt-PT",
     "ru-RU",
     "sk-SK",
