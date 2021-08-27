@@ -557,6 +557,28 @@ snapshots['test_holidata_produces_holidays_for_locale_and_year[pl_PL-2020] 1'] =
 
 snapshots['test_holidata_produces_holidays_for_locale_and_year[pl_PL-2021] 1'] = FileSnapshot('snap_test_holidata/test_holidata_produces_holidays_for_locale_and_year[pl_PL-2021] 1.py')
 
+snapshots['test_holidata_produces_holidays_for_locale_and_year[pt_BR-2011] 1'] = FileSnapshot('snap_test_holidata/test_holidata_produces_holidays_for_locale_and_year[pt_BR-2011] 1.py')
+
+snapshots['test_holidata_produces_holidays_for_locale_and_year[pt_BR-2012] 1'] = FileSnapshot('snap_test_holidata/test_holidata_produces_holidays_for_locale_and_year[pt_BR-2012] 1.py')
+
+snapshots['test_holidata_produces_holidays_for_locale_and_year[pt_BR-2013] 1'] = FileSnapshot('snap_test_holidata/test_holidata_produces_holidays_for_locale_and_year[pt_BR-2013] 1.py')
+
+snapshots['test_holidata_produces_holidays_for_locale_and_year[pt_BR-2014] 1'] = FileSnapshot('snap_test_holidata/test_holidata_produces_holidays_for_locale_and_year[pt_BR-2014] 1.py')
+
+snapshots['test_holidata_produces_holidays_for_locale_and_year[pt_BR-2015] 1'] = FileSnapshot('snap_test_holidata/test_holidata_produces_holidays_for_locale_and_year[pt_BR-2015] 1.py')
+
+snapshots['test_holidata_produces_holidays_for_locale_and_year[pt_BR-2016] 1'] = FileSnapshot('snap_test_holidata/test_holidata_produces_holidays_for_locale_and_year[pt_BR-2016] 1.py')
+
+snapshots['test_holidata_produces_holidays_for_locale_and_year[pt_BR-2017] 1'] = FileSnapshot('snap_test_holidata/test_holidata_produces_holidays_for_locale_and_year[pt_BR-2017] 1.py')
+
+snapshots['test_holidata_produces_holidays_for_locale_and_year[pt_BR-2018] 1'] = FileSnapshot('snap_test_holidata/test_holidata_produces_holidays_for_locale_and_year[pt_BR-2018] 1.py')
+
+snapshots['test_holidata_produces_holidays_for_locale_and_year[pt_BR-2019] 1'] = FileSnapshot('snap_test_holidata/test_holidata_produces_holidays_for_locale_and_year[pt_BR-2019] 1.py')
+
+snapshots['test_holidata_produces_holidays_for_locale_and_year[pt_BR-2020] 1'] = FileSnapshot('snap_test_holidata/test_holidata_produces_holidays_for_locale_and_year[pt_BR-2020] 1.py')
+
+snapshots['test_holidata_produces_holidays_for_locale_and_year[pt_BR-2021] 1'] = FileSnapshot('snap_test_holidata/test_holidata_produces_holidays_for_locale_and_year[pt_BR-2021] 1.py')
+
 snapshots['test_holidata_produces_holidays_for_locale_and_year[pt_PT-2011] 1'] = FileSnapshot('snap_test_holidata/test_holidata_produces_holidays_for_locale_and_year[pt_PT-2011] 1.py')
 
 snapshots['test_holidata_produces_holidays_for_locale_and_year[pt_PT-2012] 1'] = FileSnapshot('snap_test_holidata/test_holidata_produces_holidays_for_locale_and_year[pt_PT-2012] 1.py')
