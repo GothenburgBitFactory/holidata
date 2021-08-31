@@ -92,6 +92,8 @@ class pt_BR(Locale):
     12-08: [AM] [RF] Nossa Senhora da Conceição
     12-19: [PR] [F] Emancipação Política do Estado do Paraná
     12-25: [NRF] Natal
+    47 days before Easter: [RVN] Carnaval
+    Easter: [RVN] Páscoa
     """
 
     locale = "pt-BR"
