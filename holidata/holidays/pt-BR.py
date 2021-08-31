@@ -49,8 +49,6 @@ class pt_BR(Locale):
     03-18: [TO] [F] Autonomia do Estado de Tocantins
     03-19: [AP, CE] [RF] Dia de São José
     03-25: [CE] [F] Abolição da Escravidão no Ceará
-    04-21: [DF] [F] Fundação de Brasília
-    04-21: [MG] [F] Execução de Tiradentes
     04-21: [NF] Tiradentes
     04-23: [RJ] [RF] Dia de São Jorge
     05-01: [NF] Dia Internacional do Trabalhador
