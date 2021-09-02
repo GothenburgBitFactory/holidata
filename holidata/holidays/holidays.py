@@ -96,7 +96,7 @@ class Locale(object, metaclass=PluginMount):
         for reg_exp, create_date_from in function_map:
             m = reg_exp.search(line)
             if m is not None:
-                return dict(regions=(m.group('regions').split(',') if m.group('regions') is not None else [""]),
+                return dict(regions=([x.strip() for x in m.group('regions').split(',')] if m.group('regions') is not None else [""]),
                             date=create_date_from(m),
                             description=m.group('description'),
                             flags=m.group('flags'),
