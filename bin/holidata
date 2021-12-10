@@ -6,29 +6,73 @@ Holidata - generate holidata files.
 
 Usage:
   holidata (--year=<value>) (--locale=<value>) [--output=<value>]
+  holidata (--year=<value>) (--country=<value>) [--lang=<value>] [--output=<value>]
 
 Options:
-    --year=<value>       Specify which year to generate data for.
-    --locale=<value>     Specify the locale for which data should be generated.
-    --output=(csv|json)  Specify the output format [default: csv].
+    --year=<value>
+        Specify which year to generate data for.
+        Note: Holidata generates valid data from 2011.
+
+    --locale=<id>
+        Specify the locale for which data should be generated.
+        The locale <id> is a combination of language <id> and country <id>.
+
+    --country=<id>
+        Specify the country for which data should be generated.
+        The country <id> has to be from ISO 3166-1 alpha-2.
+
+    --lang=<id>
+        Specify the language in which data should be generated (requires --country).
+        Not needed if the country has a default language defined.
+        The language <id> has to be from ISO 639-1.
+
+    --output=(csv|json|yaml|xml)
+        Specify the output format [default: csv].
 
 Dependencies:
     pip3 install arrow docopt
 """
-
+import re
 import sys
 
 from docopt import docopt
+
 from holidata import Emitter
+from holidata.holidays import Country
 from holidata.holidays import Locale
 
 
-def create_locale_for(locale_id, year):
+def create_locale_for(country_id=None, lang_id=None, year=None):
+    country_class = get_country_class_for(country_id)
+
+    if lang_id is not None and lang_id.lower() not in country_class.languages:
+        raise ValueError("Language '{}' is not defined for country '{}'!".format(lang_id, country_class.id))
+    elif lang_id is None and country_class.default_lang is not None:
+        lang_id = country_class.default_lang
+    elif lang_id is None:
+        raise ValueError("Country '{}' has no default language specified! Please choose one of [{}].".format(country_id, ", ".join(country_class.languages)))
+
+    locale_class = get_locale_class_for("{}-{}".format(lang_id, country_id))
+
+    return locale_class(year)
+
+
+def get_locale_class_for(locale_id):
     locale_class = next(iter([cls for cls in Locale.plugins if cls.locale == locale_id]), None)
+
     if not locale_class:
-        return None
-    else:
-        return locale_class(year)
+        raise ValueError("No plugin found for locale: {}".format(locale_id))
+
+    return locale_class
+
+
+def get_country_class_for(country_id):
+    country_class = next(iter([cls for cls in Country.plugins if cls.id == country_id]), None)
+
+    if not country_class:
+        raise ValueError("No plugin found for country id '{}'!".format(country_id))
+
+    return country_class()
 
 
 def create_emitter_for(output_format):
@@ -42,11 +86,27 @@ def create_emitter_for(output_format):
 if __name__ == '__main__':
     args = docopt(__doc__)
 
-    locale = create_locale_for(args['--locale'], int(args['--year']))
+    if args['--locale'] is not None:
+        locale_id = args['--locale']
+        locale_regex = re.compile(r'^(?P<lang>[a-zA-Z]{2})-(?P<country>[a-zA-Z]{2})')
+        m = locale_regex.search(locale_id)
 
-    if locale is None:
-        sys.exit("No plugin found for locale: {}".format(args['--locale']))
+        if m is None:
+            raise ValueError("'{}' is not a valid locale".format(locale_id))
 
+        country_id = m.group('country').upper()
+        lang_id = m.group('lang').lower()
+
+    elif args['--country'] is not None:
+        country_id = args['--country'].upper()
+        lang_id = args['--lang']
+
+    else:
+        # When neither '--locale' nor '--country' are given, docopt prints usage
+        sys.exit(1)
+
+    year = int(args['--year'])
+    locale = create_locale_for(country_id=country_id, lang_id=lang_id, year=year)
     emitter = create_emitter_for(args['--output'])
 
     if emitter is None:

@@ -27,6 +27,26 @@ class Holiday(object):
         }
 
 
+class Country(object, metaclass=PluginMount):
+    """
+    Represents holidays of a given country
+    """
+    id = None
+    languages = []
+    default_lang = None
+    easter_type = None
+
+    def __init__(self):
+        if self.id is None:
+            raise ValueError("Country '{0}' does not provide its id!".format(self.__class__.__name__))
+
+        if not self.languages:
+            raise ValueError("Country '{0}' does not list languages!".format(self.__class__.__name__))
+
+        if self.default_lang is not None and self.default_lang not in self.languages:
+            raise ValueError("Country '{0}' does not list language '{1}'!".format(self.__class__.__name__, self.default_lang))
+
+
 class Locale(object, metaclass=PluginMount):
     """
     Represents holidays in a given locale.

@@ -2,7 +2,7 @@ import re
 
 import pytest
 
-from holidata import Locale
+from holidata import Locale, Country
 from tests import HOLIDATA_YEAR_MAX
 
 
@@ -19,6 +19,15 @@ def locale(request, year):
 @pytest.fixture()
 def holidays(locale):
     return locale.holidays
+
+
+@pytest.fixture(params=Country.plugins)
+def country(request):
+    return request.param()
+
+
+def test_country_should_be_constructable(country):
+    pass
 
 
 def test_holiday_should_not_be_of_type_national_if_region_defined(holidays):
