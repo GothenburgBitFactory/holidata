@@ -1,0 +1,122 @@
+[
+    {
+        'date': '2022-01-01',
+        'description': 'Novo leto',
+        'locale': 'sl-SI',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2022-01-02',
+        'description': 'Novo leto',
+        'locale': 'sl-SI',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2022-02-08',
+        'description': 'Prešernov dan',
+        'locale': 'sl-SI',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2022-04-17',
+        'description': 'Velikonočna nedelja',
+        'locale': 'sl-SI',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2022-04-18',
+        'description': 'Velikonočni ponedeljek',
+        'locale': 'sl-SI',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2022-04-27',
+        'description': 'Dan upora proti okupatorju',
+        'locale': 'sl-SI',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2022-05-01',
+        'description': 'Praznik dela',
+        'locale': 'sl-SI',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2022-05-02',
+        'description': 'Praznik dela',
+        'locale': 'sl-SI',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2022-06-06',
+        'description': 'Binkošti',
+        'locale': 'sl-SI',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2022-06-25',
+        'description': 'Dan državnosti',
+        'locale': 'sl-SI',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2022-08-15',
+        'description': 'Marijino vnebovzetje',
+        'locale': 'sl-SI',
+        'notes': '',
+        'region': '',
+        'type': 'NRF'
+    },
+    {
+        'date': '2022-10-31',
+        'description': 'Dan reformacije',
+        'locale': 'sl-SI',
+        'notes': '',
+        'region': '',
+        'type': 'NRF'
+    },
+    {
+        'date': '2022-11-01',
+        'description': 'Dan spomina na mrtve',
+        'locale': 'sl-SI',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2022-12-25',
+        'description': 'Božič',
+        'locale': 'sl-SI',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2022-12-26',
+        'description': 'Dan samostojnosti in enotnosti',
+        'locale': 'sl-SI',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    }
+]
