@@ -1,0 +1,98 @@
+[
+    {
+        'date': '2022-01-01',
+        'description': 'Nytårsdag',
+        'locale': 'da-DK',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2022-04-14',
+        'description': 'Skærtorsdag',
+        'locale': 'da-DK',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2022-04-15',
+        'description': 'Langfredag',
+        'locale': 'da-DK',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2022-04-17',
+        'description': 'Påskedag',
+        'locale': 'da-DK',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2022-04-18',
+        'description': 'Anden påskedag',
+        'locale': 'da-DK',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2022-05-13',
+        'description': 'Store bededag',
+        'locale': 'da-DK',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2022-05-26',
+        'description': 'Kristi himmelfartsdag',
+        'locale': 'da-DK',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2022-06-05',
+        'description': 'Grundlovsdag',
+        'locale': 'da-DK',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2022-06-05',
+        'description': 'Pinsedag',
+        'locale': 'da-DK',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2022-06-06',
+        'description': 'Anden pinsedag',
+        'locale': 'da-DK',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2022-12-25',
+        'description': 'Juledag',
+        'locale': 'da-DK',
+        'notes': '',
+        'region': '',
+        'type': 'NRF'
+    },
+    {
+        'date': '2022-12-26',
+        'description': 'Anden juledag',
+        'locale': 'da-DK',
+        'notes': '',
+        'region': '',
+        'type': 'NRF'
+    }
+]
