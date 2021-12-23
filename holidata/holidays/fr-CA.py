@@ -6,23 +6,14 @@ from .holidays import Holiday, Locale
 
 #
 # Information taken from various government websites around 2020-04-16
-#   https://www.canada.ca/fr/emploi-developpement-social/services/
-#                           normes-travail/rapports/jours-feries.html
-#   http://www4.gouv.qc.ca/FR/Portail/Citoyens/Evenements/travailleur-avec
-#                           -salaire/Pages/jours-feries-chomes-payes.aspx
-#   https://www.ontario.ca/document/your-guide-employment-standards-act-0/
-#                           public-holidays#section-2
-#   https://www.cfib-fcei.ca/en/tools-resources/
-#                           paying-employees-public-holidays-newfoundland-labrador
-#   https://www.princeedwardisland.ca/en/information/
-#                           economic-growth-tourism-and-culture/paid-holidays
-#   https://www2.gnb.ca/content/dam/gnb/Departments/petl-epft/PDF/es/
-#                           FactSheets/PublicHolidaysVacation.pdf
-#   https://www.gov.mb.ca/labour/standards/doc,gen-holidays-after-april-30-07,
-#                           factsheet.html#q12
-#   https://www.saskatchewan.ca/business/employment-standards/
-#       vacations-holidays-leaves-and-absences/public-statutory-holidays/
-#                           list-of-saskatchewan-public-holidays
+#   https://www.canada.ca/fr/emploi-developpement-social/services/normes-travail/rapports/jours-feries.html
+#   http://www4.gouv.qc.ca/FR/Portail/Citoyens/Evenements/travailleur-avec-salaire/Pages/jours-feries-chomes-payes.aspx
+#   https://www.ontario.ca/document/your-guide-employment-standards-act-0/public-holidays#section-2
+#   https://www.cfib-fcei.ca/en/tools-resources/paying-employees-public-holidays-newfoundland-labrador
+#   https://www.princeedwardisland.ca/en/information/economic-growth-tourism-and-culture/paid-holidays
+#   https://www2.gnb.ca/content/dam/gnb/Departments/petl-epft/PDF/es/FactSheets/PublicHolidaysVacation.pdf
+#   https://www.gov.mb.ca/labour/standards/doc,gen-holidays-after-april-30-07,factsheet.html#q12
+#   https://www.saskatchewan.ca/business/employment-standards/vacations-holidays-leaves-and-absences/public-statutory-holidays/list-of-saskatchewan-public-holidays
 #
 # Also those sites for some information
 #   https://www.officeholidays.com/holidays/canada/canada-remembrance-day
