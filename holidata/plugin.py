@@ -5,8 +5,8 @@ Provides base class for plugins.
 
 class PluginMount(type):
     """
-    Metaclass that makes a given class plugin mount (all classes inheriting
-    will be referenced in the 'plugins' attribute.
+    Metaclass that makes a given class plugin mount.
+    All classes inheriting will be referenced in the 'plugins' attribute.
     """
 
     def __init__(cls, name, bases, attrs):
