@@ -1,13 +1,12 @@
-from datetime import datetime
-
 import pytest
 from snapshottest.file import FileSnapshot
 from snapshottest.formatter import Formatter
 
 from holidata import Locale
+from tests import HOLIDATA_YEAR_MAX
 
 
-@pytest.fixture(params=range(2011, datetime.now().year + 2))
+@pytest.fixture(params=range(2011, HOLIDATA_YEAR_MAX))
 def year(request):
     return request.param
 
