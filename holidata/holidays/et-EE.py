@@ -3,6 +3,11 @@ from dateutil.easter import EASTER_WESTERN
 
 from .holidays import Locale
 
+"""
+sources
+https://www.riigiteataja.ee/akt/109032011007 (Public Holidays and Days of National Importance Act)
+"""
+
 
 class et_EE(Locale):
     """
