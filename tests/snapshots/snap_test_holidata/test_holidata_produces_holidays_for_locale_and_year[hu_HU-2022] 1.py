@@ -8,6 +8,14 @@
         'type': 'NF'
     },
     {
+        'date': '2022-03-14',
+        'description': 'Munkaszüneti nap',
+        'locale': 'hu-HU',
+        'notes': '2022-03-26 munkanap',
+        'region': '',
+        'type': 'NF'
+    },
+    {
         'date': '2022-03-15',
         'description': 'Az 1848-as forradalom ünnepe',
         'locale': 'hu-HU',
@@ -76,6 +84,14 @@
         'description': 'Az 1956-os forradalom ünnepe',
         'locale': 'hu-HU',
         'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2022-10-31',
+        'description': 'Munkaszüneti nap',
+        'locale': 'hu-HU',
+        'notes': '2022-10-15 munkanap',
         'region': '',
         'type': 'NF'
     },

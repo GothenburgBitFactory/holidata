@@ -58,6 +58,7 @@ class hu_HU(Locale):
         2019:  6/2018. (VIII. 23.) PM  rendelet a 2019. évi munkaszüneti napok körüli munkarendről
         2020:  7/2019. (VI.   25.) PM  rendelet a 2020. évi munkaszüneti napok körüli munkarendről
         2021: 14/2020. (V.    13.) ITM rendelet a 2021. évi munkaszüneti napok körüli munkarendről
+        2022: 23/2021. (VI.    1.) ITM rendelet a 2022. évi munkaszüneti napok körüli munkarendről
         """
         if self.year == 2015:
             """
@@ -234,6 +235,27 @@ class hu_HU(Locale):
                     description="Munkaszüneti Nap",
                     flags="NF",
                     notes="2021-12-11 pihenőnap"
+                )]
+        if self.year == 2022:
+            """
+            03-14, swapped with 03-26
+            10-31, swapped with 10-15
+            """
+            return [
+                Holiday(
+                    locale=self.locale,
+                    region="",
+                    date=SmartDayArrow(self.year, 3, 14),
+                    description="Munkaszüneti nap",
+                    flags="NF",
+                    notes="2022-03-26 munkanap"),
+                Holiday(
+                    locale=self.locale,
+                    region="",
+                    date=SmartDayArrow(self.year, 10, 31),
+                    description="Munkaszüneti nap",
+                    flags="NF",
+                    notes="2022-10-15 munkanap"
                 )]
 
         return []
