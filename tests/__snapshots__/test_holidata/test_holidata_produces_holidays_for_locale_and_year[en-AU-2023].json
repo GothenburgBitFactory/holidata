@@ -1,0 +1,810 @@
+[
+  {
+    "date": "2023-01-01",
+    "description": "New Year's Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "F"
+  },
+  {
+    "date": "2023-01-01",
+    "description": "New Year's Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NSW",
+    "type": "F"
+  },
+  {
+    "date": "2023-01-01",
+    "description": "New Year's Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NT",
+    "type": "F"
+  },
+  {
+    "date": "2023-01-01",
+    "description": "New Year's Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "QLD",
+    "type": "F"
+  },
+  {
+    "date": "2023-01-01",
+    "description": "New Year's Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "SA",
+    "type": "F"
+  },
+  {
+    "date": "2023-01-01",
+    "description": "New Year's Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "TAS",
+    "type": "F"
+  },
+  {
+    "date": "2023-01-01",
+    "description": "New Year's Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "VIC",
+    "type": "F"
+  },
+  {
+    "date": "2023-01-01",
+    "description": "New Year's Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "WA",
+    "type": "F"
+  },
+  {
+    "date": "2023-01-02",
+    "description": "New Year's Day (observed)",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "V"
+  },
+  {
+    "date": "2023-01-02",
+    "description": "New Year's Day (observed)",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NSW",
+    "type": "V"
+  },
+  {
+    "date": "2023-01-02",
+    "description": "New Year's Day (observed)",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NT",
+    "type": "V"
+  },
+  {
+    "date": "2023-01-02",
+    "description": "New Year's Day (observed)",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "QLD",
+    "type": "V"
+  },
+  {
+    "date": "2023-01-02",
+    "description": "New Year's Day (observed)",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "SA",
+    "type": "V"
+  },
+  {
+    "date": "2023-01-02",
+    "description": "New Year's Day (observed)",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "TAS",
+    "type": "V"
+  },
+  {
+    "date": "2023-01-02",
+    "description": "New Year's Day (observed)",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "VIC",
+    "type": "V"
+  },
+  {
+    "date": "2023-01-02",
+    "description": "New Year's Day (observed)",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "WA",
+    "type": "V"
+  },
+  {
+    "date": "2023-01-26",
+    "description": "Australia Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "V"
+  },
+  {
+    "date": "2023-01-26",
+    "description": "Australia Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NSW",
+    "type": "V"
+  },
+  {
+    "date": "2023-01-26",
+    "description": "Australia Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NT",
+    "type": "V"
+  },
+  {
+    "date": "2023-01-26",
+    "description": "Australia Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "QLD",
+    "type": "V"
+  },
+  {
+    "date": "2023-01-26",
+    "description": "Australia Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "SA",
+    "type": "V"
+  },
+  {
+    "date": "2023-01-26",
+    "description": "Australia Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "TAS",
+    "type": "V"
+  },
+  {
+    "date": "2023-01-26",
+    "description": "Australia Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "VIC",
+    "type": "V"
+  },
+  {
+    "date": "2023-01-26",
+    "description": "Australia Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "WA",
+    "type": "V"
+  },
+  {
+    "date": "2023-02-13",
+    "description": "Royal Hobart Regatta",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "TAS",
+    "type": "V"
+  },
+  {
+    "date": "2023-03-13",
+    "description": "Adelaide Cup Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "SA",
+    "type": "V"
+  },
+  {
+    "date": "2023-03-13",
+    "description": "Canberra Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "V"
+  },
+  {
+    "date": "2023-03-13",
+    "description": "Labour Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "TAS",
+    "type": "V"
+  },
+  {
+    "date": "2023-03-13",
+    "description": "Labour Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "VIC",
+    "type": "V"
+  },
+  {
+    "date": "2023-04-07",
+    "description": "Good Friday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "RV"
+  },
+  {
+    "date": "2023-04-07",
+    "description": "Good Friday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NSW",
+    "type": "RV"
+  },
+  {
+    "date": "2023-04-07",
+    "description": "Good Friday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NT",
+    "type": "RV"
+  },
+  {
+    "date": "2023-04-07",
+    "description": "Good Friday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "QLD",
+    "type": "RV"
+  },
+  {
+    "date": "2023-04-07",
+    "description": "Good Friday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "SA",
+    "type": "RV"
+  },
+  {
+    "date": "2023-04-07",
+    "description": "Good Friday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "TAS",
+    "type": "RV"
+  },
+  {
+    "date": "2023-04-07",
+    "description": "Good Friday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "VIC",
+    "type": "RV"
+  },
+  {
+    "date": "2023-04-07",
+    "description": "Good Friday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "WA",
+    "type": "RV"
+  },
+  {
+    "date": "2023-04-08",
+    "description": "Easter Saturday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "RV"
+  },
+  {
+    "date": "2023-04-08",
+    "description": "Easter Saturday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NSW",
+    "type": "RV"
+  },
+  {
+    "date": "2023-04-08",
+    "description": "Easter Saturday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NT",
+    "type": "RV"
+  },
+  {
+    "date": "2023-04-08",
+    "description": "Easter Saturday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "QLD",
+    "type": "RV"
+  },
+  {
+    "date": "2023-04-08",
+    "description": "Easter Saturday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "SA",
+    "type": "RV"
+  },
+  {
+    "date": "2023-04-08",
+    "description": "Easter Saturday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "VIC",
+    "type": "RV"
+  },
+  {
+    "date": "2023-04-09",
+    "description": "Easter",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "RV"
+  },
+  {
+    "date": "2023-04-09",
+    "description": "Easter",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NSW",
+    "type": "RV"
+  },
+  {
+    "date": "2023-04-09",
+    "description": "Easter",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NT",
+    "type": "RV"
+  },
+  {
+    "date": "2023-04-09",
+    "description": "Easter",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "QLD",
+    "type": "RV"
+  },
+  {
+    "date": "2023-04-09",
+    "description": "Easter",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "SA",
+    "type": "RV"
+  },
+  {
+    "date": "2023-04-09",
+    "description": "Easter",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "VIC",
+    "type": "RV"
+  },
+  {
+    "date": "2023-04-09",
+    "description": "Easter",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "WA",
+    "type": "RV"
+  },
+  {
+    "date": "2023-04-10",
+    "description": "Easter Monday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "RV"
+  },
+  {
+    "date": "2023-04-10",
+    "description": "Easter Monday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NSW",
+    "type": "RV"
+  },
+  {
+    "date": "2023-04-10",
+    "description": "Easter Monday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NT",
+    "type": "RV"
+  },
+  {
+    "date": "2023-04-10",
+    "description": "Easter Monday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "QLD",
+    "type": "RV"
+  },
+  {
+    "date": "2023-04-10",
+    "description": "Easter Monday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "SA",
+    "type": "RV"
+  },
+  {
+    "date": "2023-04-10",
+    "description": "Easter Monday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "TAS",
+    "type": "RV"
+  },
+  {
+    "date": "2023-04-10",
+    "description": "Easter Monday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "VIC",
+    "type": "RV"
+  },
+  {
+    "date": "2023-04-10",
+    "description": "Easter Monday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "WA",
+    "type": "RV"
+  },
+  {
+    "date": "2023-04-25",
+    "description": "Anzac Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "V"
+  },
+  {
+    "date": "2023-04-25",
+    "description": "Anzac Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NSW",
+    "type": "F"
+  },
+  {
+    "date": "2023-04-25",
+    "description": "Anzac Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NT",
+    "type": "V"
+  },
+  {
+    "date": "2023-04-25",
+    "description": "Anzac Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "QLD",
+    "type": "V"
+  },
+  {
+    "date": "2023-04-25",
+    "description": "Anzac Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "SA",
+    "type": "F"
+  },
+  {
+    "date": "2023-04-25",
+    "description": "Anzac Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "TAS",
+    "type": "F"
+  },
+  {
+    "date": "2023-04-25",
+    "description": "Anzac Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "VIC",
+    "type": "F"
+  },
+  {
+    "date": "2023-04-25",
+    "description": "Anzac Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "WA",
+    "type": "F"
+  },
+  {
+    "date": "2023-05-01",
+    "description": "Labour Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "QLD",
+    "type": "V"
+  },
+  {
+    "date": "2023-05-01",
+    "description": "Labour Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "WA",
+    "type": "V"
+  },
+  {
+    "date": "2023-05-01",
+    "description": "May Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NT",
+    "type": "V"
+  },
+  {
+    "date": "2023-05-29",
+    "description": "Reconciliation Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "V"
+  },
+  {
+    "date": "2023-06-05",
+    "description": "Western Australia Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "WA",
+    "type": "V"
+  },
+  {
+    "date": "2023-06-12",
+    "description": "King's Birthday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "V"
+  },
+  {
+    "date": "2023-06-12",
+    "description": "King's Birthday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NSW",
+    "type": "V"
+  },
+  {
+    "date": "2023-06-12",
+    "description": "King's Birthday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NT",
+    "type": "V"
+  },
+  {
+    "date": "2023-06-12",
+    "description": "King's Birthday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "SA",
+    "type": "V"
+  },
+  {
+    "date": "2023-06-12",
+    "description": "King's Birthday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "TAS",
+    "type": "V"
+  },
+  {
+    "date": "2023-06-12",
+    "description": "King's Birthday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "VIC",
+    "type": "V"
+  },
+  {
+    "date": "2023-08-07",
+    "description": "Bank Holiday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "V"
+  },
+  {
+    "date": "2023-08-07",
+    "description": "Picnic Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NT",
+    "type": "V"
+  },
+  {
+    "date": "2023-09-25",
+    "description": "King's Birthday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "WA",
+    "type": "V"
+  },
+  {
+    "date": "2023-09-29",
+    "description": "Grand Final Eve",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "VIC",
+    "type": "V"
+  },
+  {
+    "date": "2023-10-02",
+    "description": "King's Birthday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "QLD",
+    "type": "V"
+  },
+  {
+    "date": "2023-10-02",
+    "description": "Labour Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "V"
+  },
+  {
+    "date": "2023-10-02",
+    "description": "Labour Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NSW",
+    "type": "V"
+  },
+  {
+    "date": "2023-10-02",
+    "description": "Labour Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "SA",
+    "type": "V"
+  },
+  {
+    "date": "2023-11-07",
+    "description": "Melbourne Cup Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "VIC",
+    "type": "V"
+  },
+  {
+    "date": "2023-12-25",
+    "description": "Christmas Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "RF"
+  },
+  {
+    "date": "2023-12-25",
+    "description": "Christmas Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NSW",
+    "type": "RF"
+  },
+  {
+    "date": "2023-12-25",
+    "description": "Christmas Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NT",
+    "type": "RF"
+  },
+  {
+    "date": "2023-12-25",
+    "description": "Christmas Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "QLD",
+    "type": "RF"
+  },
+  {
+    "date": "2023-12-25",
+    "description": "Christmas Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "SA",
+    "type": "RF"
+  },
+  {
+    "date": "2023-12-25",
+    "description": "Christmas Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "TAS",
+    "type": "RF"
+  },
+  {
+    "date": "2023-12-25",
+    "description": "Christmas Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "VIC",
+    "type": "RF"
+  },
+  {
+    "date": "2023-12-25",
+    "description": "Christmas Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "WA",
+    "type": "RF"
+  },
+  {
+    "date": "2023-12-26",
+    "description": "Boxing Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "RF"
+  },
+  {
+    "date": "2023-12-26",
+    "description": "Boxing Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NSW",
+    "type": "RF"
+  },
+  {
+    "date": "2023-12-26",
+    "description": "Boxing Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NT",
+    "type": "RF"
+  },
+  {
+    "date": "2023-12-26",
+    "description": "Boxing Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "QLD",
+    "type": "RF"
+  },
+  {
+    "date": "2023-12-26",
+    "description": "Boxing Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "TAS",
+    "type": "RF"
+  },
+  {
+    "date": "2023-12-26",
+    "description": "Boxing Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "VIC",
+    "type": "RF"
+  },
+  {
+    "date": "2023-12-26",
+    "description": "Boxing Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "WA",
+    "type": "RF"
+  }
+]
