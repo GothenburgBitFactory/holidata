@@ -1,0 +1,786 @@
+[
+  {
+    "date": "2020-01-01",
+    "description": "New Year's Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "F"
+  },
+  {
+    "date": "2020-01-01",
+    "description": "New Year's Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NSW",
+    "type": "F"
+  },
+  {
+    "date": "2020-01-01",
+    "description": "New Year's Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NT",
+    "type": "F"
+  },
+  {
+    "date": "2020-01-01",
+    "description": "New Year's Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "QLD",
+    "type": "F"
+  },
+  {
+    "date": "2020-01-01",
+    "description": "New Year's Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "SA",
+    "type": "F"
+  },
+  {
+    "date": "2020-01-01",
+    "description": "New Year's Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "TAS",
+    "type": "F"
+  },
+  {
+    "date": "2020-01-01",
+    "description": "New Year's Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "VIC",
+    "type": "F"
+  },
+  {
+    "date": "2020-01-01",
+    "description": "New Year's Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "WA",
+    "type": "F"
+  },
+  {
+    "date": "2020-01-26",
+    "description": "Australia Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "V"
+  },
+  {
+    "date": "2020-01-26",
+    "description": "Australia Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NSW",
+    "type": "V"
+  },
+  {
+    "date": "2020-01-26",
+    "description": "Australia Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NT",
+    "type": "V"
+  },
+  {
+    "date": "2020-01-26",
+    "description": "Australia Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "QLD",
+    "type": "V"
+  },
+  {
+    "date": "2020-01-26",
+    "description": "Australia Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "SA",
+    "type": "V"
+  },
+  {
+    "date": "2020-01-26",
+    "description": "Australia Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "TAS",
+    "type": "V"
+  },
+  {
+    "date": "2020-01-26",
+    "description": "Australia Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "VIC",
+    "type": "V"
+  },
+  {
+    "date": "2020-01-26",
+    "description": "Australia Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "WA",
+    "type": "V"
+  },
+  {
+    "date": "2020-02-10",
+    "description": "Royal Hobart Regatta",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "TAS",
+    "type": "V"
+  },
+  {
+    "date": "2020-03-09",
+    "description": "Adelaide Cup Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "SA",
+    "type": "V"
+  },
+  {
+    "date": "2020-03-09",
+    "description": "Canberra Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "V"
+  },
+  {
+    "date": "2020-03-09",
+    "description": "Labour Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "TAS",
+    "type": "V"
+  },
+  {
+    "date": "2020-03-09",
+    "description": "Labour Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "VIC",
+    "type": "V"
+  },
+  {
+    "date": "2020-04-10",
+    "description": "Good Friday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "RV"
+  },
+  {
+    "date": "2020-04-10",
+    "description": "Good Friday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NSW",
+    "type": "RV"
+  },
+  {
+    "date": "2020-04-10",
+    "description": "Good Friday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NT",
+    "type": "RV"
+  },
+  {
+    "date": "2020-04-10",
+    "description": "Good Friday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "QLD",
+    "type": "RV"
+  },
+  {
+    "date": "2020-04-10",
+    "description": "Good Friday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "SA",
+    "type": "RV"
+  },
+  {
+    "date": "2020-04-10",
+    "description": "Good Friday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "TAS",
+    "type": "RV"
+  },
+  {
+    "date": "2020-04-10",
+    "description": "Good Friday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "VIC",
+    "type": "RV"
+  },
+  {
+    "date": "2020-04-10",
+    "description": "Good Friday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "WA",
+    "type": "RV"
+  },
+  {
+    "date": "2020-04-11",
+    "description": "Easter Saturday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "RV"
+  },
+  {
+    "date": "2020-04-11",
+    "description": "Easter Saturday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NSW",
+    "type": "RV"
+  },
+  {
+    "date": "2020-04-11",
+    "description": "Easter Saturday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NT",
+    "type": "RV"
+  },
+  {
+    "date": "2020-04-11",
+    "description": "Easter Saturday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "QLD",
+    "type": "RV"
+  },
+  {
+    "date": "2020-04-11",
+    "description": "Easter Saturday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "SA",
+    "type": "RV"
+  },
+  {
+    "date": "2020-04-11",
+    "description": "Easter Saturday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "VIC",
+    "type": "RV"
+  },
+  {
+    "date": "2020-04-12",
+    "description": "Easter",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "RV"
+  },
+  {
+    "date": "2020-04-12",
+    "description": "Easter",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NSW",
+    "type": "RV"
+  },
+  {
+    "date": "2020-04-12",
+    "description": "Easter",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NT",
+    "type": "RV"
+  },
+  {
+    "date": "2020-04-12",
+    "description": "Easter",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "QLD",
+    "type": "RV"
+  },
+  {
+    "date": "2020-04-12",
+    "description": "Easter",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "SA",
+    "type": "RV"
+  },
+  {
+    "date": "2020-04-12",
+    "description": "Easter",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "VIC",
+    "type": "RV"
+  },
+  {
+    "date": "2020-04-13",
+    "description": "Easter Monday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "RV"
+  },
+  {
+    "date": "2020-04-13",
+    "description": "Easter Monday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NSW",
+    "type": "RV"
+  },
+  {
+    "date": "2020-04-13",
+    "description": "Easter Monday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NT",
+    "type": "RV"
+  },
+  {
+    "date": "2020-04-13",
+    "description": "Easter Monday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "QLD",
+    "type": "RV"
+  },
+  {
+    "date": "2020-04-13",
+    "description": "Easter Monday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "SA",
+    "type": "RV"
+  },
+  {
+    "date": "2020-04-13",
+    "description": "Easter Monday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "TAS",
+    "type": "RV"
+  },
+  {
+    "date": "2020-04-13",
+    "description": "Easter Monday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "VIC",
+    "type": "RV"
+  },
+  {
+    "date": "2020-04-13",
+    "description": "Easter Monday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "WA",
+    "type": "RV"
+  },
+  {
+    "date": "2020-04-25",
+    "description": "Anzac Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "V"
+  },
+  {
+    "date": "2020-04-25",
+    "description": "Anzac Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NSW",
+    "type": "F"
+  },
+  {
+    "date": "2020-04-25",
+    "description": "Anzac Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NT",
+    "type": "V"
+  },
+  {
+    "date": "2020-04-25",
+    "description": "Anzac Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "QLD",
+    "type": "V"
+  },
+  {
+    "date": "2020-04-25",
+    "description": "Anzac Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "SA",
+    "type": "F"
+  },
+  {
+    "date": "2020-04-25",
+    "description": "Anzac Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "TAS",
+    "type": "F"
+  },
+  {
+    "date": "2020-04-25",
+    "description": "Anzac Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "VIC",
+    "type": "F"
+  },
+  {
+    "date": "2020-04-25",
+    "description": "Anzac Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "WA",
+    "type": "F"
+  },
+  {
+    "date": "2020-04-27",
+    "description": "Anzac Day (supplement)",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "WA",
+    "type": "F"
+  },
+  {
+    "date": "2020-05-04",
+    "description": "Labour Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "QLD",
+    "type": "V"
+  },
+  {
+    "date": "2020-05-04",
+    "description": "Labour Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "WA",
+    "type": "V"
+  },
+  {
+    "date": "2020-05-04",
+    "description": "May Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NT",
+    "type": "V"
+  },
+  {
+    "date": "2020-06-01",
+    "description": "Reconciliation Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "V"
+  },
+  {
+    "date": "2020-06-01",
+    "description": "Western Australia Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "WA",
+    "type": "V"
+  },
+  {
+    "date": "2020-06-08",
+    "description": "Queen's Birthday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "V"
+  },
+  {
+    "date": "2020-06-08",
+    "description": "Queen's Birthday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NSW",
+    "type": "V"
+  },
+  {
+    "date": "2020-06-08",
+    "description": "Queen's Birthday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "TAS",
+    "type": "V"
+  },
+  {
+    "date": "2020-06-08",
+    "description": "Queen's Birthday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "VIC",
+    "type": "V"
+  },
+  {
+    "date": "2020-08-03",
+    "description": "Bank Holiday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "V"
+  },
+  {
+    "date": "2020-08-03",
+    "description": "Picnic Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NT",
+    "type": "V"
+  },
+  {
+    "date": "2020-09-28",
+    "description": "Queen's Birthday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "WA",
+    "type": "V"
+  },
+  {
+    "date": "2020-10-05",
+    "description": "Labour Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "V"
+  },
+  {
+    "date": "2020-10-05",
+    "description": "Labour Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NSW",
+    "type": "V"
+  },
+  {
+    "date": "2020-10-05",
+    "description": "Labour Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "SA",
+    "type": "V"
+  },
+  {
+    "date": "2020-10-05",
+    "description": "Queen's Birthday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "QLD",
+    "type": "V"
+  },
+  {
+    "date": "2020-10-23",
+    "description": "Grand Final Eve",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "VIC",
+    "type": "V"
+  },
+  {
+    "date": "2020-11-03",
+    "description": "Melbourne Cup Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "VIC",
+    "type": "V"
+  },
+  {
+    "date": "2020-12-25",
+    "description": "Christmas Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "RF"
+  },
+  {
+    "date": "2020-12-25",
+    "description": "Christmas Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NSW",
+    "type": "RF"
+  },
+  {
+    "date": "2020-12-25",
+    "description": "Christmas Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NT",
+    "type": "RF"
+  },
+  {
+    "date": "2020-12-25",
+    "description": "Christmas Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "QLD",
+    "type": "RF"
+  },
+  {
+    "date": "2020-12-25",
+    "description": "Christmas Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "SA",
+    "type": "RF"
+  },
+  {
+    "date": "2020-12-25",
+    "description": "Christmas Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "TAS",
+    "type": "RF"
+  },
+  {
+    "date": "2020-12-25",
+    "description": "Christmas Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "VIC",
+    "type": "RF"
+  },
+  {
+    "date": "2020-12-25",
+    "description": "Christmas Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "WA",
+    "type": "RF"
+  },
+  {
+    "date": "2020-12-26",
+    "description": "Boxing Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "RF"
+  },
+  {
+    "date": "2020-12-26",
+    "description": "Boxing Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NSW",
+    "type": "RF"
+  },
+  {
+    "date": "2020-12-26",
+    "description": "Boxing Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NT",
+    "type": "RF"
+  },
+  {
+    "date": "2020-12-26",
+    "description": "Boxing Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "QLD",
+    "type": "RF"
+  },
+  {
+    "date": "2020-12-26",
+    "description": "Boxing Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "TAS",
+    "type": "RF"
+  },
+  {
+    "date": "2020-12-26",
+    "description": "Boxing Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "VIC",
+    "type": "RF"
+  },
+  {
+    "date": "2020-12-26",
+    "description": "Boxing Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "WA",
+    "type": "RF"
+  },
+  {
+    "date": "2020-12-28",
+    "description": "Boxing Day (observed)",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "RV"
+  },
+  {
+    "date": "2020-12-28",
+    "description": "Boxing Day (observed)",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NSW",
+    "type": "RV"
+  },
+  {
+    "date": "2020-12-28",
+    "description": "Boxing Day (observed)",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NT",
+    "type": "RV"
+  },
+  {
+    "date": "2020-12-28",
+    "description": "Boxing Day (observed)",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "QLD",
+    "type": "RF"
+  },
+  {
+    "date": "2020-12-28",
+    "description": "Boxing Day (observed)",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "TAS",
+    "type": "RV"
+  },
+  {
+    "date": "2020-12-28",
+    "description": "Boxing Day (observed)",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "VIC",
+    "type": "RF"
+  },
+  {
+    "date": "2020-12-28",
+    "description": "Boxing Day (observed)",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "WA",
+    "type": "RV"
+  }
+]

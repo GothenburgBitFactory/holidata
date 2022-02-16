@@ -1,0 +1,770 @@
+[
+  {
+    "date": "2012-01-01",
+    "description": "New Year's Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "F"
+  },
+  {
+    "date": "2012-01-01",
+    "description": "New Year's Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NSW",
+    "type": "F"
+  },
+  {
+    "date": "2012-01-01",
+    "description": "New Year's Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NT",
+    "type": "F"
+  },
+  {
+    "date": "2012-01-01",
+    "description": "New Year's Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "QLD",
+    "type": "F"
+  },
+  {
+    "date": "2012-01-01",
+    "description": "New Year's Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "SA",
+    "type": "F"
+  },
+  {
+    "date": "2012-01-01",
+    "description": "New Year's Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "TAS",
+    "type": "F"
+  },
+  {
+    "date": "2012-01-01",
+    "description": "New Year's Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "VIC",
+    "type": "F"
+  },
+  {
+    "date": "2012-01-01",
+    "description": "New Year's Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "WA",
+    "type": "F"
+  },
+  {
+    "date": "2012-01-02",
+    "description": "New Year's Day (observed)",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "V"
+  },
+  {
+    "date": "2012-01-02",
+    "description": "New Year's Day (observed)",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NSW",
+    "type": "V"
+  },
+  {
+    "date": "2012-01-02",
+    "description": "New Year's Day (observed)",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NT",
+    "type": "V"
+  },
+  {
+    "date": "2012-01-02",
+    "description": "New Year's Day (observed)",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "QLD",
+    "type": "V"
+  },
+  {
+    "date": "2012-01-02",
+    "description": "New Year's Day (observed)",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "SA",
+    "type": "V"
+  },
+  {
+    "date": "2012-01-02",
+    "description": "New Year's Day (observed)",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "TAS",
+    "type": "V"
+  },
+  {
+    "date": "2012-01-02",
+    "description": "New Year's Day (observed)",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "VIC",
+    "type": "V"
+  },
+  {
+    "date": "2012-01-02",
+    "description": "New Year's Day (observed)",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "WA",
+    "type": "V"
+  },
+  {
+    "date": "2012-01-26",
+    "description": "Australia Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "V"
+  },
+  {
+    "date": "2012-01-26",
+    "description": "Australia Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NSW",
+    "type": "V"
+  },
+  {
+    "date": "2012-01-26",
+    "description": "Australia Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NT",
+    "type": "V"
+  },
+  {
+    "date": "2012-01-26",
+    "description": "Australia Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "QLD",
+    "type": "V"
+  },
+  {
+    "date": "2012-01-26",
+    "description": "Australia Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "SA",
+    "type": "V"
+  },
+  {
+    "date": "2012-01-26",
+    "description": "Australia Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "TAS",
+    "type": "V"
+  },
+  {
+    "date": "2012-01-26",
+    "description": "Australia Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "VIC",
+    "type": "V"
+  },
+  {
+    "date": "2012-01-26",
+    "description": "Australia Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "WA",
+    "type": "V"
+  },
+  {
+    "date": "2012-02-13",
+    "description": "Royal Hobart Regatta",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "TAS",
+    "type": "V"
+  },
+  {
+    "date": "2012-03-12",
+    "description": "Adelaide Cup Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "SA",
+    "type": "V"
+  },
+  {
+    "date": "2012-03-12",
+    "description": "Canberra Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "V"
+  },
+  {
+    "date": "2012-03-12",
+    "description": "Labour Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "TAS",
+    "type": "V"
+  },
+  {
+    "date": "2012-03-12",
+    "description": "Labour Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "VIC",
+    "type": "V"
+  },
+  {
+    "date": "2012-04-06",
+    "description": "Good Friday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "RV"
+  },
+  {
+    "date": "2012-04-06",
+    "description": "Good Friday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NSW",
+    "type": "RV"
+  },
+  {
+    "date": "2012-04-06",
+    "description": "Good Friday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NT",
+    "type": "RV"
+  },
+  {
+    "date": "2012-04-06",
+    "description": "Good Friday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "QLD",
+    "type": "RV"
+  },
+  {
+    "date": "2012-04-06",
+    "description": "Good Friday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "SA",
+    "type": "RV"
+  },
+  {
+    "date": "2012-04-06",
+    "description": "Good Friday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "TAS",
+    "type": "RV"
+  },
+  {
+    "date": "2012-04-06",
+    "description": "Good Friday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "VIC",
+    "type": "RV"
+  },
+  {
+    "date": "2012-04-06",
+    "description": "Good Friday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "WA",
+    "type": "RV"
+  },
+  {
+    "date": "2012-04-07",
+    "description": "Easter Saturday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "RV"
+  },
+  {
+    "date": "2012-04-07",
+    "description": "Easter Saturday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NSW",
+    "type": "RV"
+  },
+  {
+    "date": "2012-04-07",
+    "description": "Easter Saturday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NT",
+    "type": "RV"
+  },
+  {
+    "date": "2012-04-07",
+    "description": "Easter Saturday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "QLD",
+    "type": "RV"
+  },
+  {
+    "date": "2012-04-07",
+    "description": "Easter Saturday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "SA",
+    "type": "RV"
+  },
+  {
+    "date": "2012-04-07",
+    "description": "Easter Saturday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "VIC",
+    "type": "RV"
+  },
+  {
+    "date": "2012-04-08",
+    "description": "Easter",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "RV"
+  },
+  {
+    "date": "2012-04-08",
+    "description": "Easter",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NSW",
+    "type": "RV"
+  },
+  {
+    "date": "2012-04-08",
+    "description": "Easter",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NT",
+    "type": "RV"
+  },
+  {
+    "date": "2012-04-08",
+    "description": "Easter",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "SA",
+    "type": "RV"
+  },
+  {
+    "date": "2012-04-09",
+    "description": "Easter Monday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "RV"
+  },
+  {
+    "date": "2012-04-09",
+    "description": "Easter Monday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NSW",
+    "type": "RV"
+  },
+  {
+    "date": "2012-04-09",
+    "description": "Easter Monday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NT",
+    "type": "RV"
+  },
+  {
+    "date": "2012-04-09",
+    "description": "Easter Monday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "QLD",
+    "type": "RV"
+  },
+  {
+    "date": "2012-04-09",
+    "description": "Easter Monday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "SA",
+    "type": "RV"
+  },
+  {
+    "date": "2012-04-09",
+    "description": "Easter Monday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "TAS",
+    "type": "RV"
+  },
+  {
+    "date": "2012-04-09",
+    "description": "Easter Monday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "VIC",
+    "type": "RV"
+  },
+  {
+    "date": "2012-04-09",
+    "description": "Easter Monday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "WA",
+    "type": "RV"
+  },
+  {
+    "date": "2012-04-25",
+    "description": "Anzac Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "V"
+  },
+  {
+    "date": "2012-04-25",
+    "description": "Anzac Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NSW",
+    "type": "F"
+  },
+  {
+    "date": "2012-04-25",
+    "description": "Anzac Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NT",
+    "type": "V"
+  },
+  {
+    "date": "2012-04-25",
+    "description": "Anzac Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "QLD",
+    "type": "V"
+  },
+  {
+    "date": "2012-04-25",
+    "description": "Anzac Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "SA",
+    "type": "F"
+  },
+  {
+    "date": "2012-04-25",
+    "description": "Anzac Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "TAS",
+    "type": "F"
+  },
+  {
+    "date": "2012-04-25",
+    "description": "Anzac Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "VIC",
+    "type": "F"
+  },
+  {
+    "date": "2012-04-25",
+    "description": "Anzac Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "WA",
+    "type": "F"
+  },
+  {
+    "date": "2012-05-07",
+    "description": "Labour Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "QLD",
+    "type": "V"
+  },
+  {
+    "date": "2012-05-07",
+    "description": "Labour Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "WA",
+    "type": "V"
+  },
+  {
+    "date": "2012-05-07",
+    "description": "May Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NT",
+    "type": "V"
+  },
+  {
+    "date": "2012-05-28",
+    "description": "Reconciliation Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "V"
+  },
+  {
+    "date": "2012-06-04",
+    "description": "Western Australia Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "WA",
+    "type": "V"
+  },
+  {
+    "date": "2012-06-11",
+    "description": "Queen's Birthday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "V"
+  },
+  {
+    "date": "2012-06-11",
+    "description": "Queen's Birthday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NSW",
+    "type": "V"
+  },
+  {
+    "date": "2012-06-11",
+    "description": "Queen's Birthday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "TAS",
+    "type": "V"
+  },
+  {
+    "date": "2012-06-11",
+    "description": "Queen's Birthday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "VIC",
+    "type": "V"
+  },
+  {
+    "date": "2012-06-11",
+    "description": "Queen's Diamond Jubilee",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "QLD",
+    "type": "F"
+  },
+  {
+    "date": "2012-08-06",
+    "description": "Bank Holiday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "V"
+  },
+  {
+    "date": "2012-08-06",
+    "description": "Picnic Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NT",
+    "type": "V"
+  },
+  {
+    "date": "2012-10-01",
+    "description": "Labour Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "V"
+  },
+  {
+    "date": "2012-10-01",
+    "description": "Labour Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NSW",
+    "type": "V"
+  },
+  {
+    "date": "2012-10-01",
+    "description": "Labour Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "SA",
+    "type": "V"
+  },
+  {
+    "date": "2012-10-01",
+    "description": "Queen's Birthday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "QLD",
+    "type": "V"
+  },
+  {
+    "date": "2012-10-01",
+    "description": "Queen's Birthday",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "WA",
+    "type": "V"
+  },
+  {
+    "date": "2012-11-06",
+    "description": "Melbourne Cup Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "VIC",
+    "type": "V"
+  },
+  {
+    "date": "2012-12-25",
+    "description": "Christmas Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "RF"
+  },
+  {
+    "date": "2012-12-25",
+    "description": "Christmas Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NSW",
+    "type": "RF"
+  },
+  {
+    "date": "2012-12-25",
+    "description": "Christmas Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NT",
+    "type": "RF"
+  },
+  {
+    "date": "2012-12-25",
+    "description": "Christmas Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "QLD",
+    "type": "RF"
+  },
+  {
+    "date": "2012-12-25",
+    "description": "Christmas Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "SA",
+    "type": "RF"
+  },
+  {
+    "date": "2012-12-25",
+    "description": "Christmas Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "TAS",
+    "type": "RF"
+  },
+  {
+    "date": "2012-12-25",
+    "description": "Christmas Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "VIC",
+    "type": "RF"
+  },
+  {
+    "date": "2012-12-25",
+    "description": "Christmas Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "WA",
+    "type": "RF"
+  },
+  {
+    "date": "2012-12-26",
+    "description": "Boxing Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "RF"
+  },
+  {
+    "date": "2012-12-26",
+    "description": "Boxing Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NSW",
+    "type": "RF"
+  },
+  {
+    "date": "2012-12-26",
+    "description": "Boxing Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NT",
+    "type": "RF"
+  },
+  {
+    "date": "2012-12-26",
+    "description": "Boxing Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "QLD",
+    "type": "RF"
+  },
+  {
+    "date": "2012-12-26",
+    "description": "Boxing Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "TAS",
+    "type": "RF"
+  },
+  {
+    "date": "2012-12-26",
+    "description": "Boxing Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "VIC",
+    "type": "RF"
+  },
+  {
+    "date": "2012-12-26",
+    "description": "Boxing Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "WA",
+    "type": "RF"
+  }
+]
