@@ -65,9 +65,9 @@
     },
     {
         'date': '2019-08-19',
-        'description': 'Munkaszüneti Nap',
+        'description': 'Munkaszüneti nap',
         'locale': 'hu-HU',
-        'notes': '2019-08-10 pihenőnap',
+        'notes': '2019-08-10 munkanap',
         'region': '',
         'type': 'NF'
     },
@@ -97,9 +97,9 @@
     },
     {
         'date': '2019-12-24',
-        'description': 'Munkaszüneti Nap',
+        'description': 'Munkaszüneti nap',
         'locale': 'hu-HU',
-        'notes': '2019-12-07 pihenőnap',
+        'notes': '2019-12-07 munkanap',
         'region': '',
         'type': 'NF'
     },
@@ -121,9 +121,9 @@
     },
     {
         'date': '2019-12-27',
-        'description': 'Munkaszüneti Nap',
+        'description': 'Munkaszüneti nap',
         'locale': 'hu-HU',
-        'notes': '2019-12-14 pihenőnap',
+        'notes': '2019-12-14 munkanap',
         'region': '',
         'type': 'NF'
     }

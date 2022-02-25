@@ -89,9 +89,9 @@
     },
     {
         'date': '2021-12-24',
-        'description': 'Munkaszüneti Nap',
+        'description': 'Munkaszüneti nap',
         'locale': 'hu-HU',
-        'notes': '2021-12-11 pihenőnap',
+        'notes': '2021-12-11 munkanap',
         'region': '',
         'type': 'NF'
     },

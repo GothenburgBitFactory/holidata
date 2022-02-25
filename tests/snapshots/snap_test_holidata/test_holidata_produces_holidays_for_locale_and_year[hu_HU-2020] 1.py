@@ -73,9 +73,9 @@
     },
     {
         'date': '2020-08-21',
-        'description': 'Munkaszüneti Nap',
+        'description': 'Munkaszüneti nap',
         'locale': 'hu-HU',
-        'notes': '2020-08-29 pihenőnap',
+        'notes': '2020-08-29 munkanap',
         'region': '',
         'type': 'NF'
     },
@@ -97,9 +97,9 @@
     },
     {
         'date': '2020-12-24',
-        'description': 'Munkaszüneti Nap',
+        'description': 'Munkaszüneti nap',
         'locale': 'hu-HU',
-        'notes': '2020-12-12 pihenőnap',
+        'notes': '2020-12-12 munkanap',
         'region': '',
         'type': 'NF'
     },

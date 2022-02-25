@@ -17,9 +17,9 @@
     },
     {
         'date': '2018-03-16',
-        'description': 'Munkaszüneti Nap',
+        'description': 'Munkaszüneti nap',
         'locale': 'hu-HU',
-        'notes': 'Swapped with 03-10',
+        'notes': '2018-03-10 munkanap',
         'region': '',
         'type': 'NF'
     },
@@ -49,9 +49,9 @@
     },
     {
         'date': '2018-04-30',
-        'description': 'Munkaszüneti Nap',
+        'description': 'Munkaszüneti nap',
         'locale': 'hu-HU',
-        'notes': 'Swapped with 04-21',
+        'notes': '2018-04-21 munkanap',
         'region': '',
         'type': 'NF'
     },
@@ -89,9 +89,9 @@
     },
     {
         'date': '2018-10-22',
-        'description': 'Munkaszüneti Nap',
+        'description': 'Munkaszüneti nap',
         'locale': 'hu-HU',
-        'notes': 'Swapped with 10-13',
+        'notes': '2018-10-13 munkanap',
         'region': '',
         'type': 'NF'
     },
@@ -113,17 +113,17 @@
     },
     {
         'date': '2018-11-02',
-        'description': 'Munkaszüneti Nap',
+        'description': 'Munkaszüneti nap',
         'locale': 'hu-HU',
-        'notes': 'Swapped with 11-10',
+        'notes': '2018-11-10 munkanap',
         'region': '',
         'type': 'NF'
     },
     {
         'date': '2018-12-24',
-        'description': 'Munkaszüneti Nap',
+        'description': 'Munkaszüneti nap',
         'locale': 'hu-HU',
-        'notes': 'Swapped with 12-01',
+        'notes': '2018-12-01 munkanap',
         'region': '',
         'type': 'NF'
     },
@@ -145,9 +145,9 @@
     },
     {
         'date': '2018-12-31',
-        'description': 'Munkaszüneti Nap',
+        'description': 'Munkaszüneti nap',
         'locale': 'hu-HU',
-        'notes': 'Swapped with 12-15',
+        'notes': '2018-12-15 munkanap',
         'region': '',
         'type': 'NF'
     }
