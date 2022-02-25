@@ -9,9 +9,9 @@
     },
     {
         'date': '2016-03-14',
-        'description': 'Munkaszüneti Nap',
+        'description': 'Munkaszüneti nap',
         'locale': 'hu-HU',
-        'notes': '2016-03-05 pihenőnap',
+        'notes': '2016-03-05 munkanap',
         'region': '',
         'type': 'NF'
     },
@@ -81,9 +81,9 @@
     },
     {
         'date': '2016-10-31',
-        'description': 'Munkaszüneti Nap',
+        'description': 'Munkaszüneti nap',
         'locale': 'hu-HU',
-        'notes': '2016-10-15 pihenőnap',
+        'notes': '2016-10-15 munkanap',
         'region': '',
         'type': 'NF'
     },

@@ -9,9 +9,9 @@
     },
     {
         'date': '2015-01-02',
-        'description': 'Munkaszüneti Nap',
+        'description': 'Munkaszüneti nap',
         'locale': 'hu-HU',
-        'notes': '2015-01-10 pihenőnap',
+        'notes': '2015-01-10 munkanap',
         'region': '',
         'type': 'NF'
     },
@@ -73,9 +73,9 @@
     },
     {
         'date': '2015-08-21',
-        'description': 'Munkaszüneti Nap',
+        'description': 'Munkaszüneti nap',
         'locale': 'hu-HU',
-        'notes': '2015-08-08 pihenőnap',
+        'notes': '2015-08-08 munkanap',
         'region': '',
         'type': 'NF'
     },
@@ -97,9 +97,9 @@
     },
     {
         'date': '2015-12-24',
-        'description': 'Munkaszüneti Nap',
+        'description': 'Munkaszüneti nap',
         'locale': 'hu-HU',
-        'notes': '2015-12-12 pihenőnap',
+        'notes': '2015-12-12 munkanap',
         'region': '',
         'type': 'NF'
     },
