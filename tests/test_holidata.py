@@ -5,6 +5,8 @@ from snapshottest.formatter import Formatter
 from holidata import Locale
 from tests import HOLIDATA_YEAR_MAX
 
+SNAPSHOT_FILE_PATH_PATTERN = 'snapshots/snap_test_holidata/{}[{}-{}] 1.py'
+
 
 @pytest.fixture(params=range(2011, HOLIDATA_YEAR_MAX))
 def year(request):
@@ -23,4 +25,18 @@ def test_holidata_produces_holidays_for_locale_and_year(snapshot, tmpdir, locale
     export_data.sort(key=lambda x: x['date'])
     temp_file.write(Formatter().format(export_data, 0))
 
-    snapshot.assert_match(FileSnapshot(str(temp_file)))
+    try:
+        snapshot.assert_match(FileSnapshot(str(temp_file)))
+    except AssertionError:
+        with open(temp_file, 'r') as tf:
+            actual = "".join(tf.readlines())
+
+        snapshot_file = SNAPSHOT_FILE_PATH_PATTERN.format(
+            "test_holidata_produces_holidays_for_locale_and_year",
+            locale.__class__.__name__,
+            locale.year)
+
+        with open(snapshot_file) as sf:
+            expected = "".join(sf.readlines())
+
+        assert (actual == expected)
