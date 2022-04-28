@@ -34,11 +34,15 @@ class en_GB(Locale):
         return []
 
     def holiday_spring_bank_holiday(self):
-        """1. last monday in may: [NV] Spring Bank Holiday
+        """
+        1. last monday in may: [NV] Spring Bank Holiday
         2012: Moved to June 4, because of Queen’s Diamond Jubilee
+        2022: Moved to June 2, because of Queen's Platinum Jubilee
         """
         if self.year == 2012:
             date = SmartDayArrow(self.year, 6, 4)
+        elif self.year == 2022:
+            date = SmartDayArrow(self.year, 6, 2)
         else:
             date = month_reference(self.year,
                                    "may",
@@ -103,13 +107,25 @@ class en_GB(Locale):
         return []
 
     def holiday_royal_jubilees(self):
-        """2012-06-05: Queen's Diamond Jubilee"""
+        """
+        2012-06-05: Queen's Diamond Jubilee
+        2022-06-03: Queen's Platinum Jubilee
+        """
         if self.year == 2012:
             return [Holiday(
                 locale=self.locale,
                 region="",
-                date=SmartDayArrow(2012, 6, 5),
+                date=SmartDayArrow(self.year, 6, 5),
                 description="Queen's Diamond Jubilee",
+                flags="NV",
+                notes="")]
+
+        if self.year == 2022:
+            return [Holiday(
+                locale=self.locale,
+                region="",
+                date=SmartDayArrow(self.year, 6, 3),
+                description="Queen's Platinum Jubilee",
                 flags="NV",
                 notes="")]
 

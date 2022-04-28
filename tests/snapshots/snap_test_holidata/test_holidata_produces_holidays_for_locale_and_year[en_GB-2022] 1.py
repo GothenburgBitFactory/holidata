@@ -40,8 +40,16 @@
         'type': 'NV'
     },
     {
-        'date': '2022-05-30',
+        'date': '2022-06-02',
         'description': 'Spring Bank Holiday',
+        'locale': 'en-GB',
+        'notes': '',
+        'region': '',
+        'type': 'NV'
+    },
+    {
+        'date': '2022-06-03',
+        'description': "Queen's Platinum Jubilee",
         'locale': 'en-GB',
         'notes': '',
         'region': '',
