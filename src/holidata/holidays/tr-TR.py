@@ -3,16 +3,9 @@ from holidata.utils import SmartDayArrow
 from .holidays import Locale, Holiday
 
 """
-source
-2014: https://www2.diyanet.gov.tr/DinHizmetleriGenelMudurlugu/Sayfalar/2014Y%C4%B1l%C4%B1ResmiTatilG%C3%BCnleri.aspx
-2015: https://www2.diyanet.gov.tr/DinHizmetleriGenelMudurlugu/Sayfalar/2015Y%C4%B1l%C4%B1ResmiTatilG%C3%BCnleri.aspx
-2016: https://www2.diyanet.gov.tr/DinHizmetleriGenelMudurlugu/Sayfalar/2016Y%C4%B1l%C4%B1ResmiTatilG%C3%BCnleri.aspx
-2017: https://www2.diyanet.gov.tr/DinHizmetleriGenelMudurlugu/Sayfalar/2017Y%C4%B1l%C4%B1ResmiTatilG%C3%BCnleri.aspx
-2018: https://www2.diyanet.gov.tr/DinHizmetleriGenelMudurlugu/Sayfalar/2018Y%C4%B1l%C4%B1ResmiTatilG%C3%BCnleri.aspx
-2019: https://www2.diyanet.gov.tr/DinHizmetleriGenelMudurlugu/Sayfalar/2019Y%C4%B1l%C4%B1ResmiTatilG%C3%BCnleri.aspx
-2020: https://www2.diyanet.gov.tr/DinHizmetleriGenelMudurlugu/Sayfalar/2020Y%C4%B1l%C4%B1ResmiTatilG%C3%BCnleri.aspx
-2021: https://www2.diyanet.gov.tr/DinHizmetleriGenelMudurlugu/Sayfalar/2021Y%C4%B1l%C4%B1ResmiTatilG%C3%BCnleri.aspx
-2022: https://www2.diyanet.gov.tr/DinHizmetleriGenelMudurlugu/Sayfalar/2022Y%C4%B1l%C4%B1ResmiTatilG%C3%BCnleri.aspx
+sources:
+law on national holidays and general holidays: https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=2429&MevzuatTur=1&MevzuatTertip=5 
+dates for holidays 'Ramazan Bayramı' and 'Kurban Bayramı': https://vakithesaplama.diyanet.gov.tr/dini_gunler.php
 """
 
 
