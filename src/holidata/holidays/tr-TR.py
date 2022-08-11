@@ -36,6 +36,11 @@ class tr_TR(Locale):
             2020: SmartDayArrow(2020, 5, 23),
             2021: SmartDayArrow(2021, 5, 12),
             2022: SmartDayArrow(2022, 5,  1),
+            2023: SmartDayArrow(2023, 4, 20),
+            2024: SmartDayArrow(2024, 4,  9),
+            2025: SmartDayArrow(2025, 3, 29),
+            2026: SmartDayArrow(2026, 3, 19),
+            2027: SmartDayArrow(2027, 3,  8),
         }
 
         return ramazan_bayrami_reference[year]
@@ -55,6 +60,11 @@ class tr_TR(Locale):
             2020: SmartDayArrow(2020,  7, 30),
             2021: SmartDayArrow(2021,  7, 19),
             2022: SmartDayArrow(2022,  7,  8),
+            2023: SmartDayArrow(2023,  6, 27),
+            2024: SmartDayArrow(2024,  6, 15),
+            2025: SmartDayArrow(2025,  6,  5),
+            2026: SmartDayArrow(2026,  5, 26),
+            2027: SmartDayArrow(2027,  5, 15),
         }
 
         return kurban_bayrami_reference[year]
