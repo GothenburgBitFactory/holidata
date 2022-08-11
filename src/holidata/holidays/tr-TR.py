@@ -22,8 +22,8 @@ class tr_TR(Locale):
     locale = "tr-TR"
 
     @staticmethod
-    def __ramadan_bayrami_reference(year):
-        ramadan_bayrami_reference = {
+    def __ramazan_bayrami_reference(year):
+        ramazan_bayrami_reference = {
             2011: SmartDayArrow(2011, 8, 29),
             2012: SmartDayArrow(2012, 8, 18),
             2013: SmartDayArrow(2013, 8,  7),
@@ -38,7 +38,7 @@ class tr_TR(Locale):
             2022: SmartDayArrow(2022, 5,  1),
         }
 
-        return ramadan_bayrami_reference[year]
+        return ramazan_bayrami_reference[year]
 
     @staticmethod
     def __kurban_bayrami_reference(year):
@@ -76,7 +76,7 @@ class tr_TR(Locale):
         """
         Ramazan Bayramı 1.-3. Gün
         """
-        reference = self.__ramadan_bayrami_reference(self.year)
+        reference = self.__ramazan_bayrami_reference(self.year)
 
         return [Holiday(
             self.locale,
