@@ -8,6 +8,7 @@ from .holidays import Locale, Holiday
 sources: http://www.pisrs.si/Pis.web/pregledPredpisa?id=ZAKO865#
 """
 
+
 class sl_SI(Locale):
     """
     01-01: [NF] Novo leto
