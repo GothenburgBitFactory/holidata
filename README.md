@@ -1,4 +1,4 @@
-# holidata
+# Holidata
 
 `holidata` is a utility for algorithmically producing holiday data.
 Its purpose is mainly for [holidata.net](https://holidata.net).
@@ -7,12 +7,28 @@ Holiday data can be produced for a given year in a supported locale and output f
 
 ## Usage
 
-Call `holidata` providing the necessary data, e.g.
 ```
-$ holidata --year=2020 --locale=de-DE
+holidata --year=<value> --locale=<value> [--output=<value>]
+holidata --year=<value> --country=<value> [--lang=<value>] [--output=<value>]
 ```
-Call `holidata` with the ` --usage` or `--help` option to get usage info or help respectively.
- 
+Call `holidata` with the `--help` option to more detailed information.
+
+### Examples
+* Create holiday data of year `2022` for locale `de-DE`:
+  ```
+  $ holidata --year=2022 --locale=de-DE
+  ```
+  
+* Create holiday data of year `2022` for country `BE` and language `fr`:
+  ```
+  $ holidata --year=2022 --country=BE --lang=fr
+  ```
+  
+* Create holiday data of year `2022` for country `US` (default language `en`):
+  ```
+  $ holidata --year=2022 --country=US
+  ```
+
 ## Data
 
 For each holiday the following data is provided:
@@ -25,16 +41,16 @@ For each holiday the following data is provided:
 
 ## Locales
 
-Holidata provides holiday data in different locales, i.e. for a given country and a in given language.
+Holidata provides holiday data in different locales, i.e. for a given country and in a given language.
 See [holidata.net](https://holidata.net/locales/) for a complete overview of the currently provided locales.
 
-If you think a locale is missing, [open a feature request on github](https://github.com/GothenburgBitFactory/holidata/issues).
+If you think a locale is missing, [open a feature request on GitHub](https://github.com/GothenburgBitFactory/holidata/issues).
 
 ## Output Formats
 
 Holidata supports different output formats, currently `csv`, `json`, `yaml`, and `xml`.
 
-If you think an output format is missing, [open a feature request on github](https://github.com/GothenburgBitFactory/holidata/issues).
+If you think an output format is missing, [open a feature request on GitHub](https://github.com/GothenburgBitFactory/holidata/issues).
 
 ## Limitations
 
@@ -46,4 +62,5 @@ There is also no explicit representation of partial holidays.
 
 ## License
 
-`holidata` is released under the MIT license. For details check the [LICENSE](LICENSE) file.
+`holidata` is released under the MIT license.
+For details check the [LICENSE](LICENSE) file.
