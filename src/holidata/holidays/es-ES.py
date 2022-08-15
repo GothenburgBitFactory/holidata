@@ -433,7 +433,7 @@ class es_ES(Locale):
         else:
             return []
 
-    def holiday_nuestra_señora_de_áfrica(self):
+    def holiday_nuestra_senora_de_africa(self):
         if self.year == 2022:
             return [Holiday(
                 self.locale,
