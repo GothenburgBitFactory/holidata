@@ -17,13 +17,13 @@ class SmartDayArrow(Arrow):
         """
 
         weekdays = [
-            'monday',
-            'tuesday',
-            'wednesday',
-            'thursday',
-            'friday',
-            'saturday',
-            'sunday',
+            "monday",
+            "tuesday",
+            "wednesday",
+            "thursday",
+            "friday",
+            "saturday",
+            "sunday",
         ]
 
         return weekdays[Arrow.weekday(self)]
@@ -33,7 +33,7 @@ class SmartDayArrow(Arrow):
         Shifts to {order}. weekday in the given direction, i.e.
         2. monday before this date would be:
 
-        >>> arrow.shift_to_weekday('monday', order=2, reverse=True)
+        >>> arrow.shift_to_weekday("monday", order=2, reverse=True)
         """
 
         result = self
@@ -59,18 +59,18 @@ def easter(year, easter_type):
 
 def month_reference(year, month, first=True):
     months = [
-        'january',
-        'february',
-        'march',
-        'april',
-        'may',
-        'june',
-        'july',
-        'august',
-        'september',
-        'october',
-        'november',
-        'december',
+        "january",
+        "february",
+        "march",
+        "april",
+        "may",
+        "june",
+        "july",
+        "august",
+        "september",
+        "october",
+        "november",
+        "december",
     ]
 
     month = months.index(month.lower()) + 1

@@ -24,11 +24,11 @@ class en_NZ(Locale):
     def holiday_new_years_day_observed(self):
         date = SmartDayArrow(self.year, 1, 1)
 
-        if date.weekday() in ['saturday', 'sunday']:
+        if date.weekday() in ["saturday", "sunday"]:
             return [Holiday(
                     locale=self.locale,
                     region="",
-                    date=date.shift_to_weekday('monday', including=True),
+                    date=date.shift_to_weekday("monday", including=True),
                     description="New Year's Day (observed)",
                     flags="NV",
                     notes="")]
@@ -38,20 +38,20 @@ class en_NZ(Locale):
     def holiday_after_new_years_day(self):
         date = SmartDayArrow(self.year, 1, 2)
 
-        if date.weekday() in ['sunday', 'monday']:
+        if date.weekday() in ["sunday", "monday"]:
             return [Holiday(
                 locale=self.locale,
                 region="",
-                date=date.shift_to_weekday('tuesday', including=True),
+                date=date.shift_to_weekday("tuesday", including=True),
                 description="Day after New Year's Day",
                 flags="NV",
                 notes="")]
 
-        elif date.weekday() == 'saturday':
+        elif date.weekday() == "saturday":
             return [Holiday(
                 locale=self.locale,
                 region="",
-                date=date.shift_to_weekday('monday', including=True),
+                date=date.shift_to_weekday("monday", including=True),
                 description="Day after New Year's Day",
                 flags="NV",
                 notes="")]
@@ -67,11 +67,11 @@ class en_NZ(Locale):
     def holiday_waitangi_day_observed(self):
         date = SmartDayArrow(self.year, 2, 6)
 
-        if self.year > 2016 and date.weekday() in ['saturday', 'sunday']:
+        if self.year > 2016 and date.weekday() in ["saturday", "sunday"]:
             return [Holiday(
                     locale=self.locale,
                     region="",
-                    date=date.shift_to_weekday('monday', including=True),
+                    date=date.shift_to_weekday("monday", including=True),
                     description="Waitangi Day (observed)",
                     flags="NV",
                     notes="")]
@@ -81,11 +81,11 @@ class en_NZ(Locale):
     def holiday_anzac_day_observed(self):
         date = SmartDayArrow(self.year, 4, 25)
 
-        if self.year > 2015 and date.weekday() in ['saturday', 'sunday']:
+        if self.year > 2015 and date.weekday() in ["saturday", "sunday"]:
             return [Holiday(
                     locale=self.locale,
                     region="",
-                    date=date.shift_to_weekday('monday', including=True),
+                    date=date.shift_to_weekday("monday", including=True),
                     description="ANZAC Day (observed)",
                     flags="NV",
                     notes="")]
@@ -95,20 +95,20 @@ class en_NZ(Locale):
     def holiday_christmas_day_observed(self):
         date = SmartDayArrow(self.year, 12, 25)
 
-        if date.weekday() == 'sunday':
+        if date.weekday() == "sunday":
             return [Holiday(
                 locale=self.locale,
                 region="",
-                date=date.shift_to_weekday('tuesday', including=True),
+                date=date.shift_to_weekday("tuesday", including=True),
                 description="Christmas Day (observed)",
                 flags="NV",
                 notes="")]
 
-        elif date.weekday() == 'saturday':
+        elif date.weekday() == "saturday":
             return [Holiday(
                 locale=self.locale,
                 region="",
-                date=date.shift_to_weekday('monday', including=True),
+                date=date.shift_to_weekday("monday", including=True),
                 description="Christmas Day (observed)",
                 flags="NV",
                 notes="")]
@@ -118,20 +118,20 @@ class en_NZ(Locale):
     def holiday_boxing_day_observed(self):
         date = SmartDayArrow(self.year, 12, 26)
 
-        if date.weekday() == 'sunday':
+        if date.weekday() == "sunday":
             return [Holiday(
                 locale=self.locale,
                 region="",
-                date=date.shift_to_weekday('tuesday', including=True),
+                date=date.shift_to_weekday("tuesday", including=True),
                 description="Boxing Day (observed)",
                 flags="NV",
                 notes="")]
 
-        elif date.weekday() == 'saturday':
+        elif date.weekday() == "saturday":
             return [Holiday(
                 locale=self.locale,
                 region="",
-                date=date.shift_to_weekday('monday', including=True),
+                date=date.shift_to_weekday("monday", including=True),
                 description="Boxing Day (observed)",
                 flags="NV",
                 notes="")]

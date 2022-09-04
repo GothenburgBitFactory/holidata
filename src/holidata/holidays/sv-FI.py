@@ -34,7 +34,7 @@ class sv_FI(Locale):
         return [Holiday(
             self.locale,
             "",
-            SmartDayArrow(self.year, 6, 19).shift_to_weekday('saturday', order=1, reverse=False),
+            SmartDayArrow(self.year, 6, 19).shift_to_weekday("saturday", order=1, reverse=False),
             "Midsommardagen",
             "NRV"
         )]
@@ -46,7 +46,7 @@ class sv_FI(Locale):
         return [Holiday(
             self.locale,
             "",
-            SmartDayArrow(self.year, 10, 30).shift_to_weekday('saturday', order=1, reverse=False),
+            SmartDayArrow(self.year, 10, 30).shift_to_weekday("saturday", order=1, reverse=False),
             "Alla helgons dag",
             "NRV"
         )]

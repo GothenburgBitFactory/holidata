@@ -64,7 +64,7 @@ class es_ES(Locale):
         return [Holiday(
             self.locale,
             region,
-            SmartDayArrow(self.year, 1, 1).shift_to_weekday('monday', including=True),
+            SmartDayArrow(self.year, 1, 1).shift_to_weekday("monday", including=True),
             "Lunes siguiente al Año Nuevo",
             "NF" if regions == [""] else "F"
         ) for region in regions]
@@ -80,7 +80,7 @@ class es_ES(Locale):
         return [Holiday(
             self.locale,
             region,
-            SmartDayArrow(self.year, 1, 6).shift_to_weekday('monday', including=True),
+            SmartDayArrow(self.year, 1, 6).shift_to_weekday("monday", including=True),
             "Lunes siguiente a la Epifanía del Señor",
             "NRF" if regions == [""] else "RF"
         ) for region in regions]
@@ -250,7 +250,7 @@ class es_ES(Locale):
         return [Holiday(
             self.locale,
             region,
-            SmartDayArrow(self.year, 5, 1).shift_to_weekday('monday', including=True),
+            SmartDayArrow(self.year, 5, 1).shift_to_weekday("monday", including=True),
             "Lunes siguiente a la Fiesta del Trabajo",
             "NF" if regions == [""] else "F"
         ) for region in regions]
@@ -272,7 +272,7 @@ class es_ES(Locale):
             return [Holiday(
                 self.locale,
                 "MD",
-                SmartDayArrow(self.year, 5, 2).shift_to_weekday('monday', including=True),
+                SmartDayArrow(self.year, 5, 2).shift_to_weekday("monday", including=True),
                 "Lunes siguiente al Día de la Comunidad de Madrid",
                 "F"
             )]
@@ -454,7 +454,7 @@ class es_ES(Locale):
         return [Holiday(
             self.locale,
             region,
-            SmartDayArrow(self.year, 8, 15).shift_to_weekday('monday', including=True),
+            SmartDayArrow(self.year, 8, 15).shift_to_weekday("monday", including=True),
             "Lunes siguiente a la Asunción de la Virgen",
             "RF"
         ) for region in regions]
@@ -500,7 +500,7 @@ class es_ES(Locale):
             return [Holiday(
                 self.locale,
                 "AS",
-                SmartDayArrow(self.year, 9, 8).shift_to_weekday('monday', including=True),
+                SmartDayArrow(self.year, 9, 8).shift_to_weekday("monday", including=True),
                 "Lunes siguiente al Día de Asturias",
                 "F"
             )]
@@ -524,7 +524,7 @@ class es_ES(Locale):
             return [Holiday(
                 self.locale,
                 "EX",
-                SmartDayArrow(self.year, 9, 8).shift_to_weekday('monday', including=True),
+                SmartDayArrow(self.year, 9, 8).shift_to_weekday("monday", including=True),
                 "Lunes siguiente al Día de Extremadura",
                 "F"
             )]
@@ -587,7 +587,7 @@ class es_ES(Locale):
         return [Holiday(
             self.locale,
             region,
-            SmartDayArrow(self.year, 10, 12).shift_to_weekday('monday', including=True),
+            SmartDayArrow(self.year, 10, 12).shift_to_weekday("monday", including=True),
             "Lunes siguiente a la Fiesta Nacional de España",
             "F"
         ) for region in regions]
@@ -615,7 +615,7 @@ class es_ES(Locale):
         return [Holiday(
             self.locale,
             region,
-            SmartDayArrow(self.year, 11, 1).shift_to_weekday('monday', including=True),
+            SmartDayArrow(self.year, 11, 1).shift_to_weekday("monday", including=True),
             "Lunes siguiente a Todos los Santos",
             "F"
         ) for region in regions]
@@ -631,7 +631,7 @@ class es_ES(Locale):
         return [Holiday(
             self.locale,
             region,
-            SmartDayArrow(self.year, 12, 6).shift_to_weekday('monday', including=True),
+            SmartDayArrow(self.year, 12, 6).shift_to_weekday("monday", including=True),
             "Lunes siguiente al Día de la Constitución Española",
             "F"
         ) for region in regions]
@@ -647,7 +647,7 @@ class es_ES(Locale):
         return [Holiday(
             self.locale,
             region,
-            SmartDayArrow(self.year, 12, 8).shift_to_weekday('monday', including=True),
+            SmartDayArrow(self.year, 12, 8).shift_to_weekday("monday", including=True),
             "Lunes siguiente a La Inmaculada Concepción",
             "RF"
         ) for region in regions]
@@ -749,7 +749,7 @@ class es_ES(Locale):
         return [Holiday(
             self.locale,
             region,
-            easter(self.year, self.easter_type).shift_to_weekday('monday', including=True),
+            easter(self.year, self.easter_type).shift_to_weekday("monday", including=True),
             "Lunes de Pascua",
             "NRV" if regions == [""] else "RV"
         ) for region in regions]

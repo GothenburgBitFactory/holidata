@@ -18,12 +18,12 @@ class Holiday(object):
 
     def as_dict(self):
         return {
-            'locale': self.locale,
-            'region': self.region,
-            'date': self.date.strftime('%Y-%m-%d'),
-            'description': self.description,
-            'type': self.flags,
-            'notes': self.notes
+            "locale": self.locale,
+            "region": self.region,
+            "date": self.date.strftime("%Y-%m-%d"),
+            "description": self.description,
+            "type": self.flags,
+            "notes": self.notes
         }
 
 
@@ -54,16 +54,16 @@ class Locale(object, metaclass=PluginMount):
     locale = None
     easter_type = None
 
-    fixed_regex = re.compile(r'^\s*(?P<month>\d\d)-(?P<day>\d\d): '
-                             r'(\[(?P<regions>[^]]+)\]\s+)?'
-                             r'\[(?P<flags>[A-Z]*)\] (?P<description>.*)$', re.UNICODE)
-    nth_weekday_regex = re.compile(r'^\s*(?P<order>\d+)\.(?P<last> last | )'
-                                   r'(?P<weekday>[a-z]+) in (?P<month>[a-zA-Z]+):\s+'
-                                   r'(\[(?P<regions>[^]]+)\]\s+)?'
-                                   r'\[(?P<flags>[A-Z]*)\] (?P<description>.*)$', re.UNICODE)
-    easter_shift_regex = re.compile(r'^\s*((?P<days>\d+) day(s)? (?P<direction>(before|after)) )?Easter:\s+'
-                                    r'(\[(?P<regions>[^]]+)\]\s+)?'
-                                    r'\[(?P<flags>[A-Z]*)\] (?P<description>.*)$', re.UNICODE)
+    fixed_regex = re.compile(r"^\s*(?P<month>\d\d)-(?P<day>\d\d): "
+                             r"(\[(?P<regions>[^]]+)\]\s+)?"
+                             r"\[(?P<flags>[A-Z]*)\] (?P<description>.*)$", re.UNICODE)
+    nth_weekday_regex = re.compile(r"^\s*(?P<order>\d+)\.(?P<last> last | )"
+                                   r"(?P<weekday>[a-z]+) in (?P<month>[a-zA-Z]+):\s+"
+                                   r"(\[(?P<regions>[^]]+)\]\s+)?"
+                                   r"\[(?P<flags>[A-Z]*)\] (?P<description>.*)$", re.UNICODE)
+    easter_shift_regex = re.compile(r"^\s*((?P<days>\d+) day(s)? (?P<direction>(before|after)) )?Easter:\s+"
+                                    r"(\[(?P<regions>[^]]+)\]\s+)?"
+                                    r"\[(?P<flags>[A-Z]*)\] (?P<description>.*)$", re.UNICODE)
 
     def __init__(self, year):
         if self.locale is None:
@@ -89,18 +89,18 @@ class Locale(object, metaclass=PluginMount):
                 print("Following line could not be processed: '{}'".format(line))
                 continue
 
-            for region in holidata['regions']:
+            for region in holidata["regions"]:
                 yield Holiday(
                     locale=self.locale,
                     region=region,
-                    date=holidata['date'],
-                    description=holidata['description'],
-                    flags=holidata['flags'],
-                    notes=holidata['notes'],
+                    date=holidata["date"],
+                    description=holidata["description"],
+                    flags=holidata["flags"],
+                    notes=holidata["notes"],
                 )
 
         # Second, call holiday functions
-        for method in [getattr(self, func) for func in dir(self) if func.startswith('holiday_')]:
+        for method in [getattr(self, func) for func in dir(self) if func.startswith("holiday_")]:
             holidays = method()
 
             for holiday in holidays:
@@ -116,24 +116,24 @@ class Locale(object, metaclass=PluginMount):
         for reg_exp, create_date_from in function_map:
             m = reg_exp.search(line)
             if m is not None:
-                return dict(regions=([x.strip() for x in m.group('regions').split(',')] if m.group('regions') is not None else [""]),
+                return dict(regions=([x.strip() for x in m.group("regions").split(",")] if m.group("regions") is not None else [""]),
                             date=create_date_from(m),
-                            description=m.group('description'),
-                            flags=m.group('flags'),
+                            description=m.group("description"),
+                            flags=m.group("flags"),
                             notes="")
 
         return None
 
     def _date_from_fixed_reference(self, m):
-        return SmartDayArrow(self.year, int(m.group('month')), int(m.group('day')))
+        return SmartDayArrow(self.year, int(m.group("month")), int(m.group("day")))
 
     def _date_from_weekday_reference(self, m):
         return month_reference(self.year,
-                               m.group('month'),
-                               first=m.group('last').strip() == '') \
-            .shift_to_weekday(m.group('weekday'),
-                              order=int(m.group('order')),
-                              reverse=m.group('last').strip() == 'last',
+                               m.group("month"),
+                               first=m.group("last").strip() == "") \
+            .shift_to_weekday(m.group("weekday"),
+                              order=int(m.group("order")),
+                              reverse=m.group("last").strip() == "last",
                               including=True)
 
     def _date_from_easter_reference(self, m):
@@ -141,4 +141,4 @@ class Locale(object, metaclass=PluginMount):
             raise ValueError("Locale {0} does not provide its easter type (WESTERN|ORTHODOX)".format(self.__class__.__name__))
 
         return easter(self.year, self.easter_type) \
-            .shift(days=int((m.group('days')) if m.group('days') is not None else 0) * (1 if m.group('direction') == 'after' else -1))
+            .shift(days=int((m.group("days")) if m.group("days") is not None else 0) * (1 if m.group("direction") == "after" else -1))

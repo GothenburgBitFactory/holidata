@@ -33,7 +33,7 @@ class es_CO(Locale):
         return [Holiday(
             self.locale,
             "",
-            SmartDayArrow(self.year, 1, 6).shift_to_weekday('monday', including=True),
+            SmartDayArrow(self.year, 1, 6).shift_to_weekday("monday", including=True),
             "Día de los Reyes Magos",
             "NRV"
         )]
@@ -43,7 +43,7 @@ class es_CO(Locale):
         return [Holiday(
             self.locale,
             "",
-            SmartDayArrow(self.year, 3, 19).shift_to_weekday('monday', including=True),
+            SmartDayArrow(self.year, 3, 19).shift_to_weekday("monday", including=True),
             "Día de San José",
             "NRV"
         )]
@@ -53,7 +53,7 @@ class es_CO(Locale):
         return [Holiday(
             self.locale,
             "",
-            SmartDayArrow(self.year, 6, 29).shift_to_weekday('monday', including=True),
+            SmartDayArrow(self.year, 6, 29).shift_to_weekday("monday", including=True),
             "San Pedro y San Pablo",
             "NRV"
         )]
@@ -63,7 +63,7 @@ class es_CO(Locale):
         return [Holiday(
             self.locale,
             "",
-            SmartDayArrow(self.year, 8, 15).shift_to_weekday('monday', including=True),
+            SmartDayArrow(self.year, 8, 15).shift_to_weekday("monday", including=True),
             "Asunción de la Virgen",
             "NRV"
         )]
@@ -73,7 +73,7 @@ class es_CO(Locale):
         return [Holiday(
             self.locale,
             "",
-            SmartDayArrow(self.year, 10, 12).shift_to_weekday('monday', including=True),
+            SmartDayArrow(self.year, 10, 12).shift_to_weekday("monday", including=True),
             "Día de la Raza",
             "NV"
         )]
@@ -83,7 +83,7 @@ class es_CO(Locale):
         return [Holiday(
             self.locale,
             "",
-            SmartDayArrow(self.year, 11, 1).shift_to_weekday('monday', including=True),
+            SmartDayArrow(self.year, 11, 1).shift_to_weekday("monday", including=True),
             "Todos los Santos",
             "NRV"
         )]
@@ -93,7 +93,7 @@ class es_CO(Locale):
         return [Holiday(
             self.locale,
             "",
-            SmartDayArrow(self.year, 11, 11).shift_to_weekday('monday', including=True),
+            SmartDayArrow(self.year, 11, 11).shift_to_weekday("monday", including=True),
             "Independencia de Cartagena",
             "NV"
         )]

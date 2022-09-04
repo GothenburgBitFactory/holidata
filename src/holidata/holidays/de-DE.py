@@ -35,7 +35,7 @@ class de_DE(Locale):
         return [Holiday(
             self.locale,
             "SN",
-            SmartDayArrow(self.year, 12, 25).shift_to_weekday('sunday', order=4, reverse=True).shift(days=-11),
+            SmartDayArrow(self.year, 12, 25).shift_to_weekday("sunday", order=4, reverse=True).shift(days=-11),
             "Buß- und Bettag",
             "RV"
         )]

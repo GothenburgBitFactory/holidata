@@ -33,7 +33,7 @@ class nl_NL(Locale):
             date = SmartDayArrow(self.year, 4, 27)
             description = "Koningsdag"
 
-        if date.weekday() == 'sunday':
+        if date.weekday() == "sunday":
             date = date.shift(days=-1)
 
         return [Holiday(
@@ -47,7 +47,7 @@ class nl_NL(Locale):
     def holiday_koninkrijksdag(self):
         date = SmartDayArrow(self.year, 12, 15)
 
-        if date.weekday() == 'sunday':
+        if date.weekday() == "sunday":
             date = date.shift(days=1)
 
         return [Holiday(

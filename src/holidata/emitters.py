@@ -21,8 +21,8 @@ class JsonEmitter(Emitter):
 
     def output(self, locale):
         export_data = [h.as_dict() for h in locale.holidays]
-        export_data.sort(key=lambda x: x['date'])
-        return "\n".join([json.dumps(h, ensure_ascii=False, sort_keys=False, indent=None, separators=(',', ':')) for h in export_data]) + "\n"
+        export_data.sort(key=lambda x: x["date"])
+        return "\n".join([json.dumps(h, ensure_ascii=False, sort_keys=False, indent=None, separators=(",", ":")) for h in export_data]) + "\n"
 
 
 class CsvEmitter(Emitter):
@@ -30,13 +30,13 @@ class CsvEmitter(Emitter):
 
     def output(self, locale):
         export_data = [h.as_dict() for h in locale.holidays]
-        export_data.sort(key=lambda x: x['date'])
+        export_data.sort(key=lambda x: x["date"])
         result = io.StringIO()
 
         writer = csv.DictWriter(result,
                                 ["locale", "region", "date", "description", "type", "notes"],
                                 quoting=csv.QUOTE_ALL,
-                                lineterminator='\n')
+                                lineterminator="\n")
         writer.writeheader()
         writer.writerows(export_data)
 
