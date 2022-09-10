@@ -130,3 +130,15 @@ class en_GB(Locale):
                 notes="")]
 
         return []
+
+    def holiday_state_funeral_of_queen_elizabeth_ii(self):
+        if self.year == 2022:
+            return [Holiday(
+                locale=self.locale,
+                region="",
+                date=SmartDayArrow(self.year, 9, 19),
+                description="State Funeral of Queen Elizabeth II",
+                flags="NF",
+                notes="")]
+
+        return []

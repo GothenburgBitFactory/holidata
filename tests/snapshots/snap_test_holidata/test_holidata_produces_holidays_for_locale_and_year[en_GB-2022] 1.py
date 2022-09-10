@@ -64,6 +64,14 @@
         'type': 'NV'
     },
     {
+        'date': '2022-09-19',
+        'description': 'State Funeral of Queen Elizabeth II',
+        'locale': 'en-GB',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
         'date': '2022-12-25',
         'description': 'Christmas Day',
         'locale': 'en-GB',
