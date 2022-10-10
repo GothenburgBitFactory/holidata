@@ -16,7 +16,6 @@ class en_US(Locale):
     3. monday in April: [MA,ME] [V] Patriots' Day
     1. last monday in May: [NV] Memorial Day
     1. monday in September: [NV] Labor Day
-    2. monday in October: [NV] Columbus Day
     4. thursday in November: [NV] Thanksgiving Day
     4. friday in November: [NV] Day after Thanksgiving
     """
