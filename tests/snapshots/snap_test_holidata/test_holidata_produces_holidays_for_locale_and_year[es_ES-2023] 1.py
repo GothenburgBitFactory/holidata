@@ -8,6 +8,46 @@
         'type': 'NF'
     },
     {
+        'date': '2023-01-02',
+        'description': 'Lunes siguiente al Año Nuevo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AN',
+        'type': 'F'
+    },
+    {
+        'date': '2023-01-02',
+        'description': 'Lunes siguiente al Año Nuevo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AR',
+        'type': 'F'
+    },
+    {
+        'date': '2023-01-02',
+        'description': 'Lunes siguiente al Año Nuevo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AS',
+        'type': 'F'
+    },
+    {
+        'date': '2023-01-02',
+        'description': 'Lunes siguiente al Año Nuevo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CL',
+        'type': 'F'
+    },
+    {
+        'date': '2023-01-02',
+        'description': 'Lunes siguiente al Año Nuevo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'MC',
+        'type': 'F'
+    },
+    {
         'date': '2023-01-06',
         'description': 'Epifanía del Señor',
         'locale': 'es-ES',
@@ -16,12 +56,180 @@
         'type': 'NRF'
     },
     {
+        'date': '2023-02-21',
+        'description': 'Martes de Carnaval',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'EX',
+        'type': 'V'
+    },
+    {
         'date': '2023-02-28',
         'description': 'Día de Andalucía',
         'locale': 'es-ES',
         'notes': '',
         'region': 'AN',
         'type': 'F'
+    },
+    {
+        'date': '2023-03-01',
+        'description': 'Día de las Illes Balears',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'IB',
+        'type': 'F'
+    },
+    {
+        'date': '2023-03-19',
+        'description': 'San José',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'MD',
+        'type': 'RF'
+    },
+    {
+        'date': '2023-03-20',
+        'description': 'Lunes siguiente a San José',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'MD',
+        'type': 'RF'
+    },
+    {
+        'date': '2023-04-06',
+        'description': 'Jueves Santo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AN',
+        'type': 'RV'
+    },
+    {
+        'date': '2023-04-06',
+        'description': 'Jueves Santo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AR',
+        'type': 'RV'
+    },
+    {
+        'date': '2023-04-06',
+        'description': 'Jueves Santo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AS',
+        'type': 'RV'
+    },
+    {
+        'date': '2023-04-06',
+        'description': 'Jueves Santo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CB',
+        'type': 'RV'
+    },
+    {
+        'date': '2023-04-06',
+        'description': 'Jueves Santo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CE',
+        'type': 'RV'
+    },
+    {
+        'date': '2023-04-06',
+        'description': 'Jueves Santo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CL',
+        'type': 'RV'
+    },
+    {
+        'date': '2023-04-06',
+        'description': 'Jueves Santo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CM',
+        'type': 'RV'
+    },
+    {
+        'date': '2023-04-06',
+        'description': 'Jueves Santo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CN',
+        'type': 'RV'
+    },
+    {
+        'date': '2023-04-06',
+        'description': 'Jueves Santo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'EX',
+        'type': 'RV'
+    },
+    {
+        'date': '2023-04-06',
+        'description': 'Jueves Santo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'GA',
+        'type': 'RV'
+    },
+    {
+        'date': '2023-04-06',
+        'description': 'Jueves Santo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'IB',
+        'type': 'RV'
+    },
+    {
+        'date': '2023-04-06',
+        'description': 'Jueves Santo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'MC',
+        'type': 'RV'
+    },
+    {
+        'date': '2023-04-06',
+        'description': 'Jueves Santo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'MD',
+        'type': 'RV'
+    },
+    {
+        'date': '2023-04-06',
+        'description': 'Jueves Santo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'ML',
+        'type': 'RV'
+    },
+    {
+        'date': '2023-04-06',
+        'description': 'Jueves Santo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'NC',
+        'type': 'RV'
+    },
+    {
+        'date': '2023-04-06',
+        'description': 'Jueves Santo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'PV',
+        'type': 'RV'
+    },
+    {
+        'date': '2023-04-06',
+        'description': 'Jueves Santo',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'VC',
+        'type': 'RV'
     },
     {
         'date': '2023-04-07',
@@ -40,6 +248,62 @@
         'type': 'NRV'
     },
     {
+        'date': '2023-04-10',
+        'description': 'Lunes de Pascua',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CT',
+        'type': 'RV'
+    },
+    {
+        'date': '2023-04-10',
+        'description': 'Lunes de Pascua',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'IB',
+        'type': 'RV'
+    },
+    {
+        'date': '2023-04-10',
+        'description': 'Lunes de Pascua',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'MC',
+        'type': 'RV'
+    },
+    {
+        'date': '2023-04-10',
+        'description': 'Lunes de Pascua',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'NC',
+        'type': 'RV'
+    },
+    {
+        'date': '2023-04-10',
+        'description': 'Lunes de Pascua',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'PV',
+        'type': 'RV'
+    },
+    {
+        'date': '2023-04-10',
+        'description': 'Lunes de Pascua',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'RI',
+        'type': 'RV'
+    },
+    {
+        'date': '2023-04-21',
+        'description': 'Fiesta del Eid Fitr',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'ML',
+        'type': 'RV'
+    },
+    {
         'date': '2023-04-23',
         'description': 'Fiesta de Castilla y León',
         'locale': 'es-ES',
@@ -50,6 +314,14 @@
     {
         'date': '2023-04-23',
         'description': 'San Jorge / Día de Aragón',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'AR',
+        'type': 'RF'
+    },
+    {
+        'date': '2023-04-24',
+        'description': 'Lunes siguiente a San Jorge / Día de Aragón',
         'locale': 'es-ES',
         'notes': '',
         'region': 'AR',
@@ -96,6 +368,14 @@
         'type': 'F'
     },
     {
+        'date': '2023-06-08',
+        'description': 'Corpus Christi',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CM',
+        'type': 'RV'
+    },
+    {
         'date': '2023-06-09',
         'description': 'Día de la Región de Murcia',
         'locale': 'es-ES',
@@ -112,11 +392,83 @@
         'type': 'F'
     },
     {
+        'date': '2023-06-24',
+        'description': 'San Juan',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CT',
+        'type': 'RF'
+    },
+    {
+        'date': '2023-06-24',
+        'description': 'San Juan',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'VC',
+        'type': 'RF'
+    },
+    {
+        'date': '2023-06-29',
+        'description': 'Fiesta del Sacrificio (Aid Al Adha)',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'ML',
+        'type': 'RV'
+    },
+    {
+        'date': '2023-06-29',
+        'description': 'Fiesta del Sacrificio (Eidul Adha)',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CE',
+        'type': 'RV'
+    },
+    {
+        'date': '2023-07-25',
+        'description': 'Santiago Apóstol / Día Nacional de Galicia',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CL',
+        'type': 'RF'
+    },
+    {
         'date': '2023-07-25',
         'description': 'Santiago Apóstol / Día Nacional de Galicia',
         'locale': 'es-ES',
         'notes': '',
         'region': 'GA',
+        'type': 'RF'
+    },
+    {
+        'date': '2023-07-25',
+        'description': 'Santiago Apóstol / Día Nacional de Galicia',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'NC',
+        'type': 'RF'
+    },
+    {
+        'date': '2023-07-25',
+        'description': 'Santiago Apóstol / Día Nacional de Galicia',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'PV',
+        'type': 'RF'
+    },
+    {
+        'date': '2023-07-28',
+        'description': 'Día de las Instituciones de Cantabria',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CB',
+        'type': 'F'
+    },
+    {
+        'date': '2023-08-05',
+        'description': 'Nuestra Señora de África',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CE',
         'type': 'RF'
     },
     {
@@ -126,6 +478,14 @@
         'notes': '',
         'region': '',
         'type': 'NRF'
+    },
+    {
+        'date': '2023-09-02',
+        'description': 'Día de Ceuta',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CE',
+        'type': 'F'
     },
     {
         'date': '2023-09-08',
@@ -150,6 +510,14 @@
         'notes': '',
         'region': 'CT',
         'type': 'F'
+    },
+    {
+        'date': '2023-09-15',
+        'description': 'La Bien Aparecida',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CB',
+        'type': 'RF'
     },
     {
         'date': '2023-10-09',
@@ -198,5 +566,13 @@
         'notes': '',
         'region': '',
         'type': 'NRF'
+    },
+    {
+        'date': '2023-12-26',
+        'description': 'San Esteban',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'CT',
+        'type': 'RF'
     }
 ]

@@ -26,6 +26,7 @@ Information taken from government websites around 2020-06
     2020: https://www.boe.es/eli/es/res/2019/10/03/(1)
     2021: https://www.boe.es/eli/es/res/2020/10/28/(1)
     2022: https://www.boe.es/eli/es/res/2021/10/14/(3)
+    2023: https://www.boe.es/eli/es/res/2022/10/07/(2)
 
 Regional governments
     [AN] https://www.juntadeandalucia.es/temas/trabajar/relaciones/calendario.html
@@ -58,6 +59,8 @@ class es_ES(Locale):
             regions = [""]
         elif self.year == 2017:
             regions = ["AN", "AR", "AS", "CL", "MC", "ML"]
+        elif self.year == 2023:
+            regions = ["AN", "AR", "AS", "CL", "MC"]
         else:
             return []
 
@@ -85,6 +88,18 @@ class es_ES(Locale):
             "NRF" if regions == [""] else "RF"
         ) for region in regions]
 
+    def holiday_martes_de_carnaval(self):
+        if self.year == 2023:
+            return [Holiday(
+                self.locale,
+                "EX",
+                SmartDayArrow(self.year, 2, 21),
+                "Martes de Carnaval",
+                "V"
+            )]
+        else:
+            return []
+
     def holiday_dia_de_andalucia(self):
         if self.year == 2016:
             date = SmartDayArrow(self.year, 2, 29)
@@ -102,7 +117,7 @@ class es_ES(Locale):
         )]
 
     def holiday_dia_de_las_illes_balears(self):
-        if self.year in [2011, 2012, 2013, 2014, 2016, 2017, 2018, 2019, 2021, 2022]:
+        if self.year in [2011, 2012, 2013, 2014, 2016, 2017, 2018, 2019, 2021, 2022, 2023]:
             return [Holiday(
                 self.locale,
                 "IB",
@@ -148,6 +163,8 @@ class es_ES(Locale):
             regions = ["EX", "GA", "MC", "MD", "NC", "PV", "VC"]
         elif self.year == 2022:
             regions = ["VC"]
+        elif self.year == 2023:
+            regions = ["MD"]
         else:
             return []
 
@@ -198,16 +215,18 @@ class es_ES(Locale):
     def holiday_lunes_siguiente_a_san_jose(self):
         if self.year in [2017]:
             regions = ["EX", "MD"]
-
-            return [Holiday(
-                self.locale,
-                region,
-                SmartDayArrow(self.year, 3, 19).shift_to_weekday("monday", True),
-                "Lunes siguiente a San José",
-                "NRF" if regions == [""] else "RF"
-            ) for region in regions]
+        elif self.year == 2023:
+            regions = ["MD"]
         else:
             return []
+
+        return [Holiday(
+            self.locale,
+            region,
+            SmartDayArrow(self.year, 3, 19).shift_to_weekday("monday", True),
+            "Lunes siguiente a San José",
+            "NRF" if regions == [""] else "RF"
+        ) for region in regions]
 
     def holiday_san_jorge__dia_de_aragon(self):
         if self.year == 2017:
@@ -220,6 +239,20 @@ class es_ES(Locale):
             "AR",
             date,
             "San Jorge / Día de Aragón",
+            "RF"
+        )]
+
+    def holiday_lunes_siguiente_a_san_jorge__dia_de_aragon(self):
+        if self.year == 2023:
+            date = SmartDayArrow(self.year, 4, 24)
+        else:
+            return []
+
+        return [Holiday(
+            self.locale,
+            "AR",
+            date,
+            "Lunes siguiente a San Jorge / Día de Aragón",
             "RF"
         )]
 
@@ -369,6 +402,8 @@ class es_ES(Locale):
             regions = ["CT", "VC"]
         elif self.year == 2022:
             regions = ["CT", "GA", "VC"]
+        elif self.year == 2023:
+            regions = ["CT", "VC"]
         else:
             return []
 
@@ -381,13 +416,20 @@ class es_ES(Locale):
         ) for region in regions]
 
     def holiday_santiago_apostol__dia_nacional_de_galicia(self):
+        if self.year == 2021:
+            return []
+        elif self.year == 2023:
+            regions = ["CL", "GA", "NC", "PV"]
+        else:
+            regions = ["GA"]
+
         return [Holiday(
             self.locale,
-            "GA",
+            region,
             SmartDayArrow(self.year, 7, 25),
             "Santiago Apóstol / Día Nacional de Galicia",
             "RF"
-        )] if self.year != 2021 else []
+        ) for region in regions]
 
     def holiday_santiago_apostol(self):
         if self.year == 2011:
@@ -422,7 +464,7 @@ class es_ES(Locale):
         ) for region in regions]
 
     def holiday_dia_de_las_instituciones_de_cantabria(self):
-        if self.year in [2011, 2016, 2017, 2018, 2020, 2021, 2022]:
+        if self.year in [2011, 2016, 2017, 2018, 2020, 2021, 2022, 2023]:
             return [Holiday(
                 self.locale,
                 "CB",
@@ -434,7 +476,7 @@ class es_ES(Locale):
             return []
 
     def holiday_nuestra_senora_de_africa(self):
-        if self.year == 2022:
+        if self.year in [2022, 2023]:
             return [Holiday(
                 self.locale,
                 "CE",
@@ -460,7 +502,7 @@ class es_ES(Locale):
         ) for region in regions]
 
     def holiday_dia_de_ceuta(self):
-        if self.year in [2016, 2017, 2019, 2020, 2021, 2022]:
+        if self.year in [2016, 2017, 2019, 2020, 2021, 2022, 2023]:
             return [Holiday(
                 self.locale,
                 "CE",
@@ -544,7 +586,7 @@ class es_ES(Locale):
             )]
 
     def holiday_la_bien_aparecida(self):
-        if self.year in [2011, 2012, 2014, 2014, 2015, 2016, 2017, 2018, 2020, 2021, 2022]:
+        if self.year in [2011, 2012, 2014, 2014, 2015, 2016, 2017, 2018, 2020, 2021, 2022, 2023]:
             return [Holiday(
                 self.locale,
                 "CB",
@@ -689,6 +731,8 @@ class es_ES(Locale):
             regions = ["CT", "IB"]
         elif self.year == 2022:
             regions = ["CT"]
+        elif self.year == 2023:
+            regions = ["CT"]
         else:
             return []
 
@@ -707,6 +751,8 @@ class es_ES(Locale):
             regions = ["AN", "AR", "AS", "CB", "CE", "CL", "CM", "CN", "EX", "GA", "IB", "MC", "MD", "ML", "NC", "PV", "RI"]
         elif self.year in [2018]:
             regions = ["AN", "AR", "AS", "CE", "CL", "CM", "CN", "EX", "GA", "IB", "MC", "MD", "ML", "NC", "PV", "RI"]
+        elif self.year in [2023]:
+            regions = ["AN", "AR", "AS", "CB", "CE", "CL", "CM", "CN", "EX", "GA", "IB", "MC", "MD", "ML", "NC", "PV", "VC"]
         else:
             return []
 
@@ -743,6 +789,8 @@ class es_ES(Locale):
             regions = ["CT", "IB", "NC", "PV", "RI", "VC"]
         elif self.year == 2022:
             regions = ["CN", "CT", "IB", "NC", "PV", "RI", "VC"]
+        elif self.year == 2023:
+            regions = ["CT", "IB", "MC", "NC", "PV", "RI"]
         else:
             return []
 
@@ -773,7 +821,7 @@ class es_ES(Locale):
         )]
 
     def holiday_corpus_christi(self):
-        if self.year in [2012, 2013, 2016, 2017, 2019, 2020, 2021, 2022]:
+        if self.year in [2012, 2013, 2016, 2017, 2019, 2020, 2021, 2022, 2023]:
             regions = ["CM"]
         elif self.year in [2011, 2014, 2015]:
             regions = ["CM", "MD"]
@@ -791,6 +839,8 @@ class es_ES(Locale):
     def holiday_eid_fitr(self):
         if self.year == 2022:
             date = SmartDayArrow(self.year, 5, 3)
+        elif self.year == 2023:
+            date = SmartDayArrow(self.year, 4, 21)
         else:
             return []
 
@@ -825,6 +875,8 @@ class es_ES(Locale):
             date = SmartDayArrow(self.year, 7, 20)
         elif self.year == 2022:
             date = SmartDayArrow(self.year, 7, 9)
+        elif self.year == 2023:
+            date = SmartDayArrow(self.year, 6, 29)
         else:
             return []
 
@@ -839,6 +891,8 @@ class es_ES(Locale):
     def holiday_aid_al_adha(self):
         if self.year == 2022:
             date = SmartDayArrow(self.year, 7, 11)
+        elif self.year == 2023:
+            date = SmartDayArrow(self.year, 6, 29)
         else:
             return []
 
