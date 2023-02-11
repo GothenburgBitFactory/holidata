@@ -88,7 +88,7 @@ if __name__ == '__main__':
 
     if args['--locale'] is not None:
         locale_id = args['--locale']
-        locale_regex = re.compile(r'^(?P<lang>[a-zA-Z]{2})-(?P<country>[a-zA-Z]{2})')
+        locale_regex = re.compile(r'^(?P<lang>[a-zA-Z]{2})[-_](?P<country>[a-zA-Z]{2})$')
         m = locale_regex.search(locale_id)
 
         if m is None:
