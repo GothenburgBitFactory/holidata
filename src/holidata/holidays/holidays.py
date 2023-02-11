@@ -45,6 +45,9 @@ class Country(object, metaclass=PluginMount):
 
         if self.default_lang is not None and self.default_lang not in self.languages:
             raise ValueError("Country '{0}' does not list language '{1}'!".format(self.__class__.__name__, self.default_lang))
+    @staticmethod
+    def get(identifier):
+         return Country.get_plugin(identifier, "id")
 
 
 class Locale(object, metaclass=PluginMount):
@@ -70,6 +73,10 @@ class Locale(object, metaclass=PluginMount):
             raise ValueError("Locale {0} does not provide its locale".format(self.__class__.__name__))
 
         self.year = year
+
+    @staticmethod
+    def get(identifier):
+         return Locale.get_plugin(identifier, "locale")
 
     @property
     def holidays(self):

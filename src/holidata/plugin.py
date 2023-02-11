@@ -16,3 +16,6 @@ class PluginMount(type):
             cls.plugins = []
         else:
             cls.plugins.append(cls)
+
+    def get_plugin(cls, identifier, attribute):
+        return next(iter([plugin for plugin in cls.plugins if getattr(plugin, attribute) == identifier]), None)
