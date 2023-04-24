@@ -1,3 +1,8 @@
+2023.04.0
+-    en-GB: Add bank holiday for the coronation of King Charles III
+-    Move creator functions to holidata module
+-    Print proper error messages for exceptions instead of stack traces
+-    Fix regex for locale
 2022.11.0
 -    es-ES: Implement 2023 holidays of Spain
 2022.9.0
