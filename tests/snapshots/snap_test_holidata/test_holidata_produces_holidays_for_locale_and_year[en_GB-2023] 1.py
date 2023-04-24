@@ -40,6 +40,14 @@
         'type': 'NV'
     },
     {
+        'date': '2023-05-08',
+        'description': 'Coronation of King Charles III',
+        'locale': 'en-GB',
+        'notes': '',
+        'region': '',
+        'type': 'NV'
+    },
+    {
         'date': '2023-05-29',
         'description': 'Spring Bank Holiday',
         'locale': 'en-GB',

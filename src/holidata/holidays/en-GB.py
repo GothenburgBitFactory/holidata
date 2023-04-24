@@ -106,6 +106,21 @@ class en_GB(Locale):
 
         return []
 
+    def holiday_coronation_charles_iii(self):
+        """
+        2023-05-08: Bank holiday for the coronation of King Charles III
+        """
+        if self.year == 2023:
+            return [Holiday(
+                locale=self.locale,
+                region="",
+                date=SmartDayArrow(self.year, 5, 8),
+                description="Coronation of King Charles III",
+                flags="NV",
+                notes="")]
+
+        return []
+
     def holiday_royal_jubilees(self):
         """
         2012-06-05: Queen's Diamond Jubilee
