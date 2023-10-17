@@ -32,13 +32,13 @@ setup(
     include_package_data=True,
     python_requires=">=3.7, <4",
     install_requires=[
-        "arrow >= 1.2.2",
+        "arrow >= 1.3.0",
         "docopt >= 0.6.2",
         "python-dateutil >= 2.8.2",
     ],
     extras_require={
         "test": [
-            "pytest >= 7.1.2",
+            "pytest >= 7.4.2",
             "snapshottest >= 0.6.0",
         ]
     },
