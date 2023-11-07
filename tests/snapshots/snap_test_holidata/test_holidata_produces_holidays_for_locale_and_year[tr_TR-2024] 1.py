@@ -1,0 +1,114 @@
+[
+    {
+        'date': '2024-01-01',
+        'description': 'Yılbaşı',
+        'locale': 'tr-TR',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2024-04-10',
+        'description': 'Ramazan Bayramı (1. Gün)',
+        'locale': 'tr-TR',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2024-04-11',
+        'description': 'Ramazan Bayramı (2. Gün)',
+        'locale': 'tr-TR',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2024-04-12',
+        'description': 'Ramazan Bayramı (3. Gün)',
+        'locale': 'tr-TR',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2024-04-23',
+        'description': 'Ulusal Egemenlik ve Çocuk Bayramı',
+        'locale': 'tr-TR',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2024-05-01',
+        'description': 'Emek ve Dayanışma Günü',
+        'locale': 'tr-TR',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2024-05-19',
+        'description': "Atatürk'ü Anma, Gençlik ve Spor Bayramı",
+        'locale': 'tr-TR',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2024-06-16',
+        'description': 'Kurban Bayramı (1. Gün)',
+        'locale': 'tr-TR',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2024-06-17',
+        'description': 'Kurban Bayramı (2. Gün)',
+        'locale': 'tr-TR',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2024-06-18',
+        'description': 'Kurban Bayramı (3. Gün)',
+        'locale': 'tr-TR',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2024-06-19',
+        'description': 'Kurban Bayramı (4. Gün)',
+        'locale': 'tr-TR',
+        'notes': '',
+        'region': '',
+        'type': 'NRV'
+    },
+    {
+        'date': '2024-07-15',
+        'description': 'Demokrasi ve Milli Birlik Günü',
+        'locale': 'tr-TR',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2024-08-30',
+        'description': 'Zafer Bayramı',
+        'locale': 'tr-TR',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    },
+    {
+        'date': '2024-10-29',
+        'description': 'Cumhuriyet Bayramı',
+        'locale': 'tr-TR',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
+    }
+]
