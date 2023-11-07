@@ -1,0 +1,66 @@
+[
+  {
+    "date": "2024-01-01",
+    "description": "New Year's Day",
+    "locale": "en-GB",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2024-03-29",
+    "description": "Good Friday",
+    "locale": "en-GB",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2024-04-01",
+    "description": "Easter Monday",
+    "locale": "en-GB",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2024-05-06",
+    "description": "Early May Bank Holiday",
+    "locale": "en-GB",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2024-05-27",
+    "description": "Spring Bank Holiday",
+    "locale": "en-GB",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2024-08-26",
+    "description": "August Bank Holiday",
+    "locale": "en-GB",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2024-12-25",
+    "description": "Christmas Day",
+    "locale": "en-GB",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2024-12-26",
+    "description": "Boxing Day",
+    "locale": "en-GB",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  }
+]

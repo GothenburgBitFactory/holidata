@@ -1,0 +1,74 @@
+[
+  {
+    "date": "2020-01-01",
+    "description": "New Year's Day",
+    "locale": "en-GB",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2020-04-10",
+    "description": "Good Friday",
+    "locale": "en-GB",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2020-04-13",
+    "description": "Easter Monday",
+    "locale": "en-GB",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2020-05-04",
+    "description": "Early May Bank Holiday",
+    "locale": "en-GB",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2020-05-25",
+    "description": "Spring Bank Holiday",
+    "locale": "en-GB",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2020-08-31",
+    "description": "August Bank Holiday",
+    "locale": "en-GB",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2020-12-25",
+    "description": "Christmas Day",
+    "locale": "en-GB",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2020-12-26",
+    "description": "Boxing Day",
+    "locale": "en-GB",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2020-12-28",
+    "description": "Boxing Day (observed)",
+    "locale": "en-GB",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  }
+]
