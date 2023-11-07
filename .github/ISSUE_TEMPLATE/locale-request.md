@@ -24,5 +24,5 @@ assignees: ''
 * If regional, what are the regions the holiday is observed in? (Note: currently only regions defined in ISO_3166-2 are supported)
 * Is it a fixed or variable date?
 * If fixed, provide the date in format `MM-DD`
-* If a holiday has a variable date: What is the algorithm to calculate it (e.g. `nth <weekday>/<day> in <month>`,...? If it depends on the easter date: Is it the western or orthodox easter date?
+* If a holiday has a variable date: What is the algorithm to calculate it (e.g. `nth <weekday>/<day> in <month>`,...)? If it depends on the easter date: Is it the western or orthodox easter date?
 * If the holiday is proclaimed by the government: Can you provide the source?
