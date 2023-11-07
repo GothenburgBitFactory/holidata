@@ -65,4 +65,4 @@ if __name__ == "__main__":
         print(Holidata(country=country_id, language=lang_id, year=args["--year"], output=args["--output"]), end="")
 
     except ValueError as e:
-        sys.exit(e)
+        sys.exit(str(e))
