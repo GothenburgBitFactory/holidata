@@ -14,7 +14,7 @@ class Emitter(object, metaclass=PluginMount):
 
     @staticmethod
     def get(identifier):
-         return Emitter.get_plugin(identifier, "type")
+        return Emitter.get_plugin(identifier, "type")
 
     def output(self, locale):
         pass

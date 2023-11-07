@@ -49,7 +49,7 @@ class Country(object, metaclass=PluginMount):
 
     @staticmethod
     def get(identifier):
-         return Country.get_plugin(identifier, "id")
+        return Country.get_plugin(identifier, "id")
 
 
 class Locale(object, metaclass=PluginMount):
@@ -78,7 +78,7 @@ class Locale(object, metaclass=PluginMount):
 
     @staticmethod
     def get(identifier):
-         return Locale.get_plugin(identifier, "locale")
+        return Locale.get_plugin(identifier, "locale")
 
     @property
     def holidays(self):

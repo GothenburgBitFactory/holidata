@@ -56,24 +56,22 @@ class fr_CA(Locale):
 
     def holiday_journee_nationale_des_patriotes(self):
         return [Holiday(
-                locale=self.locale,
-                region="QC",
-                date=SmartDayArrow(self.year, 5, 25).shift_to_weekday(
-                            "monday", order=1, reverse=True, including=False),
-                description="Journée Nationale des Patriotes",
-                flags="V",
-                notes="")]
+            locale=self.locale,
+            region="QC",
+            date=SmartDayArrow(self.year, 5, 25).shift_to_weekday(
+                "monday", order=1, reverse=True, including=False),
+            description="Journée Nationale des Patriotes",
+            flags="V",
+            notes="")]
 
     def holiday_fete_de_la_reine_victoria(self):
         return [Holiday(
-                locale=self.locale,
-                region=region,
-                date=SmartDayArrow(self.year, 5, 25).shift_to_weekday(
-                            "monday", order=1, reverse=True, including=False),
-                description="Fête de la Reine Victoria",
-                flags="V",
-                notes=""
-                ) for region in
-                ["AB", "BC", "MB", "NS", "ON", "SK", "NT", "NU", "YT"]
-            ]
-
+            locale=self.locale,
+            region=region,
+            date=SmartDayArrow(self.year, 5, 25).shift_to_weekday(
+                "monday", order=1, reverse=True, including=False),
+            description="Fête de la Reine Victoria",
+            flags="V",
+            notes=""
+        ) for region in ["AB", "BC", "MB", "NS", "ON", "SK", "NT", "NU", "YT"]
+        ]
