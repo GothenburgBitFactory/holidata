@@ -1,6 +1,7 @@
 from .holidays import *
 from .emitters import Emitter
 
+
 def get_country_for(identifier):
     country_class = Country.get(identifier)
 

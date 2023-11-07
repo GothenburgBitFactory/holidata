@@ -9,6 +9,7 @@ LEY 51 DE 1983
 http://www.suin-juriscol.gov.co/viewDocument.asp?id=1605519
 """
 
+
 class es_CO(Locale):
     """
     01-01: [NF] Año Nuevo

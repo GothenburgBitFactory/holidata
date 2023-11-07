@@ -4,6 +4,7 @@ from dateutil.easter import EASTER_WESTERN
 from holidata.utils import SmartDayArrow
 from .holidays import Holiday, Locale
 
+
 #
 # Information taken from various government websites around 2020-04-16
 #   https://www.canada.ca/fr/emploi-developpement-social/services/normes-travail/rapports/jours-feries.html
@@ -62,7 +63,6 @@ class fr_CA(Locale):
                 description="Journée Nationale des Patriotes",
                 flags="V",
                 notes="")]
-
 
     def holiday_fete_de_la_reine_victoria(self):
         return [Holiday(

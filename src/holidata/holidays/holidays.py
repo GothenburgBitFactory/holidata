@@ -8,6 +8,7 @@ class Holiday(object):
     """
     A sheer container for one holiday.
     """
+
     def __init__(self, locale, region, date, description, flags="", notes=""):
         self.locale = locale
         self.region = region
@@ -45,6 +46,7 @@ class Country(object, metaclass=PluginMount):
 
         if self.default_lang is not None and self.default_lang not in self.languages:
             raise ValueError("Country '{0}' does not list language '{1}'!".format(self.__class__.__name__, self.default_lang))
+
     @staticmethod
     def get(identifier):
          return Country.get_plugin(identifier, "id")
