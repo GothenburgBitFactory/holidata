@@ -25,7 +25,7 @@ class nl_NL(Locale):
     easter_type = EASTER_WESTERN
 
     def holiday_koningsdag(self):
-        """04-27 or saturday before if it falls on sunday: [NF] Koninginnedag/Koningsdag """
+        """04-27 or saturday before if it falls on sunday: [NF] Koninginnedag/Koningsdag"""
         if self.year < 2014:
             date = SmartDayArrow(self.year, 4, 30)
             description = "Koninginnedag"
