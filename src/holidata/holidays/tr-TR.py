@@ -92,7 +92,7 @@ class tr_TR(Locale):
             self.locale,
             "",
             reference.shift(days=i),
-            "Ramazan Bayramı ({}. Gün)".format(i),
+            f"Ramazan Bayramı ({i}. Gün)",
             "NRV"
         ) for i in [1, 2, 3]]
 

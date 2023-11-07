@@ -39,13 +39,13 @@ class Country(object, metaclass=PluginMount):
 
     def __init__(self):
         if self.id is None:
-            raise ValueError("Country '{0}' does not provide its id!".format(self.__class__.__name__))
+            raise ValueError(f"Country '{self.__class__.__name__}' does not provide its id!")
 
         if not self.languages:
-            raise ValueError("Country '{0}' does not list languages!".format(self.__class__.__name__))
+            raise ValueError(f"Country '{self.__class__.__name__}' does not list any languages!")
 
         if self.default_lang is not None and self.default_lang not in self.languages:
-            raise ValueError("Country '{0}' does not list language '{1}'!".format(self.__class__.__name__, self.default_lang))
+            raise ValueError(f"Country '{self.__class__.__name__}' does not list language '{self.default_lang}'!")
 
     @staticmethod
     def get(identifier):
@@ -72,7 +72,7 @@ class Locale(object, metaclass=PluginMount):
 
     def __init__(self, year):
         if self.locale is None:
-            raise ValueError("Locale {0} does not provide its locale".format(self.__class__.__name__))
+            raise ValueError(f"Locale {self.__class__.__name__} does not provide its locale")
 
         self.year = year
 
@@ -95,7 +95,7 @@ class Locale(object, metaclass=PluginMount):
             holidata = self._parse_holidata(line)
 
             if holidata is None:
-                print("Following line could not be processed: '{}'".format(line))
+                print(f"Following line could not be processed: '{line}'")
                 continue
 
             for region in holidata["regions"]:
@@ -147,7 +147,7 @@ class Locale(object, metaclass=PluginMount):
 
     def _date_from_easter_reference(self, m):
         if self.easter_type is None:
-            raise ValueError("Locale {0} does not provide its easter type (WESTERN|ORTHODOX)".format(self.__class__.__name__))
+            raise ValueError(f"Locale {self.__class__.__name__} does not provide its easter type (WESTERN|ORTHODOX)")
 
         return easter(self.year, self.easter_type) \
             .shift(days=int((m.group("days")) if m.group("days") is not None else 0) * (1 if m.group("direction") == "after" else -1))

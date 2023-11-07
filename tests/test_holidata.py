@@ -19,7 +19,7 @@ def locale(request, year):
 
 
 def test_holidata_produces_holidays_for_locale_and_year(snapshot, tmpdir, locale):
-    temp_file = tmpdir.join("{}.{}.py".format(locale.locale, locale.year))
+    temp_file = tmpdir.join(f"{locale.locale}.{locale.year}.py")
 
     export_data = [h.as_dict() for h in locale.holidays]
     export_data.sort(key=lambda x: x["date"])

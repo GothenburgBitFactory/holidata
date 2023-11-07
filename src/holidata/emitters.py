@@ -10,7 +10,7 @@ class Emitter(object, metaclass=PluginMount):
 
     def __init__(self):
         if self.type is None:
-            raise ValueError("Emitter {0} does not provide its type".format(self.__class__.__name__))
+            raise ValueError(f"Emitter {self.__class__.__name__} does not provide its type!")
 
     @staticmethod
     def get(identifier):
@@ -63,9 +63,9 @@ class YamlEmitter(Emitter):
                 value = holiday[key]
 
                 if value is not None and value != "":
-                    output += "    {}: {}\n".format(key, value)
+                    output += f"    {key}: {value}\n"
                 else:
-                    output += "    {}:\n".format(key)
+                    output += f"    {key}:\n"
 
         output += "...\n"
         return output
@@ -86,7 +86,7 @@ class XmlEmitter(Emitter):
 
             for key in ["locale", "region", "date", "description", "type", "notes"]:
                 value = holiday[key] if key in holiday else ""
-                output += "    <{0}>{1}</{0}>\n".format(key, value if value is not None else "")
+                output += f"    <{key}>{value if value is not None else ''}</{key}>\n"
 
             output += "  </holiday>\n"
 

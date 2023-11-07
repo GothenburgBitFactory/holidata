@@ -68,14 +68,14 @@ class en_ZA(Locale):
             return [
                 Holiday(
                     locale=self.locale,
-                    region='',
+                    region="",
                     date=original_date,
                     description=description,
                     flags="NF",
                     notes=""),
                 Holiday(
                     locale=self.locale,
-                    region='',
+                    region="",
                     date=supplement_date,
                     description=description + " (Supplement)",
                     flags="NF",

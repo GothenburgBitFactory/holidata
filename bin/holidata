@@ -39,30 +39,30 @@ from docopt import docopt
 
 from holidata import Holidata
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     args = docopt(__doc__)
 
     try:
-        if args['--locale'] is not None:
-            locale_id = args['--locale']
-            locale_regex = re.compile(r'^(?P<lang>[a-zA-Z]{2})[-_](?P<country>[a-zA-Z]{2})$')
+        if args["--locale"] is not None:
+            locale_id = args["--locale"]
+            locale_regex = re.compile(r"^(?P<lang>[a-zA-Z]{2})[-_](?P<country>[a-zA-Z]{2})$")
             m = locale_regex.search(locale_id)
 
             if m is None:
-                raise ValueError("'{}' is not a valid locale!".format(locale_id))
+                raise ValueError(f"'{locale_id}' is not a valid locale!")
 
-            country_id = m.group('country').upper()
-            lang_id = m.group('lang').lower()
+            country_id = m.group("country").upper()
+            lang_id = m.group("lang").lower()
 
-        elif args['--country'] is not None:
-            country_id = args['--country'].upper()
-            lang_id = args['--lang']
+        elif args["--country"] is not None:
+            country_id = args["--country"].upper()
+            lang_id = args["--lang"]
 
         else:
             # When neither '--locale' nor '--country' are given, docopt prints usage
             sys.exit(1)
 
-        print(Holidata(country=country_id, language=lang_id, year=args['--year'], output=args['--output']), end="")
+        print(Holidata(country=country_id, language=lang_id, year=args["--year"], output=args["--output"]), end="")
 
     except ValueError as e:
         sys.exit(e)
