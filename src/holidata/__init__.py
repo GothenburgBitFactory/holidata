@@ -47,7 +47,7 @@ def create_emitter_for(identifier):
 def parse_year(year):
     try:
         return int(year)
-    except:
+    except ValueError:
         raise ValueError(f"Invalid year '{year}'! Has to be an integer.")
 
 
