@@ -1,0 +1,114 @@
+[
+  {
+    "date": "2011-01-01",
+    "description": "Año Neuvo",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2011-01-17",
+    "description": "Cumpleaños de Martin Luther King, Jr.",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2011-02-21",
+    "description": "Día del Presidente",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2011-04-18",
+    "description": "Día del Patriota",
+    "locale": "es-US",
+    "notes": "",
+    "region": "MA",
+    "type": "V"
+  },
+  {
+    "date": "2011-04-18",
+    "description": "Día del Patriota",
+    "locale": "es-US",
+    "notes": "",
+    "region": "ME",
+    "type": "V"
+  },
+  {
+    "date": "2011-05-30",
+    "description": "Día de los Caídos",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2011-07-04",
+    "description": "Día de la Independiencia",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2011-09-05",
+    "description": "Día del Trabajo",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2011-10-10",
+    "description": "Día de Columbus",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2011-11-11",
+    "description": "Día de los Veteranos",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2011-11-24",
+    "description": "Día de Acción de Gracias",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2011-11-25",
+    "description": "Día después de Acción de Gracias",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2011-12-24",
+    "description": "Nochebuena",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2011-12-25",
+    "description": "Navidad",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  }
+]

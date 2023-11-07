@@ -1,0 +1,106 @@
+[
+  {
+    "date": "2020-01-01",
+    "description": "Nyårsdagen",
+    "locale": "sv-FI",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2020-01-06",
+    "description": "Trettondedagen",
+    "locale": "sv-FI",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2020-04-10",
+    "description": "Långfredagen",
+    "locale": "sv-FI",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2020-04-12",
+    "description": "Påskdagen",
+    "locale": "sv-FI",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2020-04-13",
+    "description": "Annandag påsk",
+    "locale": "sv-FI",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2020-05-01",
+    "description": "Första maj",
+    "locale": "sv-FI",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2020-05-21",
+    "description": "Kristi himmelfärdsdag",
+    "locale": "sv-FI",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2020-05-31",
+    "description": "Pingst",
+    "locale": "sv-FI",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2020-06-20",
+    "description": "Midsommardagen",
+    "locale": "sv-FI",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2020-10-31",
+    "description": "Alla helgons dag",
+    "locale": "sv-FI",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2020-12-06",
+    "description": "Självständighetsdagen",
+    "locale": "sv-FI",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2020-12-25",
+    "description": "Juldagen",
+    "locale": "sv-FI",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2020-12-26",
+    "description": "Annandag jul",
+    "locale": "sv-FI",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  }
+]

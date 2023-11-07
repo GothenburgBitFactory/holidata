@@ -25,6 +25,7 @@ setup(
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
         "Programming Language :: Python :: 3 :: Only",
     ],
     keywords="holiday, calendar",
@@ -39,7 +40,7 @@ setup(
     extras_require={
         "test": [
             "pytest >= 7.4.2",
-            "snapshottest >= 0.6.0",
+            "syrupy >= 4.6.1",
         ]
     },
     scripts=["bin/holidata"],
