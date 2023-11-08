@@ -27,6 +27,7 @@ Information taken from government websites around 2020-06
     2021: https://www.boe.es/eli/es/res/2020/10/28/(1)
     2022: https://www.boe.es/eli/es/res/2021/10/14/(3)
     2023: https://www.boe.es/eli/es/res/2022/10/07/(2)
+    2024: https://www.boe.es/eli/es/res/2023/10/23/(1)
 
 Regional governments
     [AN] https://www.juntadeandalucia.es/temas/trabajar/relaciones/calendario.html
@@ -89,11 +90,11 @@ class es_ES(Locale):
         ) for region in regions]
 
     def holiday_martes_de_carnaval(self):
-        if self.year == 2023:
+        if self.year in [2023, 2024]:
             return [Holiday(
                 self.locale,
                 "EX",
-                SmartDayArrow(self.year, 2, 21),
+                easter(self.year, self.easter_type).shift(days=-47),
                 "Martes de Carnaval",
                 "V"
             )]
@@ -117,7 +118,7 @@ class es_ES(Locale):
         )]
 
     def holiday_dia_de_las_illes_balears(self):
-        if self.year in [2011, 2012, 2013, 2014, 2016, 2017, 2018, 2019, 2021, 2022, 2023]:
+        if self.year in [2011, 2012, 2013, 2014, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024]:
             return [Holiday(
                 self.locale,
                 "IB",
@@ -165,6 +166,8 @@ class es_ES(Locale):
             regions = ["VC"]
         elif self.year == 2023:
             regions = ["MD"]
+        elif self.year == 2024:
+            regions = ["MC", "VC"]
         else:
             return []
 
@@ -349,7 +352,7 @@ class es_ES(Locale):
             )]
 
     def holiday_dia_de_la_region_de_murcia(self):
-        if self.year == 2013:
+        if self.year in [2013, 2024]:
             return []
         elif self.year == 2019:
             date = SmartDayArrow(self.year, 6, 10)
@@ -381,6 +384,19 @@ class es_ES(Locale):
         else:
             return []
 
+    def holiday_lunes_siguiente_al_dia_de_la_rioja(self):
+        if self.year == 2024:
+
+            return [Holiday(
+                self.locale,
+                "RI",
+                SmartDayArrow(self.year, 6, 10),
+                "Lunes siguiente al Día de La Rioja",
+                "F"
+            )]
+        else:
+            return []
+
     def holiday_san_juan(self):
         if self.year == 2011:
             regions = ["CT"]
@@ -404,6 +420,8 @@ class es_ES(Locale):
             regions = ["CT", "GA", "VC"]
         elif self.year == 2023:
             regions = ["CT", "VC"]
+        elif self.year == 2024:
+            regions = ["CT", "VC"]
         else:
             return []
 
@@ -420,6 +438,8 @@ class es_ES(Locale):
             return []
         elif self.year == 2023:
             regions = ["CL", "GA", "NC", "PV"]
+        elif self.year == 2024:
+            regions = ["CB", "GA", "MD", "NC", "PV"]
         else:
             regions = ["GA"]
 
@@ -476,7 +496,7 @@ class es_ES(Locale):
             return []
 
     def holiday_nuestra_senora_de_africa(self):
-        if self.year in [2022, 2023]:
+        if self.year in [2022, 2023, 2024]:
             return [Holiday(
                 self.locale,
                 "CE",
@@ -538,7 +558,7 @@ class es_ES(Locale):
             )]
 
     def holiday_lunes_siguiente_al_dia_de_asturias(self):
-        if self.year in [2013, 2019]:
+        if self.year in [2013, 2019, 2024]:
             return [Holiday(
                 self.locale,
                 "AS",
@@ -550,7 +570,7 @@ class es_ES(Locale):
             return []
 
     def holiday_dia_de_extremadura(self):
-        if self.year in [2019]:
+        if self.year in [2019, 2024]:
             return []
         else:
             return [Holiday(
@@ -683,6 +703,8 @@ class es_ES(Locale):
             regions = ["AN", "AR", "AS", "CE", "CL", "EX", "MC", "RI"]
         elif self.year == 2019:
             regions = ["AN", "AR", "AS", "CB", "CL", "EX", "MD", "ML", "RI"]
+        elif self.year == 2024:
+            regions = ["AN", "AR", "AS", "CL", "EX", "MC", "ML"]
         else:
             return []
 
@@ -733,6 +755,8 @@ class es_ES(Locale):
             regions = ["CT"]
         elif self.year == 2023:
             regions = ["CT"]
+        elif self.year == 2024:
+            regions = ["CT"]
         else:
             return []
 
@@ -747,7 +771,7 @@ class es_ES(Locale):
     def holiday_jueves_santo(self):
         if self.year in [2011, 2016, 2017, 2022]:
             regions = ["AN", "AR", "AS", "CB", "CE", "CL", "CM", "CN", "EX", "GA", "IB", "MC", "MD", "ML", "NC", "PV", "RI", "VC"]
-        elif self.year in [2012, 2013, 2014, 2015, 2019, 2020, 2021]:
+        elif self.year in [2012, 2013, 2014, 2015, 2019, 2020, 2021, 2024]:
             regions = ["AN", "AR", "AS", "CB", "CE", "CL", "CM", "CN", "EX", "GA", "IB", "MC", "MD", "ML", "NC", "PV", "RI"]
         elif self.year in [2018]:
             regions = ["AN", "AR", "AS", "CE", "CL", "CM", "CN", "EX", "GA", "IB", "MC", "MD", "ML", "NC", "PV", "RI"]
@@ -791,6 +815,8 @@ class es_ES(Locale):
             regions = ["CN", "CT", "IB", "NC", "PV", "RI", "VC"]
         elif self.year == 2023:
             regions = ["CT", "IB", "MC", "NC", "PV", "RI"]
+        elif self.year == 2024:
+            regions = ["CB", "CT", "IB", "NC", "PV", "RI", "VC"]
         else:
             return []
 
@@ -821,7 +847,7 @@ class es_ES(Locale):
         )]
 
     def holiday_corpus_christi(self):
-        if self.year in [2012, 2013, 2016, 2017, 2019, 2020, 2021, 2022, 2023]:
+        if self.year in [2012, 2013, 2016, 2017, 2019, 2020, 2021, 2022, 2023, 2024]:
             regions = ["CM"]
         elif self.year in [2011, 2014, 2015]:
             regions = ["CM", "MD"]
@@ -877,6 +903,8 @@ class es_ES(Locale):
             date = SmartDayArrow(self.year, 7, 9)
         elif self.year == 2023:
             date = SmartDayArrow(self.year, 6, 29)
+        elif self.year == 2024:
+            date = SmartDayArrow(self.year, 6, 17)
         else:
             return []
 
@@ -893,6 +921,8 @@ class es_ES(Locale):
             date = SmartDayArrow(self.year, 7, 11)
         elif self.year == 2023:
             date = SmartDayArrow(self.year, 6, 29)
+        elif self.year == 2024:
+            date = SmartDayArrow(self.year, 6, 17)
         else:
             return []
 
