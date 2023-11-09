@@ -9,7 +9,7 @@ long_description = (here / "README.md").read_text(encoding="utf-8")
 
 setup(
     name="holidata",
-    version="2023.04.0",
+    version="2023.11.0",
     description="Holidata is a utility for algorithmically producing holidays for a given locale and year",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -30,7 +30,7 @@ setup(
     package_dir={"": "src"},
     packages=find_packages(where="src"),
     include_package_data=True,
-    python_requires=">=3.7, <4",
+    python_requires=">=3.8, <4",
     install_requires=[
         "arrow >= 1.3.0",
         "docopt >= 0.6.2",

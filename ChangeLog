@@ -1,3 +1,7 @@
+2023.11.0
+-    es-ES: Implement 2024 holidays of Spain
+-    Drop support for Python 3.7
+-    Use double quotes instead of single quotes and f-strings
 2023.04.0
 -    en-GB: Add bank holiday for the coronation of King Charles III
 -    Move creator functions to holidata module
