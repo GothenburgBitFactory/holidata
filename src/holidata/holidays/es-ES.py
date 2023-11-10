@@ -98,8 +98,8 @@ class es_ES(Locale):
                 "Martes de Carnaval",
                 "V"
             )]
-        else:
-            return []
+
+        return []
 
     def holiday_dia_de_andalucia(self):
         if self.year == 2016:
@@ -126,8 +126,8 @@ class es_ES(Locale):
                 "Día de las Illes Balears",
                 "F"
             )]
-        else:
-            return []
+
+        return []
 
     def holiday_estatuto_de_autonomia_de_la_ciudad_de_melilla(self):
         if self.year in [2020, 2021]:
@@ -138,8 +138,8 @@ class es_ES(Locale):
                 "Estatuto de Autonomía de la Ciudad de Melilla",
                 "F"
             )]
-        else:
-            return []
+
+        return []
 
     def holiday_san_jose(self):
         if self.year == 2011:
@@ -188,8 +188,8 @@ class es_ES(Locale):
                 "Lunes de Fallas",
                 "F"
             )]
-        else:
-            return []
+
+        return []
 
     def holiday_traslado_de_san_jose(self):
         if self.year == 2013:
@@ -200,8 +200,8 @@ class es_ES(Locale):
                 "Traslado de San José",
                 "F"
             )]
-        else:
-            return []
+
+        return []
 
     def holiday_dia_siguente_a_san_jose(self):
         if self.year == 2015:
@@ -212,8 +212,8 @@ class es_ES(Locale):
                 "Día siguiente a San José",
                 "RF"
             )]
-        else:
-            return []
+
+        return []
 
     def holiday_lunes_siguiente_a_san_jose(self):
         if self.year in [2017]:
@@ -394,8 +394,8 @@ class es_ES(Locale):
                 "Lunes siguiente al Día de La Rioja",
                 "F"
             )]
-        else:
-            return []
+
+        return []
 
     def holiday_san_juan(self):
         if self.year == 2011:

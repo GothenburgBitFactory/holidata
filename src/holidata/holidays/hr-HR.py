@@ -34,5 +34,5 @@ class hr_HR(Locale):
                 "Dan sjećanja na žrtve Domovinskog rata i Dan sjećanja na žrtvu Vukovara i Škabrnje",
                 "NF"
             )]
-        else:
-            return []
+
+        return []

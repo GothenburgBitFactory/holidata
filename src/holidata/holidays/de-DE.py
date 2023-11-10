@@ -77,8 +77,8 @@ class de_DE(Locale):
                 "Internationaler Frauentag",
                 "F"
             )]
-        else:
-            return []
+
+        return []
 
     def holiday_tag_der_befreiung(self):
         """
@@ -95,5 +95,5 @@ class de_DE(Locale):
                 "75. Jahrestag der Befreiung vom Nationalsozialismus und der Beendigung des Zweiten Weltkrieges in Europa",
                 "F"
             )]
-        else:
-            return []
+
+        return []

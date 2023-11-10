@@ -44,8 +44,8 @@ class hu_HU(Locale):
                 "Nagypéntek",
                 "NRV"
             )]
-        else:
-            return []
+
+        return []
 
     def holiday_munkaszuneti_nap(self):
         """
