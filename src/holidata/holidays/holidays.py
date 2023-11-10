@@ -170,7 +170,7 @@ class HolidayGenerator(object):
 
     def _date_from_easter_reference(self, m, year):
         if self.easter_type is None:
-            raise ValueError(f"Locale {self.__class__.__name__} does not provide its easter type (WESTERN|ORTHODOX)")
+            raise ValueError(f"Country '{self.country_id}' does not provide its easter type! Should be one of [WESTERN|ORTHODOX].")
 
         return easter(year, self.easter_type).shift(
             days=int((m.group("days")) if m.group("days") is not None else 0) * (1 if m.group("direction") == "after" else -1)

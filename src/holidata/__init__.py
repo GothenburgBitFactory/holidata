@@ -6,7 +6,7 @@ def get_country_for(identifier):
     country_class = Country.get(identifier)
 
     if not country_class:
-        raise ValueError(f"No plugin found for country id '{identifier}'!")
+        raise ValueError(f"No country found for id '{identifier}'!")
 
     return country_class()
 
