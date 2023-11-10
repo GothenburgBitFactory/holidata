@@ -1,3 +1,4 @@
+from .DE import *
 from .ES import *
 from .holidays import Country
 
@@ -11,7 +12,6 @@ __all__ = [
     "CH",
     "CO",
     "CZ",
-    "DE",
     "DK",
     "EE",
     "FI",

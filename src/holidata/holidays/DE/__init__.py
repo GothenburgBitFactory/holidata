@@ -1,7 +1,11 @@
 from dateutil.easter import EASTER_WESTERN
 
+from holidata.holidays.holidays import Country
 from holidata.utils import SmartDayArrow
-from .holidays import Country
+
+__all__ = [
+    "DE",
+]
 
 
 class DE(Country):
