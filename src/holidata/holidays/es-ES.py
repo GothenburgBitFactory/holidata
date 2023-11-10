@@ -386,7 +386,6 @@ class es_ES(Locale):
 
     def holiday_lunes_siguiente_al_dia_de_la_rioja(self):
         if self.year == 2024:
-
             return [Holiday(
                 self.locale,
                 "RI",

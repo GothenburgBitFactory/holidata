@@ -34,7 +34,7 @@ class cs_CZ(Locale):
     def holiday_velky_patek(self):
         """
         2 days before Easter: [NRV] Velký pátek
-        since 2016
+        Since 2016
         """
         if self.year >= 2016:
             return [Holiday(
