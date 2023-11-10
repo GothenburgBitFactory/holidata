@@ -152,7 +152,7 @@ class es_ES(Locale):
             regions = ["MC", "ML", "NC", "VC"]
         elif self.year == 2015:
             regions = ["MC", "MD", "ML", "NC", "PV", "VC"]
-        elif self.year in [2016]:
+        elif self.year == 2016:
             regions = ["MC", "ML", "VC"]
         elif self.year == 2018:
             regions = ["MC", "VC"]
@@ -216,7 +216,7 @@ class es_ES(Locale):
         return []
 
     def holiday_lunes_siguiente_a_san_jose(self):
-        if self.year in [2017]:
+        if self.year == 2017:
             regions = ["EX", "MD"]
         elif self.year == 2023:
             regions = ["MD"]
