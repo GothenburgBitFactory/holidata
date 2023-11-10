@@ -62,7 +62,7 @@ if __name__ == "__main__":
             # When neither '--locale' nor '--country' are given, docopt prints usage
             sys.exit(1)
 
-        print(Holidata(country=country_id, language=lang_id, year=args["--year"], output=args["--output"]), end="")
+        print(Holidata(country=country_id, language=lang_id, year=args["--year"]).formatted_as(args["--output"]), end="")
 
     except ValueError as e:
         sys.exit(str(e))

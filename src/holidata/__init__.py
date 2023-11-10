@@ -53,11 +53,15 @@ class Holidata:
     emitter = None
     holidays = None
 
-    def __init__(self, country=None, language=None, year=None, output=None):
+    def __init__(self, country=None, language=None, year=None):
         year = parse_year(year)
         locale = create_locale_for(country_id=country, lang_id=language)
         self.holidays = locale.get_holidays_of(year)
-        self.emitter = create_emitter_for(output)
 
     def __str__(self):
         return self.emitter.output(self.holidays)
+
+    def formatted_as(self, format_id):
+        self.emitter = create_emitter_for(format_id)
+
+        return self
