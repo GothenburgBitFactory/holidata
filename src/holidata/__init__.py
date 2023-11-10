@@ -11,16 +11,16 @@ def get_country_for(identifier):
     return country_class()
 
 
-def get_locale_class_for(identifier):
+def get_locale_for(identifier):
     locale_class = Locale.get(identifier)
 
     if not locale_class:
         raise ValueError(f"No plugin found for locale '{identifier}'!")
 
-    return locale_class
+    return locale_class()
 
 
-def create_locale_for(country_id=None, lang_id=None, year=None):
+def create_locale_for(country_id=None, lang_id=None):
     country_class = get_country_for(country_id)
 
     if lang_id is not None and lang_id.lower() not in country_class.languages:
@@ -30,9 +30,7 @@ def create_locale_for(country_id=None, lang_id=None, year=None):
     elif lang_id is None:
         raise ValueError(f"Country '{country_id}' has no default language specified! Choose one of [{', '.join(country_class.languages)}].")
 
-    locale_class = get_locale_class_for(f"{lang_id}-{country_id}")
-
-    return locale_class(year)
+    return get_locale_for(f"{lang_id}-{country_id}")
 
 
 def create_emitter_for(identifier):
@@ -52,12 +50,14 @@ def parse_year(year):
 
 
 class Holidata:
-    locale = None
     emitter = None
+    holidays = None
 
     def __init__(self, country=None, language=None, year=None, output=None):
-        self.locale = create_locale_for(country_id=country, lang_id=language, year=parse_year(year))
+        year = parse_year(year)
+        locale = create_locale_for(country_id=country, lang_id=language)
+        self.holidays = locale.get_holidays_of(year)
         self.emitter = create_emitter_for(output)
 
     def __str__(self):
-        return self.emitter.output(self.locale)
+        return self.emitter.output(self.holidays)

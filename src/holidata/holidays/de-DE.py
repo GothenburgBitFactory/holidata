@@ -29,27 +29,27 @@ class de_DE(Locale):
     locale = "de-DE"
     easter_type = EASTER_WESTERN
 
-    def holiday_buss_und_bettag(self):
+    def holiday_buss_und_bettag(self, year):
         """11 days before 4. sunday before 12-25: [SN] [RV] Buß- und Bettag"""
 
         return [Holiday(
             self.locale,
             "SN",
-            SmartDayArrow(self.year, 12, 25).shift_to_weekday("sunday", order=4, reverse=True).shift(days=-11),
+            SmartDayArrow(year, 12, 25).shift_to_weekday("sunday", order=4, reverse=True).shift(days=-11),
             "Buß- und Bettag",
             "RV"
         )]
 
-    def holiday_reformationstag(self):
+    def holiday_reformationstag(self, year):
         """
         before 2018: 10-31: [BB, MV, SN, ST, TH] [RF] Reformationstag
         since 2018:  10-31: [BB, BH, HH, MV, NI, SH, SN, ST, TH] [RF] Reformationstag
         2017:        10-31: [NRF] Reformationstag (national holiday because of 500th anniversary)
 
         """
-        if self.year == 2017:
+        if year == 2017:
             regions = [""]
-        elif self.year < 2018:
+        elif year < 2018:
             regions = ["BB", "MV", "SN", "ST", "TH"]
         else:
             regions = ["BB", "BH", "HH", "MV", "NI", "SH", "SN", "ST", "TH"]
@@ -57,41 +57,41 @@ class de_DE(Locale):
         return [Holiday(
             self.locale,
             region,
-            SmartDayArrow(self.year, 10, 31),
+            SmartDayArrow(year, 10, 31),
             "Reformationstag",
             "NRF" if regions == [""] else "RF"
         ) for region in regions]
 
-    def holiday_frauentag(self):
+    def holiday_frauentag(self, year):
         """
         03-08: [BE] [F] Frauentag
 
         Introduced 2019 for Berlin
         https://gesetze.berlin.de/perma?d=jlr-FeiertGBEV6P1
         """
-        if self.year >= 2019:
+        if year >= 2019:
             return [Holiday(
                 self.locale,
                 "BE",
-                SmartDayArrow(self.year, 3, 8),
+                SmartDayArrow(year, 3, 8),
                 "Internationaler Frauentag",
                 "F"
             )]
 
         return []
 
-    def holiday_tag_der_befreiung(self):
+    def holiday_tag_der_befreiung(self, year):
         """
         2020-05-08: [BE] [F] 75. Jahrestag der Befreiung vom Nationalsozialismus und der Beendigung des Zweiten Weltkrieges in Europa
 
         Introduced 2019 for Berlin
         https://gesetze.berlin.de/perma?d=jlr-FeiertGBEV6P1
         """
-        if self.year == 2020:
+        if year == 2020:
             return [Holiday(
                 self.locale,
                 "BE",
-                SmartDayArrow(self.year, 5, 8),
+                SmartDayArrow(year, 5, 8),
                 "75. Jahrestag der Befreiung vom Nationalsozialismus und der Beendigung des Zweiten Weltkrieges in Europa",
                 "F"
             )]

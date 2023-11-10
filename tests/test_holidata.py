@@ -14,14 +14,14 @@ def year(request):
 
 
 @pytest.fixture(params=Locale.plugins)
-def locale(request, year):
-    return request.param(year)
+def locale(request):
+    return request.param()
 
 
-def test_holidata_produces_holidays_for_locale_and_year(snapshot, tmpdir, locale):
-    temp_file = tmpdir.join(f"{locale.locale}.{locale.year}.py")
+def test_holidata_produces_holidays_for_locale_and_year(snapshot, tmpdir, locale, year):
+    temp_file = tmpdir.join(f"{locale.locale}.{year}.py")
 
-    export_data = [h.as_dict() for h in locale.holidays]
+    export_data = [h.as_dict() for h in locale.get_holidays_of(year)]
     export_data.sort(key=lambda x: x["date"])
     temp_file.write(Formatter().format(export_data, 0))
 

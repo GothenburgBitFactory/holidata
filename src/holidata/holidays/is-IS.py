@@ -24,7 +24,7 @@ class is_IS(Locale):
     locale = "is-IS"
     easter_type = EASTER_WESTERN
 
-    def holiday_first_day_of_summer(self):
+    def holiday_first_day_of_summer(self, year):
         """
         Calculate sumardagurinn fyrsti (first day of summer).
 
@@ -34,14 +34,14 @@ class is_IS(Locale):
             Holiday(
                 locale=self.locale,
                 region="",
-                date=SmartDayArrow(self.year, 4, 18).shift_to_weekday("thursday"),
+                date=SmartDayArrow(year, 4, 18).shift_to_weekday("thursday"),
                 description="Sumardagurinn fyrsti",
                 flags="NV",
                 notes="",
             )
         ]
 
-    def holiday_half_days(self):
+    def holiday_half_days(self, year):
         """
         Define half-day holidays.
 
@@ -57,7 +57,7 @@ class is_IS(Locale):
             Holiday(
                 locale=self.locale,
                 region="",
-                date=SmartDayArrow(self.year, 12, 24),
+                date=SmartDayArrow(year, 12, 24),
                 description="Aðfangadagur jóla",
                 flags="NRF",
                 notes="Holiday from 13:00",
@@ -65,7 +65,7 @@ class is_IS(Locale):
             Holiday(
                 locale=self.locale,
                 region="",
-                date=SmartDayArrow(self.year, 12, 31),
+                date=SmartDayArrow(year, 12, 31),
                 description="Gamlársdagur",
                 flags="NF",
                 notes="Holiday from 13:00",

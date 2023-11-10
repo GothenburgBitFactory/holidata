@@ -70,18 +70,15 @@ class Locale(object, metaclass=PluginMount):
                                     r"(\[(?P<regions>[^]]+)\]\s+)?"
                                     r"\[(?P<flags>[A-Z]*)\] (?P<description>.*)$", re.UNICODE)
 
-    def __init__(self, year):
+    def __init__(self):
         if self.locale is None:
             raise ValueError(f"Locale {self.__class__.__name__} does not provide its locale")
-
-        self.year = year
 
     @staticmethod
     def get(identifier):
         return Locale.get_plugin(identifier, "locale")
 
-    @property
-    def holidays(self):
+    def get_holidays_of(self, year):
         """
         Yield all the Holiday objects corresponding to the definitions in the
         self.__doc__ and also as given by the dynamic self.holiday_* methods.
@@ -92,7 +89,7 @@ class Locale(object, metaclass=PluginMount):
             if not line.strip():
                 continue
 
-            holidata = self._parse_holidata(line)
+            holidata = self._parse_holidata(line, year)
 
             if holidata is None:
                 print(f"Following line could not be processed: '{line}'")
@@ -110,12 +107,12 @@ class Locale(object, metaclass=PluginMount):
 
         # Second, call holiday functions
         for method in [getattr(self, func) for func in dir(self) if func.startswith("holiday_")]:
-            holidays = method()
+            holidays = method(year)
 
             for holiday in holidays:
                 yield holiday
 
-    def _parse_holidata(self, line):
+    def _parse_holidata(self, line, year):
         function_map = [
             (self.fixed_regex, self._date_from_fixed_reference),
             (self.nth_weekday_regex, self._date_from_weekday_reference),
@@ -126,18 +123,18 @@ class Locale(object, metaclass=PluginMount):
             m = reg_exp.search(line)
             if m is not None:
                 return dict(regions=([x.strip() for x in m.group("regions").split(",")] if m.group("regions") is not None else [""]),
-                            date=create_date_from(m),
+                            date=create_date_from(m, year),
                             description=m.group("description"),
                             flags=m.group("flags"),
                             notes="")
 
         return None
 
-    def _date_from_fixed_reference(self, m):
-        return SmartDayArrow(self.year, int(m.group("month")), int(m.group("day")))
+    def _date_from_fixed_reference(self, m, year):
+        return SmartDayArrow(year, int(m.group("month")), int(m.group("day")))
 
-    def _date_from_weekday_reference(self, m):
-        return month_reference(self.year,
+    def _date_from_weekday_reference(self, m, year):
+        return month_reference(year,
                                m.group("month"),
                                first=m.group("last").strip() == "") \
             .shift_to_weekday(m.group("weekday"),
@@ -145,9 +142,9 @@ class Locale(object, metaclass=PluginMount):
                               reverse=m.group("last").strip() == "last",
                               including=True)
 
-    def _date_from_easter_reference(self, m):
+    def _date_from_easter_reference(self, m, year):
         if self.easter_type is None:
             raise ValueError(f"Locale {self.__class__.__name__} does not provide its easter type (WESTERN|ORTHODOX)")
 
-        return easter(self.year, self.easter_type) \
+        return easter(year, self.easter_type) \
             .shift(days=int((m.group("days")) if m.group("days") is not None else 0) * (1 if m.group("direction") == "after" else -1))

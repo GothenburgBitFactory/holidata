@@ -21,8 +21,8 @@ class en_NZ(Locale):
     locale = "en-NZ"
     easter_type = EASTER_WESTERN
 
-    def holiday_new_years_day_observed(self):
-        date = SmartDayArrow(self.year, 1, 1)
+    def holiday_new_years_day_observed(self, year):
+        date = SmartDayArrow(year, 1, 1)
 
         if date.weekday() in ["saturday", "sunday"]:
             return [Holiday(
@@ -35,8 +35,8 @@ class en_NZ(Locale):
 
         return []
 
-    def holiday_after_new_years_day(self):
-        date = SmartDayArrow(self.year, 1, 2)
+    def holiday_after_new_years_day(self, year):
+        date = SmartDayArrow(year, 1, 2)
 
         if date.weekday() in ["sunday", "monday"]:
             return [Holiday(
@@ -64,10 +64,10 @@ class en_NZ(Locale):
                 flags="NV",
                 notes="")]
 
-    def holiday_waitangi_day_observed(self):
-        date = SmartDayArrow(self.year, 2, 6)
+    def holiday_waitangi_day_observed(self, year):
+        date = SmartDayArrow(year, 2, 6)
 
-        if self.year > 2016 and date.weekday() in ["saturday", "sunday"]:
+        if year > 2016 and date.weekday() in ["saturday", "sunday"]:
             return [Holiday(
                     locale=self.locale,
                     region="",
@@ -78,10 +78,10 @@ class en_NZ(Locale):
 
         return []
 
-    def holiday_anzac_day_observed(self):
-        date = SmartDayArrow(self.year, 4, 25)
+    def holiday_anzac_day_observed(self, year):
+        date = SmartDayArrow(year, 4, 25)
 
-        if self.year > 2015 and date.weekday() in ["saturday", "sunday"]:
+        if year > 2015 and date.weekday() in ["saturday", "sunday"]:
             return [Holiday(
                     locale=self.locale,
                     region="",
@@ -92,8 +92,8 @@ class en_NZ(Locale):
 
         return []
 
-    def holiday_christmas_day_observed(self):
-        date = SmartDayArrow(self.year, 12, 25)
+    def holiday_christmas_day_observed(self, year):
+        date = SmartDayArrow(year, 12, 25)
 
         if date.weekday() == "sunday":
             return [Holiday(
@@ -115,8 +115,8 @@ class en_NZ(Locale):
 
         return []
 
-    def holiday_boxing_day_observed(self):
-        date = SmartDayArrow(self.year, 12, 26)
+    def holiday_boxing_day_observed(self, year):
+        date = SmartDayArrow(year, 12, 26)
 
         if date.weekday() == "sunday":
             return [Holiday(

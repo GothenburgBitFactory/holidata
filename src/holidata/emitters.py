@@ -16,15 +16,15 @@ class Emitter(object, metaclass=PluginMount):
     def get(identifier):
         return Emitter.get_plugin(identifier, "type")
 
-    def output(self, locale):
+    def output(self, holidays):
         pass
 
 
 class JsonEmitter(Emitter):
     type = "json"
 
-    def output(self, locale):
-        export_data = [h.as_dict() for h in locale.holidays]
+    def output(self, holidays):
+        export_data = [h.as_dict() for h in holidays]
         export_data.sort(key=lambda x: x["date"])
         return "\n".join([json.dumps(h, ensure_ascii=False, sort_keys=False, indent=None, separators=(",", ":")) for h in export_data]) + "\n"
 
@@ -32,8 +32,8 @@ class JsonEmitter(Emitter):
 class CsvEmitter(Emitter):
     type = "csv"
 
-    def output(self, locale):
-        export_data = [h.as_dict() for h in locale.holidays]
+    def output(self, holidays):
+        export_data = [h.as_dict() for h in holidays]
         export_data.sort(key=lambda x: x["date"])
         result = io.StringIO()
 
@@ -50,8 +50,8 @@ class CsvEmitter(Emitter):
 class YamlEmitter(Emitter):
     type = "yaml"
 
-    def output(self, locale):
-        export_data = [h.as_dict() for h in locale.holidays]
+    def output(self, holidays):
+        export_data = [h.as_dict() for h in holidays]
         export_data.sort(key=lambda x: x["date"])
 
         output = "%YAML 1.1\n"
@@ -74,8 +74,8 @@ class YamlEmitter(Emitter):
 class XmlEmitter(Emitter):
     type = "xml"
 
-    def output(self, locale):
-        export_data = [h.as_dict() for h in locale.holidays]
+    def output(self, holidays):
+        export_data = [h.as_dict() for h in holidays]
         export_data.sort(key=lambda x: x["date"])
 
         output = "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n"

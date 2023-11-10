@@ -12,13 +12,13 @@ def year(request):
 
 
 @pytest.fixture(params=Locale.plugins)
-def locale(request, year):
-    return request.param(year)
+def locale(request):
+    return request.param()
 
 
 @pytest.fixture()
-def holidays(locale):
-    return locale.holidays
+def holidays(locale, year):
+    return locale.get_holidays_of(year)
 
 
 @pytest.fixture(params=Country.plugins)

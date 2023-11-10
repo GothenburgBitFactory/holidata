@@ -25,13 +25,13 @@ class el_GR(Locale):
     locale = "el-GR"
     easter_type = EASTER_ORTHODOX
 
-    def holiday_may_day(self):
+    def holiday_may_day(self, year):
         """
         05-01: [NF] Πρωτομαγιά
         Postponed if it collides with Easter
         """
-        date = SmartDayArrow(self.year, 5, 1)
-        easter_date = easter(self.year, self.easter_type)
+        date = SmartDayArrow(year, 5, 1)
+        easter_date = easter(year, self.easter_type)
 
         if date == easter_date:
             date = date.shift(days=2)

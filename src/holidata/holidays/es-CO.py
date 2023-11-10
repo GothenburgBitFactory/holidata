@@ -29,72 +29,72 @@ class es_CO(Locale):
     locale = "es-CO"
     easter_type = EASTER_WESTERN
 
-    def holiday_reyes(self):
+    def holiday_reyes(self, year):
         """First Monday after January 6."""
         return [Holiday(
             self.locale,
             "",
-            SmartDayArrow(self.year, 1, 6).shift_to_weekday("monday", including=True),
+            SmartDayArrow(year, 1, 6).shift_to_weekday("monday", including=True),
             "Día de los Reyes Magos",
             "NRV"
         )]
 
-    def holiday_san_jose(self):
+    def holiday_san_jose(self, year):
         """First Monday after March 19."""
         return [Holiday(
             self.locale,
             "",
-            SmartDayArrow(self.year, 3, 19).shift_to_weekday("monday", including=True),
+            SmartDayArrow(year, 3, 19).shift_to_weekday("monday", including=True),
             "Día de San José",
             "NRV"
         )]
 
-    def holiday_san_pedro_san_pablo(self):
+    def holiday_san_pedro_san_pablo(self, year):
         """First Monday after June 29."""
         return [Holiday(
             self.locale,
             "",
-            SmartDayArrow(self.year, 6, 29).shift_to_weekday("monday", including=True),
+            SmartDayArrow(year, 6, 29).shift_to_weekday("monday", including=True),
             "San Pedro y San Pablo",
             "NRV"
         )]
 
-    def holiday_asuncion(self):
+    def holiday_asuncion(self, year):
         """First Monday after August 15."""
         return [Holiday(
             self.locale,
             "",
-            SmartDayArrow(self.year, 8, 15).shift_to_weekday("monday", including=True),
+            SmartDayArrow(year, 8, 15).shift_to_weekday("monday", including=True),
             "Asunción de la Virgen",
             "NRV"
         )]
 
-    def holiday_dia_raza(self):
+    def holiday_dia_raza(self, year):
         """First Monday after October 12."""
         return [Holiday(
             self.locale,
             "",
-            SmartDayArrow(self.year, 10, 12).shift_to_weekday("monday", including=True),
+            SmartDayArrow(year, 10, 12).shift_to_weekday("monday", including=True),
             "Día de la Raza",
             "NV"
         )]
 
-    def holiday_todos_santos(self):
+    def holiday_todos_santos(self, year):
         """First Monday after November 1."""
         return [Holiday(
             self.locale,
             "",
-            SmartDayArrow(self.year, 11, 1).shift_to_weekday("monday", including=True),
+            SmartDayArrow(year, 11, 1).shift_to_weekday("monday", including=True),
             "Todos los Santos",
             "NRV"
         )]
 
-    def holiday_independencia_cartagena(self):
+    def holiday_independencia_cartagena(self, year):
         """First Monday after November 11."""
         return [Holiday(
             self.locale,
             "",
-            SmartDayArrow(self.year, 11, 11).shift_to_weekday("monday", including=True),
+            SmartDayArrow(year, 11, 11).shift_to_weekday("monday", including=True),
             "Independencia de Cartagena",
             "NV"
         )]

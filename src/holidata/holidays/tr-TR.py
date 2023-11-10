@@ -69,7 +69,7 @@ class tr_TR(Locale):
 
         return kurban_bayrami_reference[year]
 
-    def holiday_demokrasi_ve_milli_birlik_gunu(self):
+    def holiday_demokrasi_ve_milli_birlik_gunu(self, year):
         """
         Democracy and National Unity Day (since 2017)
         07-15 [NF] Demokrasi ve Milli Birlik Günü
@@ -77,16 +77,16 @@ class tr_TR(Locale):
         return [Holiday(
             self.locale,
             "",
-            SmartDayArrow(self.year, 7, 15),
+            SmartDayArrow(year, 7, 15),
             "Demokrasi ve Milli Birlik Günü",
             "NF"
-        )] if self.year >= 2017 else []
+        )] if year >= 2017 else []
 
-    def holiday_ramazan_bayrami(self):
+    def holiday_ramazan_bayrami(self, year):
         """
         Ramazan Bayramı 1.-3. Gün
         """
-        reference = self.__ramazan_bayrami_reference(self.year)
+        reference = self.__ramazan_bayrami_reference(year)
 
         return [Holiday(
             self.locale,
@@ -96,11 +96,11 @@ class tr_TR(Locale):
             "NRV"
         ) for i in [1, 2, 3]]
 
-    def holiday_kurban_bayrami(self):
+    def holiday_kurban_bayrami(self, year):
         """
         Kurban Bayramı 1.-4. Gün
         """
-        reference = self.__kurban_bayrami_reference(self.year)
+        reference = self.__kurban_bayrami_reference(year)
 
         return [Holiday(
             self.locale,

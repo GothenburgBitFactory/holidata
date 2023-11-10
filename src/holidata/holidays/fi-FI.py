@@ -27,26 +27,26 @@ class fi_FI(Locale):
     locale = "fi-FI"
     easter_type = EASTER_WESTERN
 
-    def holiday_juhannuspaeivae(self):
+    def holiday_juhannuspaeivae(self, year):
         """
         Saturday between 20 and 26 June: Juhannuspäivä (Midsummer Day)
         """
         return [Holiday(
             self.locale,
             "",
-            SmartDayArrow(self.year, 6, 19).shift_to_weekday("saturday", order=1, reverse=False),
+            SmartDayArrow(year, 6, 19).shift_to_weekday("saturday", order=1, reverse=False),
             "Juhannuspäivä",
             "NRV"
         )]
 
-    def holiday_pyhaeinpaeivae(self):
+    def holiday_pyhaeinpaeivae(self, year):
         """
         Saturday between 31 October and 6 November: Pyhäinpäivä (All Saints' Day)
         """
         return [Holiday(
             self.locale,
             "",
-            SmartDayArrow(self.year, 10, 30).shift_to_weekday("saturday", order=1, reverse=False),
+            SmartDayArrow(year, 10, 30).shift_to_weekday("saturday", order=1, reverse=False),
             "Pyhäinpäivä",
             "NRV"
         )]

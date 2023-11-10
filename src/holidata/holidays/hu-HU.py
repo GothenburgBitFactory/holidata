@@ -32,22 +32,22 @@ class hu_HU(Locale):
     locale = "hu-HU"
     easter_type = EASTER_WESTERN
 
-    def holiday_nagypentek(self):
+    def holiday_nagypentek(self, year):
         """
         2 days before Easter: [NRV] Nagypéntek (since 2017)
         """
-        if self.year >= 2017:
+        if year >= 2017:
             return [Holiday(
                 self.locale,
                 "",
-                easter(self.year, self.easter_type).shift(days=-2),
+                easter(year, self.easter_type).shift(days=-2),
                 "Nagypéntek",
                 "NRV"
             )]
 
         return []
 
-    def holiday_munkaszuneti_nap(self):
+    def holiday_munkaszuneti_nap(self, year):
         """
         Non-Working days (Munkaszüneti nap)
         When a public holiday falls on a Tuesday or a Thursday, a special decree swaps the preceding Monday or the
@@ -60,7 +60,7 @@ class hu_HU(Locale):
         2021: 14/2020. (V.    13.) ITM rendelet a 2021. évi munkaszüneti napok körüli munkarendről
         2022: 23/2021. (VI.    1.) ITM rendelet a 2022. évi munkaszüneti napok körüli munkarendről
         """
-        if self.year == 2015:
+        if year == 2015:
             """
             01-02, swapped with 01-10
             08-21, swapped with 08-08
@@ -70,7 +70,7 @@ class hu_HU(Locale):
                 Holiday(
                     locale=self.locale,
                     region="",
-                    date=SmartDayArrow(self.year, 1, 2),
+                    date=SmartDayArrow(year, 1, 2),
                     description="Munkaszüneti nap",
                     flags="NF",
                     notes="2015-01-10 munkanap"
@@ -78,7 +78,7 @@ class hu_HU(Locale):
                 Holiday(
                     locale=self.locale,
                     region="",
-                    date=SmartDayArrow(self.year, 8, 21),
+                    date=SmartDayArrow(year, 8, 21),
                     description="Munkaszüneti nap",
                     flags="NF",
                     notes="2015-08-08 munkanap"
@@ -86,12 +86,12 @@ class hu_HU(Locale):
                 Holiday(
                     locale=self.locale,
                     region="",
-                    date=SmartDayArrow(self.year, 12, 24),
+                    date=SmartDayArrow(year, 12, 24),
                     description="Munkaszüneti nap",
                     flags="NF",
                     notes="2015-12-12 munkanap"
                 )]
-        if self.year == 2016:
+        if year == 2016:
             """
             03-14, swapped with 03-05
             10-31, swapped with 10-15
@@ -100,7 +100,7 @@ class hu_HU(Locale):
                 Holiday(
                     locale=self.locale,
                     region="",
-                    date=SmartDayArrow(self.year, 3, 14),
+                    date=SmartDayArrow(year, 3, 14),
                     description="Munkaszüneti nap",
                     flags="NF",
                     notes="2016-03-05 munkanap"
@@ -108,12 +108,12 @@ class hu_HU(Locale):
                 Holiday(
                     locale=self.locale,
                     region="",
-                    date=SmartDayArrow(self.year, 10, 31),
+                    date=SmartDayArrow(year, 10, 31),
                     description="Munkaszüneti nap",
                     flags="NF",
                     notes="2016-10-15 munkanap"
                 )]
-        if self.year == 2018:
+        if year == 2018:
             """
             03-16, swapped with 03-10
             04-30, swapped with 04-21
@@ -126,7 +126,7 @@ class hu_HU(Locale):
                 Holiday(
                     locale=self.locale,
                     region="",
-                    date=SmartDayArrow(self.year, 3, 16),
+                    date=SmartDayArrow(year, 3, 16),
                     description="Munkaszüneti nap",
                     flags="NF",
                     notes="2018-03-10 munkanap"
@@ -134,7 +134,7 @@ class hu_HU(Locale):
                 Holiday(
                     locale=self.locale,
                     region="",
-                    date=SmartDayArrow(self.year, 4, 30),
+                    date=SmartDayArrow(year, 4, 30),
                     description="Munkaszüneti nap",
                     flags="NF",
                     notes="2018-04-21 munkanap"
@@ -142,7 +142,7 @@ class hu_HU(Locale):
                 Holiday(
                     locale=self.locale,
                     region="",
-                    date=SmartDayArrow(self.year, 10, 22),
+                    date=SmartDayArrow(year, 10, 22),
                     description="Munkaszüneti nap",
                     flags="NF",
                     notes="2018-10-13 munkanap"
@@ -150,7 +150,7 @@ class hu_HU(Locale):
                 Holiday(
                     locale=self.locale,
                     region="",
-                    date=SmartDayArrow(self.year, 11, 2),
+                    date=SmartDayArrow(year, 11, 2),
                     description="Munkaszüneti nap",
                     flags="NF",
                     notes="2018-11-10 munkanap"
@@ -158,7 +158,7 @@ class hu_HU(Locale):
                 Holiday(
                     locale=self.locale,
                     region="",
-                    date=SmartDayArrow(self.year, 12, 24),
+                    date=SmartDayArrow(year, 12, 24),
                     description="Munkaszüneti nap",
                     flags="NF",
                     notes="2018-12-01 munkanap"
@@ -166,12 +166,12 @@ class hu_HU(Locale):
                 Holiday(
                     locale=self.locale,
                     region="",
-                    date=SmartDayArrow(self.year, 12, 31),
+                    date=SmartDayArrow(year, 12, 31),
                     description="Munkaszüneti nap",
                     flags="NF",
                     notes="2018-12-15 munkanap"
                 )]
-        if self.year == 2019:
+        if year == 2019:
             """
             08-19, swapped with 08-10
             12-24, swapped with 12-07
@@ -181,7 +181,7 @@ class hu_HU(Locale):
                 Holiday(
                     locale=self.locale,
                     region="",
-                    date=SmartDayArrow(self.year, 8, 19),
+                    date=SmartDayArrow(year, 8, 19),
                     description="Munkaszüneti nap",
                     flags="NF",
                     notes="2019-08-10 munkanap"
@@ -189,7 +189,7 @@ class hu_HU(Locale):
                 Holiday(
                     locale=self.locale,
                     region="",
-                    date=SmartDayArrow(self.year, 12, 24),
+                    date=SmartDayArrow(year, 12, 24),
                     description="Munkaszüneti nap",
                     flags="NF",
                     notes="2019-12-07 munkanap"
@@ -197,12 +197,12 @@ class hu_HU(Locale):
                 Holiday(
                     locale=self.locale,
                     region="",
-                    date=SmartDayArrow(self.year, 12, 27),
+                    date=SmartDayArrow(year, 12, 27),
                     description="Munkaszüneti nap",
                     flags="NF",
                     notes="2019-12-14 munkanap"
                 )]
-        if self.year == 2020:
+        if year == 2020:
             """
             08-21, swapped with 08-29
             12-24, swapped with 12-12
@@ -211,19 +211,19 @@ class hu_HU(Locale):
                 Holiday(
                     locale=self.locale,
                     region="",
-                    date=SmartDayArrow(self.year, 8, 21),
+                    date=SmartDayArrow(year, 8, 21),
                     description="Munkaszüneti nap",
                     flags="NF",
                     notes="2020-08-29 munkanap"),
                 Holiday(
                     locale=self.locale,
                     region="",
-                    date=SmartDayArrow(self.year, 12, 24),
+                    date=SmartDayArrow(year, 12, 24),
                     description="Munkaszüneti nap",
                     flags="NF",
                     notes="2020-12-12 munkanap"
                 )]
-        if self.year == 2021:
+        if year == 2021:
             """
             12-24, swapped with 12-11
             """
@@ -231,12 +231,12 @@ class hu_HU(Locale):
                 Holiday(
                     locale=self.locale,
                     region="",
-                    date=SmartDayArrow(self.year, 12, 24),
+                    date=SmartDayArrow(year, 12, 24),
                     description="Munkaszüneti nap",
                     flags="NF",
                     notes="2021-12-11 munkanap"
                 )]
-        if self.year == 2022:
+        if year == 2022:
             """
             03-14, swapped with 03-26
             10-31, swapped with 10-15
@@ -245,14 +245,14 @@ class hu_HU(Locale):
                 Holiday(
                     locale=self.locale,
                     region="",
-                    date=SmartDayArrow(self.year, 3, 14),
+                    date=SmartDayArrow(year, 3, 14),
                     description="Munkaszüneti nap",
                     flags="NF",
                     notes="2022-03-26 munkanap"),
                 Holiday(
                     locale=self.locale,
                     region="",
-                    date=SmartDayArrow(self.year, 10, 31),
+                    date=SmartDayArrow(year, 10, 31),
                     description="Munkaszüneti nap",
                     flags="NF",
                     notes="2022-10-15 munkanap"

@@ -30,44 +30,44 @@ class sv_SE(Locale):
     locale = "sv-SE"
     easter_type = EASTER_WESTERN
 
-    def __midsommar(self):
+    def __midsommar(self, year):
         """
         Find the Saturday between 20 and 26 June
         """
-        return SmartDayArrow(self.year, 6, 19).shift_to_weekday("saturday", order=1, reverse=False)
+        return SmartDayArrow(year, 6, 19).shift_to_weekday("saturday", order=1, reverse=False)
 
-    def holiday_midsommarafton(self):
+    def holiday_midsommarafton(self, year):
         """
         The day before midsommardagen: [NV] Midsommarafton
         """
         return [Holiday(
             self.locale,
             "",
-            self.__midsommar().shift(days=-1),
+            self.__midsommar(year).shift(days=-1),
             "Midsommarafton",
             "NV"
         )]
 
-    def holiday_midsommardagen(self):
+    def holiday_midsommardagen(self, year):
         """
         Saturday between 20 and 26 June: [NV] Midsommardagen
         """
         return [Holiday(
             self.locale,
             "",
-            self.__midsommar(),
+            self.__midsommar(year),
             "Midsommardagen",
             "NV"
         )]
 
-    def holiday_alla_helgons_dag(self):
+    def holiday_alla_helgons_dag(self, year):
         """
         Saturday between 31 October and 6 November: [NRV] Alla helgons dag
         """
         return [Holiday(
             self.locale,
             "",
-            SmartDayArrow(self.year, 10, 30).shift_to_weekday("saturday", order=1, reverse=False),
+            SmartDayArrow(year, 10, 30).shift_to_weekday("saturday", order=1, reverse=False),
             "Alla helgons dag",
             "NRV"
         )]

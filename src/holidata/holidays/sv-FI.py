@@ -27,26 +27,26 @@ class sv_FI(Locale):
     locale = "sv-FI"
     easter_type = EASTER_WESTERN
 
-    def holiday_midsommardagen(self):
+    def holiday_midsommardagen(self, year):
         """
         Saturday between 20 and 26 June: Midsommardagen
         """
         return [Holiday(
             self.locale,
             "",
-            SmartDayArrow(self.year, 6, 19).shift_to_weekday("saturday", order=1, reverse=False),
+            SmartDayArrow(year, 6, 19).shift_to_weekday("saturday", order=1, reverse=False),
             "Midsommardagen",
             "NRV"
         )]
 
-    def holiday_alla_helgons_dag(self):
+    def holiday_alla_helgons_dag(self, year):
         """
         Saturday between 31 October and 6 November: Alla helgons dag (All Saints' Day)
         """
         return [Holiday(
             self.locale,
             "",
-            SmartDayArrow(self.year, 10, 30).shift_to_weekday("saturday", order=1, reverse=False),
+            SmartDayArrow(year, 10, 30).shift_to_weekday("saturday", order=1, reverse=False),
             "Alla helgons dag",
             "NRV"
         )]

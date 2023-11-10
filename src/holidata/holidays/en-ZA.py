@@ -22,41 +22,41 @@ class en_ZA(Locale):
     locale = "en-ZA"
     easter_type = EASTER_WESTERN
 
-    def holiday_new_years_day(self):
+    def holiday_new_years_day(self, year):
         """01-01: [NF] New Year's Day"""
-        return self.get_holidays(SmartDayArrow(self.year, 1, 1), "New Year's Day")
+        return self.get_holidays(SmartDayArrow(year, 1, 1), "New Year's Day")
 
-    def holiday_human_rights_day(self):
+    def holiday_human_rights_day(self, year):
         """03-21: [NF] Human Rights Day"""
-        return self.get_holidays(SmartDayArrow(self.year, 3, 21), "Human Rights Day")
+        return self.get_holidays(SmartDayArrow(year, 3, 21), "Human Rights Day")
 
-    def holiday_freedom_day(self):
+    def holiday_freedom_day(self, year):
         """04-27: [NF] Freedom Day"""
-        return self.get_holidays(SmartDayArrow(self.year, 4, 27), "Freedom Day")
+        return self.get_holidays(SmartDayArrow(year, 4, 27), "Freedom Day")
 
-    def holiday_workers_day(self):
+    def holiday_workers_day(self, year):
         """05-01: [NF] Worker's Day"""
-        return self.get_holidays(SmartDayArrow(self.year, 5, 1), "Worker's Day")
+        return self.get_holidays(SmartDayArrow(year, 5, 1), "Worker's Day")
 
-    def holiday_youth_day(self):
+    def holiday_youth_day(self, year):
         """06-16: [NF] Youth Day"""
-        return self.get_holidays(SmartDayArrow(self.year, 6, 16), "Youth Day")
+        return self.get_holidays(SmartDayArrow(year, 6, 16), "Youth Day")
 
-    def holiday_national_womens_day(self):
+    def holiday_national_womens_day(self, year):
         """08-09: [NF] National Women's Day"""
-        return self.get_holidays(SmartDayArrow(self.year, 8, 9), "National Women's Day")
+        return self.get_holidays(SmartDayArrow(year, 8, 9), "National Women's Day")
 
-    def holiday_heritage_day(self):
+    def holiday_heritage_day(self, year):
         """09-24: [NF] Heritage Day"""
-        return self.get_holidays(SmartDayArrow(self.year, 9, 24), "Heritage Day")
+        return self.get_holidays(SmartDayArrow(year, 9, 24), "Heritage Day")
 
-    def holiday_day_of_reconciliation(self):
+    def holiday_day_of_reconciliation(self, year):
         """12-16: [NF] Day of Reconciliation"""
-        return self.get_holidays(SmartDayArrow(self.year, 12, 16), "Day of Reconciliation")
+        return self.get_holidays(SmartDayArrow(year, 12, 16), "Day of Reconciliation")
 
-    def holiday_day_of_goodwill(self):
+    def holiday_day_of_goodwill(self, year):
         """12-26: [NF] Day of Goodwill"""
-        return self.get_holidays(SmartDayArrow(self.year, 12, 26), "Day of Goodwill")
+        return self.get_holidays(SmartDayArrow(year, 12, 26), "Day of Goodwill")
 
     def get_holidays(self, original_date, description):
         """

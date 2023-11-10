@@ -19,8 +19,8 @@ class en_GB(Locale):
     locale = "en-GB"
     easter_type = EASTER_WESTERN
 
-    def holiday_new_years_day_observed(self):
-        date = SmartDayArrow(self.year, 1, 1)
+    def holiday_new_years_day_observed(self, year):
+        date = SmartDayArrow(year, 1, 1)
 
         if date.weekday() in ["saturday", "sunday"]:
             return [Holiday(
@@ -33,18 +33,18 @@ class en_GB(Locale):
 
         return []
 
-    def holiday_spring_bank_holiday(self):
+    def holiday_spring_bank_holiday(self, year):
         """
         1. last monday in may: [NV] Spring Bank Holiday
         2012: Moved to June 4, because of Queen’s Diamond Jubilee
         2022: Moved to June 2, because of Queen's Platinum Jubilee
         """
-        if self.year == 2012:
-            date = SmartDayArrow(self.year, 6, 4)
-        elif self.year == 2022:
-            date = SmartDayArrow(self.year, 6, 2)
+        if year == 2012:
+            date = SmartDayArrow(year, 6, 4)
+        elif year == 2022:
+            date = SmartDayArrow(year, 6, 2)
         else:
-            date = month_reference(self.year,
+            date = month_reference(year,
                                    "may",
                                    first=False) \
                 .shift_to_weekday("monday",
@@ -60,8 +60,8 @@ class en_GB(Locale):
             flags="NV",
             notes="")]
 
-    def holiday_christmas_day_observed(self):
-        date = SmartDayArrow(self.year, 12, 25)
+    def holiday_christmas_day_observed(self, year):
+        date = SmartDayArrow(year, 12, 25)
 
         if date.weekday() == "saturday":
             return [Holiday(
@@ -83,8 +83,8 @@ class en_GB(Locale):
 
         return []
 
-    def holiday_boxing_day_observed(self):
-        date = SmartDayArrow(self.year, 12, 26)
+    def holiday_boxing_day_observed(self, year):
+        date = SmartDayArrow(year, 12, 26)
 
         if date.weekday() == "sunday":
             return [Holiday(
@@ -106,52 +106,52 @@ class en_GB(Locale):
 
         return []
 
-    def holiday_coronation_charles_iii(self):
+    def holiday_coronation_charles_iii(self, year):
         """
         2023-05-08: Bank holiday for the coronation of King Charles III
         """
-        if self.year == 2023:
+        if year == 2023:
             return [Holiday(
                 locale=self.locale,
                 region="",
-                date=SmartDayArrow(self.year, 5, 8),
+                date=SmartDayArrow(year, 5, 8),
                 description="Coronation of King Charles III",
                 flags="NV",
                 notes="")]
 
         return []
 
-    def holiday_royal_jubilees(self):
+    def holiday_royal_jubilees(self, year):
         """
         2012-06-05: Queen's Diamond Jubilee
         2022-06-03: Queen's Platinum Jubilee
         """
-        if self.year == 2012:
+        if year == 2012:
             return [Holiday(
                 locale=self.locale,
                 region="",
-                date=SmartDayArrow(self.year, 6, 5),
+                date=SmartDayArrow(year, 6, 5),
                 description="Queen's Diamond Jubilee",
                 flags="NV",
                 notes="")]
 
-        if self.year == 2022:
+        if year == 2022:
             return [Holiday(
                 locale=self.locale,
                 region="",
-                date=SmartDayArrow(self.year, 6, 3),
+                date=SmartDayArrow(year, 6, 3),
                 description="Queen's Platinum Jubilee",
                 flags="NV",
                 notes="")]
 
         return []
 
-    def holiday_state_funeral_of_queen_elizabeth_ii(self):
-        if self.year == 2022:
+    def holiday_state_funeral_of_queen_elizabeth_ii(self, year):
+        if year == 2022:
             return [Holiday(
                 locale=self.locale,
                 region="",
-                date=SmartDayArrow(self.year, 9, 19),
+                date=SmartDayArrow(year, 9, 19),
                 description="State Funeral of Queen Elizabeth II",
                 flags="NF",
                 notes="")]

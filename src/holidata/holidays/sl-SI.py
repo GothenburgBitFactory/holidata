@@ -30,7 +30,7 @@ class sl_SI(Locale):
     locale = "sl-SI"
     easter_type = EASTER_WESTERN
 
-    def holiday_novo_leto(self):
+    def holiday_novo_leto(self, year):
         """
         From 1955 until May 2012, when the National Assembly of Slovenia passed the Public Finance Balance Act,
         2 January was a work-free day. It was reintroduced in 2017.
@@ -40,7 +40,7 @@ class sl_SI(Locale):
         return [Holiday(
             self.locale,
             "",
-            SmartDayArrow(self.year, 1, 2),
+            SmartDayArrow(year, 1, 2),
             "Novo leto",
             "NF"
-        )] if self.year not in [2013, 2014, 2015, 2016] else []
+        )] if year not in [2013, 2014, 2015, 2016] else []

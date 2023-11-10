@@ -54,21 +54,21 @@ class fr_CA(Locale):
     locale = "fr-CA"
     easter_type = EASTER_WESTERN
 
-    def holiday_journee_nationale_des_patriotes(self):
+    def holiday_journee_nationale_des_patriotes(self, year):
         return [Holiday(
             locale=self.locale,
             region="QC",
-            date=SmartDayArrow(self.year, 5, 25).shift_to_weekday(
+            date=SmartDayArrow(year, 5, 25).shift_to_weekday(
                 "monday", order=1, reverse=True, including=False),
             description="Journée Nationale des Patriotes",
             flags="V",
             notes="")]
 
-    def holiday_fete_de_la_reine_victoria(self):
+    def holiday_fete_de_la_reine_victoria(self, year):
         return [Holiday(
             locale=self.locale,
             region=region,
-            date=SmartDayArrow(self.year, 5, 25).shift_to_weekday(
+            date=SmartDayArrow(year, 5, 25).shift_to_weekday(
                 "monday", order=1, reverse=True, including=False),
             description="Fête de la Reine Victoria",
             flags="V",
