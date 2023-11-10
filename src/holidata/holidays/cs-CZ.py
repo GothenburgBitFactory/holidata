@@ -47,21 +47,34 @@ class cs_CZ(Locale):
 
         return []
 
+    def holiday_den_boje_za_svobodu_a_demokracii(self, year):
+        """
+        11-17: [NF] Den boje za svobodu a demokracii
+        Until 2018, replaced by "Den boje za svobodu a demokracii a Mezinárodní den studentstva" on 2019-04-01
+        """
+        if year <= 2018:
+            return [Holiday(
+                self.id,
+                "",
+                SmartDayArrow(year, 11, 17),
+                "Den boje za svobodu a demokracii",
+                "NF"
+            )]
+
+        return []
+
     def holiday_den_boje_za_svobodu_a_demokracii_a_mezinarodni_den_studentstva(self, year):
         """
-        11-17: [NF]
-        before 2019-04-01: Den boje za svobodu a demokracii
-        before 2019-04-01: Den boje za svobodu a demokracii a Mezinárodní den studentstva
+        11-17: [NF] Den boje za svobodu a demokracii a Mezinárodní den studentstva
+        Since 2019, replaces "Den boje za svobodu a demokracii"
         """
-        if year < 2019:
-            name = "Den boje za svobodu a demokracii"
-        else:
-            name = "Den boje za svobodu a demokracii a Mezinárodní den studentstva"
+        if year >= 2019:
+            return [Holiday(
+                self.id,
+                "",
+                SmartDayArrow(year, 11, 17),
+                "Den boje za svobodu a demokracii a Mezinárodní den studentstva",
+                "NF"
+            )]
 
-        return [Holiday(
-            self.id,
-            "",
-            SmartDayArrow(year, 11, 17),
-            name,
-            "NF"
-        )]
+        return []

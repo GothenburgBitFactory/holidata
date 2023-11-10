@@ -24,14 +24,15 @@ class nl_NL(Locale):
     id = "nl-NL"
     easter_type = EASTER_WESTERN
 
-    def holiday_koningsdag(self, year):
-        """04-27 or saturday before if it falls on sunday: [NF] Koninginnedag/Koningsdag"""
-        if year < 2014:
-            date = SmartDayArrow(year, 4, 30)
-            description = "Koninginnedag"
-        else:
-            date = SmartDayArrow(year, 4, 27)
-            description = "Koningsdag"
+    def holiday_koninginnedag(self, year):
+        """
+        04-27 or saturday before, if it falls on sunday: [NF] Koninginnedag
+        Until 2013
+        """
+        if year > 2013:
+            return []
+
+        date = SmartDayArrow(year, 4, 30)
 
         if date.weekday() == "sunday":
             date = date.shift(days=-1)
@@ -40,7 +41,28 @@ class nl_NL(Locale):
             locale=self.id,
             region="",
             date=date,
-            description=description,
+            description="Koninginnedag",
+            flags="NV",
+            notes="")]
+
+    def holiday_koningsdag(self, year):
+        """
+        04-27 or saturday before if it falls on sunday: [NF] Koningsdag
+        Since 2014
+        """
+        if year < 2014:
+            return []
+
+        date = SmartDayArrow(year, 4, 27)
+
+        if date.weekday() == "sunday":
+            date = date.shift(days=-1)
+
+        return [Holiday(
+            locale=self.id,
+            region="",
+            date=date,
+            description="Koningsdag",
             flags="NV",
             notes="")]
 

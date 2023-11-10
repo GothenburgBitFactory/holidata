@@ -121,10 +121,9 @@ class en_GB(Locale):
 
         return []
 
-    def holiday_royal_jubilees(self, year):
+    def holiday_queens_diamond_jubilee(self, year):
         """
         2012-06-05: Queen's Diamond Jubilee
-        2022-06-03: Queen's Platinum Jubilee
         """
         if year == 2012:
             return [Holiday(
@@ -135,6 +134,12 @@ class en_GB(Locale):
                 flags="NV",
                 notes="")]
 
+        return []
+
+    def holiday_queens_platinum_jubilee(self, year):
+        """
+        2022-06-03: Queen's Platinum Jubilee
+        """
         if year == 2022:
             return [Holiday(
                 locale=self.id,
