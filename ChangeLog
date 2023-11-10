@@ -1,3 +1,4 @@
+-    Fix permalinks for holidays in locale de-DE for region BE
 2023.11.0
 -    es-ES: Implement 2024 holidays of Spain
 -    Drop support for Python 3.7

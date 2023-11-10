@@ -67,7 +67,7 @@ class de_DE(Locale):
         03-08: [BE] [F] Frauentag
 
         Introduced 2019 for Berlin
-        http://gesetze.berlin.de/jportal/?quelle=jlink&query=FeiertG+BE+%C2%A7+1&psml=bsbeprod.psml&max=true
+        https://gesetze.berlin.de/perma?d=jlr-FeiertGBEV6P1
         """
         if self.year >= 2019:
             return [Holiday(
@@ -85,7 +85,7 @@ class de_DE(Locale):
         2020-05-08: [BE] [F] 75. Jahrestag der Befreiung vom Nationalsozialismus und der Beendigung des Zweiten Weltkrieges in Europa
 
         Introduced 2019 for Berlin
-        http://gesetze.berlin.de/jportal/?quelle=jlink&query=FeiertG+BE+%C2%A7+1&psml=bsbeprod.psml&max=true
+        https://gesetze.berlin.de/perma?d=jlr-FeiertGBEV6P1
         """
         if self.year == 2020:
             return [Holiday(
