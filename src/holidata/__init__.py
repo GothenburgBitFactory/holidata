@@ -24,7 +24,7 @@ def create_locale_for(country_id=None, lang_id=None, year=None):
     country_class = get_country_for(country_id)
 
     if lang_id is not None and lang_id.lower() not in country_class.languages:
-        raise ValueError(f"Language '{lang_id}' is not defined for country '{country_class.id}'!")
+        raise ValueError(f"Language '{lang_id}' is not defined for country '{country_class.id}'! Choose one of [{', '.join(country_class.languages)}].")
     elif lang_id is None and country_class.default_lang is not None:
         lang_id = country_class.default_lang
     elif lang_id is None:
