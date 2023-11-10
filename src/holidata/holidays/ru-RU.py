@@ -17,5 +17,5 @@ class ru_RU(Locale):
     Easter: [NRV] Пасха
     """
 
-    locale = "ru-RU"
+    id = "ru-RU"
     easter_type = EASTER_ORTHODOX

@@ -20,5 +20,5 @@ class it_IT(Locale):
     1 day after Easter: [NRV] Pasquetta
     """
 
-    locale = "it-IT"
+    id = "it-IT"
     easter_type = EASTER_WESTERN

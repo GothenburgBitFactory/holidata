@@ -21,7 +21,7 @@ class nl_NL(Locale):
     50 days after Easter: [NRV] Tweede Pinksterdag
     """
 
-    locale = "nl-NL"
+    id = "nl-NL"
     easter_type = EASTER_WESTERN
 
     def holiday_koningsdag(self, year):
@@ -37,7 +37,7 @@ class nl_NL(Locale):
             date = date.shift(days=-1)
 
         return [Holiday(
-            locale=self.locale,
+            locale=self.id,
             region="",
             date=date,
             description=description,
@@ -51,7 +51,7 @@ class nl_NL(Locale):
             date = date.shift(days=1)
 
         return [Holiday(
-            locale=self.locale,
+            locale=self.id,
             region="",
             date=date,
             description="Koninkrijksdag",

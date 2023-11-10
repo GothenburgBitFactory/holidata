@@ -18,7 +18,7 @@ class en_NZ(Locale):
     4. monday in october: [NV] Labour Day
     """
 
-    locale = "en-NZ"
+    id = "en-NZ"
     easter_type = EASTER_WESTERN
 
     def holiday_new_years_day_observed(self, year):
@@ -26,7 +26,7 @@ class en_NZ(Locale):
 
         if date.weekday() in ["saturday", "sunday"]:
             return [Holiday(
-                    locale=self.locale,
+                    locale=self.id,
                     region="",
                     date=date.shift_to_weekday("monday", including=True),
                     description="New Year's Day (observed)",
@@ -40,7 +40,7 @@ class en_NZ(Locale):
 
         if date.weekday() in ["sunday", "monday"]:
             return [Holiday(
-                locale=self.locale,
+                locale=self.id,
                 region="",
                 date=date.shift_to_weekday("tuesday", including=True),
                 description="Day after New Year's Day",
@@ -49,7 +49,7 @@ class en_NZ(Locale):
 
         elif date.weekday() == "saturday":
             return [Holiday(
-                locale=self.locale,
+                locale=self.id,
                 region="",
                 date=date.shift_to_weekday("monday", including=True),
                 description="Day after New Year's Day",
@@ -57,7 +57,7 @@ class en_NZ(Locale):
                 notes="")]
 
         return [Holiday(
-                locale=self.locale,
+                locale=self.id,
                 region="",
                 date=date,
                 description="Day after New Year's Day",
@@ -69,7 +69,7 @@ class en_NZ(Locale):
 
         if year > 2016 and date.weekday() in ["saturday", "sunday"]:
             return [Holiday(
-                    locale=self.locale,
+                    locale=self.id,
                     region="",
                     date=date.shift_to_weekday("monday", including=True),
                     description="Waitangi Day (observed)",
@@ -83,7 +83,7 @@ class en_NZ(Locale):
 
         if year > 2015 and date.weekday() in ["saturday", "sunday"]:
             return [Holiday(
-                    locale=self.locale,
+                    locale=self.id,
                     region="",
                     date=date.shift_to_weekday("monday", including=True),
                     description="ANZAC Day (observed)",
@@ -97,7 +97,7 @@ class en_NZ(Locale):
 
         if date.weekday() == "sunday":
             return [Holiday(
-                locale=self.locale,
+                locale=self.id,
                 region="",
                 date=date.shift_to_weekday("tuesday", including=True),
                 description="Christmas Day (observed)",
@@ -106,7 +106,7 @@ class en_NZ(Locale):
 
         elif date.weekday() == "saturday":
             return [Holiday(
-                locale=self.locale,
+                locale=self.id,
                 region="",
                 date=date.shift_to_weekday("monday", including=True),
                 description="Christmas Day (observed)",
@@ -120,7 +120,7 @@ class en_NZ(Locale):
 
         if date.weekday() == "sunday":
             return [Holiday(
-                locale=self.locale,
+                locale=self.id,
                 region="",
                 date=date.shift_to_weekday("tuesday", including=True),
                 description="Boxing Day (observed)",
@@ -129,7 +129,7 @@ class en_NZ(Locale):
 
         elif date.weekday() == "saturday":
             return [Holiday(
-                locale=self.locale,
+                locale=self.id,
                 region="",
                 date=date.shift_to_weekday("monday", including=True),
                 description="Boxing Day (observed)",

@@ -25,5 +25,5 @@ class pl_PL(Locale):
     60 days after Easter: [NRV] Boże Ciało
     """
 
-    locale = "pl-PL"
+    id = "pl-PL"
     easter_type = EASTER_WESTERN

@@ -20,5 +20,5 @@ class fr_FR(Locale):
     50 days after Easter: [NRV] Lundi de Pentecôte
     """
 
-    locale = "fr-FR"
+    id = "fr-FR"
     easter_type = EASTER_WESTERN

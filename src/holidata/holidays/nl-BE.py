@@ -20,5 +20,5 @@ class nl_BE(Locale):
     50 days after Easter: [NRV] Pinkstermaandag
     """
 
-    locale = "nl-BE"
+    id = "nl-BE"
     easter_type = EASTER_WESTERN

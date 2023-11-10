@@ -23,5 +23,5 @@ class sk_SK(Locale):
     1 day after Easter: [NRV] Veľkonočný pondelok
     """
 
-    locale = "sk-SK"
+    id = "sk-SK"
     easter_type = EASTER_WESTERN

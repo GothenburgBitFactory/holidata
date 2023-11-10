@@ -21,7 +21,7 @@ class is_IS(Locale):
     1. monday in August: [NV] Frídagur verslunarmanna
     """
 
-    locale = "is-IS"
+    id = "is-IS"
     easter_type = EASTER_WESTERN
 
     def holiday_first_day_of_summer(self, year):
@@ -32,7 +32,7 @@ class is_IS(Locale):
         """
         return [
             Holiday(
-                locale=self.locale,
+                locale=self.id,
                 region="",
                 date=SmartDayArrow(year, 4, 18).shift_to_weekday("thursday"),
                 description="Sumardagurinn fyrsti",
@@ -55,7 +55,7 @@ class is_IS(Locale):
         """
         return [
             Holiday(
-                locale=self.locale,
+                locale=self.id,
                 region="",
                 date=SmartDayArrow(year, 12, 24),
                 description="Aðfangadagur jóla",
@@ -63,7 +63,7 @@ class is_IS(Locale):
                 notes="Holiday from 13:00",
             ),
             Holiday(
-                locale=self.locale,
+                locale=self.id,
                 region="",
                 date=SmartDayArrow(year, 12, 31),
                 description="Gamlársdagur",

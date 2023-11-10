@@ -26,14 +26,14 @@ class de_DE(Locale):
     60 days after Easter: [BW,BY,HE,NW,RP,SL] [RV] Fronleichnam
     """
 
-    locale = "de-DE"
+    id = "de-DE"
     easter_type = EASTER_WESTERN
 
     def holiday_buss_und_bettag(self, year):
         """11 days before 4. sunday before 12-25: [SN] [RV] Buß- und Bettag"""
 
         return [Holiday(
-            self.locale,
+            self.id,
             "SN",
             SmartDayArrow(year, 12, 25).shift_to_weekday("sunday", order=4, reverse=True).shift(days=-11),
             "Buß- und Bettag",
@@ -55,7 +55,7 @@ class de_DE(Locale):
             regions = ["BB", "BH", "HH", "MV", "NI", "SH", "SN", "ST", "TH"]
 
         return [Holiday(
-            self.locale,
+            self.id,
             region,
             SmartDayArrow(year, 10, 31),
             "Reformationstag",
@@ -71,7 +71,7 @@ class de_DE(Locale):
         """
         if year >= 2019:
             return [Holiday(
-                self.locale,
+                self.id,
                 "BE",
                 SmartDayArrow(year, 3, 8),
                 "Internationaler Frauentag",
@@ -89,7 +89,7 @@ class de_DE(Locale):
         """
         if year == 2020:
             return [Holiday(
-                self.locale,
+                self.id,
                 "BE",
                 SmartDayArrow(year, 5, 8),
                 "75. Jahrestag der Befreiung vom Nationalsozialismus und der Beendigung des Zweiten Weltkrieges in Europa",

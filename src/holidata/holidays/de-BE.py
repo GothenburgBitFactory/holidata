@@ -20,5 +20,5 @@ class de_BE(Locale):
     50 days after Easter: [NRV] Pfingstmontag
     """
 
-    locale = "de-BE"
+    id = "de-BE"
     easter_type = EASTER_WESTERN

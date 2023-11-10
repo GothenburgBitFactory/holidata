@@ -25,5 +25,5 @@ class nb_NO(Locale):
     50 days after Easter: [NRV] Pinsedag
     """
 
-    locale = "nb-NO"
+    id = "nb-NO"
     easter_type = EASTER_WESTERN

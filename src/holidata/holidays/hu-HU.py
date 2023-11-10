@@ -29,7 +29,7 @@ class hu_HU(Locale):
     50 days after Easter: [NRV] Pünkösdhétfő
     """
 
-    locale = "hu-HU"
+    id = "hu-HU"
     easter_type = EASTER_WESTERN
 
     def holiday_nagypentek(self, year):
@@ -38,7 +38,7 @@ class hu_HU(Locale):
         """
         if year >= 2017:
             return [Holiday(
-                self.locale,
+                self.id,
                 "",
                 easter(year, self.easter_type).shift(days=-2),
                 "Nagypéntek",
@@ -68,7 +68,7 @@ class hu_HU(Locale):
             """
             return [
                 Holiday(
-                    locale=self.locale,
+                    locale=self.id,
                     region="",
                     date=SmartDayArrow(year, 1, 2),
                     description="Munkaszüneti nap",
@@ -76,7 +76,7 @@ class hu_HU(Locale):
                     notes="2015-01-10 munkanap"
                 ),
                 Holiday(
-                    locale=self.locale,
+                    locale=self.id,
                     region="",
                     date=SmartDayArrow(year, 8, 21),
                     description="Munkaszüneti nap",
@@ -84,7 +84,7 @@ class hu_HU(Locale):
                     notes="2015-08-08 munkanap"
                 ),
                 Holiday(
-                    locale=self.locale,
+                    locale=self.id,
                     region="",
                     date=SmartDayArrow(year, 12, 24),
                     description="Munkaszüneti nap",
@@ -98,7 +98,7 @@ class hu_HU(Locale):
             """
             return [
                 Holiday(
-                    locale=self.locale,
+                    locale=self.id,
                     region="",
                     date=SmartDayArrow(year, 3, 14),
                     description="Munkaszüneti nap",
@@ -106,7 +106,7 @@ class hu_HU(Locale):
                     notes="2016-03-05 munkanap"
                 ),
                 Holiday(
-                    locale=self.locale,
+                    locale=self.id,
                     region="",
                     date=SmartDayArrow(year, 10, 31),
                     description="Munkaszüneti nap",
@@ -124,7 +124,7 @@ class hu_HU(Locale):
             """
             return [
                 Holiday(
-                    locale=self.locale,
+                    locale=self.id,
                     region="",
                     date=SmartDayArrow(year, 3, 16),
                     description="Munkaszüneti nap",
@@ -132,7 +132,7 @@ class hu_HU(Locale):
                     notes="2018-03-10 munkanap"
                 ),
                 Holiday(
-                    locale=self.locale,
+                    locale=self.id,
                     region="",
                     date=SmartDayArrow(year, 4, 30),
                     description="Munkaszüneti nap",
@@ -140,7 +140,7 @@ class hu_HU(Locale):
                     notes="2018-04-21 munkanap"
                 ),
                 Holiday(
-                    locale=self.locale,
+                    locale=self.id,
                     region="",
                     date=SmartDayArrow(year, 10, 22),
                     description="Munkaszüneti nap",
@@ -148,7 +148,7 @@ class hu_HU(Locale):
                     notes="2018-10-13 munkanap"
                 ),
                 Holiday(
-                    locale=self.locale,
+                    locale=self.id,
                     region="",
                     date=SmartDayArrow(year, 11, 2),
                     description="Munkaszüneti nap",
@@ -156,7 +156,7 @@ class hu_HU(Locale):
                     notes="2018-11-10 munkanap"
                 ),
                 Holiday(
-                    locale=self.locale,
+                    locale=self.id,
                     region="",
                     date=SmartDayArrow(year, 12, 24),
                     description="Munkaszüneti nap",
@@ -164,7 +164,7 @@ class hu_HU(Locale):
                     notes="2018-12-01 munkanap"
                 ),
                 Holiday(
-                    locale=self.locale,
+                    locale=self.id,
                     region="",
                     date=SmartDayArrow(year, 12, 31),
                     description="Munkaszüneti nap",
@@ -179,7 +179,7 @@ class hu_HU(Locale):
             """
             return [
                 Holiday(
-                    locale=self.locale,
+                    locale=self.id,
                     region="",
                     date=SmartDayArrow(year, 8, 19),
                     description="Munkaszüneti nap",
@@ -187,7 +187,7 @@ class hu_HU(Locale):
                     notes="2019-08-10 munkanap"
                 ),
                 Holiday(
-                    locale=self.locale,
+                    locale=self.id,
                     region="",
                     date=SmartDayArrow(year, 12, 24),
                     description="Munkaszüneti nap",
@@ -195,7 +195,7 @@ class hu_HU(Locale):
                     notes="2019-12-07 munkanap"
                 ),
                 Holiday(
-                    locale=self.locale,
+                    locale=self.id,
                     region="",
                     date=SmartDayArrow(year, 12, 27),
                     description="Munkaszüneti nap",
@@ -209,14 +209,14 @@ class hu_HU(Locale):
             """
             return [
                 Holiday(
-                    locale=self.locale,
+                    locale=self.id,
                     region="",
                     date=SmartDayArrow(year, 8, 21),
                     description="Munkaszüneti nap",
                     flags="NF",
                     notes="2020-08-29 munkanap"),
                 Holiday(
-                    locale=self.locale,
+                    locale=self.id,
                     region="",
                     date=SmartDayArrow(year, 12, 24),
                     description="Munkaszüneti nap",
@@ -229,7 +229,7 @@ class hu_HU(Locale):
             """
             return [
                 Holiday(
-                    locale=self.locale,
+                    locale=self.id,
                     region="",
                     date=SmartDayArrow(year, 12, 24),
                     description="Munkaszüneti nap",
@@ -243,14 +243,14 @@ class hu_HU(Locale):
             """
             return [
                 Holiday(
-                    locale=self.locale,
+                    locale=self.id,
                     region="",
                     date=SmartDayArrow(year, 3, 14),
                     description="Munkaszüneti nap",
                     flags="NF",
                     notes="2022-03-26 munkanap"),
                 Holiday(
-                    locale=self.locale,
+                    locale=self.id,
                     region="",
                     date=SmartDayArrow(year, 10, 31),
                     description="Munkaszüneti nap",

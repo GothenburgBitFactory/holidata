@@ -16,7 +16,7 @@ class en_GB(Locale):
     1. last monday in august: [NV] August Bank Holiday
     """
 
-    locale = "en-GB"
+    id = "en-GB"
     easter_type = EASTER_WESTERN
 
     def holiday_new_years_day_observed(self, year):
@@ -24,7 +24,7 @@ class en_GB(Locale):
 
         if date.weekday() in ["saturday", "sunday"]:
             return [Holiday(
-                    locale=self.locale,
+                    locale=self.id,
                     region="",
                     date=date.shift_to_weekday("monday", including=True),
                     description="New Year's Day (observed)",
@@ -53,7 +53,7 @@ class en_GB(Locale):
                                   including=True)
 
         return [Holiday(
-            locale=self.locale,
+            locale=self.id,
             region="",
             date=date,
             description="Spring Bank Holiday",
@@ -65,7 +65,7 @@ class en_GB(Locale):
 
         if date.weekday() == "saturday":
             return [Holiday(
-                    locale=self.locale,
+                    locale=self.id,
                     region="",
                     date=date.shift_to_weekday("monday", including=True),
                     description="Christmas Day (observed)",
@@ -74,7 +74,7 @@ class en_GB(Locale):
 
         elif date.weekday() == "sunday":
             return [Holiday(
-                    locale=self.locale,
+                    locale=self.id,
                     region="",
                     date=date.shift_to_weekday("tuesday", including=True),
                     description="Christmas Day (observed)",
@@ -88,7 +88,7 @@ class en_GB(Locale):
 
         if date.weekday() == "sunday":
             return [Holiday(
-                    locale=self.locale,
+                    locale=self.id,
                     region="",
                     date=date.shift_to_weekday("tuesday", including=True),
                     description="Boxing Day (observed)",
@@ -97,7 +97,7 @@ class en_GB(Locale):
 
         elif date.weekday() == "saturday":
             return [Holiday(
-                    locale=self.locale,
+                    locale=self.id,
                     region="",
                     date=date.shift_to_weekday("monday", including=True),
                     description="Boxing Day (observed)",
@@ -112,7 +112,7 @@ class en_GB(Locale):
         """
         if year == 2023:
             return [Holiday(
-                locale=self.locale,
+                locale=self.id,
                 region="",
                 date=SmartDayArrow(year, 5, 8),
                 description="Coronation of King Charles III",
@@ -128,7 +128,7 @@ class en_GB(Locale):
         """
         if year == 2012:
             return [Holiday(
-                locale=self.locale,
+                locale=self.id,
                 region="",
                 date=SmartDayArrow(year, 6, 5),
                 description="Queen's Diamond Jubilee",
@@ -137,7 +137,7 @@ class en_GB(Locale):
 
         if year == 2022:
             return [Holiday(
-                locale=self.locale,
+                locale=self.id,
                 region="",
                 date=SmartDayArrow(year, 6, 3),
                 description="Queen's Platinum Jubilee",
@@ -149,7 +149,7 @@ class en_GB(Locale):
     def holiday_state_funeral_of_queen_elizabeth_ii(self, year):
         if year == 2022:
             return [Holiday(
-                locale=self.locale,
+                locale=self.id,
                 region="",
                 date=SmartDayArrow(year, 9, 19),
                 description="State Funeral of Queen Elizabeth II",

@@ -32,5 +32,5 @@ class de_AT(Locale):
     60 days after Easter: [NRV] Fronleichnam
     """
 
-    locale = "de-AT"
+    id = "de-AT"
     easter_type = EASTER_WESTERN

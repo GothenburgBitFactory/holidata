@@ -22,7 +22,7 @@ class el_GR(Locale):
     50 days after Easter: [NRV] Δευτέρα του Αγίου Πνεύματος
     """
 
-    locale = "el-GR"
+    id = "el-GR"
     easter_type = EASTER_ORTHODOX
 
     def holiday_may_day(self, year):
@@ -39,7 +39,7 @@ class el_GR(Locale):
             date = date.shift(days=1)
 
         return [Holiday(
-            self.locale,
+            self.id,
             "",
             date,
             "Πρωτομαγιά",

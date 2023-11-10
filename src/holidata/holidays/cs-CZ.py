@@ -28,7 +28,7 @@ class cs_CZ(Locale):
     1 day after Easter: [NRV] Velikonoční pondělí
     """
 
-    locale = "cs-CZ"
+    id = "cs-CZ"
     easter_type = EASTER_WESTERN
 
     def holiday_velky_patek(self, year):
@@ -38,7 +38,7 @@ class cs_CZ(Locale):
         """
         if year >= 2016:
             return [Holiday(
-                self.locale,
+                self.id,
                 "",
                 easter(year, self.easter_type).shift(days=-2),
                 "Velký pátek",
@@ -59,7 +59,7 @@ class cs_CZ(Locale):
             name = "Den boje za svobodu a demokracii a Mezinárodní den studentstva"
 
         return [Holiday(
-            self.locale,
+            self.id,
             "",
             SmartDayArrow(year, 11, 17),
             name,

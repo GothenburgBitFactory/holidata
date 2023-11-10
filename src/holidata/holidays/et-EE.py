@@ -25,5 +25,5 @@ class et_EE(Locale):
     49 days after Easter: [NRV] Nelipühade 1. püha
     """
 
-    locale = "et-EE"
+    id = "et-EE"
     easter_type = EASTER_WESTERN

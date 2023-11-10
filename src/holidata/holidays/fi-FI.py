@@ -24,7 +24,7 @@ class fi_FI(Locale):
     49 days after Easter: [NRV] Helluntaipäivä
     """
 
-    locale = "fi-FI"
+    id = "fi-FI"
     easter_type = EASTER_WESTERN
 
     def holiday_juhannuspaeivae(self, year):
@@ -32,7 +32,7 @@ class fi_FI(Locale):
         Saturday between 20 and 26 June: Juhannuspäivä (Midsummer Day)
         """
         return [Holiday(
-            self.locale,
+            self.id,
             "",
             SmartDayArrow(year, 6, 19).shift_to_weekday("saturday", order=1, reverse=False),
             "Juhannuspäivä",
@@ -44,7 +44,7 @@ class fi_FI(Locale):
         Saturday between 31 October and 6 November: Pyhäinpäivä (All Saints' Day)
         """
         return [Holiday(
-            self.locale,
+            self.id,
             "",
             SmartDayArrow(year, 10, 30).shift_to_weekday("saturday", order=1, reverse=False),
             "Pyhäinpäivä",

@@ -22,5 +22,5 @@ class pt_PT(Locale):
     60 days after Easter: [NRV] Corpo de Deus
     """
 
-    locale = "pt-PT"
+    id = "pt-PT"
     easter_type = EASTER_WESTERN

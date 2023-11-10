@@ -27,7 +27,7 @@ class sl_SI(Locale):
     50 days after Easter: [NRV] Binkošti
     """
 
-    locale = "sl-SI"
+    id = "sl-SI"
     easter_type = EASTER_WESTERN
 
     def holiday_novo_leto(self, year):
@@ -38,7 +38,7 @@ class sl_SI(Locale):
         2016<: https://www.uradni-list.si/1/objava.jsp?sop=2016-01-3568
         """
         return [Holiday(
-            self.locale,
+            self.id,
             "",
             SmartDayArrow(year, 1, 2),
             "Novo leto",

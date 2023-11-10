@@ -20,5 +20,5 @@ class da_DK(Locale):
     50 days after Easter: [NRV] Anden pinsedag
     """
 
-    locale = "da-DK"
+    id = "da-DK"
     easter_type = EASTER_WESTERN

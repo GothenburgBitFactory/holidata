@@ -28,5 +28,5 @@ class de_CH(Locale):
     60 days after Easter: [AI,JU,LU,NW,OW,SZ,TI,UR,VS,ZG] [RV] Fronleichnam
     """
 
-    locale = "de-CH"
+    id = "de-CH"
     easter_type = EASTER_WESTERN

@@ -97,5 +97,5 @@ class pt_BR(Locale):
     Easter: [NRV] Páscoa
     """
 
-    locale = "pt-BR"
+    id = "pt-BR"
     easter_type = EASTER_WESTERN

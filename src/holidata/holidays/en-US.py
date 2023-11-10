@@ -21,5 +21,5 @@ class en_US(Locale):
     4. friday in November: [NV] Day after Thanksgiving
     """
 
-    locale = "en-US"
+    id = "en-US"
     easter_type = EASTER_WESTERN

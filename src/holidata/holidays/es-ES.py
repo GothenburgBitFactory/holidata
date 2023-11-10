@@ -52,7 +52,7 @@ class es_ES(Locale):
     Easter: [NRV] Pascua
     """
 
-    locale = "es-ES"
+    id = "es-ES"
     easter_type = EASTER_WESTERN
 
     def holiday_lunes_siguiente_al_ano_nuevo(self, year):
@@ -66,7 +66,7 @@ class es_ES(Locale):
             return []
 
         return [Holiday(
-            self.locale,
+            self.id,
             region,
             SmartDayArrow(year, 1, 1).shift_to_weekday("monday", including=True),
             "Lunes siguiente al Año Nuevo",
@@ -82,7 +82,7 @@ class es_ES(Locale):
             return []
 
         return [Holiday(
-            self.locale,
+            self.id,
             region,
             SmartDayArrow(year, 1, 6).shift_to_weekday("monday", including=True),
             "Lunes siguiente a la Epifanía del Señor",
@@ -92,7 +92,7 @@ class es_ES(Locale):
     def holiday_martes_de_carnaval(self, year):
         if year in [2023, 2024]:
             return [Holiday(
-                self.locale,
+                self.id,
                 "EX",
                 easter(year, self.easter_type).shift(days=-47),
                 "Martes de Carnaval",
@@ -110,7 +110,7 @@ class es_ES(Locale):
             date = SmartDayArrow(year, 2, 28)
 
         return [Holiday(
-            self.locale,
+            self.id,
             "AN",
             date,
             "Día de Andalucía",
@@ -120,7 +120,7 @@ class es_ES(Locale):
     def holiday_dia_de_las_illes_balears(self, year):
         if year in [2011, 2012, 2013, 2014, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024]:
             return [Holiday(
-                self.locale,
+                self.id,
                 "IB",
                 SmartDayArrow(year, 3, 1),
                 "Día de las Illes Balears",
@@ -132,7 +132,7 @@ class es_ES(Locale):
     def holiday_estatuto_de_autonomia_de_la_ciudad_de_melilla(self, year):
         if year in [2020, 2021]:
             return [Holiday(
-                self.locale,
+                self.id,
                 "ML",
                 SmartDayArrow(year, 3, 13),
                 "Estatuto de Autonomía de la Ciudad de Melilla",
@@ -172,7 +172,7 @@ class es_ES(Locale):
             return []
 
         return [Holiday(
-            self.locale,
+            self.id,
             region,
             SmartDayArrow(year, 3, 19),
             "San José",
@@ -182,7 +182,7 @@ class es_ES(Locale):
     def holiday_lunes_de_fallas(self, year):
         if year == 2013:
             return [Holiday(
-                self.locale,
+                self.id,
                 "VC",
                 SmartDayArrow(year, 3, 18),
                 "Lunes de Fallas",
@@ -194,7 +194,7 @@ class es_ES(Locale):
     def holiday_traslado_de_san_jose(self, year):
         if year == 2013:
             return [Holiday(
-                self.locale,
+                self.id,
                 "MD",
                 SmartDayArrow(year, 3, 18),
                 "Traslado de San José",
@@ -206,7 +206,7 @@ class es_ES(Locale):
     def holiday_dia_siguente_a_san_jose(self, year):
         if year == 2015:
             return [Holiday(
-                self.locale,
+                self.id,
                 "GA",
                 SmartDayArrow(year, 3, 20),
                 "Día siguiente a San José",
@@ -224,7 +224,7 @@ class es_ES(Locale):
             return []
 
         return [Holiday(
-            self.locale,
+            self.id,
             region,
             SmartDayArrow(year, 3, 19).shift_to_weekday("monday", True),
             "Lunes siguiente a San José",
@@ -238,7 +238,7 @@ class es_ES(Locale):
             date = SmartDayArrow(year, 4, 23)
 
         return [Holiday(
-            self.locale,
+            self.id,
             "AR",
             date,
             "San Jorge / Día de Aragón",
@@ -252,7 +252,7 @@ class es_ES(Locale):
             return []
 
         return [Holiday(
-            self.locale,
+            self.id,
             "AR",
             date,
             "Lunes siguiente a San Jorge / Día de Aragón",
@@ -266,7 +266,7 @@ class es_ES(Locale):
             date = SmartDayArrow(year, 4, 23)
 
         return [Holiday(
-            self.locale,
+            self.id,
             "CL",
             date,
             "Fiesta de Castilla y León",
@@ -284,7 +284,7 @@ class es_ES(Locale):
             return []
 
         return [Holiday(
-            self.locale,
+            self.id,
             region,
             SmartDayArrow(year, 5, 1).shift_to_weekday("monday", including=True),
             "Lunes siguiente a la Fiesta del Trabajo",
@@ -296,7 +296,7 @@ class es_ES(Locale):
             return []
         else:
             return [Holiday(
-                self.locale,
+                self.id,
                 "MD",
                 SmartDayArrow(year, 5, 2),
                 "Fiesta de la Comunidad de Madrid",
@@ -306,7 +306,7 @@ class es_ES(Locale):
     def holiday_lunes_siguiente_al_dia_de_la_comunidad_de_madrid(self, year):
         if year in [2021]:
             return [Holiday(
-                self.locale,
+                self.id,
                 "MD",
                 SmartDayArrow(year, 5, 2).shift_to_weekday("monday", including=True),
                 "Lunes siguiente al Día de la Comunidad de Madrid",
@@ -320,7 +320,7 @@ class es_ES(Locale):
             return []
         else:
             return [Holiday(
-                self.locale,
+                self.id,
                 "GA",
                 SmartDayArrow(year, 5, 17),
                 "Día de las Letras Gallegas",
@@ -332,7 +332,7 @@ class es_ES(Locale):
             return []
         else:
             return [Holiday(
-                self.locale,
+                self.id,
                 "CN",
                 SmartDayArrow(year, 5, 30),
                 "Día de Canarias",
@@ -344,7 +344,7 @@ class es_ES(Locale):
             return []
         else:
             return [Holiday(
-                self.locale,
+                self.id,
                 "CM",
                 SmartDayArrow(year, 5, 31),
                 "Día de Castilla-La Mancha",
@@ -360,7 +360,7 @@ class es_ES(Locale):
             date = SmartDayArrow(year, 6, 9)
 
         return [Holiday(
-            self.locale,
+            self.id,
             "MC",
             date,
             "Día de la Región de Murcia",
@@ -375,7 +375,7 @@ class es_ES(Locale):
 
         if date is not None:
             return [Holiday(
-                self.locale,
+                self.id,
                 "RI",
                 date,
                 "Día de La Rioja",
@@ -387,7 +387,7 @@ class es_ES(Locale):
     def holiday_lunes_siguiente_al_dia_de_la_rioja(self, year):
         if year == 2024:
             return [Holiday(
-                self.locale,
+                self.id,
                 "RI",
                 SmartDayArrow(year, 6, 10),
                 "Lunes siguiente al Día de La Rioja",
@@ -425,7 +425,7 @@ class es_ES(Locale):
             return []
 
         return [Holiday(
-            self.locale,
+            self.id,
             region,
             SmartDayArrow(year, 6, 24),
             "San Juan",
@@ -443,7 +443,7 @@ class es_ES(Locale):
             regions = ["GA"]
 
         return [Holiday(
-            self.locale,
+            self.id,
             region,
             SmartDayArrow(year, 7, 25),
             "Santiago Apóstol / Día Nacional de Galicia",
@@ -475,7 +475,7 @@ class es_ES(Locale):
             return []
 
         return [Holiday(
-            self.locale,
+            self.id,
             region,
             SmartDayArrow(year, 7, 25),
             "Santiago Apóstol",
@@ -485,7 +485,7 @@ class es_ES(Locale):
     def holiday_dia_de_las_instituciones_de_cantabria(self, year):
         if year in [2011, 2016, 2017, 2018, 2020, 2021, 2022, 2023]:
             return [Holiday(
-                self.locale,
+                self.id,
                 "CB",
                 SmartDayArrow(year, 7, 28),
                 "Día de las Instituciones de Cantabria",
@@ -497,7 +497,7 @@ class es_ES(Locale):
     def holiday_nuestra_senora_de_africa(self, year):
         if year in [2022, 2023, 2024]:
             return [Holiday(
-                self.locale,
+                self.id,
                 "CE",
                 SmartDayArrow(year, 8, 5),
                 "Nuestra Señora de África",
@@ -513,7 +513,7 @@ class es_ES(Locale):
             return []
 
         return [Holiday(
-            self.locale,
+            self.id,
             region,
             SmartDayArrow(year, 8, 15).shift_to_weekday("monday", including=True),
             "Lunes siguiente a la Asunción de la Virgen",
@@ -523,7 +523,7 @@ class es_ES(Locale):
     def holiday_dia_de_ceuta(self, year):
         if year in [2016, 2017, 2019, 2020, 2021, 2022, 2023]:
             return [Holiday(
-                self.locale,
+                self.id,
                 "CE",
                 SmartDayArrow(year, 9, 2),
                 "Día de Ceuta",
@@ -535,7 +535,7 @@ class es_ES(Locale):
     def holiday_v_centenario_vuelta_al_mundo(self, year):
         if year == 2022:
             return [Holiday(
-                self.locale,
+                self.id,
                 "PV",
                 SmartDayArrow(year, 9, 6),
                 "V Centenario Vuelta al Mundo",
@@ -549,7 +549,7 @@ class es_ES(Locale):
             return []
         else:
             return [Holiday(
-                self.locale,
+                self.id,
                 "AS",
                 SmartDayArrow(year, 9, 8),
                 "Día de Asturias",
@@ -559,7 +559,7 @@ class es_ES(Locale):
     def holiday_lunes_siguiente_al_dia_de_asturias(self, year):
         if year in [2013, 2019, 2024]:
             return [Holiday(
-                self.locale,
+                self.id,
                 "AS",
                 SmartDayArrow(year, 9, 8).shift_to_weekday("monday", including=True),
                 "Lunes siguiente al Día de Asturias",
@@ -573,7 +573,7 @@ class es_ES(Locale):
             return []
         else:
             return [Holiday(
-                self.locale,
+                self.id,
                 "EX",
                 SmartDayArrow(year, 9, 8),
                 "Día de Extremadura",
@@ -583,7 +583,7 @@ class es_ES(Locale):
     def holiday_lunes_siguiente_al_dia_de_extremadura(self, year):
         if year in [2013, 2019]:
             return [Holiday(
-                self.locale,
+                self.id,
                 "EX",
                 SmartDayArrow(year, 9, 8).shift_to_weekday("monday", including=True),
                 "Lunes siguiente al Día de Extremadura",
@@ -597,7 +597,7 @@ class es_ES(Locale):
             return []
         else:
             return [Holiday(
-                self.locale,
+                self.id,
                 "CT",
                 SmartDayArrow(year, 9, 11),
                 "Fiesta Nacional de Cataluña",
@@ -607,7 +607,7 @@ class es_ES(Locale):
     def holiday_la_bien_aparecida(self, year):
         if year in [2011, 2012, 2014, 2014, 2015, 2016, 2017, 2018, 2020, 2021, 2022, 2023]:
             return [Holiday(
-                self.locale,
+                self.id,
                 "CB",
                 SmartDayArrow(year, 9, 15),
                 "La Bien Aparecida",
@@ -618,7 +618,7 @@ class es_ES(Locale):
     def holiday_80_aniversario_del_primer_gobierno_vasco(self, year):
         if year in [2016]:
             return [Holiday(
-                self.locale,
+                self.id,
                 "PV",
                 SmartDayArrow(year, 10, 7),
                 "80º aniversario del primer Gobierno Vasco",
@@ -632,7 +632,7 @@ class es_ES(Locale):
             return []
         else:
             return [Holiday(
-                self.locale,
+                self.id,
                 "VC",
                 SmartDayArrow(year, 10, 9),
                 "Día de la Comunitat Valenciana",
@@ -646,7 +646,7 @@ class es_ES(Locale):
             return []
 
         return [Holiday(
-            self.locale,
+            self.id,
             region,
             SmartDayArrow(year, 10, 12).shift_to_weekday("monday", including=True),
             "Lunes siguiente a la Fiesta Nacional de España",
@@ -656,7 +656,7 @@ class es_ES(Locale):
     def holiday_dia_del_pais_vasco_euskadiko_eguna(self, year):
         if year in [2011, 2012, 2013, 2014]:
             return [Holiday(
-                self.locale,
+                self.id,
                 "PV",
                 SmartDayArrow(year, 10, 25),
                 "Día del País Vasco-Euskadiko Eguna",
@@ -674,7 +674,7 @@ class es_ES(Locale):
             return []
 
         return [Holiday(
-            self.locale,
+            self.id,
             region,
             SmartDayArrow(year, 11, 1).shift_to_weekday("monday", including=True),
             "Lunes siguiente a Todos los Santos",
@@ -690,7 +690,7 @@ class es_ES(Locale):
             return []
 
         return [Holiday(
-            self.locale,
+            self.id,
             region,
             SmartDayArrow(year, 12, 6).shift_to_weekday("monday", including=True),
             "Lunes siguiente al Día de la Constitución Española",
@@ -708,7 +708,7 @@ class es_ES(Locale):
             return []
 
         return [Holiday(
-            self.locale,
+            self.id,
             region,
             SmartDayArrow(year, 12, 8).shift_to_weekday("monday", including=True),
             "Lunes siguiente a La Inmaculada Concepción",
@@ -722,7 +722,7 @@ class es_ES(Locale):
             return []
 
         return [Holiday(
-            self.locale,
+            self.id,
             region,
             SmartDayArrow(year, 12, 26),
             "Lunes siguiente a la Natividad del Señor",
@@ -760,7 +760,7 @@ class es_ES(Locale):
             return []
 
         return [Holiday(
-            self.locale,
+            self.id,
             region,
             SmartDayArrow(year, 12, 26),
             "San Esteban",
@@ -780,7 +780,7 @@ class es_ES(Locale):
             return []
 
         return [Holiday(
-            self.locale,
+            self.id,
             region,
             easter(year, self.easter_type).shift(days=-3),
             "Jueves Santo",
@@ -820,7 +820,7 @@ class es_ES(Locale):
             return []
 
         return [Holiday(
-            self.locale,
+            self.id,
             region,
             easter(year, self.easter_type).shift_to_weekday("monday", including=True),
             "Lunes de Pascua",
@@ -838,7 +838,7 @@ class es_ES(Locale):
             return []
 
         return [Holiday(
-            self.locale,
+            self.id,
             "CT",
             date,
             "Lunes de Pascua Granada",
@@ -854,7 +854,7 @@ class es_ES(Locale):
             return []
 
         return [Holiday(
-            self.locale,
+            self.id,
             region,
             easter(year, self.easter_type).shift(days=60),
             "Corpus Christi",
@@ -870,7 +870,7 @@ class es_ES(Locale):
             return []
 
         return [Holiday(
-            self.locale,
+            self.id,
             "ML",
             date,
             "Fiesta del Eid Fitr",
@@ -908,7 +908,7 @@ class es_ES(Locale):
             return []
 
         return [Holiday(
-            self.locale,
+            self.id,
             "CE",
             date,
             "Fiesta del Sacrificio (Eidul Adha)",
@@ -926,7 +926,7 @@ class es_ES(Locale):
             return []
 
         return [Holiday(
-            self.locale,
+            self.id,
             "ML",
             date,
             "Fiesta del Sacrificio (Aid Al Adha)",
@@ -940,7 +940,7 @@ class es_ES(Locale):
             return []
 
         return [Holiday(
-            self.locale,
+            self.id,
             "CE",
             date,
             "Lunes siguiente a la Fiesta del Sacrificio (Eidul Adha)",
@@ -974,7 +974,7 @@ class es_ES(Locale):
             return []
 
         return [Holiday(
-            self.locale,
+            self.id,
             "ML",
             date,
             "Fiesta del Sacrificio (Aid El Kebir)",

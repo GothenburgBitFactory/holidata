@@ -22,13 +22,13 @@ class hr_HR(Locale):
     60 days after Easter: [NRV] Tijelovo
     """
 
-    locale = "hr-HR"
+    id = "hr-HR"
     easter_type = EASTER_WESTERN
 
     def holiday_dan_sjecanja_na_zrtve_domovinskog_rata_i_dan_sjecanja_na_zrtvu_vukovara_i_skabrnje(self, year):
         if year >= 2020:
             return [Holiday(
-                self.locale,
+                self.id,
                 "",
                 SmartDayArrow(year, 11, 18),
                 "Dan sjećanja na žrtve Domovinskog rata i Dan sjećanja na žrtvu Vukovara i Škabrnje",

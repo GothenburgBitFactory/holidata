@@ -24,7 +24,7 @@ class sv_FI(Locale):
     49 days after Easter: [NRV] Pingst
     """
 
-    locale = "sv-FI"
+    id = "sv-FI"
     easter_type = EASTER_WESTERN
 
     def holiday_midsommardagen(self, year):
@@ -32,7 +32,7 @@ class sv_FI(Locale):
         Saturday between 20 and 26 June: Midsommardagen
         """
         return [Holiday(
-            self.locale,
+            self.id,
             "",
             SmartDayArrow(year, 6, 19).shift_to_weekday("saturday", order=1, reverse=False),
             "Midsommardagen",
@@ -44,7 +44,7 @@ class sv_FI(Locale):
         Saturday between 31 October and 6 November: Alla helgons dag (All Saints' Day)
         """
         return [Holiday(
-            self.locale,
+            self.id,
             "",
             SmartDayArrow(year, 10, 30).shift_to_weekday("saturday", order=1, reverse=False),
             "Alla helgons dag",

@@ -51,12 +51,12 @@ class fr_CA(Locale):
     2. monday in October: [AB,BC,MB,NL,ON,QC,SK,NT,NU,YT] [V] Jour de l'Action de grâce
     """
 
-    locale = "fr-CA"
+    id = "fr-CA"
     easter_type = EASTER_WESTERN
 
     def holiday_journee_nationale_des_patriotes(self, year):
         return [Holiday(
-            locale=self.locale,
+            locale=self.id,
             region="QC",
             date=SmartDayArrow(year, 5, 25).shift_to_weekday(
                 "monday", order=1, reverse=True, including=False),
@@ -66,7 +66,7 @@ class fr_CA(Locale):
 
     def holiday_fete_de_la_reine_victoria(self, year):
         return [Holiday(
-            locale=self.locale,
+            locale=self.id,
             region=region,
             date=SmartDayArrow(year, 5, 25).shift_to_weekday(
                 "monday", order=1, reverse=True, including=False),

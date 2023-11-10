@@ -19,7 +19,7 @@ class en_ZA(Locale):
     1 day after Easter: [NRV] Family Day
     """
 
-    locale = "en-ZA"
+    id = "en-ZA"
     easter_type = EASTER_WESTERN
 
     def holiday_new_years_day(self, year):
@@ -67,14 +67,14 @@ class en_ZA(Locale):
             supplement_date = original_date.shift(days=1)
             return [
                 Holiday(
-                    locale=self.locale,
+                    locale=self.id,
                     region="",
                     date=original_date,
                     description=description,
                     flags="NF",
                     notes=""),
                 Holiday(
-                    locale=self.locale,
+                    locale=self.id,
                     region="",
                     date=supplement_date,
                     description=description + " (Supplement)",
@@ -83,7 +83,7 @@ class en_ZA(Locale):
             ]
         else:
             return [Holiday(
-                locale=self.locale,
+                locale=self.id,
                 region='',
                 date=original_date,
                 description=description,

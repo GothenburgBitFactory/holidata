@@ -48,12 +48,12 @@ class en_CA(Locale):
     2. monday in October: [AB,BC,MB,NL,ON,QC,SK,NT,NU,YT] [V] Thanksgiving Day
     """
 
-    locale = "en-CA"
+    id = "en-CA"
     easter_type = EASTER_WESTERN
 
     def holiday_patriot_s_day(self, year):
         return [Holiday(
-            locale=self.locale,
+            locale=self.id,
             region="QC",
             date=SmartDayArrow(year, 5, 25).shift_to_weekday(
                 "monday", order=1, reverse=True, including=False),
@@ -63,7 +63,7 @@ class en_CA(Locale):
 
     def holiday_victoria_day(self, year):
         return [Holiday(
-            locale=self.locale,
+            locale=self.id,
             region=region,
             date=SmartDayArrow(year, 5, 25).shift_to_weekday(
                 "monday", order=1, reverse=True, including=False),

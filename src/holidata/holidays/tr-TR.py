@@ -19,7 +19,7 @@ class tr_TR(Locale):
     10-29: [NF] Cumhuriyet Bayramı
     """
 
-    locale = "tr-TR"
+    id = "tr-TR"
 
     @staticmethod
     def __ramazan_bayrami_reference(year):
@@ -75,7 +75,7 @@ class tr_TR(Locale):
         07-15 [NF] Demokrasi ve Milli Birlik Günü
         """
         return [Holiday(
-            self.locale,
+            self.id,
             "",
             SmartDayArrow(year, 7, 15),
             "Demokrasi ve Milli Birlik Günü",
@@ -89,7 +89,7 @@ class tr_TR(Locale):
         reference = self.__ramazan_bayrami_reference(year)
 
         return [Holiday(
-            self.locale,
+            self.id,
             "",
             reference.shift(days=i),
             f"Ramazan Bayramı ({i}. Gün)",
@@ -103,7 +103,7 @@ class tr_TR(Locale):
         reference = self.__kurban_bayrami_reference(year)
 
         return [Holiday(
-            self.locale,
+            self.id,
             "",
             reference.shift(days=i),
             "Kurban Bayramı ({}. Gün)".format(i),

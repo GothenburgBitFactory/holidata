@@ -39,7 +39,7 @@ class Country(object, metaclass=PluginMount):
 
     def __init__(self):
         if self.id is None:
-            raise ValueError(f"Country '{self.__class__.__name__}' does not provide its id!")
+            raise ValueError(f"Country '{self.__class__.__name__}' does not provide an id!")
 
         if not self.languages:
             raise ValueError(f"Country '{self.__class__.__name__}' does not list any languages!")
@@ -56,7 +56,7 @@ class Locale(object, metaclass=PluginMount):
     """
     Represents holidays in a given locale.
     """
-    locale = None
+    id = None
     easter_type = None
 
     fixed_regex = re.compile(r"^\s*(?P<month>\d\d)-(?P<day>\d\d): "
@@ -71,12 +71,12 @@ class Locale(object, metaclass=PluginMount):
                                     r"\[(?P<flags>[A-Z]*)\] (?P<description>.*)$", re.UNICODE)
 
     def __init__(self):
-        if self.locale is None:
-            raise ValueError(f"Locale {self.__class__.__name__} does not provide its locale")
+        if self.id is None:
+            raise ValueError(f"Locale {self.__class__.__name__} does not provide an id!")
 
     @staticmethod
     def get(identifier):
-        return Locale.get_plugin(identifier, "locale")
+        return Locale.get_plugin(identifier, "id")
 
     def get_holidays_of(self, year):
         """
@@ -97,7 +97,7 @@ class Locale(object, metaclass=PluginMount):
 
             for region in holidata["regions"]:
                 yield Holiday(
-                    locale=self.locale,
+                    locale=self.id,
                     region=region,
                     date=holidata["date"],
                     description=holidata["description"],
