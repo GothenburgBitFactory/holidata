@@ -20,20 +20,20 @@ def get_locale_for(identifier):
     return locale_class()
 
 
-def create_locale_for(country_id=None, lang_id=None):
-    country = get_country_for(country_id)
-    lang_id = country.validate_language_or_get_default(lang_id)
-
-    return get_locale_for(f"{lang_id}-{country_id}")
-
-
-def create_emitter_for(identifier):
+def get_emitter_for(identifier):
     emitter_class = Emitter.get(identifier)
 
     if not emitter_class:
         raise ValueError(f"Unsupported output format '{identifier}'!")
 
     return emitter_class()
+
+
+def create_locale_for(country_id=None, lang_id=None):
+    country = get_country_for(country_id)
+    lang_id = country.validate_language_or_get_default(lang_id)
+
+    return get_locale_for(f"{lang_id}-{country_id}")
 
 
 def parse_year(year):
@@ -56,6 +56,6 @@ class Holidata:
         return self.emitter.output(self.holidays)
 
     def formatted_as(self, format_id):
-        self.emitter = create_emitter_for(format_id)
+        self.emitter = get_emitter_for(format_id)
 
         return self
