@@ -1,12 +1,13 @@
 import csv
 import io
 import json
+from typing import Optional
 
 from holidata.plugin import PluginMount
 
 
 class Emitter(metaclass=PluginMount):
-    type = None
+    type: Optional[str] = None
 
     def __init__(self):
         if self.type is None:

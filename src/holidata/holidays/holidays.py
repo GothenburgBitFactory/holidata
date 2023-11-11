@@ -1,4 +1,5 @@
 import re
+from typing import Optional, Iterable
 
 from holidata.plugin import PluginMount
 from holidata.utils import SmartDayArrow, month_reference, easter
@@ -181,9 +182,9 @@ class Country(metaclass=PluginMount):
     """
     Represents holidays of a given country
     """
-    id = None
-    languages = []
-    default_lang = None
+    id: Optional[str] = None
+    languages: Iterable[str] = []
+    default_lang: Optional[str] = None
     easter_type = None
     holiday_generators = []
 
