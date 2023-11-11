@@ -5,7 +5,7 @@ import json
 from holidata.plugin import PluginMount
 
 
-class Emitter(object, metaclass=PluginMount):
+class Emitter(metaclass=PluginMount):
     type = None
 
     def __init__(self):

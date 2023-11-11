@@ -4,7 +4,7 @@ from holidata.plugin import PluginMount
 from holidata.utils import SmartDayArrow, month_reference, easter
 
 
-class Holiday(object):
+class Holiday:
     """
     A sheer container for one holiday.
     """
@@ -28,7 +28,7 @@ class Holiday(object):
         }
 
 
-class Country(object, metaclass=PluginMount):
+class Country(metaclass=PluginMount):
     """
     Represents holidays of a given country
     """
@@ -64,7 +64,7 @@ class Country(object, metaclass=PluginMount):
         return lang_id
 
 
-class Locale(object, metaclass=PluginMount):
+class Locale(metaclass=PluginMount):
     """
     Represents holidays in a given locale.
     """
