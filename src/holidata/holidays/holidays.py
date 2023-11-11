@@ -51,6 +51,18 @@ class Country(object, metaclass=PluginMount):
     def get(identifier):
         return Country.get_plugin(identifier, "id")
 
+    def validate_language_or_get_default(self, lang_id):
+        if lang_id is not None and lang_id.lower() not in self.languages:
+            raise ValueError(
+                f"Language '{lang_id}' is not defined for country '{self.id}'! Choose one of [{', '.join(self.languages)}].")
+        elif lang_id is None and self.default_lang is not None:
+            lang_id = self.default_lang
+        elif lang_id is None:
+            raise ValueError(
+                f"Country '{self.id}' has no default language specified! Choose one of [{', '.join(self.languages)}].")
+
+        return lang_id
+
 
 class Locale(object, metaclass=PluginMount):
     """
