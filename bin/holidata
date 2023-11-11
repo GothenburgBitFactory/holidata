@@ -39,20 +39,23 @@ from docopt import docopt
 
 from holidata import Holidata
 
+
+def parse_locale(locale):
+    locale_regex = re.compile(r"^(?P<lang>[a-zA-Z]{2})[-_](?P<country>[a-zA-Z]{2})$")
+    m = locale_regex.search(locale)
+
+    if m is None:
+        raise ValueError(f"'{locale}' is not a valid locale!")
+
+    return m.group("country").upper(), m.group("lang").lower()
+
+
 if __name__ == "__main__":
     args = docopt(__doc__)
 
     try:
         if args["--locale"] is not None:
-            locale_id = args["--locale"]
-            locale_regex = re.compile(r"^(?P<lang>[a-zA-Z]{2})[-_](?P<country>[a-zA-Z]{2})$")
-            m = locale_regex.search(locale_id)
-
-            if m is None:
-                raise ValueError(f"'{locale_id}' is not a valid locale!")
-
-            country_id = m.group("country").upper()
-            lang_id = m.group("lang").lower()
+            country_id, lang_id = parse_locale(args["--locale"])
 
         elif args["--country"] is not None:
             country_id = args["--country"].upper()
