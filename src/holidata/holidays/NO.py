@@ -5,6 +5,6 @@ from .holidays import Country
 
 class NO(Country):
     id = "NO"
-    languages = "nb"
+    languages = ["nb"]
     default_lang = "nb"
     easter_type = EASTER_WESTERN
