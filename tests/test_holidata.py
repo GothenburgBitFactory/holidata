@@ -13,7 +13,7 @@ def year(request):
     return request.param
 
 
-@pytest.fixture(params=Locale.plugins)
+@pytest.fixture(params=Locale.plugins, ids=[locale.id for locale in Locale.plugins])
 def locale(request):
     return request.param()
 
@@ -33,8 +33,8 @@ def test_holidata_produces_holidays_for_locale_and_year(snapshot, tmpdir, locale
 
         snapshot_file = SNAPSHOT_FILE_PATH_PATTERN.format(
             "test_holidata_produces_holidays_for_locale_and_year",
-            locale.__class__.__name__,
-            locale.year)
+            locale.id,
+            year)
 
         with open(snapshot_file) as sf:
             expected = "".join(sf.readlines())
