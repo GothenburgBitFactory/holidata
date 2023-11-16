@@ -1,3 +1,5 @@
+from dateutil.easter import EASTER_WESTERN
+
 from .holidays import Country
 
 
@@ -6,3 +8,4 @@ class AT(Country):
     languages = ["de"]
     default_lang = "de"
     regions = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+    easter_type = EASTER_WESTERN
