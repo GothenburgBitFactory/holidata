@@ -2,7 +2,7 @@ import pytest
 from snapshottest.file import FileSnapshot
 from snapshottest.formatter import Formatter
 
-from holidata import Locale, Country, LocaleWrapper
+from holidata import Locale, Country
 from tests import HOLIDATA_YEAR_MAX
 
 SNAPSHOT_FILE_PATH_PATTERN = "snapshots/snap_test_holidata/{}[{}-{}] 1.py"
@@ -12,13 +12,7 @@ def create_locales():
     response = []
 
     for country_class in Country.plugins:
-        country = country_class()
-
-        if hasattr(country, "get_holidays_of"):
-            response.extend([LocaleWrapper(country_class(), lang_id) for lang_id in country.languages])
-
-    for locale_class in Locale.plugins:
-        response.append(locale_class())
+        response.extend([Locale(country_class(), lang_id) for lang_id in country_class.languages])
 
     return response
 

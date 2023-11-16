@@ -2,7 +2,7 @@ import re
 
 import pytest
 
-from holidata import Locale, Country, LocaleWrapper
+from holidata import Locale, Country
 from tests import HOLIDATA_YEAR_MAX
 
 
@@ -10,13 +10,7 @@ def create_locales():
     response = []
 
     for country_class in Country.plugins:
-        country = country_class()
-
-        if hasattr(country, "get_holidays_of"):
-            response.extend([LocaleWrapper(country_class(), lang_id) for lang_id in country.languages])
-
-    for locale_class in Locale.plugins:
-        response.append(locale_class())
+        response.extend([Locale(country_class(), lang_id) for lang_id in country_class.languages])
 
     return response
 

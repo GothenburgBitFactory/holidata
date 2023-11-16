@@ -1,6 +1,6 @@
-from .holidays import *
 from .emitters import Emitter
-from .holidays.holidays import LocaleWrapper
+from .holidays import *
+from .holidays.holidays import Locale
 
 
 def get_country_for(identifier):
@@ -12,15 +12,6 @@ def get_country_for(identifier):
     return country_class()
 
 
-def get_locale_for(identifier):
-    locale_class = Locale.get(identifier)
-
-    if not locale_class:
-        raise ValueError(f"No plugin found for locale '{identifier}'!")
-
-    return locale_class()
-
-
 def get_emitter_for(identifier):
     emitter_class = Emitter.get(identifier)
 
@@ -30,14 +21,11 @@ def get_emitter_for(identifier):
     return emitter_class()
 
 
-def create_locale_for(country_id=None, lang_id=None):
+def create_locale_for(country_id, lang_id=None):
     country = get_country_for(country_id)
     lang_id = country.validate_language_or_get_default(lang_id)
 
-    if hasattr(country, "get_holidays_of"):
-        return LocaleWrapper(country, lang_id)
-
-    return get_locale_for(f"{lang_id}-{country_id}")
+    return Locale(country, lang_id)
 
 
 def parse_year(year):

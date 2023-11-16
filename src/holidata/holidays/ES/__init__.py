@@ -1,11 +1,61 @@
 from dateutil.easter import EASTER_WESTERN
 
+from holidata.holidays.ES.AN import AN
+from holidata.holidays.ES.AR import AR
+from holidata.holidays.ES.AS import AS
+from holidata.holidays.ES.CB import CB
+from holidata.holidays.ES.CE import CE
+from holidata.holidays.ES.CL import CL
+from holidata.holidays.ES.CM import CM
+from holidata.holidays.ES.CN import CN
+from holidata.holidays.ES.CT import CT
+from holidata.holidays.ES.EX import EX
+from holidata.holidays.ES.GA import GA
+from holidata.holidays.ES.IB import IB
+from holidata.holidays.ES.MC import MC
+from holidata.holidays.ES.MD import MD
+from holidata.holidays.ES.ML import ML
+from holidata.holidays.ES.NC import NC
+from holidata.holidays.ES.PV import PV
+from holidata.holidays.ES.RI import RI
+from holidata.holidays.ES.VC import VC
 from holidata.holidays.holidays import Country
 
 __all__ = [
-    "ES",
-    "es-ES",
+    "ES"
 ]
+
+"""
+Information taken from government websites around 2020-06
+    https://administracion.gob.es/pag_Home/atencionCiudadana/calendarios/laboral.html
+    http://www.seg-social.es/wps/portal/wss/internet/CalendarioLaboral
+
+    2011: https://www.boe.es/eli/es/res/2010/10/07/(1)
+          https://www.boe.es/eli/es/res/2010/11/24/(1)
+    2012: https://www.boe.es/eli/es/res/2011/10/06/(1)
+    2013: https://www.boe.es/eli/es/res/2012/10/30/(1)
+          https://www.boe.es/eli/es/res/2012/11/12/(2)
+    2014: https://www.boe.es/eli/es/res/2013/11/08/(3)
+          https://www.boe.es/eli/es/res/2013/11/21/(1)
+    2015: https://www.boe.es/eli/es/res/2014/10/17/(3)
+    2016: https://www.boe.es/eli/es/res/2015/10/19/(1)
+    2017: https://www.boe.es/eli/es/res/2016/10/04/(1)
+    2018: https://www.boe.es/eli/es/res/2017/10/09/(1)
+          https://www.boe.es/eli/es/res/2017/10/09/(1)/corrigendum/20171019
+          https://www.boe.es/eli/es/res/2017/10/09/(1)/corrigendum/20171025
+    2019: https://www.boe.es/eli/es/res/2018/10/16/(1)
+    2020: https://www.boe.es/eli/es/res/2019/10/03/(1)
+    2021: https://www.boe.es/eli/es/res/2020/10/28/(1)
+    2022: https://www.boe.es/eli/es/res/2021/10/14/(3)
+    2023: https://www.boe.es/eli/es/res/2022/10/07/(2)
+    2024: https://www.boe.es/eli/es/res/2023/10/23/(1)
+
+Regional governments
+    [AN] https://www.juntadeandalucia.es/temas/trabajar/relaciones/calendario.html
+
+Also those sites for some information
+    https://es.wikipedia.org/wiki/Calendario_laboral
+"""
 
 
 class ES(Country):
@@ -13,3 +63,89 @@ class ES(Country):
     languages = ["es"]
     default_lang = "es"
     easter_type = EASTER_WESTERN
+
+    def __init__(self):
+        super().__init__()
+
+        self.regions = [
+            AN(self),
+            AR(self),
+            AS(self),
+            CB(self),
+            CE(self),
+            CL(self),
+            CM(self),
+            CN(self),
+            CT(self),
+            EX(self),
+            GA(self),
+            IB(self),
+            MC(self),
+            MD(self),
+            ML(self),
+            NC(self),
+            PV(self),
+            RI(self),
+            VC(self),
+        ]
+
+        self.define_holiday() \
+            .with_name("Año Nuevo") \
+            .on("01-01") \
+            .with_flags("NF")
+
+        self.define_holiday() \
+            .with_name("Epifanía del Señor") \
+            .on("01-06") \
+            .with_flags("NRF")
+
+        self.define_holiday() \
+            .with_name("Fiesta del Trabajo") \
+            .on("05-01") \
+            .with_flags("NF")
+
+        self.define_holiday() \
+            .with_name("Asunción de la Virgen") \
+            .on("08-15") \
+            .with_flags("NRF")
+
+        self.define_holiday() \
+            .with_name("Fiesta Nacional de España") \
+            .on("10-12") \
+            .with_flags("NF")
+
+        self.define_holiday() \
+            .with_name("Todos los Santos") \
+            .on("11-01") \
+            .with_flags("NRF")
+
+        self.define_holiday() \
+            .with_name("Día de la Constitución Española") \
+            .on("12-06") \
+            .with_flags("NF")
+
+        self.define_holiday() \
+            .with_name("Inmaculada Concepción") \
+            .on("12-08") \
+            .with_flags("NRF")
+
+        self.define_holiday() \
+            .with_name("Natividad del Señor") \
+            .on("12-25") \
+            .with_flags("NRF")
+
+        self.define_holiday() \
+            .with_name("Viernes Santo") \
+            .on("2 days before Easter") \
+            .with_flags("NRV")
+
+        self.define_holiday() \
+            .with_name("Pascua") \
+            .on("Easter") \
+            .with_flags("NRV")
+
+        self.define_holiday() \
+            .with_name("Lunes siguiente al Año Nuevo") \
+            .in_years([2012]) \
+            .on("01-02") \
+            .with_flags("NF")
