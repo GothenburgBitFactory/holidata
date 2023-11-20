@@ -25,19 +25,19 @@
     },
     {
         'date': '2023-04-23',
-        'description': 'Ulusal Egemenlik ve Çocuk Bayramı',
-        'locale': 'tr-TR',
-        'notes': '',
-        'region': '',
-        'type': 'NF'
-    },
-    {
-        'date': '2023-04-23',
         'description': 'Ramazan Bayramı (3. Gün)',
         'locale': 'tr-TR',
         'notes': '',
         'region': '',
         'type': 'NRV'
+    },
+    {
+        'date': '2023-04-23',
+        'description': 'Ulusal Egemenlik ve Çocuk Bayramı',
+        'locale': 'tr-TR',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
     },
     {
         'date': '2023-05-01',

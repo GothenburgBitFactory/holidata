@@ -33,19 +33,19 @@
     },
     {
         'date': '2016-05-01',
-        'description': 'Праздник весны и труда',
-        'locale': 'ru-RU',
-        'notes': '',
-        'region': '',
-        'type': 'NF'
-    },
-    {
-        'date': '2016-05-01',
         'description': 'Пасха',
         'locale': 'ru-RU',
         'notes': '',
         'region': '',
         'type': 'NRV'
+    },
+    {
+        'date': '2016-05-01',
+        'description': 'Праздник весны и труда',
+        'locale': 'ru-RU',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
     },
     {
         'date': '2016-05-09',

@@ -33,19 +33,19 @@
     },
     {
         'date': '2011-08-30',
-        'description': 'Zafer Bayramı',
-        'locale': 'tr-TR',
-        'notes': '',
-        'region': '',
-        'type': 'NF'
-    },
-    {
-        'date': '2011-08-30',
         'description': 'Ramazan Bayramı (1. Gün)',
         'locale': 'tr-TR',
         'notes': '',
         'region': '',
         'type': 'NRV'
+    },
+    {
+        'date': '2011-08-30',
+        'description': 'Zafer Bayramı',
+        'locale': 'tr-TR',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
     },
     {
         'date': '2011-08-31',

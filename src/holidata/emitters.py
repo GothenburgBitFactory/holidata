@@ -25,7 +25,7 @@ class JsonEmitter(Emitter):
 
     def output(self, holidays):
         export_data = [h.as_dict() for h in holidays]
-        export_data.sort(key=lambda x: x["date"])
+        export_data.sort(key=lambda x: (x["date"], x["description"], x["region"]))
         return "\n".join([json.dumps(h, ensure_ascii=False, sort_keys=False, indent=None, separators=(",", ":")) for h in export_data]) + "\n"
 
 
@@ -34,7 +34,7 @@ class CsvEmitter(Emitter):
 
     def output(self, holidays):
         export_data = [h.as_dict() for h in holidays]
-        export_data.sort(key=lambda x: x["date"])
+        export_data.sort(key=lambda x: (x["date"], x["description"], x["region"]))
         result = io.StringIO()
 
         writer = csv.DictWriter(result,
@@ -52,7 +52,7 @@ class YamlEmitter(Emitter):
 
     def output(self, holidays):
         export_data = [h.as_dict() for h in holidays]
-        export_data.sort(key=lambda x: x["date"])
+        export_data.sort(key=lambda x: (x["date"], x["description"], x["region"]))
 
         output = "%YAML 1.1\n"
         output += "---\n"
@@ -76,7 +76,7 @@ class XmlEmitter(Emitter):
 
     def output(self, holidays):
         export_data = [h.as_dict() for h in holidays]
-        export_data.sort(key=lambda x: x["date"])
+        export_data.sort(key=lambda x: (x["date"], x["description"], x["region"]))
 
         output = "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n"
         output += "<holidays>\n"

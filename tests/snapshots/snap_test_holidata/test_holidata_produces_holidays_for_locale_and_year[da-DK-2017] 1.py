@@ -65,19 +65,19 @@
     },
     {
         'date': '2017-06-05',
-        'description': 'Grundlovsdag',
-        'locale': 'da-DK',
-        'notes': '',
-        'region': '',
-        'type': 'NF'
-    },
-    {
-        'date': '2017-06-05',
         'description': 'Anden pinsedag',
         'locale': 'da-DK',
         'notes': '',
         'region': '',
         'type': 'NRV'
+    },
+    {
+        'date': '2017-06-05',
+        'description': 'Grundlovsdag',
+        'locale': 'da-DK',
+        'notes': '',
+        'region': '',
+        'type': 'NF'
     },
     {
         'date': '2017-12-25',

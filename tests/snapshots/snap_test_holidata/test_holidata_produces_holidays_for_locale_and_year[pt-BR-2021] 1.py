@@ -89,18 +89,18 @@
     },
     {
         'date': '2021-04-21',
-        'description': 'Fundação de Brasília',
-        'locale': 'pt-BR',
-        'notes': '',
-        'region': 'DF',
-        'type': 'F'
-    },
-    {
-        'date': '2021-04-21',
         'description': 'Execução de Tiradentes',
         'locale': 'pt-BR',
         'notes': '',
         'region': 'MG',
+        'type': 'F'
+    },
+    {
+        'date': '2021-04-21',
+        'description': 'Fundação de Brasília',
+        'locale': 'pt-BR',
+        'notes': '',
+        'region': 'DF',
         'type': 'F'
     },
     {
@@ -233,19 +233,19 @@
     },
     {
         'date': '2021-08-15',
-        'description': 'Dia de Nossa Senhora da Assunção',
-        'locale': 'pt-BR',
-        'notes': '',
-        'region': 'CE',
-        'type': 'RF'
-    },
-    {
-        'date': '2021-08-15',
         'description': 'Adesão do Pará à Independência do Brasil',
         'locale': 'pt-BR',
         'notes': '',
         'region': 'PA',
         'type': 'F'
+    },
+    {
+        'date': '2021-08-15',
+        'description': 'Dia de Nossa Senhora da Assunção',
+        'locale': 'pt-BR',
+        'notes': '',
+        'region': 'CE',
+        'type': 'RF'
     },
     {
         'date': '2021-09-05',
@@ -385,14 +385,6 @@
     },
     {
         'date': '2021-11-20',
-        'description': 'Morte de Zumbi dos Palmares',
-        'locale': 'pt-BR',
-        'notes': '',
-        'region': 'AL',
-        'type': 'F'
-    },
-    {
-        'date': '2021-11-20',
         'description': 'Dia da Consciência Negra',
         'locale': 'pt-BR',
         'notes': '',
@@ -413,6 +405,14 @@
         'locale': 'pt-BR',
         'notes': '',
         'region': 'RJ',
+        'type': 'F'
+    },
+    {
+        'date': '2021-11-20',
+        'description': 'Morte de Zumbi dos Palmares',
+        'locale': 'pt-BR',
+        'notes': '',
+        'region': 'AL',
         'type': 'F'
     },
     {

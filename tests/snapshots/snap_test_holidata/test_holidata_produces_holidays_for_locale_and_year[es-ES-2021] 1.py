@@ -353,18 +353,18 @@
     },
     {
         'date': '2021-06-09',
-        'description': 'Día de la Región de Murcia',
-        'locale': 'es-ES',
-        'notes': '',
-        'region': 'MC',
-        'type': 'F'
-    },
-    {
-        'date': '2021-06-09',
         'description': 'Día de La Rioja',
         'locale': 'es-ES',
         'notes': '',
         'region': 'RI',
+        'type': 'F'
+    },
+    {
+        'date': '2021-06-09',
+        'description': 'Día de la Región de Murcia',
+        'locale': 'es-ES',
+        'notes': '',
+        'region': 'MC',
         'type': 'F'
     },
     {

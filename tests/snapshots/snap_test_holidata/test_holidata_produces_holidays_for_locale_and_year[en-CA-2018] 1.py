@@ -20,6 +20,14 @@
         'description': 'Family Day',
         'locale': 'en-CA',
         'notes': '',
+        'region': 'NB',
+        'type': 'V'
+    },
+    {
+        'date': '2018-02-19',
+        'description': 'Family Day',
+        'locale': 'en-CA',
+        'notes': '',
         'region': 'ON',
         'type': 'V'
     },
@@ -33,10 +41,10 @@
     },
     {
         'date': '2018-02-19',
-        'description': 'Family Day',
+        'description': 'Islander Day',
         'locale': 'en-CA',
         'notes': '',
-        'region': 'NB',
+        'region': 'PE',
         'type': 'V'
     },
     {
@@ -45,14 +53,6 @@
         'locale': 'en-CA',
         'notes': '',
         'region': 'MB',
-        'type': 'V'
-    },
-    {
-        'date': '2018-02-19',
-        'description': 'Islander Day',
-        'locale': 'en-CA',
-        'notes': '',
-        'region': 'PE',
         'type': 'V'
     },
     {
@@ -132,22 +132,6 @@
         'description': 'Victoria Day',
         'locale': 'en-CA',
         'notes': '',
-        'region': 'ON',
-        'type': 'V'
-    },
-    {
-        'date': '2018-05-21',
-        'description': 'Victoria Day',
-        'locale': 'en-CA',
-        'notes': '',
-        'region': 'SK',
-        'type': 'V'
-    },
-    {
-        'date': '2018-05-21',
-        'description': 'Victoria Day',
-        'locale': 'en-CA',
-        'notes': '',
         'region': 'NT',
         'type': 'V'
     },
@@ -157,6 +141,22 @@
         'locale': 'en-CA',
         'notes': '',
         'region': 'NU',
+        'type': 'V'
+    },
+    {
+        'date': '2018-05-21',
+        'description': 'Victoria Day',
+        'locale': 'en-CA',
+        'notes': '',
+        'region': 'ON',
+        'type': 'V'
+    },
+    {
+        'date': '2018-05-21',
+        'description': 'Victoria Day',
+        'locale': 'en-CA',
+        'notes': '',
+        'region': 'SK',
         'type': 'V'
     },
     {
@@ -201,14 +201,6 @@
     },
     {
         'date': '2018-08-06',
-        'description': 'Saskatchewan Day',
-        'locale': 'en-CA',
-        'notes': '',
-        'region': 'SK',
-        'type': 'V'
-    },
-    {
-        'date': '2018-08-06',
         'description': 'Heritage Day',
         'locale': 'en-CA',
         'notes': '',
@@ -229,6 +221,14 @@
         'locale': 'en-CA',
         'notes': '',
         'region': 'NB',
+        'type': 'V'
+    },
+    {
+        'date': '2018-08-06',
+        'description': 'Saskatchewan Day',
+        'locale': 'en-CA',
+        'notes': '',
+        'region': 'SK',
         'type': 'V'
     },
     {
@@ -276,6 +276,22 @@
         'description': 'Thanksgiving Day',
         'locale': 'en-CA',
         'notes': '',
+        'region': 'NT',
+        'type': 'V'
+    },
+    {
+        'date': '2018-10-08',
+        'description': 'Thanksgiving Day',
+        'locale': 'en-CA',
+        'notes': '',
+        'region': 'NU',
+        'type': 'V'
+    },
+    {
+        'date': '2018-10-08',
+        'description': 'Thanksgiving Day',
+        'locale': 'en-CA',
+        'notes': '',
         'region': 'ON',
         'type': 'V'
     },
@@ -293,22 +309,6 @@
         'locale': 'en-CA',
         'notes': '',
         'region': 'SK',
-        'type': 'V'
-    },
-    {
-        'date': '2018-10-08',
-        'description': 'Thanksgiving Day',
-        'locale': 'en-CA',
-        'notes': '',
-        'region': 'NT',
-        'type': 'V'
-    },
-    {
-        'date': '2018-10-08',
-        'description': 'Thanksgiving Day',
-        'locale': 'en-CA',
-        'notes': '',
-        'region': 'NU',
         'type': 'V'
     },
     {

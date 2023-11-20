@@ -1,7 +1,7 @@
 [
     {
         'date': '2015-01-01',
-        'description': 'Nový rok',
+        'description': 'Den obnovy samostatného českého státu',
         'locale': 'cs-CZ',
         'notes': '',
         'region': '',
@@ -9,7 +9,7 @@
     },
     {
         'date': '2015-01-01',
-        'description': 'Den obnovy samostatného českého státu',
+        'description': 'Nový rok',
         'locale': 'cs-CZ',
         'notes': '',
         'region': '',

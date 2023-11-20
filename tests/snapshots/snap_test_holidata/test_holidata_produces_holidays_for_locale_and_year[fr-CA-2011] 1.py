@@ -20,6 +20,14 @@
         'description': 'Fête de la Famille',
         'locale': 'fr-CA',
         'notes': '',
+        'region': 'NB',
+        'type': 'V'
+    },
+    {
+        'date': '2011-02-21',
+        'description': 'Fête de la Famille',
+        'locale': 'fr-CA',
+        'notes': '',
         'region': 'ON',
         'type': 'V'
     },
@@ -33,10 +41,10 @@
     },
     {
         'date': '2011-02-21',
-        'description': 'Fête de la Famille',
+        'description': 'Fête des Insulaires',
         'locale': 'fr-CA',
         'notes': '',
-        'region': 'NB',
+        'region': 'PE',
         'type': 'V'
     },
     {
@@ -45,14 +53,6 @@
         'locale': 'fr-CA',
         'notes': '',
         'region': 'MB',
-        'type': 'V'
-    },
-    {
-        'date': '2011-02-21',
-        'description': 'Fête des Insulaires',
-        'locale': 'fr-CA',
-        'notes': '',
-        'region': 'PE',
         'type': 'V'
     },
     {
@@ -124,22 +124,6 @@
         'description': 'Fête de la Reine Victoria',
         'locale': 'fr-CA',
         'notes': '',
-        'region': 'ON',
-        'type': 'V'
-    },
-    {
-        'date': '2011-05-23',
-        'description': 'Fête de la Reine Victoria',
-        'locale': 'fr-CA',
-        'notes': '',
-        'region': 'SK',
-        'type': 'V'
-    },
-    {
-        'date': '2011-05-23',
-        'description': 'Fête de la Reine Victoria',
-        'locale': 'fr-CA',
-        'notes': '',
         'region': 'NT',
         'type': 'V'
     },
@@ -149,6 +133,22 @@
         'locale': 'fr-CA',
         'notes': '',
         'region': 'NU',
+        'type': 'V'
+    },
+    {
+        'date': '2011-05-23',
+        'description': 'Fête de la Reine Victoria',
+        'locale': 'fr-CA',
+        'notes': '',
+        'region': 'ON',
+        'type': 'V'
+    },
+    {
+        'date': '2011-05-23',
+        'description': 'Fête de la Reine Victoria',
+        'locale': 'fr-CA',
+        'notes': '',
+        'region': 'SK',
         'type': 'V'
     },
     {
@@ -185,18 +185,10 @@
     },
     {
         'date': '2011-08-01',
-        'description': "Premier lundi d'août",
+        'description': 'Fête de la Saskatchewan',
         'locale': 'fr-CA',
         'notes': '',
-        'region': 'NT',
-        'type': 'V'
-    },
-    {
-        'date': '2011-08-01',
-        'description': "Premier lundi d'août",
-        'locale': 'fr-CA',
-        'notes': '',
-        'region': 'NU',
+        'region': 'SK',
         'type': 'V'
     },
     {
@@ -205,14 +197,6 @@
         'locale': 'fr-CA',
         'notes': '',
         'region': 'AB',
-        'type': 'V'
-    },
-    {
-        'date': '2011-08-01',
-        'description': 'Fête de la Saskatchewan',
-        'locale': 'fr-CA',
-        'notes': '',
-        'region': 'SK',
         'type': 'V'
     },
     {
@@ -229,6 +213,22 @@
         'locale': 'fr-CA',
         'notes': '',
         'region': 'NB',
+        'type': 'V'
+    },
+    {
+        'date': '2011-08-01',
+        'description': "Premier lundi d'août",
+        'locale': 'fr-CA',
+        'notes': '',
+        'region': 'NT',
+        'type': 'V'
+    },
+    {
+        'date': '2011-08-01',
+        'description': "Premier lundi d'août",
+        'locale': 'fr-CA',
+        'notes': '',
+        'region': 'NU',
         'type': 'V'
     },
     {
@@ -276,6 +276,22 @@
         'description': "Jour de l'Action de grâce",
         'locale': 'fr-CA',
         'notes': '',
+        'region': 'NT',
+        'type': 'V'
+    },
+    {
+        'date': '2011-10-10',
+        'description': "Jour de l'Action de grâce",
+        'locale': 'fr-CA',
+        'notes': '',
+        'region': 'NU',
+        'type': 'V'
+    },
+    {
+        'date': '2011-10-10',
+        'description': "Jour de l'Action de grâce",
+        'locale': 'fr-CA',
+        'notes': '',
         'region': 'ON',
         'type': 'V'
     },
@@ -293,22 +309,6 @@
         'locale': 'fr-CA',
         'notes': '',
         'region': 'SK',
-        'type': 'V'
-    },
-    {
-        'date': '2011-10-10',
-        'description': "Jour de l'Action de grâce",
-        'locale': 'fr-CA',
-        'notes': '',
-        'region': 'NT',
-        'type': 'V'
-    },
-    {
-        'date': '2011-10-10',
-        'description': "Jour de l'Action de grâce",
-        'locale': 'fr-CA',
-        'notes': '',
-        'region': 'NU',
         'type': 'V'
     },
     {

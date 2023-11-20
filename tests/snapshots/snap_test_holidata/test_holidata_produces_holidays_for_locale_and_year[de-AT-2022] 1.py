@@ -172,7 +172,7 @@
         'description': 'Leopold',
         'locale': 'de-AT',
         'notes': '',
-        'region': '9',
+        'region': '3',
         'type': 'F'
     },
     {
@@ -180,7 +180,7 @@
         'description': 'Leopold',
         'locale': 'de-AT',
         'notes': '',
-        'region': '3',
+        'region': '9',
         'type': 'F'
     },
     {
