@@ -1,6 +1,11 @@
 from dateutil.easter import EASTER_WESTERN
 
-from .holidays import Country
+from holidata.holidays.holidays import Country
+
+__all__ = [
+    "ES",
+    "es-ES",
+]
 
 
 class ES(Country):

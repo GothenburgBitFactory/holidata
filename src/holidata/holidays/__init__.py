@@ -1,3 +1,4 @@
+from .ES import *
 from .holidays import Locale, Country
 
 __all__ = [
@@ -13,7 +14,6 @@ __all__ = [
     "DE",
     "DK",
     "EE",
-    "ES",
     "FI",
     "FI",
     "FR",
@@ -49,7 +49,6 @@ __all__ = [
     "en-US",
     "en-ZA",
     "es-CO",
-    "es-ES",
     "es-US",
     "et-EE",
     "fi-FI",

@@ -2,7 +2,7 @@
 from dateutil.easter import EASTER_WESTERN
 
 from holidata.utils import SmartDayArrow, easter
-from .holidays import Locale, Holiday
+from holidata.holidays.holidays import Locale, Holiday
 
 """
 Information taken from government websites around 2020-06
