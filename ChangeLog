@@ -1,105 +1,109 @@
-- #97 Merge locale and country
--     Fix permalinks for holidays in locale de-DE for region BE
+- #97  Merge locale and country
+-      Fix permalinks for holidays in locale de-DE for region BE
+
 2023.11.0
--     es-ES: Implement 2024 holidays of Spain
--     Drop support for Python 3.7
--     Use double quotes instead of single quotes and f-strings
+-      es-ES: Implement 2024 holidays of Spain
+-      Drop support for Python 3.7
+-      Use double quotes instead of single quotes and f-strings
+
 2023.04.0
--     en-GB: Add bank holiday for the coronation of King Charles III
--     Move creator functions to holidata module
--     Print proper error messages for exceptions instead of stack traces
--     Fix regex for locale
+-      en-GB: Add bank holiday for the coronation of King Charles III
+-      Move creator functions to holidata module
+-      Print proper error messages for exceptions instead of stack traces
+-      Fix regex for locale
+
 2022.11.0
--     es-ES: Implement 2023 holidays of Spain
+-      es-ES: Implement 2023 holidays of Spain
+
 2022.9.0
--     en-GB: Add Bank Holiday for State Funeral of Queen Elizabeth II
+-      en-GB: Add Bank Holiday for State Funeral of Queen Elizabeth II
+
 2022.8.2
--     Add ability to specify a locale via country and language
+-      Add ability to specify a locale via country and language
 
 2022.8.0
-- #87 Update legal sources for Turkish holidays
+- #87  Update legal sources for Turkish holidays
 
 2022.7.0
--     Restructured package
-- #85 Error in locale en-GB, year 2022
-      (Thanks to Richard Fieldsend)
-- #80 Add locale en-ZA
-      (Thanks to girtu)
-- #83 Update non-working days for 2022 in locale hu-HU
-- #81 Add locale et-EE
-      (Thanks to h0adp0re)
-- #78 Add locale for sl-SI
-      (Thanks to Dejan Dezman)
-- #21 Update locale for pt-BR
-      (Thanks to Adriano Correa)
-- #58 Update locale for es-ES
-      (Thanks to Vicente Jimenez Aguilar)
-- #59 Add locale for hu-HU
-      (Thanks to David Hanak)
-- #60 Add locale for tr-TR
-      (Thanks to farukara)
-- #55 Fixed: Wrong assignment of flag `N` in locales en-US and es-US
-- #54 Fixed: Wrong assignment of flag `N` in locale de-CH
-- #53 Fixed: Regional holidays marked as national in locale de-DE
-- #52 Fixed: Non-regional holidays not marked as national in locale nl-NL
-- #51 Fixed: Regional holidays marked as national in locale de-AT
-- #19 Add locale for sv-SE
-      (Thanks to Martijn van der Ven)
-- #49 Add additional office holidays for en-US/es-US
-      (Thanks to Brian Burnett)
-- #13 Add locale for es-CO
-      (Thanks to Jorge E. Gómez)
-- #44 Add locale fr-CA
-      (Thanks to Ghyslain Leclerc)
-- #29 Add locale en-CA
-      (Thanks to Ghyslain Leclerc)
--     Add locale sv-FI
-- #30 Add locale fi-FI
-      (Thanks to Antti Heinonen)
-- #22 Add locale pl-PL
-      (Thanks to sebacyp)
-- #10 Add locale cs-CZ
-      (Thanks to Jakub Pavlík)
-- #40 Add missing holidays in locale de-DE for region BE
-- #38 Update croatian holidays according to the law valid for the year 2020 and onwards
-      (Thanks to Saša Janiška)
-- #32 Make project python only
-- #25 Add locale for is-IS
-      (Thanks to Matt Riggott)
-- #33 Add locale for pt-PT
-      (Thanks to lldh)
--     Add locale it-IT
--     Add locale fr-FR
--     Add locale el-GR
--     Add locale nl-NL
--     Add locale en-NZ
--     Add locale es-ES
--     Add locale ru-RU
--     Add XML emitter
--     Add YAML emitter
--     Add locale en-GB
--     Add locale nb-NO
--     Add locale da-DK
--     Add locale nl-BE
--     Add locale fr-BE
--     Add locale de-BE
--     Add locale es-US
--     Add regions to locale de-AT
--     Add locale de-AT
--     Add locale de-CH
--     Add emitters
--     Add locale de-DE
--     Replace module 'countries' by subpackage 'holidays'
--     Add support for regions
--     Add option for output format
-- #2  Fix some Croatian holidays
-      (Thanks to Saša Janiška)
-- #1  Add locale hr-HR
-      (Thanks to Saša Janiška)
--     Add locale sk-SK and en-US
--     Add Proof-Of-Concept python implementation
+-      Restructured package
+- #85  Error in locale en-GB, year 2022
+       (Thanks to Richard Fieldsend)
+- #80  Add locale en-ZA
+       (Thanks to girtu)
+- #83  Update non-working days for 2022 in locale hu-HU
+- #81  Add locale et-EE
+       (Thanks to h0adp0re)
+- #78  Add locale for sl-SI
+       (Thanks to Dejan Dezman)
+- #21  Update locale for pt-BR
+       (Thanks to Adriano Correa)
+- #58  Update locale for es-ES
+       (Thanks to Vicente Jimenez Aguilar)
+- #59  Add locale for hu-HU
+       (Thanks to David Hanak)
+- #60  Add locale for tr-TR
+       (Thanks to farukara)
+- #55  Fixed: Wrong assignment of flag `N` in locales en-US and es-US
+- #54  Fixed: Wrong assignment of flag `N` in locale de-CH
+- #53  Fixed: Regional holidays marked as national in locale de-DE
+- #52  Fixed: Non-regional holidays not marked as national in locale nl-NL
+- #51  Fixed: Regional holidays marked as national in locale de-AT
+- #19  Add locale for sv-SE
+       (Thanks to Martijn van der Ven)
+- #49  Add additional office holidays for en-US/es-US
+       (Thanks to Brian Burnett)
+- #13  Add locale for es-CO
+       (Thanks to Jorge E. Gómez)
+- #44  Add locale fr-CA
+       (Thanks to Ghyslain Leclerc)
+- #29  Add locale en-CA
+       (Thanks to Ghyslain Leclerc)
+-      Add locale sv-FI
+- #30  Add locale fi-FI
+       (Thanks to Antti Heinonen)
+- #22  Add locale pl-PL
+       (Thanks to sebacyp)
+- #10  Add locale cs-CZ
+       (Thanks to Jakub Pavlík)
+- #40  Add missing holidays in locale de-DE for region BE
+- #38  Update croatian holidays according to the law valid for the year 2020 and onwards
+       (Thanks to Saša Janiška)
+- #32  Make project python only
+- #25  Add locale for is-IS
+       (Thanks to Matt Riggott)
+- #33  Add locale for pt-PT
+       (Thanks to lldh)
+-      Add locale it-IT
+-      Add locale fr-FR
+-      Add locale el-GR
+-      Add locale nl-NL
+-      Add locale en-NZ
+-      Add locale es-ES
+-      Add locale ru-RU
+-      Add XML emitter
+-      Add YAML emitter
+-      Add locale en-GB
+-      Add locale nb-NO
+-      Add locale da-DK
+-      Add locale nl-BE
+-      Add locale fr-BE
+-      Add locale de-BE
+-      Add locale es-US
+-      Add regions to locale de-AT
+-      Add locale de-AT
+-      Add locale de-CH
+-      Add emitters
+-      Add locale de-DE
+-      Replace module 'countries' by subpackage 'holidays'
+-      Add support for regions
+-      Add option for output format
+- #2   Fix some Croatian holidays
+       (Thanks to Saša Janiška)
+- #1   Add locale hr-HR
+       (Thanks to Saša Janiška)
+-      Add locale sk-SK and en-US
+-      Add Proof-Of-Concept python implementation
 
 Project started November 8, 2016.
 
 ------ start -----------------------------------
-
