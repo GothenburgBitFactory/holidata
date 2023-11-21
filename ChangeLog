@@ -1,19 +1,20 @@
--    Fix permalinks for holidays in locale de-DE for region BE
+- #97 Merge locale and country
+-     Fix permalinks for holidays in locale de-DE for region BE
 2023.11.0
--    es-ES: Implement 2024 holidays of Spain
--    Drop support for Python 3.7
--    Use double quotes instead of single quotes and f-strings
+-     es-ES: Implement 2024 holidays of Spain
+-     Drop support for Python 3.7
+-     Use double quotes instead of single quotes and f-strings
 2023.04.0
--    en-GB: Add bank holiday for the coronation of King Charles III
--    Move creator functions to holidata module
--    Print proper error messages for exceptions instead of stack traces
--    Fix regex for locale
+-     en-GB: Add bank holiday for the coronation of King Charles III
+-     Move creator functions to holidata module
+-     Print proper error messages for exceptions instead of stack traces
+-     Fix regex for locale
 2022.11.0
--    es-ES: Implement 2023 holidays of Spain
+-     es-ES: Implement 2023 holidays of Spain
 2022.9.0
--    en-GB: Add Bank Holiday for State Funeral of Queen Elizabeth II
+-     en-GB: Add Bank Holiday for State Funeral of Queen Elizabeth II
 2022.8.2
--    Add ability to specify a locale via country and language
+-     Add ability to specify a locale via country and language
 
 2022.8.0
 - #87 Update legal sources for Turkish holidays
