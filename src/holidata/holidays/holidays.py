@@ -214,7 +214,7 @@ class Country(metaclass=PluginMount):
             raise ValueError(
                 f"Country '{self.id}' has no default language specified! Choose one of [{', '.join(self.languages)}].")
 
-        return lang_id
+        return lang_id.lower()
 
     def define_holiday(self):
         generator = HolidayGenerator(self.id, self.default_lang, self.easter_type)
