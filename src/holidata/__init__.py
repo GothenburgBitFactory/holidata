@@ -1,6 +1,5 @@
 from .emitters import Emitter
 from .holidays import *
-from .holidays.holidays import Locale
 
 
 def get_country_for(identifier):
@@ -21,28 +20,20 @@ def get_emitter_for(identifier):
     return emitter_class()
 
 
-def create_locale_for(country_id, lang_id=None):
+def for_locale(country_id, lang_id=None):
     country = get_country_for(country_id)
     lang_id = country.validate_language_or_get_default(lang_id)
 
     return Locale(country, lang_id)
 
 
-def parse_year(year):
-    try:
-        return int(year)
-    except ValueError:
-        raise ValueError(f"Invalid year '{year}'! Has to be an integer.")
-
-
 class Holidata:
     emitter = None
     holidays = None
 
-    def __init__(self, country=None, language=None, year=None):
-        year = parse_year(year)
-        locale = create_locale_for(country_id=country, lang_id=language)
-        self.holidays = locale.get_holidays_of(year)
+    def __init__(self, holidays, emitter=None):
+        self.holidays = holidays
+        self.emitter = emitter
 
     def __str__(self):
         return self.emitter.output(self.holidays)
@@ -51,3 +42,26 @@ class Holidata:
         self.emitter = get_emitter_for(format_id)
 
         return self
+
+
+class Locale:
+    def __init__(self, country, lang):
+        self.country = country
+        self.lang = lang
+
+    def get_holidays_of(self, year):
+        return self.country.get_holidays_of(year, self.lang)
+
+    def holidays_of(self, year):
+        return Holidata(self.country.get_holidays_of(self._parse_year(year), self.lang))
+
+    @staticmethod
+    def _parse_year(year):
+        try:
+            return int(year)
+        except ValueError:
+            raise ValueError(f"Invalid year '{year}'! Has to be an integer.")
+
+    @property
+    def id(self):
+        return f"{self.lang}-{self.country.id}"

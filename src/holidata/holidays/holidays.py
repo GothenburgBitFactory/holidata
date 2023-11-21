@@ -247,16 +247,3 @@ class Region:
         for generator in self.holiday_generators:
             for holiday in generator.build_for_year_and_lang(year, lang):
                 yield holiday
-
-
-class Locale:
-    def __init__(self, country, lang):
-        self.country = country
-        self.lang = lang
-
-    def get_holidays_of(self, year):
-        return self.country.get_holidays_of(year, self.lang)
-
-    @property
-    def id(self):
-        return f"{self.lang}-{self.country.id}"

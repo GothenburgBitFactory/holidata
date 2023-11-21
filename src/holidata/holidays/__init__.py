@@ -1,5 +1,5 @@
 from .ES import *
-from .holidays import Locale, Country
+from .holidays import Country
 
 __all__ = [
     "Country",
@@ -35,5 +35,4 @@ __all__ = [
     "TR",
     "US",
     "ZA",
-    "Locale",
 ]
