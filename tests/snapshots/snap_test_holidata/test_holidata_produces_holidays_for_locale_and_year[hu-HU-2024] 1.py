@@ -64,6 +64,14 @@
         'type': 'NRV'
     },
     {
+        'date': '2024-08-19',
+        'description': 'Munkaszüneti nap',
+        'locale': 'hu-HU',
+        'notes': '2024-08-03 munkanap',
+        'region': '',
+        'type': 'NF'
+    },
+    {
         'date': '2024-08-20',
         'description': 'Az államalapítás ünnepe',
         'locale': 'hu-HU',
@@ -88,6 +96,14 @@
         'type': 'NRF'
     },
     {
+        'date': '2024-12-24',
+        'description': 'Munkaszüneti nap',
+        'locale': 'hu-HU',
+        'notes': '2024-12-07 munkanap',
+        'region': '',
+        'type': 'NF'
+    },
+    {
         'date': '2024-12-25',
         'description': 'Karácsony',
         'locale': 'hu-HU',
@@ -102,5 +118,13 @@
         'notes': '',
         'region': '',
         'type': 'NRF'
+    },
+    {
+        'date': '2024-12-27',
+        'description': 'Munkaszüneti nap',
+        'locale': 'hu-HU',
+        'notes': '2024-12-14 munkanap',
+        'region': '',
+        'type': 'NF'
     }
 ]

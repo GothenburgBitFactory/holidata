@@ -82,7 +82,7 @@ class HU(Country):
 
         self.define_holiday() \
             .with_name("Nagypéntek") \
-            .since(2017)\
+            .since(2017) \
             .on("2 days before Easter") \
             .with_flags("NRV")
 
@@ -108,6 +108,7 @@ class HU(Country):
         2020:  7/2019. (VI.   25.) PM  rendelet a 2020. évi munkaszüneti napok körüli munkarendről
         2021: 14/2020. (V.    13.) ITM rendelet a 2021. évi munkaszüneti napok körüli munkarendről
         2022: 23/2021. (VI.    1.) ITM rendelet a 2022. évi munkaszüneti napok körüli munkarendről
+        2024: 15/2023. (VII.  13.) GFM rendelet a 2024. évi munkaszüneti napok körüli munkarendről
         """
         return {
             2015: [
@@ -142,5 +143,10 @@ class HU(Country):
             2022: [
                 ({"month": 3, "day": 14}, "2022-03-26 munkanap"),
                 ({"month": 10, "day": 31}, "2022-10-15 munkanap"),
-            ]
+            ],
+            2024: [
+                ({"month": 8, "day": 19}, "2024-08-03 munkanap"),
+                ({"month": 12, "day": 24}, "2024-12-07 munkanap"),
+                ({"month": 12, "day": 27}, "2024-12-14 munkanap"),
+            ],
         }
