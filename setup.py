@@ -34,7 +34,6 @@ setup(
     install_requires=[
         "arrow >= 1.3.0",
         "docopt >= 0.6.2",
-        "python-dateutil >= 2.8.2",
     ],
     extras_require={
         "test": [
