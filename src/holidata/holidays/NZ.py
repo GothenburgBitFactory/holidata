@@ -1,7 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
+from holidata.utils import SmartDayArrow
 from .holidays import Country
-from ..utils import SmartDayArrow
 
 
 class NZ(Country):
