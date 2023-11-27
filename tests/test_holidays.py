@@ -67,8 +67,8 @@ def test_holiday_should_be_of_type_either_fixed_or_variable(holidays):
         date_is_fixed = "F" in holiday.flags
         date_is_variable = "V" in holiday.flags
 
-        assert not (date_is_variable and date_is_fixed), f"Holiday '{holiday.description}' ({holiday.date.strftime('%Y-%m-%d')}) in locale {holiday.locale} must not have both flags 'F' and 'V'"
-        assert (date_is_variable or date_is_fixed), f"Holiday '{holiday.description}' ({holiday.date.strftime('%Y-%m-%d')}) in locale {holiday.locale} must have either flag 'F' or 'V'"
+        assert not (date_is_variable and date_is_fixed), f"Holiday '{holiday.description}' ({holiday.date.strftime('%Y-%m-%d')}) in locale {holiday.locale} must not have both flags 'F' and 'V' (has '{holiday.flags}')"
+        assert (date_is_variable or date_is_fixed), f"Holiday '{holiday.description}' ({holiday.date.strftime('%Y-%m-%d')}) in locale {holiday.locale} must have either flag 'F' or 'V' (has '{holiday.flags}')"
 
 
 def test_holiday_flags_should_be_in_the_correct_order(holidays):
