@@ -164,7 +164,7 @@
         'description': 'Reformationstag',
         'locale': 'de-DE',
         'notes': '',
-        'region': 'BH',
+        'region': 'HB',
         'type': 'RF'
     },
     {

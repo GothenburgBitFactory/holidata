@@ -1,3 +1,6 @@
+- #103 Fix region code for Bremen in locale 'DE'
+       (thanks to Olaf Sebelin)
+
 2023.11.1
 -      Add non-working days for 2024 in country 'HU'
 - #97  Merge locale and country

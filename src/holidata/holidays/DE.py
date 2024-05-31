@@ -8,7 +8,7 @@ class DE(Country):
     id = "DE"
     languages = ["de"]
     default_lang = "de"
-    regions = ["BB", "BE", "BH", "BW", "BY", "HE", "HH", "MV", "NI", "NW", "RP", "SH", "SL", "SN", "ST", "TH"]
+    regions = ["BB", "BE", "BW", "BY", "HB", "HE", "HH", "MV", "NI", "NW", "RP", "SH", "SL", "SN", "ST", "TH"]
     easter_type = EASTER_WESTERN
 
     def __init__(self):
@@ -139,7 +139,7 @@ class DE(Country):
 
         """
         before 2018: 10-31: [BB, MV, SN, ST, TH] [RF] Reformationstag
-        since 2018:  10-31: [BB, BH, HH, MV, NI, SH, SN, ST, TH] [RF] Reformationstag
+        since 2018:  10-31: [BB, HB, HH, MV, NI, SH, SN, ST, TH] [RF] Reformationstag
         2017:        10-31: [NRF] Reformationstag (national holiday because of 500th anniversary)
 
         """
@@ -158,7 +158,7 @@ class DE(Country):
 
         self.define_holiday() \
             .with_name("Reformationstag") \
-            .in_regions(["BB", "BH", "HH", "MV", "NI", "SH", "SN", "ST", "TH"]) \
+            .in_regions(["BB", "HB", "HH", "MV", "NI", "SH", "SN", "ST", "TH"]) \
             .since(2018) \
             .on("10-31") \
             .with_flags("RF")
