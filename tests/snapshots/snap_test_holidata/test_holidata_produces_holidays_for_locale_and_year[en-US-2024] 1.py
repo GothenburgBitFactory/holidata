@@ -80,16 +80,16 @@
         'type': 'NF'
     },
     {
-        'date': '2024-11-22',
-        'description': 'Day after Thanksgiving',
+        'date': '2024-11-28',
+        'description': 'Thanksgiving Day',
         'locale': 'en-US',
         'notes': '',
         'region': '',
         'type': 'NV'
     },
     {
-        'date': '2024-11-28',
-        'description': 'Thanksgiving Day',
+        'date': '2024-11-29',
+        'description': 'Day after Thanksgiving',
         'locale': 'en-US',
         'notes': '',
         'region': '',

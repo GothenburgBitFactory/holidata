@@ -1,3 +1,5 @@
+- #102 Fix error in calculation of 'Day after Thanksgiving'
+       (thanks to Peter J. Mello)
 - #103 Fix region code for Bremen in locale 'DE'
        (thanks to Olaf Sebelin)
 

@@ -1,5 +1,6 @@
 from dateutil.easter import EASTER_WESTERN
 
+from holidata.utils import month_reference
 from .holidays import Country
 
 
@@ -118,5 +119,17 @@ class US(Country):
                 "en": "Day after Thanksgiving",
                 "es": "Día después de Acción de Gracias",
             }) \
-            .on("4. friday in November") \
+            .on(self.day_after_thanksgiving) \
             .with_flags("NV")
+
+    @staticmethod
+    def day_after_thanksgiving(year):
+        date = month_reference(year, "november").shift_to_weekday(
+            "thursday",
+            order=4,
+            reverse=False,
+            including=True,
+        )
+
+        return date.shift(days=1)
+

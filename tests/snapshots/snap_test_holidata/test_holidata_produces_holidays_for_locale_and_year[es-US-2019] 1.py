@@ -80,16 +80,16 @@
         'type': 'NF'
     },
     {
-        'date': '2019-11-22',
-        'description': 'Día después de Acción de Gracias',
+        'date': '2019-11-28',
+        'description': 'Día de Acción de Gracias',
         'locale': 'es-US',
         'notes': '',
         'region': '',
         'type': 'NV'
     },
     {
-        'date': '2019-11-28',
-        'description': 'Día de Acción de Gracias',
+        'date': '2019-11-29',
+        'description': 'Día después de Acción de Gracias',
         'locale': 'es-US',
         'notes': '',
         'region': '',
