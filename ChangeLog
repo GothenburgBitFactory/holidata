@@ -1,3 +1,4 @@
+2024.6.0
 - #102 Fix error in calculation of 'Day after Thanksgiving'
        (thanks to Peter J. Mello)
 - #103 Fix region code for Bremen in locale 'DE'
@@ -13,7 +14,7 @@
 -      Drop support for Python 3.7
 -      Use double quotes instead of single quotes and f-strings
 
-2023.04.0
+2023.4.0
 -      en-GB: Add bank holiday for the coronation of King Charles III
 -      Move creator functions to holidata module
 -      Print proper error messages for exceptions instead of stack traces
