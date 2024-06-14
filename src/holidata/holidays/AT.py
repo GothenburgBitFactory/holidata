@@ -7,7 +7,6 @@ class AT(Country):
     id = "AT"
     languages = ["de"]
     default_lang = "de"
-    regions = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
     easter_type = EASTER_WESTERN
 
     def __init__(self):
