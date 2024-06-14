@@ -1,3 +1,6 @@
+- #105 Holiday "Mariä Himmelfahrt" missing for region 'BY' in locale 'de-DE'
+       (thanks to Alexei Samokvalov)
+
 2024.6.0
 - #102 Fix error in calculation of 'Day after Thanksgiving'
        (thanks to Peter J. Mello)

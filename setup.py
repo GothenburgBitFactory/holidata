@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 
-from setuptools import find_packages, setup
 import pathlib
+
+from setuptools import find_packages, setup
 
 here = pathlib.Path(__file__).parent.resolve()
 

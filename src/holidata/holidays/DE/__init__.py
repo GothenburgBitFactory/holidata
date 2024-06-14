@@ -1,7 +1,22 @@
 from dateutil.easter import EASTER_WESTERN
 
+from holidata.holidays.DE.BB import BB
+from holidata.holidays.DE.BE import BE
+from holidata.holidays.DE.BW import BW
+from holidata.holidays.DE.BY import BY
+from holidata.holidays.DE.HB import HB
+from holidata.holidays.DE.HE import HE
+from holidata.holidays.DE.HH import HH
+from holidata.holidays.DE.MV import MV
+from holidata.holidays.DE.NI import NI
+from holidata.holidays.DE.NW import NW
+from holidata.holidays.DE.RP import RP
+from holidata.holidays.DE.SH import SH
+from holidata.holidays.DE.SL import SL
+from holidata.holidays.DE.SN import SN
+from holidata.holidays.DE.ST import ST
+from holidata.holidays.DE.TH import TH
 from holidata.holidays.holidays import Country
-from holidata.utils import SmartDayArrow
 
 __all__ = [
     "DE",
@@ -15,9 +30,30 @@ class DE(Country):
     regions = ["BB", "BE", "BW", "BY", "HB", "HE", "HH", "MV", "NI", "NW", "RP", "SH", "SL", "SN", "ST", "TH"]
     easter_type = EASTER_WESTERN
 
+    """
+    https://www.bmi.bund.de/DE/themen/verfassung/staatliche-symbole/nationale-feiertage/nationale-feiertage-node.html
+    """
     def __init__(self):
         super().__init__()
-        self.default_lang = "de"
+
+        self.regions = [
+            BB(self),
+            BE(self),
+            BW(self),
+            BY(self),
+            HB(self),
+            HE(self),
+            HH(self),
+            MV(self),
+            NI(self),
+            NW(self),
+            RP(self),
+            SH(self),
+            SL(self),
+            SN(self),
+            ST(self),
+            TH(self),
+        ]
 
         self.define_holiday() \
             .with_name("Neujahr") \
@@ -25,32 +61,14 @@ class DE(Country):
             .with_flags("NF")
 
         self.define_holiday() \
-            .with_name("Heilige drei Könige") \
-            .in_regions(["BW", "BY", "ST"]) \
-            .on("01-06") \
-            .with_flags("RF")
-
-        self.define_holiday() \
             .with_name("Erster Maifeiertag") \
             .on("05-01") \
             .with_flags("NF")
 
         self.define_holiday() \
-            .with_name("Mariä Himmelfahrt") \
-            .in_region("SL") \
-            .on("08-15") \
-            .with_flags("RF")
-
-        self.define_holiday() \
             .with_name("Tag der Deutschen Einheit") \
             .on("10-03") \
             .with_flags("NRF")
-
-        self.define_holiday() \
-            .with_name("Allerheiligen") \
-            .in_regions(["BW", "BY", "NW", "RP", "SL"]) \
-            .on("11-01") \
-            .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Heilig Abend") \
@@ -102,71 +120,11 @@ class DE(Country):
             .on("50 days after Easter") \
             .with_flags("NRV")
 
-        self.define_holiday() \
-            .with_name("Fronleichnam") \
-            .in_regions(["BW", "BY", "HE", "NW", "RP", "SL"]) \
-            .on("60 days after Easter") \
-            .with_flags("RV")
-
         """
-        11 days before 4. sunday before 12-25: Buß- und Bettag
-        """
-        self.define_holiday() \
-            .with_name("Buß- und Bettag") \
-            .in_region("SN") \
-            .on(self.buss_und_bettag) \
-            .with_flags("RV")
-
-        """
-        2020-05-08: 75. Jahrestag der Befreiung vom Nationalsozialismus und der Beendigung des Zweiten Weltkrieges in Europa
-        Introduced 2019 for Berlin
-        https://gesetze.berlin.de/perma?d=jlr-FeiertGBEV6P1
-        """
-        self.define_holiday() \
-            .with_name("75. Jahrestag der Befreiung vom Nationalsozialismus und der Beendigung des Zweiten Weltkrieges in Europa") \
-            .in_region("BE") \
-            .in_years([2020]) \
-            .on("05-08") \
-            .with_flags("F")
-
-        """
-        03-08: Frauentag
-        Introduced 2019 for Berlin
-        https://gesetze.berlin.de/perma?d=jlr-FeiertGBEV6P1
-        """
-        self.define_holiday() \
-            .with_name("Internationaler Frauentag") \
-            .in_region("BE") \
-            .since(2019) \
-            .on("03-08") \
-            .with_flags("F")
-
-        """
-        before 2018: 10-31: [BB, MV, SN, ST, TH] [RF] Reformationstag
-        since 2018:  10-31: [BB, HB, HH, MV, NI, SH, SN, ST, TH] [RF] Reformationstag
-        2017:        10-31: [NRF] Reformationstag (national holiday because of 500th anniversary)
-
+        2017-10-31: Reformationstag (national holiday because of 500th anniversary)
         """
         self.define_holiday() \
             .with_name("Reformationstag") \
             .in_years([2017]) \
             .on("10-31") \
             .with_flags("NRF")
-
-        self.define_holiday() \
-            .with_name("Reformationstag") \
-            .in_regions(["BB", "MV", "SN", "ST", "TH"]) \
-            .until(2016) \
-            .on("10-31") \
-            .with_flags("RF")
-
-        self.define_holiday() \
-            .with_name("Reformationstag") \
-            .in_regions(["BB", "HB", "HH", "MV", "NI", "SH", "SN", "ST", "TH"]) \
-            .since(2018) \
-            .on("10-31") \
-            .with_flags("RF")
-
-    @staticmethod
-    def buss_und_bettag(year):
-        return SmartDayArrow(year, 12, 25).shift_to_weekday("sunday", order=4, reverse=True).shift(days=-11)
