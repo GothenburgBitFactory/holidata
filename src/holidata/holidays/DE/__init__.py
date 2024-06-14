@@ -27,7 +27,6 @@ class DE(Country):
     id = "DE"
     languages = ["de"]
     default_lang = "de"
-    regions = ["BB", "BE", "BW", "BY", "HB", "HE", "HH", "MV", "NI", "NW", "RP", "SH", "SL", "SN", "ST", "TH"]
     easter_type = EASTER_WESTERN
 
     """

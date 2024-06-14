@@ -38,6 +38,14 @@ def country(request):
     return request.param()
 
 
+@pytest.fixture()
+def regions(locale):
+    try:
+        return [region.id for region in locale.country.regions]
+    except AttributeError:
+        return []
+
+
 def test_country_should_be_constructable(country):
     pass
 
@@ -68,3 +76,11 @@ def test_holiday_flags_should_be_in_the_correct_order(holidays):
         match = re.search(r"^N?R?[FV]?$", f"{holiday.flags}")
 
         assert match is not None, f"Flags for holiday '{holiday.description}' ({holiday.date.strftime('%Y-%m-%d')}) in locale {holiday.locale} are not in the correct order. Flags '{holiday.flags}' should match 'N?R?[FV]?'"
+
+
+def test_holiday_should_only_be_defined_for_valid_regions(holidays, regions):
+    if regions is None or regions == []:
+        return
+
+    for holiday in holidays:
+        assert holiday.region == "" or holiday.region in regions, "Holiday '{}' ({}) in locale {} is defined for unknown region '{}'".format(holiday.description, holiday.date.strftime("%Y-%m-%d"), holiday.locale, holiday.region)
