@@ -1,0 +1,130 @@
+[
+  {
+    "date": "2011-01-01",
+    "description": "New Year's Day",
+    "locale": "en-SG",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2011-02-03",
+    "description": "Chinese New Year",
+    "locale": "en-SG",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2011-02-04",
+    "description": "Chinese New Year (Second Day)",
+    "locale": "en-SG",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2011-04-22",
+    "description": "Good Friday",
+    "locale": "en-SG",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2011-05-01",
+    "description": "Labour Day",
+    "locale": "en-SG",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2011-05-02",
+    "description": "Labour Day (in lieu)",
+    "locale": "en-SG",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2011-05-07",
+    "description": "General Election",
+    "locale": "en-SG",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2011-05-17",
+    "description": "Vesak Day",
+    "locale": "en-SG",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2011-08-09",
+    "description": "National Day",
+    "locale": "en-SG",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2011-08-27",
+    "description": "Presidential Election",
+    "locale": "en-SG",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2011-08-30",
+    "description": "Hari Raya Puasa",
+    "locale": "en-SG",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2011-10-26",
+    "description": "Deepavali",
+    "locale": "en-SG",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2011-11-06",
+    "description": "Hari Raya Haji",
+    "locale": "en-SG",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2011-11-07",
+    "description": "Hari Raya Haji (in lieu)",
+    "locale": "en-SG",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2011-12-25",
+    "description": "Christmas Day",
+    "locale": "en-SG",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2011-12-26",
+    "description": "Christmas Day (in lieu)",
+    "locale": "en-SG",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  }
+]
