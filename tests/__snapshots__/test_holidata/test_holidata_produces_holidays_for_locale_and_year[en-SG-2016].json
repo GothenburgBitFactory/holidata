@@ -1,0 +1,106 @@
+[
+  {
+    "date": "2016-01-01",
+    "description": "New Year's Day",
+    "locale": "en-SG",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2016-02-08",
+    "description": "Chinese New Year",
+    "locale": "en-SG",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2016-02-09",
+    "description": "Chinese New Year (Second Day)",
+    "locale": "en-SG",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2016-03-25",
+    "description": "Good Friday",
+    "locale": "en-SG",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2016-05-01",
+    "description": "Labour Day",
+    "locale": "en-SG",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2016-05-02",
+    "description": "Labour Day (in lieu)",
+    "locale": "en-SG",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2016-05-21",
+    "description": "Vesak Day",
+    "locale": "en-SG",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2016-07-06",
+    "description": "Hari Raya Puasa",
+    "locale": "en-SG",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2016-08-09",
+    "description": "National Day",
+    "locale": "en-SG",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2016-09-12",
+    "description": "Hari Raya Haji",
+    "locale": "en-SG",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2016-10-29",
+    "description": "Deepavali",
+    "locale": "en-SG",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2016-12-25",
+    "description": "Christmas Day",
+    "locale": "en-SG",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2016-12-26",
+    "description": "Christmas Day (in lieu)",
+    "locale": "en-SG",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  }
+]

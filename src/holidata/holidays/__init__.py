@@ -25,6 +25,7 @@ from .PL import *
 from .PT import *
 from .RU import *
 from .SE import *
+from .SG import *
 from .SI import *
 from .SK import *
 from .TR import *

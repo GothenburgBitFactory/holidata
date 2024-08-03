@@ -1,0 +1,122 @@
+[
+  {
+    "date": "2023-01-01",
+    "description": "New Year's Day",
+    "locale": "en-SG",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2023-01-02",
+    "description": "New Year's Day (in lieu)",
+    "locale": "en-SG",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2023-01-22",
+    "description": "Chinese New Year",
+    "locale": "en-SG",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2023-01-23",
+    "description": "Chinese New Year (Second Day)",
+    "locale": "en-SG",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2023-01-24",
+    "description": "Chinese New Year (in lieu)",
+    "locale": "en-SG",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2023-04-07",
+    "description": "Good Friday",
+    "locale": "en-SG",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2023-04-22",
+    "description": "Hari Raya Puasa",
+    "locale": "en-SG",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2023-05-01",
+    "description": "Labour Day",
+    "locale": "en-SG",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2023-06-02",
+    "description": "Vesak Day",
+    "locale": "en-SG",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2023-06-29",
+    "description": "Hari Raya Haji",
+    "locale": "en-SG",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2023-08-09",
+    "description": "National Day",
+    "locale": "en-SG",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2023-09-01",
+    "description": "Presidential Election",
+    "locale": "en-SG",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2023-11-12",
+    "description": "Deepavali",
+    "locale": "en-SG",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2023-11-13",
+    "description": "Deepavali (in lieu)",
+    "locale": "en-SG",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2023-12-25",
+    "description": "Christmas Day",
+    "locale": "en-SG",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  }
+]

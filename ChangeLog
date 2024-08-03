@@ -1,3 +1,5 @@
+- #143 SG: Add country Singapore (locale 'en-SG')
+       (thanks to nathanielmiller23)
 - #141 AU: Fix dates for 'Australia Day' and 'Anzac Day'
 
 2025.12.0
