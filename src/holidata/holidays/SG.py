@@ -190,6 +190,18 @@ class SG(Country):
     def hari_raya_haji(year):
         """Return the date of Hari Raya Haji for the given year."""
         dates = {
+            2011: date(2011, 11, 6),
+            2012: date(2012, 10, 26),
+            2013: date(2013, 10, 15),
+            2014: date(2014, 10, 5),
+            2015: date(2015, 9, 24),
+            2016: date(2016, 9, 12),
+            2017: date(2017, 9, 1),
+            2018: date(2018, 8, 22),
+            2019: date(2019, 8, 11),
+            2020: date(2020, 7, 31),
+            2021: date(2021, 7, 20),
+            2022: date(2022, 7, 10),
             2023: date(2023, 6, 29),
             2024: date(2024, 6, 17),
             2025: date(2025, 6, 6),
@@ -206,10 +218,22 @@ class SG(Country):
     def deepavali(year):
         """Return the date of Deepavali for the given year."""
         dates = {
-            2023: date(2023, 11, 12),
-            2024: date(2024, 10, 31),
-            2025: date(2025, 10, 20),
-            2026: date(2026, 11, 8)
+                    2011: date(2011, 10, 26),
+                    2012: date(2012, 11, 13),
+                    2013: date(2013, 11, 3),
+                    2014: date(2014, 10, 22),
+                    2015: date(2015, 11, 10),
+                    2016: date(2016, 10, 29),
+                    2017: date(2017, 10, 18),
+                    2018: date(2018, 11, 6),
+                    2019: date(2019, 10, 27),
+                    2020: date(2020, 11, 14),
+                    2021: date(2021, 11, 4),
+                    2022: date(2022, 10, 24),
+                    2023: date(2023, 11, 12),
+                    2024: date(2024, 10, 31),
+                    2025: date(2025, 10, 20),
+                    2026: date(2026, 11, 8)
         }
         return SG.shift_to_monday_if_weekend(dates.get(year))
 
