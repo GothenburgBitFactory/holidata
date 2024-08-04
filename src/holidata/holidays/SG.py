@@ -234,7 +234,7 @@ class SG(Country):
                     2024: date(2024, 10, 31),
                     2025: date(2025, 10, 20),
                     2026: date(2026, 11, 8)
-                }
+        }
         return SG.shift_to_monday_if_weekend(dates.get(year))
 
     @staticmethod
