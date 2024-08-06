@@ -1,6 +1,6 @@
 from datetime import date, timedelta
 from dateutil.easter import EASTER_WESTERN
-from holidata.utils import month_reference
+from holidata.utils import SmartDayArrow
 from .holidays import Country
 
 class SG(Country):
@@ -30,9 +30,9 @@ class SG(Country):
 
         self.define_holiday() \
             .with_name("Good Friday") \
-            .on(self.good_friday) \
+            .on("2 days before Easter") \
             .with_flags("NRV")
-
+        
         self.define_holiday() \
             .with_name("Labour Day") \
             .on(self.labour_day) \
@@ -71,9 +71,8 @@ class SG(Country):
     @staticmethod
     def shift_to_monday_if_weekend(holiday_date):
         """Shift the holiday to Monday if it falls on a Saturday or Sunday."""
-        if holiday_date.weekday() >= 5:  # Saturday or Sunday
-            return holiday_date + timedelta(days=(7 - holiday_date.weekday()))
-        return holiday_date
+        smart_date = SmartDayArrow.fromdate(holiday_date)
+        return smart_date.shift_to_weekday("monday", including=True).date()
 
     @staticmethod
     def new_years_day(year):
@@ -108,29 +107,6 @@ class SG(Country):
         """Return the date of the second day of Chinese New Year."""
         first_day = SG.chinese_new_year(year)
         return SG.shift_to_monday_if_weekend(first_day + timedelta(days=1)) if first_day else None
-
-    @staticmethod
-    def good_friday(year):
-        """Return the date of Good Friday for the given year."""
-        dates = {
-            2011: date(2011, 4, 22),
-            2012: date(2012, 4, 6),
-            2013: date(2013, 3, 29),
-            2014: date(2014, 4, 18),
-            2015: date(2015, 4, 3),
-            2016: date(2016, 3, 25),
-            2017: date(2017, 4, 14),
-            2018: date(2018, 3, 30),
-            2019: date(2019, 4, 19),
-            2020: date(2020, 4, 10),
-            2021: date(2021, 4, 2),
-            2022: date(2022, 4, 15),
-            2023: date(2023, 4, 7),
-            2024: date(2024, 3, 29),
-            2025: date(2025, 4, 18),
-            2026: date(2026, 4, 3)
-        }
-        return dates.get(year)
 
     @staticmethod
     def labour_day(year):
@@ -204,7 +180,7 @@ class SG(Country):
             2022: date(2022, 7, 10),
             2023: date(2023, 6, 29),
             2024: date(2024, 6, 17),
-            2025: date(2025, 6, 6),
+            2025: date(2025, 6, 7),
             2026: date(2026, 5, 27)
         }
         return dates.get(year)
@@ -218,22 +194,22 @@ class SG(Country):
     def deepavali(year):
         """Return the date of Deepavali for the given year."""
         dates = {
-                    2011: date(2011, 10, 26),
-                    2012: date(2012, 11, 13),
-                    2013: date(2013, 11, 3),
-                    2014: date(2014, 10, 22),
-                    2015: date(2015, 11, 10),
-                    2016: date(2016, 10, 29),
-                    2017: date(2017, 10, 18),
-                    2018: date(2018, 11, 6),
-                    2019: date(2019, 10, 27),
-                    2020: date(2020, 11, 14),
-                    2021: date(2021, 11, 4),
-                    2022: date(2022, 10, 24),
-                    2023: date(2023, 11, 12),
-                    2024: date(2024, 10, 31),
-                    2025: date(2025, 10, 20),
-                    2026: date(2026, 11, 8)
+            2011: date(2011, 10, 26),
+            2012: date(2012, 11, 13),
+            2013: date(2013, 11, 3),
+            2014: date(2014, 10, 22),
+            2015: date(2015, 11, 10),
+            2016: date(2016, 10, 29),
+            2017: date(2017, 10, 18),
+            2018: date(2018, 11, 6),
+            2019: date(2019, 10, 27),
+            2020: date(2020, 11, 14),
+            2021: date(2021, 11, 4),
+            2022: date(2022, 10, 24),
+            2023: date(2023, 11, 12),
+            2024: date(2024, 10, 31),
+            2025: date(2025, 10, 20),
+            2026: date(2026, 11, 9)
         }
         return SG.shift_to_monday_if_weekend(dates.get(year))
 
@@ -242,8 +218,6 @@ class SG(Country):
         """Return the date of Christmas Day for the given year."""
         return SG.shift_to_monday_if_weekend(date(year, 12, 25))
 
-    # Add a class attribute for legal sources
-    legal_sources = [
-        "https://www.mom.gov.sg/employment-practices/public-holidays",
-        "https://www.mom.gov.sg/employment-practices/public-holidays-entitlement-and-pay"
-    ]
+    # Legal sources:
+    # https://www.mom.gov.sg/employment-practices/public-holidays
+    # https://www.mom.gov.sg/employment-practices/public-holidays-entitlement-and-pay
