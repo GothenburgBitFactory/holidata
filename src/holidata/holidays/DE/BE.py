@@ -1,4 +1,4 @@
-from holidata.holidays.holidays import Region
+from holidata.holiday import Region
 
 
 class BE(Region):
@@ -21,7 +21,7 @@ class BE(Region):
         self.define_holiday() \
             .with_name("75. Jahrestag der Befreiung vom Nationalsozialismus und der Beendigung des Zweiten Weltkrieges in Europa") \
             .in_years([2020]) \
-            .on("05-08") \
+            .on(month=5, day=8) \
             .with_flags("F")
 
         """
@@ -32,5 +32,5 @@ class BE(Region):
         self.define_holiday() \
             .with_name("Internationaler Frauentag") \
             .since(2019) \
-            .on("03-08") \
+            .on(month=3, day=8) \
             .with_flags("F")

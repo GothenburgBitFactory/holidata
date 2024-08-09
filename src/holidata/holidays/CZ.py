@@ -1,6 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
-from .holidays import Country
+from holidata.holiday import Country
+from holidata.utils import day
 
 """
 source: https://www.zakonyprolidi.cz/cs/2000-245, §1 and §2.
@@ -21,67 +22,67 @@ class CZ(Country):
 
         self.define_holiday() \
             .with_name("Nový rok") \
-            .on("01-01") \
+            .on(month=1, day=1) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Den obnovy samostatného českého státu") \
-            .on("01-01") \
+            .on(month=1, day=1) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Svátek práce") \
-            .on("05-01") \
+            .on(month=5, day=1) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Den vítězství") \
-            .on("05-08") \
+            .on(month=5, day=8) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Den slovanských věrozvěstů Cyrila a Metoděje") \
-            .on("07-05") \
+            .on(month=7, day=5) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Den upálení mistra Jana Husa") \
-            .on("07-06") \
+            .on(month=7, day=6) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Den české státnosti") \
-            .on("09-28") \
+            .on(month=9, day=28) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Den vzniku samostatného československého státu") \
-            .on("10-28") \
+            .on(month=10, day=28) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Štědrý den") \
-            .on("12-24") \
+            .on(month=12, day=24) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("1. svátek vánoční") \
-            .on("12-25") \
+            .on(month=12, day=25) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("2. svátek vánoční") \
-            .on("12-26") \
+            .on(month=12, day=26) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Velikonoční pondělí") \
-            .on("1 day after Easter") \
+            .on(day(1).after(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Velký pátek") \
-            .on("2 days before Easter") \
+            .on(day(2).before(self.easter())) \
             .since(2016) \
             .with_flags("NRV")
 
@@ -90,7 +91,7 @@ class CZ(Country):
         """
         self.define_holiday() \
             .with_name("Den boje za svobodu a demokracii") \
-            .on("11-17") \
+            .on(month=11, day=17) \
             .until(2018) \
             .with_flags("NF")
 
@@ -99,6 +100,6 @@ class CZ(Country):
         """
         self.define_holiday() \
             .with_name("Den boje za svobodu a demokracii a Mezinárodní den studentstva") \
-            .on("11-17") \
+            .on(month=11, day=17) \
             .since(2019) \
             .with_flags("NF")

@@ -1,6 +1,6 @@
 from dateutil.easter import EASTER_WESTERN
 
-from .holidays import Country
+from holidata.holiday import Country
 from holidata.utils import SmartDayArrow
 
 """
@@ -21,37 +21,37 @@ class TR(Country):
 
         self.define_holiday() \
             .with_name("Yılbaşı") \
-            .on("01-01") \
+            .on(month=1, day=1) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Ulusal Egemenlik ve Çocuk Bayramı") \
-            .on("04-23") \
+            .on(month=4, day=23) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Emek ve Dayanışma Günü") \
-            .on("05-01") \
+            .on(month=5, day=1) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Atatürk'ü Anma, Gençlik ve Spor Bayramı") \
-            .on("05-19") \
+            .on(month=5, day=19) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Zafer Bayramı") \
-            .on("08-30") \
+            .on(month=8, day=30) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Cumhuriyet Bayramı") \
-            .on("10-29") \
+            .on(month=10, day=29) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Demokrasi ve Milli Birlik Günü") \
-            .on("07-15") \
+            .on(month=7, day=15) \
             .since(2017) \
             .with_flags("NF")
 
@@ -61,7 +61,7 @@ class TR(Country):
         for i in [1, 2, 3]:
             self.define_holiday() \
                 .with_name(f"Ramazan Bayramı ({i}. Gün)") \
-                .on(self.ramazan_bayrami_day(i)) \
+                .on(TR.ramazan_bayrami_day(i)) \
                 .with_flags("NRV")
 
         """
@@ -70,18 +70,20 @@ class TR(Country):
         for i in [1, 2, 3, 4]:
             self.define_holiday() \
                 .with_name(f"Kurban Bayramı ({i}. Gün)") \
-                .on(self.kurban_bayrami_day(i)) \
+                .on(TR.kurban_bayrami_day(i)) \
                 .with_flags("NRV")
 
-    def ramazan_bayrami_day(self, ordinal):
+    @staticmethod
+    def ramazan_bayrami_day(ordinal):
         def ramazan_bayrami_reference_shifted(year):
-            return self.__ramazan_bayrami_reference(year).shift(days=ordinal)
+            return TR.__ramazan_bayrami_reference(year).shift(days=ordinal)
 
         return ramazan_bayrami_reference_shifted
 
-    def kurban_bayrami_day(self, ordinal):
+    @staticmethod
+    def kurban_bayrami_day(ordinal):
         def kurban_bayrami_reference_shifted(year):
-            return self.__kurban_bayrami_reference(year).shift(days=ordinal)
+            return TR.__kurban_bayrami_reference(year).shift(days=ordinal)
 
         return kurban_bayrami_reference_shifted
 

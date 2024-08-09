@@ -1,7 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
-from holidata.utils import SmartDayArrow
-from .holidays import Country
+from holidata.holiday import Country
+from holidata.utils import day, first, third, second
 
 
 #
@@ -41,7 +41,7 @@ class CA(Country):
                 "en": "New Year's Day",
                 "fr": "Jour de l'An",
             }) \
-            .on("01-01") \
+            .on(month=1, day=1) \
             .with_flags("NF")
 
         self.define_holiday() \
@@ -50,7 +50,7 @@ class CA(Country):
                 "fr": "Fête Nationale",
             }) \
             .in_regions(["QC"]) \
-            .on("06-24") \
+            .on(month=6, day=24) \
             .with_flags("F")
 
         self.define_holiday() \
@@ -58,7 +58,7 @@ class CA(Country):
                 "en": "Canada Day",
                 "fr": "Fête du Canada",
             }) \
-            .on("07-01") \
+            .on(month=7, day=1) \
             .with_flags("NF")
 
         self.define_holiday() \
@@ -67,7 +67,7 @@ class CA(Country):
                 "fr": "Jour du Souvenir",
             }) \
             .in_regions(["AB", "BC", "NB", "NL", "NT"]) \
-            .on("11-11") \
+            .on(month=11, day=11) \
             .with_flags("F")
 
         self.define_holiday() \
@@ -75,7 +75,7 @@ class CA(Country):
                 "en": "Christmas Day",
                 "fr": "Jour de Noël",
             }) \
-            .on("12-25") \
+            .on(month=12, day=25) \
             .with_flags("NRF")
 
         self.define_holiday() \
@@ -83,7 +83,7 @@ class CA(Country):
                 "en": "Boxing Day",
                 "fr": "Lendemain de Noël",
             }) \
-            .on("12-26") \
+            .on(month=12, day=26) \
             .with_flags("NRF")
 
         self.define_holiday() \
@@ -91,7 +91,7 @@ class CA(Country):
                 "en": "Good Friday",
                 "fr": "Vendredi Saint",
             }) \
-            .on("2 days before Easter") \
+            .on(day(2).before(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
@@ -100,7 +100,7 @@ class CA(Country):
                 "fr": "Lundi de Pâques",
             }) \
             .in_regions(["AB", "PE", "QC"]) \
-            .on("1 day after Easter") \
+            .on(day(1).after(self.easter())) \
             .with_flags("RV")
 
         self.define_holiday() \
@@ -109,7 +109,7 @@ class CA(Country):
                 "fr": "Fête de la Famille",
             }) \
             .in_regions(["AB", "ON", "SK", "NB"]) \
-            .on("3. monday in February") \
+            .on(third("monday").of("february")) \
             .with_flags("V")
 
         self.define_holiday() \
@@ -118,7 +118,7 @@ class CA(Country):
                 "fr": "Journée Louis Riel",
             }) \
             .in_regions(["MB"]) \
-            .on("3. monday in February") \
+            .on(third("monday").of("february")) \
             .with_flags("V")
 
         self.define_holiday() \
@@ -127,7 +127,7 @@ class CA(Country):
                 "fr": "Fête des Insulaires",
             }) \
             .in_regions(["PE"]) \
-            .on("3. monday in February") \
+            .on(third("monday").of("february")) \
             .with_flags("V")
 
         self.define_holiday() \
@@ -136,7 +136,7 @@ class CA(Country):
                 "fr": "Premier lundi d'août",
             }) \
             .in_regions(["NT", "NU"]) \
-            .on("1. monday in August") \
+            .on(first("monday").of("august")) \
             .with_flags("V")
 
         self.define_holiday() \
@@ -145,7 +145,7 @@ class CA(Country):
                 "fr": "Fête de la Saskatchewan",
             }) \
             .in_regions(["SK"]) \
-            .on("1. monday in August") \
+            .on(first("monday").of("august")) \
             .with_flags("V")
 
         self.define_holiday() \
@@ -154,7 +154,7 @@ class CA(Country):
                 "fr": "Fête du Patrimoine",
             }) \
             .in_regions(["AB"]) \
-            .on("1. monday in August") \
+            .on(first("monday").of("august")) \
             .with_flags("V")
 
         self.define_holiday() \
@@ -163,7 +163,7 @@ class CA(Country):
                 "fr": "Jour de la Fondation",
             }) \
             .in_regions(["NS"]) \
-            .on("1. monday in August") \
+            .on(first("monday").of("august")) \
             .with_flags("V")
 
         self.define_holiday() \
@@ -172,7 +172,7 @@ class CA(Country):
                 "fr": "Jour du Nouveau-Brunswick",
             }) \
             .in_regions(["NB"]) \
-            .on("1. monday in August") \
+            .on(first("monday").of("august")) \
             .with_flags("V")
 
         self.define_holiday() \
@@ -180,7 +180,7 @@ class CA(Country):
                 "en": "Labour Day",
                 "fr": "Fête du Travail",
             }) \
-            .on("1. monday in September") \
+            .on(first("monday").of("september")) \
             .with_flags("NV")
 
         self.define_holiday() \
@@ -189,7 +189,7 @@ class CA(Country):
                 "fr": "Jour de l'Action de grâce",
             }) \
             .in_regions(["AB", "BC", "MB", "NL", "ON", "QC", "SK", "NT", "NU", "YT"]) \
-            .on("2. monday in October") \
+            .on(second("monday").of("october")) \
             .with_flags("V")
 
         self.define_holiday() \
@@ -198,7 +198,7 @@ class CA(Country):
                 "fr": "Journée Nationale des Patriotes",
             }) \
             .in_regions(["QC"]) \
-            .on(self.first_monday_after_05_25) \
+            .on(first("monday").before(month=5, day=25)) \
             .with_flags("V")
 
         self.define_holiday() \
@@ -207,9 +207,5 @@ class CA(Country):
                 "fr": "Fête de la Reine Victoria",
             }) \
             .in_regions(["AB", "BC", "MB", "NS", "ON", "SK", "NT", "NU", "YT"]) \
-            .on(self.first_monday_after_05_25) \
+            .on(first("monday").before(month=5, day=25)) \
             .with_flags("V")
-
-    @staticmethod
-    def first_monday_after_05_25(year):
-        return SmartDayArrow(year, 5, 25).shift_to_weekday("monday", order=1, reverse=True, including=False)

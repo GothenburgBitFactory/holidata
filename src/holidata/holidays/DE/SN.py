@@ -1,5 +1,5 @@
-from holidata.holidays.holidays import Region
-from holidata.utils import SmartDayArrow
+from holidata.holiday import Region
+from holidata.utils import day, fourth
 
 
 class SN(Region):
@@ -11,22 +11,17 @@ class SN(Region):
         """
         self.define_holiday() \
             .with_name("Buß- und Bettag") \
-            .on(self.buss_und_bettag) \
+            .on(day(11).before(fourth("sunday").before(month=12, day=25))) \
             .with_flags("RV")
 
         self.define_holiday() \
             .with_name("Reformationstag") \
             .until(2016) \
-            .on("10-31") \
+            .on(month=10, day=31) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Reformationstag") \
             .since(2018) \
-            .on("10-31") \
+            .on(month=10, day=31) \
             .with_flags("RF")
-
-
-    @staticmethod
-    def buss_und_bettag(year):
-        return SmartDayArrow(year, 12, 25).shift_to_weekday("sunday", order=4, reverse=True).shift(days=-11)

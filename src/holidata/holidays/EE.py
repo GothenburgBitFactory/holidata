@@ -1,6 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
-from .holidays import Country
+from holidata.holiday import Country
+from holidata.utils import day
 
 """
 sources
@@ -19,60 +20,60 @@ class EE(Country):
 
         self.define_holiday() \
             .with_name("Uusaasta") \
-            .on("01-01") \
+            .on(month=1, day=1) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Iseseisvuspäev, Eesti Vabariigi aastapäev") \
-            .on("02-24") \
+            .on(month=2, day=24) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Kevadpüha") \
-            .on("05-01") \
+            .on(month=5, day=1) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Võidupüha") \
-            .on("06-23") \
+            .on(month=6, day=23) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Jaanipäev") \
-            .on("06-24") \
+            .on(month=6, day=24) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Taasiseseisvumispäev") \
-            .on("08-20") \
+            .on(month=8, day=20) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Jõululaupäev") \
-            .on("12-24") \
+            .on(month=12, day=24) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Esimene jõulupüha") \
-            .on("12-25") \
+            .on(month=12, day=25) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Teine jõulupüha") \
-            .on("12-26") \
+            .on(month=12, day=26) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Suur reede") \
-            .on("2 days before Easter") \
+            .on(day(2).before(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Ülestõusmispühade 1. püha") \
-            .on("Easter") \
+            .on(self.easter()) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Nelipühade 1. püha") \
-            .on("49 days after Easter") \
+            .on(day(49).after(self.easter())) \
             .with_flags("NRV")

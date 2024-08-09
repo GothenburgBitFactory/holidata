@@ -1,6 +1,6 @@
 from dateutil.easter import EASTER_ORTHODOX
 
-from .holidays import Country
+from holidata.holiday import Country
 
 
 class RU(Country):
@@ -14,45 +14,45 @@ class RU(Country):
 
         self.define_holiday() \
             .with_name("Новый Год") \
-            .on("01-01") \
+            .on(month=1, day=1) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Рождество Христово") \
-            .on("01-07") \
+            .on(month=1, day=7) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("День защитника Отечества") \
-            .on("02-23") \
+            .on(month=2, day=23) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Международный женский день") \
-            .on("03-08") \
+            .on(month=3, day=8) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Праздник весны и труда") \
-            .on("05-01") \
+            .on(month=5, day=1) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("День Победы") \
-            .on("05-09") \
+            .on(month=5, day=9) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("День России") \
-            .on("06-12") \
+            .on(month=6, day=12) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("День народного единства") \
-            .on("11-04") \
+            .on(month=11, day=4) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Пасха") \
-            .on("Easter") \
+            .on(self.easter()) \
             .with_flags("NRV")

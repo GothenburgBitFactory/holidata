@@ -1,5 +1,6 @@
 from dateutil.easter import EASTER_WESTERN
 
+from holidata.holiday import Country
 from holidata.holidays.ES.AN import AN
 from holidata.holidays.ES.AR import AR
 from holidata.holidays.ES.AS import AS
@@ -19,7 +20,7 @@ from holidata.holidays.ES.NC import NC
 from holidata.holidays.ES.PV import PV
 from holidata.holidays.ES.RI import RI
 from holidata.holidays.ES.VC import VC
-from holidata.holidays.holidays import Country
+from holidata.utils import day
 
 __all__ = [
     "ES"
@@ -91,61 +92,61 @@ class ES(Country):
 
         self.define_holiday() \
             .with_name("Año Nuevo") \
-            .on("01-01") \
+            .on(month=1, day=1) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Epifanía del Señor") \
-            .on("01-06") \
+            .on(month=1, day=6) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Fiesta del Trabajo") \
-            .on("05-01") \
+            .on(month=5, day=1) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Asunción de la Virgen") \
-            .on("08-15") \
+            .on(month=8, day=15) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Fiesta Nacional de España") \
-            .on("10-12") \
+            .on(month=10, day=12) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Todos los Santos") \
-            .on("11-01") \
+            .on(month=11, day=1) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Día de la Constitución Española") \
-            .on("12-06") \
+            .on(month=12, day=6) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Inmaculada Concepción") \
-            .on("12-08") \
+            .on(month=12, day=8) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Natividad del Señor") \
-            .on("12-25") \
+            .on(month=12, day=25) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Viernes Santo") \
-            .on("2 days before Easter") \
+            .on(day(2).before(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Pascua") \
-            .on("Easter") \
+            .on(self.easter()) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Lunes siguiente al Año Nuevo") \
             .in_years([2012]) \
-            .on("01-02") \
+            .on(month=1, day=2) \
             .with_flags("NF")

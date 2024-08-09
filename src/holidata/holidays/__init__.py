@@ -1,9 +1,7 @@
 from .DE import *
 from .ES import *
-from .holidays import Country
 
 __all__ = [
-    "Country",
     "AT",
     "BE",
     "BR",

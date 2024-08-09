@@ -1,6 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
-from .holidays import Country
+from holidata.holiday import Country
+from holidata.utils import day
 
 
 class PT(Country):
@@ -14,70 +15,70 @@ class PT(Country):
 
         self.define_holiday() \
             .with_name("Ano Novo") \
-            .on("01-01") \
+            .on(month=1, day=1) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Dia da Liberdade") \
-            .on("04-25") \
+            .on(month=4, day=25) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Dia do Trabalhador") \
-            .on("05-01") \
+            .on(month=5, day=1) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Dia de Portugal") \
-            .on("06-10") \
+            .on(month=6, day=10) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Assunção de Nossa Senhora") \
-            .on("08-15") \
+            .on(month=8, day=15) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Implantação da República") \
-            .on("10-05") \
+            .on(month=10, day=5) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Dia de Todos os Santos") \
-            .on("11-01") \
+            .on(month=11, day=1) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Restauração da Independência") \
-            .on("12-01") \
+            .on(month=12, day=1) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Imaculada Conceição") \
-            .on("12-08") \
+            .on(month=12, day=8) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Natal") \
-            .on("12-25") \
+            .on(month=12, day=25) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Carnaval") \
-            .on("47 days before Easter") \
+            .on(day(47).before(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Sexta-feira Santa") \
-            .on("2 days before Easter") \
+            .on(day(2).before(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Páscoa") \
-            .on("Easter") \
+            .on(self.easter()) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Corpo de Deus") \
-            .on("60 days after Easter") \
+            .on(day(60).after(self.easter())) \
             .with_flags("NRV")

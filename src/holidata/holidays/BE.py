@@ -1,6 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
-from .holidays import Country
+from holidata.holiday import Country
+from holidata.utils import day
 
 
 class BE(Country):
@@ -17,7 +18,7 @@ class BE(Country):
                 "fr": "Nouvel An",
                 "nl": "Nieuwjaar",
             }) \
-            .on("01-01") \
+            .on(month=1, day=1) \
             .with_flags("NF")
 
         self.define_holiday() \
@@ -26,7 +27,7 @@ class BE(Country):
                 "fr": "Fête du Travail",
                 "nl": "Dag van de arbeid",
             }) \
-            .on("05-01") \
+            .on(month=5, day=1) \
             .with_flags("NF")
 
         self.define_holiday() \
@@ -35,7 +36,7 @@ class BE(Country):
                 "fr": "Fête nationale",
                 "nl": "Nationale feestdag",
             }) \
-            .on("07-21") \
+            .on(month=7, day=21) \
             .with_flags("NF")
 
         self.define_holiday() \
@@ -44,7 +45,7 @@ class BE(Country):
                 "fr": "Assomption",
                 "nl": "Onze Lieve Vrouw hemelvaart",
             }) \
-            .on("08-15") \
+            .on(month=8, day=15) \
             .with_flags("NRF")
 
         self.define_holiday() \
@@ -53,7 +54,7 @@ class BE(Country):
                 "fr": "Toussaint",
                 "nl": "Allerheiligen",
             }) \
-            .on("11-01") \
+            .on(month=11, day=1) \
             .with_flags("NRF")
 
         self.define_holiday() \
@@ -62,7 +63,7 @@ class BE(Country):
                 "fr": "Jour de l'armistice",
                 "nl": "Wapenstilstand",
             }) \
-            .on("11-11") \
+            .on(month=11, day=11) \
             .with_flags("NF")
 
         self.define_holiday() \
@@ -71,7 +72,7 @@ class BE(Country):
                 "fr": "Noël",
                 "nl": "Kerstmis",
             }) \
-            .on("12-25") \
+            .on(month=12, day=25) \
             .with_flags("NRF")
 
         self.define_holiday() \
@@ -80,7 +81,7 @@ class BE(Country):
                 "fr": "Pâques",
                 "nl": "Pasen",
             }) \
-            .on("Easter") \
+            .on(self.easter()) \
             .with_flags("NRV")
 
         self.define_holiday() \
@@ -89,7 +90,7 @@ class BE(Country):
                 "fr": "Lundi de Pâques",
                 "nl": "Paasmaandag",
             }) \
-            .on("1 day after Easter") \
+            .on(day(1).after(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
@@ -98,7 +99,7 @@ class BE(Country):
                 "fr": "Ascension",
                 "nl": "Onze Lieve Heer hemelvaart",
             }) \
-            .on("39 days after Easter") \
+            .on(day(39).after(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
@@ -107,7 +108,7 @@ class BE(Country):
                 "fr": "Pentecôte",
                 "nl": "Pinksteren",
             }) \
-            .on("49 days after Easter") \
+            .on(day(49).after(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
@@ -116,5 +117,5 @@ class BE(Country):
                 "fr": "Lundi de Pentecôte",
                 "nl": "Pinkstermaandag",
             }) \
-            .on("50 days after Easter") \
+            .on(day(50).after(self.easter())) \
             .with_flags("NRV")

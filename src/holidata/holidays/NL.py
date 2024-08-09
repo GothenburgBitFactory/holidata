@@ -1,7 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
-from holidata.utils import SmartDayArrow
-from .holidays import Country
+from holidata.holiday import Country
+from holidata.utils import SmartDayArrow, day
 
 
 class NL(Country):
@@ -15,79 +15,79 @@ class NL(Country):
 
         self.define_holiday() \
             .with_name("Nieuwjaarsdag") \
-            .on("01-01") \
+            .on(month=1, day=1) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Dodenherdenking") \
-            .on("05-04") \
+            .on(month=5, day=4) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Bevrijdingsdag") \
-            .on("05-05") \
+            .on(month=5, day=5) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Sinterklaas") \
-            .on("12-05") \
+            .on(month=12, day=5) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Eerste Kerstdag") \
-            .on("12-25") \
+            .on(month=12, day=25) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Tweede Kerstdag") \
-            .on("12-26") \
+            .on(month=12, day=26) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Goede Vrijdag") \
-            .on("2 days before Easter") \
+            .on(day(2).before(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Eerste Paasdag") \
-            .on("Easter") \
+            .on(self.easter()) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Tweede Paasdag") \
-            .on("1 day after Easter") \
+            .on(day(1).after(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Hemelvaartsdag") \
-            .on("39 days after Easter") \
+            .on(day(39).after(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Eerste Pinksterdag") \
-            .on("49 days after Easter") \
+            .on(day(49).after(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Tweede Pinksterdag") \
-            .on("50 days after Easter") \
+            .on(day(50).after(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Koninginnedag") \
             .until(2013) \
-            .on(self.koninginnedag) \
+            .on(NL.koninginnedag) \
             .with_flags("NV")
 
         self.define_holiday() \
             .with_name("Koningsdag") \
             .since(2014) \
-            .on(self.koningsdag) \
+            .on(NL.koningsdag) \
             .with_flags("NV")
 
         self.define_holiday() \
             .with_name("Koninkrijksdag") \
-            .on(self.koninkrijksdag) \
+            .on(NL.koninkrijksdag) \
             .with_flags("NV")
 
     @staticmethod

@@ -1,6 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
-from .holidays import Country
+from holidata.holiday import Country
+from holidata.utils import day
 
 """
 source: http://prawo.sejm.gov.pl/isap.nsf/download.xsp/WDU20150000090/O/D20150090.pdf
@@ -18,65 +19,65 @@ class PL(Country):
 
         self.define_holiday() \
             .with_name("Nowy Rok") \
-            .on("01-01") \
+            .on(month=1, day=1) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Trzech Króli") \
-            .on("01-06") \
+            .on(month=1, day=6) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Święto Pracy") \
-            .on("05-01") \
+            .on(month=5, day=1) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Święto Konstytucji Trzeciego Maja") \
-            .on("05-03") \
+            .on(month=5, day=3) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Wniebowzięcie Najświętszej Maryi Panny") \
-            .on("08-15") \
+            .on(month=8, day=15) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Wszystkich Świętych") \
-            .on("11-01") \
+            .on(month=11, day=1) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Narodowe Święto Niepodległości") \
-            .on("11-11") \
+            .on(month=11, day=11) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Boże Narodzenie (pierwszy dzień)") \
-            .on("12-25") \
+            .on(month=12, day=25) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Boże Narodzenie (drugi dzień)") \
-            .on("12-26") \
+            .on(month=12, day=26) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Wielkanoc") \
-            .on("Easter") \
+            .on(self.easter()) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Poniedziałek Wielkanocny") \
-            .on("1 day after Easter") \
+            .on(day(1).after(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Zielone Świątki") \
-            .on("49 days after Easter") \
+            .on(day(49).after(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Boże Ciało") \
-            .on("60 days after Easter") \
+            .on(day(60).after(self.easter())) \
             .with_flags("NRV")
