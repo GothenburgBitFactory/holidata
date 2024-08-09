@@ -1,4 +1,4 @@
-from holidata.holidays.holidays import Region
+from holidata.holiday import Region
 
 
 class ST(Region):
@@ -7,17 +7,17 @@ class ST(Region):
 
         self.define_holiday() \
             .with_name("Heilige drei Könige") \
-            .on("01-06") \
+            .on(month=1, day=6) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Reformationstag") \
             .until(2016) \
-            .on("10-31") \
+            .on(month=10, day=31) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Reformationstag") \
             .since(2018) \
-            .on("10-31") \
+            .on(month=10, day=31) \
             .with_flags("RF")

@@ -1,4 +1,4 @@
-from holidata.holidays.holidays import Region
+from holidata.holiday import Region
 
 
 class SH(Region):
@@ -8,5 +8,5 @@ class SH(Region):
         self.define_holiday() \
             .with_name("Reformationstag") \
             .since(2018) \
-            .on("10-31") \
+            .on(month=10, day=31) \
             .with_flags("RF")

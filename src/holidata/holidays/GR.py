@@ -1,7 +1,7 @@
 from dateutil.easter import EASTER_ORTHODOX
 
-from .holidays import Country
-from holidata.utils import SmartDayArrow, easter
+from holidata.holiday import Country
+from holidata.utils import SmartDayArrow, day
 
 
 class GR(Country):
@@ -15,67 +15,67 @@ class GR(Country):
 
         self.define_holiday() \
             .with_name("Πρωτοχρονιά") \
-            .on("01-01") \
+            .on(month=1, day=1) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Θεοφάνεια") \
-            .on("01-06") \
+            .on(month=1, day=6) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Ευαγγελισμός της Θεοτόκου και Εθνική Ημέρα Ανεξαρτησίας της Ελλάδας") \
-            .on("03-25") \
+            .on(month=3, day=25) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Κοίμηση της Θεοτόκου") \
-            .on("08-15") \
+            .on(month=8, day=15) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Ημέρα του ΌΧΙ") \
-            .on("10-28") \
+            .on(month=10, day=28) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Χριστούγεννα") \
-            .on("12-25") \
+            .on(month=12, day=25) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Επόμενη ημέρα Χριστουγέννων") \
-            .on("12-26") \
+            .on(month=12, day=26) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Καθαρά Δευτέρα") \
-            .on("48 days before Easter") \
+            .on(day(48).before(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Μεγάλη Παρασκευή") \
-            .on("2 days before Easter") \
+            .on(day(2).before(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Μεγάλο Σάββατο") \
-            .on("1 day before Easter") \
+            .on(day(1).before(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Πάσχα") \
-            .on("Easter") \
+            .on(self.easter()) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Δευτέρα του Πάσχα") \
-            .on("1 day after Easter") \
+            .on(day(1).after(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Δευτέρα του Αγίου Πνεύματος") \
-            .on("50 days after Easter") \
+            .on(day(50).after(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
@@ -88,7 +88,7 @@ class GR(Country):
         Postponed if it collides with Easter
         """
         date = SmartDayArrow(year, 5, 1)
-        easter_date = easter(year, self.easter_type)
+        easter_date = self.easter()(year)
 
         if date == easter_date:
             date = date.shift(days=2)

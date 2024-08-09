@@ -1,6 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
-from .holidays import Country
+from holidata.holiday import Country
+from holidata.utils import day
 
 """
 sources:
@@ -22,76 +23,76 @@ class HU(Country):
 
         self.define_holiday() \
             .with_name("Újév") \
-            .on("01-01") \
+            .on(month=1, day=1) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Az 1848-as forradalom ünnepe") \
-            .on("03-15") \
+            .on(month=3, day=15) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("A munka ünnepe") \
-            .on("05-01") \
+            .on(month=5, day=1) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Az államalapítás ünnepe") \
-            .on("08-20") \
+            .on(month=8, day=20) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Az 1956-os forradalom ünnepe") \
-            .on("10-23") \
+            .on(month=10, day=23) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Mindenszentek") \
-            .on("11-01") \
+            .on(month=11, day=1) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Karácsony") \
-            .on("12-25") \
+            .on(month=12, day=25) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Karácsony") \
-            .on("12-26") \
+            .on(month=12, day=26) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Húsvét") \
-            .on("Easter") \
+            .on(self.easter()) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Húsvéthétfő") \
-            .on("1 day after Easter") \
+            .on(day(1).after(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Pünkösd") \
-            .on("49 days after Easter") \
+            .on(day(49).after(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Pünkösdhétfő") \
-            .on("50 days after Easter") \
+            .on(day(50).after(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Nagypéntek") \
             .since(2017) \
-            .on("2 days before Easter") \
+            .on(day(2).before(self.easter())) \
             .with_flags("NRV")
 
-        for year, listing in self.holiday_munkaszuneti_nap().items():
+        for year, listing in HU.holiday_munkaszuneti_nap().items():
             for date, note in listing:
                 self.define_holiday() \
                     .with_name("Munkaszüneti nap") \
                     .in_years([year]) \
-                    .on("{month:02d}-{day:02d}".format(**date)) \
+                    .on(**date) \
                     .with_flags("NF") \
                     .annotated_with(note)
 

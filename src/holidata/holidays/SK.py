@@ -1,6 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
-from .holidays import Country
+from holidata.holiday import Country
+from holidata.utils import day
 
 
 class SK(Country):
@@ -14,75 +15,75 @@ class SK(Country):
 
         self.define_holiday() \
             .with_name("Deň vzniku Slovenskej republiky") \
-            .on("01-01") \
+            .on(month=1, day=1) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Zjavenie Pána / Traja králi") \
-            .on("01-06") \
+            .on(month=1, day=6) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Sviatok práce") \
-            .on("05-01") \
+            .on(month=5, day=1) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Deň víťazstva nad fašizmom") \
-            .on("05-08") \
+            .on(month=5, day=8) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Sviatok svätého Cyrila a Metoda") \
-            .on("07-05") \
+            .on(month=7, day=5) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Výročie SNP") \
-            .on("08-29") \
+            .on(month=8, day=29) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Deň Ústavy Slovenskej republiky") \
-            .on("09-01") \
+            .on(month=9, day=1) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Sedembolestná Panna Mária") \
-            .on("09-15") \
+            .on(month=9, day=15) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Sviatok všetkých svätých") \
-            .on("11-01") \
+            .on(month=11, day=1) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Deň boja za slobodu a demokraciu") \
-            .on("11-17") \
+            .on(month=11, day=17) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Štedrý deň") \
-            .on("12-24") \
+            .on(month=12, day=24) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Prvý sviatok vianočný") \
-            .on("12-25") \
+            .on(month=12, day=25) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Druhý sviatok vianočný") \
-            .on("12-26") \
+            .on(month=12, day=26) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Veľký piatok") \
-            .on("2 days before Easter") \
+            .on(day(2).before(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Veľkonočný pondelok") \
-            .on("1 day after Easter") \
+            .on(day(1).after(self.easter())) \
             .with_flags("NRV")

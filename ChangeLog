@@ -1,3 +1,4 @@
+-      Refactor core classes, replace date parsing and custom date functions with DSL
 -      Test holidays are only defined for valid regions
 -      Enable holidata to be calculated outside confirmed range
 

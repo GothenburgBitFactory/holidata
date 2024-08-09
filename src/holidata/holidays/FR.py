@@ -1,6 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
-from .holidays import Country
+from holidata.holiday import Country
+from holidata.utils import day
 
 
 class FR(Country):
@@ -14,60 +15,60 @@ class FR(Country):
 
         self.define_holiday() \
             .with_name("Jour de l'an") \
-            .on("01-01") \
+            .on(month=1, day=1) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Fête du premier mai") \
-            .on("05-01") \
+            .on(month=5, day=1) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Armistice 1945") \
-            .on("05-08") \
+            .on(month=5, day=8) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Fête nationale") \
-            .on("07-14") \
+            .on(month=7, day=14) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Assomption") \
-            .on("08-15") \
+            .on(month=8, day=15) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Toussaint") \
-            .on("11-01") \
+            .on(month=11, day=1) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Armistice 1918") \
-            .on("11-11") \
+            .on(month=11, day=11) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Noël") \
-            .on("12-25") \
+            .on(month=12, day=25) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Lundi de Pâques") \
-            .on("1 day after Easter") \
+            .on(day(1).after(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Ascension") \
-            .on("39 days after Easter") \
+            .on(day(39).after(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Pentecôte") \
-            .on("49 days after Easter") \
+            .on(day(49).after(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Lundi de Pentecôte") \
-            .on("50 days after Easter") \
+            .on(day(50).after(self.easter())) \
             .with_flags("NRV")

@@ -1,7 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
-from holidata.utils import month_reference, SmartDayArrow
-from .holidays import Country
+from holidata.holiday import Country
+from holidata.utils import SmartDayArrow, day, first, last
 
 
 class GB(Country):
@@ -15,72 +15,72 @@ class GB(Country):
 
         self.define_holiday() \
             .with_name("New Year's Day") \
-            .on("01-01") \
+            .on(month=1, day=1) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("New Year's Day (observed)") \
-            .on(self.monday_after(month=1, day=1)) \
+            .on(first("monday").after(month=1, day=1)) \
             .with_flags("NV") \
-            .on_condition(self.date_is_on_weekend(month=1, day=1))
+            .on_condition(GB.date_is_on_weekend(month=1, day=1))
 
         self.define_holiday() \
             .with_name("Christmas Day") \
-            .on("12-25") \
+            .on(month=12, day=25) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Christmas Day (observed)") \
-            .on(self.monday_after(month=12, day=25)) \
+            .on(first("monday").after(month=12, day=25)) \
             .with_flags("NV")  \
-            .on_condition(self.date_is_on_saturday(month=12, day=25))
+            .on_condition(GB.date_is_on_saturday(month=12, day=25))
 
         self.define_holiday() \
             .with_name("Christmas Day (observed)") \
-            .on(self.tuesday_after(month=12, day=25)) \
+            .on(first("tuesday").after(month=12, day=25)) \
             .with_flags("NV")  \
-            .on_condition(self.date_is_on_sunday(month=12, day=25))
+            .on_condition(GB.date_is_on_sunday(month=12, day=25))
 
         self.define_holiday() \
             .with_name("Boxing Day") \
-            .on("12-26") \
+            .on(month=12, day=26) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Boxing Day (observed)") \
-            .on(self.monday_after(month=12, day=26)) \
+            .on(first("monday").after(month=12, day=26)) \
             .with_flags("NV")  \
             .on_condition(self.date_is_on_saturday(month=12, day=26))
 
         self.define_holiday() \
             .with_name("Boxing Day (observed)") \
-            .on(self.tuesday_after(month=12, day=26)) \
+            .on(first("tuesday").after(month=12, day=26)) \
             .with_flags("NV")  \
-            .on_condition(self.date_is_on_sunday(month=12, day=26))
+            .on_condition(GB.date_is_on_sunday(month=12, day=26))
 
         self.define_holiday() \
             .with_name("Good Friday") \
-            .on("2 days before Easter") \
+            .on(day(2).before(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Easter Monday") \
-            .on("1 day after Easter") \
+            .on(day(1).after(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Early May Bank Holiday") \
-            .on("1. monday in may") \
+            .on(first("monday").of("may")) \
             .with_flags("NV")
 
         self.define_holiday() \
             .with_name("August Bank Holiday") \
-            .on("1. last monday in august") \
+            .on(last("monday").of("august")) \
             .with_flags("NV")
 
         self.define_holiday() \
             .with_name("Spring Bank Holiday") \
-            .on(self.date_of_spring_bank_holiday) \
+            .on(GB.date_of_spring_bank_holiday) \
             .with_flags("NV")
 
         """
@@ -89,7 +89,7 @@ class GB(Country):
         self.define_holiday() \
             .with_name("Coronation of King Charles III") \
             .in_years([2023]) \
-            .on("05-08") \
+            .on(month=5, day=8) \
             .with_flags("NV")
 
         """
@@ -98,7 +98,7 @@ class GB(Country):
         self.define_holiday() \
             .with_name("Queen's Diamond Jubilee") \
             .in_years([2012]) \
-            .on("06-05") \
+            .on(month=6, day=5) \
             .with_flags("NV")
 
         """
@@ -107,7 +107,7 @@ class GB(Country):
         self.define_holiday() \
             .with_name("Queen's Platinum Jubilee") \
             .in_years([2022]) \
-            .on("06-03") \
+            .on(month=6, day=3) \
             .with_flags("NV")
 
         """
@@ -116,7 +116,7 @@ class GB(Country):
         self.define_holiday() \
             .with_name("State Funeral of Queen Elizabeth II") \
             .in_years([2022]) \
-            .on("09-19") \
+            .on(month=9, day=19) \
             .with_flags("NF")
 
     @staticmethod
@@ -131,22 +131,7 @@ class GB(Country):
         elif year == 2022:
             return SmartDayArrow(year, 6, 2)
         else:
-            return month_reference(year, "may", first=False) \
-                .shift_to_weekday("monday", order=1, reverse=True, including=True)
-
-    @staticmethod
-    def monday_after(month, day):
-        def wrapper(year):
-            return SmartDayArrow(year, month, day).shift_to_weekday("monday", including=True)
-
-        return wrapper
-
-    @staticmethod
-    def tuesday_after(month, day):
-        def wrapper(year):
-            return SmartDayArrow(year, month, day).shift_to_weekday("tuesday", including=True)
-
-        return wrapper
+            return last("monday").of("may")(year)
 
     @staticmethod
     def date_is_on_weekend(month, day):

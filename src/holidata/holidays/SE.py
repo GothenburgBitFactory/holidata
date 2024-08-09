@@ -1,7 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
-from holidata.utils import SmartDayArrow
-from .holidays import Country
+from holidata.holiday import Country
+from holidata.utils import day, first
 
 
 class SE(Country):
@@ -15,94 +15,80 @@ class SE(Country):
 
         self.define_holiday() \
             .with_name("Nyårsdagen") \
-            .on("01-01") \
+            .on(month=1, day=1) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Trettondedag jul") \
-            .on("01-06") \
+            .on(month=1, day=6) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Första maj") \
-            .on("05-01") \
+            .on(month=5, day=1) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Nationaldagen") \
-            .on("06-06") \
+            .on(month=6, day=6) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Julafton") \
-            .on("12-24") \
+            .on(month=12, day=24) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Juldagen") \
-            .on("12-25") \
+            .on(month=12, day=25) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Annandag jul") \
-            .on("12-26") \
+            .on(month=12, day=26) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Nyårsafton") \
-            .on("12-31") \
+            .on(month=12, day=31) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Långfredagen") \
-            .on("2 days before Easter") \
+            .on(day(2).before(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Påskdagen") \
-            .on("Easter") \
+            .on(self.easter()) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Annandag påsk") \
-            .on("1 day after Easter") \
+            .on(day(1).after(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Kristi himmelsfärdsdag") \
-            .on("39 days after Easter") \
+            .on(day(39).after(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Pingstdagen") \
-            .on("49 days after Easter") \
+            .on(day(49).after(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Midsommarafton") \
-            .on(self.day_before_midsommar) \
+            .on(day(1).before(first("saturday").after(month=6, day=19))) \
             .with_flags("NV")
 
         self.define_holiday() \
             .with_name("Midsommardagen") \
-            .on(self.midsommar) \
+            .on(first("saturday").after(month=6, day=19)) \
             .with_flags("NV")
 
         self.define_holiday() \
             .with_name("Alla helgons dag") \
-            .on(self.saturday_after_10_31) \
+            .on(first("saturday").after(month=10, day=30)) \
             .with_flags("NRV")
-
-    @staticmethod
-    def midsommar(year):
-        """
-        Find the Saturday between 20 and 26 June
-        """
-        return SmartDayArrow(year, 6, 19).shift_to_weekday("saturday", order=1, reverse=False)
-
-    def day_before_midsommar(self, year):
-        return self.midsommar(year).shift(days=-1)
-
-    @staticmethod
-    def saturday_after_10_31(year):
-        return SmartDayArrow(year, 10, 30).shift_to_weekday("saturday", order=1, reverse=False)

@@ -1,7 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
-from holidata.utils import SmartDayArrow
-from .holidays import Country
+from holidata.holiday import Country
+from holidata.utils import day, first
 
 
 class IS(Country):
@@ -15,72 +15,72 @@ class IS(Country):
 
         self.define_holiday() \
             .with_name("Nýársdagur") \
-            .on("01-01") \
+            .on(month=1, day=1) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Verkalýðsdagurinn") \
-            .on("05-01") \
+            .on(month=5, day=1) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Þjóðhátíðardagurinn") \
-            .on("06-17") \
+            .on(month=6, day=17) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Jóladagur") \
-            .on("12-25") \
+            .on(month=12, day=25) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Annar dagur jóla") \
-            .on("12-26") \
+            .on(month=12, day=26) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Skírdagur") \
-            .on("3 days before Easter") \
+            .on(day(3).before(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Föstudagurinn langi") \
-            .on("2 days before Easter") \
+            .on(day(2).before(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Páskadagur") \
-            .on("Easter") \
+            .on(self.easter()) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Annar dagur páska") \
-            .on("1 day after Easter") \
+            .on(day(1).after(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Uppstigningardagur") \
-            .on("39 days after Easter") \
+            .on(day(39).after(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Hvítasunnudagur") \
-            .on("49 days after Easter") \
+            .on(day(49).after(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Annar dagur hvítasunnu") \
-            .on("50 days after Easter") \
+            .on(day(50).after(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Frídagur verslunarmanna") \
-            .on("1. monday in August") \
+            .on(first("monday").of("august")) \
             .with_flags("NV")
 
         self.define_holiday() \
             .with_name("Sumardagurinn fyrsti") \
-            .on(self.first_thursday_after_04_18) \
+            .on(first("thursday").after(month=4, day=18)) \
             .with_flags("NV")
 
         """ 
@@ -89,16 +89,12 @@ class IS(Country):
         """
         self.define_holiday() \
             .with_name("Aðfangadagur jóla") \
-            .on("12-24") \
+            .on(month=12, day=24) \
             .with_flags("NRF") \
             .annotated_with("Holiday from 13:00")
 
         self.define_holiday() \
             .with_name("Gamlársdagur") \
-            .on("12-31") \
+            .on(month=12, day=31) \
             .with_flags("NF") \
             .annotated_with("Holiday from 13:00")
-
-    @staticmethod
-    def first_thursday_after_04_18(year):
-        return SmartDayArrow(year, 4, 18).shift_to_weekday("thursday")

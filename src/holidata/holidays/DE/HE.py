@@ -1,4 +1,5 @@
-from holidata.holidays.holidays import Region
+from holidata.holiday import Region
+from holidata.utils import day
 
 
 class HE(Region):
@@ -7,5 +8,5 @@ class HE(Region):
 
         self.define_holiday() \
             .with_name("Fronleichnam") \
-            .on("60 days after Easter") \
+            .on(day(60).after(country.easter())) \
             .with_flags("RV")

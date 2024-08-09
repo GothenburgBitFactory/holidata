@@ -1,7 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
-from holidata.utils import SmartDayArrow
-from .holidays import Country
+from holidata.holiday import Country
+from holidata.utils import day, first
 
 """
 source: https://almanakka.helsinki.fi/en/flag-days-and-holidays-in-finland.html
@@ -21,7 +21,7 @@ class FI(Country):
                 "fi": "Uudenvuodenpäivä",
                 "sv": "Nyårsdagen",
             }) \
-            .on("01-01") \
+            .on(month=1, day=1) \
             .with_flags("NF")
 
         self.define_holiday() \
@@ -29,7 +29,7 @@ class FI(Country):
                 "fi": "Loppiainen",
                 "sv": "Trettondedagen",
             }) \
-            .on("01-06") \
+            .on(month=1, day=6) \
             .with_flags("NRF")
 
         self.define_holiday() \
@@ -37,7 +37,7 @@ class FI(Country):
                 "fi": "Vappu",
                 "sv": "Första maj",
             }) \
-            .on("05-01") \
+            .on(month=5, day=1) \
             .with_flags("NF")
 
         self.define_holiday() \
@@ -45,7 +45,7 @@ class FI(Country):
                 "fi": "Itsenäisyyspäivä",
                 "sv": "Självständighetsdagen",
             }) \
-            .on("12-06") \
+            .on(month=12, day=6) \
             .with_flags("NF")
 
         self.define_holiday() \
@@ -53,7 +53,7 @@ class FI(Country):
                 "fi": "Joulupäivä",
                 "sv": "Juldagen",
             }) \
-            .on("12-25") \
+            .on(month=12, day=25) \
             .with_flags("NRF")
 
         self.define_holiday() \
@@ -61,7 +61,7 @@ class FI(Country):
                 "fi": "Tapaninpäivä",
                 "sv": "Annandag jul",
             }) \
-            .on("12-26") \
+            .on(month=12, day=26) \
             .with_flags("NRF")
 
         self.define_holiday() \
@@ -69,7 +69,7 @@ class FI(Country):
                 "fi": "Pitkäperjantai",
                 "sv": "Långfredagen",
             }) \
-            .on("2 days before Easter") \
+            .on(day(2).before(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
@@ -77,7 +77,7 @@ class FI(Country):
                 "fi": "Pääsiäispäivä",
                 "sv": "Påskdagen",
             }) \
-            .on("Easter") \
+            .on(self.easter()) \
             .with_flags("NRV")
 
         self.define_holiday() \
@@ -85,7 +85,7 @@ class FI(Country):
                 "fi": "2. pääsiäispäivä",
                 "sv": "Annandag påsk",
             }) \
-            .on("1 day after Easter") \
+            .on(day(1).after(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
@@ -93,7 +93,7 @@ class FI(Country):
                 "fi": "Helatorstai",
                 "sv": "Kristi himmelfärdsdag",
             }) \
-            .on("39 days after Easter") \
+            .on(day(39).after(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
@@ -101,7 +101,7 @@ class FI(Country):
                 "fi": "Helluntaipäivä",
                 "sv": "Pingst",
             }) \
-            .on("49 days after Easter") \
+            .on(day(49).after(self.easter())) \
             .with_flags("NRV")
 
         """
@@ -112,7 +112,7 @@ class FI(Country):
                 "fi": "Juhannuspäivä",
                 "sv": "Midsommardagen",
             }) \
-            .on(self.midsummer_day) \
+            .on(first("saturday").after(month=6, day=19)) \
             .with_flags("NRV")
 
         """
@@ -123,13 +123,5 @@ class FI(Country):
                 "fi": "Pyhäinpäivä",
                 "sv": "Alla helgons dag",
             }) \
-            .on(self.all_saints_day) \
+            .on(first("saturday").after(month=10, day=30)) \
             .with_flags("NRV")
-
-    @staticmethod
-    def midsummer_day(year):
-        return SmartDayArrow(year, 6, 19).shift_to_weekday("saturday", order=1, reverse=False)
-
-    @staticmethod
-    def all_saints_day(year):
-        return SmartDayArrow(year, 10, 30).shift_to_weekday("saturday", order=1, reverse=False)

@@ -1,7 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
-from holidata.utils import SmartDayArrow
-from .holidays import Country
+from holidata.holiday import Country
+from holidata.utils import day, first
 
 
 class CO(Country):
@@ -15,102 +15,95 @@ class CO(Country):
 
         self.define_holiday() \
             .with_name("Año Nuevo") \
-            .on("01-01") \
+            .on(month=1, day=1) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Día del Trabajo") \
-            .on("05-01") \
+            .on(month=5, day=1) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Grito de Independencia") \
-            .on("07-20") \
+            .on(month=7, day=20) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Batalla de Boyacá") \
-            .on("08-07") \
+            .on(month=8, day=7) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Inmaculada Concepción") \
-            .on("12-08") \
+            .on(month=12, day=8) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Navidad") \
-            .on("12-25") \
+            .on(month=12, day=25) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Jueves Santo") \
-            .on("3 days before Easter") \
+            .on(day(3).before(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Viernes Santo") \
-            .on("2 days before Easter") \
+            .on(day(2).before(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Domingo de Pascua") \
-            .on("Easter") \
+            .on(self.easter()) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("La Ascensión del Señor") \
-            .on("43 days after Easter") \
+            .on(day(43).after(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Corpus Christi") \
-            .on("64 days after Easter") \
+            .on(day(64).after(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("El Sagrado Corazón de Jesús") \
-            .on("71 days after Easter") \
+            .on(day(71).after(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Día de los Reyes Magos") \
-            .on(self.first_monday_after(1, 6)) \
+            .on(first("monday").after(month=1, day=6, including=True)) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Día de San José") \
-            .on(self.first_monday_after(3, 19)) \
+            .on(first("monday").after(month=3, day=19, including=True)) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("San Pedro y San Pablo") \
-            .on(self.first_monday_after(6, 29)) \
+            .on(first("monday").after(month=6, day=29, including=True)) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Asunción de la Virgen") \
-            .on(self.first_monday_after(8, 15)) \
+            .on(first("monday").after(month=8, day=15, including=True)) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Día de la Raza") \
-            .on(self.first_monday_after(10, 12)) \
+            .on(first("monday").after(month=10, day=12, including=True)) \
             .with_flags("NV")
 
         self.define_holiday() \
             .with_name("Todos los Santos") \
-            .on(self.first_monday_after(11, 1)) \
+            .on(first("monday").after(month=11, day=1, including=True)) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Independencia de Cartagena") \
-            .on(self.first_monday_after(11, 11)) \
+            .on(first("monday").after(month=11, day=11, including=True)) \
             .with_flags("NV")
-
-    @staticmethod
-    def first_monday_after(month, day):
-        def wrapper(year):
-            return SmartDayArrow(year, month, day).shift_to_weekday("monday", including=True)
-
-        return wrapper

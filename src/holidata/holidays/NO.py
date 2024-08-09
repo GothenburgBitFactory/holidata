@@ -1,6 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
-from .holidays import Country
+from holidata.holiday import Country
+from holidata.utils import day
 
 
 class NO(Country):
@@ -14,85 +15,85 @@ class NO(Country):
 
         self.define_holiday() \
             .with_name("Nyttårsdag") \
-            .on("01-01") \
+            .on(month=1, day=1) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Offentlig Høytidsdag") \
-            .on("05-01") \
+            .on(month=5, day=1) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Frigjøringsdag 1945") \
-            .on("05-08") \
+            .on(month=5, day=8) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Grunnlovsdag") \
-            .on("05-17") \
+            .on(month=5, day=17) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Julaften") \
-            .on("12-24") \
+            .on(month=12, day=24) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Juledag") \
-            .on("12-25") \
+            .on(month=12, day=25) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Juledag") \
-            .on("12-26") \
+            .on(month=12, day=26) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Nyttårsaften") \
-            .on("12-31") \
+            .on(month=12, day=31) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Fastelavn") \
-            .on("49 days before Easter") \
+            .on(day(49).before(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Palmesøndag") \
-            .on("7 days before Easter") \
+            .on(day(7).before(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Skjærtorsdag") \
-            .on("3 days before Easter") \
+            .on(day(3).before(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Langfredag") \
-            .on("2 days before Easter") \
+            .on(day(2).before(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Påskedag") \
-            .on("Easter") \
+            .on(self.easter()) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Påskedag") \
-            .on("1 day after Easter") \
+            .on(day(1).after(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Kristi Himmelfartsdag") \
-            .on("39 days after Easter") \
+            .on(day(39).after(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Pinsedag") \
-            .on("49 days after Easter") \
+            .on(day(49).after(self.easter())) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Pinsedag") \
-            .on("50 days after Easter") \
+            .on(day(50).after(self.easter())) \
             .with_flags("NRV")

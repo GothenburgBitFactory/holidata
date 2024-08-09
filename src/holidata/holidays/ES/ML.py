@@ -1,5 +1,5 @@
-from holidata.holidays.holidays import Region
-from holidata.utils import SmartDayArrow
+from holidata.holiday import Region
+from holidata.utils import SmartDayArrow, day
 
 
 class ML(Region):
@@ -9,72 +9,72 @@ class ML(Region):
         self.define_holiday() \
             .with_name("Lunes siguiente al Año Nuevo") \
             .in_years([2017]) \
-            .on("01-02") \
+            .on(month=1, day=2) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Lunes siguiente a la Epifanía del Señor") \
             .in_years([2013, 2019]) \
-            .on("01-07") \
+            .on(month=1, day=7) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Estatuto de Autonomía de la Ciudad de Melilla") \
             .in_years([2020, 2021]) \
-            .on("03-13") \
+            .on(month=3, day=13) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Fiesta del Eid Fitr") \
             .in_years([2022, 2023]) \
-            .on(self.day_of_eid_fitr) \
+            .on(ML.day_of_eid_fitr) \
             .with_flags("RV")
 
         self.define_holiday() \
             .with_name("Fiesta del Sacrificio (Aid Al Adha)") \
             .in_years([2022, 2023, 2024]) \
-            .on(self.holiday_aid_al_adha) \
+            .on(ML.holiday_aid_al_adha) \
             .with_flags("RV")
 
         self.define_holiday() \
             .with_name("Fiesta del Sacrificio (Aid El Kebir)") \
             .until(2021) \
-            .on(self.holiday_aid_el_kebir) \
+            .on(ML.holiday_aid_el_kebir) \
             .with_flags("RV")
 
         self.define_holiday() \
             .with_name("San José") \
             .in_years([2011, 2012, 2013, 2014, 2015, 2016]) \
-            .on("03-19") \
+            .on(month=3, day=19) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Jueves Santo") \
-            .on("3 days before Easter") \
+            .on(day(3).before(country.easter())) \
             .with_flags("RV")
 
         self.define_holiday() \
             .with_name("Lunes siguiente al Día de la Constitución Española") \
             .in_years([2015, 2020]) \
-            .on("12-07") \
+            .on(month=12, day=7) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Lunes siguiente a La Inmaculada Concepción") \
             .in_years([2019, 2024]) \
-            .on("12-09") \
+            .on(month=12, day=9) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Lunes siguiente a la Natividad del Señor") \
             .in_years([2022]) \
-            .on("12-26") \
+            .on(month=12, day=26) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("San Esteban") \
             .in_years([2011, 2016]) \
-            .on("12-26") \
+            .on(month=12, day=26) \
             .with_flags("RF")
 
     @staticmethod

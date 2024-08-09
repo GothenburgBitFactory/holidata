@@ -1,6 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
-from .holidays import Country
+from holidata.holiday import Country
+from holidata.utils import day
 
 
 class IT(Country):
@@ -14,60 +15,60 @@ class IT(Country):
 
         self.define_holiday() \
             .with_name("Capodanno") \
-            .on("01-01") \
+            .on(month=1, day=1) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Epifania") \
-            .on("01-06") \
+            .on(month=1, day=6) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Festa della liberazione") \
-            .on("04-25") \
+            .on(month=4, day=25) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Festa del lavoro") \
-            .on("05-01") \
+            .on(month=5, day=1) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Festa della repubblica") \
-            .on("06-02") \
+            .on(month=6, day=2) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Assunzione (ferragosto)") \
-            .on("08-15") \
+            .on(month=8, day=15) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Ognissanti") \
-            .on("11-01") \
+            .on(month=11, day=1) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Immacolata concezione") \
-            .on("12-08") \
+            .on(month=12, day=8) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Natale") \
-            .on("12-25") \
+            .on(month=12, day=25) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("S.to Stefano") \
-            .on("12-26") \
+            .on(month=12, day=26) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Pasqua") \
-            .on("Easter") \
+            .on(self.easter()) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Pasquetta") \
-            .on("1 day after Easter") \
+            .on(day(1).after(self.easter())) \
             .with_flags("NRV")
