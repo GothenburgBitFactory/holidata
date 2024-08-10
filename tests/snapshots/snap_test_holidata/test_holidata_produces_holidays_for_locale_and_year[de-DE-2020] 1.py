@@ -155,14 +155,6 @@
         'date': '2020-08-15',
         'description': 'Mariä Himmelfahrt',
         'locale': 'de-DE',
-        'notes': 'In Gemeinden mit überwiegend katholischer Bevölkerung',
-        'region': 'BY',
-        'type': 'RF'
-    },
-    {
-        'date': '2020-08-15',
-        'description': 'Mariä Himmelfahrt',
-        'locale': 'de-DE',
         'notes': '',
         'region': 'SL',
         'type': 'RF'
