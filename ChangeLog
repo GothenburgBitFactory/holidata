@@ -1,5 +1,8 @@
+2024.8.0
+-      Add support for Python 3.12, replace 'snapshottest' with 'syrupy'
 - #105 Holiday "Mariä Himmelfahrt" missing for region 'BY' in locale 'de-DE'
        (thanks to Alexei Samokvalov)
+-      Convert DE into module
 
 2024.6.0
 - #102 Fix error in calculation of 'Day after Thanksgiving'
