@@ -38,3 +38,7 @@ def test_holidata_produces_holidays_for_locale_and_year(snapshot_json, locale, y
     export_data.sort(key=lambda x: (x["date"], x["description"], x["region"]))
 
     assert export_data == snapshot_json
+
+
+def test_holidata_can_produce_holidays_out_of_range(locale):
+    [h.as_dict() for h in locale.get_holidays_of(HOLIDATA_YEAR_MAX)]

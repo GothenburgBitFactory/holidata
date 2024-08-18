@@ -144,10 +144,13 @@ class HolidayGenerator(object):
                 return []
 
         for region in self.regions:
+            date = self._create_date(self.date, year)
+            if date is None:
+                continue
             yield Holiday(
                 locale=f"{lang}-{self.country_id}",
                 region=region,
-                date=self._create_date(self.date, year),
+                date=date,
                 description=self.name_dict[lang],
                 flags=self.flags,
                 notes=self.notes,

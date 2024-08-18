@@ -107,7 +107,7 @@ class TR(Country):
             2027: SmartDayArrow(2027, 3,  8),
         }
 
-        return ramazan_bayrami_reference[year]
+        return ramazan_bayrami_reference.get(year)
 
     @staticmethod
     def __kurban_bayrami_reference(year):
@@ -131,4 +131,4 @@ class TR(Country):
             2027: SmartDayArrow(2027,  5, 15),
         }
 
-        return kurban_bayrami_reference[year]
+        return kurban_bayrami_reference.get(year)

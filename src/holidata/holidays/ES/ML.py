@@ -92,7 +92,7 @@ class ML(Region):
             2020: SmartDayArrow(year, 7, 31),
             2021: SmartDayArrow(year, 7, 21),
         }
-        return dates[year]
+        return dates.get(year)
 
     @staticmethod
     def holiday_aid_al_adha(year):
@@ -101,7 +101,7 @@ class ML(Region):
             2023: SmartDayArrow(year, 6, 29),
             2024: SmartDayArrow(year, 6, 17),
         }
-        return dates[year]
+        return dates.get(year)
 
     @staticmethod
     def day_of_eid_fitr(year):
@@ -109,4 +109,4 @@ class ML(Region):
             2022: SmartDayArrow(year, 5, 3),
             2023: SmartDayArrow(year, 4, 21),
         }
-        return dates[year]
+        return dates.get(year)
