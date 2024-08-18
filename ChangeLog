@@ -1,3 +1,5 @@
+-      Enable holidata to be calculated outside confirmed range
+
 2024.8.0
 -      Add support for Python 3.12, replace 'snapshottest' with 'syrupy'
 - #105 Holiday "Mariä Himmelfahrt" missing for region 'BY' in locale 'de-DE'

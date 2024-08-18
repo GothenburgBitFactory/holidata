@@ -95,4 +95,4 @@ class CE(Region):
             2024: SmartDayArrow(year, 6, 17),
         }
 
-        return dates[year]
+        return dates.get(year)
