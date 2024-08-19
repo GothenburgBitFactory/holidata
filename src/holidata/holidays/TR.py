@@ -76,14 +76,16 @@ class TR(Country):
     @staticmethod
     def ramazan_bayrami_day(ordinal):
         def ramazan_bayrami_reference_shifted(year):
-            return TR.__ramazan_bayrami_reference(year).shift(days=ordinal)
+            reference = TR.__ramazan_bayrami_reference(year)
+            return reference.shift(days=ordinal) if reference is not None else None
 
         return ramazan_bayrami_reference_shifted
 
     @staticmethod
     def kurban_bayrami_day(ordinal):
         def kurban_bayrami_reference_shifted(year):
-            return TR.__kurban_bayrami_reference(year).shift(days=ordinal)
+            reference = TR.__kurban_bayrami_reference(year)
+            return reference.shift(days=ordinal) if reference is not None else None
 
         return kurban_bayrami_reference_shifted
 
