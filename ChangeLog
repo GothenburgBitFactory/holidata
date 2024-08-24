@@ -1,7 +1,10 @@
+2024.8.2
+- #113 Fix emitter output
+
 2024.8.1
--      Refactor core classes, replace date parsing and custom date functions with DSL
--      Test holidays are only defined for valid regions
--      Enable holidata to be calculated outside confirmed range
+- #111 Refactor core classes, replace date parsing and custom date functions with DSL
+- #110 Test holidays are only defined for valid regions
+- #109 Enable holidata to be calculated outside confirmed range
 
 2024.8.0
 -      Add support for Python 3.12, replace 'snapshottest' with 'syrupy'
