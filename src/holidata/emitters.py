@@ -98,7 +98,7 @@ class XmlEmitter(Emitter):
         export_data: List[Dict[str, Any]] = [h.as_dict() for h in holidays]
         export_data.sort(key=lambda x: (x["date"], x["description"], x["region"]))
 
-        output: str = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
+        output: str = "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n"
         output += "<holidays>\n"
 
         for holiday in export_data:
