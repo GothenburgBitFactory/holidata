@@ -28,7 +28,7 @@ class JsonEmitter(Emitter):
     def output(self, holidays: List[Holiday]) -> str:
         export_data: List[Dict[str, Any]] = [h.as_dict() for h in holidays]
         export_data.sort(key=lambda x: (x["date"], x["description"], x["region"]))
-        return json.dumps(export_data, ensure_ascii=False, sort_keys=False, indent=None, separators=(",", ":")) + "\n"
+        return "\n".join([json.dumps(h, ensure_ascii=False, sort_keys=False, indent=None, separators=(",", ":")) for h in export_data]) + "\n"
 
 
 class CsvEmitter(Emitter):
