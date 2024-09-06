@@ -1,5 +1,5 @@
 from holidata.holiday import Region
-from holidata.utils import day, fourth
+from holidata.utils import day, fourth, date
 
 
 class SN(Region):
@@ -11,17 +11,17 @@ class SN(Region):
         """
         self.define_holiday() \
             .with_name("Buß- und Bettag") \
-            .on(day(11).before(fourth("sunday").before(month=12, day=25))) \
+            .on(day(11).before(fourth("sunday").before(date(month=12, day=25)))) \
             .with_flags("RV")
 
         self.define_holiday() \
             .with_name("Reformationstag") \
             .until(2016) \
-            .on(month=10, day=31) \
+            .on(date(month=10, day=31)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Reformationstag") \
             .since(2018) \
-            .on(month=10, day=31) \
+            .on(date(month=10, day=31)) \
             .with_flags("RF")

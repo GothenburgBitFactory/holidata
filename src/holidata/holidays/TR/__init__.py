@@ -1,7 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
 from holidata.holiday import Country
-from holidata.utils import SmartDayArrow
+from holidata.utils import date
 
 __all__ = [
     "TR",
@@ -25,37 +25,37 @@ class TR(Country):
 
         self.define_holiday() \
             .with_name("Yılbaşı") \
-            .on(month=1, day=1) \
+            .on(date(month=1, day=1)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Ulusal Egemenlik ve Çocuk Bayramı") \
-            .on(month=4, day=23) \
+            .on(date(month=4, day=23)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Emek ve Dayanışma Günü") \
-            .on(month=5, day=1) \
+            .on(date(month=5, day=1)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Atatürk'ü Anma, Gençlik ve Spor Bayramı") \
-            .on(month=5, day=19) \
+            .on(date(month=5, day=19)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Zafer Bayramı") \
-            .on(month=8, day=30) \
+            .on(date(month=8, day=30)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Cumhuriyet Bayramı") \
-            .on(month=10, day=29) \
+            .on(date(month=10, day=29)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Demokrasi ve Milli Birlik Günü") \
-            .on(month=7, day=15) \
+            .on(date(month=7, day=15)) \
             .since(2017) \
             .with_flags("NF")
 
@@ -95,48 +95,48 @@ class TR(Country):
 
     @staticmethod
     def __ramazan_bayrami_reference(year):
-        ramazan_bayrami_reference = {
-            2011: SmartDayArrow(2011, 8, 29),
-            2012: SmartDayArrow(2012, 8, 18),
-            2013: SmartDayArrow(2013, 8,  7),
-            2014: SmartDayArrow(2014, 7, 27),
-            2015: SmartDayArrow(2015, 7, 16),
-            2016: SmartDayArrow(2016, 7,  4),
-            2017: SmartDayArrow(2017, 6, 24),
-            2018: SmartDayArrow(2018, 6, 14),
-            2019: SmartDayArrow(2019, 6,  4),
-            2020: SmartDayArrow(2020, 5, 23),
-            2021: SmartDayArrow(2021, 5, 12),
-            2022: SmartDayArrow(2022, 5,  1),
-            2023: SmartDayArrow(2023, 4, 20),
-            2024: SmartDayArrow(2024, 4,  9),
-            2025: SmartDayArrow(2025, 3, 29),
-            2026: SmartDayArrow(2026, 3, 19),
-            2027: SmartDayArrow(2027, 3,  8),
+        dates = {
+            2011: date(8, 29),
+            2012: date(8, 18),
+            2013: date(8, 7),
+            2014: date(7, 27),
+            2015: date(7, 16),
+            2016: date(7, 4),
+            2017: date(6, 24),
+            2018: date(6, 14),
+            2019: date(6, 4),
+            2020: date(5, 23),
+            2021: date(5, 12),
+            2022: date(5, 1),
+            2023: date(4, 20),
+            2024: date(4, 9),
+            2025: date(3, 29),
+            2026: date(3, 19),
+            2027: date(3, 8),
         }
 
-        return ramazan_bayrami_reference.get(year)
+        return dates.get(year)(year) if year in dates else None
 
     @staticmethod
     def __kurban_bayrami_reference(year):
-        kurban_bayrami_reference = {
-            2011: SmartDayArrow(2011, 11,  5),
-            2012: SmartDayArrow(2012, 10, 24),
-            2013: SmartDayArrow(2013, 10, 14),
-            2014: SmartDayArrow(2014, 10,  3),
-            2015: SmartDayArrow(2015,  9, 23),
-            2016: SmartDayArrow(2016,  9, 11),
-            2017: SmartDayArrow(2017,  8, 31),
-            2018: SmartDayArrow(2018,  8, 20),
-            2019: SmartDayArrow(2019,  8, 10),
-            2020: SmartDayArrow(2020,  7, 30),
-            2021: SmartDayArrow(2021,  7, 19),
-            2022: SmartDayArrow(2022,  7,  8),
-            2023: SmartDayArrow(2023,  6, 27),
-            2024: SmartDayArrow(2024,  6, 15),
-            2025: SmartDayArrow(2025,  6,  5),
-            2026: SmartDayArrow(2026,  5, 26),
-            2027: SmartDayArrow(2027,  5, 15),
+        dates = {
+            2011: date(11, 5),
+            2012: date(10, 24),
+            2013: date(10, 14),
+            2014: date(10, 3),
+            2015: date(9, 23),
+            2016: date(9, 11),
+            2017: date(8, 31),
+            2018: date(8, 20),
+            2019: date(8, 10),
+            2020: date(7, 30),
+            2021: date(7, 19),
+            2022: date(7, 8),
+            2023: date(6, 27),
+            2024: date(6, 15),
+            2025: date(6, 5),
+            2026: date(5, 26),
+            2027: date(5, 15),
         }
 
-        return kurban_bayrami_reference.get(year)
+        return dates.get(year)(year) if year in dates else None

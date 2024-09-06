@@ -1,7 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
 from holidata.holiday import Country
-from holidata.utils import day, first
+from holidata.utils import day, first, date
 
 __all__ = [
     "IS",
@@ -19,27 +19,27 @@ class IS(Country):
 
         self.define_holiday() \
             .with_name("Nýársdagur") \
-            .on(month=1, day=1) \
+            .on(date(month=1, day=1)) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Verkalýðsdagurinn") \
-            .on(month=5, day=1) \
+            .on(date(month=5, day=1)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Þjóðhátíðardagurinn") \
-            .on(month=6, day=17) \
+            .on(date(month=6, day=17)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Jóladagur") \
-            .on(month=12, day=25) \
+            .on(date(month=12, day=25)) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Annar dagur jóla") \
-            .on(month=12, day=26) \
+            .on(date(month=12, day=26)) \
             .with_flags("NRF")
 
         self.define_holiday() \
@@ -84,7 +84,7 @@ class IS(Country):
 
         self.define_holiday() \
             .with_name("Sumardagurinn fyrsti") \
-            .on(first("thursday").after(month=4, day=18)) \
+            .on(first("thursday").after(date(month=4, day=18))) \
             .with_flags("NV")
 
         """ 
@@ -93,12 +93,12 @@ class IS(Country):
         """
         self.define_holiday() \
             .with_name("Aðfangadagur jóla") \
-            .on(month=12, day=24) \
+            .on(date(month=12, day=24)) \
             .with_flags("NRF") \
             .annotated_with("Holiday from 13:00")
 
         self.define_holiday() \
             .with_name("Gamlársdagur") \
-            .on(month=12, day=31) \
+            .on(date(month=12, day=31)) \
             .with_flags("NF") \
             .annotated_with("Holiday from 13:00")

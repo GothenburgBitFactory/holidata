@@ -1,7 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
 from holidata.holiday import Country
-from holidata.utils import day, first, third, second
+from holidata.utils import day, first, third, second, date
 
 __all__ = [
     "CA",
@@ -45,7 +45,7 @@ class CA(Country):
                 "en": "New Year's Day",
                 "fr": "Jour de l'An",
             }) \
-            .on(month=1, day=1) \
+            .on(date(month=1, day=1)) \
             .with_flags("NF")
 
         self.define_holiday() \
@@ -54,7 +54,7 @@ class CA(Country):
                 "fr": "Fête Nationale",
             }) \
             .in_regions(["QC"]) \
-            .on(month=6, day=24) \
+            .on(date(month=6, day=24)) \
             .with_flags("F")
 
         self.define_holiday() \
@@ -62,7 +62,7 @@ class CA(Country):
                 "en": "Canada Day",
                 "fr": "Fête du Canada",
             }) \
-            .on(month=7, day=1) \
+            .on(date(month=7, day=1)) \
             .with_flags("NF")
 
         self.define_holiday() \
@@ -71,7 +71,7 @@ class CA(Country):
                 "fr": "Jour du Souvenir",
             }) \
             .in_regions(["AB", "BC", "NB", "NL", "NT"]) \
-            .on(month=11, day=11) \
+            .on(date(month=11, day=11)) \
             .with_flags("F")
 
         self.define_holiday() \
@@ -79,7 +79,7 @@ class CA(Country):
                 "en": "Christmas Day",
                 "fr": "Jour de Noël",
             }) \
-            .on(month=12, day=25) \
+            .on(date(month=12, day=25)) \
             .with_flags("NRF")
 
         self.define_holiday() \
@@ -87,7 +87,7 @@ class CA(Country):
                 "en": "Boxing Day",
                 "fr": "Lendemain de Noël",
             }) \
-            .on(month=12, day=26) \
+            .on(date(month=12, day=26)) \
             .with_flags("NRF")
 
         self.define_holiday() \
@@ -202,7 +202,7 @@ class CA(Country):
                 "fr": "Journée Nationale des Patriotes",
             }) \
             .in_regions(["QC"]) \
-            .on(first("monday").before(month=5, day=25)) \
+            .on(first("monday").before(date(month=5, day=25))) \
             .with_flags("V")
 
         self.define_holiday() \
@@ -211,5 +211,5 @@ class CA(Country):
                 "fr": "Fête de la Reine Victoria",
             }) \
             .in_regions(["AB", "BC", "MB", "NS", "ON", "SK", "NT", "NU", "YT"]) \
-            .on(first("monday").before(month=5, day=25)) \
+            .on(first("monday").before(date(month=5, day=25))) \
             .with_flags("V")

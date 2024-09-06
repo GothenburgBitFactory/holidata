@@ -1,5 +1,5 @@
 from holidata.holiday import Region
-from holidata.utils import day
+from holidata.utils import day, date
 
 
 class RP(Region):
@@ -8,7 +8,7 @@ class RP(Region):
 
         self.define_holiday() \
             .with_name("Allerheiligen") \
-            .on(month=11, day=1) \
+            .on(date(month=11, day=1)) \
             .with_flags("RF")
 
         self.define_holiday() \

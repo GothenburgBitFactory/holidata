@@ -1,7 +1,7 @@
 from dateutil.easter import EASTER_ORTHODOX
 
 from holidata.holiday import Country
-from holidata.utils import SmartDayArrow, day
+from holidata.utils import day, date
 
 __all__ = [
     "GR",
@@ -19,37 +19,37 @@ class GR(Country):
 
         self.define_holiday() \
             .with_name("Πρωτοχρονιά") \
-            .on(month=1, day=1) \
+            .on(date(month=1, day=1)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Θεοφάνεια") \
-            .on(month=1, day=6) \
+            .on(date(month=1, day=6)) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Ευαγγελισμός της Θεοτόκου και Εθνική Ημέρα Ανεξαρτησίας της Ελλάδας") \
-            .on(month=3, day=25) \
+            .on(date(month=3, day=25)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Κοίμηση της Θεοτόκου") \
-            .on(month=8, day=15) \
+            .on(date(month=8, day=15)) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Ημέρα του ΌΧΙ") \
-            .on(month=10, day=28) \
+            .on(date(month=10, day=28)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Χριστούγεννα") \
-            .on(month=12, day=25) \
+            .on(date(month=12, day=25)) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Επόμενη ημέρα Χριστουγέννων") \
-            .on(month=12, day=26) \
+            .on(date(month=12, day=26)) \
             .with_flags("NRF")
 
         self.define_holiday() \
@@ -82,21 +82,24 @@ class GR(Country):
             .on(day(50).after(self.easter())) \
             .with_flags("NRV")
 
-        self.define_holiday() \
-            .with_name("Πρωτομαγιά") \
-            .on(self.date_for_may_day) \
-            .with_flags("NF")
-
-    def date_for_may_day(self, year):
         """
+        May day
         Postponed if it collides with Easter
         """
-        date = SmartDayArrow(year, 5, 1)
-        easter_date = self.easter()(year)
+        self.define_holiday() \
+            .with_name("Πρωτομαγιά") \
+            .on(date(month=5, day=1)) \
+            .on_condition(date(month=5, day=1).is_not_equal_to(self.easter())) \
+            .with_flags("NF")
 
-        if date == easter_date:
-            date = date.shift(days=2)
-        elif date == easter_date.shift(days=1):
-            date = date.shift(days=1)
+        self.define_holiday() \
+            .with_name("Πρωτομαγιά") \
+            .on(date(month=5, day=2)) \
+            .on_condition(date(month=4, day=30).is_equal_to(self.easter())) \
+            .with_flags("NF")
 
-        return date
+        self.define_holiday() \
+            .with_name("Πρωτομαγιά") \
+            .on(date(month=5, day=3)) \
+            .on_condition(date(month=5, day=1).is_equal_to(self.easter())) \
+            .with_flags("NF")
