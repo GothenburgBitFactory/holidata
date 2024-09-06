@@ -1,7 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
 from holidata.holiday import Country
-from holidata.utils import day, first
+from holidata.utils import day, first, date
 
 __all__ = [
     "FI",
@@ -25,7 +25,7 @@ class FI(Country):
                 "fi": "Uudenvuodenpäivä",
                 "sv": "Nyårsdagen",
             }) \
-            .on(month=1, day=1) \
+            .on(date(month=1, day=1)) \
             .with_flags("NF")
 
         self.define_holiday() \
@@ -33,7 +33,7 @@ class FI(Country):
                 "fi": "Loppiainen",
                 "sv": "Trettondedagen",
             }) \
-            .on(month=1, day=6) \
+            .on(date(month=1, day=6)) \
             .with_flags("NRF")
 
         self.define_holiday() \
@@ -41,7 +41,7 @@ class FI(Country):
                 "fi": "Vappu",
                 "sv": "Första maj",
             }) \
-            .on(month=5, day=1) \
+            .on(date(month=5, day=1)) \
             .with_flags("NF")
 
         self.define_holiday() \
@@ -49,7 +49,7 @@ class FI(Country):
                 "fi": "Itsenäisyyspäivä",
                 "sv": "Självständighetsdagen",
             }) \
-            .on(month=12, day=6) \
+            .on(date(month=12, day=6)) \
             .with_flags("NF")
 
         self.define_holiday() \
@@ -57,7 +57,7 @@ class FI(Country):
                 "fi": "Joulupäivä",
                 "sv": "Juldagen",
             }) \
-            .on(month=12, day=25) \
+            .on(date(month=12, day=25)) \
             .with_flags("NRF")
 
         self.define_holiday() \
@@ -65,7 +65,7 @@ class FI(Country):
                 "fi": "Tapaninpäivä",
                 "sv": "Annandag jul",
             }) \
-            .on(month=12, day=26) \
+            .on(date(month=12, day=26)) \
             .with_flags("NRF")
 
         self.define_holiday() \
@@ -116,7 +116,7 @@ class FI(Country):
                 "fi": "Juhannuspäivä",
                 "sv": "Midsommardagen",
             }) \
-            .on(first("saturday").after(month=6, day=19)) \
+            .on(first("saturday").after(date(month=6, day=19))) \
             .with_flags("NRV")
 
         """
@@ -127,5 +127,5 @@ class FI(Country):
                 "fi": "Pyhäinpäivä",
                 "sv": "Alla helgons dag",
             }) \
-            .on(first("saturday").after(month=10, day=30)) \
+            .on(first("saturday").after(date(month=10, day=30))) \
             .with_flags("NRV")

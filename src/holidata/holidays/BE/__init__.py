@@ -1,7 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
 from holidata.holiday import Country
-from holidata.utils import day
+from holidata.utils import day, date
 
 __all__ = [
     "BE",
@@ -22,7 +22,7 @@ class BE(Country):
                 "fr": "Nouvel An",
                 "nl": "Nieuwjaar",
             }) \
-            .on(month=1, day=1) \
+            .on(date(month=1, day=1)) \
             .with_flags("NF")
 
         self.define_holiday() \
@@ -31,7 +31,7 @@ class BE(Country):
                 "fr": "Fête du Travail",
                 "nl": "Dag van de arbeid",
             }) \
-            .on(month=5, day=1) \
+            .on(date(month=5, day=1)) \
             .with_flags("NF")
 
         self.define_holiday() \
@@ -40,7 +40,7 @@ class BE(Country):
                 "fr": "Fête nationale",
                 "nl": "Nationale feestdag",
             }) \
-            .on(month=7, day=21) \
+            .on(date(month=7, day=21)) \
             .with_flags("NF")
 
         self.define_holiday() \
@@ -49,7 +49,7 @@ class BE(Country):
                 "fr": "Assomption",
                 "nl": "Onze Lieve Vrouw hemelvaart",
             }) \
-            .on(month=8, day=15) \
+            .on(date(month=8, day=15)) \
             .with_flags("NRF")
 
         self.define_holiday() \
@@ -58,7 +58,7 @@ class BE(Country):
                 "fr": "Toussaint",
                 "nl": "Allerheiligen",
             }) \
-            .on(month=11, day=1) \
+            .on(date(month=11, day=1)) \
             .with_flags("NRF")
 
         self.define_holiday() \
@@ -67,7 +67,7 @@ class BE(Country):
                 "fr": "Jour de l'armistice",
                 "nl": "Wapenstilstand",
             }) \
-            .on(month=11, day=11) \
+            .on(date(month=11, day=11)) \
             .with_flags("NF")
 
         self.define_holiday() \
@@ -76,7 +76,7 @@ class BE(Country):
                 "fr": "Noël",
                 "nl": "Kerstmis",
             }) \
-            .on(month=12, day=25) \
+            .on(date(month=12, day=25)) \
             .with_flags("NRF")
 
         self.define_holiday() \

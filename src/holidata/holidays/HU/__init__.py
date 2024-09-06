@@ -1,7 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
 from holidata.holiday import Country
-from holidata.utils import day
+from holidata.utils import day, date
 
 __all__ = [
     "HU",
@@ -27,42 +27,42 @@ class HU(Country):
 
         self.define_holiday() \
             .with_name("Újév") \
-            .on(month=1, day=1) \
+            .on(date(month=1, day=1)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Az 1848-as forradalom ünnepe") \
-            .on(month=3, day=15) \
+            .on(date(month=3, day=15)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("A munka ünnepe") \
-            .on(month=5, day=1) \
+            .on(date(month=5, day=1)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Az államalapítás ünnepe") \
-            .on(month=8, day=20) \
+            .on(date(month=8, day=20)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Az 1956-os forradalom ünnepe") \
-            .on(month=10, day=23) \
+            .on(date(month=10, day=23)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Mindenszentek") \
-            .on(month=11, day=1) \
+            .on(date(month=11, day=1)) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Karácsony") \
-            .on(month=12, day=25) \
+            .on(date(month=12, day=25)) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Karácsony") \
-            .on(month=12, day=26) \
+            .on(date(month=12, day=26)) \
             .with_flags("NRF")
 
         self.define_holiday() \
@@ -92,11 +92,11 @@ class HU(Country):
             .with_flags("NRV")
 
         for year, listing in HU.holiday_munkaszuneti_nap().items():
-            for date, note in listing:
+            for date_func, note in listing:
                 self.define_holiday() \
                     .with_name("Munkaszüneti nap") \
                     .in_years([year]) \
-                    .on(**date) \
+                    .on(date_func) \
                     .with_flags("NF") \
                     .annotated_with(note)
 
@@ -119,51 +119,51 @@ class HU(Country):
         """
         return {
             2015: [
-                ({"month": 1, "day": 2}, "2015-01-10 munkanap"),
-                ({"month": 8, "day": 21}, "2015-08-08 munkanap"),
-                ({"month": 12, "day": 24}, "2015-12-12 munkanap"),
+                (date(month=1, day=2), "2015-01-10 munkanap"),
+                (date(month=8, day=21), "2015-08-08 munkanap"),
+                (date(month=12, day=24), "2015-12-12 munkanap"),
             ],
             2016: [
-                ({"month": 3, "day": 14}, "2016-03-05 munkanap"),
-                ({"month": 10, "day": 31}, "2016-10-15 munkanap"),
+                (date(month=3, day=14), "2016-03-05 munkanap"),
+                (date(month=10, day=31), "2016-10-15 munkanap"),
             ],
             2018: [
-                ({"month": 3, "day": 16}, "2018-03-10 munkanap"),
-                ({"month": 4, "day": 30}, "2018-04-21 munkanap"),
-                ({"month": 10, "day": 22}, "2018-10-13 munkanap"),
-                ({"month": 11, "day": 2}, "2018-11-10 munkanap"),
-                ({"month": 12, "day": 24}, "2018-12-01 munkanap"),
-                ({"month": 12, "day": 31}, "2018-12-15 munkanap"),
+                (date(month=3, day=16), "2018-03-10 munkanap"),
+                (date(month=4, day=30), "2018-04-21 munkanap"),
+                (date(month=10, day=22), "2018-10-13 munkanap"),
+                (date(month=11, day=2), "2018-11-10 munkanap"),
+                (date(month=12, day=24), "2018-12-01 munkanap"),
+                (date(month=12, day=31), "2018-12-15 munkanap"),
             ],
             2019: [
-                ({"month": 8, "day": 19}, "2019-08-10 munkanap"),
-                ({"month": 12, "day": 24}, "2019-12-07 munkanap"),
-                ({"month": 12, "day": 27}, "2019-12-14 munkanap"),
+                (date(month=8, day=19), "2019-08-10 munkanap"),
+                (date(month=12, day=24), "2019-12-07 munkanap"),
+                (date(month=12, day=27), "2019-12-14 munkanap"),
             ],
             2020: [
-                ({"month": 8, "day": 21}, "2020-08-29 munkanap"),
-                ({"month": 12, "day": 24}, "2020-12-12 munkanap"),
+                (date(month=8, day=21), "2020-08-29 munkanap"),
+                (date(month=12, day=24), "2020-12-12 munkanap"),
             ],
             2021: [
-                ({"month": 12, "day": 24}, "2021-12-11 munkanap")
+                (date(month=12, day=24), "2021-12-11 munkanap")
             ],
             2022: [
-                ({"month": 3, "day": 14}, "2022-03-26 munkanap"),
-                ({"month": 10, "day": 31}, "2022-10-15 munkanap"),
+                (date(month=3, day=14), "2022-03-26 munkanap"),
+                (date(month=10, day=31), "2022-10-15 munkanap"),
             ],
             2024: [
-                ({"month": 8, "day": 19}, "2024-08-03 munkanap"),
-                ({"month": 12, "day": 24}, "2024-12-07 munkanap"),
-                ({"month": 12, "day": 27}, "2024-12-14 munkanap"),
+                (date(month=8, day=19), "2024-08-03 munkanap"),
+                (date(month=12, day=24), "2024-12-07 munkanap"),
+                (date(month=12, day=27), "2024-12-14 munkanap"),
             ],
             2025: [
-                ({"month": 5, "day": 2}, "2025-05-17 munkanap"),
-                ({"month": 10, "day": 24}, "2025-10-18 munkanap"),
-                ({"month": 12, "day": 24}, "2025-12-13 munkanap"),
+                (date(month=5, day=2), "2025-05-17 munkanap"),
+                (date(month=10, day=24), "2025-10-18 munkanap"),
+                (date(month=12, day=24), "2025-12-13 munkanap"),
             ],
             2026: [
-                ({"month": 1, "day": 2}, "2026-01-10 munkanap"),
-                ({"month": 8, "day": 21}, "2026-08-08 munkanap"),
-                ({"month": 12, "day": 24}, "2026-12-12 munkanap"),
+                (date(month=1, day=2), "2026-01-10 munkanap"),
+                (date(month=8, day=21), "2026-08-08 munkanap"),
+                (date(month=12, day=24), "2026-12-12 munkanap"),
             ]
         }

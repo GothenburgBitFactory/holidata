@@ -1,7 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
 from holidata.holiday import Country
-from holidata.utils import day
+from holidata.utils import day, date
 
 __all__ = [
     "EE",
@@ -24,47 +24,47 @@ class EE(Country):
 
         self.define_holiday() \
             .with_name("Uusaasta") \
-            .on(month=1, day=1) \
+            .on(date(month=1, day=1)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Iseseisvuspäev, Eesti Vabariigi aastapäev") \
-            .on(month=2, day=24) \
+            .on(date(month=2, day=24)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Kevadpüha") \
-            .on(month=5, day=1) \
+            .on(date(month=5, day=1)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Võidupüha") \
-            .on(month=6, day=23) \
+            .on(date(month=6, day=23)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Jaanipäev") \
-            .on(month=6, day=24) \
+            .on(date(month=6, day=24)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Taasiseseisvumispäev") \
-            .on(month=8, day=20) \
+            .on(date(month=8, day=20)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Jõululaupäev") \
-            .on(month=12, day=24) \
+            .on(date(month=12, day=24)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Esimene jõulupüha") \
-            .on(month=12, day=25) \
+            .on(date(month=12, day=25)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Teine jõulupüha") \
-            .on(month=12, day=26) \
+            .on(date(month=12, day=26)) \
             .with_flags("NF")
 
         self.define_holiday() \

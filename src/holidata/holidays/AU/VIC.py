@@ -1,5 +1,5 @@
 from holidata.holiday import Region
-from holidata.utils import SmartDayArrow, second, day, first, last
+from holidata.utils import second, day, first, last, date
 
 
 class VIC(Region):
@@ -15,14 +15,14 @@ class VIC(Region):
         """
         self.define_holiday() \
             .with_name("New Year's Day") \
-            .on(month=1, day=1) \
+            .on(date(month=1, day=1)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("New Year's Day (observed)") \
-            .on(first("monday").after(month=1, day=1)) \
+            .on(first("monday").after(date(month=1, day=1))) \
             .with_flags("V") \
-            .on_condition(self.date_is_on_weekend(month=1, day=1))
+            .on_condition(date(month=1, day=1).is_one_of(["saturday", "sunday"]))
 
         """
         Australia Day
@@ -33,7 +33,14 @@ class VIC(Region):
         """
         self.define_holiday() \
             .with_name("Australia Day") \
-            .on(VIC.mon_to_fri_on_or_following(month=1, day=26)) \
+            .on(date(month=1, day=26)) \
+            .on_condition(date(month=1, day=26).is_none_of(["saturday", "sunday"])) \
+            .with_flags("V")
+
+        self.define_holiday() \
+            .with_name("Australia Day") \
+            .on(first("monday").after(date(month=1, day=26))) \
+            .on_condition(date(month=1, day=26).is_one_of(["saturday", "sunday"])) \
             .with_flags("V")
 
         """
@@ -100,7 +107,7 @@ class VIC(Region):
         """
         self.define_holiday() \
             .with_name("Anzac Day") \
-            .on(month=4, day=25) \
+            .on(date(month=4, day=25)) \
             .with_flags("F")
 
         """
@@ -153,20 +160,20 @@ class VIC(Region):
         """
         self.define_holiday() \
             .with_name("Christmas Day") \
-            .on(month=12, day=25) \
+            .on(date(month=12, day=25)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Christmas Day (observed)") \
-            .on(first("monday").after(month=12, day=25)) \
+            .on(first("monday").after(date(month=12, day=25))) \
             .with_flags("RF") \
-            .on_condition(self.date_is_saturday(month=12, day=25))
+            .on_condition(date(month=12, day=25).is_a("saturday"))
 
         self.define_holiday() \
             .with_name("Christmas Day (observed)") \
-            .on(first("tuesday").after(month=12, day=25)) \
+            .on(first("tuesday").after(date(month=12, day=25))) \
             .with_flags("RF") \
-            .on_condition(self.date_is_sunday(month=12, day=25))
+            .on_condition(date(month=12, day=25).is_a("sunday"))
 
         """
         26 December (Boxing Day)
@@ -177,41 +184,20 @@ class VIC(Region):
         """
         self.define_holiday() \
             .with_name("Boxing Day") \
-            .on(month=12, day=26) \
+            .on(date(month=12, day=26)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Boxing Day (observed)") \
-            .on(first("monday").after(month=12, day=26)) \
+            .on(first("monday").after(date(month=12, day=26))) \
             .with_flags("RF") \
-            .on_condition(self.date_is_saturday(month=12, day=26))
+            .on_condition(date(month=12, day=26).is_a("saturday"))
 
         self.define_holiday() \
             .with_name("Boxing Day (observed)") \
-            .on(first("tuesday").after(month=12, day=26)) \
+            .on(first("tuesday").after(date(month=12, day=26))) \
             .with_flags("RF") \
-            .on_condition(self.date_is_sunday(month=12, day=26))
-
-    @staticmethod
-    def date_is_on_weekend(month, day):
-        def wrapper(year):
-            return SmartDayArrow(year, month, day).weekday() in ["saturday", "sunday"]
-
-        return wrapper
-
-    @staticmethod
-    def date_is_saturday(month, day):
-        def wrapper(year):
-            return SmartDayArrow(year, month, day).weekday() == "saturday"
-
-        return wrapper
-
-    @staticmethod
-    def date_is_sunday(month, day):
-        def wrapper(year):
-            return SmartDayArrow(year, month, day).weekday() == "sunday"
-
-        return wrapper
+            .on_condition(date(month=12, day=26).is_a("sunday"))
 
     @staticmethod
     def friday_before_afl_grand_final(year):
@@ -226,18 +212,6 @@ class VIC(Region):
         }
 
         if year in exception:
-            return SmartDayArrow(year, **exception[year])
+            return date(**exception[year])(year)
 
         return first("friday").before(last("saturday").of("september"))(year)
-
-    @staticmethod
-    def mon_to_fri_on_or_following(month, day):
-        def wrapper(year):
-            date = SmartDayArrow(year, month, day)
-
-            if date.weekday() in ["saturday", "sunday"]:
-                return date.shift_to_weekday("monday", including=True)
-
-            return date
-
-        return wrapper

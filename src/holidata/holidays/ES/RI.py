@@ -1,5 +1,5 @@
 from holidata.holiday import Region
-from holidata.utils import SmartDayArrow, day
+from holidata.utils import day, date
 
 
 class RI(Region):
@@ -14,13 +14,13 @@ class RI(Region):
         self.define_holiday() \
             .with_name("Lunes siguiente al Día de La Rioja") \
             .in_years([2024]) \
-            .on(month=6, day=10) \
+            .on(date(month=6, day=10)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("San José") \
             .in_years([2012]) \
-            .on(month=3, day=19) \
+            .on(date(month=3, day=19)) \
             .with_flags("RF")
 
         self.define_holiday() \
@@ -38,30 +38,30 @@ class RI(Region):
         self.define_holiday() \
             .with_name("Santiago Apóstol") \
             .in_years([2011, 2016]) \
-            .on(month=7, day=25) \
+            .on(date(month=7, day=25)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Lunes siguiente al Día de la Constitución Española") \
             .in_years([2015, 2020, 2026]) \
-            .on(month=12, day=7) \
+            .on(date(month=12, day=7)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Lunes siguiente a La Inmaculada Concepción") \
             .in_years([2013, 2019]) \
-            .on(month=12, day=9) \
+            .on(date(month=12, day=9)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Lunes siguiente a la Natividad del Señor") \
             .in_years([2022]) \
-            .on(month=12, day=26) \
+            .on(date(month=12, day=26)) \
             .with_flags("RF")
 
     @staticmethod
     def dia_de_la_rioja(year):
         if year in [2013, 2019]:
-            return SmartDayArrow(year, 6, 10)
+            return date(6, 10)(year)
         else:
-            return SmartDayArrow(year, 6, 9)
+            return date(6, 9)(year)

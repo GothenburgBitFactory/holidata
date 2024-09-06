@@ -1,5 +1,5 @@
 from holidata.holiday import Region
-from holidata.utils import SmartDayArrow, first, second, day
+from holidata.utils import first, second, day, date
 
 
 class ACT(Region):
@@ -13,14 +13,14 @@ class ACT(Region):
         """
         self.define_holiday() \
             .with_name("New Year's Day") \
-            .on(month=1, day=1) \
+            .on(date(month=1, day=1)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("New Year's Day (observed)") \
-            .on(first("monday").after(month=1, day=1)) \
+            .on(first("monday").after(date(month=1, day=1))) \
             .with_flags("V") \
-            .on_condition(ACT.date_is_on_weekend(month=1, day=1))
+            .on_condition(date(month=1, day=1).is_one_of(["saturday", "sunday"]))
 
         """
         Australia Day
@@ -29,7 +29,14 @@ class ACT(Region):
         """
         self.define_holiday() \
             .with_name("Australia Day") \
-            .on(ACT.mon_to_fri_on_or_following(month=1, day=26)) \
+            .on(date(month=1, day=26)) \
+            .on_condition(date(month=1, day=26).is_none_of(["saturday", "sunday"])) \
+            .with_flags("V")
+
+        self.define_holiday() \
+            .with_name("Australia Day") \
+            .on(first("monday").after(date(month=1, day=26))) \
+            .on_condition(date(month=1, day=26).is_one_of(["saturday", "sunday"])) \
             .with_flags("V")
 
         """
@@ -85,7 +92,14 @@ class ACT(Region):
         """
         self.define_holiday() \
             .with_name("Anzac Day") \
-            .on(ACT.mon_to_sat_on_or_following(month=4, day=25)) \
+            .on(date(month=4, day=25)) \
+            .on_condition(date(month=4, day=25).is_not_a("sunday")) \
+            .with_flags("V")
+
+        self.define_holiday() \
+            .with_name("Anzac Day") \
+            .on(first("monday").after(date(month=4, day=25))) \
+            .on_condition(date(month=4, day=25).is_a("sunday")) \
             .with_flags("V")
 
         """
@@ -95,7 +109,7 @@ class ACT(Region):
         """
         self.define_holiday() \
             .with_name("Reconciliation Day") \
-            .on(first("monday").after(month=5, day=26, including=True)) \
+            .on(first("monday").after(date(month=5, day=26), including=True)) \
             .with_flags("V")
 
         """
@@ -142,20 +156,20 @@ class ACT(Region):
         """
         self.define_holiday() \
             .with_name("Christmas Day") \
-            .on(month=12, day=25) \
+            .on(date(month=12, day=25)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Christmas Day (observed)") \
-            .on(first("monday").after(month=12, day=25)) \
+            .on(first("monday").after(date(month=12, day=25))) \
             .with_flags("RV") \
-            .on_condition(ACT.date_is_saturday(month=12, day=25))
+            .on_condition(date(month=12, day=25).is_a("saturday"))
 
         self.define_holiday() \
             .with_name("Christmas Day (observed)") \
-            .on(first("tuesday").after(month=12, day=25)) \
+            .on(first("tuesday").after(date(month=12, day=25))) \
             .with_flags("RV") \
-            .on_condition(ACT.date_is_sunday(month=12, day=25))
+            .on_condition(date(month=12, day=25).is_a("sunday"))
 
         """
         Boxing Day
@@ -164,62 +178,17 @@ class ACT(Region):
         """
         self.define_holiday() \
             .with_name("Boxing Day") \
-            .on(month=12, day=26) \
+            .on(date(month=12, day=26)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Boxing Day (observed)") \
-            .on(first("monday").after(month=12, day=26)) \
+            .on(first("monday").after(date(month=12, day=26))) \
             .with_flags("RV") \
-            .on_condition(ACT.date_is_saturday(month=12, day=26))
+            .on_condition(date(month=12, day=26).is_a("saturday"))
 
         self.define_holiday() \
             .with_name("Boxing Day (observed)") \
-            .on(first("tuesday").after(month=12, day=26)) \
+            .on(first("tuesday").after(date(month=12, day=26))) \
             .with_flags("RV") \
-            .on_condition(ACT.date_is_sunday(month=12, day=26))
-
-    @staticmethod
-    def date_is_on_weekend(month, day):
-        def wrapper(year):
-            return SmartDayArrow(year, month, day).weekday() in ["saturday", "sunday"]
-
-        return wrapper
-
-    @staticmethod
-    def date_is_saturday(month, day):
-        def wrapper(year):
-            return SmartDayArrow(year, month, day).weekday() == "saturday"
-
-        return wrapper
-
-    @staticmethod
-    def date_is_sunday(month, day):
-        def wrapper(year):
-            return SmartDayArrow(year, month, day).weekday() == "sunday"
-
-        return wrapper
-
-    @staticmethod
-    def mon_to_fri_on_or_following(month, day):
-        def wrapper(year):
-            date = SmartDayArrow(year, month, day)
-
-            if date.weekday() in ["saturday", "sunday"]:
-                return date.shift_to_weekday("monday", including=True)
-
-            return date
-
-        return wrapper
-
-    @staticmethod
-    def mon_to_sat_on_or_following(month, day):
-        def wrapper(year):
-            date = SmartDayArrow(year, month, day)
-
-            if date.weekday() == "sunday":
-                return date.shift_to_weekday("monday", including=True)
-
-            return date
-
-        return wrapper
+            .on_condition(date(month=12, day=26).is_a("sunday"))

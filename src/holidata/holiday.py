@@ -1,11 +1,10 @@
-import datetime
 from dataclasses import dataclass
 from typing import Iterator, Callable, Union, Dict, List
 
 import dateutil
 
 from holidata.plugin import PluginMount
-from holidata.utils import SmartDayArrow, date
+from holidata.utils import SmartDayArrow
 
 
 @dataclass
@@ -15,7 +14,7 @@ class Holiday:
     """
     locale: str
     region: str
-    date: datetime.date
+    date: SmartDayArrow
     description: str
     flags: str = ""
     notes: str = ""
@@ -37,10 +36,10 @@ class HolidayGenerator:
         self.notes: str = ""
         self.regions: List[str] = [""]
         self.flags: str = ""
-        self.date: callable = None
+        self.date: Callable[[int], SmartDayArrow]
         self.country_id: str = country_id
         self.default_lang: str = default_lang
-        self.filters: List[callable] = []
+        self.filters: List[Callable[[int], bool]] = []
 
     def with_name(self, name: str, lang: str = None) -> 'HolidayGenerator':
         lang = self.default_lang if lang is None else lang
@@ -51,10 +50,8 @@ class HolidayGenerator:
         self.name_dict = name_dict
         return self
 
-    def on(self, date_func: callable = None, month: int = None, day: int = None) -> 'HolidayGenerator':
-        if month is not None and day is not None:
-            self.date = date(month, day)
-        elif callable(date_func):
+    def on(self, date_func: Callable[[int], SmartDayArrow] = None) -> 'HolidayGenerator':
+        if callable(date_func):
             self.date = date_func
         else:
             raise ValueError("Invalid reference date")
@@ -105,7 +102,7 @@ class HolidayGenerator:
         self.filters.append(reference_does_not_contain)
         return self
 
-    def on_condition(self, condition: callable) -> 'HolidayGenerator':
+    def on_condition(self, condition: Callable[[int], bool]) -> 'HolidayGenerator':
         self.filters.append(condition)
         return self
 
@@ -115,13 +112,13 @@ class HolidayGenerator:
                 return []
 
         for region in self.regions:
-            date = self.date(year)
-            if date is None:
+            holiday_date = self.date(year)
+            if holiday_date is None:
                 continue
             yield Holiday(
                 locale=f"{lang}-{self.country_id}",
                 region=region,
-                date=date,
+                date=holiday_date,
                 description=self.name_dict[lang],
                 flags=self.flags,
                 notes=self.notes,

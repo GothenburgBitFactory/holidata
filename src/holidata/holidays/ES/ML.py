@@ -1,5 +1,5 @@
 from holidata.holiday import Region
-from holidata.utils import SmartDayArrow, day
+from holidata.utils import day, date
 
 
 class ML(Region):
@@ -9,19 +9,19 @@ class ML(Region):
         self.define_holiday() \
             .with_name("Lunes siguiente al Año Nuevo") \
             .in_years([2017]) \
-            .on(month=1, day=2) \
+            .on(date(month=1, day=2)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Lunes siguiente a la Epifanía del Señor") \
             .in_years([2013, 2019]) \
-            .on(month=1, day=7) \
+            .on(date(month=1, day=7)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Estatuto de Autonomía de la Ciudad de Melilla") \
             .in_years([2020, 2021]) \
-            .on(month=3, day=13) \
+            .on(date(month=3, day=13)) \
             .with_flags("F")
 
         self.define_holiday() \
@@ -45,7 +45,7 @@ class ML(Region):
         self.define_holiday() \
             .with_name("San José") \
             .in_years([2011, 2012, 2013, 2014, 2015, 2016]) \
-            .on(month=3, day=19) \
+            .on(date(month=3, day=19)) \
             .with_flags("RF")
 
         self.define_holiday() \
@@ -56,61 +56,61 @@ class ML(Region):
         self.define_holiday() \
             .with_name("Lunes siguiente al Día de la Constitución Española") \
             .in_years([2015, 2020, 2026]) \
-            .on(month=12, day=7) \
+            .on(date(month=12, day=7)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Lunes siguiente a La Inmaculada Concepción") \
             .in_years([2019, 2024]) \
-            .on(month=12, day=9) \
+            .on(date(month=12, day=9)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Lunes siguiente a la Natividad del Señor") \
             .in_years([2022]) \
-            .on(month=12, day=26) \
+            .on(date(month=12, day=26)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("San Esteban") \
             .in_years([2011, 2016]) \
-            .on(month=12, day=26) \
+            .on(date(month=12, day=26)) \
             .with_flags("RF")
 
     @staticmethod
     def holiday_aid_el_kebir(year):
         dates = {
-            2011: SmartDayArrow(year, 11, 7),
-            2012: SmartDayArrow(year, 10, 26),
-            2013: SmartDayArrow(year, 10, 15),
-            2014: SmartDayArrow(year, 10, 4),
-            2015: SmartDayArrow(year, 9, 25),
-            2016: SmartDayArrow(year, 9, 12),
-            2017: SmartDayArrow(year, 9, 1),
-            2018: SmartDayArrow(year, 8, 22),
-            2019: SmartDayArrow(year, 8, 12),
-            2020: SmartDayArrow(year, 7, 31),
-            2021: SmartDayArrow(year, 7, 21),
+            2011: date(11, 7),
+            2012: date(10, 26),
+            2013: date(10, 15),
+            2014: date(10, 4),
+            2015: date(9, 25),
+            2016: date(9, 12),
+            2017: date(9, 1),
+            2018: date(8, 22),
+            2019: date(8, 12),
+            2020: date(7, 31),
+            2021: date(7, 21),
         }
-        return dates.get(year)
+        return dates.get(year)(year) if year in dates else None
 
     @staticmethod
     def holiday_aid_al_adha(year):
         dates = {
-            2022: SmartDayArrow(year, 7, 11),
-            2023: SmartDayArrow(year, 6, 29),
-            2024: SmartDayArrow(year, 6, 17),
-            2025: SmartDayArrow(year, 6, 6),
-            2026: SmartDayArrow(year, 5, 27),
+            2022: date(7, 11),
+            2023: date(6, 29),
+            2024: date(6, 17),
+            2025: date(6, 6),
+            2026: date(5, 27),
         }
-        return dates.get(year)
+        return dates.get(year)(year) if year in dates else None
 
     @staticmethod
     def day_of_eid_fitr(year):
         dates = {
-            2022: SmartDayArrow(year, 5, 3),
-            2023: SmartDayArrow(year, 4, 21),
-            2025: SmartDayArrow(year, 3, 31),
-            2026: SmartDayArrow(year, 3, 20),
+            2022: date(5, 3),
+            2023: date(4, 21),
+            2025: date(3, 31),
+            2026: date(3, 20),
         }
-        return dates.get(year)
+        return dates.get(year)(year) if year in dates else None

@@ -1,7 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
 from holidata.holiday import Country
-from holidata.utils import day
+from holidata.utils import day, date
 
 __all__ = [
     "PT",
@@ -19,52 +19,52 @@ class PT(Country):
 
         self.define_holiday() \
             .with_name("Ano Novo") \
-            .on(month=1, day=1) \
+            .on(date(month=1, day=1)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Dia da Liberdade") \
-            .on(month=4, day=25) \
+            .on(date(month=4, day=25)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Dia do Trabalhador") \
-            .on(month=5, day=1) \
+            .on(date(month=5, day=1)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Dia de Portugal") \
-            .on(month=6, day=10) \
+            .on(date(month=6, day=10)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Assunção de Nossa Senhora") \
-            .on(month=8, day=15) \
+            .on(date(month=8, day=15)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Implantação da República") \
-            .on(month=10, day=5) \
+            .on(date(month=10, day=5)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Dia de Todos os Santos") \
-            .on(month=11, day=1) \
+            .on(date(month=11, day=1)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Restauração da Independência") \
-            .on(month=12, day=1) \
+            .on(date(month=12, day=1)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Imaculada Conceição") \
-            .on(month=12, day=8) \
+            .on(date(month=12, day=8)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Natal") \
-            .on(month=12, day=25) \
+            .on(date(month=12, day=25)) \
             .with_flags("NF")
 
         self.define_holiday() \

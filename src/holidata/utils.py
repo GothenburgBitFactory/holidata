@@ -1,7 +1,7 @@
 """
 Provides date-handling related utils.
 """
-from typing import Callable
+from typing import Callable, List
 
 from arrow import Arrow
 
@@ -66,26 +66,68 @@ class SmartDayArrow(Arrow):
         return result
 
 
-def date(month: int, day: int) -> Callable[[int], SmartDayArrow]:
-    def wrapper(year: int):
-        return SmartDayArrow(year, month, day)
+class SmartDayArrowWrapper:
+    def __init__(self, month: int, day: int):
+        self.month = month
+        self.day = day
 
-    return wrapper
+    def is_a(self, weekday: str) -> Callable[[int], bool]:
+        def wrapper(year):
+            return self(year).weekday() == weekday
+
+        return wrapper
+
+    def is_not_a(self, weekday: str) -> Callable[[int], bool]:
+        def wrapper(year):
+            return self(year).weekday() != weekday
+
+        return wrapper
+
+    def is_one_of(self, selection: List[str]):
+        def wrapper(year):
+            return self(year).weekday() in selection
+
+        return wrapper
+
+    def is_none_of(self, selection: List[str]):
+        def wrapper(year):
+            return self(year).weekday() not in selection
+
+        return wrapper
+
+    def is_equal_to(self, other):
+        def wrapper(year):
+            return self(year) == other(year)
+
+        return wrapper
+
+    def is_not_equal_to(self, other: Callable[[int], SmartDayArrow]):
+        def wrapper(year):
+            return self(year) != other(year)
+
+        return wrapper
+
+    def __call__(self, year: int) -> SmartDayArrow:
+        return SmartDayArrow(year, self.month, self.day)
+
+
+def date(month: int, day: int) -> SmartDayArrowWrapper:
+    return SmartDayArrowWrapper(month, day)
 
 
 class SmartDayArrowDayShifter:
     def __init__(self, days):
         self.day_count: int = days
         self.shift_direction: int = 0
-        self.date: callable = None
+        self.date: Callable[[int], SmartDayArrow] = None
 
-    def before(self, date: callable) -> 'SmartDayArrowDayShifter':
-        self.date = date
+    def before(self, date_func: Callable[[int], SmartDayArrow]) -> 'SmartDayArrowDayShifter':
+        self.date = date_func
         self.shift_direction = -1
         return self
 
-    def after(self, date: callable) -> 'SmartDayArrowDayShifter':
-        self.date = date
+    def after(self, date_func: Callable[[int], SmartDayArrow]) -> 'SmartDayArrowDayShifter':
+        self.date = date_func
         self.shift_direction = 1
         return self
 
@@ -121,18 +163,16 @@ class SmartDayArrowWeekdayShifter:
 
         return self
 
-    def before(self, date: callable = None, month: int = None, day: int = None, including: bool = False) -> 'SmartDayArrowWeekdayShifter':
-        self._configure_shift(date, month, day, False, including)
+    def before(self, date_func: Callable[[int], SmartDayArrow], including: bool = False) -> 'SmartDayArrowWeekdayShifter':
+        self._configure_shift(date_func, False, including)
         return self
 
-    def after(self, date: callable = None, month: int = None, day: int = None, including: bool = False) -> 'SmartDayArrowWeekdayShifter':
-        self._configure_shift(date, month, day, True, including)
+    def after(self, date_func: Callable[[int], SmartDayArrow], including: bool = False) -> 'SmartDayArrowWeekdayShifter':
+        self._configure_shift(date_func, True, including)
         return self
 
-    def _configure_shift(self, date_func: callable, month: int, day: int, forward: bool, including: bool):
-        if month is not None and day is not None:
-            self.date = date(month, day)
-        elif callable(date_func):
+    def _configure_shift(self, date_func: Callable[[int], SmartDayArrow], forward: bool, including: bool):
+        if callable(date_func):
             self.date = date_func
         else:
             raise ValueError("Invalid reference date")

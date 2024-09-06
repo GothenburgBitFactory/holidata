@@ -20,7 +20,7 @@ from holidata.holidays.ES.NC import NC
 from holidata.holidays.ES.PV import PV
 from holidata.holidays.ES.RI import RI
 from holidata.holidays.ES.VC import VC
-from holidata.utils import day
+from holidata.utils import day, date
 
 __all__ = [
     "ES"
@@ -94,47 +94,47 @@ class ES(Country):
 
         self.define_holiday() \
             .with_name("Año Nuevo") \
-            .on(month=1, day=1) \
+            .on(date(month=1, day=1)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Epifanía del Señor") \
-            .on(month=1, day=6) \
+            .on(date(month=1, day=6)) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Fiesta del Trabajo") \
-            .on(month=5, day=1) \
+            .on(date(month=5, day=1)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Asunción de la Virgen") \
-            .on(month=8, day=15) \
+            .on(date(month=8, day=15)) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Fiesta Nacional de España") \
-            .on(month=10, day=12) \
+            .on(date(month=10, day=12)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Todos los Santos") \
-            .on(month=11, day=1) \
+            .on(date(month=11, day=1)) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Día de la Constitución Española") \
-            .on(month=12, day=6) \
+            .on(date(month=12, day=6)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Inmaculada Concepción") \
-            .on(month=12, day=8) \
+            .on(date(month=12, day=8)) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Natividad del Señor") \
-            .on(month=12, day=25) \
+            .on(date(month=12, day=25)) \
             .with_flags("NRF")
 
         self.define_holiday() \
@@ -150,5 +150,5 @@ class ES(Country):
         self.define_holiday() \
             .with_name("Lunes siguiente al Año Nuevo") \
             .in_years([2012]) \
-            .on(month=1, day=2) \
+            .on(date(month=1, day=2)) \
             .with_flags("NF")

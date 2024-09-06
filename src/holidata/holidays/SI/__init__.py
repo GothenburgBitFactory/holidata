@@ -1,7 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
 from holidata.holiday import Country
-from holidata.utils import day
+from holidata.utils import day, date
 
 __all__ = [
     "SI",
@@ -19,7 +19,7 @@ class SI(Country):
 
         self.define_holiday() \
             .with_name("Novo leto") \
-            .on(month=1, day=1) \
+            .on(date(month=1, day=1)) \
             .with_flags("NF")
 
         """
@@ -30,58 +30,58 @@ class SI(Country):
         """
         self.define_holiday() \
             .with_name("Novo leto") \
-            .on(month=1, day=2) \
+            .on(date(month=1, day=2)) \
             .except_for([2013, 2014, 2015, 2016]) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Prešernov dan") \
-            .on(month=2, day=8) \
+            .on(date(month=2, day=8)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Dan upora proti okupatorju") \
-            .on(month=4, day=27) \
+            .on(date(month=4, day=27)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Praznik dela") \
-            .on(month=5, day=1) \
+            .on(date(month=5, day=1)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Praznik dela") \
-            .on(month=5, day=2) \
+            .on(date(month=5, day=2)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Dan državnosti") \
-            .on(month=6, day=25) \
+            .on(date(month=6, day=25)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Marijino vnebovzetje") \
-            .on(month=8, day=15) \
+            .on(date(month=8, day=15)) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Dan reformacije") \
-            .on(month=10, day=31) \
+            .on(date(month=10, day=31)) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Dan spomina na mrtve") \
-            .on(month=11, day=1) \
+            .on(date(month=11, day=1)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Božič") \
-            .on(month=12, day=25) \
+            .on(date(month=12, day=25)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Dan samostojnosti in enotnosti") \
-            .on(month=12, day=26) \
+            .on(date(month=12, day=26)) \
             .with_flags("NF")
 
         self.define_holiday() \
