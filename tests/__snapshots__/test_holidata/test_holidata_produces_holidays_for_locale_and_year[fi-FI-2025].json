@@ -1,0 +1,106 @@
+[
+  {
+    "date": "2025-01-01",
+    "description": "Uudenvuodenpäivä",
+    "locale": "fi-FI",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2025-01-06",
+    "description": "Loppiainen",
+    "locale": "fi-FI",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2025-04-18",
+    "description": "Pitkäperjantai",
+    "locale": "fi-FI",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2025-04-20",
+    "description": "Pääsiäispäivä",
+    "locale": "fi-FI",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2025-04-21",
+    "description": "2. pääsiäispäivä",
+    "locale": "fi-FI",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2025-05-01",
+    "description": "Vappu",
+    "locale": "fi-FI",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2025-05-29",
+    "description": "Helatorstai",
+    "locale": "fi-FI",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2025-06-08",
+    "description": "Helluntaipäivä",
+    "locale": "fi-FI",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2025-06-21",
+    "description": "Juhannuspäivä",
+    "locale": "fi-FI",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2025-11-01",
+    "description": "Pyhäinpäivä",
+    "locale": "fi-FI",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2025-12-06",
+    "description": "Itsenäisyyspäivä",
+    "locale": "fi-FI",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2025-12-25",
+    "description": "Joulupäivä",
+    "locale": "fi-FI",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2025-12-26",
+    "description": "Tapaninpäivä",
+    "locale": "fi-FI",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  }
+]

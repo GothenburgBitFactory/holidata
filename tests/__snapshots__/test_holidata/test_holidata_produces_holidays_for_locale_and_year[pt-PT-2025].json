@@ -1,0 +1,114 @@
+[
+  {
+    "date": "2025-01-01",
+    "description": "Ano Novo",
+    "locale": "pt-PT",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2025-03-04",
+    "description": "Carnaval",
+    "locale": "pt-PT",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2025-04-18",
+    "description": "Sexta-feira Santa",
+    "locale": "pt-PT",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2025-04-20",
+    "description": "Páscoa",
+    "locale": "pt-PT",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2025-04-25",
+    "description": "Dia da Liberdade",
+    "locale": "pt-PT",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2025-05-01",
+    "description": "Dia do Trabalhador",
+    "locale": "pt-PT",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2025-06-10",
+    "description": "Dia de Portugal",
+    "locale": "pt-PT",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2025-06-19",
+    "description": "Corpo de Deus",
+    "locale": "pt-PT",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2025-08-15",
+    "description": "Assunção de Nossa Senhora",
+    "locale": "pt-PT",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2025-10-05",
+    "description": "Implantação da República",
+    "locale": "pt-PT",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2025-11-01",
+    "description": "Dia de Todos os Santos",
+    "locale": "pt-PT",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2025-12-01",
+    "description": "Restauração da Independência",
+    "locale": "pt-PT",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2025-12-08",
+    "description": "Imaculada Conceição",
+    "locale": "pt-PT",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2025-12-25",
+    "description": "Natal",
+    "locale": "pt-PT",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  }
+]
