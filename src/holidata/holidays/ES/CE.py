@@ -14,7 +14,7 @@ class CE(Region):
 
         self.define_holiday() \
             .with_name("Nuestra Señora de África") \
-            .in_years([2022, 2023, 2024]) \
+            .in_years([2022, 2023, 2024, 2025]) \
             .on(month=8, day=5) \
             .with_flags("RF")
 
@@ -93,6 +93,7 @@ class CE(Region):
             2022: SmartDayArrow(year, 7, 9),
             2023: SmartDayArrow(year, 6, 29),
             2024: SmartDayArrow(year, 6, 17),
+            2025: SmartDayArrow(year, 6, 6),
         }
 
         return dates.get(year)

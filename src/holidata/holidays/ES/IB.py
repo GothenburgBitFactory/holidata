@@ -8,7 +8,7 @@ class IB(Region):
 
         self.define_holiday() \
             .with_name("Día de las Illes Balears") \
-            .in_years([2011, 2012, 2013, 2014, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024]) \
+            .in_years([2011, 2012, 2013, 2014, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025]) \
             .on(month=3, day=1) \
             .with_flags("F")
 
@@ -19,7 +19,7 @@ class IB(Region):
 
         self.define_holiday() \
             .with_name("Lunes de Pascua") \
-            .except_for([2014]) \
+            .except_for([2014, 2025]) \
             .on(day(1).after(country.easter())) \
             .with_flags("RV")
 
@@ -43,6 +43,6 @@ class IB(Region):
 
         self.define_holiday() \
             .with_name("San Esteban") \
-            .in_years([2011, 2013, 2014, 2016, 2019, 2020]) \
+            .in_years([2011, 2013, 2014, 2016, 2019, 2020, 2025]) \
             .on(month=12, day=26) \
             .with_flags("RF")

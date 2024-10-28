@@ -14,19 +14,19 @@ class CB(Region):
 
         self.define_holiday() \
             .with_name("Día de las Instituciones de Cantabria") \
-            .in_years([2011, 2016, 2017, 2018, 2020, 2021, 2022, 2023]) \
+            .in_years([2011, 2016, 2017, 2018, 2020, 2021, 2022, 2023, 2025]) \
             .on(month=7, day=28) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("La Bien Aparecida") \
-            .in_years([2011, 2012, 2014, 2014, 2015, 2016, 2017, 2018, 2020, 2021, 2022, 2023]) \
+            .in_years([2011, 2012, 2014, 2014, 2015, 2016, 2017, 2018, 2020, 2021, 2022, 2023, 2025]) \
             .on(month=9, day=15) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Jueves Santo") \
-            .in_years([2011, 2012, 2013, 2014, 2015, 2016, 2017, 2019, 2020, 2021, 2022, 2023, 2024]) \
+            .in_years([2011, 2012, 2013, 2014, 2015, 2016, 2017, 2019, 2020, 2021, 2022, 2023, 2024, 2025]) \
             .on(day(3).before(country.easter())) \
             .with_flags("RV")
 

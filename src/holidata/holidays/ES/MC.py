@@ -26,7 +26,7 @@ class MC(Region):
 
         self.define_holiday() \
             .with_name("San José") \
-            .in_years([2011, 2012, 2013, 2014, 2015, 2016, 2018, 2019, 2020, 2021, 2024]) \
+            .in_years([2011, 2012, 2013, 2014, 2015, 2016, 2018, 2019, 2020, 2021, 2024, 2025]) \
             .on(month=3, day=19) \
             .with_flags("RF")
 

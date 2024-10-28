@@ -44,7 +44,7 @@ class EX(Region):
 
         self.define_holiday() \
             .with_name("Lunes siguiente a la Fiesta Nacional de España") \
-            .in_years([2014]) \
+            .in_years([2014, 2025]) \
             .on(month=10, day=13) \
             .with_flags("F")
 

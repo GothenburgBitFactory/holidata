@@ -20,7 +20,7 @@ class NC(Region):
 
         self.define_holiday() \
             .with_name("Santiago Apóstol / Día Nacional de Galicia") \
-            .in_years([2023, 2024]) \
+            .in_years([2023, 2024, 2025]) \
             .on(month=7, day=25) \
             .with_flags("RF")
 

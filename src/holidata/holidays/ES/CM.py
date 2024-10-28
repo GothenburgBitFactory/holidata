@@ -20,7 +20,7 @@ class CM(Region):
 
         self.define_holiday() \
             .with_name("Corpus Christi") \
-            .in_years([2011, 2012, 2013, 2014, 2015, 2016, 2017, 2019, 2020, 2021, 2022, 2023, 2024]) \
+            .in_years([2011, 2012, 2013, 2014, 2015, 2016, 2017, 2019, 2020, 2021, 2022, 2023, 2024, 2025]) \
             .on(day(60).after(country.easter())) \
             .with_flags("RV")
 
