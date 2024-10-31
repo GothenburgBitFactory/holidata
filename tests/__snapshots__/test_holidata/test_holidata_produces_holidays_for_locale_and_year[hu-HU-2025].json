@@ -48,6 +48,14 @@
     "type": "NF"
   },
   {
+    "date": "2025-05-02",
+    "description": "Munkaszüneti nap",
+    "locale": "hu-HU",
+    "notes": "2025-05-17 munkanap",
+    "region": "",
+    "type": "NF"
+  },
+  {
     "date": "2025-06-08",
     "description": "Pünkösd",
     "locale": "hu-HU",
@@ -80,12 +88,28 @@
     "type": "NF"
   },
   {
+    "date": "2025-10-24",
+    "description": "Munkaszüneti nap",
+    "locale": "hu-HU",
+    "notes": "2025-10-18 munkanap",
+    "region": "",
+    "type": "NF"
+  },
+  {
     "date": "2025-11-01",
     "description": "Mindenszentek",
     "locale": "hu-HU",
     "notes": "",
     "region": "",
     "type": "NRF"
+  },
+  {
+    "date": "2025-12-24",
+    "description": "Munkaszüneti nap",
+    "locale": "hu-HU",
+    "notes": "2025-12-13 munkanap",
+    "region": "",
+    "type": "NF"
   },
   {
     "date": "2025-12-25",

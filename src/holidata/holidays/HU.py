@@ -110,6 +110,7 @@ class HU(Country):
         2021: 14/2020. (V.    13.) ITM rendelet a 2021. évi munkaszüneti napok körüli munkarendről
         2022: 23/2021. (VI.    1.) ITM rendelet a 2022. évi munkaszüneti napok körüli munkarendről
         2024: 15/2023. (VII.  13.) GFM rendelet a 2024. évi munkaszüneti napok körüli munkarendről
+        2025: 11/2024. (IV.    8.) NGM rendelet a 2025. évi munkaszüneti napok körüli munkarendről
         """
         return {
             2015: [
@@ -150,4 +151,9 @@ class HU(Country):
                 ({"month": 12, "day": 24}, "2024-12-07 munkanap"),
                 ({"month": 12, "day": 27}, "2024-12-14 munkanap"),
             ],
+            2025: [
+                ({"month": 5, "day": 2}, "2025-05-17 munkanap"),
+                ({"month": 10, "day": 24}, "2025-10-18 munkanap"),
+                ({"month": 12, "day": 24}, "2025-12-13 munkanap"),
+            ]
         }
