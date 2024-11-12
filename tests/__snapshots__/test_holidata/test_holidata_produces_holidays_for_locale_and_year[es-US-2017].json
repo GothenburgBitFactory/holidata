@@ -8,6 +8,14 @@
     "type": "NF"
   },
   {
+    "date": "2017-01-02",
+    "description": "Año Neuvo (en lugar de)",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
     "date": "2017-01-16",
     "description": "Cumpleaños de Martin Luther King, Jr.",
     "locale": "es-US",
@@ -70,6 +78,14 @@
     "notes": "",
     "region": "",
     "type": "NV"
+  },
+  {
+    "date": "2017-11-10",
+    "description": "Día de los Veteranos (en lugar de)",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
   },
   {
     "date": "2017-11-11",

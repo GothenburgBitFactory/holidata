@@ -48,6 +48,22 @@
     "type": "NV"
   },
   {
+    "date": "2022-06-19",
+    "description": "Juneteenth National Independence Day",
+    "locale": "en-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2022-06-20",
+    "description": "Juneteenth National Independence Day (in lieu of)",
+    "locale": "en-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
     "date": "2022-07-04",
     "description": "Independence Day",
     "locale": "en-US",
@@ -106,6 +122,14 @@
   {
     "date": "2022-12-25",
     "description": "Christmas Day",
+    "locale": "en-US",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2022-12-26",
+    "description": "Christmas Day (in lieu of)",
     "locale": "en-US",
     "notes": "",
     "region": "",

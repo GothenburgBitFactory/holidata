@@ -48,6 +48,22 @@
     "type": "NV"
   },
   {
+    "date": "2022-06-19",
+    "description": "Juneteenth – Día de la Emancipación",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2022-06-20",
+    "description": "Juneteenth – Día de la Emancipación (en lugar de)",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
     "date": "2022-07-04",
     "description": "Día de la Independiencia",
     "locale": "es-US",
@@ -106,6 +122,14 @@
   {
     "date": "2022-12-25",
     "description": "Navidad",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2022-12-26",
+    "description": "Navidad (en lugar de)",
     "locale": "es-US",
     "notes": "",
     "region": "",

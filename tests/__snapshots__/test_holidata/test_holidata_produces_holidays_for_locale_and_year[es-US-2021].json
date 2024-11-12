@@ -48,8 +48,32 @@
     "type": "NV"
   },
   {
+    "date": "2021-06-18",
+    "description": "Juneteenth – Día de la Emancipación (en lugar de)",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2021-06-19",
+    "description": "Juneteenth – Día de la Emancipación",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
     "date": "2021-07-04",
     "description": "Día de la Independiencia",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2021-07-05",
+    "description": "Día de la Independiencia (en lugar de)",
     "locale": "es-US",
     "notes": "",
     "region": "",
@@ -97,7 +121,7 @@
   },
   {
     "date": "2021-12-24",
-    "description": "Nochebuena",
+    "description": "Navidad (en lugar de)",
     "locale": "es-US",
     "notes": "",
     "region": "",
@@ -110,5 +134,13 @@
     "notes": "",
     "region": "",
     "type": "NRF"
+  },
+  {
+    "date": "2021-12-31",
+    "description": "Año Neuvo (en lugar de)",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
   }
 ]

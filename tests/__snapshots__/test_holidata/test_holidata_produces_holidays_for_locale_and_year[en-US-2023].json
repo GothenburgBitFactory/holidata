@@ -8,6 +8,14 @@
     "type": "NF"
   },
   {
+    "date": "2023-01-02",
+    "description": "New Year's Day (in lieu of)",
+    "locale": "en-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
     "date": "2023-01-16",
     "description": "Birthday of Martin Luther King, Jr.",
     "locale": "en-US",
@@ -48,6 +56,14 @@
     "type": "NV"
   },
   {
+    "date": "2023-06-19",
+    "description": "Juneteenth National Independence Day",
+    "locale": "en-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
     "date": "2023-07-04",
     "description": "Independence Day",
     "locale": "en-US",
@@ -70,6 +86,14 @@
     "notes": "",
     "region": "",
     "type": "NV"
+  },
+  {
+    "date": "2023-11-10",
+    "description": "Veterans Day (in lieu of)",
+    "locale": "en-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
   },
   {
     "date": "2023-11-11",

@@ -48,8 +48,32 @@
     "type": "NV"
   },
   {
+    "date": "2021-06-18",
+    "description": "Juneteenth National Independence Day (in lieu of)",
+    "locale": "en-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2021-06-19",
+    "description": "Juneteenth National Independence Day",
+    "locale": "en-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
     "date": "2021-07-04",
     "description": "Independence Day",
+    "locale": "en-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2021-07-05",
+    "description": "Independence Day (in lieu of)",
     "locale": "en-US",
     "notes": "",
     "region": "",
@@ -97,7 +121,7 @@
   },
   {
     "date": "2021-12-24",
-    "description": "Christmas Eve",
+    "description": "Christmas Day (in lieu of)",
     "locale": "en-US",
     "notes": "",
     "region": "",
@@ -110,5 +134,13 @@
     "notes": "",
     "region": "",
     "type": "NRF"
+  },
+  {
+    "date": "2021-12-31",
+    "description": "New Year's Day (in lieu of)",
+    "locale": "en-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
   }
 ]

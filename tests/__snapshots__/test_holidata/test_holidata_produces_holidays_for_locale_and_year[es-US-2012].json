@@ -8,6 +8,14 @@
     "type": "NF"
   },
   {
+    "date": "2012-01-02",
+    "description": "Año Neuvo (en lugar de)",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
     "date": "2012-01-16",
     "description": "Cumpleaños de Martin Luther King, Jr.",
     "locale": "es-US",
@@ -74,6 +82,14 @@
   {
     "date": "2012-11-11",
     "description": "Día de los Veteranos",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2012-11-12",
+    "description": "Día de los Veteranos (en lugar de)",
     "locale": "es-US",
     "notes": "",
     "region": "",
