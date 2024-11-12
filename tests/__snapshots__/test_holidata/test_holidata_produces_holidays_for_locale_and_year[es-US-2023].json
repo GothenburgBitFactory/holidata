@@ -8,6 +8,14 @@
     "type": "NF"
   },
   {
+    "date": "2023-01-02",
+    "description": "Año Neuvo (en lugar de)",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
     "date": "2023-01-16",
     "description": "Cumpleaños de Martin Luther King, Jr.",
     "locale": "es-US",
@@ -48,6 +56,14 @@
     "type": "NV"
   },
   {
+    "date": "2023-06-19",
+    "description": "Juneteenth – Día de la Emancipación",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
     "date": "2023-07-04",
     "description": "Día de la Independiencia",
     "locale": "es-US",
@@ -70,6 +86,14 @@
     "notes": "",
     "region": "",
     "type": "NV"
+  },
+  {
+    "date": "2023-11-10",
+    "description": "Día de los Veteranos (en lugar de)",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
   },
   {
     "date": "2023-11-11",

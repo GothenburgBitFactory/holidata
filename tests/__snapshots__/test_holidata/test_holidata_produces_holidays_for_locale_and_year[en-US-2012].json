@@ -8,6 +8,14 @@
     "type": "NF"
   },
   {
+    "date": "2012-01-02",
+    "description": "New Year's Day (in lieu of)",
+    "locale": "en-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
     "date": "2012-01-16",
     "description": "Birthday of Martin Luther King, Jr.",
     "locale": "en-US",
@@ -74,6 +82,14 @@
   {
     "date": "2012-11-11",
     "description": "Veterans Day",
+    "locale": "en-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2012-11-12",
+    "description": "Veterans Day (in lieu of)",
     "locale": "en-US",
     "notes": "",
     "region": "",

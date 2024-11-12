@@ -110,5 +110,13 @@
     "notes": "",
     "region": "",
     "type": "NRF"
+  },
+  {
+    "date": "2011-12-26",
+    "description": "Christmas Day (in lieu of)",
+    "locale": "en-US",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
   }
 ]

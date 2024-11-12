@@ -110,5 +110,13 @@
     "notes": "",
     "region": "",
     "type": "NRF"
+  },
+  {
+    "date": "2016-12-26",
+    "description": "Navidad (en lugar de)",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
   }
 ]

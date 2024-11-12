@@ -80,6 +80,14 @@
     "type": "NF"
   },
   {
+    "date": "2018-11-12",
+    "description": "Día de los Veteranos (en lugar de)",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
     "date": "2018-11-22",
     "description": "Día de Acción de Gracias",
     "locale": "es-US",

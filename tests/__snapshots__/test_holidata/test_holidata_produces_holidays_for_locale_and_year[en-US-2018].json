@@ -80,6 +80,14 @@
     "type": "NF"
   },
   {
+    "date": "2018-11-12",
+    "description": "Veterans Day (in lieu of)",
+    "locale": "en-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
     "date": "2018-11-22",
     "description": "Thanksgiving Day",
     "locale": "en-US",

@@ -48,6 +48,14 @@
     "type": "NV"
   },
   {
+    "date": "2020-07-03",
+    "description": "Día de la Independiencia (en lugar de)",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
     "date": "2020-07-04",
     "description": "Día de la Independiencia",
     "locale": "es-US",

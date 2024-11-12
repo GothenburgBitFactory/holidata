@@ -8,6 +8,14 @@
     "type": "NF"
   },
   {
+    "date": "2017-01-02",
+    "description": "New Year's Day (in lieu of)",
+    "locale": "en-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
     "date": "2017-01-16",
     "description": "Birthday of Martin Luther King, Jr.",
     "locale": "en-US",
@@ -70,6 +78,14 @@
     "notes": "",
     "region": "",
     "type": "NV"
+  },
+  {
+    "date": "2017-11-10",
+    "description": "Veterans Day (in lieu of)",
+    "locale": "en-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
   },
   {
     "date": "2017-11-11",

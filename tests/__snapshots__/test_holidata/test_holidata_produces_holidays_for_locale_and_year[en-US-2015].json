@@ -48,6 +48,14 @@
     "type": "NV"
   },
   {
+    "date": "2015-07-03",
+    "description": "Independence Day (in lieu of)",
+    "locale": "en-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
     "date": "2015-07-04",
     "description": "Independence Day",
     "locale": "en-US",
