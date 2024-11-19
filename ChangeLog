@@ -1,3 +1,5 @@
+- Add support for Python 3.13, drop Python 3.8
+
 2024.11.1
 - #115 US: Implement federal holidays
        (thanks to J. David Stark)
