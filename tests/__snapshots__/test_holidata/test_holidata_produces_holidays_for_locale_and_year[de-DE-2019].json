@@ -144,6 +144,14 @@
     "type": "RV"
   },
   {
+    "date": "2019-06-20",
+    "description": "Fronleichnam",
+    "locale": "de-DE",
+    "notes": "In Gemeinden mit überwiegend katholischer Bevölkerung",
+    "region": "TH",
+    "type": "RV"
+  },
+  {
     "date": "2019-08-15",
     "description": "Mariä Himmelfahrt",
     "locale": "de-DE",
