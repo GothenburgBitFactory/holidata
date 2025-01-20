@@ -3,6 +3,25 @@ from holidata.utils import day
 
 
 class TH(Region):
+    """
+    According to Thüringer Feier- und Gedenktagsgesetz (ThürFGtG) § 2 Abs. 1, § 2 Abs. 2 und 3 Nr. 1
+    (https://landesrecht.thueringen.de/perma?d=jlr-FeiertGTHV5P2)
+    the holidays are
+     - Neujahrstag (New Years Day), *
+     - Karfreitag (Good Friday), *
+     - Ostermontag (Easter Monday), *
+     - 1. Mai (May 1st), *
+     - Tag Christi Himmelfahrt (Ascension), *
+     - Pfingstmontag (Pentecost Monday), *
+     - 20. September als Weltkindertag (Universal Children's Day),
+     - 3. Oktober als Tag der Deutschen Einheit (Day of German Unity), *
+     - Reformationstag (Reformation Day),
+     - erster Weihnachtsfeiertag (Christmas Day), *
+     - zweiter Weihnachtsfeiertag (Boxing Day), *
+     - Fronleichnam (Corpus Christi, in communities with a catholic majority)
+
+     Holidays marked with '*' are already covered by the definitions in __init__.py
+    """
     def __init__(self, country):
         super().__init__("TH", country)
 
