@@ -6,6 +6,12 @@ class TH(Region):
         super().__init__("TH", country)
 
         self.define_holiday() \
+            .with_name("Weltkindertag") \
+            .since(2019) \
+            .on(month=9, day=20) \
+            .with_flags("F")
+
+        self.define_holiday() \
             .with_name("Reformationstag") \
             .until(2016) \
             .on(month=10, day=31) \

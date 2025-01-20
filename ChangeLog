@@ -1,3 +1,5 @@
+- #117 DE: Add holiday "Weltkindertag" in region 'TH' (Thüringen)
+       (thanks to Slarky)
 - Add support for Python 3.13, drop Python 3.8
 
 2024.11.1

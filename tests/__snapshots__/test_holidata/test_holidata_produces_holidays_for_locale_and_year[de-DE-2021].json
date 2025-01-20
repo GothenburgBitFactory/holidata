@@ -160,6 +160,14 @@
     "type": "RF"
   },
   {
+    "date": "2021-09-20",
+    "description": "Weltkindertag",
+    "locale": "de-DE",
+    "notes": "",
+    "region": "TH",
+    "type": "F"
+  },
+  {
     "date": "2021-10-03",
     "description": "Tag der Deutschen Einheit",
     "locale": "de-DE",
