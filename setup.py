@@ -10,7 +10,7 @@ long_description = (here / "README.md").read_text(encoding="utf-8")
 
 setup(
     name="holidata",
-    version="2024.11.1",
+    version="2025.1.0",
     description="Holidata is a utility for algorithmically producing holidays for a given locale and year",
     long_description=long_description,
     long_description_content_type="text/markdown",
