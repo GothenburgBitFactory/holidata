@@ -3,8 +3,8 @@ docopt==0.6.2
 iniconfig==2.0.0
 packaging==24.2
 pluggy==1.5.0
-pytest==8.3.3
+pytest==8.3.5
 python-dateutil==2.9.0.post0
-six==1.16.0
-syrupy==4.7.2
-types-python-dateutil==2.9.0.20241003
+six==1.17.0
+syrupy==4.9.0
+types-python-dateutil==2.9.0.20241206

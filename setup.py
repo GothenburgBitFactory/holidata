@@ -39,8 +39,8 @@ setup(
     ],
     extras_require={
         "test": [
-            "pytest >= 7.4.2",
-            "syrupy >= 4.6.1",
+            "pytest >= 8.3.5",
+            "syrupy >= 4.9.0",
         ]
     },
     scripts=["bin/holidata"],

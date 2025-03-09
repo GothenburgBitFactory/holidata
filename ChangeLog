@@ -1,3 +1,5 @@
+- Upgrade test requirements pytest to 8.3.5 and syrupy to 4.9.0
+
 2025.1.0
 -      DE: Document legal sources for region 'TH' (Thüringen)
 -      DE: Add holiday "Fronleichnam" in region 'TH' for communities with catholic majority
