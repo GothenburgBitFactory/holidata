@@ -1,7 +1,9 @@
 # Holidata
 
 `holidata` is a utility for algorithmically producing holiday data.
-Its purpose is mainly for [holidata.net](https://holidata.net).
+
+It is used e.g. by [Taskwarrior](https://taskwarrior.org) and [Timewarrior](https://timewarrior.net),
+as well as for [holidata.net](https://holidata.net).
 
 Holiday data can be produced for a given year in a supported locale and output format.
 
@@ -48,9 +50,7 @@ If you think a locale is missing, [open a feature request on GitHub](https://git
 
 ## Output Formats
 
-Holidata supports different output formats, currently `csv`, `json`, `yaml`, and `xml`.
-
-If you think an output format is missing, [open a feature request on GitHub](https://github.com/GothenburgBitFactory/holidata/issues).
+Holidata supports different output formats, currently `csv`, `jsonline`, `yaml`, and `xml`.
 
 ## Limitations
 
