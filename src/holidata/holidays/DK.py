@@ -56,6 +56,7 @@ class DK(Country):
         self.define_holiday() \
             .with_name("Store bededag") \
             .on(day(26).after(self.easter())) \
+            .until(2023) \
             .with_flags("NRV")
 
         self.define_holiday() \
