@@ -1,0 +1,298 @@
+[
+  {
+    "date": "2016-01-01",
+    "description": "New Year's Day",
+    "locale": "en-IN",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2016-01-14",
+    "description": "Lohri",
+    "locale": "en-IN",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2016-01-15",
+    "description": "Pongal, Makar Sankranti",
+    "locale": "en-IN",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2016-01-16",
+    "description": "Guru Gobind Singh Jayanti",
+    "locale": "en-IN",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2016-01-26",
+    "description": "Republic Day",
+    "locale": "en-IN",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2016-02-12",
+    "description": "Vasant Panchami",
+    "locale": "en-IN",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2016-02-22",
+    "description": "Guru Ravidas Jayanti",
+    "locale": "en-IN",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2016-03-07",
+    "description": "Maha Shivaratri",
+    "locale": "en-IN",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2016-03-23",
+    "description": "Chhoti Holi, Holika Dahan",
+    "locale": "en-IN",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2016-03-24",
+    "description": "Holi",
+    "locale": "en-IN",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2016-03-25",
+    "description": "Good Friday",
+    "locale": "en-IN",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2016-03-27",
+    "description": "Easter",
+    "locale": "en-IN",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2016-04-08",
+    "description": "Gudi Padwa, Ugadi",
+    "locale": "en-IN",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2016-04-13",
+    "description": "Solar New Year, Baisakhi",
+    "locale": "en-IN",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2016-04-15",
+    "description": "Rama Navami",
+    "locale": "en-IN",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2016-04-21",
+    "description": "Hazarat Ali's Birthday",
+    "locale": "en-IN",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2016-05-21",
+    "description": "Buddha Purnima",
+    "locale": "en-IN",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2016-07-07",
+    "description": "Eid al-Fitr , Ramadan",
+    "locale": "en-IN",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2016-08-15",
+    "description": "Independence Day",
+    "locale": "en-IN",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2016-08-18",
+    "description": "Rakhi, Raksha Bandhan",
+    "locale": "en-IN",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2016-08-25",
+    "description": "Krishna Janmashtami",
+    "locale": "en-IN",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2016-09-05",
+    "description": "Ganesh Chaturthi",
+    "locale": "en-IN",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2016-09-13",
+    "description": "Onam, Eid al-Adha, Bakrid",
+    "locale": "en-IN",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2016-10-02",
+    "description": "Gandhi Jayanti",
+    "locale": "en-IN",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2016-10-09",
+    "description": "Durga Ashtami",
+    "locale": "en-IN",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2016-10-10",
+    "description": "Maha Navami",
+    "locale": "en-IN",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2016-10-11",
+    "description": "Dussehra, Madhvacharya Jayanti",
+    "locale": "en-IN",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2016-10-12",
+    "description": "Muharram",
+    "locale": "en-IN",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2016-10-16",
+    "description": "Valmiki Jayanti",
+    "locale": "en-IN",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2016-10-19",
+    "description": "Karwa Chauth",
+    "locale": "en-IN",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2016-10-30",
+    "description": "Diwali, Lakshmi Puja",
+    "locale": "en-IN",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2016-10-31",
+    "description": "Gowardhan Puja",
+    "locale": "en-IN",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2016-11-01",
+    "description": "Bhaiya Dooj",
+    "locale": "en-IN",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2016-11-06",
+    "description": "Chhath Puja",
+    "locale": "en-IN",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2016-11-14",
+    "description": "Guru Nanak Jayanti, Nehru Jayanti",
+    "locale": "en-IN",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2016-12-12",
+    "description": "Milad an-Nabi, Id-e-Milad",
+    "locale": "en-IN",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2016-12-25",
+    "description": "Christmas",
+    "locale": "en-IN",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  }
+]
