@@ -1,0 +1,138 @@
+[
+  {
+    "locale": "en-HK",
+    "region": "",
+    "date": "2013-01-01",
+    "description": "The first day of January",
+    "type": "NF",
+    "notes": ""
+  },
+  {
+    "locale": "en-HK",
+    "region": "",
+    "date": "2013-02-11",
+    "description": "The second day of Lunar New Year",
+    "type": "NV",
+    "notes": ""
+  },
+  {
+    "locale": "en-HK",
+    "region": "",
+    "date": "2013-02-12",
+    "description": "The third day of Lunar New Year",
+    "type": "NV",
+    "notes": ""
+  },
+  {
+    "locale": "en-HK",
+    "region": "",
+    "date": "2013-02-13",
+    "description": "The fourth day of Lunar New Year",
+    "type": "NV",
+    "notes": ""
+  },
+  {
+    "locale": "en-HK",
+    "region": "",
+    "date": "2013-03-29",
+    "description": "Good Friday",
+    "type": "NRV",
+    "notes": ""
+  },
+  {
+    "locale": "en-HK",
+    "region": "",
+    "date": "2013-03-30",
+    "description": "The day following Good Friday",
+    "type": "NV",
+    "notes": ""
+  },
+  {
+    "locale": "en-HK",
+    "region": "",
+    "date": "2013-04-01",
+    "description": "Easter Monday",
+    "type": "NRV",
+    "notes": ""
+  },
+  {
+    "locale": "en-HK",
+    "region": "",
+    "date": "2013-04-04",
+    "description": "Ching Ming Festival",
+    "type": "NF",
+    "notes": ""
+  },
+  {
+    "locale": "en-HK",
+    "region": "",
+    "date": "2013-05-01",
+    "description": "Labour Day",
+    "type": "NF",
+    "notes": ""
+  },
+  {
+    "locale": "en-HK",
+    "region": "",
+    "date": "2013-05-17",
+    "description": "The Birthday of the Buddha",
+    "type": "NV",
+    "notes": ""
+  },
+  {
+    "locale": "en-HK",
+    "region": "",
+    "date": "2013-06-12",
+    "description": "Tuen Ng Festival",
+    "type": "NV",
+    "notes": ""
+  },
+  {
+    "locale": "en-HK",
+    "region": "",
+    "date": "2013-07-01",
+    "description": "Hong Kong Special Administrative Region Establishment Day",
+    "type": "NV",
+    "notes": ""
+  },
+  {
+    "locale": "en-HK",
+    "region": "",
+    "date": "2013-09-20",
+    "description": "The day following the Chinese Mid-Autumn Festival",
+    "type": "NV",
+    "notes": ""
+  },
+  {
+    "locale": "en-HK",
+    "region": "",
+    "date": "2013-10-01",
+    "description": "National Day",
+    "type": "NV",
+    "notes": ""
+  },
+  {
+    "locale": "en-HK",
+    "region": "",
+    "date": "2013-10-14",
+    "description": "The day following Chung Yeung Festival",
+    "type": "NV",
+    "notes": ""
+  },
+  {
+    "locale": "en-HK",
+    "region": "",
+    "date": "2013-12-25",
+    "description": "Christmas Day",
+    "type": "NRF",
+    "notes": ""
+  },
+  {
+    "locale": "en-HK",
+    "region": "",
+    "date": "2013-12-26",
+    "description": "The first weekday after Christmas Day",
+    "type": "NV",
+    "notes": ""
+  }
+]
