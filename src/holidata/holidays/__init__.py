@@ -1,37 +1,32 @@
+from .AT import *
 from .AU import *
+from .BE import *
+from .BR import *
+from .CA import *
+from .CH import *
+from .CO import *
+from .CZ import *
 from .DE import *
+from .DK import *
+from .EE import *
 from .ES import *
-
-__all__ = [
-    "AT",
-    "BE",
-    "BR",
-    "CA",
-    "CA",
-    "CH",
-    "CO",
-    "CZ",
-    "DK",
-    "EE",
-    "FI",
-    "FI",
-    "FR",
-    "GB",
-    "GR",
-    "HR",
-    "HU",
-    "IS",
-    "IT",
-    "NL",
-    "NO",
-    "NZ",
-    "PL",
-    "PT",
-    "RU",
-    "SE",
-    "SI",
-    "SK",
-    "TR",
-    "US",
-    "ZA",
-]
+from .FI import *
+from .FR import *
+from .GB import *
+from .GR import *
+from .HR import *
+from .HU import *
+from .IS import *
+from .IT import *
+from .NL import *
+from .NO import *
+from .NZ import *
+from .PL import *
+from .PT import *
+from .RU import *
+from .SE import *
+from .SI import *
+from .SK import *
+from .TR import *
+from .US import *
+from .ZA import *
