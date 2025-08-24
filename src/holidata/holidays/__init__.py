@@ -16,6 +16,7 @@ from .GB import *
 from .GR import *
 from .HR import *
 from .HU import *
+from .IN import *
 from .IS import *
 from .IT import *
 from .NL import *
