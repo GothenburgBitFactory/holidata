@@ -1,5 +1,5 @@
 2025.3.0
-- Upgrade test requirements pytest to 8.3.5 and syrupy to 4.9.0
+-      Upgrade test requirements pytest to 8.3.5 and syrupy to 4.9.0
 - #119 DK: Holiday "Store bededag" was abolished in 2023
 
 2025.1.0
@@ -7,20 +7,20 @@
 -      DE: Add holiday "Fronleichnam" in region 'TH' for communities with catholic majority
 - #117 DE: Add holiday "Weltkindertag" in region 'TH' (Thüringen)
        (thanks to Slarky)
-- Add support for Python 3.13, drop Python 3.8
+-      Add support for Python 3.13, drop Python 3.8
 
 2024.11.1
 - #115 US: Implement federal holidays
        (thanks to J. David Stark)
 
 2024.11.0
--      hu-HU: Add non-working days for 2025 in Hungary
+-      HU: Add non-working days for 2025 in Hungary
 
 2024.10.0
--      es-ES: Implement 2025 holidays of Spain
+-      ES: Implement 2025 holidays of Spain
 
 2024.8.3
-- #112 Add locale en-AU
+- #112 AU: Add locale en-AU
        (thanks to Alex Smith)
 
 2024.8.2
@@ -33,18 +33,18 @@
 
 2024.8.0
 -      Add support for Python 3.12, replace 'snapshottest' with 'syrupy'
-- #105 Holiday "Mariä Himmelfahrt" missing for region 'BY' in locale 'de-DE'
+- #105 DE: Holiday "Mariä Himmelfahrt" missing for region 'BY' in locale 'de-DE'
        (thanks to Alexei Samokvalov)
--      Convert DE into module
+-      DE: Convert DE into module
 
 2024.6.0
-- #102 Fix error in calculation of 'Day after Thanksgiving'
+- #102 US: Fix error in calculation of 'Day after Thanksgiving'
        (thanks to Peter J. Mello)
-- #103 Fix region code for Bremen in locale 'DE'
+- #103 DE: Fix region code for Bremen
        (thanks to Olaf Sebelin)
 
 2023.11.1
--      Add non-working days for 2024 in country 'HU'
+-      HU: Add non-working days for 2024 in Hungary
 - #97  Merge locale and country
 -      Fix permalinks for holidays in locale de-DE for region BE
 
