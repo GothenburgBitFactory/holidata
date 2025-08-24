@@ -1,0 +1,58 @@
+name: Python EOL Check
+
+on:
+  schedule:
+    - cron: '0 8 * * 1' # Every Monday at 08:00 UTC
+  workflow_dispatch:
+
+jobs:
+  check-python-eol:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Query Python EOL data
+        id: eol
+        run: |
+          curl -s https://endoflife.date/api/python.json > python_eol.json
+
+      - name: Check project Python versions
+        id: check_versions
+        run: |
+          # Extract python versions from pyproject.toml and setup.cfg
+          grep -E 'python_requires|python_version|python =' pyproject.toml setup.cfg | grep -oE '[0-9]+\.[0-9]+' | sort | uniq > project_python_versions.txt
+          echo "Project Python versions:" && cat project_python_versions.txt
+
+      - name: Find EOL dates for project Python versions
+        id: find_eol
+        run: |
+          import json, datetime
+          threshold_months = 3
+          today = datetime.date.today()
+          with open('python_eol.json') as f:
+              eol_data = json.load(f)
+          with open('project_python_versions.txt') as f:
+              versions = [line.strip() for line in f if line.strip()]
+          eol_soon = []
+          for v in versions:
+              for entry in eol_data:
+                  if entry['cycle'].startswith(v):
+                      eol_date = datetime.date.fromisoformat(entry['eol'])
+                      months_left = (eol_date.year - today.year) * 12 + (eol_date.month - today.month)
+                      if months_left <= threshold_months:
+                          eol_soon.append((v, entry['eol']))
+          if eol_soon:
+              with open('eol_soon.txt', 'w') as f:
+                  for v, d in eol_soon:
+                      f.write(f"Python {v} EOL is near: {d}\n")
+          print("EOL soon:", eol_soon)
+
+      - name: Create issue if EOL is near
+        if: success() && (steps.find_eol.outputs.eol_soon != '')
+        uses: peter-evans/create-issue-from-file@v4
+        with:
+          title: "Python version EOL warning"
+          content-filepath: eol_soon.txt
+          labels: maintenance, python
+          search-existing: all
