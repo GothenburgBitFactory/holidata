@@ -1,0 +1,130 @@
+[
+  {
+    "locale": "en-HK",
+    "region": "",
+    "date": "2014-01-01",
+    "description": "The first day of January",
+    "type": "NF",
+    "notes": ""
+  },
+  {
+    "locale": "en-HK",
+    "region": "",
+    "date": "2014-02-01",
+    "description": "The second day of Lunar New Year",
+    "type": "NV",
+    "notes": ""
+  },
+  {
+    "locale": "en-HK",
+    "region": "",
+    "date": "2014-02-03",
+    "description": "The fourth day of Lunar New Year",
+    "type": "NV",
+    "notes": ""
+  },
+  {
+    "locale": "en-HK",
+    "region": "",
+    "date": "2014-04-18",
+    "description": "Good Friday",
+    "type": "NRV",
+    "notes": ""
+  },
+  {
+    "locale": "en-HK",
+    "region": "",
+    "date": "2014-04-19",
+    "description": "The day following Good Friday",
+    "type": "NV",
+    "notes": ""
+  },
+  {
+    "locale": "en-HK",
+    "region": "",
+    "date": "2014-04-21",
+    "description": "Easter Monday",
+    "type": "NRV",
+    "notes": ""
+  },
+  {
+    "locale": "en-HK",
+    "region": "",
+    "date": "2014-04-05",
+    "description": "Ching Ming Festival",
+    "type": "NF",
+    "notes": ""
+  },
+  {
+    "locale": "en-HK",
+    "region": "",
+    "date": "2014-05-01",
+    "description": "Labour Day",
+    "type": "NF",
+    "notes": ""
+  },
+  {
+    "locale": "en-HK",
+    "region": "",
+    "date": "2014-05-06",
+    "description": "The Birthday of the Buddha",
+    "type": "NV",
+    "notes": ""
+  },
+  {
+    "locale": "en-HK",
+    "region": "",
+    "date": "2014-06-02",
+    "description": "Tuen Ng Festival",
+    "type": "NV",
+    "notes": ""
+  },
+  {
+    "locale": "en-HK",
+    "region": "",
+    "date": "2014-07-01",
+    "description": "Hong Kong Special Administrative Region Establishment Day",
+    "type": "NV",
+    "notes": ""
+  },
+  {
+    "locale": "en-HK",
+    "region": "",
+    "date": "2014-09-09",
+    "description": "The day following the Chinese Mid-Autumn Festival",
+    "type": "NV",
+    "notes": ""
+  },
+  {
+    "locale": "en-HK",
+    "region": "",
+    "date": "2014-10-01",
+    "description": "National Day",
+    "type": "NV",
+    "notes": ""
+  },
+  {
+    "locale": "en-HK",
+    "region": "",
+    "date": "2014-10-02",
+    "description": "Chung Yeung Festival",
+    "type": "NV",
+    "notes": ""
+  },
+  {
+    "locale": "en-HK",
+    "region": "",
+    "date": "2014-12-25",
+    "description": "Christmas Day",
+    "type": "NRF",
+    "notes": ""
+  },
+  {
+    "locale": "en-HK",
+    "region": "",
+    "date": "2014-12-26",
+    "description": "The first weekday after Christmas Day",
+    "type": "NV",
+    "notes": ""
+  }
+]

@@ -14,6 +14,7 @@ from .FI import *
 from .FR import *
 from .GB import *
 from .GR import *
+from .HK import *
 from .HR import *
 from .HU import *
 from .IS import *
