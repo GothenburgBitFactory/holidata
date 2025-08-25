@@ -31,31 +31,31 @@ jobs:
           print("Extracted Python versions from workflow:", versions)
           EOF
 
-    - name: Find EOL dates for project Python versions
-    id: find_eol
-    run: |
-      python <<EOF
-      import json, datetime
-      threshold_months = 3
-      today = datetime.date.today()
-      with open('python_eol.json') as f:
-        eol_data = json.load(f)
-      with open('project_python_versions.txt') as f:
-        versions = [line.strip() for line in f if line.strip()]
-      eol_soon = []
-      for v in versions:
-        for entry in eol_data:
-          if entry['cycle'].startswith(v):
-            eol_date = datetime.date.fromisoformat(entry['eol'])
-            months_left = (eol_date.year - today.year) * 12 + (eol_date.month - today.month)
-            if months_left <= threshold_months:
-              eol_soon.append((v, entry['eol'], entry.get('latest', 'N/A')))
-      if eol_soon:
-        with open('eol_soon.txt', 'w') as f:
-          for v, d, latest in eol_soon:
-            f.write(f"Python {v} is nearing EOL on {d}. Latest available: {latest}\n")
-        print("EOL soon:", eol_soon)
-      EOF
+      - name: Find EOL dates for project Python versions
+        id: find_eol
+        run: |
+          python <<EOF
+          import json, datetime
+          threshold_months = 3
+          today = datetime.date.today()
+          with open('python_eol.json') as f:
+            eol_data = json.load(f)
+          with open('project_python_versions.txt') as f:
+            versions = [line.strip() for line in f if line.strip()]
+          eol_soon = []
+          for v in versions:
+            for entry in eol_data:
+              if entry['cycle'].startswith(v):
+                eol_date = datetime.date.fromisoformat(entry['eol'])
+                months_left = (eol_date.year - today.year) * 12 + (eol_date.month - today.month)
+                if months_left <= threshold_months:
+                  eol_soon.append((v, entry['eol'], entry.get('latest', 'N/A')))
+          if eol_soon:
+            with open('eol_soon.txt', 'w') as f:
+              for v, d, latest in eol_soon:
+                f.write(f"Python {v} is nearing EOL on {d}. Latest available: {latest}\n")
+            print("EOL soon:", eol_soon)
+          EOF
 
       - name: Create issue if EOL is near
         if: success() && (hashFiles('eol_soon.txt') != '')
