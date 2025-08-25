@@ -50,7 +50,7 @@ jobs:
 
       - name: Create issue if EOL is near
         if: success() && (steps.find_eol.outputs.eol_soon != '')
-        uses: peter-evans/create-issue-from-file@v4
+        uses: peter-evans/create-issue-from-file@v5
         with:
           title: "Python version EOL warning"
           content-filepath: eol_soon.txt
