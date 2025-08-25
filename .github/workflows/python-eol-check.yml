@@ -12,24 +12,27 @@ jobs:
       - name: Check for existing EOL warning issue
         id: check_existing_issue
         run: |
+          echo "should_skip=false" >> $GITHUB_OUTPUT
           existing=$(curl -s -H "Accept: application/vnd.github+json" \
             "https://api.github.com/repos/${{ github.repository }}/issues?state=open&labels=maintenance,python" \
             | jq '.[] | select(.title=="Python version EOL warning")')
           if [ -n "$existing" ]; then
-            echo "An open 'Python version EOL warning' issue already exists. Stopping workflow."
-            exit 1
+            echo "An open 'Python version EOL warning' issue already exists. Skipping remaining steps."
+            echo "should_skip=true" >> $GITHUB_OUTPUT
           fi
 
       - name: Checkout repository
-        if: steps.check_existing_issue.outcome == 'success'
+        if: steps.check_existing_issue.outputs.should_skip != 'true'
         uses: actions/checkout@v5
 
       - name: Query Python EOL data
+        if: steps.check_existing_issue.outputs.should_skip != 'true'
         id: eol
         run: |
           curl -s https://endoflife.date/api/python.json > python_eol.json
 
       - name: Extract Python versions from pythonpackage.yml
+        if: steps.check_existing_issue.outputs.should_skip != 'true'
         id: extract_versions
         run: |
           python <<EOF
@@ -44,6 +47,7 @@ jobs:
           EOF
 
       - name: Find EOL dates for project Python versions
+        if: steps.check_existing_issue.outputs.should_skip != 'true'
         id: find_eol
         run: |
           python <<EOF
@@ -70,7 +74,7 @@ jobs:
           EOF
 
       - name: Create issue if EOL is near
-        if: success() && (hashFiles('eol_soon.txt') != '')
+        if: steps.check_existing_issue.outputs.should_skip != 'true' && success() && (hashFiles('eol_soon.txt') != '')
         uses: peter-evans/create-issue-from-file@v5
         with:
           title: "Python version EOL warning"
