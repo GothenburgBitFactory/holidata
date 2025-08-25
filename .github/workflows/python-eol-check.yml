@@ -17,7 +17,7 @@ jobs:
             | jq '.[] | select(.title=="Python version EOL warning")')
           if [ -n "$existing" ]; then
             echo "An open 'Python version EOL warning' issue already exists. Stopping workflow."
-            exit 0
+            exit 1
           fi
 
       - name: Checkout repository
