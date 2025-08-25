@@ -9,7 +9,19 @@ jobs:
   check-python-eol:
     runs-on: ubuntu-latest
     steps:
+      - name: Check for existing EOL warning issue
+        id: check_existing_issue
+        run: |
+          existing=$(curl -s -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/issues?state=open&labels=maintenance,python" \
+            | jq '.[] | select(.title=="Python version EOL warning")')
+          if [ -n "$existing" ]; then
+            echo "An open 'Python version EOL warning' issue already exists. Stopping workflow."
+            exit 0
+          fi
+
       - name: Checkout repository
+        if: steps.check_existing_issue.outcome == 'success'
         uses: actions/checkout@v5
 
       - name: Query Python EOL data
@@ -64,4 +76,3 @@ jobs:
           title: "Python version EOL warning"
           content-filepath: eol_soon.txt
           labels: maintenance, python
-          search-existing: all
