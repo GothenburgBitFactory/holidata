@@ -46,6 +46,11 @@ class IT(Country):
             .with_name("Assunzione (ferragosto)") \
             .on(month=8, day=15) \
             .with_flags("NRF")
+        
+        self.define_holiday() \
+            .with_name("San Francesco d'Assisi") \
+            .on(month=10, day=4) \
+            .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Ognissanti") \
