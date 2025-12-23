@@ -27,7 +27,7 @@ class TAS(Region):
         """
         self.define_holiday() \
             .with_name("Australia Day") \
-            .on(self.mon_to_fri_on_or_following(month=1, day=26)) \
+            .on(TAS.mon_to_fri_on_or_following(month=1, day=26)) \
             .with_flags("V")
 
         self.define_holiday() \

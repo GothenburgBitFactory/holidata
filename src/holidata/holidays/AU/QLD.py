@@ -34,7 +34,7 @@ class QLD(Region):
         """
         self.define_holiday() \
             .with_name("Australia Day") \
-            .on(self.mon_to_fri_on_or_following(month=1, day=26)) \
+            .on(QLD.mon_to_fri_on_or_following(month=1, day=26)) \
             .with_flags("V")
 
         """
@@ -89,7 +89,7 @@ class QLD(Region):
         """
         self.define_holiday() \
             .with_name("Anzac Day") \
-            .on(self.mon_to_sat_on_or_following(month=4, day=25)) \
+            .on(QLD.mon_to_sat_on_or_following(month=4, day=25)) \
             .with_flags("V")
 
         """
@@ -112,7 +112,7 @@ class QLD(Region):
             .with_name("Labour Day") \
             .since(2012) \
             .until(2012) \
-            .on(self.monday_on_or_following(month=5, day=1)) \
+            .on(QLD.monday_on_or_following(month=5, day=1)) \
             .with_flags("V")
 
         """

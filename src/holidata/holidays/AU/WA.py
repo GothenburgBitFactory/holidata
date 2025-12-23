@@ -30,7 +30,7 @@ class WA(Region):
         """
         self.define_holiday() \
             .with_name("Australia Day") \
-            .on(self.mon_to_fri_on_or_following(month=1, day=26)) \
+            .on(WA.mon_to_fri_on_or_following(month=1, day=26)) \
             .with_flags("V")
 
         """
@@ -40,7 +40,7 @@ class WA(Region):
         """
         self.define_holiday() \
             .with_name("Labour Day") \
-            .on(self.monday_on_or_first_monday_following(month=3, day=1)) \
+            .on(WA.monday_on_or_first_monday_following(month=3, day=1)) \
             .with_flags("V")
 
         """
@@ -95,7 +95,7 @@ class WA(Region):
         """
         self.define_holiday() \
             .with_name("Western Australia Day") \
-            .on(self.monday_on_or_first_monday_following(month=6, day=1)) \
+            .on(WA.monday_on_or_first_monday_following(month=6, day=1)) \
             .with_flags("V")
 
         """
@@ -106,13 +106,13 @@ class WA(Region):
         self.define_holiday() \
             .with_name("Queen's Birthday") \
             .until(2022) \
-            .on(self.birthday_of_the_sovereign) \
+            .on(WA.birthday_of_the_sovereign) \
             .with_flags("V")
 
         self.define_holiday() \
             .with_name("King's Birthday") \
             .since(2023) \
-            .on(self.birthday_of_the_sovereign) \
+            .on(WA.birthday_of_the_sovereign) \
             .with_flags("V")
 
         """
