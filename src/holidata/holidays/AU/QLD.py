@@ -112,7 +112,7 @@ class QLD(Region):
             .with_name("Labour Day") \
             .since(2012) \
             .until(2012) \
-            .on(QLD.monday_on_or_following(month=5, day=1)) \
+            .on(first("monday").of("may")) \
             .with_flags("V")
 
         """
@@ -262,13 +262,6 @@ class QLD(Region):
     def date_is_sunday(month, day):
         def wrapper(year):
             return SmartDayArrow(year, month, day).weekday() == "sunday"
-
-        return wrapper
-
-    @staticmethod
-    def monday_on_or_following(month, day):
-        def wrapper(year):
-            return SmartDayArrow(year, month, day).shift_to_weekday("monday", including=True)
 
         return wrapper
 
