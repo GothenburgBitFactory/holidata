@@ -40,7 +40,7 @@ class WA(Region):
         """
         self.define_holiday() \
             .with_name("Labour Day") \
-            .on(WA.monday_on_or_first_monday_following(month=3, day=1)) \
+            .on(first("monday").of("march")) \
             .with_flags("V")
 
         """
@@ -95,7 +95,7 @@ class WA(Region):
         """
         self.define_holiday() \
             .with_name("Western Australia Day") \
-            .on(WA.monday_on_or_first_monday_following(month=6, day=1)) \
+            .on(first("monday").of("june")) \
             .with_flags("V")
 
         """
@@ -192,13 +192,6 @@ class WA(Region):
     def date_is_sunday_or_monday(month, day):
         def wrapper(year):
             return SmartDayArrow(year, month, day).weekday() in ["sunday", "monday"]
-
-        return wrapper
-
-    @staticmethod
-    def monday_on_or_first_monday_following(month, day):
-        def wrapper(year):
-            return SmartDayArrow(year, month, day).shift_to_weekday("monday", including=True)
 
         return wrapper
 
