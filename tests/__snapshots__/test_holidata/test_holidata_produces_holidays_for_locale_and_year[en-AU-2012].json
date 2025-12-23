@@ -200,6 +200,14 @@
     "type": "V"
   },
   {
+    "date": "2012-03-05",
+    "description": "Labour Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "WA",
+    "type": "V"
+  },
+  {
     "date": "2012-03-12",
     "description": "Adelaide Cup Day",
     "locale": "en-AU",
@@ -509,14 +517,6 @@
     "locale": "en-AU",
     "notes": "",
     "region": "QLD",
-    "type": "V"
-  },
-  {
-    "date": "2012-05-07",
-    "description": "Labour Day",
-    "locale": "en-AU",
-    "notes": "",
-    "region": "WA",
     "type": "V"
   },
   {

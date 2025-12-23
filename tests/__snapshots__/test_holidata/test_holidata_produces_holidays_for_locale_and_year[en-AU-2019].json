@@ -136,6 +136,14 @@
     "type": "V"
   },
   {
+    "date": "2019-03-04",
+    "description": "Labour Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "WA",
+    "type": "V"
+  },
+  {
     "date": "2019-03-11",
     "description": "Adelaide Cup Day",
     "locale": "en-AU",
@@ -461,14 +469,6 @@
     "locale": "en-AU",
     "notes": "",
     "region": "QLD",
-    "type": "V"
-  },
-  {
-    "date": "2019-05-06",
-    "description": "Labour Day",
-    "locale": "en-AU",
-    "notes": "",
-    "region": "WA",
     "type": "V"
   },
   {

@@ -136,6 +136,14 @@
     "type": "V"
   },
   {
+    "date": "2013-03-04",
+    "description": "Labour Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "WA",
+    "type": "V"
+  },
+  {
     "date": "2013-03-11",
     "description": "Adelaide Cup Day",
     "locale": "en-AU",
@@ -438,14 +446,6 @@
     "notes": "",
     "region": "WA",
     "type": "F"
-  },
-  {
-    "date": "2013-05-06",
-    "description": "Labour Day",
-    "locale": "en-AU",
-    "notes": "",
-    "region": "WA",
-    "type": "V"
   },
   {
     "date": "2013-05-06",

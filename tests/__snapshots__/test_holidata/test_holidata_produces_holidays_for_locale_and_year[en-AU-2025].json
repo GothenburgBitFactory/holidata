@@ -136,6 +136,14 @@
     "type": "V"
   },
   {
+    "date": "2025-03-03",
+    "description": "Labour Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "WA",
+    "type": "V"
+  },
+  {
     "date": "2025-03-10",
     "description": "Adelaide Cup Day",
     "locale": "en-AU",
@@ -469,14 +477,6 @@
     "locale": "en-AU",
     "notes": "",
     "region": "QLD",
-    "type": "V"
-  },
-  {
-    "date": "2025-05-05",
-    "description": "Labour Day",
-    "locale": "en-AU",
-    "notes": "",
-    "region": "WA",
     "type": "V"
   },
   {

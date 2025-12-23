@@ -136,6 +136,14 @@
     "type": "V"
   },
   {
+    "date": "2026-03-02",
+    "description": "Labour Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "WA",
+    "type": "V"
+  },
+  {
     "date": "2026-03-09",
     "description": "Canberra Day",
     "locale": "en-AU",
@@ -469,14 +477,6 @@
     "locale": "en-AU",
     "notes": "",
     "region": "QLD",
-    "type": "V"
-  },
-  {
-    "date": "2026-05-04",
-    "description": "Labour Day",
-    "locale": "en-AU",
-    "notes": "",
-    "region": "WA",
     "type": "V"
   },
   {

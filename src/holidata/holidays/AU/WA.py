@@ -40,7 +40,7 @@ class WA(Region):
         """
         self.define_holiday() \
             .with_name("Labour Day") \
-            .on(self.monday_on_or_first_monday_following(month=5, day=1)) \
+            .on(self.monday_on_or_first_monday_following(month=3, day=1)) \
             .with_flags("V")
 
         """
