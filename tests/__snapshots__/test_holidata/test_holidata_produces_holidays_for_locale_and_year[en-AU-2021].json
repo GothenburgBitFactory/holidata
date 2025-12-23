@@ -136,6 +136,14 @@
     "type": "V"
   },
   {
+    "date": "2021-03-01",
+    "description": "Labour Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "WA",
+    "type": "V"
+  },
+  {
     "date": "2021-03-08",
     "description": "Adelaide Cup Day",
     "locale": "en-AU",
@@ -477,14 +485,6 @@
     "locale": "en-AU",
     "notes": "",
     "region": "QLD",
-    "type": "V"
-  },
-  {
-    "date": "2021-05-03",
-    "description": "Labour Day",
-    "locale": "en-AU",
-    "notes": "",
-    "region": "WA",
     "type": "V"
   },
   {

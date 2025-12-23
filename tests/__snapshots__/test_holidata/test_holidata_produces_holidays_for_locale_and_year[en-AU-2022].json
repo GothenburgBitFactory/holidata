@@ -200,6 +200,14 @@
     "type": "V"
   },
   {
+    "date": "2022-03-07",
+    "description": "Labour Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "WA",
+    "type": "V"
+  },
+  {
     "date": "2022-03-14",
     "description": "Adelaide Cup Day",
     "locale": "en-AU",
@@ -533,14 +541,6 @@
     "locale": "en-AU",
     "notes": "",
     "region": "QLD",
-    "type": "V"
-  },
-  {
-    "date": "2022-05-02",
-    "description": "Labour Day",
-    "locale": "en-AU",
-    "notes": "",
-    "region": "WA",
     "type": "V"
   },
   {

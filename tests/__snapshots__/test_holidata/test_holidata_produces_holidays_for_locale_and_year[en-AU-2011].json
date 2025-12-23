@@ -192,6 +192,14 @@
     "type": "V"
   },
   {
+    "date": "2011-03-07",
+    "description": "Labour Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "WA",
+    "type": "V"
+  },
+  {
     "date": "2011-03-14",
     "description": "Adelaide Cup Day",
     "locale": "en-AU",
@@ -502,14 +510,6 @@
     "notes": "",
     "region": "QLD",
     "type": "F"
-  },
-  {
-    "date": "2011-05-02",
-    "description": "Labour Day",
-    "locale": "en-AU",
-    "notes": "",
-    "region": "WA",
-    "type": "V"
   },
   {
     "date": "2011-05-02",
