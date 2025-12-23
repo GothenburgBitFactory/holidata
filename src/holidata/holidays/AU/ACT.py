@@ -29,7 +29,7 @@ class ACT(Region):
         """
         self.define_holiday() \
             .with_name("Australia Day") \
-            .on(self.mon_to_fri_on_or_following(month=1, day=26)) \
+            .on(ACT.mon_to_fri_on_or_following(month=1, day=26)) \
             .with_flags("V")
 
         """
@@ -85,7 +85,7 @@ class ACT(Region):
         """
         self.define_holiday() \
             .with_name("Anzac Day") \
-            .on(self.mon_to_sat_on_or_following(month=4, day=25)) \
+            .on(ACT.mon_to_sat_on_or_following(month=4, day=25)) \
             .with_flags("V")
 
         """
