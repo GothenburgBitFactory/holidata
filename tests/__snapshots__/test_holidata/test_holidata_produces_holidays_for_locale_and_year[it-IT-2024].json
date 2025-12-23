@@ -56,6 +56,14 @@
     "type": "NF"
   },
   {
+    "date": "2024-06-29",
+    "description": "Santi Apostoli Pietro e Paolo",
+    "locale": "it-IT",
+    "notes": "Solo per il comune di Roma",
+    "region": "",
+    "type": "NRF"
+  },
+  {
     "date": "2024-08-15",
     "description": "Assunzione (ferragosto)",
     "locale": "it-IT",
@@ -70,6 +78,14 @@
     "notes": "",
     "region": "",
     "type": "NRF"
+  },
+  {
+    "date": "2024-11-03",
+    "description": "Unità nazionale",
+    "locale": "it-IT",
+    "notes": "",
+    "region": "",
+    "type": "NF"
   },
   {
     "date": "2024-12-08",
