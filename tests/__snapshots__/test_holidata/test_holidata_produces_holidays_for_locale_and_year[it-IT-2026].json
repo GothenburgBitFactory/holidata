@@ -56,8 +56,24 @@
     "type": "NF"
   },
   {
+    "date": "2026-06-29",
+    "description": "Santi Apostoli Pietro e Paolo",
+    "locale": "it-IT",
+    "notes": "Solo per il comune di Roma",
+    "region": "",
+    "type": "NRF"
+  },
+  {
     "date": "2026-08-15",
     "description": "Assunzione (ferragosto)",
+    "locale": "it-IT",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2026-10-04",
+    "description": "Festa nazionale di San Francesco d'Assisi, patrono d'Italia",
     "locale": "it-IT",
     "notes": "",
     "region": "",
@@ -70,6 +86,14 @@
     "notes": "",
     "region": "",
     "type": "NRF"
+  },
+  {
+    "date": "2026-11-01",
+    "description": "Unità nazionale",
+    "locale": "it-IT",
+    "notes": "",
+    "region": "",
+    "type": "NF"
   },
   {
     "date": "2026-12-08",

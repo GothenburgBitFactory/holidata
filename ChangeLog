@@ -1,3 +1,7 @@
+- #137 IT: Add holiday 'Festa nazionale di San Francesco d'Assisi, patrono d'Italia'
+       IT: Add holiday 'Santi Apostoli Pietro e Paolo' for the municipality of Rome
+       IT: Add holiday 'Unità nazionale'
+       (thanks to Flavio Cris)
 - #124 Add Python EOL action
 - #123 Convert all countries into modules
 
