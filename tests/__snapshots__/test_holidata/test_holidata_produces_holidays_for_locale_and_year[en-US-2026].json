@@ -1,0 +1,130 @@
+[
+  {
+    "date": "2026-01-01",
+    "description": "New Year's Day",
+    "locale": "en-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2026-01-19",
+    "description": "Birthday of Martin Luther King, Jr.",
+    "locale": "en-US",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2026-02-16",
+    "description": "Washington's Birthday",
+    "locale": "en-US",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2026-04-20",
+    "description": "Patriots' Day",
+    "locale": "en-US",
+    "notes": "",
+    "region": "MA",
+    "type": "V"
+  },
+  {
+    "date": "2026-04-20",
+    "description": "Patriots' Day",
+    "locale": "en-US",
+    "notes": "",
+    "region": "ME",
+    "type": "V"
+  },
+  {
+    "date": "2026-05-25",
+    "description": "Memorial Day",
+    "locale": "en-US",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2026-06-19",
+    "description": "Juneteenth National Independence Day",
+    "locale": "en-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2026-07-03",
+    "description": "Independence Day (in lieu of)",
+    "locale": "en-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2026-07-04",
+    "description": "Independence Day",
+    "locale": "en-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2026-09-07",
+    "description": "Labor Day",
+    "locale": "en-US",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2026-10-12",
+    "description": "Columbus Day",
+    "locale": "en-US",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2026-11-11",
+    "description": "Veterans Day",
+    "locale": "en-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2026-11-26",
+    "description": "Thanksgiving Day",
+    "locale": "en-US",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2026-11-27",
+    "description": "Day after Thanksgiving",
+    "locale": "en-US",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2026-12-24",
+    "description": "Christmas Eve",
+    "locale": "en-US",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2026-12-25",
+    "description": "Christmas Day",
+    "locale": "en-US",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  }
+]

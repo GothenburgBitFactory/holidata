@@ -1,0 +1,106 @@
+[
+  {
+    "date": "2026-01-01",
+    "description": "Újév",
+    "locale": "hu-HU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2026-03-15",
+    "description": "Az 1848-as forradalom ünnepe",
+    "locale": "hu-HU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2026-04-03",
+    "description": "Nagypéntek",
+    "locale": "hu-HU",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2026-04-05",
+    "description": "Húsvét",
+    "locale": "hu-HU",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2026-04-06",
+    "description": "Húsvéthétfő",
+    "locale": "hu-HU",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2026-05-01",
+    "description": "A munka ünnepe",
+    "locale": "hu-HU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2026-05-24",
+    "description": "Pünkösd",
+    "locale": "hu-HU",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2026-05-25",
+    "description": "Pünkösdhétfő",
+    "locale": "hu-HU",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2026-08-20",
+    "description": "Az államalapítás ünnepe",
+    "locale": "hu-HU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2026-10-23",
+    "description": "Az 1956-os forradalom ünnepe",
+    "locale": "hu-HU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2026-11-01",
+    "description": "Mindenszentek",
+    "locale": "hu-HU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2026-12-25",
+    "description": "Karácsony",
+    "locale": "hu-HU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2026-12-26",
+    "description": "Karácsony",
+    "locale": "hu-HU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  }
+]
