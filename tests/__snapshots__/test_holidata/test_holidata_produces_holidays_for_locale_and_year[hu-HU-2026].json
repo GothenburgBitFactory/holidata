@@ -8,6 +8,14 @@
     "type": "NF"
   },
   {
+    "date": "2026-01-02",
+    "description": "Munkaszüneti nap",
+    "locale": "hu-HU",
+    "notes": "2026-01-10 munkanap",
+    "region": "",
+    "type": "NF"
+  },
+  {
     "date": "2026-03-15",
     "description": "Az 1848-as forradalom ünnepe",
     "locale": "hu-HU",
@@ -72,6 +80,14 @@
     "type": "NF"
   },
   {
+    "date": "2026-08-21",
+    "description": "Munkaszüneti nap",
+    "locale": "hu-HU",
+    "notes": "2026-08-08 munkanap",
+    "region": "",
+    "type": "NF"
+  },
+  {
     "date": "2026-10-23",
     "description": "Az 1956-os forradalom ünnepe",
     "locale": "hu-HU",
@@ -86,6 +102,14 @@
     "notes": "",
     "region": "",
     "type": "NRF"
+  },
+  {
+    "date": "2026-12-24",
+    "description": "Munkaszüneti nap",
+    "locale": "hu-HU",
+    "notes": "2026-12-12 munkanap",
+    "region": "",
+    "type": "NF"
   },
   {
     "date": "2026-12-25",
