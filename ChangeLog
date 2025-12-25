@@ -1,3 +1,5 @@
+-      Upgrade requirement arrow to 1.4.0
+-      Upgrade test requirements pytest to 9.0.2 and syrupy to 5.0.0
 - #140 AU: Fix date of Labour Day in Western Australia
 - #139 HU: Add non-working days for 2026
 - #138 ES: Add holidays for 2026

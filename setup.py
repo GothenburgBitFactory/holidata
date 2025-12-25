@@ -33,13 +33,13 @@ setup(
     include_package_data=True,
     python_requires=">=3.10, <4",
     install_requires=[
-        "arrow >= 1.3.0",
+        "arrow >= 1.4.0",
         "docopt >= 0.6.2",
     ],
     extras_require={
         "test": [
-            "pytest >= 8.3.5",
-            "syrupy >= 4.9.0",
+            "pytest >= 9.0.2",
+            "syrupy >= 5.0.0",
         ]
     },
     scripts=["bin/holidata"],
