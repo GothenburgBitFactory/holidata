@@ -14,7 +14,7 @@ class VC(Region):
 
         self.define_holiday() \
             .with_name("San Juan") \
-            .in_years([2019, 2020, 2021, 2022, 2023, 2024, 2025]) \
+            .in_years([2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]) \
             .on(month=6, day=24) \
             .with_flags("RF")
 
@@ -26,7 +26,7 @@ class VC(Region):
 
         self.define_holiday() \
             .with_name("San José") \
-            .in_years([2011, 2012, 2013, 2014, 2015, 2016, 2018, 2019, 2020, 2021, 2022, 2024, 2025]) \
+            .in_years([2011, 2012, 2013, 2014, 2015, 2016, 2018, 2019, 2020, 2021, 2022, 2024, 2025, 2026]) \
             .on(month=3, day=19) \
             .with_flags("RF")
 

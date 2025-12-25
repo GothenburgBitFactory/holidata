@@ -14,7 +14,7 @@ class NC(Region):
 
         self.define_holiday() \
             .with_name("San José") \
-            .in_years([2012, 2014, 2015, 2019, 2020, 2021]) \
+            .in_years([2012, 2014, 2015, 2019, 2020, 2021, 2026]) \
             .on(month=3, day=19) \
             .with_flags("RF")
 
@@ -39,6 +39,12 @@ class NC(Region):
             .in_years([2011, 2013, 2015, 2016, 2017, 2022]) \
             .on(month=7, day=25) \
             .with_flags("RF")
+
+        self.define_holiday() \
+            .with_name("Lunes siguiente a Todos los Santos") \
+            .in_years([2026]) \
+            .on(month=11, day=2) \
+            .with_flags("F")
 
         self.define_holiday() \
             .with_name("Lunes siguiente al Día de la Constitución Española") \

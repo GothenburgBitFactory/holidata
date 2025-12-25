@@ -26,7 +26,7 @@ class PV(Region):
 
         self.define_holiday() \
             .with_name("San José") \
-            .in_years([2015, 2019, 2020, 2021]) \
+            .in_years([2015, 2019, 2020, 2021, 2026]) \
             .on(month=3, day=19) \
             .with_flags("RF")
 
@@ -49,7 +49,7 @@ class PV(Region):
 
         self.define_holiday() \
             .with_name("Santiago Apóstol / Día Nacional de Galicia") \
-            .in_years([2023, 2024, 2025]) \
+            .in_years([2023, 2024, 2025, 2026]) \
             .on(month=7, day=25) \
             .with_flags("RF")
 

@@ -26,13 +26,13 @@ class ML(Region):
 
         self.define_holiday() \
             .with_name("Fiesta del Eid Fitr") \
-            .in_years([2022, 2023, 2025]) \
+            .in_years([2022, 2023, 2025, 2026]) \
             .on(ML.day_of_eid_fitr) \
             .with_flags("RV")
 
         self.define_holiday() \
             .with_name("Fiesta del Sacrificio (Aid Al Adha)") \
-            .in_years([2022, 2023, 2024, 2025]) \
+            .in_years([2022, 2023, 2024, 2025, 2026]) \
             .on(ML.holiday_aid_al_adha) \
             .with_flags("RV")
 
@@ -55,7 +55,7 @@ class ML(Region):
 
         self.define_holiday() \
             .with_name("Lunes siguiente al Día de la Constitución Española") \
-            .in_years([2015, 2020]) \
+            .in_years([2015, 2020, 2026]) \
             .on(month=12, day=7) \
             .with_flags("F")
 
@@ -101,6 +101,7 @@ class ML(Region):
             2023: SmartDayArrow(year, 6, 29),
             2024: SmartDayArrow(year, 6, 17),
             2025: SmartDayArrow(year, 6, 6),
+            2026: SmartDayArrow(year, 5, 27),
         }
         return dates.get(year)
 
@@ -110,5 +111,6 @@ class ML(Region):
             2022: SmartDayArrow(year, 5, 3),
             2023: SmartDayArrow(year, 4, 21),
             2025: SmartDayArrow(year, 3, 31),
+            2026: SmartDayArrow(year, 3, 20),
         }
         return dates.get(year)
