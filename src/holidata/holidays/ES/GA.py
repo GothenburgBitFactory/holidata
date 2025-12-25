@@ -8,13 +8,13 @@ class GA(Region):
 
         self.define_holiday() \
             .with_name("San Juan") \
-            .in_years([2013, 2016, 2020, 2022]) \
+            .in_years([2013, 2016, 2020, 2022, 2026]) \
             .on(month=6, day=24) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("San José") \
-            .in_years([2011, 2019, 2020, 2021]) \
+            .in_years([2011, 2019, 2020, 2021, 2026]) \
             .on(month=3, day=19) \
             .with_flags("RF")
 

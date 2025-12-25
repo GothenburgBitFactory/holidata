@@ -43,7 +43,7 @@ class CN(Region):
 
         self.define_holiday() \
             .with_name("Lunes siguiente a Todos los Santos") \
-            .in_years([2015]) \
+            .in_years([2015, 2026]) \
             .on(month=11, day=2) \
             .with_flags("F")
 

@@ -14,13 +14,13 @@ class CE(Region):
 
         self.define_holiday() \
             .with_name("Nuestra Señora de África") \
-            .in_years([2022, 2023, 2024, 2025]) \
+            .in_years([2022, 2023, 2024, 2025, 2026]) \
             .on(month=8, day=5) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Día de Ceuta") \
-            .in_years([2016, 2017, 2019, 2020, 2021, 2022, 2023]) \
+            .in_years([2016, 2017, 2019, 2020, 2021, 2022, 2023, 2026]) \
             .on(month=9, day=2) \
             .with_flags("F")
 
@@ -94,6 +94,7 @@ class CE(Region):
             2023: SmartDayArrow(year, 6, 29),
             2024: SmartDayArrow(year, 6, 17),
             2025: SmartDayArrow(year, 6, 6),
+            2026: SmartDayArrow(year, 5, 27),
         }
 
         return dates.get(year)
