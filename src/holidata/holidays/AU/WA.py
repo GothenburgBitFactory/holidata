@@ -208,7 +208,7 @@ class WA(Region):
             date = SmartDayArrow(year, month, day)
 
             if date.weekday() in ["saturday", "sunday"]:
-                date.shift_to_weekday("monday", including=True)
+                return date.shift_to_weekday("monday", including=True)
 
             return date
 

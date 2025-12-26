@@ -404,32 +404,8 @@
     "description": "Anzac Day",
     "locale": "en-AU",
     "notes": "",
-    "region": "ACT",
-    "type": "V"
-  },
-  {
-    "date": "2021-04-25",
-    "description": "Anzac Day",
-    "locale": "en-AU",
-    "notes": "",
     "region": "NSW",
     "type": "F"
-  },
-  {
-    "date": "2021-04-25",
-    "description": "Anzac Day",
-    "locale": "en-AU",
-    "notes": "",
-    "region": "NT",
-    "type": "V"
-  },
-  {
-    "date": "2021-04-25",
-    "description": "Anzac Day",
-    "locale": "en-AU",
-    "notes": "",
-    "region": "QLD",
-    "type": "V"
   },
   {
     "date": "2021-04-25",
@@ -462,6 +438,30 @@
     "notes": "",
     "region": "WA",
     "type": "F"
+  },
+  {
+    "date": "2021-04-26",
+    "description": "Anzac Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "ACT",
+    "type": "V"
+  },
+  {
+    "date": "2021-04-26",
+    "description": "Anzac Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "NT",
+    "type": "V"
+  },
+  {
+    "date": "2021-04-26",
+    "description": "Anzac Day",
+    "locale": "en-AU",
+    "notes": "",
+    "region": "QLD",
+    "type": "V"
   },
   {
     "date": "2021-04-26",

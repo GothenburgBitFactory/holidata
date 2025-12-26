@@ -1,3 +1,5 @@
+- #141 AU: Fix dates for 'Australia Day' and 'Anzac Day'
+
 2025.12.0
 -      Upgrade requirement arrow to 1.4.0
 -      Upgrade test requirements pytest to 9.0.2 and syrupy to 5.0.0
