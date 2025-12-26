@@ -1,5 +1,5 @@
 from holidata.holiday import Region
-from holidata.utils import day, date
+from holidata.utils import day, date, Month
 
 
 class CL(Region):
@@ -9,13 +9,13 @@ class CL(Region):
         self.define_holiday() \
             .with_name("Lunes siguiente al Año Nuevo") \
             .in_years([2017, 2023]) \
-            .on(date(month=1, day=2)) \
+            .on(date(Month.JANUARY, 2)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Lunes siguiente a la Epifanía del Señor") \
             .in_years([2013, 2019]) \
-            .on(date(month=1, day=7)) \
+            .on(date(Month.JANUARY, 7)) \
             .with_flags("RF")
 
         self.define_holiday() \
@@ -26,43 +26,43 @@ class CL(Region):
         self.define_holiday() \
             .with_name("San José") \
             .in_years([2012]) \
-            .on(date(month=3, day=19)) \
+            .on(date(Month.MARCH, 19)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Santiago Apóstol / Día Nacional de Galicia") \
             .in_years([2023]) \
-            .on(date(month=7, day=25)) \
+            .on(date(Month.JULY, 25)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Lunes siguiente a la Asunción de la Virgen") \
             .in_years([2021]) \
-            .on(date(month=8, day=16)) \
+            .on(date(Month.AUGUST, 16)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Lunes siguiente a la Fiesta Nacional de España") \
             .in_years([2014, 2025]) \
-            .on(date(month=10, day=13)) \
+            .on(date(Month.OCTOBER, 13)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Lunes siguiente a Todos los Santos") \
             .in_years([2015, 2020, 2026]) \
-            .on(date(month=11, day=2)) \
+            .on(date(Month.NOVEMBER, 2)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Lunes siguiente al Día de la Constitución Española") \
             .in_years([2015, 2020, 2026]) \
-            .on(date(month=12, day=7)) \
+            .on(date(Month.DECEMBER, 7)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Lunes siguiente a La Inmaculada Concepción") \
             .in_years([2013, 2019, 2024]) \
-            .on(date(month=12, day=9)) \
+            .on(date(Month.DECEMBER, 9)) \
             .with_flags("RF")
 
         self.define_holiday() \
@@ -79,30 +79,30 @@ class CL(Region):
         self.define_holiday() \
             .with_name("Lunes siguiente a la Fiesta del Trabajo") \
             .in_years([2016, 2022]) \
-            .on(date(month=5, day=2)) \
+            .on(date(Month.MAY, 2)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Santiago Apóstol") \
             .in_years([2011]) \
-            .on(date(month=7, day=25)) \
+            .on(date(Month.JULY, 25)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Lunes siguiente a la Natividad del Señor") \
             .in_years([2022]) \
-            .on(date(month=12, day=26)) \
+            .on(date(Month.DECEMBER, 26)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("San Esteban") \
             .in_years([2011, 2016, 2018]) \
-            .on(date(month=12, day=26)) \
+            .on(date(Month.DECEMBER, 26)) \
             .with_flags("RF")
 
     @staticmethod
     def day_fiesta_de_castilla_y_leon(year):
         if year == 2017:
-            return date(4, 24)(year)
+            return date(Month.APRIL, 24)(year)
         else:
-            return date(4, 23)(year)
+            return date(Month.APRIL, 23)(year)

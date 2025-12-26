@@ -1,7 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
 from holidata.holiday import Country
-from holidata.utils import day, date
+from holidata.utils import day, date, Month
 
 __all__ = [
     "EE",
@@ -23,47 +23,47 @@ class EE(Country):
 
         self.define_holiday() \
             .with_name("Uusaasta") \
-            .on(date(month=1, day=1)) \
+            .on(date(Month.JANUARY, 1)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Iseseisvuspäev, Eesti Vabariigi aastapäev") \
-            .on(date(month=2, day=24)) \
+            .on(date(Month.FEBRUARY, 24)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Kevadpüha") \
-            .on(date(month=5, day=1)) \
+            .on(date(Month.MAY, 1)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Võidupüha") \
-            .on(date(month=6, day=23)) \
+            .on(date(Month.JUNE, 23)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Jaanipäev") \
-            .on(date(month=6, day=24)) \
+            .on(date(Month.JUNE, 24)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Taasiseseisvumispäev") \
-            .on(date(month=8, day=20)) \
+            .on(date(Month.AUGUST, 20)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Jõululaupäev") \
-            .on(date(month=12, day=24)) \
+            .on(date(Month.DECEMBER, 24)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Esimene jõulupüha") \
-            .on(date(month=12, day=25)) \
+            .on(date(Month.DECEMBER, 25)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Teine jõulupüha") \
-            .on(date(month=12, day=26)) \
+            .on(date(Month.DECEMBER, 26)) \
             .with_flags("NF")
 
         self.define_holiday() \

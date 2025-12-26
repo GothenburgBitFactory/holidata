@@ -1,5 +1,5 @@
 from holidata.holiday import Region
-from holidata.utils import day, date
+from holidata.utils import day, date, Month
 
 
 class CT(Region):
@@ -9,13 +9,13 @@ class CT(Region):
         self.define_holiday() \
             .with_name("San Juan") \
             .in_years([2011, 2013, 2014, 2015, 2016, 2017, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]) \
-            .on(date(month=6, day=24)) \
+            .on(date(Month.JUNE, 24)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Fiesta Nacional de Cataluña") \
             .except_for([2011, 2016, 2022]) \
-            .on(date(month=9, day=11)) \
+            .on(date(Month.SEPTEMBER, 11)) \
             .with_flags("F")
 
         self.define_holiday() \
@@ -33,5 +33,5 @@ class CT(Region):
         self.define_holiday() \
             .with_name("San Esteban") \
             .except_for([2018, 2021]) \
-            .on(date(month=12, day=26)) \
+            .on(date(Month.DECEMBER, 26)) \
             .with_flags("RF")

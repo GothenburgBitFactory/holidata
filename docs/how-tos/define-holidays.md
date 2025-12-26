@@ -36,21 +36,22 @@ The Holidata library provides a set of _date functions_ to handle the different 
 The `date` function can be used for holidays taking place on a fixed date (_n-th day of a month_), e.g.:
 
 ```python
-date(month=1, day=1)    # January 1st
-date(month=12, day=25)  # December 25th
+date(Month.JANUARY, 1)    # January 1st
+date(Month.DECEMBER, 25)  # December 25th
 ```
 
 ### Weekday Occurrences
 
 For holidays which take place on a certain weekday of a month, there are the functions `first`, `second`, `third`, `fourth`, and `last` to handle those cases, e.g.:
+
 ```python
 # n-th occurrence of a weekday in a month
-first("monday").of("may")
-second("tuesday").of("june")
-third("wednesday").of("july")
-fourth("thursday").of("august")
+first(Weekday.MONDAY).of(Month.MAY)
+second(Weekday.TUESDAY).of(Month.JUNE)
+third(Weekday.WEDNESDAY).of(Month.JULY)
+fourth(Weekday.THURSDAY).of(Month.AUGUST)
 
-last("friday").of("september")
+last(Weekday.FRIDAY).of(Month.SEPTEMBER)
 ```
 
 ### Easter-Based Dates
@@ -82,14 +83,14 @@ day(2).before(<date_function>)  # 2 days before
 day(1).after(<date_function>)   # 1 day after 
 
 # Weekday before/after a date
-first("monday").before(<date_function>)
-second("tuesday").after(<date_function>)
+first(Weekday.MONDAY).before(<date_function>)
+second(Weekday.TUESDAY).after(<date_function>)
 ```
 
 Those calls can be nested. An example for this would be the German holiday _Buß- und Bettag_ which takes place on the 11th day before the first Advent Sunday, which is the fourth sunday before Christmas:
 
 ```python
-day(11).before(fourth("sunday").before(date(month=12, day=25)))
+day(11).before(fourth(Weekday.SUNDAY).before(date(Month.DECEMBER, 25)))
 ```
 
 ### Custom Date Functions

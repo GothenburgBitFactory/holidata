@@ -1,7 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
 from holidata.holiday import Country
-from holidata.utils import day, date
+from holidata.utils import day, date, Month
 
 __all__ = [
     "DK",
@@ -18,22 +18,22 @@ class DK(Country):
 
         self.define_holiday() \
             .with_name("Nytårsdag") \
-            .on(date(month=1, day=1)) \
+            .on(date(Month.JANUARY, 1)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Grundlovsdag") \
-            .on(date(month=6, day=5)) \
+            .on(date(Month.JUNE, 5)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Juledag") \
-            .on(date(month=12, day=25)) \
+            .on(date(Month.DECEMBER, 25)) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Anden juledag") \
-            .on(date(month=12, day=26)) \
+            .on(date(Month.DECEMBER, 26)) \
             .with_flags("NRF")
 
         self.define_holiday() \

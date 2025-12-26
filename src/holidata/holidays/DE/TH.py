@@ -1,5 +1,5 @@
 from holidata.holiday import Region
-from holidata.utils import day, date
+from holidata.utils import day, date, Month
 
 
 class TH(Region):
@@ -22,25 +22,26 @@ class TH(Region):
 
      Holidays marked with '*' are already covered by the definitions in __init__.py
     """
+
     def __init__(self, country):
         super().__init__("TH", country)
 
         self.define_holiday() \
             .with_name("Weltkindertag") \
             .since(2019) \
-            .on(date(month=9, day=20)) \
+            .on(date(Month.SEPTEMBER, 20)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Reformationstag") \
             .until(2016) \
-            .on(date(month=10, day=31)) \
+            .on(date(Month.OCTOBER, 31)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Reformationstag") \
             .since(2018) \
-            .on(date(month=10, day=31)) \
+            .on(date(Month.OCTOBER, 31)) \
             .with_flags("RF")
 
         self.define_holiday() \

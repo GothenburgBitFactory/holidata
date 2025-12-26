@@ -1,5 +1,5 @@
 from holidata.holiday import Region
-from holidata.utils import date
+from holidata.utils import date, Month
 
 
 class BB(Region):
@@ -12,11 +12,11 @@ class BB(Region):
         self.define_holiday() \
             .with_name("Reformationstag") \
             .until(2016) \
-            .on(date(month=10, day=31)) \
+            .on(date(Month.OCTOBER, 31)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Reformationstag") \
             .since(2018) \
-            .on(date(month=10, day=31)) \
+            .on(date(Month.OCTOBER, 31)) \
             .with_flags("RF")

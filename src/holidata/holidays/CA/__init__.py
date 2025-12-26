@@ -1,7 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
 from holidata.holiday import Country
-from holidata.utils import day, first, third, second, date
+from holidata.utils import day, first, third, second, date, Weekday, Month
 
 __all__ = [
     "CA",
@@ -45,7 +45,7 @@ class CA(Country):
                 "en": "New Year's Day",
                 "fr": "Jour de l'An",
             }) \
-            .on(date(month=1, day=1)) \
+            .on(date(Month.JANUARY, 1)) \
             .with_flags("NF")
 
         self.define_holiday() \
@@ -54,7 +54,7 @@ class CA(Country):
                 "fr": "Fête Nationale",
             }) \
             .in_regions(["QC"]) \
-            .on(date(month=6, day=24)) \
+            .on(date(Month.JUNE, 24)) \
             .with_flags("F")
 
         self.define_holiday() \
@@ -62,7 +62,7 @@ class CA(Country):
                 "en": "Canada Day",
                 "fr": "Fête du Canada",
             }) \
-            .on(date(month=7, day=1)) \
+            .on(date(Month.JULY, 1)) \
             .with_flags("NF")
 
         self.define_holiday() \
@@ -71,7 +71,7 @@ class CA(Country):
                 "fr": "Jour du Souvenir",
             }) \
             .in_regions(["AB", "BC", "NB", "NL", "NT"]) \
-            .on(date(month=11, day=11)) \
+            .on(date(Month.NOVEMBER, 11)) \
             .with_flags("F")
 
         self.define_holiday() \
@@ -79,7 +79,7 @@ class CA(Country):
                 "en": "Christmas Day",
                 "fr": "Jour de Noël",
             }) \
-            .on(date(month=12, day=25)) \
+            .on(date(Month.DECEMBER, 25)) \
             .with_flags("NRF")
 
         self.define_holiday() \
@@ -87,7 +87,7 @@ class CA(Country):
                 "en": "Boxing Day",
                 "fr": "Lendemain de Noël",
             }) \
-            .on(date(month=12, day=26)) \
+            .on(date(Month.DECEMBER, 26)) \
             .with_flags("NRF")
 
         self.define_holiday() \
@@ -113,7 +113,7 @@ class CA(Country):
                 "fr": "Fête de la Famille",
             }) \
             .in_regions(["AB", "ON", "SK", "NB"]) \
-            .on(third("monday").of("february")) \
+            .on(third(Weekday.MONDAY).of(Month.FEBRUARY)) \
             .with_flags("V")
 
         self.define_holiday() \
@@ -122,7 +122,7 @@ class CA(Country):
                 "fr": "Journée Louis Riel",
             }) \
             .in_regions(["MB"]) \
-            .on(third("monday").of("february")) \
+            .on(third(Weekday.MONDAY).of(Month.FEBRUARY)) \
             .with_flags("V")
 
         self.define_holiday() \
@@ -131,7 +131,7 @@ class CA(Country):
                 "fr": "Fête des Insulaires",
             }) \
             .in_regions(["PE"]) \
-            .on(third("monday").of("february")) \
+            .on(third(Weekday.MONDAY).of(Month.FEBRUARY)) \
             .with_flags("V")
 
         self.define_holiday() \
@@ -140,7 +140,7 @@ class CA(Country):
                 "fr": "Premier lundi d'août",
             }) \
             .in_regions(["NT", "NU"]) \
-            .on(first("monday").of("august")) \
+            .on(first(Weekday.MONDAY).of(Month.AUGUST)) \
             .with_flags("V")
 
         self.define_holiday() \
@@ -149,7 +149,7 @@ class CA(Country):
                 "fr": "Fête de la Saskatchewan",
             }) \
             .in_regions(["SK"]) \
-            .on(first("monday").of("august")) \
+            .on(first(Weekday.MONDAY).of(Month.AUGUST)) \
             .with_flags("V")
 
         self.define_holiday() \
@@ -158,7 +158,7 @@ class CA(Country):
                 "fr": "Fête du Patrimoine",
             }) \
             .in_regions(["AB"]) \
-            .on(first("monday").of("august")) \
+            .on(first(Weekday.MONDAY).of(Month.AUGUST)) \
             .with_flags("V")
 
         self.define_holiday() \
@@ -167,7 +167,7 @@ class CA(Country):
                 "fr": "Jour de la Fondation",
             }) \
             .in_regions(["NS"]) \
-            .on(first("monday").of("august")) \
+            .on(first(Weekday.MONDAY).of(Month.AUGUST)) \
             .with_flags("V")
 
         self.define_holiday() \
@@ -176,7 +176,7 @@ class CA(Country):
                 "fr": "Jour du Nouveau-Brunswick",
             }) \
             .in_regions(["NB"]) \
-            .on(first("monday").of("august")) \
+            .on(first(Weekday.MONDAY).of(Month.AUGUST)) \
             .with_flags("V")
 
         self.define_holiday() \
@@ -184,7 +184,7 @@ class CA(Country):
                 "en": "Labour Day",
                 "fr": "Fête du Travail",
             }) \
-            .on(first("monday").of("september")) \
+            .on(first(Weekday.MONDAY).of(Month.SEPTEMBER)) \
             .with_flags("NV")
 
         self.define_holiday() \
@@ -193,7 +193,7 @@ class CA(Country):
                 "fr": "Jour de l'Action de grâce",
             }) \
             .in_regions(["AB", "BC", "MB", "NL", "ON", "QC", "SK", "NT", "NU", "YT"]) \
-            .on(second("monday").of("october")) \
+            .on(second(Weekday.MONDAY).of(Month.OCTOBER)) \
             .with_flags("V")
 
         self.define_holiday() \
@@ -202,7 +202,7 @@ class CA(Country):
                 "fr": "Journée Nationale des Patriotes",
             }) \
             .in_regions(["QC"]) \
-            .on(first("monday").before(date(month=5, day=25))) \
+            .on(first(Weekday.MONDAY).before(date(Month.MAY, 25))) \
             .with_flags("V")
 
         self.define_holiday() \
@@ -211,5 +211,5 @@ class CA(Country):
                 "fr": "Fête de la Reine Victoria",
             }) \
             .in_regions(["AB", "BC", "MB", "NS", "ON", "SK", "NT", "NU", "YT"]) \
-            .on(first("monday").before(date(month=5, day=25))) \
+            .on(first(Weekday.MONDAY).before(date(Month.MAY, 25))) \
             .with_flags("V")

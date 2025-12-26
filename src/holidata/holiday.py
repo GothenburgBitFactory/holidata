@@ -26,7 +26,7 @@ class Holiday:
             "date": self.date.strftime("%Y-%m-%d"),
             "description": self.description,
             "type": self.flags,
-            "notes": self.notes
+            "notes": self.notes,
         }
 
 

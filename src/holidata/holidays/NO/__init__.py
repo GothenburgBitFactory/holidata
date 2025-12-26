@@ -1,7 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
 from holidata.holiday import Country
-from holidata.utils import day, date
+from holidata.utils import day, date, Month
 
 __all__ = [
     "NO",
@@ -18,42 +18,42 @@ class NO(Country):
 
         self.define_holiday() \
             .with_name("Nyttårsdag") \
-            .on(date(month=1, day=1)) \
+            .on(date(Month.JANUARY, 1)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Offentlig Høytidsdag") \
-            .on(date(month=5, day=1)) \
+            .on(date(Month.MAY, 1)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Frigjøringsdag 1945") \
-            .on(date(month=5, day=8)) \
+            .on(date(Month.MAY, 8)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Grunnlovsdag") \
-            .on(date(month=5, day=17)) \
+            .on(date(Month.MAY, 17)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Julaften") \
-            .on(date(month=12, day=24)) \
+            .on(date(Month.DECEMBER, 24)) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Juledag") \
-            .on(date(month=12, day=25)) \
+            .on(date(Month.DECEMBER, 25)) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Juledag") \
-            .on(date(month=12, day=26)) \
+            .on(date(Month.DECEMBER, 26)) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Nyttårsaften") \
-            .on(date(month=12, day=31)) \
+            .on(date(Month.DECEMBER, 31)) \
             .with_flags("NF")
 
         self.define_holiday() \

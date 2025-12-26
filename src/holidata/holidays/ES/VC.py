@@ -1,5 +1,5 @@
 from holidata.holiday import Region
-from holidata.utils import day, date
+from holidata.utils import day, date, Month
 
 
 class VC(Region):
@@ -9,25 +9,25 @@ class VC(Region):
         self.define_holiday() \
             .with_name("Lunes de Fallas") \
             .in_years([2013]) \
-            .on(date(month=3, day=18)) \
+            .on(date(Month.MARCH, 18)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("San Juan") \
             .in_years([2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]) \
-            .on(date(month=6, day=24)) \
+            .on(date(Month.JUNE, 24)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Día de la Comunitat Valenciana") \
             .except_for([2011, 2016, 2022]) \
-            .on(date(month=10, day=9)) \
+            .on(date(Month.OCTOBER, 9)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("San José") \
             .in_years([2011, 2012, 2013, 2014, 2015, 2016, 2018, 2019, 2020, 2021, 2022, 2024, 2025, 2026]) \
-            .on(date(month=3, day=19)) \
+            .on(date(Month.MARCH, 19)) \
             .with_flags("RF")
 
         self.define_holiday() \
@@ -45,17 +45,17 @@ class VC(Region):
         self.define_holiday() \
             .with_name("Lunes siguiente a la Fiesta del Trabajo") \
             .in_years([2011]) \
-            .on(date(month=5, day=2)) \
+            .on(date(Month.MAY, 2)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Lunes siguiente al Día de la Constitución Española") \
             .in_years([2015]) \
-            .on(date(month=12, day=7)) \
+            .on(date(Month.DECEMBER, 7)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("San Esteban") \
             .in_years([2016]) \
-            .on(date(month=12, day=26)) \
+            .on(date(Month.DECEMBER, 26)) \
             .with_flags("RF")

@@ -1,5 +1,5 @@
 from holidata.holiday import Region
-from holidata.utils import second, day, first, last, date
+from holidata.utils import second, day, first, last, date, Weekday, Month
 
 
 class VIC(Region):
@@ -15,14 +15,14 @@ class VIC(Region):
         """
         self.define_holiday() \
             .with_name("New Year's Day") \
-            .on(date(month=1, day=1)) \
+            .on(date(Month.JANUARY, 1)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("New Year's Day (observed)") \
-            .on(first("monday").after(date(month=1, day=1))) \
+            .on(first(Weekday.MONDAY).after(date(Month.JANUARY, 1))) \
             .with_flags("V") \
-            .on_condition(date(month=1, day=1).is_one_of(["saturday", "sunday"]))
+            .on_condition(date(Month.JANUARY, 1).is_one_of([Weekday.SATURDAY, Weekday.SUNDAY]))
 
         """
         Australia Day
@@ -33,14 +33,14 @@ class VIC(Region):
         """
         self.define_holiday() \
             .with_name("Australia Day") \
-            .on(date(month=1, day=26)) \
-            .on_condition(date(month=1, day=26).is_none_of(["saturday", "sunday"])) \
+            .on(date(Month.JANUARY, 26)) \
+            .on_condition(date(Month.JANUARY, 26).is_none_of([Weekday.SATURDAY, Weekday.SUNDAY])) \
             .with_flags("V")
 
         self.define_holiday() \
             .with_name("Australia Day") \
-            .on(first("monday").after(date(month=1, day=26))) \
-            .on_condition(date(month=1, day=26).is_one_of(["saturday", "sunday"])) \
+            .on(first(Weekday.MONDAY).after(date(Month.JANUARY, 26))) \
+            .on_condition(date(Month.JANUARY, 26).is_one_of([Weekday.SATURDAY, Weekday.SUNDAY])) \
             .with_flags("V")
 
         """
@@ -52,7 +52,7 @@ class VIC(Region):
         """
         self.define_holiday() \
             .with_name("Labour Day") \
-            .on(second("monday").of("march")) \
+            .on(second(Weekday.MONDAY).of(Month.MARCH)) \
             .with_flags("V")
 
         """
@@ -107,7 +107,7 @@ class VIC(Region):
         """
         self.define_holiday() \
             .with_name("Anzac Day") \
-            .on(date(month=4, day=25)) \
+            .on(date(Month.APRIL, 25)) \
             .with_flags("F")
 
         """
@@ -120,13 +120,13 @@ class VIC(Region):
         self.define_holiday() \
             .with_name("Queen's Birthday") \
             .until(2022) \
-            .on(second("monday").of("june")) \
+            .on(second(Weekday.MONDAY).of(Month.JUNE)) \
             .with_flags("V")
 
         self.define_holiday() \
             .with_name("King's Birthday") \
             .since(2023) \
-            .on(second("monday").of("june")) \
+            .on(second(Weekday.MONDAY).of(Month.JUNE)) \
             .with_flags("V")
 
         """
@@ -149,7 +149,7 @@ class VIC(Region):
         """
         self.define_holiday() \
             .with_name("Melbourne Cup Day") \
-            .on(first("tuesday").of("november")) \
+            .on(first(Weekday.TUESDAY).of(Month.NOVEMBER)) \
             .with_flags("V")
 
         """
@@ -160,20 +160,20 @@ class VIC(Region):
         """
         self.define_holiday() \
             .with_name("Christmas Day") \
-            .on(date(month=12, day=25)) \
+            .on(date(Month.DECEMBER, 25)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Christmas Day (observed)") \
-            .on(first("monday").after(date(month=12, day=25))) \
+            .on(first(Weekday.MONDAY).after(date(Month.DECEMBER, 25))) \
             .with_flags("RF") \
-            .on_condition(date(month=12, day=25).is_a("saturday"))
+            .on_condition(date(Month.DECEMBER, 25).is_a(Weekday.SATURDAY))
 
         self.define_holiday() \
             .with_name("Christmas Day (observed)") \
-            .on(first("tuesday").after(date(month=12, day=25))) \
+            .on(first(Weekday.TUESDAY).after(date(Month.DECEMBER, 25))) \
             .with_flags("RF") \
-            .on_condition(date(month=12, day=25).is_a("sunday"))
+            .on_condition(date(Month.DECEMBER, 25).is_a(Weekday.SUNDAY))
 
         """
         26 December (Boxing Day)
@@ -184,20 +184,20 @@ class VIC(Region):
         """
         self.define_holiday() \
             .with_name("Boxing Day") \
-            .on(date(month=12, day=26)) \
+            .on(date(Month.DECEMBER, 26)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Boxing Day (observed)") \
-            .on(first("monday").after(date(month=12, day=26))) \
+            .on(first(Weekday.MONDAY).after(date(Month.DECEMBER, 26))) \
             .with_flags("RF") \
-            .on_condition(date(month=12, day=26).is_a("saturday"))
+            .on_condition(date(Month.DECEMBER, 26).is_a(Weekday.SATURDAY))
 
         self.define_holiday() \
             .with_name("Boxing Day (observed)") \
-            .on(first("tuesday").after(date(month=12, day=26))) \
+            .on(first(Weekday.TUESDAY).after(date(Month.DECEMBER, 26))) \
             .with_flags("RF") \
-            .on_condition(date(month=12, day=26).is_a("sunday"))
+            .on_condition(date(Month.DECEMBER, 26).is_a(Weekday.SUNDAY))
 
     @staticmethod
     def friday_before_afl_grand_final(year):
@@ -205,13 +205,13 @@ class VIC(Region):
         Usually, the Friday before last Saturday in September
         """
         exception = {
-            2011: date(month=9, day=31),  # MCG was occupied by the International Cricket Council (ICC)
-            2015: date(month=10, day=2),  # Due to scheduling of the 2015 Rugby World Cup
-            2016: date(month=9, day=31),
-            2020: date(month=10, day=23),  # Adaption due to the COVID-19 pandemic
+            2011: date(Month.SEPTEMBER, 31),  # MCG was occupied by the International Cricket Council (ICC)
+            2015: date(Month.OCTOBER, 2),     # Due to scheduling of the 2015 Rugby World Cup
+            2016: date(Month.SEPTEMBER, 31),
+            2020: date(Month.OCTOBER, 23),    # Adaption due to the COVID-19 pandemic
         }
 
         if year in exception:
             return exception[year](year)
 
-        return first("friday").before(last("saturday").of("september"))(year)
+        return first(Weekday.FRIDAY).before(last(Weekday.SATURDAY).of(Month.SEPTEMBER))(year)

@@ -1,7 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
 from holidata.holiday import Country
-from holidata.utils import day, first, date
+from holidata.utils import day, first, date, Weekday, Month
 
 __all__ = [
     "IS",
@@ -18,27 +18,27 @@ class IS(Country):
 
         self.define_holiday() \
             .with_name("Nýársdagur") \
-            .on(date(month=1, day=1)) \
+            .on(date(Month.JANUARY, 1)) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Verkalýðsdagurinn") \
-            .on(date(month=5, day=1)) \
+            .on(date(Month.MAY, 1)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Þjóðhátíðardagurinn") \
-            .on(date(month=6, day=17)) \
+            .on(date(Month.JUNE, 17)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Jóladagur") \
-            .on(date(month=12, day=25)) \
+            .on(date(Month.DECEMBER, 25)) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Annar dagur jóla") \
-            .on(date(month=12, day=26)) \
+            .on(date(Month.DECEMBER, 26)) \
             .with_flags("NRF")
 
         self.define_holiday() \
@@ -78,12 +78,12 @@ class IS(Country):
 
         self.define_holiday() \
             .with_name("Frídagur verslunarmanna") \
-            .on(first("monday").of("august")) \
+            .on(first(Weekday.MONDAY).of(Month.AUGUST)) \
             .with_flags("NV")
 
         self.define_holiday() \
             .with_name("Sumardagurinn fyrsti") \
-            .on(first("thursday").after(date(month=4, day=18))) \
+            .on(first(Weekday.THURSDAY).after(date(Month.APRIL, 18))) \
             .with_flags("NV")
 
         """ 
@@ -92,12 +92,12 @@ class IS(Country):
         """
         self.define_holiday() \
             .with_name("Aðfangadagur jóla") \
-            .on(date(month=12, day=24)) \
+            .on(date(Month.DECEMBER, 24)) \
             .with_flags("NRF") \
             .annotated_with("Holiday from 13:00")
 
         self.define_holiday() \
             .with_name("Gamlársdagur") \
-            .on(date(month=12, day=31)) \
+            .on(date(Month.DECEMBER, 31)) \
             .with_flags("NF") \
             .annotated_with("Holiday from 13:00")

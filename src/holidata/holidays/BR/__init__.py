@@ -1,7 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
 from holidata.holiday import Country
-from holidata.utils import day, date
+from holidata.utils import day, date, Month
 
 __all__ = [
     "BR",
@@ -54,300 +54,300 @@ class BR(Country):
 
         self.define_holiday() \
             .with_name("Confraternização Universal") \
-            .on(date(month=1, day=1)) \
+            .on(date(Month.JANUARY, 1)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Criação do Estado de Rondônia") \
             .in_regions(["RO"]) \
-            .on(date(month=1, day=4)) \
+            .on(date(Month.JANUARY, 4)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Dia do Evangélico no Acre") \
             .in_regions(["AC"]) \
-            .on(date(month=1, day=23)) \
+            .on(date(Month.JANUARY, 23)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Revolução Pernambucana de 1817") \
             .in_regions(["PE"]) \
-            .on(date(month=3, day=6)) \
+            .on(date(Month.MARCH, 6)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Dia Internacional da Mulher") \
             .in_regions(["AC"]) \
-            .on(date(month=3, day=8)) \
+            .on(date(Month.MARCH, 8)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Autonomia do Estado de Tocantins") \
             .in_regions(["TO"]) \
-            .on(date(month=3, day=18)) \
+            .on(date(Month.MARCH, 18)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Dia de São José") \
             .in_regions(["AP", "CE"]) \
-            .on(date(month=3, day=19)) \
+            .on(date(Month.MARCH, 19)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Abolição da Escravidão no Ceará") \
             .in_regions(["CE"]) \
-            .on(date(month=3, day=25)) \
+            .on(date(Month.MARCH, 25)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Fundação de Brasília") \
             .in_regions(["DF"]) \
-            .on(date(month=4, day=21)) \
+            .on(date(Month.APRIL, 21)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Execução de Tiradentes") \
             .in_regions(["MG"]) \
-            .on(date(month=4, day=21)) \
+            .on(date(Month.APRIL, 21)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Tiradentes") \
-            .on(date(month=4, day=21)) \
+            .on(date(Month.APRIL, 21)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Dia de São Jorge") \
             .in_regions(["RJ"]) \
-            .on(date(month=4, day=23)) \
+            .on(date(Month.APRIL, 23)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Dia Internacional do Trabalhador") \
-            .on(date(month=5, day=1)) \
+            .on(date(Month.MAY, 1)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Aniversário do Estado do Acre") \
             .in_regions(["AC"]) \
-            .on(date(month=6, day=15)) \
+            .on(date(Month.JUNE, 15)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Dia do Evangélico em Rondônia") \
             .in_regions(["RO"]) \
-            .on(date(month=6, day=18)) \
+            .on(date(Month.JUNE, 18)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("São João") \
             .in_regions(["AL", "PE"]) \
-            .on(date(month=6, day=24)) \
+            .on(date(Month.JUNE, 24)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("São Pedro") \
             .in_regions(["AL"]) \
-            .on(date(month=6, day=29)) \
+            .on(date(Month.JUNE, 29)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Independência da Bahia") \
             .in_regions(["BA"]) \
-            .on(date(month=7, day=2)) \
+            .on(date(Month.JULY, 2)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Emancipação Política de Sergipe") \
             .in_regions(["SE"]) \
-            .on(date(month=7, day=8)) \
+            .on(date(Month.JULY, 8)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Revolução Constitucionalista de 1932") \
             .in_regions(["SP"]) \
-            .on(date(month=7, day=9)) \
+            .on(date(Month.JULY, 9)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Fundação da Cidade de Goiás") \
             .in_regions(["GO"]) \
-            .on(date(month=7, day=26)) \
+            .on(date(Month.JULY, 26)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Adesão do Maranhão à Independência do Brasil") \
             .in_regions(["MA"]) \
-            .on(date(month=7, day=28)) \
+            .on(date(Month.JULY, 28)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Fundação do Estado da Paraíba") \
             .in_regions(["PB"]) \
-            .on(date(month=8, day=5)) \
+            .on(date(Month.AUGUST, 5)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Dia do Rio Grande do Norte") \
             .in_regions(["RN"]) \
-            .on(date(month=8, day=7)) \
+            .on(date(Month.AUGUST, 7)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Dia de Santa Catarina") \
             .in_regions(["SC"]) \
-            .on(date(month=8, day=11)) \
+            .on(date(Month.AUGUST, 11)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Dia de Nossa Senhora da Assunção") \
             .in_regions(["CE"]) \
-            .on(date(month=8, day=15)) \
+            .on(date(Month.AUGUST, 15)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Adesão do Pará à Independência do Brasil") \
             .in_regions(["PA"]) \
-            .on(date(month=8, day=15)) \
+            .on(date(Month.AUGUST, 15)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Dia da Amazônia") \
             .in_regions(["AC"]) \
-            .on(date(month=9, day=5)) \
+            .on(date(Month.SEPTEMBER, 5)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Elevação do Amazonas à Categoria de Província") \
             .in_regions(["AM"]) \
-            .on(date(month=9, day=5)) \
+            .on(date(Month.SEPTEMBER, 5)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Independência do Brasil") \
-            .on(date(month=9, day=7)) \
+            .on(date(Month.SEPTEMBER, 7)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Nossa Senhora da Natividade") \
             .in_regions(["TO"]) \
-            .on(date(month=9, day=8)) \
+            .on(date(Month.SEPTEMBER, 8)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Criação do Território Federal do Amapá") \
             .in_regions(["AP"]) \
-            .on(date(month=9, day=13)) \
+            .on(date(Month.SEPTEMBER, 13)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Emancipação Política do Alagoas") \
             .in_regions(["AL"]) \
-            .on(date(month=9, day=16)) \
+            .on(date(Month.SEPTEMBER, 16)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Dia do Gaúcho") \
             .in_regions(["RS"]) \
-            .on(date(month=9, day=20)) \
+            .on(date(Month.SEPTEMBER, 20)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Mártires de Cunhaú e Uruaçu") \
             .in_regions(["RN"]) \
-            .on(date(month=10, day=3)) \
+            .on(date(Month.OCTOBER, 3)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Criação dos Estado de Roraima") \
             .in_regions(["RR"]) \
-            .on(date(month=10, day=5)) \
+            .on(date(Month.OCTOBER, 5)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Criação dos Estado de Tocantins") \
             .in_regions(["TO"]) \
-            .on(date(month=10, day=5)) \
+            .on(date(Month.OCTOBER, 5)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Criação do Estado do Mato Grosso do Sul") \
             .in_regions(["MS"]) \
-            .on(date(month=10, day=11)) \
+            .on(date(Month.OCTOBER, 11)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Nossa Senhora Aparecida") \
-            .on(date(month=10, day=12)) \
+            .on(date(Month.OCTOBER, 12)) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Dia do Piauí") \
             .in_regions(["PI"]) \
-            .on(date(month=10, day=19)) \
+            .on(date(Month.OCTOBER, 19)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Pedra Fundamental de Goiânia") \
             .in_regions(["GO"]) \
-            .on(date(month=10, day=24)) \
+            .on(date(Month.OCTOBER, 24)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Finados") \
-            .on(date(month=11, day=2)) \
+            .on(date(Month.NOVEMBER, 2)) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Proclamação da República") \
-            .on(date(month=11, day=15)) \
+            .on(date(Month.NOVEMBER, 15)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Assinatura do Tratado de Petrópolis") \
             .in_regions(["AC"]) \
-            .on(date(month=11, day=17)) \
+            .on(date(Month.NOVEMBER, 17)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Morte de Zumbi dos Palmares") \
             .in_regions(["AL"]) \
-            .on(date(month=11, day=20)) \
+            .on(date(Month.NOVEMBER, 20)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Dia da Consciência Negra") \
             .in_regions(["AM", "MT", "RJ"]) \
-            .on(date(month=11, day=20)) \
+            .on(date(Month.NOVEMBER, 20)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Dia de Santa Catarina de Alexandria") \
             .in_regions(["SC"]) \
-            .on(date(month=11, day=25)) \
+            .on(date(Month.NOVEMBER, 25)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Dia do Evangélico do Distrito Federal") \
             .in_regions(["DF"]) \
-            .on(date(month=11, day=30)) \
+            .on(date(Month.NOVEMBER, 30)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Nossa Senhora da Conceição") \
             .in_regions(["AM"]) \
-            .on(date(month=12, day=8)) \
+            .on(date(Month.DECEMBER, 8)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Emancipação Política do Estado do Paraná") \
             .in_regions(["PR"]) \
-            .on(date(month=12, day=19)) \
+            .on(date(Month.DECEMBER, 19)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Natal") \
-            .on(date(month=12, day=25)) \
+            .on(date(Month.DECEMBER, 25)) \
             .with_flags("NRF")
 
         self.define_holiday() \

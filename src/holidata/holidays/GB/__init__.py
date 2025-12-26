@@ -1,7 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
 from holidata.holiday import Country
-from holidata.utils import day, first, last, date
+from holidata.utils import day, first, last, date, Weekday, Month
 
 __all__ = [
     "GB",
@@ -18,48 +18,48 @@ class GB(Country):
 
         self.define_holiday() \
             .with_name("New Year's Day") \
-            .on(date(month=1, day=1)) \
+            .on(date(Month.JANUARY, 1)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("New Year's Day (observed)") \
-            .on(first("monday").after(date(month=1, day=1))) \
+            .on(first(Weekday.MONDAY).after(date(Month.JANUARY, 1))) \
             .with_flags("NV") \
-            .on_condition(date(month=1, day=1).is_one_of(["saturday", "sunday"]))
+            .on_condition(date(Month.JANUARY, 1).is_one_of([Weekday.SATURDAY, Weekday.SUNDAY]))
 
         self.define_holiday() \
             .with_name("Christmas Day") \
-            .on(date(month=12, day=25)) \
+            .on(date(Month.DECEMBER, 25)) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Christmas Day (observed)") \
-            .on(first("monday").after(date(month=12, day=25))) \
+            .on(first(Weekday.MONDAY).after(date(Month.DECEMBER, 25))) \
             .with_flags("NV")  \
-            .on_condition(date(month=12, day=25).is_a("saturday"))
+            .on_condition(date(Month.DECEMBER, 25).is_a(Weekday.SATURDAY))
 
         self.define_holiday() \
             .with_name("Christmas Day (observed)") \
-            .on(first("tuesday").after(date(month=12, day=25))) \
+            .on(first(Weekday.TUESDAY).after(date(Month.DECEMBER, 25))) \
             .with_flags("NV")  \
-            .on_condition(date(month=12, day=25).is_a("sunday"))
+            .on_condition(date(Month.DECEMBER, 25).is_a(Weekday.SUNDAY))
 
         self.define_holiday() \
             .with_name("Boxing Day") \
-            .on(date(month=12, day=26)) \
+            .on(date(Month.DECEMBER, 26)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Boxing Day (observed)") \
-            .on(first("monday").after(date(month=12, day=26), including=False)) \
+            .on(first(Weekday.MONDAY).after(date(Month.DECEMBER, 26), including=False)) \
             .with_flags("NV")  \
-            .on_condition(date(month=12, day=26).is_a("saturday"))
+            .on_condition(date(Month.DECEMBER, 26).is_a(Weekday.SATURDAY))
 
         self.define_holiday() \
             .with_name("Boxing Day (observed)") \
-            .on(first("tuesday").after(date(month=12, day=26), including=False)) \
+            .on(first(Weekday.TUESDAY).after(date(Month.DECEMBER, 26), including=False)) \
             .with_flags("NV")  \
-            .on_condition(date(month=12, day=26).is_a("sunday"))
+            .on_condition(date(Month.DECEMBER, 26).is_a(Weekday.SUNDAY))
 
         self.define_holiday() \
             .with_name("Good Friday") \
@@ -73,12 +73,12 @@ class GB(Country):
 
         self.define_holiday() \
             .with_name("Early May Bank Holiday") \
-            .on(first("monday").of("may")) \
+            .on(first(Weekday.MONDAY).of(Month.MAY)) \
             .with_flags("NV")
 
         self.define_holiday() \
             .with_name("August Bank Holiday") \
-            .on(last("monday").of("august")) \
+            .on(last(Weekday.MONDAY).of(Month.AUGUST)) \
             .with_flags("NV")
 
         self.define_holiday() \
@@ -92,7 +92,7 @@ class GB(Country):
         self.define_holiday() \
             .with_name("Coronation of King Charles III") \
             .in_years([2023]) \
-            .on(date(month=5, day=8)) \
+            .on(date(Month.MAY, 8)) \
             .with_flags("NV")
 
         """
@@ -101,7 +101,7 @@ class GB(Country):
         self.define_holiday() \
             .with_name("Queen's Diamond Jubilee") \
             .in_years([2012]) \
-            .on(date(month=6, day=5)) \
+            .on(date(Month.JUNE, 5)) \
             .with_flags("NV")
 
         """
@@ -110,7 +110,7 @@ class GB(Country):
         self.define_holiday() \
             .with_name("Queen's Platinum Jubilee") \
             .in_years([2022]) \
-            .on(date(month=6, day=3)) \
+            .on(date(Month.JUNE, 3)) \
             .with_flags("NV")
 
         """
@@ -119,7 +119,7 @@ class GB(Country):
         self.define_holiday() \
             .with_name("State Funeral of Queen Elizabeth II") \
             .in_years([2022]) \
-            .on(date(month=9, day=19)) \
+            .on(date(Month.SEPTEMBER, 19)) \
             .with_flags("NF")
 
     @staticmethod
@@ -130,8 +130,8 @@ class GB(Country):
         2022: Moved to June 2, because of Queen's Platinum Jubilee
         """
         if year == 2012:
-            return date(6, 4)(year)
+            return date(Month.JUNE, 4)(year)
         elif year == 2022:
-            return date(6, 2)(year)
+            return date(Month.JUNE, 2)(year)
         else:
-            return last("monday").of("may")(year)
+            return last(Weekday.MONDAY).of(Month.MAY)(year)
