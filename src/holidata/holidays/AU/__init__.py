@@ -19,7 +19,6 @@ class AU(Country):
     id = "AU"
     languages = ["en"]
     default_lang = "en"
-    regions = ["ACT", "NSW", "NT", "QLD", "SA", "TAS", "VIC", "WA"]
     easter_type = EASTER_WESTERN
 
     def __init__(self):
