@@ -1,7 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
 from holidata.holiday import Country
-from holidata.utils import first, second, third, fourth, last, day, date
+from holidata.utils import first, second, third, fourth, last, day, date, Weekday, Month
 
 __all__ = [
     "US",
@@ -22,7 +22,7 @@ class US(Country):
                 "en": "New Year's Day",
                 "es": "Año Neuvo",
             }) \
-            .on(date(month=1, day=1)) \
+            .on(date(Month.JANUARY, 1)) \
             .with_flags("NF")
 
         self.define_holiday() \
@@ -30,8 +30,8 @@ class US(Country):
                 "en": "New Year's Day (in lieu of)",
                 "es": "Año Neuvo (en lugar de)",
             }) \
-            .on(date(month=12, day=31)) \
-            .on_condition(date(month=12, day=31).is_a("friday")) \
+            .on(date(Month.DECEMBER, 31)) \
+            .on_condition(date(Month.DECEMBER, 31).is_a(Weekday.FRIDAY)) \
             .with_flags("NF")
 
         self.define_holiday() \
@@ -39,8 +39,8 @@ class US(Country):
                 "en": "New Year's Day (in lieu of)",
                 "es": "Año Neuvo (en lugar de)",
             }) \
-            .on(date(month=1, day=2)) \
-            .on_condition(date(month=1, day=1).is_a("sunday")) \
+            .on(date(Month.JANUARY, 2)) \
+            .on_condition(date(Month.JANUARY, 1).is_a(Weekday.SUNDAY)) \
             .with_flags("NF")
 
         self.define_holiday() \
@@ -49,7 +49,7 @@ class US(Country):
                 "es": "Juneteenth – Día de la Emancipación",
             }) \
             .since(2021) \
-            .on(date(month=6, day=19)) \
+            .on(date(Month.JUNE, 19)) \
             .with_flags("NF")
 
         self.define_holiday() \
@@ -58,8 +58,8 @@ class US(Country):
                 "es": "Juneteenth – Día de la Emancipación (en lugar de)",
             }) \
             .since(2021) \
-            .on(date(month=6, day=18)) \
-            .on_condition(date(month=6, day=19).is_a("saturday")) \
+            .on(date(Month.JUNE, 18)) \
+            .on_condition(date(Month.JUNE, 19).is_a(Weekday.SATURDAY)) \
             .with_flags("NF")
 
         self.define_holiday() \
@@ -68,8 +68,8 @@ class US(Country):
                 "es": "Juneteenth – Día de la Emancipación (en lugar de)",
             }) \
             .since(2021) \
-            .on(date(month=6, day=20)) \
-            .on_condition(date(month=6, day=19).is_a("sunday")) \
+            .on(date(Month.JUNE, 20)) \
+            .on_condition(date(Month.JUNE, 19).is_a(Weekday.SUNDAY)) \
             .with_flags("NF")
 
         self.define_holiday() \
@@ -77,7 +77,7 @@ class US(Country):
                 "en": "Independence Day",
                 "es": "Día de la Independiencia",
             }) \
-            .on(date(month=7, day=4)) \
+            .on(date(Month.JULY, 4)) \
             .with_flags("NF")
 
         self.define_holiday() \
@@ -85,8 +85,8 @@ class US(Country):
                 "en": "Independence Day (in lieu of)",
                 "es": "Día de la Independiencia (en lugar de)",
             }) \
-            .on(date(month=7, day=3)) \
-            .on_condition(date(month=7, day=4).is_a("saturday")) \
+            .on(date(Month.JULY, 3)) \
+            .on_condition(date(Month.JULY, 4).is_a(Weekday.SATURDAY)) \
             .with_flags("NF")
 
         self.define_holiday() \
@@ -94,8 +94,8 @@ class US(Country):
                 "en": "Independence Day (in lieu of)",
                 "es": "Día de la Independiencia (en lugar de)",
             }) \
-            .on(date(month=7, day=5)) \
-            .on_condition(date(month=7, day=4).is_a("sunday")) \
+            .on(date(Month.JULY, 5)) \
+            .on_condition(date(Month.JULY, 4).is_a(Weekday.SUNDAY)) \
             .with_flags("NF")
 
         self.define_holiday() \
@@ -103,7 +103,7 @@ class US(Country):
                 "en": "Veterans Day",
                 "es": "Día de los Veteranos",
             }) \
-            .on(date(month=11, day=11)) \
+            .on(date(Month.NOVEMBER, 11)) \
             .with_flags("NF")
 
         self.define_holiday() \
@@ -111,8 +111,8 @@ class US(Country):
                 "en": "Veterans Day (in lieu of)",
                 "es": "Día de los Veteranos (en lugar de)",
             }) \
-            .on(date(month=11, day=10)) \
-            .on_condition(date(month=11, day=11).is_a("saturday")) \
+            .on(date(Month.NOVEMBER, 10)) \
+            .on_condition(date(Month.NOVEMBER, 11).is_a(Weekday.SATURDAY)) \
             .with_flags("NF")
 
         self.define_holiday() \
@@ -120,8 +120,8 @@ class US(Country):
                 "en": "Veterans Day (in lieu of)",
                 "es": "Día de los Veteranos (en lugar de)",
             }) \
-            .on(date(month=11, day=12)) \
-            .on_condition(date(month=11, day=11).is_a("sunday")) \
+            .on(date(Month.NOVEMBER, 12)) \
+            .on_condition(date(Month.NOVEMBER, 11).is_a(Weekday.SUNDAY)) \
             .with_flags("NF")
 
         self.define_holiday() \
@@ -129,8 +129,8 @@ class US(Country):
                 "en": "Christmas Eve",
                 "es": "Nochebuena",
             }) \
-            .on(date(month=12, day=24)) \
-            .on_condition(date(month=12, day=25).is_not_a("saturday")) \
+            .on(date(Month.DECEMBER, 24)) \
+            .on_condition(date(Month.DECEMBER, 25).is_not_a(Weekday.SATURDAY)) \
             .with_flags("NRF")
 
         self.define_holiday() \
@@ -138,7 +138,7 @@ class US(Country):
                 "en": "Christmas Day",
                 "es": "Navidad",
             }) \
-            .on(date(month=12, day=25)) \
+            .on(date(Month.DECEMBER, 25)) \
             .with_flags("NRF")
 
         self.define_holiday() \
@@ -146,8 +146,8 @@ class US(Country):
                 "en": "Christmas Day (in lieu of)",
                 "es": "Navidad (en lugar de)",
             }) \
-            .on(date(month=12, day=24)) \
-            .on_condition(date(month=12, day=25).is_a("saturday")) \
+            .on(date(Month.DECEMBER, 24)) \
+            .on_condition(date(Month.DECEMBER, 25).is_a(Weekday.SATURDAY)) \
             .with_flags("NRF")
 
         self.define_holiday() \
@@ -155,8 +155,8 @@ class US(Country):
                 "en": "Christmas Day (in lieu of)",
                 "es": "Navidad (en lugar de)",
             }) \
-            .on(date(month=12, day=26)) \
-            .on_condition(date(month=12, day=25).is_a("sunday")) \
+            .on(date(Month.DECEMBER, 26)) \
+            .on_condition(date(Month.DECEMBER, 25).is_a(Weekday.SUNDAY)) \
             .with_flags("NRF")
 
         self.define_holiday() \
@@ -164,7 +164,7 @@ class US(Country):
                 "en": "Birthday of Martin Luther King, Jr.",
                 "es": "Cumpleaños de Martin Luther King, Jr.",
             }) \
-            .on(third("monday").of("January")) \
+            .on(third(Weekday.MONDAY).of(Month.JANUARY)) \
             .with_flags("NV")
 
         self.define_holiday() \
@@ -172,7 +172,7 @@ class US(Country):
                 "en": "Washington's Birthday",
                 "es": "Día del Presidente",
             }) \
-            .on(third("monday").of("february")) \
+            .on(third(Weekday.MONDAY).of(Month.FEBRUARY)) \
             .with_flags("NV")
 
         self.define_holiday() \
@@ -181,7 +181,7 @@ class US(Country):
                 "es": "Día del Patriota",
                 }) \
             .in_regions(["MA", "ME"]) \
-            .on(third("monday").of("april")) \
+            .on(third(Weekday.MONDAY).of(Month.APRIL)) \
             .with_flags("V")
 
         self.define_holiday() \
@@ -189,7 +189,7 @@ class US(Country):
                 "en": "Memorial Day",
                 "es": "Día de los Caídos",
             }) \
-            .on(last("monday").of("may")) \
+            .on(last(Weekday.MONDAY).of(Month.MAY)) \
             .with_flags("NV")
 
         self.define_holiday() \
@@ -197,7 +197,7 @@ class US(Country):
                 "en": "Labor Day",
                 "es": "Día del Trabajo",
             }) \
-            .on(first("monday").of("september")) \
+            .on(first(Weekday.MONDAY).of(Month.SEPTEMBER)) \
             .with_flags("NV")
 
         self.define_holiday() \
@@ -205,7 +205,7 @@ class US(Country):
                 "en": "Columbus Day",
                 "es": "Día de Columbus",
             }) \
-            .on(second("monday").of("october")) \
+            .on(second(Weekday.MONDAY).of(Month.OCTOBER)) \
             .with_flags("NV")
 
         self.define_holiday() \
@@ -213,7 +213,7 @@ class US(Country):
                 "en": "Thanksgiving Day",
                 "es": "Día de Acción de Gracias",
             }) \
-            .on(fourth("thursday").of("november")) \
+            .on(fourth(Weekday.THURSDAY).of(Month.NOVEMBER)) \
             .with_flags("NV")
 
         self.define_holiday() \
@@ -221,5 +221,5 @@ class US(Country):
                 "en": "Day after Thanksgiving",
                 "es": "Día después de Acción de Gracias",
             }) \
-            .on(day(1).after(fourth("thursday").of("november"))) \
+            .on(day(1).after(fourth(Weekday.THURSDAY).of(Month.NOVEMBER))) \
             .with_flags("NV")

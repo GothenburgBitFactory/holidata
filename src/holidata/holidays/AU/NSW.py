@@ -1,5 +1,5 @@
 from holidata.holiday import Region
-from holidata.utils import day, second, first, date
+from holidata.utils import day, second, first, date, Weekday, Month
 
 
 class NSW(Region):
@@ -16,14 +16,14 @@ class NSW(Region):
         """
         self.define_holiday() \
             .with_name("New Year's Day") \
-            .on(date(month=1, day=1)) \
+            .on(date(Month.JANUARY, 1)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("New Year's Day (observed)") \
-            .on(first("monday").after(date(month=1, day=1))) \
+            .on(first(Weekday.MONDAY).after(date(Month.JANUARY, 1))) \
             .with_flags("V") \
-            .on_condition(date(month=1, day=1).is_one_of(["saturday", "sunday"]))
+            .on_condition(date(Month.JANUARY, 1).is_one_of([Weekday.SATURDAY, Weekday.SUNDAY]))
 
         """
         Australia Day
@@ -35,14 +35,14 @@ class NSW(Region):
         """
         self.define_holiday() \
             .with_name("Australia Day") \
-            .on(date(month=1, day=26)) \
-            .on_condition(date(month=1, day=26).is_none_of(["saturday", "sunday"])) \
+            .on(date(Month.JANUARY, 26)) \
+            .on_condition(date(Month.JANUARY, 26).is_none_of([Weekday.SATURDAY, Weekday.SUNDAY])) \
             .with_flags("V")
 
         self.define_holiday() \
             .with_name("Australia Day") \
-            .on(first("monday").after(date(month=1, day=26))) \
-            .on_condition(date(month=1, day=26).is_one_of(["saturday", "sunday"])) \
+            .on(first(Weekday.MONDAY).after(date(Month.JANUARY, 26))) \
+            .on_condition(date(Month.JANUARY, 26).is_one_of([Weekday.SATURDAY, Weekday.SUNDAY])) \
             .with_flags("V")
 
         """
@@ -102,7 +102,7 @@ class NSW(Region):
         """
         self.define_holiday() \
             .with_name("Anzac Day") \
-            .on(date(month=4, day=25)) \
+            .on(date(Month.APRIL, 25)) \
             .with_flags("F")
 
         """
@@ -114,7 +114,7 @@ class NSW(Region):
         self.define_holiday() \
             .with_name("Queen's Birthday") \
             .until(2022) \
-            .on(second("monday").of("june")) \
+            .on(second(Weekday.MONDAY).of(Month.JUNE)) \
             .with_flags("V")
 
         """
@@ -125,7 +125,7 @@ class NSW(Region):
         self.define_holiday() \
             .with_name("King's Birthday") \
             .since(2023) \
-            .on(second("monday").of("june")) \
+            .on(second(Weekday.MONDAY).of(Month.JUNE)) \
             .with_flags("V")
 
         """
@@ -137,7 +137,7 @@ class NSW(Region):
         """
         self.define_holiday() \
             .with_name("Labour Day") \
-            .on(first("monday").of("october")) \
+            .on(first(Weekday.MONDAY).of(Month.OCTOBER)) \
             .with_flags("V")
 
         """
@@ -151,20 +151,20 @@ class NSW(Region):
         """
         self.define_holiday() \
             .with_name("Christmas Day") \
-            .on(date(month=12, day=25)) \
+            .on(date(Month.DECEMBER, 25)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Christmas Day (observed)") \
-            .on(first("monday").after(date(month=12, day=25))) \
+            .on(first(Weekday.MONDAY).after(date(Month.DECEMBER, 25))) \
             .with_flags("RV") \
-            .on_condition(date(month=12, day=25).is_a("saturday"))
+            .on_condition(date(Month.DECEMBER, 25).is_a(Weekday.SATURDAY))
 
         self.define_holiday() \
             .with_name("Christmas Day (observed)") \
-            .on(first("tuesday").after(date(month=12, day=25))) \
+            .on(first(Weekday.TUESDAY).after(date(Month.DECEMBER, 25))) \
             .with_flags("RV") \
-            .on_condition(date(month=12, day=25).is_a("sunday"))
+            .on_condition(date(Month.DECEMBER, 25).is_a(Weekday.SUNDAY))
 
         """
         Boxing Day
@@ -177,17 +177,17 @@ class NSW(Region):
         """
         self.define_holiday() \
             .with_name("Boxing Day") \
-            .on(date(month=12, day=26)) \
+            .on(date(Month.DECEMBER, 26)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Boxing Day (observed)") \
-            .on(first("monday").after(date(month=12, day=26))) \
+            .on(first(Weekday.MONDAY).after(date(Month.DECEMBER, 26))) \
             .with_flags("RV") \
-            .on_condition(date(month=12, day=26).is_a("saturday"))
+            .on_condition(date(Month.DECEMBER, 26).is_a(Weekday.SATURDAY))
 
         self.define_holiday() \
             .with_name("Boxing Day (observed)") \
-            .on(first("tuesday").after(date(month=12, day=26))) \
+            .on(first(Weekday.TUESDAY).after(date(Month.DECEMBER, 26))) \
             .with_flags("RV") \
-            .on_condition(date(month=12, day=26).is_a("sunday"))
+            .on_condition(date(Month.DECEMBER, 26).is_a(Weekday.SUNDAY))

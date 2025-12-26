@@ -1,5 +1,5 @@
 from holidata.holiday import Region
-from holidata.utils import day, date
+from holidata.utils import day, date, Month
 
 
 class ML(Region):
@@ -9,19 +9,19 @@ class ML(Region):
         self.define_holiday() \
             .with_name("Lunes siguiente al Año Nuevo") \
             .in_years([2017]) \
-            .on(date(month=1, day=2)) \
+            .on(date(Month.JANUARY, 2)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Lunes siguiente a la Epifanía del Señor") \
             .in_years([2013, 2019]) \
-            .on(date(month=1, day=7)) \
+            .on(date(Month.JANUARY, 7)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Estatuto de Autonomía de la Ciudad de Melilla") \
             .in_years([2020, 2021]) \
-            .on(date(month=3, day=13)) \
+            .on(date(Month.MARCH, 13)) \
             .with_flags("F")
 
         self.define_holiday() \
@@ -45,7 +45,7 @@ class ML(Region):
         self.define_holiday() \
             .with_name("San José") \
             .in_years([2011, 2012, 2013, 2014, 2015, 2016]) \
-            .on(date(month=3, day=19)) \
+            .on(date(Month.MARCH, 19)) \
             .with_flags("RF")
 
         self.define_holiday() \
@@ -56,61 +56,61 @@ class ML(Region):
         self.define_holiday() \
             .with_name("Lunes siguiente al Día de la Constitución Española") \
             .in_years([2015, 2020, 2026]) \
-            .on(date(month=12, day=7)) \
+            .on(date(Month.DECEMBER, 7)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Lunes siguiente a La Inmaculada Concepción") \
             .in_years([2019, 2024]) \
-            .on(date(month=12, day=9)) \
+            .on(date(Month.DECEMBER, 9)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Lunes siguiente a la Natividad del Señor") \
             .in_years([2022]) \
-            .on(date(month=12, day=26)) \
+            .on(date(Month.DECEMBER, 26)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("San Esteban") \
             .in_years([2011, 2016]) \
-            .on(date(month=12, day=26)) \
+            .on(date(Month.DECEMBER, 26)) \
             .with_flags("RF")
 
     @staticmethod
     def holiday_aid_el_kebir(year):
         dates = {
-            2011: date(11, 7),
-            2012: date(10, 26),
-            2013: date(10, 15),
-            2014: date(10, 4),
-            2015: date(9, 25),
-            2016: date(9, 12),
-            2017: date(9, 1),
-            2018: date(8, 22),
-            2019: date(8, 12),
-            2020: date(7, 31),
-            2021: date(7, 21),
+            2011: date(Month.NOVEMBER, 7),
+            2012: date(Month.OCTOBER, 26),
+            2013: date(Month.OCTOBER, 15),
+            2014: date(Month.OCTOBER, 4),
+            2015: date(Month.SEPTEMBER, 25),
+            2016: date(Month.SEPTEMBER, 12),
+            2017: date(Month.SEPTEMBER, 1),
+            2018: date(Month.AUGUST, 22),
+            2019: date(Month.AUGUST, 12),
+            2020: date(Month.JULY, 31),
+            2021: date(Month.JULY, 21),
         }
         return dates.get(year)(year) if year in dates else None
 
     @staticmethod
     def holiday_aid_al_adha(year):
         dates = {
-            2022: date(7, 11),
-            2023: date(6, 29),
-            2024: date(6, 17),
-            2025: date(6, 6),
-            2026: date(5, 27),
+            2022: date(Month.JULY, 11),
+            2023: date(Month.JUNE, 29),
+            2024: date(Month.JUNE, 17),
+            2025: date(Month.JUNE, 6),
+            2026: date(Month.MAY, 27),
         }
         return dates.get(year)(year) if year in dates else None
 
     @staticmethod
     def day_of_eid_fitr(year):
         dates = {
-            2022: date(5, 3),
-            2023: date(4, 21),
-            2025: date(3, 31),
-            2026: date(3, 20),
+            2022: date(Month.MAY, 3),
+            2023: date(Month.APRIL, 21),
+            2025: date(Month.MARCH, 31),
+            2026: date(Month.MARCH, 20),
         }
         return dates.get(year)(year) if year in dates else None

@@ -1,7 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
 from holidata.holiday import Country
-from holidata.utils import day, first, date
+from holidata.utils import day, first, date, Weekday, Month
 
 __all__ = [
     "FI",
@@ -25,7 +25,7 @@ class FI(Country):
                 "fi": "Uudenvuodenpäivä",
                 "sv": "Nyårsdagen",
             }) \
-            .on(date(month=1, day=1)) \
+            .on(date(Month.JANUARY, 1)) \
             .with_flags("NF")
 
         self.define_holiday() \
@@ -33,7 +33,7 @@ class FI(Country):
                 "fi": "Loppiainen",
                 "sv": "Trettondedagen",
             }) \
-            .on(date(month=1, day=6)) \
+            .on(date(Month.JANUARY, 6)) \
             .with_flags("NRF")
 
         self.define_holiday() \
@@ -41,7 +41,7 @@ class FI(Country):
                 "fi": "Vappu",
                 "sv": "Första maj",
             }) \
-            .on(date(month=5, day=1)) \
+            .on(date(Month.MAY, 1)) \
             .with_flags("NF")
 
         self.define_holiday() \
@@ -49,7 +49,7 @@ class FI(Country):
                 "fi": "Itsenäisyyspäivä",
                 "sv": "Självständighetsdagen",
             }) \
-            .on(date(month=12, day=6)) \
+            .on(date(Month.DECEMBER, 6)) \
             .with_flags("NF")
 
         self.define_holiday() \
@@ -57,7 +57,7 @@ class FI(Country):
                 "fi": "Joulupäivä",
                 "sv": "Juldagen",
             }) \
-            .on(date(month=12, day=25)) \
+            .on(date(Month.DECEMBER, 25)) \
             .with_flags("NRF")
 
         self.define_holiday() \
@@ -65,7 +65,7 @@ class FI(Country):
                 "fi": "Tapaninpäivä",
                 "sv": "Annandag jul",
             }) \
-            .on(date(month=12, day=26)) \
+            .on(date(Month.DECEMBER, 26)) \
             .with_flags("NRF")
 
         self.define_holiday() \
@@ -116,7 +116,7 @@ class FI(Country):
                 "fi": "Juhannuspäivä",
                 "sv": "Midsommardagen",
             }) \
-            .on(first("saturday").after(date(month=6, day=19))) \
+            .on(first(Weekday.SATURDAY).after(date(Month.JUNE, 19))) \
             .with_flags("NRV")
 
         """
@@ -127,5 +127,5 @@ class FI(Country):
                 "fi": "Pyhäinpäivä",
                 "sv": "Alla helgons dag",
             }) \
-            .on(first("saturday").after(date(month=10, day=30))) \
+            .on(first(Weekday.SATURDAY).after(date(Month.OCTOBER, 30))) \
             .with_flags("NRV")

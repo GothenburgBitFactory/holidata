@@ -1,7 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
 from holidata.holiday import Country
-from holidata.utils import date
+from holidata.utils import date, Month
 
 __all__ = [
     "TR",
@@ -24,37 +24,37 @@ class TR(Country):
 
         self.define_holiday() \
             .with_name("Yılbaşı") \
-            .on(date(month=1, day=1)) \
+            .on(date(Month.JANUARY, 1)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Ulusal Egemenlik ve Çocuk Bayramı") \
-            .on(date(month=4, day=23)) \
+            .on(date(Month.APRIL, 23)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Emek ve Dayanışma Günü") \
-            .on(date(month=5, day=1)) \
+            .on(date(Month.MAY, 1)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Atatürk'ü Anma, Gençlik ve Spor Bayramı") \
-            .on(date(month=5, day=19)) \
+            .on(date(Month.MAY, 19)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Zafer Bayramı") \
-            .on(date(month=8, day=30)) \
+            .on(date(Month.AUGUST, 30)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Cumhuriyet Bayramı") \
-            .on(date(month=10, day=29)) \
+            .on(date(Month.OCTOBER, 29)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Demokrasi ve Milli Birlik Günü") \
-            .on(date(month=7, day=15)) \
+            .on(date(Month.JULY, 15)) \
             .since(2017) \
             .with_flags("NF")
 
@@ -95,23 +95,23 @@ class TR(Country):
     @staticmethod
     def __ramazan_bayrami_reference(year):
         dates = {
-            2011: date(8, 29),
-            2012: date(8, 18),
-            2013: date(8, 7),
-            2014: date(7, 27),
-            2015: date(7, 16),
-            2016: date(7, 4),
-            2017: date(6, 24),
-            2018: date(6, 14),
-            2019: date(6, 4),
-            2020: date(5, 23),
-            2021: date(5, 12),
-            2022: date(5, 1),
-            2023: date(4, 20),
-            2024: date(4, 9),
-            2025: date(3, 29),
-            2026: date(3, 19),
-            2027: date(3, 8),
+            2011: date(Month.AUGUST, 29),
+            2012: date(Month.AUGUST, 18),
+            2013: date(Month.AUGUST, 7),
+            2014: date(Month.JULY, 27),
+            2015: date(Month.JULY, 16),
+            2016: date(Month.JULY, 4),
+            2017: date(Month.JUNE, 24),
+            2018: date(Month.JUNE, 14),
+            2019: date(Month.JUNE, 4),
+            2020: date(Month.MAY, 23),
+            2021: date(Month.MAY, 12),
+            2022: date(Month.MAY, 1),
+            2023: date(Month.APRIL, 20),
+            2024: date(Month.APRIL, 9),
+            2025: date(Month.MARCH, 29),
+            2026: date(Month.MARCH, 19),
+            2027: date(Month.MARCH, 8),
         }
 
         return dates.get(year)(year) if year in dates else None
@@ -119,23 +119,23 @@ class TR(Country):
     @staticmethod
     def __kurban_bayrami_reference(year):
         dates = {
-            2011: date(11, 5),
-            2012: date(10, 24),
-            2013: date(10, 14),
-            2014: date(10, 3),
-            2015: date(9, 23),
-            2016: date(9, 11),
-            2017: date(8, 31),
-            2018: date(8, 20),
-            2019: date(8, 10),
-            2020: date(7, 30),
-            2021: date(7, 19),
-            2022: date(7, 8),
-            2023: date(6, 27),
-            2024: date(6, 15),
-            2025: date(6, 5),
-            2026: date(5, 26),
-            2027: date(5, 15),
+            2011: date(Month.NOVEMBER, 5),
+            2012: date(Month.OCTOBER, 24),
+            2013: date(Month.OCTOBER, 14),
+            2014: date(Month.OCTOBER, 3),
+            2015: date(Month.SEPTEMBER, 23),
+            2016: date(Month.SEPTEMBER, 11),
+            2017: date(Month.AUGUST, 31),
+            2018: date(Month.AUGUST, 20),
+            2019: date(Month.AUGUST, 10),
+            2020: date(Month.JULY, 30),
+            2021: date(Month.JULY, 19),
+            2022: date(Month.JULY, 8),
+            2023: date(Month.JUNE, 27),
+            2024: date(Month.JUNE, 15),
+            2025: date(Month.JUNE, 5),
+            2026: date(Month.MAY, 26),
+            2027: date(Month.MAY, 15),
         }
 
         return dates.get(year)(year) if year in dates else None

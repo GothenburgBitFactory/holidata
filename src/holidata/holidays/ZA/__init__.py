@@ -1,7 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
 from holidata.holiday import Country
-from holidata.utils import day, date
+from holidata.utils import day, date, Weekday, Month
 
 __all__ = [
     "ZA",
@@ -18,7 +18,7 @@ class ZA(Country):
 
         self.define_holiday() \
             .with_name("Christmas Day") \
-            .on(date(month=12, day=25)) \
+            .on(date(Month.DECEMBER, 25)) \
             .with_flags("NF")
 
         self.define_holiday() \
@@ -33,108 +33,108 @@ class ZA(Country):
 
         self.define_holiday() \
             .with_name("New Year's Day") \
-            .on(date(month=1, day=1)) \
+            .on(date(Month.JANUARY, 1)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("New Year's Day (Supplement)") \
-            .on(date(month=1, day=2)) \
+            .on(date(Month.JANUARY, 2)) \
             .with_flags("NF") \
             .annotated_with("Supplement holiday") \
-            .on_condition(date(month=1, day=1).is_a("sunday"))
+            .on_condition(date(Month.JANUARY, 1).is_a(Weekday.SUNDAY))
 
         self.define_holiday() \
             .with_name("Human Rights Day") \
-            .on(date(month=3, day=21)) \
+            .on(date(Month.MARCH, 21)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Human Rights Day (Supplement)") \
-            .on(date(month=3, day=22)) \
+            .on(date(Month.MARCH, 22)) \
             .with_flags("NF") \
             .annotated_with("Supplement holiday") \
-            .on_condition(date(month=3, day=21).is_a("sunday"))
+            .on_condition(date(Month.MARCH, 21).is_a(Weekday.SUNDAY))
 
         self.define_holiday() \
             .with_name("Freedom Day") \
-            .on(date(month=4, day=27)) \
+            .on(date(Month.APRIL, 27)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Freedom Day (Supplement)") \
-            .on(date(month=4, day=28)) \
+            .on(date(Month.APRIL, 28)) \
             .with_flags("NF") \
             .annotated_with("Supplement holiday") \
-            .on_condition(date(month=4, day=27).is_a("sunday"))
+            .on_condition(date(Month.APRIL, 27).is_a(Weekday.SUNDAY))
 
         self.define_holiday() \
             .with_name("Worker's Day") \
-            .on(date(month=5, day=1)) \
+            .on(date(Month.MAY, 1)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Worker's Day (Supplement)") \
-            .on(date(month=5, day=2)) \
+            .on(date(Month.MAY, 2)) \
             .with_flags("NF") \
             .annotated_with("Supplement holiday") \
-            .on_condition(date(month=5, day=1).is_a("sunday"))
+            .on_condition(date(Month.MAY, 1).is_a(Weekday.SUNDAY))
 
         self.define_holiday() \
             .with_name("Youth Day") \
-            .on(date(month=6, day=16)) \
+            .on(date(Month.JUNE, 16)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Youth Day (Supplement)") \
-            .on(date(month=6, day=17)) \
+            .on(date(Month.JUNE, 17)) \
             .with_flags("NF") \
             .annotated_with("Supplement holiday") \
-            .on_condition(date(month=6, day=16).is_a("sunday"))
+            .on_condition(date(Month.JUNE, 16).is_a(Weekday.SUNDAY))
 
         self.define_holiday() \
             .with_name("National Women's Day") \
-            .on(date(month=8, day=9)) \
+            .on(date(Month.AUGUST, 9)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("National Women's Day (Supplement)") \
-            .on(date(month=8, day=10)) \
+            .on(date(Month.AUGUST, 10)) \
             .with_flags("NF") \
             .annotated_with("Supplement holiday") \
-            .on_condition(date(month=8, day=9).is_a("sunday"))
+            .on_condition(date(Month.AUGUST, 9).is_a(Weekday.SUNDAY))
 
         self.define_holiday() \
             .with_name("Heritage Day") \
-            .on(date(month=9, day=24)) \
+            .on(date(Month.SEPTEMBER, 24)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Heritage Day (Supplement)") \
-            .on(date(month=9, day=25)) \
+            .on(date(Month.SEPTEMBER, 25)) \
             .with_flags("NF") \
             .annotated_with("Supplement holiday") \
-            .on_condition(date(month=9, day=24).is_a("sunday"))
+            .on_condition(date(Month.SEPTEMBER, 24).is_a(Weekday.SUNDAY))
 
         self.define_holiday() \
             .with_name("Day of Reconciliation") \
-            .on(date(month=12, day=16)) \
+            .on(date(Month.DECEMBER, 16)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Day of Reconciliation (Supplement)") \
-            .on(date(month=12, day=17)) \
+            .on(date(Month.DECEMBER, 17)) \
             .with_flags("NF") \
             .annotated_with("Supplement holiday") \
-            .on_condition(date(month=12, day=16).is_a("sunday"))
+            .on_condition(date(Month.DECEMBER, 16).is_a(Weekday.SUNDAY))
 
         self.define_holiday() \
             .with_name("Day of Goodwill") \
-            .on(date(month=12, day=26)) \
+            .on(date(Month.DECEMBER, 26)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Day of Goodwill (Supplement)") \
-            .on(date(month=12, day=27)) \
+            .on(date(Month.DECEMBER, 27)) \
             .with_flags("NF") \
             .annotated_with("Supplement holiday") \
-            .on_condition(date(month=12, day=26).is_a("sunday"))
+            .on_condition(date(Month.DECEMBER, 26).is_a(Weekday.SUNDAY))

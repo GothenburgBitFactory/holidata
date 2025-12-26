@@ -1,34 +1,35 @@
 """
 Provides date-handling related utils.
 """
-from typing import Callable, List
+from enum import IntEnum
+from typing import Callable, List, Union
 
 from arrow import Arrow
 
-WEEKDAYS = [
-    "monday",
-    "tuesday",
-    "wednesday",
-    "thursday",
-    "friday",
-    "saturday",
-    "sunday"
-]
 
-MONTHS = [
-    "january",
-    "february",
-    "march",
-    "april",
-    "may",
-    "june",
-    "july",
-    "august",
-    "september",
-    "october",
-    "november",
-    "december"
-]
+class Weekday(IntEnum):
+    MONDAY = 0
+    TUESDAY = 1
+    WEDNESDAY = 2
+    THURSDAY = 3
+    FRIDAY = 4
+    SATURDAY = 5
+    SUNDAY = 6
+
+
+class Month(IntEnum):
+    JANUARY = 1
+    FEBRUARY = 2
+    MARCH = 3
+    APRIL = 4
+    MAY = 5
+    JUNE = 6
+    JULY = 7
+    AUGUST = 8
+    SEPTEMBER = 9
+    OCTOBER = 10
+    NOVEMBER = 11
+    DECEMBER = 12
 
 
 class SmartDayArrow(Arrow):
@@ -36,19 +37,14 @@ class SmartDayArrow(Arrow):
     A wrapper around Arrow datetime reference that provides additional convenience methods.
     """
 
-    def weekday(self) -> str:
-        """
-        Provide a more readable weekday representation.
-        """
-
-        return WEEKDAYS[super().weekday()]
-
-    def shift_to_weekday(self, day: str, order: int = 1, reverse: bool = False, including: bool = False) -> 'SmartDayArrow':
+    def shift_to_weekday(self, day: Weekday, order: int = 1, reverse: bool = False, including: bool = False) -> 'SmartDayArrow':
         """
         Shifts to {order}. weekday in the given direction, i.e. 2. monday before this date would be:
 
-        >>> arrow.shift_to_weekday("monday", order=2, reverse=True)
+        >>> arrow.shift_to_weekday(Weekday.MONDAY, order=2, reverse=True)
         """
+        if order <= 0:
+            raise ValueError("Order must be greater than 0")
 
         result = self
 
@@ -71,25 +67,25 @@ class SmartDayArrowWrapper:
         self.month = month
         self.day = day
 
-    def is_a(self, weekday: str) -> Callable[[int], bool]:
+    def is_a(self, weekday: Weekday) -> Callable[[int], bool]:
         def wrapper(year):
             return self(year).weekday() == weekday
 
         return wrapper
 
-    def is_not_a(self, weekday: str) -> Callable[[int], bool]:
+    def is_not_a(self, weekday: Weekday) -> Callable[[int], bool]:
         def wrapper(year):
             return self(year).weekday() != weekday
 
         return wrapper
 
-    def is_one_of(self, selection: List[str]):
+    def is_one_of(self, selection: List[Weekday]):
         def wrapper(year):
             return self(year).weekday() in selection
 
         return wrapper
 
-    def is_none_of(self, selection: List[str]):
+    def is_none_of(self, selection: List[Weekday]):
         def wrapper(year):
             return self(year).weekday() not in selection
 
@@ -119,7 +115,7 @@ class SmartDayArrowDayShifter:
     def __init__(self, days):
         self.day_count: int = days
         self.shift_direction: int = 0
-        self.date: Callable[[int], SmartDayArrow] = None
+        self.date: Callable[[int], Union[SmartDayArrow, None]] = lambda year: None
 
     def before(self, date_func: Callable[[int], SmartDayArrow]) -> 'SmartDayArrowDayShifter':
         self.date = date_func
@@ -132,7 +128,7 @@ class SmartDayArrowDayShifter:
         return self
 
     def __call__(self, year: int) -> SmartDayArrow:
-        return self.date(year).shift(days=self.day_count * self.shift_direction)
+        return self.date(year).shift(days=self.day_count * self.shift_direction) if self.date is not None else None
 
 
 def day(count: int) -> SmartDayArrowDayShifter:
@@ -140,18 +136,18 @@ def day(count: int) -> SmartDayArrowDayShifter:
 
 
 class SmartDayArrowWeekdayShifter:
-    def __init__(self, weekday: str, order: int, forward: bool):
+    def __init__(self, weekday: Weekday, order: int, forward: bool):
         self.weekday = weekday
         self.order = order
         self.forward = forward
         self.including = True
         self.date = None
 
-    def of(self, month: str) -> 'SmartDayArrowWeekdayShifter':
-        month_index = MONTHS.index(month.lower()) + 1
+    def of(self, month: Month) -> 'SmartDayArrowWeekdayShifter':
+        month_index = month.value
 
         if self.forward:
-            self.date = date(month_index, 1)
+            self.date = date(month, 1)
         else:
             def wrapper(year):
                 return SmartDayArrow(
@@ -172,11 +168,7 @@ class SmartDayArrowWeekdayShifter:
         return self
 
     def _configure_shift(self, date_func: Callable[[int], SmartDayArrow], forward: bool, including: bool):
-        if callable(date_func):
-            self.date = date_func
-        else:
-            raise ValueError("Invalid reference date")
-
+        self.date = date_func
         self.forward = forward
         self.including = including
 
@@ -189,21 +181,21 @@ class SmartDayArrowWeekdayShifter:
         )
 
 
-def first(weekday: str) -> SmartDayArrowWeekdayShifter:
+def first(weekday: Weekday) -> SmartDayArrowWeekdayShifter:
     return SmartDayArrowWeekdayShifter(weekday, order=1, forward=True)
 
 
-def second(weekday: str) -> SmartDayArrowWeekdayShifter:
+def second(weekday: Weekday) -> SmartDayArrowWeekdayShifter:
     return SmartDayArrowWeekdayShifter(weekday, order=2, forward=True)
 
 
-def third(weekday: str) -> SmartDayArrowWeekdayShifter:
+def third(weekday: Weekday) -> SmartDayArrowWeekdayShifter:
     return SmartDayArrowWeekdayShifter(weekday, order=3, forward=True)
 
 
-def fourth(weekday: str) -> SmartDayArrowWeekdayShifter:
+def fourth(weekday: Weekday) -> SmartDayArrowWeekdayShifter:
     return SmartDayArrowWeekdayShifter(weekday, order=4, forward=True)
 
 
-def last(weekday: str) -> SmartDayArrowWeekdayShifter:
+def last(weekday: Weekday) -> SmartDayArrowWeekdayShifter:
     return SmartDayArrowWeekdayShifter(weekday, order=1, forward=False)

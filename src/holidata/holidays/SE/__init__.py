@@ -1,7 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
 from holidata.holiday import Country
-from holidata.utils import day, first, date
+from holidata.utils import day, first, date, Weekday, Month
 
 __all__ = [
     "SE",
@@ -18,42 +18,42 @@ class SE(Country):
 
         self.define_holiday() \
             .with_name("Nyårsdagen") \
-            .on(date(month=1, day=1)) \
+            .on(date(Month.JANUARY, 1)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Trettondedag jul") \
-            .on(date(month=1, day=6)) \
+            .on(date(Month.JANUARY, 6)) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Första maj") \
-            .on(date(month=5, day=1)) \
+            .on(date(Month.MAY, 1)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Nationaldagen") \
-            .on(date(month=6, day=6)) \
+            .on(date(Month.JUNE, 6)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Julafton") \
-            .on(date(month=12, day=24)) \
+            .on(date(Month.DECEMBER, 24)) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Juldagen") \
-            .on(date(month=12, day=25)) \
+            .on(date(Month.DECEMBER, 25)) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Annandag jul") \
-            .on(date(month=12, day=26)) \
+            .on(date(Month.DECEMBER, 26)) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Nyårsafton") \
-            .on(date(month=12, day=31)) \
+            .on(date(Month.DECEMBER, 31)) \
             .with_flags("NF")
 
         self.define_holiday() \
@@ -83,15 +83,15 @@ class SE(Country):
 
         self.define_holiday() \
             .with_name("Midsommarafton") \
-            .on(day(1).before(first("saturday").after(date(month=6, day=19)))) \
+            .on(day(1).before(first(Weekday.SATURDAY).after(date(Month.JUNE, 19)))) \
             .with_flags("NV")
 
         self.define_holiday() \
             .with_name("Midsommardagen") \
-            .on(first("saturday").after(date(month=6, day=19))) \
+            .on(first(Weekday.SATURDAY).after(date(Month.JUNE, 19))) \
             .with_flags("NV")
 
         self.define_holiday() \
             .with_name("Alla helgons dag") \
-            .on(first("saturday").after(date(month=10, day=30))) \
+            .on(first(Weekday.SATURDAY).after(date(Month.OCTOBER, 30))) \
             .with_flags("NRV")

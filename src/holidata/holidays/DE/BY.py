@@ -1,5 +1,5 @@
 from holidata.holiday import Region
-from holidata.utils import day, date
+from holidata.utils import day, date, Month
 
 
 class BY(Region):
@@ -11,18 +11,18 @@ class BY(Region):
 
         self.define_holiday() \
             .with_name("Heilige drei Könige") \
-            .on(date(month=1, day=6)) \
+            .on(date(Month.JANUARY, 6)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Mariä Himmelfahrt") \
-            .on(date(month=8, day=15)) \
+            .on(date(Month.AUGUST, 15)) \
             .with_flags("RF") \
             .annotated_with("In Gemeinden mit überwiegend katholischer Bevölkerung")
 
         self.define_holiday() \
             .with_name("Allerheiligen") \
-            .on(date(month=11, day=1)) \
+            .on(date(Month.NOVEMBER, 1)) \
             .with_flags("RF")
 
         self.define_holiday() \

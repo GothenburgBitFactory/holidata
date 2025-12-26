@@ -1,7 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
 from holidata.holiday import Country
-from holidata.utils import day, date
+from holidata.utils import day, date, Weekday, Month
 
 __all__ = [
     "NL",
@@ -18,32 +18,32 @@ class NL(Country):
 
         self.define_holiday() \
             .with_name("Nieuwjaarsdag") \
-            .on(date(month=1, day=1)) \
+            .on(date(Month.JANUARY, 1)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Dodenherdenking") \
-            .on(date(month=5, day=4)) \
+            .on(date(Month.MAY, 4)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Bevrijdingsdag") \
-            .on(date(month=5, day=5)) \
+            .on(date(Month.MAY, 5)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Sinterklaas") \
-            .on(date(month=12, day=5)) \
+            .on(date(Month.DECEMBER, 5)) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Eerste Kerstdag") \
-            .on(date(month=12, day=25)) \
+            .on(date(Month.DECEMBER, 25)) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Tweede Kerstdag") \
-            .on(date(month=12, day=26)) \
+            .on(date(Month.DECEMBER, 26)) \
             .with_flags("NRF")
 
         self.define_holiday() \
@@ -83,15 +83,15 @@ class NL(Country):
         self.define_holiday() \
             .with_name("Koninginnedag") \
             .until(2013) \
-            .on(date(month=4, day=29)) \
-            .on_condition(date(month=4, day=30).is_a("sunday")) \
+            .on(date(Month.APRIL, 29)) \
+            .on_condition(date(Month.APRIL, 30).is_a(Weekday.SUNDAY)) \
             .with_flags("NV")
 
         self.define_holiday() \
             .with_name("Koninginnedag") \
             .until(2013) \
-            .on(date(month=4, day=30)) \
-            .on_condition(date(month=4, day=30).is_not_a("sunday")) \
+            .on(date(Month.APRIL, 30)) \
+            .on_condition(date(Month.APRIL, 30).is_not_a(Weekday.SUNDAY)) \
             .with_flags("NV")
 
         """
@@ -101,15 +101,15 @@ class NL(Country):
         self.define_holiday() \
             .with_name("Koningsdag") \
             .since(2014) \
-            .on(date(month=4, day=26)) \
-            .on_condition(date(month=4, day=27).is_a("sunday")) \
+            .on(date(Month.APRIL, 26)) \
+            .on_condition(date(Month.APRIL, 27).is_a(Weekday.SUNDAY)) \
             .with_flags("NV")
 
         self.define_holiday() \
             .with_name("Koningsdag") \
             .since(2014) \
-            .on(date(month=4, day=27)) \
-            .on_condition(date(month=4, day=27).is_not_a("sunday")) \
+            .on(date(Month.APRIL, 27)) \
+            .on_condition(date(Month.APRIL, 27).is_not_a(Weekday.SUNDAY)) \
             .with_flags("NV")
 
         """
@@ -118,12 +118,12 @@ class NL(Country):
         """
         self.define_holiday() \
             .with_name("Koninkrijksdag") \
-            .on(date(month=12, day=15)) \
-            .on_condition(date(month=12, day=15).is_not_a("sunday")) \
+            .on(date(Month.DECEMBER, 15)) \
+            .on_condition(date(Month.DECEMBER, 15).is_not_a(Weekday.SUNDAY)) \
             .with_flags("NV")
 
         self.define_holiday() \
             .with_name("Koninkrijksdag") \
-            .on(date(month=12, day=16)) \
-            .on_condition(date(month=12, day=15).is_a("sunday")) \
+            .on(date(Month.DECEMBER, 16)) \
+            .on_condition(date(Month.DECEMBER, 15).is_a(Weekday.SUNDAY)) \
             .with_flags("NV")

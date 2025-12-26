@@ -1,5 +1,5 @@
 from holidata.holiday import Region
-from holidata.utils import day, first, date
+from holidata.utils import day, first, date, Weekday, Month
 
 
 class WA(Region):
@@ -14,14 +14,14 @@ class WA(Region):
         """
         self.define_holiday() \
             .with_name("New Year's Day") \
-            .on(date(month=1, day=1)) \
+            .on(date(Month.JANUARY, 1)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("New Year's Day (observed)") \
-            .on(first("monday").after(date(month=1, day=1))) \
+            .on(first(Weekday.MONDAY).after(date(Month.JANUARY, 1))) \
             .with_flags("V") \
-            .on_condition(date(month=1, day=1).is_one_of(["saturday", "sunday"]))
+            .on_condition(date(Month.JANUARY, 1).is_one_of([Weekday.SATURDAY, Weekday.SUNDAY]))
 
         """
         Australia Day
@@ -30,14 +30,14 @@ class WA(Region):
         """
         self.define_holiday() \
             .with_name("Australia Day") \
-            .on(date(month=1, day=26)) \
-            .on_condition(date(month=1, day=26).is_none_of(["saturday", "sunday"])) \
+            .on(date(Month.JANUARY, 26)) \
+            .on_condition(date(Month.JANUARY, 26).is_none_of([Weekday.SATURDAY, Weekday.SUNDAY])) \
             .with_flags("V")
 
         self.define_holiday() \
             .with_name("Australia Day") \
-            .on(first("monday").after(date(month=1, day=26))) \
-            .on_condition(date(month=1, day=26).is_one_of(["saturday", "sunday"])) \
+            .on(first(Weekday.MONDAY).after(date(Month.JANUARY, 26))) \
+            .on_condition(date(Month.JANUARY, 26).is_one_of([Weekday.SATURDAY, Weekday.SUNDAY])) \
             .with_flags("V")
 
         """
@@ -47,7 +47,7 @@ class WA(Region):
         """
         self.define_holiday() \
             .with_name("Labour Day") \
-            .on(first("monday").of("march")) \
+            .on(first(Weekday.MONDAY).of(Month.MARCH)) \
             .with_flags("V")
 
         """
@@ -86,14 +86,14 @@ class WA(Region):
         """
         self.define_holiday() \
             .with_name("Anzac Day") \
-            .on(date(month=4, day=25)) \
+            .on(date(Month.APRIL, 25)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Anzac Day (supplement)") \
-            .on(first("monday").after(date(month=4, day=25))) \
+            .on(first(Weekday.MONDAY).after(date(Month.APRIL, 25))) \
             .with_flags("F") \
-            .on_condition(date(month=4, day=25).is_one_of(["saturday", "sunday"]))
+            .on_condition(date(Month.APRIL, 25).is_one_of([Weekday.SATURDAY, Weekday.SUNDAY]))
 
         """
         Western Australia Day/Foundation Day
@@ -102,7 +102,7 @@ class WA(Region):
         """
         self.define_holiday() \
             .with_name("Western Australia Day") \
-            .on(first("monday").of("june")) \
+            .on(first(Weekday.MONDAY).of(Month.JUNE)) \
             .with_flags("V")
 
         """
@@ -130,7 +130,7 @@ class WA(Region):
         self.define_holiday() \
             .with_name("National Day of Mourning for Queen Elizabeth II") \
             .in_years([2022]) \
-            .on(date(month=9, day=22)) \
+            .on(date(Month.SEPTEMBER, 22)) \
             .with_flags("F")
 
         """
@@ -141,14 +141,14 @@ class WA(Region):
         """
         self.define_holiday() \
             .with_name("Christmas Day") \
-            .on(date(month=12, day=25)) \
+            .on(date(Month.DECEMBER, 25)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Christmas Day (observed)") \
-            .on(first("monday").after(date(month=12, day=25))) \
+            .on(first(Weekday.MONDAY).after(date(Month.DECEMBER, 25))) \
             .with_flags("RV") \
-            .on_condition(date(month=12, day=25).is_one_of(["saturday", "sunday"]))
+            .on_condition(date(Month.DECEMBER, 25).is_one_of([Weekday.SATURDAY, Weekday.SUNDAY]))
 
         """
         Boxing Day
@@ -159,20 +159,20 @@ class WA(Region):
         """
         self.define_holiday() \
             .with_name("Boxing Day") \
-            .on(date(month=12, day=26)) \
+            .on(date(Month.DECEMBER, 26)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Boxing Day (observed)") \
-            .on(first("monday").after(date(month=12, day=26))) \
+            .on(first(Weekday.MONDAY).after(date(Month.DECEMBER, 26))) \
             .with_flags("RV") \
-            .on_condition(date(month=12, day=26).is_a("saturday"))
+            .on_condition(date(Month.DECEMBER, 26).is_a(Weekday.SATURDAY))
 
         self.define_holiday() \
             .with_name("Boxing Day (observed)") \
-            .on(first("tuesday").after(date(month=12, day=26))) \
+            .on(first(Weekday.TUESDAY).after(date(Month.DECEMBER, 26))) \
             .with_flags("RV") \
-            .on_condition(date(month=12, day=26).is_one_of(["sunday", "monday"]))
+            .on_condition(date(Month.DECEMBER, 26).is_one_of([Weekday.SUNDAY, Weekday.MONDAY]))
 
     @staticmethod
     def birthday_of_the_sovereign(year):
@@ -181,21 +181,21 @@ class WA(Region):
         https://www.legislation.wa.gov.au/legislation/statutes.nsf/gazettes.html
         """
         dates = {
-            2011: date(month=10, day=28),  # 2010 234-6261
-            2012: date(month=10, day=1),  # 2008 229-5633
-            2013: date(month=9, day=30),  # 2008 229-5633
-            2014: date(month=9, day=29),  # 2012  61-1687
-            2015: date(month=9, day=28),  # 2012  61-1687
-            2016: date(month=9, day=26),  # 2014  74-1595
-            2017: date(month=9, day=25),  # 2014  74-1595
-            2018: date(month=9, day=24),  # 2016  73-1379
-            2019: date(month=9, day=30),  # 2016  73-1379
-            2020: date(month=9, day=28),  # 2018  53-1287
-            2021: date(month=9, day=27),  # 2018  53-1287
-            2022: date(month=9, day=26),  # 2020 151-2919
-            2023: date(month=9, day=25),  # 2020 151-2919
-            2024: date(month=9, day=23),  # 2022  69-3009
-            2025: date(month=9, day=29),  # 2022  69-3009
+            2011: date(Month.OCTOBER, 28),    # 2010 234-6261
+            2012: date(Month.OCTOBER, 1),     # 2008 229-5633
+            2013: date(Month.SEPTEMBER, 30),  # 2008 229-5633
+            2014: date(Month.SEPTEMBER, 29),  # 2012  61-1687
+            2015: date(Month.SEPTEMBER, 28),  # 2012  61-1687
+            2016: date(Month.SEPTEMBER, 26),  # 2014  74-1595
+            2017: date(Month.SEPTEMBER, 25),  # 2014  74-1595
+            2018: date(Month.SEPTEMBER, 24),  # 2016  73-1379
+            2019: date(Month.SEPTEMBER, 30),  # 2016  73-1379
+            2020: date(Month.SEPTEMBER, 28),  # 2018  53-1287
+            2021: date(Month.SEPTEMBER, 27),  # 2018  53-1287
+            2022: date(Month.SEPTEMBER, 26),  # 2020 151-2919
+            2023: date(Month.SEPTEMBER, 25),  # 2020 151-2919
+            2024: date(Month.SEPTEMBER, 23),  # 2022  69-3009
+            2025: date(Month.SEPTEMBER, 29),  # 2022  69-3009
         }
 
         return dates.get(year)(year) if year in dates else None

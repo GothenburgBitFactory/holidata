@@ -1,7 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
 from holidata.holiday import Country
-from holidata.utils import day, date
+from holidata.utils import day, date, Month
 
 __all__ = [
     "CH",
@@ -18,77 +18,77 @@ class CH(Country):
 
         self.define_holiday() \
             .with_name("Neujahrstag") \
-            .on(date(month=1, day=1)) \
+            .on(date(Month.JANUARY, 1)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Berchtoldstag") \
             .in_regions(["BE", "JU", "TG", "VD"]) \
-            .on(date(month=1, day=2)) \
+            .on(date(Month.JANUARY, 2)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Heilige Drei Könige") \
             .in_regions(["SZ", "TI", "UR"]) \
-            .on(date(month=1, day=6)) \
+            .on(date(Month.JANUARY, 6)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Josefstag") \
             .in_regions(["NW", "SZ", "TI", "UR", "VS"]) \
-            .on(date(month=3, day=19)) \
+            .on(date(Month.MARCH, 19)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Tag der Arbeit") \
             .in_regions(["BL", "BS", "GR", "NE", "SH", "TG", "TI", "ZH"]) \
-            .on(date(month=5, day=1)) \
+            .on(date(Month.MAY, 1)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Bundesfeier") \
-            .on(date(month=8, day=1)) \
+            .on(date(Month.AUGUST, 1)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Mariä Himmelfahrt") \
             .in_regions(["AI"]) \
-            .on(date(month=8, day=15)) \
+            .on(date(Month.AUGUST, 15)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Mariä Himmelfahrt") \
             .in_regions(["JU", "LU", "NW", "OW", "SZ", "TI", "UR", "VS", "ZG"]) \
-            .on(date(month=8, day=15)) \
+            .on(date(Month.AUGUST, 15)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Allerheiligen") \
             .in_regions(["AI", "GL", "JU", "LU", "NW", "OW", "SG", "SZ", "TI", "UR", "VS", "ZG"]) \
-            .on(date(month=11, day=1)) \
+            .on(date(Month.NOVEMBER, 1)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Mariä Empfängnis") \
             .in_regions(["AI"]) \
-            .on(date(month=12, day=8)) \
+            .on(date(Month.DECEMBER, 8)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Mariä Empfängnis") \
             .in_regions(["LU", "NW", "OW", "SZ", "TI", "UR", "VS", "ZG"]) \
-            .on(date(month=12, day=8)) \
+            .on(date(Month.DECEMBER, 8)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Weihnachtstag") \
-            .on(date(month=12, day=25)) \
+            .on(date(Month.DECEMBER, 25)) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Stephanstag") \
             .in_regions(["AI", "AR", "BE", "BL", "BS", "GL", "GR", "LU", "SG", "SH", "SZ", "TG", "TI", "UR", "ZH"]) \
-            .on(date(month=12, day=26)) \
+            .on(date(Month.DECEMBER, 26)) \
             .with_flags("RF")
 
         self.define_holiday() \

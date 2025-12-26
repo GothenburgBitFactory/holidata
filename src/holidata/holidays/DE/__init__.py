@@ -17,7 +17,7 @@ from holidata.holidays.DE.SL import SL
 from holidata.holidays.DE.SN import SN
 from holidata.holidays.DE.ST import ST
 from holidata.holidays.DE.TH import TH
-from holidata.utils import day, date
+from holidata.utils import day, date, Month
 
 __all__ = [
     "DE",
@@ -56,37 +56,37 @@ class DE(Country):
 
         self.define_holiday() \
             .with_name("Neujahr") \
-            .on(date(month=1, day=1)) \
+            .on(date(Month.JANUARY, 1)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Erster Maifeiertag") \
-            .on(date(month=5, day=1)) \
+            .on(date(Month.MAY, 1)) \
             .with_flags("NF")
 
         self.define_holiday() \
             .with_name("Tag der Deutschen Einheit") \
-            .on(date(month=10, day=3)) \
+            .on(date(Month.OCTOBER, 3)) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Heilig Abend") \
-            .on(date(month=12, day=24)) \
+            .on(date(Month.DECEMBER, 24)) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Weihnachtstag") \
-            .on(date(month=12, day=25)) \
+            .on(date(Month.DECEMBER, 25)) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Zweiter Weihnachtstag") \
-            .on(date(month=12, day=26)) \
+            .on(date(Month.DECEMBER, 26)) \
             .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Silvester") \
-            .on(date(month=12, day=31)) \
+            .on(date(Month.DECEMBER, 31)) \
             .with_flags("NF")
 
         self.define_holiday() \
@@ -125,5 +125,5 @@ class DE(Country):
         self.define_holiday() \
             .with_name("Reformationstag") \
             .in_years([2017]) \
-            .on(date(month=10, day=31)) \
+            .on(date(Month.OCTOBER, 31)) \
             .with_flags("NRF")
