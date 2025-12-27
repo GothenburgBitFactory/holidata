@@ -181,21 +181,21 @@ class WA(Region):
         https://www.legislation.wa.gov.au/legislation/statutes.nsf/gazettes.html
         """
         dates = {
-            2011: {"month": 10, "day": 28},  # 2010 234-6261
-            2012: {"month": 10, "day":  1},  # 2008 229-5633
-            2013: {"month":  9, "day": 30},  # 2008 229-5633
-            2014: {"month":  9, "day": 29},  # 2012  61-1687
-            2015: {"month":  9, "day": 28},  # 2012  61-1687
-            2016: {"month":  9, "day": 26},  # 2014  74-1595
-            2017: {"month":  9, "day": 25},  # 2014  74-1595
-            2018: {"month":  9, "day": 24},  # 2016  73-1379
-            2019: {"month":  9, "day": 30},  # 2016  73-1379
-            2020: {"month":  9, "day": 28},  # 2018  53-1287
-            2021: {"month":  9, "day": 27},  # 2018  53-1287
-            2022: {"month":  9, "day": 26},  # 2020 151-2919
-            2023: {"month":  9, "day": 25},  # 2020 151-2919
-            2024: {"month":  9, "day": 23},  # 2022  69-3009
-            2025: {"month":  9, "day": 29},  # 2022  69-3009
+            2011: date(month=10, day=28),  # 2010 234-6261
+            2012: date(month=10, day=1),  # 2008 229-5633
+            2013: date(month=9, day=30),  # 2008 229-5633
+            2014: date(month=9, day=29),  # 2012  61-1687
+            2015: date(month=9, day=28),  # 2012  61-1687
+            2016: date(month=9, day=26),  # 2014  74-1595
+            2017: date(month=9, day=25),  # 2014  74-1595
+            2018: date(month=9, day=24),  # 2016  73-1379
+            2019: date(month=9, day=30),  # 2016  73-1379
+            2020: date(month=9, day=28),  # 2018  53-1287
+            2021: date(month=9, day=27),  # 2018  53-1287
+            2022: date(month=9, day=26),  # 2020 151-2919
+            2023: date(month=9, day=25),  # 2020 151-2919
+            2024: date(month=9, day=23),  # 2022  69-3009
+            2025: date(month=9, day=29),  # 2022  69-3009
         }
 
-        return date(**dates.get(year))(year) if dates.get(year) is not None else None
+        return dates.get(year)(year) if year in dates else None

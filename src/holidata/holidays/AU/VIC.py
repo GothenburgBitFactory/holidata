@@ -205,13 +205,13 @@ class VIC(Region):
         Usually, the Friday before last Saturday in September
         """
         exception = {
-                2011: {"month":  9, "day": 31},  # MCG was occupied by the International Cricket Council (ICC)
-                2015: {"month": 10, "day":  2},  # Due to scheduling of the 2015 Rugby World Cup
-                2016: {"month":  9, "day": 31},
-                2020: {"month": 10, "day": 23},  # Adaption due to the COVID-19 pandemic
+            2011: date(month=9, day=31),  # MCG was occupied by the International Cricket Council (ICC)
+            2015: date(month=10, day=2),  # Due to scheduling of the 2015 Rugby World Cup
+            2016: date(month=9, day=31),
+            2020: date(month=10, day=23),  # Adaption due to the COVID-19 pandemic
         }
 
         if year in exception:
-            return date(**exception[year])(year)
+            return exception[year](year)
 
         return first("friday").before(last("saturday").of("september"))(year)
