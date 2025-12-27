@@ -166,22 +166,22 @@ class SA(Region):
 
     @staticmethod
     def date_as_declared_by_the_holidays_adelaide_cup_proclamation(year):
-        substitution_date = {
-            2011: {"month": 3, "day": 14},  # Holidays (Adelaide Cup) Proclamation 2010
-            2012: {"month": 3, "day": 12},  # Holidays (Adelaide Cup) Proclamation 2011
-            2013: {"month": 3, "day": 11},  # Holidays (Adelaide Cup) Proclamation 2012
-            2014: {"month": 3, "day": 10},
-            2015: {"month": 3, "day":  9},
-            2016: {"month": 3, "day": 14},
-            2017: {"month": 3, "day": 13},
-            2018: {"month": 3, "day": 12},
-            2019: {"month": 3, "day": 11},
-            2020: {"month": 3, "day":  9},
-            2021: {"month": 3, "day":  8},
-            2022: {"month": 3, "day": 14},
-            2023: {"month": 3, "day": 13},
-            2024: {"month": 3, "day": 11},  # subject to Proclamation
-            2025: {"month": 3, "day": 10},  # subject to Proclamation
+        dates = {
+            2011: date(month=3, day=14),  # Holidays (Adelaide Cup) Proclamation 2010
+            2012: date(month=3, day=12),  # Holidays (Adelaide Cup) Proclamation 2011
+            2013: date(month=3, day=11),  # Holidays (Adelaide Cup) Proclamation 2012
+            2014: date(month=3, day=10),
+            2015: date(month=3, day=9),
+            2016: date(month=3, day=14),
+            2017: date(month=3, day=13),
+            2018: date(month=3, day=12),
+            2019: date(month=3, day=11),
+            2020: date(month=3, day=9),
+            2021: date(month=3, day=8),
+            2022: date(month=3, day=14),
+            2023: date(month=3, day=13),
+            2024: date(month=3, day=11),  # subject to Proclamation
+            2025: date(month=3, day=10),  # subject to Proclamation
         }
 
-        return date(**substitution_date.get(year))(year) if substitution_date.get(year) is not None else None
+        return dates.get(year)(year) if year in dates else None
