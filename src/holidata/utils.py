@@ -37,7 +37,7 @@ class SmartDayArrow(Arrow):
     A wrapper around Arrow datetime reference that provides additional convenience methods.
     """
 
-    def shift_to_weekday(self, day: Weekday, order: int = 1, reverse: bool = False, including: bool = False) -> 'SmartDayArrow':
+    def shift_to_weekday(self, weekday: Weekday, order: int = 1, reverse: bool = False, including: bool = False) -> 'SmartDayArrow':
         """
         Shifts to {order}. weekday in the given direction, i.e. 2. monday before this date would be:
 
@@ -46,20 +46,21 @@ class SmartDayArrow(Arrow):
         if order <= 0:
             raise ValueError("Order must be greater than 0")
 
-        result = self
+        # Calculate the weekday difference (positive for forward, negative for reverse)
+        weekday_diff = ((weekday - self.weekday()) * (-1 if reverse else 1)) % 7
 
-        if including and result.weekday() == day:
-            if order == 1:
-                return result
-            else:
-                order = order - 1
+        # Adjust for the case where we're already on the target weekday but not including it
+        if weekday_diff == 0 and not including:
+            weekday_diff = 7
 
-        while order > 0:
-            result = result.shift(days=1 if not reverse else -1)
-            if day == result.weekday():
-                order = order - 1
+        # Calculate the days needed for the weeks shift of order > 1
+        weeks_offset = (order - 1) * 7
 
-        return result
+        # Calculate total shift
+        total_days = weekday_diff + weeks_offset
+
+        # Apply the shift (negative for reverse direction)
+        return self.shift(days=total_days * (-1 if reverse else 1))
 
 
 class SmartDayArrowWrapper:
