@@ -21,7 +21,6 @@ sources:
 class IT(Country):
     id = "IT"
     languages = ["it"]
-    default_lang = "it"
     easter_type = EASTER_WESTERN
 
     def __init__(self):

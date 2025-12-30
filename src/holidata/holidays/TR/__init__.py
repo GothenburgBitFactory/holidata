@@ -17,7 +17,6 @@ dates for holidays 'Ramazan Bayramı' and 'Kurban Bayramı': https://vakithesapl
 class TR(Country):
     id = "TR"
     languages = ["tr"]
-    default_lang = "tr"
     easter_type = EASTER_WESTERN
 
     def __init__(self):

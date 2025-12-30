@@ -19,7 +19,6 @@ source: https://www.zakonyprolidi.cz/cs/2000-245, §1 and §2.
 class CZ(Country):
     id = "CZ"
     languages = ["cs"]
-    default_lang = "cs"
     easter_type = EASTER_WESTERN
 
     def __init__(self):

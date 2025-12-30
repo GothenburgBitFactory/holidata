@@ -27,7 +27,6 @@ __all__ = [
 class DE(Country):
     id = "DE"
     languages = ["de"]
-    default_lang = "de"
     easter_type = EASTER_WESTERN
 
     """

@@ -19,7 +19,6 @@ sources:
 class HU(Country):
     id = "HU"
     languages = ["hu"]
-    default_lang = "hu"
     easter_type = EASTER_WESTERN
 
     def __init__(self):

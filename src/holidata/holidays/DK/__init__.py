@@ -11,7 +11,6 @@ __all__ = [
 class DK(Country):
     id = "DK"
     languages = ["da"]
-    default_lang = "da"
     easter_type = EASTER_WESTERN
 
     def __init__(self):

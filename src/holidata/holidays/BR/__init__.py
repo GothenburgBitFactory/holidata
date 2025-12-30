@@ -47,7 +47,6 @@ __all__ = [
 class BR(Country):
     id = "BR"
     languages = ["pt"]
-    default_lang = "pt"
     easter_type = EASTER_WESTERN
 
     def __init__(self):

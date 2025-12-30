@@ -18,7 +18,6 @@ __all__ = [
 class AU(Country):
     id = "AU"
     languages = ["en"]
-    default_lang = "en"
     easter_type = EASTER_WESTERN
 
     def __init__(self):

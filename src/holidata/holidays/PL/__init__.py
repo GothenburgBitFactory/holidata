@@ -16,7 +16,6 @@ source2: https://isap.sejm.gov.pl/isap.nsf/download.xsp/WDU20240001965/T/D202419
 class PL(Country):
     id = "PL"
     languages = ["pl"]
-    default_lang = "pl"
     easter_type = EASTER_WESTERN
 
     def __init__(self):
