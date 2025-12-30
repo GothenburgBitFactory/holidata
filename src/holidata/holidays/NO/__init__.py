@@ -11,7 +11,6 @@ __all__ = [
 class NO(Country):
     id = "NO"
     languages = ["nb"]
-    default_lang = "nb"
     easter_type = EASTER_WESTERN
 
     def __init__(self):

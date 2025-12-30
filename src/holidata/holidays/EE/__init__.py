@@ -16,7 +16,6 @@ https://www.riigiteataja.ee/akt/109032011007 (Public Holidays and Days of Nation
 class EE(Country):
     id = "EE"
     languages = ["et"]
-    default_lang = "et"
     easter_type = EASTER_WESTERN
 
     def __init__(self):

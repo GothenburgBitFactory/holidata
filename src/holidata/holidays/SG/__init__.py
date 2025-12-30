@@ -21,8 +21,6 @@ Legal sources:
 class SG(Country):
     id = "SG"
     languages = ["en"]
-    default_lang = "en"
-    regions = []
     easter_type = EASTER_WESTERN
 
     def __init__(self):

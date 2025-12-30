@@ -124,6 +124,8 @@ class HolidayGenerator:
                 notes=self.notes,
             )
 
+        return None
+
 
 class Country(metaclass=PluginMount):
     """
@@ -144,6 +146,7 @@ class Country(metaclass=PluginMount):
         if self.default_lang is not None and self.default_lang not in self.languages:
             raise ValueError(f"Country '{self.__class__.__name__}' does not list language '{self.default_lang}'!")
 
+        self.default_lang = self.languages[0] if self.default_lang is None and len(self.languages) == 1 else self.default_lang
         self.holiday_generators = []
         self.regions = []
 
@@ -157,6 +160,8 @@ class Country(metaclass=PluginMount):
                 f"Language '{lang_id}' is not defined for country '{self.id}'! Choose one of [{', '.join(self.languages)}].")
         elif lang_id is None and self.default_lang:
             lang_id = self.default_lang
+        elif lang_id is None and len(self.languages) == 1:
+            lang_id = self.languages[0]
         elif lang_id is None:
             raise ValueError(
                 f"Country '{self.id}' has no default language specified! Choose one of [{', '.join(self.languages)}].")

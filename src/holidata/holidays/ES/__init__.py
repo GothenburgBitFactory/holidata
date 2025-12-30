@@ -64,7 +64,6 @@ Also those sites for some information
 class ES(Country):
     id = "ES"
     languages = ["es"]
-    default_lang = "es"
     easter_type = EASTER_WESTERN
 
     def __init__(self):

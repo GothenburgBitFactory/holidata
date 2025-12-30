@@ -11,7 +11,6 @@ __all__ = [
 class RU(Country):
     id = "RU"
     languages = ["ru"]
-    default_lang = "ru"
     easter_type = EASTER_ORTHODOX
 
     def __init__(self):

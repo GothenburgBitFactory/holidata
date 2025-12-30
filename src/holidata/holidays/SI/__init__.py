@@ -11,7 +11,6 @@ __all__ = [
 class SI(Country):
     id = "SI"
     languages = ["sl"]
-    default_lang = "sl"
     easter_type = EASTER_WESTERN
 
     def __init__(self):
