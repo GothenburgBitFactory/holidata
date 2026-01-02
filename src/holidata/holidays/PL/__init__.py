@@ -8,7 +8,8 @@ __all__ = [
 ]
 
 """
-source: http://prawo.sejm.gov.pl/isap.nsf/download.xsp/WDU20150000090/O/D20150090.pdf
+source: https://isap.sejm.gov.pl/isap.nsf/download.xsp/WDU20150000090/O/D20150090.pdf
+source2: https://isap.sejm.gov.pl/isap.nsf/download.xsp/WDU20240001965/T/D20241965L.pdf
 """
 
 
@@ -55,6 +56,12 @@ class PL(Country):
             .with_name("Narodowe Święto Niepodległości") \
             .on(date(month=11, day=11)) \
             .with_flags("NF")
+
+        self.define_holiday() \
+            .with_name("Wigilia") \
+            .since(2025) \
+            .on(date(month=12, day=24)) \
+            .with_flags("NRF")
 
         self.define_holiday() \
             .with_name("Boże Narodzenie (pierwszy dzień)") \

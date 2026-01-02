@@ -88,6 +88,14 @@
     "type": "NF"
   },
   {
+    "date": "2025-12-24",
+    "description": "Wigilia",
+    "locale": "pl-PL",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
     "date": "2025-12-25",
     "description": "Boże Narodzenie (pierwszy dzień)",
     "locale": "pl-PL",
