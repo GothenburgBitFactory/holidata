@@ -8,7 +8,8 @@ __all__ = [
 ]
 
 """
-source: http://prawo.sejm.gov.pl/isap.nsf/download.xsp/WDU20150000090/O/D20150090.pdf
+source: https://isap.sejm.gov.pl/isap.nsf/download.xsp/WDU20150000090/O/D20150090.pdf
+source2: https://isap.sejm.gov.pl/isap.nsf/download.xsp/WDU20240001965/T/D20241965L.pdf
 """
 
 
