@@ -57,6 +57,12 @@ class PL(Country):
             .with_flags("NF")
 
         self.define_holiday() \
+            .with_name("Wigilia") \
+            .since(2025) \
+            .on(date(month=12, day=24)) \
+            .with_flags("NRF")
+
+        self.define_holiday() \
             .with_name("Boże Narodzenie (pierwszy dzień)") \
             .on(date(month=12, day=25)) \
             .with_flags("NRF")
