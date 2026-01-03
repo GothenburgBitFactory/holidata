@@ -60,6 +60,10 @@ Holidata only provides data for countries and their principal subdivisions (both
 Holidays for other subdivisions are either merged or ignored.
 There is also no explicit representation of partial holidays.
 
+## Contributing
+
+If you'd like to contribute to holidata by adding support for a new country or updating existing implementations, see [the how-to guides](docs/how-tos/getting-started.md) for further instructions.
+
 ## License
 
 `holidata` is released under the MIT license.
