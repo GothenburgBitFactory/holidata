@@ -36,7 +36,7 @@ class HolidayGenerator:
         self.notes: str = ""
         self.regions: List[str] = [""]
         self.flags: str = ""
-        self.date: Callable[[int], SmartDayArrow]
+        self.date: Callable[[int], Union[SmartDayArrow, None]] = lambda year: None
         self.country_id: str = country_id
         self.default_lang: str = default_lang
         self.filters: List[Callable[[int], bool]] = []
@@ -51,11 +51,7 @@ class HolidayGenerator:
         return self
 
     def on(self, date_func: Callable[[int], SmartDayArrow] = None) -> 'HolidayGenerator':
-        if callable(date_func):
-            self.date = date_func
-        else:
-            raise ValueError("Invalid reference date")
-
+        self.date = date_func
         return self
 
     def with_flags(self, flags: str) -> 'HolidayGenerator':
@@ -112,7 +108,7 @@ class HolidayGenerator:
                 return []
 
         for region in self.regions:
-            holiday_date = self.date(year)
+            holiday_date = self.date(year) if self.date is not None else None
             if holiday_date is None:
                 continue
             yield Holiday(
@@ -134,7 +130,7 @@ class Country(metaclass=PluginMount):
     id: str
     languages: List[str]
     default_lang: Union[str, None] = None
-    easter_type: str
+    easter_type: int
     holiday_generators: list
     regions: list
 

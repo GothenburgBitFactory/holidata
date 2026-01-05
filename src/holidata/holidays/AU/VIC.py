@@ -1,5 +1,5 @@
 from holidata.holiday import Region
-from holidata.utils import second, day, first, last, date, Weekday, Month
+from holidata.utils import second, day, first, last, date, Weekday, Month, dates
 
 
 class VIC(Region):
@@ -132,12 +132,15 @@ class VIC(Region):
         """
         Grand Final Eve
         the Friday before the Australian Football League Grand Final
+        Usually, the Friday before last Saturday in September
         2019: https://content.legislation.vic.gov.au/sites/default/files/ad24ad2c-06f2-3ae3-b0ce-1fcd9b5f61a0_93-119aa026%20authorised.pdf
         """
         self.define_holiday() \
             .with_name("Grand Final Eve") \
             .since(2019) \
-            .on(VIC.friday_before_afl_grand_final) \
+            .on(dates({
+                2020: (Month.OCTOBER, 23),  # Adaption due to the COVID-19 pandemic
+            }).or_else_on(first(Weekday.FRIDAY).before(last(Weekday.SATURDAY).of(Month.SEPTEMBER)))) \
             .with_flags("V")
 
         """
@@ -198,20 +201,3 @@ class VIC(Region):
             .on(first(Weekday.TUESDAY).after(date(Month.DECEMBER, 26))) \
             .with_flags("RF") \
             .on_condition(date(Month.DECEMBER, 26).is_a(Weekday.SUNDAY))
-
-    @staticmethod
-    def friday_before_afl_grand_final(year):
-        """
-        Usually, the Friday before last Saturday in September
-        """
-        exception = {
-            2011: date(Month.SEPTEMBER, 31),  # MCG was occupied by the International Cricket Council (ICC)
-            2015: date(Month.OCTOBER, 2),     # Due to scheduling of the 2015 Rugby World Cup
-            2016: date(Month.SEPTEMBER, 31),
-            2020: date(Month.OCTOBER, 23),    # Adaption due to the COVID-19 pandemic
-        }
-
-        if year in exception:
-            return exception[year](year)
-
-        return first(Weekday.FRIDAY).before(last(Weekday.SATURDAY).of(Month.SEPTEMBER))(year)

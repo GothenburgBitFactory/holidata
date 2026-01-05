@@ -1,5 +1,5 @@
 from holidata.holiday import Region
-from holidata.utils import day, date, Month
+from holidata.utils import day, date, Month, dates
 
 
 class ML(Region):
@@ -26,20 +26,40 @@ class ML(Region):
 
         self.define_holiday() \
             .with_name("Fiesta del Eid Fitr") \
-            .in_years([2022, 2023, 2025, 2026]) \
-            .on(ML.day_of_eid_fitr) \
+            .on(dates({
+                2022: (Month.MAY, 3),
+                2023: (Month.APRIL, 21),
+                2025: (Month.MARCH, 31),
+                2026: (Month.MARCH, 20),
+            })) \
             .with_flags("RV")
 
         self.define_holiday() \
             .with_name("Fiesta del Sacrificio (Aid Al Adha)") \
-            .in_years([2022, 2023, 2024, 2025, 2026]) \
-            .on(ML.holiday_aid_al_adha) \
+            .on(dates({
+                2022: (Month.JULY, 11),
+                2023: (Month.JUNE, 29),
+                2024: (Month.JUNE, 17),
+                2025: (Month.JUNE, 6),
+                2026: (Month.MAY, 27),
+            })) \
             .with_flags("RV")
 
         self.define_holiday() \
             .with_name("Fiesta del Sacrificio (Aid El Kebir)") \
-            .until(2021) \
-            .on(ML.holiday_aid_el_kebir) \
+            .on(dates({
+                2011: (Month.NOVEMBER, 7),
+                2012: (Month.OCTOBER, 26),
+                2013: (Month.OCTOBER, 15),
+                2014: (Month.OCTOBER, 4),
+                2015: (Month.SEPTEMBER, 25),
+                2016: (Month.SEPTEMBER, 12),
+                2017: (Month.SEPTEMBER, 1),
+                2018: (Month.AUGUST, 22),
+                2019: (Month.AUGUST, 12),
+                2020: (Month.JULY, 31),
+                2021: (Month.JULY, 21),
+            })) \
             .with_flags("RV")
 
         self.define_holiday() \
@@ -76,41 +96,3 @@ class ML(Region):
             .in_years([2011, 2016]) \
             .on(date(Month.DECEMBER, 26)) \
             .with_flags("RF")
-
-    @staticmethod
-    def holiday_aid_el_kebir(year):
-        dates = {
-            2011: date(Month.NOVEMBER, 7),
-            2012: date(Month.OCTOBER, 26),
-            2013: date(Month.OCTOBER, 15),
-            2014: date(Month.OCTOBER, 4),
-            2015: date(Month.SEPTEMBER, 25),
-            2016: date(Month.SEPTEMBER, 12),
-            2017: date(Month.SEPTEMBER, 1),
-            2018: date(Month.AUGUST, 22),
-            2019: date(Month.AUGUST, 12),
-            2020: date(Month.JULY, 31),
-            2021: date(Month.JULY, 21),
-        }
-        return dates.get(year)(year) if year in dates else None
-
-    @staticmethod
-    def holiday_aid_al_adha(year):
-        dates = {
-            2022: date(Month.JULY, 11),
-            2023: date(Month.JUNE, 29),
-            2024: date(Month.JUNE, 17),
-            2025: date(Month.JUNE, 6),
-            2026: date(Month.MAY, 27),
-        }
-        return dates.get(year)(year) if year in dates else None
-
-    @staticmethod
-    def day_of_eid_fitr(year):
-        dates = {
-            2022: date(Month.MAY, 3),
-            2023: date(Month.APRIL, 21),
-            2025: date(Month.MARCH, 31),
-            2026: date(Month.MARCH, 20),
-        }
-        return dates.get(year)(year) if year in dates else None

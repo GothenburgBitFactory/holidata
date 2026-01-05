@@ -2,7 +2,7 @@
 Provides date-handling related utils.
 """
 from enum import IntEnum
-from typing import Callable, List, Union
+from typing import Callable, Union, List, Dict, Tuple
 
 from arrow import Arrow
 
@@ -64,31 +64,35 @@ class SmartDayArrow(Arrow):
 
 
 class SmartDayArrowWrapper:
-    def __init__(self, month: int, day: int):
-        self.month = month
-        self.day = day
+    def __init__(self, date_lookup: Union[Dict[int, Tuple[Month, int]], None] = None, default: Callable[[int], Union[SmartDayArrow, None]] = None):
+        self.dates = date_lookup if date_lookup is not None else {}
+        self.default_func = default
 
     def is_a(self, weekday: Weekday) -> Callable[[int], bool]:
         def wrapper(year):
-            return self(year).weekday() == weekday
+            this = self(year)
+            return this.weekday() == weekday if this is not None else False
 
         return wrapper
 
     def is_not_a(self, weekday: Weekday) -> Callable[[int], bool]:
         def wrapper(year):
-            return self(year).weekday() != weekday
+            this = self(year)
+            return this.weekday() != weekday if this is not None else False
 
         return wrapper
 
     def is_one_of(self, selection: List[Weekday]):
         def wrapper(year):
-            return self(year).weekday() in selection
+            this = self(year)
+            return this.weekday() in selection if this is not None else False
 
         return wrapper
 
     def is_none_of(self, selection: List[Weekday]):
         def wrapper(year):
-            return self(year).weekday() not in selection
+            this = self(year)
+            return this.weekday() not in selection if this is not None else False
 
         return wrapper
 
@@ -104,12 +108,27 @@ class SmartDayArrowWrapper:
 
         return wrapper
 
-    def __call__(self, year: int) -> SmartDayArrow:
-        return SmartDayArrow(year, self.month, self.day)
+    def or_else_on(self, date_func: Callable[[int], Union[SmartDayArrow, None]]) -> 'SmartDayArrowWrapper':
+        self.default_func = date_func
+
+        return self
+
+    def __call__(self, year: int) -> Union[SmartDayArrow, None]:
+        if year in self.dates:
+            return SmartDayArrow(year, self.dates[year][0].value, self.dates[year][1]) if self.dates[year] is not None else None
+
+        if self.default_func is not None:
+            return self.default_func(year)
+
+        return None
 
 
-def date(month: int, day: int) -> SmartDayArrowWrapper:
-    return SmartDayArrowWrapper(month, day)
+def date(month: Month, day: int) -> SmartDayArrowWrapper:
+    return SmartDayArrowWrapper(default=lambda year: SmartDayArrow(year, month, day))
+
+
+def dates(dates_map: Union[Dict[int, Tuple[Month, int]], None]) -> SmartDayArrowWrapper:
+    return SmartDayArrowWrapper(date_lookup=dates_map)
 
 
 class SmartDayArrowDayShifter:
@@ -128,8 +147,8 @@ class SmartDayArrowDayShifter:
         self.shift_direction = 1
         return self
 
-    def __call__(self, year: int) -> SmartDayArrow:
-        return self.date(year).shift(days=self.day_count * self.shift_direction) if self.date is not None else None
+    def __call__(self, year: int) -> Union[SmartDayArrow, None]:
+        return self.date(year).shift(days=self.day_count * self.shift_direction) if self.date is not None and self.date(year) is not None else None
 
 
 def day(count: int) -> SmartDayArrowDayShifter:
@@ -179,7 +198,7 @@ class SmartDayArrowWeekdayShifter:
             order=self.order,
             reverse=not self.forward,
             including=self.including,
-        )
+        ) if self.date is not None else None
 
 
 def first(weekday: Weekday) -> SmartDayArrowWeekdayShifter:

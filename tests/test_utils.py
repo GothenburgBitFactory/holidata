@@ -86,12 +86,11 @@ class TestSmartDayArrow:
 
 class TestSmartDayArrowWrapper:
     def test_wrapper_creation(self):
-        wrapper = SmartDayArrowWrapper(Month.JANUARY, 1)
-        assert wrapper.month == 1
-        assert wrapper.day == 1
+        wrapper = SmartDayArrowWrapper(default=lambda year: SmartDayArrow(year, Month.JANUARY, 1))
+        assert wrapper.default_func is not None
 
     def test_wrapper_callable(self):
-        wrapper = SmartDayArrowWrapper(Month.JANUARY, 1)
+        wrapper = SmartDayArrowWrapper(default=lambda year: SmartDayArrow(year, Month.JANUARY, 1))
         result = wrapper(2023)
         assert isinstance(result, SmartDayArrow)
         assert result.year == 2023
@@ -99,7 +98,7 @@ class TestSmartDayArrowWrapper:
         assert result.day == 1
 
     def test_is_a_method(self):
-        wrapper = SmartDayArrowWrapper(Month.JANUARY, 2)  # 2023-01-02 is a Monday
+        wrapper = SmartDayArrowWrapper(default=lambda year: SmartDayArrow(year, Month.JANUARY, 2))  # 2023-01-02 is a Monday)
         predicate = wrapper.is_a(Weekday.MONDAY)
         assert predicate(2023) is True
         
@@ -107,7 +106,7 @@ class TestSmartDayArrowWrapper:
         assert predicate(2023) is False
 
     def test_is_not_a_method(self):
-        wrapper = SmartDayArrowWrapper(Month.JANUARY, 2)  # 2023-01-02 is a Monday
+        wrapper = SmartDayArrowWrapper(default=lambda year: SmartDayArrow(year, Month.JANUARY, 2))  # 2023-01-02 is a Monday)
         predicate = wrapper.is_not_a(Weekday.TUESDAY)
         assert predicate(2023) is True
         
@@ -115,7 +114,7 @@ class TestSmartDayArrowWrapper:
         assert predicate(2023) is False
 
     def test_is_one_of_method(self):
-        wrapper = SmartDayArrowWrapper(Month.JANUARY, 2)  # 2023-01-02 is a Monday
+        wrapper = SmartDayArrowWrapper(default=lambda year: SmartDayArrow(year, Month.JANUARY, 2))  # 2023-01-02 is a Monday)
         predicate = wrapper.is_one_of([Weekday.MONDAY, Weekday.TUESDAY])
         assert predicate(2023) is True
         
@@ -123,7 +122,7 @@ class TestSmartDayArrowWrapper:
         assert predicate(2023) is False
 
     def test_is_none_of_method(self):
-        wrapper = SmartDayArrowWrapper(Month.JANUARY, 2)  # 2023-01-02 is a Monday
+        wrapper = SmartDayArrowWrapper(default=lambda year: SmartDayArrow(year, Month.JANUARY, 2))  # 2023-01-02 is a Monday)
         predicate = wrapper.is_none_of([Weekday.TUESDAY, Weekday.WEDNESDAY])
         assert predicate(2023) is True
         
@@ -131,9 +130,9 @@ class TestSmartDayArrowWrapper:
         assert predicate(2023) is False
 
     def test_is_equal_to_method(self):
-        wrapper1 = SmartDayArrowWrapper(Month.JANUARY, 2)
-        wrapper2 = SmartDayArrowWrapper(Month.JANUARY, 2)
-        wrapper3 = SmartDayArrowWrapper(Month.JANUARY, 3)
+        wrapper1 = SmartDayArrowWrapper(default=lambda year: SmartDayArrow(year, Month.JANUARY, 2))
+        wrapper2 = SmartDayArrowWrapper(default=lambda year: SmartDayArrow(year, Month.JANUARY, 2))
+        wrapper3 = SmartDayArrowWrapper(default=lambda year: SmartDayArrow(year, Month.JANUARY, 3))
         
         predicate = wrapper1.is_equal_to(wrapper2)
         assert predicate(2023) is True
@@ -142,9 +141,9 @@ class TestSmartDayArrowWrapper:
         assert predicate(2023) is False
 
     def test_is_not_equal_to_method(self):
-        wrapper1 = SmartDayArrowWrapper(Month.JANUARY, 2)
-        wrapper2 = SmartDayArrowWrapper(Month.JANUARY, 2)
-        wrapper3 = SmartDayArrowWrapper(Month.JANUARY, 3)
+        wrapper1 = SmartDayArrowWrapper(default=lambda year: SmartDayArrow(year, Month.JANUARY, 2))
+        wrapper2 = SmartDayArrowWrapper(default=lambda year: SmartDayArrow(year, Month.JANUARY, 2))
+        wrapper3 = SmartDayArrowWrapper(default=lambda year: SmartDayArrow(year, Month.JANUARY, 3))
         
         predicate = wrapper1.is_not_equal_to(wrapper3)
         assert predicate(2023) is True
@@ -157,8 +156,7 @@ class TestDateFunction:
     def test_date_function_creates_wrapper(self):
         wrapper = date(Month.JANUARY, 1)
         assert isinstance(wrapper, SmartDayArrowWrapper)
-        assert wrapper.month == 1
-        assert wrapper.day == 1
+        assert wrapper.default_func is not None
 
 
 class TestDayFunctionAndShifter:

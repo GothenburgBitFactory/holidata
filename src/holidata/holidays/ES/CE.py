@@ -1,5 +1,5 @@
 from holidata.holiday import Region
-from holidata.utils import day, date, Month
+from holidata.utils import day, date, Month, dates
 
 
 class CE(Region):
@@ -26,8 +26,23 @@ class CE(Region):
 
         self.define_holiday() \
             .with_name("Fiesta del Sacrificio (Eidul Adha)") \
-            .except_for([2011]) \
-            .on(CE.day_of_eidul_adha) \
+            .on(dates({
+                2012: (Month.OCTOBER, 27),
+                2013: (Month.OCTOBER, 15),
+                2014: (Month.OCTOBER, 6),
+                2015: (Month.SEPTEMBER, 25),
+                2016: (Month.SEPTEMBER, 12),
+                2017: (Month.SEPTEMBER, 1),
+                2018: (Month.AUGUST, 22),
+                2019: (Month.AUGUST, 12),
+                2020: (Month.JULY, 31),
+                2021: (Month.JULY, 20),
+                2022: (Month.JULY, 9),
+                2023: (Month.JUNE, 29),
+                2024: (Month.JUNE, 17),
+                2025: (Month.JUNE, 6),
+                2026: (Month.MAY, 27),
+            })) \
             .with_flags("RV")
 
         self.define_holiday() \
@@ -76,25 +91,3 @@ class CE(Region):
             .in_years([2011, 2016]) \
             .on(date(Month.DECEMBER, 26)) \
             .with_flags("RF")
-
-    @staticmethod
-    def day_of_eidul_adha(year):
-        dates = {
-            2012: date(Month.OCTOBER, 27),
-            2013: date(Month.OCTOBER, 15),
-            2014: date(Month.OCTOBER, 6),
-            2015: date(Month.SEPTEMBER, 25),
-            2016: date(Month.SEPTEMBER, 12),
-            2017: date(Month.SEPTEMBER, 1),
-            2018: date(Month.AUGUST, 22),
-            2019: date(Month.AUGUST, 12),
-            2020: date(Month.JULY, 31),
-            2021: date(Month.JULY, 20),
-            2022: date(Month.JULY, 9),
-            2023: date(Month.JUNE, 29),
-            2024: date(Month.JUNE, 17),
-            2025: date(Month.JUNE, 6),
-            2026: date(Month.MAY, 27),
-        }
-
-        return dates.get(year)(year) if year in dates else None
