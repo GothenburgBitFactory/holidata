@@ -1,5 +1,5 @@
 from holidata.holiday import Region
-from holidata.utils import day, second, first, date, Weekday, Month
+from holidata.utils import day, second, first, date, Weekday, Month, dates
 
 
 class SA(Region):
@@ -109,7 +109,23 @@ class SA(Region):
         """
         self.define_holiday() \
             .with_name("Adelaide Cup Day") \
-            .on(SA.date_as_declared_by_the_holidays_adelaide_cup_proclamation) \
+            .on(dates({
+                2011: (Month.MARCH, 14),  # Holidays (Adelaide Cup) Proclamation 2010
+                2012: (Month.MARCH, 12),  # Holidays (Adelaide Cup) Proclamation 2011
+                2013: (Month.MARCH, 11),  # Holidays (Adelaide Cup) Proclamation 2012
+                2014: (Month.MARCH, 10),
+                2015: (Month.MARCH, 9),
+                2016: (Month.MARCH, 14),
+                2017: (Month.MARCH, 13),
+                2018: (Month.MARCH, 12),
+                2019: (Month.MARCH, 11),
+                2020: (Month.MARCH, 9),
+                2021: (Month.MARCH, 8),
+                2022: (Month.MARCH, 14),
+                2023: (Month.MARCH, 13),
+                2024: (Month.MARCH, 11),  # subject to Proclamation
+                2025: (Month.MARCH, 10),  # subject to Proclamation
+            })) \
             .with_flags("V")
 
         """
@@ -163,25 +179,3 @@ class SA(Region):
             .on(first(Weekday.MONDAY).after(date(Month.DECEMBER, 25))) \
             .with_flags("RV") \
             .on_condition(date(Month.DECEMBER, 25).is_one_of([Weekday.SATURDAY, Weekday.SUNDAY]))
-
-    @staticmethod
-    def date_as_declared_by_the_holidays_adelaide_cup_proclamation(year):
-        dates = {
-            2011: date(Month.MARCH, 14),  # Holidays (Adelaide Cup) Proclamation 2010
-            2012: date(Month.MARCH, 12),  # Holidays (Adelaide Cup) Proclamation 2011
-            2013: date(Month.MARCH, 11),  # Holidays (Adelaide Cup) Proclamation 2012
-            2014: date(Month.MARCH, 10),
-            2015: date(Month.MARCH, 9),
-            2016: date(Month.MARCH, 14),
-            2017: date(Month.MARCH, 13),
-            2018: date(Month.MARCH, 12),
-            2019: date(Month.MARCH, 11),
-            2020: date(Month.MARCH, 9),
-            2021: date(Month.MARCH, 8),
-            2022: date(Month.MARCH, 14),
-            2023: date(Month.MARCH, 13),
-            2024: date(Month.MARCH, 11),  # subject to Proclamation
-            2025: date(Month.MARCH, 10),  # subject to Proclamation
-        }
-
-        return dates.get(year)(year) if year in dates else None

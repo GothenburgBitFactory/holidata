@@ -1,5 +1,5 @@
 from holidata.holiday import Region
-from holidata.utils import day, first, date, Weekday, Month
+from holidata.utils import day, first, date, Weekday, Month, dates
 
 
 class WA(Region):
@@ -107,19 +107,35 @@ class WA(Region):
 
         """
         Birthday of the Sovereign
+        Dates proclaimed in the Government Gazettes https://www.legislation.wa.gov.au/legislation/statutes.nsf/gazettes.html
         day to be appointed for each year by proclamation published in the Government Gazette at least 3 weeks before the day so appointed
         https://www.legislation.wa.gov.au/legislation/statutes.nsf/RedirectURL?OpenAgent&query=mrdoc_19831.pdf
         """
         self.define_holiday() \
             .with_name("Queen's Birthday") \
-            .until(2022) \
-            .on(WA.birthday_of_the_sovereign) \
+            .on(dates({
+                2011: (Month.OCTOBER, 28),    # 2010 234-6261
+                2012: (Month.OCTOBER, 1),     # 2008 229-5633
+                2013: (Month.SEPTEMBER, 30),  # 2008 229-5633
+                2014: (Month.SEPTEMBER, 29),  # 2012  61-1687
+                2015: (Month.SEPTEMBER, 28),  # 2012  61-1687
+                2016: (Month.SEPTEMBER, 26),  # 2014  74-1595
+                2017: (Month.SEPTEMBER, 25),  # 2014  74-1595
+                2018: (Month.SEPTEMBER, 24),  # 2016  73-1379
+                2019: (Month.SEPTEMBER, 30),  # 2016  73-1379
+                2020: (Month.SEPTEMBER, 28),  # 2018  53-1287
+                2021: (Month.SEPTEMBER, 27),  # 2018  53-1287
+                2022: (Month.SEPTEMBER, 26),  # 2020 151-2919
+            }))\
             .with_flags("V")
 
         self.define_holiday() \
             .with_name("King's Birthday") \
-            .since(2023) \
-            .on(WA.birthday_of_the_sovereign) \
+            .on(dates({
+                2023: (Month.SEPTEMBER, 25),  # 2020 151-2919
+                2024: (Month.SEPTEMBER, 23),  # 2022  69-3009
+                2025: (Month.SEPTEMBER, 29),  # 2022  69-3009
+            })) \
             .with_flags("V")
 
         """
@@ -173,29 +189,3 @@ class WA(Region):
             .on(first(Weekday.TUESDAY).after(date(Month.DECEMBER, 26))) \
             .with_flags("RV") \
             .on_condition(date(Month.DECEMBER, 26).is_one_of([Weekday.SUNDAY, Weekday.MONDAY]))
-
-    @staticmethod
-    def birthday_of_the_sovereign(year):
-        """
-        Dates proclaimed in the Government Gazettes
-        https://www.legislation.wa.gov.au/legislation/statutes.nsf/gazettes.html
-        """
-        dates = {
-            2011: date(Month.OCTOBER, 28),    # 2010 234-6261
-            2012: date(Month.OCTOBER, 1),     # 2008 229-5633
-            2013: date(Month.SEPTEMBER, 30),  # 2008 229-5633
-            2014: date(Month.SEPTEMBER, 29),  # 2012  61-1687
-            2015: date(Month.SEPTEMBER, 28),  # 2012  61-1687
-            2016: date(Month.SEPTEMBER, 26),  # 2014  74-1595
-            2017: date(Month.SEPTEMBER, 25),  # 2014  74-1595
-            2018: date(Month.SEPTEMBER, 24),  # 2016  73-1379
-            2019: date(Month.SEPTEMBER, 30),  # 2016  73-1379
-            2020: date(Month.SEPTEMBER, 28),  # 2018  53-1287
-            2021: date(Month.SEPTEMBER, 27),  # 2018  53-1287
-            2022: date(Month.SEPTEMBER, 26),  # 2020 151-2919
-            2023: date(Month.SEPTEMBER, 25),  # 2020 151-2919
-            2024: date(Month.SEPTEMBER, 23),  # 2022  69-3009
-            2025: date(Month.SEPTEMBER, 29),  # 2022  69-3009
-        }
-
-        return dates.get(year)(year) if year in dates else None

@@ -1,7 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
 from holidata.holiday import Country
-from holidata.utils import day, date, first, Month, Weekday
+from holidata.utils import day, date, first, Month, Weekday, dates
 
 __all__ = [
     "SG",
@@ -39,12 +39,12 @@ class SG(Country):
 
         self.define_holiday() \
             .with_name("Chinese New Year") \
-            .on(SG.chinese_new_year) \
+            .on(SG.chinese_new_year()) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Chinese New Year (Second Day)") \
-            .on(SG.chinese_new_year_day2) \
+            .on(day(1).after(SG.chinese_new_year())) \
             .with_flags("NRV")
 
         self.define_holiday() \
@@ -70,33 +70,36 @@ class SG(Country):
 
         self.define_holiday() \
             .with_name("Hari Raya Puasa") \
-            .on(SG.hari_raya_puasa) \
+            .on(SG.hari_raya_puasa()) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Hari Raya Puasa (in lieu)") \
-            .on(SG.hari_raya_puasa_in_lieu) \
-            .with_flags("NRV")
+            .on(first(Weekday.MONDAY).after(SG.hari_raya_puasa())) \
+            .with_flags("NRV") \
+            .on_condition(SG.hari_raya_puasa().is_a(Weekday.SUNDAY))
 
         self.define_holiday() \
             .with_name("Vesak Day") \
-            .on(SG.vesak_day) \
+            .on(SG.vesak_day()) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Vesak Day (in lieu)") \
-            .on(SG.vesak_day_in_lieu) \
-            .with_flags("NRV")
+            .on(first(Weekday.MONDAY).after(SG.vesak_day())) \
+            .with_flags("NRV") \
+            .on_condition(SG.vesak_day().is_a(Weekday.SUNDAY))
 
         self.define_holiday() \
             .with_name("Hari Raya Haji") \
-            .on(SG.hari_raya_haji) \
+            .on(SG.hari_raya_haji()) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Hari Raya Haji (in lieu)") \
-            .on(SG.hari_raya_haji_in_lieu) \
-            .with_flags("NRV")
+            .on(day(1).after(SG.hari_raya_haji())) \
+            .with_flags("NRV") \
+            .on_condition(SG.hari_raya_haji().is_a(Weekday.SUNDAY))
 
         self.define_holiday() \
             .with_name("National Day") \
@@ -111,13 +114,14 @@ class SG(Country):
 
         self.define_holiday() \
             .with_name("Deepavali") \
-            .on(SG.deepavali) \
+            .on(SG.deepavali()) \
             .with_flags("NRV")
 
         self.define_holiday() \
             .with_name("Deepavali (in lieu)") \
-            .on(SG.deepavali_in_lieu) \
-            .with_flags("NRV")
+            .on(day(1).after(SG.deepavali())) \
+            .with_flags("NRV") \
+            .on_condition(SG.deepavali().is_a(Weekday.SUNDAY))
 
         self.define_holiday() \
             .with_name("Christmas Day") \
@@ -136,7 +140,12 @@ class SG(Country):
         """
         self.define_holiday() \
             .with_name("General Election") \
-            .on(SG.date_of_general_election) \
+            .on(dates({
+                2011: (Month.MAY, 7),
+                2015: (Month.SEPTEMBER, 11),
+                2020: (Month.JULY, 10),
+                2025: (Month.MAY, 3),
+            })) \
             .with_flags("NF")
 
         """
@@ -145,7 +154,11 @@ class SG(Country):
         """
         self.define_holiday() \
             .with_name("Presidential Election") \
-            .on(SG.date_of_presidential_election) \
+            .on(dates({
+                2011: (Month.AUGUST, 27),
+                2017: (Month.SEPTEMBER, 13),
+                2023: (Month.SEPTEMBER, 1),
+            })) \
             .with_flags("NF")
 
         """
@@ -159,56 +172,30 @@ class SG(Country):
             .with_flags("NF")
 
     @staticmethod
-    def date_of_general_election(year):
-        dates = {
-            2011: date(Month.MAY, 7),
-            2015: date(Month.SEPTEMBER, 11),
-            2020: date(Month.JULY, 10),
-            2025: date(Month.MAY, 3),
-        }
-        return dates.get(year)(year) if year in dates else None
-
-    @staticmethod
-    def date_of_presidential_election(year):
-        dates = {
-            2011: date(Month.AUGUST, 27),
-            2017: date(Month.SEPTEMBER, 13),
-            2023: date(Month.SEPTEMBER, 1),
-        }
-        return dates.get(year)(year) if year in dates else None
-
-    @staticmethod
-    def chinese_new_year(year):
+    def chinese_new_year():
         """Return the date of Chinese New Year for the given year."""
-        dates = {
-            2011: date(Month.FEBRUARY, 3),
-            2012: date(Month.JANUARY, 23),
-            2013: date(Month.FEBRUARY, 10),
-            2014: date(Month.JANUARY, 31),
-            2015: date(Month.FEBRUARY, 19),
-            2016: date(Month.FEBRUARY, 8),
-            2017: date(Month.JANUARY, 28),
-            2018: date(Month.FEBRUARY, 16),
-            2019: date(Month.FEBRUARY, 5),
-            2020: date(Month.JANUARY, 25),
-            2021: date(Month.FEBRUARY, 12),
-            2022: date(Month.FEBRUARY, 1),
-            2023: date(Month.JANUARY, 22),
-            2024: date(Month.FEBRUARY, 10),
-            2025: date(Month.JANUARY, 29),
-            2026: date(Month.FEBRUARY, 17)
-        }
-        return dates.get(year)(year) if year in dates else None
-
-    @staticmethod
-    def chinese_new_year_day2(year):
-        """Return the date of the second day of Chinese New Year."""
-        first_day = SG.chinese_new_year(year)
-        return first_day.shift(days=1) if first_day is not None else None
+        return dates({
+            2011: (Month.FEBRUARY, 3),
+            2012: (Month.JANUARY, 23),
+            2013: (Month.FEBRUARY, 10),
+            2014: (Month.JANUARY, 31),
+            2015: (Month.FEBRUARY, 19),
+            2016: (Month.FEBRUARY, 8),
+            2017: (Month.JANUARY, 28),
+            2018: (Month.FEBRUARY, 16),
+            2019: (Month.FEBRUARY, 5),
+            2020: (Month.JANUARY, 25),
+            2021: (Month.FEBRUARY, 12),
+            2022: (Month.FEBRUARY, 1),
+            2023: (Month.JANUARY, 22),
+            2024: (Month.FEBRUARY, 10),
+            2025: (Month.JANUARY, 29),
+            2026: (Month.FEBRUARY, 17)
+        })
 
     @staticmethod
     def chinese_new_year_in_lieu(year):
-        holiday_date = SG.chinese_new_year(year)
+        holiday_date = SG.chinese_new_year()(year)
         if holiday_date is not None and holiday_date.weekday() == Weekday.SATURDAY:
             return holiday_date.shift_to_weekday(Weekday.MONDAY)
         elif holiday_date is not None and holiday_date.weekday() == Weekday.SUNDAY:
@@ -216,121 +203,89 @@ class SG(Country):
         return None
 
     @staticmethod
-    def hari_raya_puasa(year):
+    def hari_raya_puasa():
         """Return the date of Hari Raya Puasa for the given year."""
-        dates = {
-            2011: date(Month.AUGUST, 30),
-            2012: date(Month.AUGUST, 19),
-            2013: date(Month.AUGUST, 8),
-            2014: date(Month.JULY, 28),
-            2015: date(Month.JULY, 17),
-            2016: date(Month.JULY, 6),
-            2017: date(Month.JUNE, 25),
-            2018: date(Month.JUNE, 15),
-            2019: date(Month.JUNE, 5),
-            2020: date(Month.MAY, 24),
-            2021: date(Month.MAY, 13),
-            2022: date(Month.MAY, 3),
-            2023: date(Month.APRIL, 22),
-            2024: date(Month.APRIL, 10),
-            2025: date(Month.MARCH, 31),
-            2026: date(Month.MARCH, 21)
-        }
-        return dates.get(year)(year) if year in dates else None
+        return dates({
+            2011: (Month.AUGUST, 30),
+            2012: (Month.AUGUST, 19),
+            2013: (Month.AUGUST, 8),
+            2014: (Month.JULY, 28),
+            2015: (Month.JULY, 17),
+            2016: (Month.JULY, 6),
+            2017: (Month.JUNE, 25),
+            2018: (Month.JUNE, 15),
+            2019: (Month.JUNE, 5),
+            2020: (Month.MAY, 24),
+            2021: (Month.MAY, 13),
+            2022: (Month.MAY, 3),
+            2023: (Month.APRIL, 22),
+            2024: (Month.APRIL, 10),
+            2025: (Month.MARCH, 31),
+            2026: (Month.MARCH, 21)
+        })
 
     @staticmethod
-    def hari_raya_puasa_in_lieu(year):
-        holiday_date = SG.hari_raya_puasa(year)
-        if holiday_date is not None and holiday_date.weekday() == Weekday.SUNDAY:
-            return holiday_date.shift_to_weekday(Weekday.MONDAY)
-        return None
-
-    @staticmethod
-    def vesak_day(year):
+    def vesak_day():
         """Return the date of Vesak Day for the given year."""
-        dates = {
-            2011: date(Month.MAY, 17),
-            2012: date(Month.MAY, 5),
-            2013: date(Month.MAY, 24),
-            2014: date(Month.MAY, 13),
-            2015: date(Month.JUNE, 1),
-            2016: date(Month.MAY, 21),
-            2017: date(Month.MAY, 10),
-            2018: date(Month.MAY, 29),
-            2019: date(Month.MAY, 19),
-            2020: date(Month.MAY, 7),
-            2021: date(Month.MAY, 26),
-            2022: date(Month.MAY, 15),
-            2023: date(Month.JUNE, 2),
-            2024: date(Month.MAY, 22),
-            2025: date(Month.MAY, 12),
-            2026: date(Month.MAY, 31)
-        }
-        return dates.get(year)(year) if year in dates else None
+        return dates({
+            2011: (Month.MAY, 17),
+            2012: (Month.MAY, 5),
+            2013: (Month.MAY, 24),
+            2014: (Month.MAY, 13),
+            2015: (Month.JUNE, 1),
+            2016: (Month.MAY, 21),
+            2017: (Month.MAY, 10),
+            2018: (Month.MAY, 29),
+            2019: (Month.MAY, 19),
+            2020: (Month.MAY, 7),
+            2021: (Month.MAY, 26),
+            2022: (Month.MAY, 15),
+            2023: (Month.JUNE, 2),
+            2024: (Month.MAY, 22),
+            2025: (Month.MAY, 12),
+            2026: (Month.MAY, 31)
+        })
 
     @staticmethod
-    def vesak_day_in_lieu(year):
-        holiday_date = SG.vesak_day(year)
-        if holiday_date is not None and holiday_date.weekday() == Weekday.SUNDAY:
-            return holiday_date.shift_to_weekday(Weekday.MONDAY)
-        return None
-
-    @staticmethod
-    def hari_raya_haji(year):
+    def hari_raya_haji():
         """Return the date of Hari Raya Haji for the given year."""
-        dates = {
-            2011: date(Month.NOVEMBER, 6),
-            2012: date(Month.OCTOBER, 26),
-            2013: date(Month.OCTOBER, 15),
-            2014: date(Month.OCTOBER, 5),
-            2015: date(Month.SEPTEMBER, 24),
-            2016: date(Month.SEPTEMBER, 12),
-            2017: date(Month.SEPTEMBER, 1),
-            2018: date(Month.AUGUST, 22),
-            2019: date(Month.AUGUST, 11),
-            2020: date(Month.JULY, 31),
-            2021: date(Month.JULY, 20),
-            2022: date(Month.JULY, 10),
-            2023: date(Month.JUNE, 29),
-            2024: date(Month.JUNE, 17),
-            2025: date(Month.JUNE, 7),
-            2026: date(Month.MAY, 27)
-        }
-        return dates.get(year)(year) if year in dates else None
+        return dates({
+            2011: (Month.NOVEMBER, 6),
+            2012: (Month.OCTOBER, 26),
+            2013: (Month.OCTOBER, 15),
+            2014: (Month.OCTOBER, 5),
+            2015: (Month.SEPTEMBER, 24),
+            2016: (Month.SEPTEMBER, 12),
+            2017: (Month.SEPTEMBER, 1),
+            2018: (Month.AUGUST, 22),
+            2019: (Month.AUGUST, 11),
+            2020: (Month.JULY, 31),
+            2021: (Month.JULY, 20),
+            2022: (Month.JULY, 10),
+            2023: (Month.JUNE, 29),
+            2024: (Month.JUNE, 17),
+            2025: (Month.JUNE, 7),
+            2026: (Month.MAY, 27)
+        })
 
     @staticmethod
-    def hari_raya_haji_in_lieu(year):
-        holiday_date = SG.hari_raya_haji(year)
-        if holiday_date is not None and holiday_date.weekday() == Weekday.SUNDAY:
-            return holiday_date.shift_to_weekday(Weekday.MONDAY)
-        return None
-
-    @staticmethod
-    def deepavali(year):
+    def deepavali():
         """Return the date of Deepavali for the given year."""
-        dates = {
-            2011: date(Month.OCTOBER, 26),
-            2012: date(Month.NOVEMBER, 13),
-            2013: date(Month.NOVEMBER, 2),
-            2014: date(Month.OCTOBER, 22),
-            2015: date(Month.NOVEMBER, 10),
-            2016: date(Month.OCTOBER, 29),
-            2017: date(Month.OCTOBER, 18),
-            2018: date(Month.NOVEMBER, 6),
-            2019: date(Month.OCTOBER, 27),
-            2020: date(Month.NOVEMBER, 14),
-            2021: date(Month.NOVEMBER, 4),
-            2022: date(Month.OCTOBER, 24),
-            2023: date(Month.NOVEMBER, 12),
-            2024: date(Month.OCTOBER, 31),
-            2025: date(Month.OCTOBER, 20),
-            2026: date(Month.NOVEMBER, 8)
-        }
-        return dates.get(year)(year) if year in dates else None
-
-    @staticmethod
-    def deepavali_in_lieu(year):
-        holiday_date = SG.deepavali(year)
-        if holiday_date is not None and holiday_date.weekday() == Weekday.SUNDAY:
-            return holiday_date.shift_to_weekday(Weekday.MONDAY)
-        return None
+        return dates({
+            2011: (Month.OCTOBER, 26),
+            2012: (Month.NOVEMBER, 13),
+            2013: (Month.NOVEMBER, 2),
+            2014: (Month.OCTOBER, 22),
+            2015: (Month.NOVEMBER, 10),
+            2016: (Month.OCTOBER, 29),
+            2017: (Month.OCTOBER, 18),
+            2018: (Month.NOVEMBER, 6),
+            2019: (Month.OCTOBER, 27),
+            2020: (Month.NOVEMBER, 14),
+            2021: (Month.NOVEMBER, 4),
+            2022: (Month.OCTOBER, 24),
+            2023: (Month.NOVEMBER, 12),
+            2024: (Month.OCTOBER, 31),
+            2025: (Month.OCTOBER, 20),
+            2026: (Month.NOVEMBER, 8)
+        })
