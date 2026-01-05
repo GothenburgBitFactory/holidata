@@ -1,5 +1,6 @@
 - #154 Replace custom date functions with DSL functions
 - #153 Fix date filtering in holiday generator
+- #152 AU: Fix dates for Grand Final Eve (Victoria)
 - #151 Add dates() utility function for explicit year-to-date mappings
 
 2026.1.2
