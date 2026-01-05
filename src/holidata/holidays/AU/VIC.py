@@ -133,12 +133,16 @@ class VIC(Region):
         Grand Final Eve
         the Friday before the Australian Football League Grand Final
         Usually, the Friday before last Saturday in September
+        2016: https://www.gazette.vic.gov.au/gazette/Gazettes2016/GG2016G036.pdf
+        2017: https://www.gazette.vic.gov.au/gazette/Gazettes2017/GG2017G032.pdf
+        2018: https://www.gazette.vic.gov.au/gazette/Gazettes2018/GG2018G039.pdf
         2019: https://content.legislation.vic.gov.au/sites/default/files/ad24ad2c-06f2-3ae3-b0ce-1fcd9b5f61a0_93-119aa026%20authorised.pdf
         """
         self.define_holiday() \
             .with_name("Grand Final Eve") \
-            .since(2019) \
+            .since(2016) \
             .on(dates({
+                2016: (Month.SEPTEMBER, 30),
                 2020: (Month.OCTOBER, 23),  # Adaption due to the COVID-19 pandemic
             }).or_else_on(first(Weekday.FRIDAY).before(last(Weekday.SATURDAY).of(Month.SEPTEMBER)))) \
             .with_flags("V")
