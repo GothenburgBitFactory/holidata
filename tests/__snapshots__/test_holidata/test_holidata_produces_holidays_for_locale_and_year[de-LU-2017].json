@@ -1,0 +1,98 @@
+[
+  {
+    "date": "2017-01-01",
+    "description": "Neujahr",
+    "locale": "de-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2017-04-16",
+    "description": "Ostern",
+    "locale": "de-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2017-04-17",
+    "description": "Ostermontag",
+    "locale": "de-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2017-05-01",
+    "description": "1. Mai",
+    "locale": "de-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2017-05-25",
+    "description": "Christi Himmelfahrt",
+    "locale": "de-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2017-06-04",
+    "description": "Pfingsten",
+    "locale": "de-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2017-06-05",
+    "description": "Pfingstmontag",
+    "locale": "de-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2017-06-23",
+    "description": "Nationalfeiertag",
+    "locale": "de-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2017-08-15",
+    "description": "Mariä Himmelfahrt",
+    "locale": "de-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2017-11-01",
+    "description": "Allerheiligen",
+    "locale": "de-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2017-12-25",
+    "description": "Weihnachten",
+    "locale": "de-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2017-12-26",
+    "description": "2. Weihnachtsfeiertag",
+    "locale": "de-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  }
+]

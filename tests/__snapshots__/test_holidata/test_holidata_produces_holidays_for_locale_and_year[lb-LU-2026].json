@@ -1,0 +1,106 @@
+[
+  {
+    "date": "2026-01-01",
+    "description": "Neijoerschdag",
+    "locale": "lb-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2026-04-05",
+    "description": "Ouschteren",
+    "locale": "lb-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2026-04-06",
+    "description": "Ouschterméindeg",
+    "locale": "lb-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2026-05-01",
+    "description": "Éischte Mee",
+    "locale": "lb-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2026-05-09",
+    "description": "Europadag",
+    "locale": "lb-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2026-05-14",
+    "description": "Christi Himmelfaart",
+    "locale": "lb-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2026-05-24",
+    "description": "Péngschten",
+    "locale": "lb-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2026-05-25",
+    "description": "Péngschtméindeg",
+    "locale": "lb-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2026-06-23",
+    "description": "Nationalfeierdag",
+    "locale": "lb-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2026-08-15",
+    "description": "Léiffrawëschdag",
+    "locale": "lb-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2026-11-01",
+    "description": "Allerhellegen",
+    "locale": "lb-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2026-12-25",
+    "description": "Chrëschtdag",
+    "locale": "lb-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2026-12-26",
+    "description": "Stiefesdag",
+    "locale": "lb-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  }
+]

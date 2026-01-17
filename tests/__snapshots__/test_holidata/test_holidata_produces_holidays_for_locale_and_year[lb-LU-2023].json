@@ -1,0 +1,106 @@
+[
+  {
+    "date": "2023-01-01",
+    "description": "Neijoerschdag",
+    "locale": "lb-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2023-04-09",
+    "description": "Ouschteren",
+    "locale": "lb-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2023-04-10",
+    "description": "Ouschterméindeg",
+    "locale": "lb-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2023-05-01",
+    "description": "Éischte Mee",
+    "locale": "lb-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2023-05-09",
+    "description": "Europadag",
+    "locale": "lb-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2023-05-18",
+    "description": "Christi Himmelfaart",
+    "locale": "lb-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2023-05-28",
+    "description": "Péngschten",
+    "locale": "lb-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2023-05-29",
+    "description": "Péngschtméindeg",
+    "locale": "lb-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2023-06-23",
+    "description": "Nationalfeierdag",
+    "locale": "lb-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2023-08-15",
+    "description": "Léiffrawëschdag",
+    "locale": "lb-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2023-11-01",
+    "description": "Allerhellegen",
+    "locale": "lb-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2023-12-25",
+    "description": "Chrëschtdag",
+    "locale": "lb-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2023-12-26",
+    "description": "Stiefesdag",
+    "locale": "lb-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  }
+]

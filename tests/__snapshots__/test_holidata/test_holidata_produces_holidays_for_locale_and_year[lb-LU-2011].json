@@ -1,0 +1,98 @@
+[
+  {
+    "date": "2011-01-01",
+    "description": "Neijoerschdag",
+    "locale": "lb-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2011-04-24",
+    "description": "Ouschteren",
+    "locale": "lb-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2011-04-25",
+    "description": "Ouschterméindeg",
+    "locale": "lb-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2011-05-01",
+    "description": "Éischte Mee",
+    "locale": "lb-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2011-06-02",
+    "description": "Christi Himmelfaart",
+    "locale": "lb-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2011-06-12",
+    "description": "Péngschten",
+    "locale": "lb-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2011-06-13",
+    "description": "Péngschtméindeg",
+    "locale": "lb-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2011-06-23",
+    "description": "Nationalfeierdag",
+    "locale": "lb-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2011-08-15",
+    "description": "Léiffrawëschdag",
+    "locale": "lb-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2011-11-01",
+    "description": "Allerhellegen",
+    "locale": "lb-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2011-12-25",
+    "description": "Chrëschtdag",
+    "locale": "lb-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2011-12-26",
+    "description": "Stiefesdag",
+    "locale": "lb-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  }
+]

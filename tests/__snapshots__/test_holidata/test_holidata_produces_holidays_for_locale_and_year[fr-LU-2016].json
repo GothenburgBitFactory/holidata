@@ -1,0 +1,98 @@
+[
+  {
+    "date": "2016-01-01",
+    "description": "Nouvel An",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2016-03-27",
+    "description": "Pâques",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2016-03-28",
+    "description": "Lundi de Pâques",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2016-05-01",
+    "description": "Premier Mai",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2016-05-05",
+    "description": "Ascension",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2016-05-15",
+    "description": "Pentecôte",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2016-05-16",
+    "description": "Lundi de Pentecôte",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2016-06-23",
+    "description": "Fête nationale",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2016-08-15",
+    "description": "Assomption",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2016-11-01",
+    "description": "Toussaint",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2016-12-25",
+    "description": "Noël",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2016-12-26",
+    "description": "Saint Étienne",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "date": "2012-01-01",
+    "description": "Nouvel An",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2012-04-08",
+    "description": "Pâques",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2012-04-09",
+    "description": "Lundi de Pâques",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2012-05-01",
+    "description": "Premier Mai",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2012-05-17",
+    "description": "Ascension",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2012-05-27",
+    "description": "Pentecôte",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2012-05-28",
+    "description": "Lundi de Pentecôte",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2012-06-23",
+    "description": "Fête nationale",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2012-08-15",
+    "description": "Assomption",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2012-11-01",
+    "description": "Toussaint",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2012-12-25",
+    "description": "Noël",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2012-12-26",
+    "description": "Saint Étienne",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  }
+]

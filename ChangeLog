@@ -1,3 +1,5 @@
+- #149 LU: Add country Luxembourg (locales 'de-LU', 'en-LU', 'fr-LU', 'lb-LU')
+       (thanks to Ivan S. Titov)
 - #148 Optimize function 'shift_to_weekday'
 - #147 Use enums for month and weekday names
 - #146 Use single available language of country as default language
