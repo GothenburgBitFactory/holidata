@@ -1,0 +1,106 @@
+[
+  {
+    "date": "2026-01-01",
+    "description": "New Year",
+    "locale": "en-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2026-04-05",
+    "description": "Easter",
+    "locale": "en-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2026-04-06",
+    "description": "Easter Monday",
+    "locale": "en-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2026-05-01",
+    "description": "Mayday",
+    "locale": "en-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2026-05-09",
+    "description": "Europe Day",
+    "locale": "en-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2026-05-14",
+    "description": "Ascension Day",
+    "locale": "en-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2026-05-24",
+    "description": "Pentecost",
+    "locale": "en-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2026-05-25",
+    "description": "Whit Monday",
+    "locale": "en-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2026-06-23",
+    "description": "National Day",
+    "locale": "en-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2026-08-15",
+    "description": "Assumption",
+    "locale": "en-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2026-11-01",
+    "description": "All Saints",
+    "locale": "en-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2026-12-25",
+    "description": "Christmas",
+    "locale": "en-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2026-12-26",
+    "description": "Boxing Day",
+    "locale": "en-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  }
+]

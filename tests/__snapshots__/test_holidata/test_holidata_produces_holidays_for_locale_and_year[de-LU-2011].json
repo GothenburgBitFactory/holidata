@@ -1,0 +1,98 @@
+[
+  {
+    "date": "2011-01-01",
+    "description": "Neujahr",
+    "locale": "de-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2011-04-24",
+    "description": "Ostern",
+    "locale": "de-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2011-04-25",
+    "description": "Ostermontag",
+    "locale": "de-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2011-05-01",
+    "description": "1. Mai",
+    "locale": "de-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2011-06-02",
+    "description": "Christi Himmelfahrt",
+    "locale": "de-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2011-06-12",
+    "description": "Pfingsten",
+    "locale": "de-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2011-06-13",
+    "description": "Pfingstmontag",
+    "locale": "de-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2011-06-23",
+    "description": "Nationalfeiertag",
+    "locale": "de-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2011-08-15",
+    "description": "Mariä Himmelfahrt",
+    "locale": "de-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2011-11-01",
+    "description": "Allerheiligen",
+    "locale": "de-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2011-12-25",
+    "description": "Weihnachten",
+    "locale": "de-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2011-12-26",
+    "description": "2. Weihnachtsfeiertag",
+    "locale": "de-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  }
+]

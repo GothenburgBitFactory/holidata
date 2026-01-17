@@ -1,0 +1,106 @@
+[
+  {
+    "date": "2023-01-01",
+    "description": "New Year",
+    "locale": "en-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2023-04-09",
+    "description": "Easter",
+    "locale": "en-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2023-04-10",
+    "description": "Easter Monday",
+    "locale": "en-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2023-05-01",
+    "description": "Mayday",
+    "locale": "en-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2023-05-09",
+    "description": "Europe Day",
+    "locale": "en-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2023-05-18",
+    "description": "Ascension Day",
+    "locale": "en-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2023-05-28",
+    "description": "Pentecost",
+    "locale": "en-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2023-05-29",
+    "description": "Whit Monday",
+    "locale": "en-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2023-06-23",
+    "description": "National Day",
+    "locale": "en-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2023-08-15",
+    "description": "Assumption",
+    "locale": "en-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2023-11-01",
+    "description": "All Saints",
+    "locale": "en-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2023-12-25",
+    "description": "Christmas",
+    "locale": "en-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2023-12-26",
+    "description": "Boxing Day",
+    "locale": "en-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  }
+]

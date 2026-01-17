@@ -1,0 +1,106 @@
+[
+  {
+    "date": "2026-01-01",
+    "description": "Nouvel An",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2026-04-05",
+    "description": "Pâques",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2026-04-06",
+    "description": "Lundi de Pâques",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2026-05-01",
+    "description": "Premier Mai",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2026-05-09",
+    "description": "Journée de l'Europe",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2026-05-14",
+    "description": "Ascension",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2026-05-24",
+    "description": "Pentecôte",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2026-05-25",
+    "description": "Lundi de Pentecôte",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2026-06-23",
+    "description": "Fête nationale",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2026-08-15",
+    "description": "Assomption",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2026-11-01",
+    "description": "Toussaint",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2026-12-25",
+    "description": "Noël",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2026-12-26",
+    "description": "Saint Étienne",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  }
+]

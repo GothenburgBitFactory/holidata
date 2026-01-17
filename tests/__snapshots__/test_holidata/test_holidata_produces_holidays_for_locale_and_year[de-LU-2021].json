@@ -1,0 +1,106 @@
+[
+  {
+    "date": "2021-01-01",
+    "description": "Neujahr",
+    "locale": "de-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2021-04-04",
+    "description": "Ostern",
+    "locale": "de-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2021-04-05",
+    "description": "Ostermontag",
+    "locale": "de-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2021-05-01",
+    "description": "1. Mai",
+    "locale": "de-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2021-05-09",
+    "description": "Europatag",
+    "locale": "de-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2021-05-13",
+    "description": "Christi Himmelfahrt",
+    "locale": "de-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2021-05-23",
+    "description": "Pfingsten",
+    "locale": "de-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2021-05-24",
+    "description": "Pfingstmontag",
+    "locale": "de-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2021-06-23",
+    "description": "Nationalfeiertag",
+    "locale": "de-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2021-08-15",
+    "description": "Mariä Himmelfahrt",
+    "locale": "de-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2021-11-01",
+    "description": "Allerheiligen",
+    "locale": "de-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2021-12-25",
+    "description": "Weihnachten",
+    "locale": "de-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2021-12-26",
+    "description": "2. Weihnachtsfeiertag",
+    "locale": "de-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "date": "2023-01-01",
+    "description": "Nouvel An",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2023-04-09",
+    "description": "Pâques",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2023-04-10",
+    "description": "Lundi de Pâques",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2023-05-01",
+    "description": "Premier Mai",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2023-05-09",
+    "description": "Journée de l'Europe",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2023-05-18",
+    "description": "Ascension",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2023-05-28",
+    "description": "Pentecôte",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2023-05-29",
+    "description": "Lundi de Pentecôte",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2023-06-23",
+    "description": "Fête nationale",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2023-08-15",
+    "description": "Assomption",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2023-11-01",
+    "description": "Toussaint",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2023-12-25",
+    "description": "Noël",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2023-12-26",
+    "description": "Saint Étienne",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  }
+]
