@@ -105,7 +105,7 @@ class HolidayGenerator:
     def build_for_year_and_lang(self, year: int, lang: str) -> Iterator[Holiday]:
         for filter in self.filters:
             if not filter(year):
-                return []
+                return
 
         for region in self.regions:
             holiday_date = self.date(year) if self.date is not None else None
@@ -119,8 +119,6 @@ class HolidayGenerator:
                 flags=self.flags,
                 notes=self.notes,
             )
-
-        return None
 
 
 class Country(metaclass=PluginMount):
