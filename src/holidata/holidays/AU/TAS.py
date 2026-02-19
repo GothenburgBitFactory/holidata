@@ -39,7 +39,6 @@ class TAS(Region):
 
         self.define_holiday() \
             .with_name("Royal Hobart Regatta") \
-            .in_regions(["TAS"]) \
             .on(second(Weekday.MONDAY).of(Month.FEBRUARY)) \
             .with_flags("V")
 
