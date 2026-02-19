@@ -1,5 +1,5 @@
 from holidata.holiday import Region
-from holidata.utils import day, date, Month
+from holidata.utils import day, date, Month, dates
 
 
 class MC(Region):
@@ -21,7 +21,7 @@ class MC(Region):
         self.define_holiday() \
             .with_name("Día de la Región de Murcia") \
             .except_for([2013, 2024]) \
-            .on(MC.dia_de_la_region_de_murcia) \
+            .on(date(Month.JUNE, 9).except_for({2019: (Month.JUNE, 10)})) \
             .with_flags("F")
 
         self.define_holiday() \
@@ -70,10 +70,3 @@ class MC(Region):
             .in_years([2016]) \
             .on(date(Month.DECEMBER, 26)) \
             .with_flags("RF")
-
-    @staticmethod
-    def dia_de_la_region_de_murcia(year):
-        if year == 2019:
-            return date(Month.JUNE, 10)(year)
-        else:
-            return date(Month.JUNE, 9)(year)

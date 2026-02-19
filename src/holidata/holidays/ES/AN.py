@@ -1,5 +1,5 @@
 from holidata.holiday import Region
-from holidata.utils import day, date, Month
+from holidata.utils import day, date, Month, dates
 
 
 class AN(Region):
@@ -20,7 +20,10 @@ class AN(Region):
 
         self.define_holiday() \
             .with_name("Día de Andalucía") \
-            .on(AN.dia_de_andalucia) \
+            .on(date(Month.FEBRUARY, 28).except_for({
+                2016: (Month.FEBRUARY, 29),
+                2021: (Month.MARCH, 1)
+            })) \
             .with_flags("F")
 
         self.define_holiday() \
@@ -75,12 +78,3 @@ class AN(Region):
             .in_years([2022]) \
             .on(date(Month.DECEMBER, 26)) \
             .with_flags("RF")
-
-    @staticmethod
-    def dia_de_andalucia(year):
-        if year == 2016:
-            return date(Month.FEBRUARY, 29)(year)
-        elif year == 2021:
-            return date(Month.MARCH, 1)(year)
-        else:
-            return date(Month.FEBRUARY, 28)(year)

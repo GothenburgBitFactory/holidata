@@ -1,5 +1,5 @@
 from holidata.holiday import Region
-from holidata.utils import day, date, Month
+from holidata.utils import day, date, Month, dates
 
 
 class CL(Region):
@@ -20,7 +20,7 @@ class CL(Region):
 
         self.define_holiday() \
             .with_name("Fiesta de Castilla y León") \
-            .on(CL.day_fiesta_de_castilla_y_leon) \
+            .on(date(Month.APRIL, 23).except_for({2017: (Month.APRIL, 24)})) \
             .with_flags("F")
 
         self.define_holiday() \
@@ -99,10 +99,3 @@ class CL(Region):
             .in_years([2011, 2016, 2018]) \
             .on(date(Month.DECEMBER, 26)) \
             .with_flags("RF")
-
-    @staticmethod
-    def day_fiesta_de_castilla_y_leon(year):
-        if year == 2017:
-            return date(Month.APRIL, 24)(year)
-        else:
-            return date(Month.APRIL, 23)(year)

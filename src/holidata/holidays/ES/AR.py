@@ -1,5 +1,5 @@
 from holidata.holiday import Region
-from holidata.utils import day, date, Month
+from holidata.utils import day, date, Month, dates
 
 
 class AR(Region):
@@ -20,7 +20,7 @@ class AR(Region):
 
         self.define_holiday() \
             .with_name("San Jorge / Día de Aragón") \
-            .on(AR.holiday_san_jorge__dia_de_aragon) \
+            .on(date(Month.APRIL, 23).except_for({2017: (Month.APRIL, 24)})) \
             .with_flags("RF")
 
         self.define_holiday() \
@@ -81,10 +81,3 @@ class AR(Region):
             .in_years([2011, 2016]) \
             .on(date(Month.DECEMBER, 26)) \
             .with_flags("RF")
-
-    @staticmethod
-    def holiday_san_jorge__dia_de_aragon(year):
-        if year == 2017:
-            return date(Month.APRIL, 24)(year)
-        else:
-            return date(Month.APRIL, 23)(year)
