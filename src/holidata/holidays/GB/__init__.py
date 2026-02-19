@@ -1,7 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
 from holidata.holiday import Country
-from holidata.utils import day, first, last, date, Weekday, Month
+from holidata.utils import day, first, last, date, Weekday, Month, dates
 
 __all__ = [
     "GB",
@@ -81,9 +81,18 @@ class GB(Country):
             .on(last(Weekday.MONDAY).of(Month.AUGUST)) \
             .with_flags("NV")
 
+        """
+        Spring Bank Holiday
+        Usually the last monday in May
+        2012: Moved to June 4, because of Queen’s Diamond Jubilee
+        2022: Moved to June 2, because of Queen's Platinum Jubilee
+        """
         self.define_holiday() \
             .with_name("Spring Bank Holiday") \
-            .on(GB.date_of_spring_bank_holiday) \
+            .on(dates({
+                2012: (Month.JUNE, 4),
+                2022: (Month.JUNE, 2),
+            }).or_else_on(last(Weekday.MONDAY).of(Month.MAY))) \
             .with_flags("NV")
 
         """
@@ -121,17 +130,3 @@ class GB(Country):
             .in_years([2022]) \
             .on(date(Month.SEPTEMBER, 19)) \
             .with_flags("NF")
-
-    @staticmethod
-    def date_of_spring_bank_holiday(year):
-        """
-        1. last monday in May
-        2012: Moved to June 4, because of Queen’s Diamond Jubilee
-        2022: Moved to June 2, because of Queen's Platinum Jubilee
-        """
-        if year == 2012:
-            return date(Month.JUNE, 4)(year)
-        elif year == 2022:
-            return date(Month.JUNE, 2)(year)
-        else:
-            return last(Weekday.MONDAY).of(Month.MAY)(year)

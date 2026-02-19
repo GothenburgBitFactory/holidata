@@ -1,5 +1,5 @@
 from holidata.holiday import Region
-from holidata.utils import day, date, Month
+from holidata.utils import day, date, Month, dates
 
 
 class RI(Region):
@@ -8,7 +8,10 @@ class RI(Region):
 
         self.define_holiday() \
             .with_name("Día de La Rioja") \
-            .on(RI.dia_de_la_rioja) \
+            .on(date(Month.JUNE, 9).except_for({
+                2013: (Month.JUNE, 10),
+                2019: (Month.JUNE, 10),
+            })) \
             .with_flags("F")
 
         self.define_holiday() \
@@ -58,10 +61,3 @@ class RI(Region):
             .in_years([2022]) \
             .on(date(Month.DECEMBER, 26)) \
             .with_flags("RF")
-
-    @staticmethod
-    def dia_de_la_rioja(year):
-        if year in [2013, 2019]:
-            return date(Month.JUNE, 10)(year)
-        else:
-            return date(Month.JUNE, 9)(year)

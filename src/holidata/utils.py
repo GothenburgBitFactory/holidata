@@ -113,6 +113,11 @@ class SmartDayArrowWrapper:
 
         return self
 
+    def except_for(self, date_lookup: Dict[int, Tuple[Month, int]]):
+        self.dates = date_lookup
+
+        return self
+
     def __call__(self, year: int) -> Union[SmartDayArrow, None]:
         if year in self.dates:
             return SmartDayArrow(year, self.dates[year][0].value, self.dates[year][1]) if self.dates[year] is not None else None
