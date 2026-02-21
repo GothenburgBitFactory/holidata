@@ -1,4 +1,4 @@
-from holidata.holiday import Region
+from holidata.holiday import Country, Region
 from holidata.utils import Month, date, day
 
 
@@ -23,7 +23,7 @@ class TH(Region):
      Holidays marked with '*' are already covered by the definitions in __init__.py
     """
 
-    def __init__(self, country):
+    def __init__(self, country: Country) -> None:
         super().__init__("TH", country)
 
         self.define_holiday() \

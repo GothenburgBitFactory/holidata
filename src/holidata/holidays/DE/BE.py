@@ -1,4 +1,4 @@
-from holidata.holiday import Region
+from holidata.holiday import Country, Region
 from holidata.utils import Month, date
 
 
@@ -11,7 +11,7 @@ class BE(Region):
     2010-12-29 - 2015-10-24: https://gesetze.berlin.de/perma?d=jlr-FeiertGBEV2P1
     1995-01-01 - 2010-12-28: https://gesetze.berlin.de/perma?d=jlr-FeiertGBEV2P1
     """
-    def __init__(self, country):
+    def __init__(self, country: Country) -> None:
         super().__init__("BE", country)
 
         """

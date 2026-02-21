@@ -33,47 +33,49 @@ class Month(IntEnum):
 
 
 class DateWrapper:
-    def __init__(self, date_lookup: Union[Dict[int, Tuple[Month, int]], None] = None, default: Callable[[int], Union[Arrow, None]] = None):
+    def __init__(self, date_lookup: Union[Dict[int, Tuple[Month, int]], None] = None, default: Callable[[int], Union[Arrow, None]] = lambda year: None) -> None:
         self.dates = date_lookup if date_lookup is not None else {}
         self.default_func = default
 
     def is_a(self, weekday: Weekday) -> Callable[[int], bool]:
-        def wrapper(year):
+        def wrapper(year) -> bool:
             this = self(year)
             return this.weekday() == weekday if this is not None else False
 
         return wrapper
 
     def is_not_a(self, weekday: Weekday) -> Callable[[int], bool]:
-        def wrapper(year):
+        def wrapper(year) -> bool:
             this = self(year)
             return this.weekday() != weekday if this is not None else False
 
         return wrapper
 
-    def is_one_of(self, selection: List[Weekday]):
-        def wrapper(year):
+    def is_one_of(self, selection: List[Weekday]) -> Callable[[int], bool]:
+        def wrapper(year) -> bool:
             this = self(year)
             return this.weekday() in selection if this is not None else False
 
         return wrapper
 
-    def is_none_of(self, selection: List[Weekday]):
-        def wrapper(year):
+    def is_none_of(self, selection: List[Weekday]) -> Callable[[int], bool]:
+        def wrapper(year) -> bool:
             this = self(year)
             return this.weekday() not in selection if this is not None else False
 
         return wrapper
 
-    def is_equal_to(self, other):
-        def wrapper(year):
-            return self(year) == other(year)
+    def is_equal_to(self, other: Callable[[int], Union[Arrow, None]]) -> Callable[[int], bool]:
+        def wrapper(year) -> bool:
+            this = self(year)
+            return this == other(year) if this is not None else False
 
         return wrapper
 
-    def is_not_equal_to(self, other: Callable[[int], Arrow]):
-        def wrapper(year):
-            return self(year) != other(year)
+    def is_not_equal_to(self, other: Callable[[int], Union[Arrow, None]]) -> Callable[[int], bool]:
+        def wrapper(year) -> bool:
+            this = self(year)
+            return this != other(year) if this is not None else False
 
         return wrapper
 
@@ -106,23 +108,24 @@ def dates(dates_map: Union[Dict[int, Tuple[Month, int]], None]) -> DateWrapper:
 
 
 class DayShifter:
-    def __init__(self, days):
+    def __init__(self, days: int) -> None:
         self.day_count: int = days
         self.shift_direction: int = 0
-        self.date: Callable[[int], Union[Arrow, None]] = lambda year: None
+        self.date_func: Callable[[int], Union[Arrow, None]] = lambda year: None
 
-    def before(self, date_func: Callable[[int], Arrow]) -> 'DayShifter':
-        self.date = date_func
+    def before(self, date_func: Callable[[int], Union[Arrow, None]]) -> 'DayShifter':
+        self.date_func = date_func
         self.shift_direction = -1
         return self
 
-    def after(self, date_func: Callable[[int], Arrow]) -> 'DayShifter':
-        self.date = date_func
+    def after(self, date_func: Callable[[int], Union[Arrow, None]]) -> 'DayShifter':
+        self.date_func = date_func
         self.shift_direction = 1
         return self
 
     def __call__(self, year: int) -> Union[Arrow, None]:
-        return self.date(year).shift(days=self.day_count * self.shift_direction) if self.date is not None and self.date(year) is not None else None
+        holiday_date = self.date_func(year)
+        return holiday_date.shift(days=self.day_count * self.shift_direction) if holiday_date is not None else None
 
 
 def day(count: int) -> DayShifter:
@@ -130,39 +133,39 @@ def day(count: int) -> DayShifter:
 
 
 class WeekdayShifter:
-    def __init__(self, weekday: Weekday, order: int, forward: bool):
+    def __init__(self, weekday: Weekday, order: int, forward: bool) -> None:
         self.weekday = weekday
         self.order = order
         self.forward = forward
         self.including = True
-        self.date = None
+        self.date_func: Callable[[int], Union[Arrow, None]] = lambda year: None
 
     def of(self, month: Month) -> 'WeekdayShifter':
         month_index = month.value
 
         if self.forward:
-            self.date = date(month, 1)
+            self.date_func = date(month, 1)
         else:
-            def wrapper(year):
+            def wrapper(year: int) -> Arrow:
                 return Arrow(
                     year if month_index != 12 else year + 1,
                     (month_index % 12) + 1,
                     1).shift(days=-1)
 
-            self.date = wrapper
+            self.date_func = wrapper
 
         return self
 
-    def before(self, date_func: Callable[[int], Arrow], including: bool = False) -> 'WeekdayShifter':
+    def before(self, date_func: Callable[[int], Union[Arrow, None]], including: bool = False) -> 'WeekdayShifter':
         self._configure_shift(date_func, False, including)
         return self
 
-    def after(self, date_func: Callable[[int], Arrow], including: bool = False) -> 'WeekdayShifter':
+    def after(self, date_func: Callable[[int], Union[Arrow, None]], including: bool = False) -> 'WeekdayShifter':
         self._configure_shift(date_func, True, including)
         return self
 
-    def _configure_shift(self, date_func: Callable[[int], Arrow], forward: bool, including: bool):
-        self.date = date_func
+    def _configure_shift(self, date_func: Callable[[int], Union[Arrow, None]], forward: bool, including: bool):
+        self.date_func = date_func
         self.forward = forward
         self.including = including
 
@@ -187,7 +190,7 @@ class WeekdayShifter:
         return total_days * (-1 if not self.forward else 1)
 
     def __call__(self, year: int) -> Union[Arrow, None]:
-        holiday_date = self.date(year) if self.date is not None else None
+        holiday_date = self.date_func(year) if self.date_func is not None else None
         shift = self._calculate_shift(holiday_date)
         return holiday_date.shift(days=shift) if holiday_date is not None else None
 

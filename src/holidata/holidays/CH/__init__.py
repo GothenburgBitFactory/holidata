@@ -13,7 +13,7 @@ class CH(Country):
     languages = ["de"]
     easter_type = EASTER_WESTERN
 
-    def __init__(self):
+    def __init__(self) -> None:
         super().__init__()
 
         self.define_holiday() \

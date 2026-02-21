@@ -1,4 +1,4 @@
-from holidata.holiday import Region
+from holidata.holiday import Country, Region
 from holidata.utils import Month, date, day
 
 
@@ -6,7 +6,7 @@ class SL(Region):
     """
     https://recht.saarland.de/bssl/document/jlr-FeiertGSL1976V6P2
     """
-    def __init__(self, country):
+    def __init__(self, country: Country) -> None:
         super().__init__("SL", country)
 
         self.define_holiday() \

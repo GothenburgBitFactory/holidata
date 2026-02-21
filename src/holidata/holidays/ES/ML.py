@@ -1,9 +1,9 @@
-from holidata.holiday import Region
+from holidata.holiday import Country, Region
 from holidata.utils import Month, date, dates, day
 
 
 class ML(Region):
-    def __init__(self, country):
+    def __init__(self, country: Country) -> None:
         super().__init__("ML", country)
 
         self.define_holiday() \

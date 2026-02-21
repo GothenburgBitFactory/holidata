@@ -43,7 +43,7 @@ class TestMonthEnum:
         assert Month.DECEMBER == 12
 
 
-class TestArrowWrapper:
+class TestDateWrapper:
     def test_wrapper_creation(self):
         wrapper = DateWrapper(default=lambda year: Arrow(year, Month.JANUARY, 1))
         assert wrapper.default_func is not None

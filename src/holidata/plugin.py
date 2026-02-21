@@ -1,6 +1,7 @@
 """
 Provides base class for plugins.
 """
+from typing import Any, Callable, Union
 
 
 class PluginMount(type):
@@ -9,7 +10,7 @@ class PluginMount(type):
     All classes inheriting will be referenced in the 'plugins' attribute.
     """
 
-    def __init__(cls, name, bases, attrs):
+    def __init__(cls, name: Any, bases: Any, attrs: Any) -> None:
         super(PluginMount, cls).__init__(name, bases, attrs)
 
         if not hasattr(cls, "plugins"):
@@ -17,5 +18,5 @@ class PluginMount(type):
         else:
             cls.plugins.append(cls)
 
-    def get_plugin(cls, identifier, attribute):
+    def get_plugin(cls, identifier: str, attribute: str) -> Union[None, Callable[[], Any]]:
         return next(iter([plugin for plugin in cls.plugins if getattr(plugin, attribute) == identifier]), None)
