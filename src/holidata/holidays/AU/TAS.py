@@ -1,5 +1,5 @@
 from holidata.holiday import Region
-from holidata.utils import second, day, first, date, Weekday, Month
+from holidata.utils import Month, Weekday, date, day, first, second
 
 
 class TAS(Region):

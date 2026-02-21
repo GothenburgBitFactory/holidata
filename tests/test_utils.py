@@ -1,9 +1,18 @@
 from arrow import Arrow
 
 from holidata.utils import (
-    Weekday, Month,
-    DateWrapper, DayShifter, WeekdayShifter,
-    date, day, first, second, third, fourth, last
+    DateWrapper,
+    DayShifter,
+    Month,
+    Weekday,
+    WeekdayShifter,
+    date,
+    day,
+    first,
+    fourth,
+    last,
+    second,
+    third,
 )
 
 
@@ -51,7 +60,7 @@ class TestArrowWrapper:
         wrapper = DateWrapper(default=lambda year: Arrow(year, Month.JANUARY, 2))  # 2023-01-02 is a Monday)
         predicate = wrapper.is_a(Weekday.MONDAY)
         assert predicate(2023) is True
-        
+
         predicate = wrapper.is_a(Weekday.TUESDAY)
         assert predicate(2023) is False
 
@@ -59,7 +68,7 @@ class TestArrowWrapper:
         wrapper = DateWrapper(default=lambda year: Arrow(year, Month.JANUARY, 2))  # 2023-01-02 is a Monday)
         predicate = wrapper.is_not_a(Weekday.TUESDAY)
         assert predicate(2023) is True
-        
+
         predicate = wrapper.is_not_a(Weekday.MONDAY)
         assert predicate(2023) is False
 
@@ -67,7 +76,7 @@ class TestArrowWrapper:
         wrapper = DateWrapper(default=lambda year: Arrow(year, Month.JANUARY, 2))  # 2023-01-02 is a Monday)
         predicate = wrapper.is_one_of([Weekday.MONDAY, Weekday.TUESDAY])
         assert predicate(2023) is True
-        
+
         predicate = wrapper.is_one_of([Weekday.TUESDAY, Weekday.WEDNESDAY])
         assert predicate(2023) is False
 
@@ -75,7 +84,7 @@ class TestArrowWrapper:
         wrapper = DateWrapper(default=lambda year: Arrow(year, Month.JANUARY, 2))  # 2023-01-02 is a Monday)
         predicate = wrapper.is_none_of([Weekday.TUESDAY, Weekday.WEDNESDAY])
         assert predicate(2023) is True
-        
+
         predicate = wrapper.is_none_of([Weekday.MONDAY, Weekday.TUESDAY])
         assert predicate(2023) is False
 
@@ -83,10 +92,10 @@ class TestArrowWrapper:
         wrapper1 = DateWrapper(default=lambda year: Arrow(year, Month.JANUARY, 2))
         wrapper2 = DateWrapper(default=lambda year: Arrow(year, Month.JANUARY, 2))
         wrapper3 = DateWrapper(default=lambda year: Arrow(year, Month.JANUARY, 3))
-        
+
         predicate = wrapper1.is_equal_to(wrapper2)
         assert predicate(2023) is True
-        
+
         predicate = wrapper1.is_equal_to(wrapper3)
         assert predicate(2023) is False
 
@@ -94,10 +103,10 @@ class TestArrowWrapper:
         wrapper1 = DateWrapper(default=lambda year: Arrow(year, Month.JANUARY, 2))
         wrapper2 = DateWrapper(default=lambda year: Arrow(year, Month.JANUARY, 2))
         wrapper3 = DateWrapper(default=lambda year: Arrow(year, Month.JANUARY, 3))
-        
+
         predicate = wrapper1.is_not_equal_to(wrapper3)
         assert predicate(2023) is True
-        
+
         predicate = wrapper1.is_not_equal_to(wrapper2)
         assert predicate(2023) is False
 
@@ -116,7 +125,9 @@ class TestDayFunctionAndShifter:
         assert shifter.day_count == 5
 
     def test_day_shifter_before(self):
-        base_date_func = lambda year: Arrow(year, Month.JANUARY, 10)
+        def base_date_func(year):
+            return Arrow(year, Month.JANUARY, 10)
+
         shifter = day(3).before(base_date_func)
         result = shifter(2023)
         assert result.year == 2023
@@ -124,7 +135,9 @@ class TestDayFunctionAndShifter:
         assert result.day == 7  # 10 - 3 = 7
 
     def test_day_shifter_after(self):
-        base_date_func = lambda year: Arrow(year, Month.JANUARY, 10)
+        def base_date_func(year):
+            return Arrow(year, Month.JANUARY, 10)
+
         shifter = day(3).after(base_date_func)
         result = shifter(2023)
         assert result.year == 2023
@@ -178,7 +191,9 @@ class TestWeekdayShifter:
         assert result.weekday() == Weekday.MONDAY
 
     def test_weekday_shifter_before_method(self):
-        base_date_func = lambda year: Arrow(year, Month.JANUARY, 15)
+        def base_date_func(year):
+            return Arrow(year, Month.JANUARY, 15)
+
         shifter = first(Weekday.MONDAY).before(base_date_func)
         result = shifter(2023)
         # First Monday before 2023-01-15 is 2023-01-09
@@ -188,7 +203,9 @@ class TestWeekdayShifter:
         assert result.weekday() == Weekday.MONDAY
 
     def test_weekday_shifter_after_method(self):
-        base_date_func = lambda year: Arrow(year, Month.JANUARY, 15)
+        def base_date_func(year):
+            return Arrow(year, Month.JANUARY, 15)
+
         shifter = first(Weekday.MONDAY).after(base_date_func)
         result = shifter(2023)
         # First Monday after 2023-01-15 is 2023-01-16

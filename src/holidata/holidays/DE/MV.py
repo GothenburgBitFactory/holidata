@@ -1,5 +1,5 @@
 from holidata.holiday import Region
-from holidata.utils import date, Month
+from holidata.utils import Month, date
 
 
 class MV(Region):
