@@ -13,7 +13,7 @@ class RU(Country):
     languages = ["ru"]
     easter_type = EASTER_ORTHODOX
 
-    def __init__(self):
+    def __init__(self) -> None:
         super().__init__()
 
         self.define_holiday() \

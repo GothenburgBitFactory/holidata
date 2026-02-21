@@ -1,3 +1,6 @@
+from typing import Callable, Dict, List, Tuple, Union
+
+from arrow import Arrow
 from dateutil.easter import EASTER_WESTERN
 
 from holidata.holiday import Country
@@ -21,7 +24,7 @@ class HU(Country):
     languages = ["hu"]
     easter_type = EASTER_WESTERN
 
-    def __init__(self):
+    def __init__(self) -> None:
         super().__init__()
 
         self.define_holiday() \
@@ -100,7 +103,7 @@ class HU(Country):
                     .annotated_with(note)
 
     @staticmethod
-    def holiday_munkaszuneti_nap():
+    def holiday_munkaszuneti_nap() -> Dict[int, List[Tuple[Callable[[int], Union[Arrow, None]], str]]]:
         """
         Non-Working days (Munkaszüneti nap)
         When a public holiday falls on a Tuesday or a Thursday, a special decree swaps the preceding Monday or the

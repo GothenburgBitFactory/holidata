@@ -1,31 +1,31 @@
 import csv
 import io
 import json
-from typing import Any, Callable, Dict, List
+from typing import Any, Callable, Dict, Iterator, List, Union
 
 from holidata.holiday import Holiday
 from holidata.plugin import PluginMount
 
 
 class Emitter(metaclass=PluginMount):
-    type: str = None
+    type: Union[str, None] = None
 
-    def __init__(self):
+    def __init__(self) -> None:
         if self.type is None:
             raise ValueError(f"Emitter {self.__class__.__name__} does not provide its type!")
 
     @staticmethod
-    def get(identifier: str) -> Callable[[], 'Emitter']:
+    def get(identifier: str) -> Union[Callable[[], 'Emitter'], None]:
         return Emitter.get_plugin(identifier, "type")
 
-    def output(self, holidays: List[Holiday]) -> str:
+    def output(self, holidays: Iterator[Holiday]) -> str:
         raise NotImplementedError
 
 
 class JsonEmitter(Emitter):
     type: str = "json"
 
-    def output(self, holidays: List[Holiday]) -> str:
+    def output(self, holidays: Iterator[Holiday]) -> str:
         export_data: List[Dict[str, Any]] = [h.as_dict() for h in holidays]
         export_data.sort(key=lambda x: (x["date"], x["description"], x["region"]))
         return "\n".join([json.dumps(h, ensure_ascii=False, sort_keys=False, indent=None, separators=(",", ":")) for h in export_data]) + "\n"
@@ -34,12 +34,12 @@ class JsonEmitter(Emitter):
 class CsvEmitter(Emitter):
     type: str = "csv"
 
-    def output(self, holidays: List[Holiday]) -> str:
+    def output(self, holidays: Iterator[Holiday]) -> str:
         export_data: List[Dict[str, Any]] = [h.as_dict() for h in holidays]
         export_data.sort(key=lambda x: (x["date"], x["description"], x["region"]))
         result: io.StringIO = io.StringIO()
 
-        writer: csv.DictWriter = csv.DictWriter(
+        writer: csv.DictWriter[str] = csv.DictWriter(
             result,
             ["locale", "region", "date", "description", "type", "notes"],
             quoting=csv.QUOTE_ALL,
@@ -66,7 +66,7 @@ class YamlEmitter(Emitter):
 
         return output
 
-    def output(self, holidays: List[Holiday]) -> str:
+    def output(self, holidays: Iterator[Holiday]) -> str:
         export_data: List[Dict[str, Any]] = [h.as_dict() for h in holidays]
         export_data.sort(key=lambda x: (x["date"], x["description"], x["region"]))
 
@@ -94,7 +94,7 @@ class XmlEmitter(Emitter):
         output += "  </holiday>\n"
         return output
 
-    def output(self, holidays: List[Holiday]) -> str:
+    def output(self, holidays: Iterator[Holiday]) -> str:
         export_data: List[Dict[str, Any]] = [h.as_dict() for h in holidays]
         export_data.sort(key=lambda x: (x["date"], x["description"], x["region"]))
 

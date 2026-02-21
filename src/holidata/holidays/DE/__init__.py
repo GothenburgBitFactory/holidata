@@ -32,7 +32,7 @@ class DE(Country):
     """
     https://www.bmi.bund.de/DE/themen/verfassung/staatliche-symbole/nationale-feiertage/nationale-feiertage-node.html
     """
-    def __init__(self):
+    def __init__(self) -> None:
         super().__init__()
 
         self.regions = [

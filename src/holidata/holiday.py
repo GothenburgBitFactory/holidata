@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from typing import Callable, Dict, Iterator, List, Union
+from typing import Callable, Dict, Iterator, List, Literal, Union
 
 import dateutil
 from arrow import Arrow
@@ -19,7 +19,7 @@ class Holiday:
     flags: str = ""
     notes: str = ""
 
-    def as_dict(self) -> dict:
+    def as_dict(self) -> Dict[str, str]:
         return {
             "locale": self.locale,
             "region": self.region,
@@ -31,18 +31,22 @@ class Holiday:
 
 
 class HolidayGenerator:
-    def __init__(self, country_id: str, default_lang: str):
+    def __init__(self, country_id: str, default_lang: Union[str, None]) -> None:
         self.name_dict: Dict[str, str] = {}
         self.notes: str = ""
         self.regions: List[str] = [""]
         self.flags: str = ""
         self.date: Callable[[int], Union[Arrow, None]] = lambda year: None
         self.country_id: str = country_id
-        self.default_lang: str = default_lang
+        self.default_lang: Union[str, None] = default_lang
         self.filters: List[Callable[[int], bool]] = []
 
-    def with_name(self, name: str, lang: str = None) -> 'HolidayGenerator':
+    def with_name(self, name: str, lang: Union[str, None] = None) -> 'HolidayGenerator':
         lang = self.default_lang if lang is None else lang
+
+        if lang is None:
+            raise ValueError("No language specified and no default language was provided!")
+
         self.name_dict[lang] = name
         return self
 
@@ -50,7 +54,7 @@ class HolidayGenerator:
         self.name_dict = name_dict
         return self
 
-    def on(self, date_func: Callable[[int], Arrow] = None) -> 'HolidayGenerator':
+    def on(self, date_func: Callable[[int], Union[Arrow, None]]) -> 'HolidayGenerator':
         self.date = date_func
         return self
 
@@ -128,11 +132,11 @@ class Country(metaclass=PluginMount):
     id: str
     languages: List[str]
     default_lang: Union[str, None] = None
-    easter_type: int
-    holiday_generators: list
-    regions: list
+    easter_type: Literal[1, 2, 3]
+    holiday_generators: List[HolidayGenerator]
+    regions: List['Region']
 
-    def __init__(self):
+    def __init__(self) -> None:
         if not self.id:
             raise ValueError(f"Country '{self.__class__.__name__}' does not provide an id!")
         if not self.languages:
@@ -140,15 +144,16 @@ class Country(metaclass=PluginMount):
         if self.default_lang is not None and self.default_lang not in self.languages:
             raise ValueError(f"Country '{self.__class__.__name__}' does not list language '{self.default_lang}'!")
 
-        self.default_lang = self.languages[0] if self.default_lang is None and len(self.languages) == 1 else self.default_lang
+        self.default_lang = self.languages[0] if self.default_lang is None and len(
+            self.languages) == 1 else self.default_lang
         self.holiday_generators = []
         self.regions = []
 
     @staticmethod
-    def get(identifier):
+    def get(identifier: str) -> Union[Callable[[], 'Country'], None]:
         return Country.get_plugin(identifier, "id")
 
-    def validate_language_or_get_default(self, lang_id: str) -> str:
+    def validate_language_or_get_default(self, lang_id: Union[str, None]) -> str:
         if lang_id and lang_id.lower() not in self.languages:
             raise ValueError(
                 f"Language '{lang_id}' is not defined for country '{self.id}'! Choose one of [{', '.join(self.languages)}].")
@@ -182,7 +187,7 @@ class Country(metaclass=PluginMount):
 
 
 class Region:
-    def __init__(self, id: str, country: Country):
+    def __init__(self, id: str, country: Country) -> None:
         self.id: str = id
         self.country: Country = country
         self.holiday_generators: List[HolidayGenerator] = []

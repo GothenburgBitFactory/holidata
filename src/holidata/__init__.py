@@ -1,4 +1,4 @@
-from typing import Iterator
+from typing import Iterator, Union
 
 from holidata.emitters import Emitter
 from holidata.holiday import Country, Holiday
@@ -6,11 +6,13 @@ from holidata.holidays import *
 
 
 class Holidata:
-    def __init__(self, holidays, emitter: Emitter = None):
+    def __init__(self, holidays: Iterator[Holiday], emitter: Union[Emitter, None] = None) -> None:
         self.holidays = holidays
         self.emitter = emitter
 
     def __str__(self) -> str:
+        if not self.emitter:
+            raise ValueError
         return self.emitter.output(self.holidays)
 
     def formatted_as(self, format_id: str) -> 'Holidata':
@@ -20,7 +22,7 @@ class Holidata:
 
 
 class Locale:
-    def __init__(self, country: Country, lang: str):
+    def __init__(self, country: Country, lang: str) -> None:
         self.country = country
         self.lang = lang
 
@@ -60,7 +62,7 @@ def get_emitter_for(identifier: str) -> Emitter:
     return emitter_class()
 
 
-def for_locale(country_id: str, lang_id: str = None) -> Locale:
+def for_locale(country_id: str, lang_id: Union[str, None] = None) -> Locale:
     country = get_country_for(country_id)
     lang_id = country.validate_language_or_get_default(lang_id)
 

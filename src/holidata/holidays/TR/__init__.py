@@ -1,3 +1,6 @@
+from typing import Callable, Union
+
+from arrow import Arrow
 from dateutil.easter import EASTER_WESTERN
 
 from holidata.holiday import Country
@@ -19,7 +22,7 @@ class TR(Country):
     languages = ["tr"]
     easter_type = EASTER_WESTERN
 
-    def __init__(self):
+    def __init__(self) -> None:
         super().__init__()
 
         self.define_holiday() \
@@ -77,16 +80,16 @@ class TR(Country):
                 .with_flags("NRV")
 
     @staticmethod
-    def ramazan_bayrami_day(ordinal):
-        def ramazan_bayrami_reference_shifted(year):
+    def ramazan_bayrami_day(ordinal: int) -> Callable[[int], Union[Arrow, None]]:
+        def ramazan_bayrami_reference_shifted(year: int) -> Union[Arrow, None]:
             reference = TR.__ramazan_bayrami_reference()
             return day(ordinal).after(reference)(year) if reference is not None else None
 
         return ramazan_bayrami_reference_shifted
 
     @staticmethod
-    def kurban_bayrami_day(ordinal):
-        def kurban_bayrami_reference_shifted(year):
+    def kurban_bayrami_day(ordinal: int) -> Callable[[int], Union[Arrow, None]]:
+        def kurban_bayrami_reference_shifted(year: int) -> Union[Arrow, None]:
             reference = TR.__kurban_bayrami_reference()
             return day(ordinal).after(reference)(year) if reference is not None else None
 
