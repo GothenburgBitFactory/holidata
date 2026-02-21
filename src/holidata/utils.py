@@ -2,7 +2,7 @@
 Provides date-handling related utils.
 """
 from enum import IntEnum
-from typing import Callable, Union, List, Dict, Tuple
+from typing import Callable, Dict, List, Tuple, Union
 
 from arrow import Arrow
 
@@ -32,39 +32,8 @@ class Month(IntEnum):
     DECEMBER = 12
 
 
-class SmartDayArrow(Arrow):
-    """
-    A wrapper around Arrow datetime reference that provides additional convenience methods.
-    """
-
-    def shift_to_weekday(self, weekday: Weekday, order: int = 1, reverse: bool = False, including: bool = False) -> 'SmartDayArrow':
-        """
-        Shifts to {order}. weekday in the given direction, i.e. 2. monday before this date would be:
-
-        >>> arrow.shift_to_weekday(Weekday.MONDAY, order=2, reverse=True)
-        """
-        if order <= 0:
-            raise ValueError("Order must be greater than 0")
-
-        # Calculate the weekday difference (positive for forward, negative for reverse)
-        weekday_diff = ((weekday - self.weekday()) * (-1 if reverse else 1)) % 7
-
-        # Adjust for the case where we're already on the target weekday but not including it
-        if weekday_diff == 0 and not including:
-            weekday_diff = 7
-
-        # Calculate the days needed for the weeks shift of order > 1
-        weeks_offset = (order - 1) * 7
-
-        # Calculate total shift
-        total_days = weekday_diff + weeks_offset
-
-        # Apply the shift (negative for reverse direction)
-        return self.shift(days=total_days * (-1 if reverse else 1))
-
-
-class SmartDayArrowWrapper:
-    def __init__(self, date_lookup: Union[Dict[int, Tuple[Month, int]], None] = None, default: Callable[[int], Union[SmartDayArrow, None]] = None):
+class DateWrapper:
+    def __init__(self, date_lookup: Union[Dict[int, Tuple[Month, int]], None] = None, default: Callable[[int], Union[Arrow, None]] = None):
         self.dates = date_lookup if date_lookup is not None else {}
         self.default_func = default
 
@@ -102,13 +71,13 @@ class SmartDayArrowWrapper:
 
         return wrapper
 
-    def is_not_equal_to(self, other: Callable[[int], SmartDayArrow]):
+    def is_not_equal_to(self, other: Callable[[int], Arrow]):
         def wrapper(year):
             return self(year) != other(year)
 
         return wrapper
 
-    def or_else_on(self, date_func: Callable[[int], Union[SmartDayArrow, None]]) -> 'SmartDayArrowWrapper':
+    def or_else_on(self, date_func: Callable[[int], Union[Arrow, None]]) -> 'DateWrapper':
         self.default_func = date_func
 
         return self
@@ -118,9 +87,9 @@ class SmartDayArrowWrapper:
 
         return self
 
-    def __call__(self, year: int) -> Union[SmartDayArrow, None]:
+    def __call__(self, year: int) -> Union[Arrow, None]:
         if year in self.dates:
-            return SmartDayArrow(year, self.dates[year][0].value, self.dates[year][1]) if self.dates[year] is not None else None
+            return Arrow(year, self.dates[year][0].value, self.dates[year][1]) if self.dates[year] is not None else None
 
         if self.default_func is not None:
             return self.default_func(year)
@@ -128,39 +97,39 @@ class SmartDayArrowWrapper:
         return None
 
 
-def date(month: Month, day: int) -> SmartDayArrowWrapper:
-    return SmartDayArrowWrapper(default=lambda year: SmartDayArrow(year, month, day))
+def date(month: Month, day: int) -> DateWrapper:
+    return DateWrapper(default=lambda year: Arrow(year, month, day))
 
 
-def dates(dates_map: Union[Dict[int, Tuple[Month, int]], None]) -> SmartDayArrowWrapper:
-    return SmartDayArrowWrapper(date_lookup=dates_map)
+def dates(dates_map: Union[Dict[int, Tuple[Month, int]], None]) -> DateWrapper:
+    return DateWrapper(date_lookup=dates_map)
 
 
-class SmartDayArrowDayShifter:
+class DayShifter:
     def __init__(self, days):
         self.day_count: int = days
         self.shift_direction: int = 0
-        self.date: Callable[[int], Union[SmartDayArrow, None]] = lambda year: None
+        self.date: Callable[[int], Union[Arrow, None]] = lambda year: None
 
-    def before(self, date_func: Callable[[int], SmartDayArrow]) -> 'SmartDayArrowDayShifter':
+    def before(self, date_func: Callable[[int], Arrow]) -> 'DayShifter':
         self.date = date_func
         self.shift_direction = -1
         return self
 
-    def after(self, date_func: Callable[[int], SmartDayArrow]) -> 'SmartDayArrowDayShifter':
+    def after(self, date_func: Callable[[int], Arrow]) -> 'DayShifter':
         self.date = date_func
         self.shift_direction = 1
         return self
 
-    def __call__(self, year: int) -> Union[SmartDayArrow, None]:
+    def __call__(self, year: int) -> Union[Arrow, None]:
         return self.date(year).shift(days=self.day_count * self.shift_direction) if self.date is not None and self.date(year) is not None else None
 
 
-def day(count: int) -> SmartDayArrowDayShifter:
-    return SmartDayArrowDayShifter(count)
+def day(count: int) -> DayShifter:
+    return DayShifter(count)
 
 
-class SmartDayArrowWeekdayShifter:
+class WeekdayShifter:
     def __init__(self, weekday: Weekday, order: int, forward: bool):
         self.weekday = weekday
         self.order = order
@@ -168,14 +137,14 @@ class SmartDayArrowWeekdayShifter:
         self.including = True
         self.date = None
 
-    def of(self, month: Month) -> 'SmartDayArrowWeekdayShifter':
+    def of(self, month: Month) -> 'WeekdayShifter':
         month_index = month.value
 
         if self.forward:
             self.date = date(month, 1)
         else:
             def wrapper(year):
-                return SmartDayArrow(
+                return Arrow(
                     year if month_index != 12 else year + 1,
                     (month_index % 12) + 1,
                     1).shift(days=-1)
@@ -184,43 +153,60 @@ class SmartDayArrowWeekdayShifter:
 
         return self
 
-    def before(self, date_func: Callable[[int], SmartDayArrow], including: bool = False) -> 'SmartDayArrowWeekdayShifter':
+    def before(self, date_func: Callable[[int], Arrow], including: bool = False) -> 'WeekdayShifter':
         self._configure_shift(date_func, False, including)
         return self
 
-    def after(self, date_func: Callable[[int], SmartDayArrow], including: bool = False) -> 'SmartDayArrowWeekdayShifter':
+    def after(self, date_func: Callable[[int], Arrow], including: bool = False) -> 'WeekdayShifter':
         self._configure_shift(date_func, True, including)
         return self
 
-    def _configure_shift(self, date_func: Callable[[int], SmartDayArrow], forward: bool, including: bool):
+    def _configure_shift(self, date_func: Callable[[int], Arrow], forward: bool, including: bool):
         self.date = date_func
         self.forward = forward
         self.including = including
 
-    def __call__(self, year: int) -> SmartDayArrow:
-        return self.date(year).shift_to_weekday(
-            self.weekday,
-            order=self.order,
-            reverse=not self.forward,
-            including=self.including,
-        ) if self.date is not None else None
+    def _calculate_shift(self, holiday_date):
+        if self.order <= 0:
+            raise ValueError("Order must be greater than 0")
+
+        # Calculate the weekday difference (positive for forward, negative for reverse)
+        weekday_diff = ((self.weekday - holiday_date.weekday()) * (-1 if not self.forward else 1)) % 7
+
+        # Adjust for the case where we're already on the target weekday but not including it
+        if weekday_diff == 0 and not self.including:
+            weekday_diff = 7
+
+        # Calculate the days needed for the weeks shift of order > 1
+        weeks_offset = (self.order - 1) * 7
+
+        # Calculate total shift
+        total_days = weekday_diff + weeks_offset
+
+        # Apply the shift (negative for reverse direction)
+        return total_days * (-1 if not self.forward else 1)
+
+    def __call__(self, year: int) -> Union[Arrow, None]:
+        holiday_date = self.date(year) if self.date is not None else None
+        shift = self._calculate_shift(holiday_date)
+        return holiday_date.shift(days=shift) if holiday_date is not None else None
 
 
-def first(weekday: Weekday) -> SmartDayArrowWeekdayShifter:
-    return SmartDayArrowWeekdayShifter(weekday, order=1, forward=True)
+def first(weekday: Weekday) -> WeekdayShifter:
+    return WeekdayShifter(weekday, order=1, forward=True)
 
 
-def second(weekday: Weekday) -> SmartDayArrowWeekdayShifter:
-    return SmartDayArrowWeekdayShifter(weekday, order=2, forward=True)
+def second(weekday: Weekday) -> WeekdayShifter:
+    return WeekdayShifter(weekday, order=2, forward=True)
 
 
-def third(weekday: Weekday) -> SmartDayArrowWeekdayShifter:
-    return SmartDayArrowWeekdayShifter(weekday, order=3, forward=True)
+def third(weekday: Weekday) -> WeekdayShifter:
+    return WeekdayShifter(weekday, order=3, forward=True)
 
 
-def fourth(weekday: Weekday) -> SmartDayArrowWeekdayShifter:
-    return SmartDayArrowWeekdayShifter(weekday, order=4, forward=True)
+def fourth(weekday: Weekday) -> WeekdayShifter:
+    return WeekdayShifter(weekday, order=4, forward=True)
 
 
-def last(weekday: Weekday) -> SmartDayArrowWeekdayShifter:
-    return SmartDayArrowWeekdayShifter(weekday, order=1, forward=False)
+def last(weekday: Weekday) -> WeekdayShifter:
+    return WeekdayShifter(weekday, order=1, forward=False)
