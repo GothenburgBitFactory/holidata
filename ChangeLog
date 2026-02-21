@@ -1,3 +1,4 @@
+2026.2.0
 - #155 Remove helper class SmartDayArrow
 - #154 Replace custom date functions with DSL functions
 - #153 Fix date filtering in holiday generator
