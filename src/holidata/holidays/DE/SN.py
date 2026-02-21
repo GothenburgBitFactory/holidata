@@ -1,5 +1,5 @@
 from holidata.holiday import Region
-from holidata.utils import day, fourth, date, Weekday, Month
+from holidata.utils import Month, Weekday, date, day, fourth
 
 
 class SN(Region):

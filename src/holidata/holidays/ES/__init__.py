@@ -20,7 +20,7 @@ from holidata.holidays.ES.NC import NC
 from holidata.holidays.ES.PV import PV
 from holidata.holidays.ES.RI import RI
 from holidata.holidays.ES.VC import VC
-from holidata.utils import day, date, Month
+from holidata.utils import Month, date, day
 
 __all__ = [
     "ES"

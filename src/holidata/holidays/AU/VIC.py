@@ -1,5 +1,5 @@
 from holidata.holiday import Region
-from holidata.utils import second, day, first, last, date, Weekday, Month, dates
+from holidata.utils import Month, Weekday, date, dates, day, first, last, second
 
 
 class VIC(Region):

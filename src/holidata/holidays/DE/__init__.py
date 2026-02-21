@@ -17,7 +17,7 @@ from holidata.holidays.DE.SL import SL
 from holidata.holidays.DE.SN import SN
 from holidata.holidays.DE.ST import ST
 from holidata.holidays.DE.TH import TH
-from holidata.utils import day, date, Month
+from holidata.utils import Month, date, day
 
 __all__ = [
     "DE",

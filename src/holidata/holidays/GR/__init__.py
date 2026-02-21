@@ -1,7 +1,7 @@
 from dateutil.easter import EASTER_ORTHODOX
 
 from holidata.holiday import Country
-from holidata.utils import day, date, Month
+from holidata.utils import Month, date, day
 
 __all__ = [
     "GR",

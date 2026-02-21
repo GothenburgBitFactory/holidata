@@ -1,7 +1,7 @@
 import csv
 import io
 import json
-from typing import List, Dict, Any, Callable
+from typing import Any, Callable, Dict, List
 
 from holidata.holiday import Holiday
 from holidata.plugin import PluginMount

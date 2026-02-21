@@ -1,8 +1,7 @@
 import pytest
-from syrupy import snapshot
 from syrupy.extensions.json import JSONSnapshotExtension
 
-from holidata import Locale, Country
+from holidata import Country, Locale
 from tests import HOLIDATA_YEAR_MAX
 
 

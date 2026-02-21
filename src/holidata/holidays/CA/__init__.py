@@ -1,7 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
 from holidata.holiday import Country
-from holidata.utils import day, first, third, second, date, Weekday, Month
+from holidata.utils import Month, Weekday, date, day, first, second, third
 
 __all__ = [
     "CA",
