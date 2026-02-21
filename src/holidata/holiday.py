@@ -1,10 +1,10 @@
 from dataclasses import dataclass
-from typing import Iterator, Callable, Union, Dict, List
+from typing import Callable, Dict, Iterator, List, Union
 
 import dateutil
+from arrow import Arrow
 
 from holidata.plugin import PluginMount
-from holidata.utils import SmartDayArrow
 
 
 @dataclass
@@ -14,7 +14,7 @@ class Holiday:
     """
     locale: str
     region: str
-    date: SmartDayArrow
+    date: Arrow
     description: str
     flags: str = ""
     notes: str = ""
@@ -36,7 +36,7 @@ class HolidayGenerator:
         self.notes: str = ""
         self.regions: List[str] = [""]
         self.flags: str = ""
-        self.date: Callable[[int], Union[SmartDayArrow, None]] = lambda year: None
+        self.date: Callable[[int], Union[Arrow, None]] = lambda year: None
         self.country_id: str = country_id
         self.default_lang: str = default_lang
         self.filters: List[Callable[[int], bool]] = []
@@ -50,7 +50,7 @@ class HolidayGenerator:
         self.name_dict = name_dict
         return self
 
-    def on(self, date_func: Callable[[int], SmartDayArrow] = None) -> 'HolidayGenerator':
+    def on(self, date_func: Callable[[int], Arrow] = None) -> 'HolidayGenerator':
         self.date = date_func
         return self
 
@@ -173,10 +173,10 @@ class Country(metaclass=PluginMount):
         for region in self.regions:
             yield from region.get_holidays_of(year, lang)
 
-    def easter(self) -> Callable[[int], SmartDayArrow]:
-        def wrapper(year: int) -> SmartDayArrow:
+    def easter(self) -> Callable[[int], Arrow]:
+        def wrapper(year: int) -> Arrow:
             date = dateutil.easter.easter(year, self.easter_type)
-            return SmartDayArrow(date.year, date.month, date.day)
+            return Arrow(date.year, date.month, date.day)
 
         return wrapper
 

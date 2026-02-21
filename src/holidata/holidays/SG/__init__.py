@@ -1,7 +1,7 @@
 from dateutil.easter import EASTER_WESTERN
 
 from holidata.holiday import Country
-from holidata.utils import day, date, first, Month, Weekday, dates
+from holidata.utils import Month, Weekday, date, dates, day, first
 
 __all__ = [
     "SG",
@@ -197,9 +197,9 @@ class SG(Country):
     def chinese_new_year_in_lieu(year):
         holiday_date = SG.chinese_new_year()(year)
         if holiday_date is not None and holiday_date.weekday() == Weekday.SATURDAY:
-            return holiday_date.shift_to_weekday(Weekday.MONDAY)
+            return first(Weekday.MONDAY).after(SG.chinese_new_year())(year)
         elif holiday_date is not None and holiday_date.weekday() == Weekday.SUNDAY:
-            return holiday_date.shift_to_weekday(Weekday.TUESDAY)
+            return first(Weekday.TUESDAY).after(SG.chinese_new_year())(year)
         return None
 
     @staticmethod
