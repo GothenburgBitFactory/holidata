@@ -41,11 +41,19 @@ Once you've made your changes, update the snapshot files such that they reflect 
 pytest --snapshot-update
 ```
 
+Before submitting a pull request, ensure that all code quality checks pass:
+
+```bash
+# Run linter and type checker
+ruff check . && mypy src/
+```
+
 Finally, submit a pull request with a clear description of your changes and the sources you used for verification.
 
 ## Code Style and Best Practices
 
-- Follow PEP 8 style guidelines
+- Follow PEP 8 style guidelines (enforced by [ruff](https://docs.astral.sh/ruff/))
+- Use type hints for all function signatures and variable declarations (checked by [mypy](https://mypy-lang.org/))
 - Write clear, descriptive docstrings using Google-style format
 - Keep your changes focused and well-documented
 
