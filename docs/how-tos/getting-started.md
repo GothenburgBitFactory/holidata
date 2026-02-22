@@ -111,6 +111,48 @@ When adding new countries or modifying existing ones, you may need to generate n
 pytest --snapshot-update
 ```
 
+## Step 6: Code Quality and Linting
+
+The holidata project uses [ruff](https://docs.astral.sh/ruff/) for linting and code formatting, and [mypy](https://mypy-lang.org/) for static type checking.
+
+### Install Linting Tools
+
+Install the linting tools:
+
+```bash
+pip install ruff mypy
+```
+
+### Run Ruff
+
+To check your code for style and import issues:
+
+```bash
+ruff check .
+```
+
+To automatically fix issues where possible:
+
+```bash
+ruff check --fix .
+```
+
+### Run MyPy
+
+To perform static type checking:
+
+```bash
+mypy src/
+```
+
+### Running All Checks
+
+The project's CI pipeline runs both linting tools. Before submitting a pull request, ensure both checks pass:
+
+```bash
+ruff check . && mypy src/
+```
+
 ## Next Steps
 
 After setting up your environment, take a look at how to [add a new country](add-country.md) or how to [define a holiday](define-holidays.md).
