@@ -1,3 +1,11 @@
 [build-system]
 requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
+
+[tool.ruff]
+# Enable isort rules (I*)
+lint.extend-select = ["I"]
+
+# Ignore F403 ('from module import *' used)
+lint.per-file-ignores."src/holidata/holidays/__init__.py" = ["F403"]
+lint.per-file-ignores."src/holidata/__init__.py" = ["F403"]
