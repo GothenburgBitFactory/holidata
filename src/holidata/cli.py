@@ -1,8 +1,11 @@
-#!/usr/bin/env python3
-# encoding: utf-8
+import re
+import sys
 
-"""
-Holidata - generate holidata files.
+from docopt import docopt
+
+from holidata import for_locale
+
+__doc__ = """Holidata - generate holidata files.
 
 Usage:
   holidata (--year=<value>) (--locale=<value>) [--output=<value>]
@@ -28,16 +31,7 @@ Options:
 
     --output=(csv|json|yaml|xml)
         Specify the output format [default: csv].
-
-Dependencies:
-    pip3 install arrow docopt
 """
-import re
-import sys
-
-from docopt import docopt
-
-from holidata import for_locale
 
 
 def parse_locale(locale):
@@ -50,7 +44,7 @@ def parse_locale(locale):
     return m.group("country").upper(), m.group("lang").lower()
 
 
-if __name__ == "__main__":
+def main():
     args = docopt(__doc__)
 
     try:
@@ -69,3 +63,7 @@ if __name__ == "__main__":
 
     except ValueError as e:
         sys.exit(str(e))
+
+
+if __name__ == "__main__":
+    main()
