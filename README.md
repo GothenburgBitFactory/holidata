@@ -2,33 +2,43 @@
 
 `holidata` is a utility for algorithmically producing holiday data.
 
-It is used e.g. by [Taskwarrior](https://taskwarrior.org) and [Timewarrior](https://timewarrior.net),
-as well as for [holidata.net](https://holidata.net).
+It is used e.g. by [Taskwarrior](https://taskwarrior.org) and [Timewarrior](https://timewarrior.net), as well as for [holidata.net](https://holidata.net).
 
 Holiday data can be produced for a given year in a supported locale and output format.
 
-## Usage
+## Installation
 
+`holidata` is published on [PyPI](https://pypi.org/project/holidata/) and can be installed as a command-line tool with:
+
+```bash
+uv tool install holidata
 ```
-holidata --year=<value> --locale=<value> [--output=<value>]
-holidata --year=<value> --country=<value> [--lang=<value>] [--output=<value>]
+
+Alternatively, run it once without installing via [`uvx`](https://docs.astral.sh/uv/guides/tools/):
+
+```bash
+uvx holidata --year=<value> --locale=<value> [--output=<value>]
+uvx holidata --year=<value> --country=<value> [--lang=<value>] [--output=<value>]
 ```
-Call `holidata` with the `--help` option to more detailed information.
+
+For development setup, see [CONTRIBUTING.md](CONTRIBUTING.md).
+
+Call `holidata --help` for more detailed information.
 
 ### Examples
-* Create holiday data of year `2022` for locale `de-DE`:
+* Create holiday data of year `2026` for locale `de-DE`:
   ```
-  $ holidata --year=2022 --locale=de-DE
+  $ holidata --year=2026 --locale=de-DE
   ```
-  
-* Create holiday data of year `2022` for country `BE` and language `fr`:
+
+* Create holiday data of year `2026` for country `BE` and language `fr`:
   ```
-  $ holidata --year=2022 --country=BE --lang=fr
+  $ holidata --year=2026 --country=BE --lang=fr
   ```
-  
-* Create holiday data of year `2022` for country `US` (default language `en`):
+
+* Create holiday data of year `2026` for country `US` (default language `en`):
   ```
-  $ holidata --year=2022 --country=US
+  $ holidata --year=2026 --country=US
   ```
 
 ## Data

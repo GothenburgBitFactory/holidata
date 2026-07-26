@@ -38,14 +38,14 @@ Before you begin, make sure you have set up your development environment by foll
 
 Once you've made your changes, update the snapshot files such that they reflect the updated state of the data
 ```bash
-pytest --snapshot-update
+uv run pytest --snapshot-update
 ```
 
 Before submitting a pull request, ensure that all code quality checks pass:
 
 ```bash
 # Run linter and type checker
-ruff check . && mypy src/
+uv run ruff check . && uv run mypy src/
 ```
 
 Finally, submit a pull request with a clear description of your changes and the sources you used for verification.
