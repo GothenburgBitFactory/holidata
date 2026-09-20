@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "holidata"
-version = "2026.2.0"
+version = "2026.9.0"
 description = "Holidata is a utility for algorithmically producing holidays for a given locale and year"
 readme = "README.md"
 license = "MIT"
