@@ -37,6 +37,12 @@ class EX(Region):
             .with_flags("F")
 
         self.define_holiday() \
+            .with_name("Sustitución de la Asunción de la Virgen") \
+            .in_years([2027]) \
+            .on(date(Month.OCTOBER, 11)) \
+            .with_flags("RF")
+
+        self.define_holiday() \
             .with_name("San José") \
             .in_years([2021]) \
             .on(date(Month.MARCH, 19)) \

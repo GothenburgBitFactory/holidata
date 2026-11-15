@@ -52,6 +52,7 @@ Information taken from government websites around 2020-06
     2024: https://www.boe.es/eli/es/res/2023/10/23/(1)
     2025: https://www.boe.es/eli/es/res/2024/10/15/(1)
     2026: https://www.boe.es/eli/es/res/2025/10/17/(2)
+    2027: https://www.boe.es/eli/es/res/2026/10/08/(1)
 
 Regional governments
     [AN] https://www.juntadeandalucia.es/temas/trabajar/relaciones/calendario.html

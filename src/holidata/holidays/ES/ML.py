@@ -31,6 +31,7 @@ class ML(Region):
                 2023: (Month.APRIL, 21),
                 2025: (Month.MARCH, 31),
                 2026: (Month.MARCH, 20),
+                2027: (Month.MARCH, 10),
             })) \
             .with_flags("RV")
 
@@ -42,6 +43,7 @@ class ML(Region):
                 2024: (Month.JUNE, 17),
                 2025: (Month.JUNE, 6),
                 2026: (Month.MAY, 27),
+                2027: (Month.MAY, 17),
             })) \
             .with_flags("RV")
 

@@ -31,7 +31,7 @@ class AR(Region):
 
         self.define_holiday() \
             .with_name("Lunes siguiente a la Asunción de la Virgen") \
-            .in_years([2021]) \
+            .in_years([2021, 2027]) \
             .on(date(Month.AUGUST, 16)) \
             .with_flags("RF")
 
