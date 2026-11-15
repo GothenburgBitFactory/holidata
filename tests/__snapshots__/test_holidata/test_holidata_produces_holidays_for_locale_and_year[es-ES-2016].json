@@ -496,6 +496,14 @@
     "type": "F"
   },
   {
+    "date": "2016-09-11",
+    "description": "Fiesta Nacional de Cataluña",
+    "locale": "es-ES",
+    "notes": "",
+    "region": "CT",
+    "type": "F"
+  },
+  {
     "date": "2016-09-12",
     "description": "Fiesta del Sacrificio (Aid El Kebir)",
     "locale": "es-ES",
@@ -525,6 +533,14 @@
     "locale": "es-ES",
     "notes": "",
     "region": "PV",
+    "type": "F"
+  },
+  {
+    "date": "2016-10-09",
+    "description": "Día de la Comunitat Valenciana",
+    "locale": "es-ES",
+    "notes": "",
+    "region": "VC",
     "type": "F"
   },
   {

@@ -26,7 +26,6 @@ class EX(Region):
 
         self.define_holiday() \
             .with_name("Día de Extremadura") \
-            .except_for([2019, 2024]) \
             .on(date(Month.SEPTEMBER, 8)) \
             .with_flags("F")
 

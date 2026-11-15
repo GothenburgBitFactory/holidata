@@ -304,6 +304,14 @@
     "type": "F"
   },
   {
+    "date": "2018-06-24",
+    "description": "San Juan",
+    "locale": "es-ES",
+    "notes": "",
+    "region": "CT",
+    "type": "RF"
+  },
+  {
     "date": "2018-07-25",
     "description": "Santiago Apóstol / Día Nacional de Galicia",
     "locale": "es-ES",

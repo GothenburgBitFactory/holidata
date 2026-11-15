@@ -336,6 +336,14 @@
     "type": "F"
   },
   {
+    "date": "2024-06-09",
+    "description": "Día de la Región de Murcia",
+    "locale": "es-ES",
+    "notes": "",
+    "region": "MC",
+    "type": "F"
+  },
+  {
     "date": "2024-06-10",
     "description": "Lunes siguiente al Día de La Rioja",
     "locale": "es-ES",
@@ -416,6 +424,14 @@
     "type": "RF"
   },
   {
+    "date": "2024-07-28",
+    "description": "Día de las Instituciones de Cantabria",
+    "locale": "es-ES",
+    "notes": "",
+    "region": "CB",
+    "type": "F"
+  },
+  {
     "date": "2024-08-05",
     "description": "Nuestra Señora de África",
     "locale": "es-ES",
@@ -440,6 +456,14 @@
     "type": "F"
   },
   {
+    "date": "2024-09-08",
+    "description": "Día de Extremadura",
+    "locale": "es-ES",
+    "notes": "",
+    "region": "EX",
+    "type": "F"
+  },
+  {
     "date": "2024-09-09",
     "description": "Lunes siguiente al Día de Asturias",
     "locale": "es-ES",
@@ -454,6 +478,14 @@
     "notes": "",
     "region": "CT",
     "type": "F"
+  },
+  {
+    "date": "2024-09-15",
+    "description": "La Bien Aparecida",
+    "locale": "es-ES",
+    "notes": "",
+    "region": "CB",
+    "type": "RF"
   },
   {
     "date": "2024-10-09",

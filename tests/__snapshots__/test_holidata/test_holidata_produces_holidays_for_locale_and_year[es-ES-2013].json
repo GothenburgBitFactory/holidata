@@ -448,6 +448,14 @@
     "type": "F"
   },
   {
+    "date": "2013-06-09",
+    "description": "Día de la Región de Murcia",
+    "locale": "es-ES",
+    "notes": "",
+    "region": "MC",
+    "type": "F"
+  },
+  {
     "date": "2013-06-10",
     "description": "Día de La Rioja",
     "locale": "es-ES",
@@ -504,6 +512,14 @@
     "type": "RF"
   },
   {
+    "date": "2013-07-28",
+    "description": "Día de las Instituciones de Cantabria",
+    "locale": "es-ES",
+    "notes": "",
+    "region": "CB",
+    "type": "F"
+  },
+  {
     "date": "2013-08-15",
     "description": "Asunción de la Virgen",
     "locale": "es-ES",
@@ -550,6 +566,14 @@
     "notes": "",
     "region": "CT",
     "type": "F"
+  },
+  {
+    "date": "2013-09-15",
+    "description": "La Bien Aparecida",
+    "locale": "es-ES",
+    "notes": "",
+    "region": "CB",
+    "type": "RF"
   },
   {
     "date": "2013-10-09",

@@ -14,7 +14,6 @@ class CN(Region):
 
         self.define_holiday() \
             .with_name("Día de Canarias") \
-            .except_for([2021]) \
             .on(date(Month.MAY, 30)) \
             .with_flags("F")
 

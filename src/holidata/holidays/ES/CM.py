@@ -14,13 +14,13 @@ class CM(Region):
 
         self.define_holiday() \
             .with_name("Día de Castilla-La Mancha") \
-            .except_for([2014, 2015, 2020]) \
+            .except_for([2014]) \
             .on(date(Month.MAY, 31)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Corpus Christi") \
-            .in_years([2011, 2012, 2013, 2014, 2015, 2016, 2017, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027]) \
+            .except_for([2018]) \
             .on(day(60).after(country.easter())) \
             .with_flags("RV")
 

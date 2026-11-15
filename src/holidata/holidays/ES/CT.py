@@ -8,13 +8,11 @@ class CT(Region):
 
         self.define_holiday() \
             .with_name("San Juan") \
-            .in_years([2011, 2013, 2014, 2015, 2016, 2017, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027]) \
             .on(date(Month.JUNE, 24)) \
             .with_flags("RF")
 
         self.define_holiday() \
             .with_name("Fiesta Nacional de Cataluña") \
-            .except_for([2011, 2016, 2022]) \
             .on(date(Month.SEPTEMBER, 11)) \
             .with_flags("F")
 
