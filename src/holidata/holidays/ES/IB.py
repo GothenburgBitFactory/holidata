@@ -8,7 +8,6 @@ class IB(Region):
 
         self.define_holiday() \
             .with_name("Día de les Illes Balears") \
-            .in_years([2011, 2012, 2013, 2014, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025, 2026, 2027]) \
             .on(date(Month.MARCH, 1)) \
             .with_flags("F")
 

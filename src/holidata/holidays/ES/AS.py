@@ -26,9 +26,8 @@ class AS(Region):
 
         self.define_holiday() \
             .with_name("Día de Asturias") \
-            .except_for([2019]) \
             .on(date(Month.SEPTEMBER, 8)) \
-            .with_flags("F"),
+            .with_flags("F")
 
         self.define_holiday() \
             .with_name("Lunes siguiente al Día de Asturias") \

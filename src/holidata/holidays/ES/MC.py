@@ -20,13 +20,12 @@ class MC(Region):
 
         self.define_holiday() \
             .with_name("Día de la Región de Murcia") \
-            .except_for([2013, 2024]) \
             .on(date(Month.JUNE, 9).except_for({2019: (Month.JUNE, 10)})) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("San José") \
-            .in_years([2011, 2012, 2013, 2014, 2015, 2016, 2018, 2019, 2020, 2021, 2024, 2025, 2026, 2027]) \
+            .except_for([2022]) \
             .on(date(Month.MARCH, 19)) \
             .with_flags("RF")
 

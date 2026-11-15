@@ -20,13 +20,11 @@ class VC(Region):
 
         self.define_holiday() \
             .with_name("Día de la Comunitat Valenciana") \
-            .except_for([2011, 2016, 2022]) \
             .on(date(Month.OCTOBER, 9)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("San José") \
-            .in_years([2011, 2012, 2013, 2014, 2015, 2016, 2018, 2019, 2020, 2021, 2022, 2024, 2025, 2026, 2027]) \
             .on(date(Month.MARCH, 19)) \
             .with_flags("RF")
 

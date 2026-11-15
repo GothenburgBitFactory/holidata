@@ -26,13 +26,11 @@ class GA(Region):
 
         self.define_holiday() \
             .with_name("Día de las Letras Gallegas") \
-            .except_for([2015, 2020]) \
             .on(date(Month.MAY, 17)) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Santiago Apóstol / Día Nacional de Galicia") \
-            .except_for([2021]) \
             .on(date(Month.JULY, 25)) \
             .with_flags("RF")
 
