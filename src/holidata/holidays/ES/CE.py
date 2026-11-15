@@ -14,7 +14,7 @@ class CE(Region):
 
         self.define_holiday() \
             .with_name("Nuestra Señora de África") \
-            .in_years([2022, 2023, 2024, 2025, 2026]) \
+            .in_years([2022, 2023, 2024, 2025, 2026, 2027]) \
             .on(date(Month.AUGUST, 5)) \
             .with_flags("RF")
 
@@ -42,6 +42,7 @@ class CE(Region):
                 2024: (Month.JUNE, 17),
                 2025: (Month.JUNE, 6),
                 2026: (Month.MAY, 27),
+                2027: (Month.MAY, 17),
             })) \
             .with_flags("RV")
 

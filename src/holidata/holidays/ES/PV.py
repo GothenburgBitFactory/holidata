@@ -19,6 +19,12 @@ class PV(Region):
             .with_flags("F")
 
         self.define_holiday() \
+            .with_name("Aniversario del primer Gobierno Vasco") \
+            .in_years([2027]) \
+            .on(date(Month.OCTOBER, 7)) \
+            .with_flags("F")
+
+        self.define_holiday() \
             .with_name("Día del País Vasco-Euskadiko Eguna") \
             .in_years([2011, 2012, 2013, 2014]) \
             .on(date(Month.OCTOBER, 25)) \

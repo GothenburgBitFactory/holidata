@@ -22,13 +22,14 @@ class AN(Region):
             .with_name("Día de Andalucía") \
             .on(date(Month.FEBRUARY, 28).except_for({
                 2016: (Month.FEBRUARY, 29),
-                2021: (Month.MARCH, 1)
+                2021: (Month.MARCH, 1),
+                2027: (Month.MARCH, 1)
             })) \
             .with_flags("F")
 
         self.define_holiday() \
             .with_name("Lunes siguiente a la Asunción de la Virgen") \
-            .in_years([2021]) \
+            .in_years([2021, 2027]) \
             .on(date(Month.AUGUST, 16)) \
             .with_flags("RF")
 

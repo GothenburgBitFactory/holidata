@@ -44,8 +44,14 @@ class MD(Region):
 
         self.define_holiday() \
             .with_name("San José") \
-            .in_years([2012, 2015, 2021, 2023]) \
+            .in_years([2012, 2015, 2021, 2023, 2027]) \
             .on(date(Month.MARCH, 19)) \
+            .with_flags("RF")
+
+        self.define_holiday() \
+            .with_name("Lunes siguiente a la Asunción de la Virgen") \
+            .in_years([2027]) \
+            .on(date(Month.AUGUST, 16)) \
             .with_flags("RF")
 
         self.define_holiday() \
