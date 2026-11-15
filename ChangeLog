@@ -1,3 +1,5 @@
+- #167 Add test snapshots for 2027
+
 2026.9.0
 - #165 Make 'uv' the default tool for holidata
 - #164 Drop support for Python 3.10

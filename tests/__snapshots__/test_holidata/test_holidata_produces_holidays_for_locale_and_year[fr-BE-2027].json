@@ -1,0 +1,98 @@
+[
+  {
+    "date": "2027-01-01",
+    "description": "Nouvel An",
+    "locale": "fr-BE",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2027-03-28",
+    "description": "Pâques",
+    "locale": "fr-BE",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2027-03-29",
+    "description": "Lundi de Pâques",
+    "locale": "fr-BE",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2027-05-01",
+    "description": "Fête du Travail",
+    "locale": "fr-BE",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2027-05-06",
+    "description": "Ascension",
+    "locale": "fr-BE",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2027-05-16",
+    "description": "Pentecôte",
+    "locale": "fr-BE",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2027-05-17",
+    "description": "Lundi de Pentecôte",
+    "locale": "fr-BE",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2027-07-21",
+    "description": "Fête nationale",
+    "locale": "fr-BE",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2027-08-15",
+    "description": "Assomption",
+    "locale": "fr-BE",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2027-11-01",
+    "description": "Toussaint",
+    "locale": "fr-BE",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2027-11-11",
+    "description": "Jour de l'armistice",
+    "locale": "fr-BE",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2027-12-25",
+    "description": "Noël",
+    "locale": "fr-BE",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  }
+]

@@ -1,0 +1,146 @@
+[
+  {
+    "date": "2027-01-01",
+    "description": "Año Neuvo",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2027-01-18",
+    "description": "Cumpleaños de Martin Luther King, Jr.",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2027-02-15",
+    "description": "Día del Presidente",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2027-04-19",
+    "description": "Día del Patriota",
+    "locale": "es-US",
+    "notes": "",
+    "region": "MA",
+    "type": "V"
+  },
+  {
+    "date": "2027-04-19",
+    "description": "Día del Patriota",
+    "locale": "es-US",
+    "notes": "",
+    "region": "ME",
+    "type": "V"
+  },
+  {
+    "date": "2027-05-31",
+    "description": "Día de los Caídos",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2027-06-18",
+    "description": "Juneteenth – Día de la Emancipación (en lugar de)",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2027-06-19",
+    "description": "Juneteenth – Día de la Emancipación",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2027-07-04",
+    "description": "Día de la Independiencia",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2027-07-05",
+    "description": "Día de la Independiencia (en lugar de)",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2027-09-06",
+    "description": "Día del Trabajo",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2027-10-11",
+    "description": "Día de Columbus",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2027-11-11",
+    "description": "Día de los Veteranos",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2027-11-25",
+    "description": "Día de Acción de Gracias",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2027-11-26",
+    "description": "Día después de Acción de Gracias",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NV"
+  },
+  {
+    "date": "2027-12-24",
+    "description": "Navidad (en lugar de)",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2027-12-25",
+    "description": "Navidad",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2027-12-31",
+    "description": "Año Neuvo (en lugar de)",
+    "locale": "es-US",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  }
+]
