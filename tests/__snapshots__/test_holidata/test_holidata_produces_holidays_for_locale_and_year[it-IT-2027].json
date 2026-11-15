@@ -1,0 +1,122 @@
+[
+  {
+    "date": "2027-01-01",
+    "description": "Capodanno",
+    "locale": "it-IT",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2027-01-06",
+    "description": "Epifania",
+    "locale": "it-IT",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2027-03-28",
+    "description": "Pasqua",
+    "locale": "it-IT",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2027-03-29",
+    "description": "Pasquetta",
+    "locale": "it-IT",
+    "notes": "",
+    "region": "",
+    "type": "NRV"
+  },
+  {
+    "date": "2027-04-25",
+    "description": "Festa della liberazione",
+    "locale": "it-IT",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2027-05-01",
+    "description": "Festa del lavoro",
+    "locale": "it-IT",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2027-06-02",
+    "description": "Festa della repubblica",
+    "locale": "it-IT",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2027-06-29",
+    "description": "Santi Apostoli Pietro e Paolo",
+    "locale": "it-IT",
+    "notes": "Solo per il comune di Roma",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2027-08-15",
+    "description": "Assunzione (ferragosto)",
+    "locale": "it-IT",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2027-10-04",
+    "description": "Festa nazionale di San Francesco d'Assisi, patrono d'Italia",
+    "locale": "it-IT",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2027-11-01",
+    "description": "Ognissanti",
+    "locale": "it-IT",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2027-11-07",
+    "description": "Unità nazionale",
+    "locale": "it-IT",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2027-12-08",
+    "description": "Immacolata concezione",
+    "locale": "it-IT",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2027-12-25",
+    "description": "Natale",
+    "locale": "it-IT",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2027-12-26",
+    "description": "S.to Stefano",
+    "locale": "it-IT",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  }
+]

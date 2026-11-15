@@ -1,0 +1,106 @@
+[
+  {
+    "date": "2027-01-01",
+    "description": "Nouvel An",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2027-03-28",
+    "description": "Pâques",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2027-03-29",
+    "description": "Lundi de Pâques",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2027-05-01",
+    "description": "Premier Mai",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2027-05-06",
+    "description": "Ascension",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2027-05-09",
+    "description": "Journée de l'Europe",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2027-05-16",
+    "description": "Pentecôte",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2027-05-17",
+    "description": "Lundi de Pentecôte",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2027-06-23",
+    "description": "Fête nationale",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NF"
+  },
+  {
+    "date": "2027-08-15",
+    "description": "Assomption",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2027-11-01",
+    "description": "Toussaint",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2027-12-25",
+    "description": "Noël",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  },
+  {
+    "date": "2027-12-26",
+    "description": "Saint Étienne",
+    "locale": "fr-LU",
+    "notes": "",
+    "region": "",
+    "type": "NRF"
+  }
+]
