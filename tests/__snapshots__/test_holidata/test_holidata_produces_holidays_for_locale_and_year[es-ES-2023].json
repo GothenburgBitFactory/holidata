@@ -84,7 +84,23 @@
     "description": "San José",
     "locale": "es-ES",
     "notes": "",
+    "region": "MC",
+    "type": "RF"
+  },
+  {
+    "date": "2023-03-19",
+    "description": "San José",
+    "locale": "es-ES",
+    "notes": "",
     "region": "MD",
+    "type": "RF"
+  },
+  {
+    "date": "2023-03-19",
+    "description": "San José",
+    "locale": "es-ES",
+    "notes": "",
+    "region": "VC",
     "type": "RF"
   },
   {

@@ -528,12 +528,28 @@
     "type": "F"
   },
   {
+    "date": "2011-09-11",
+    "description": "Fiesta Nacional de Cataluña",
+    "locale": "es-ES",
+    "notes": "",
+    "region": "CT",
+    "type": "F"
+  },
+  {
     "date": "2011-09-15",
     "description": "La Bien Aparecida",
     "locale": "es-ES",
     "notes": "",
     "region": "CB",
     "type": "RF"
+  },
+  {
+    "date": "2011-10-09",
+    "description": "Día de la Comunitat Valenciana",
+    "locale": "es-ES",
+    "notes": "",
+    "region": "VC",
+    "type": "F"
   },
   {
     "date": "2011-10-12",
